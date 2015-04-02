@@ -3,7 +3,7 @@
 | Feature | Old | New | Issue | Comment |
 | ------- | --- | --- | ----- | ------- |
 | VM Wizard | yes | no | - | Use marketplace |
-| VirDir storage | yes | no | ? | Run your own NFS server |
+| VirDir storage | yes | no | #5 | Run your own NFS server |
 | VirDir/Backup  | yes | no | ? | (a) Roll your own, (b) new feature? |
 | HTTP proxy | on private net | ? | ? | Internet access for slaves with only private network |
 | DHCP service | on Internet and private net | nope | ? | contextualization only |
