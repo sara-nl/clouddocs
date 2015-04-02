@@ -8,3 +8,4 @@
 | DHCP service | on Internet and private net | nope | ? | contextualization only |
 | Contextualization | not used | yes | ? | communicates IP addres and SSH keys to VM |
 | NTP service | on private net | ? | ? | time synchronization |
+| MySQL aaS | shared setup | no | ? | Run your own on SSD |
