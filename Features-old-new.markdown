@@ -12,3 +12,4 @@
 | MySQL aaS | shared setup | no | ? | Run your own on SSD |
 | SARA marketplace | (~Wizard) | possible | ? | technically possible, needs maintenance |
 | Medium and Small nodes | yes | no | ? | no more dedicated nodes for size, different size VMs can run on the same node |
+| Backups of accounting information | yes | ? | | in the new ON: log/DB of VM state changes |
