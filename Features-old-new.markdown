@@ -16,7 +16,7 @@
 | DNS server | yes | ? | ? | add dynamic DNS *vmname.project.cloudlet.sara.nl* entry |
 | SSD nodes | yes | yes | ? | OS images will only run on SSDs |
 | Image upload | sftp via virdir | yes | ? | upload or provide image path via opennebula interface |
-| Image download | sftp via virdir | yes | ? | not possible via opennebula
+| Image download | sftp via virdir | yes | #7  | not possible via opennebula
 | Documentation platform | redmine | yes | ? | possible options: gollum, sphinx, redmine |
 | Start a marketplace VM | no | yes | #3 | add to documentation |
 | Start a local image VM | yes | yes | #4 | add to documentation |
