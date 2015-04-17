@@ -2,7 +2,8 @@
 
 | Feature | Old | New | Issue | Comment |
 | ------- | --- | --- | ----- | ------- |
-| VM Wizard | yes | no | - | Use marketplace |
+| Wizard | yes | no | - | Use marketplace. Do we have our own marketplace? Can we upload/download/update apps (images)? |
+| SARA marketplace | (~Wizard) | possible | ? | technically possible, needs maintenance |
 | VirDir storage | yes | no | #5 | Run your own NFS server |
 | VirDir/Backup  | yes | no | ? | (a) Roll your own, (b) new feature? |
 | HTTP proxy | on private net | ? | ? | Internet access for slaves with only private network |
@@ -10,7 +11,6 @@
 | Contextualization | not used | yes | ? | communicates IP addresses and SSH keys to VM |
 | NTP service | on private net | ? | ? | time synchronization |
 | MySQL aaS | shared setup | no | ? | Run your own on SSD |
-| SARA marketplace | (~Wizard) | possible | ? | technically possible, needs maintenance |
 | Medium and Small nodes | yes | no | ? | no more dedicated nodes for size, different size VMs can run on the same node, users can use even 0.25 cpu |
 | Backups of accounting information | yes | ? | | in the new ON: log/DB of VM state changes |
 | DNS server | yes | ? | ? | add dynamic DNS *vmname.project.cloudlet.sara.nl* entry |
