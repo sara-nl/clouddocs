@@ -2,7 +2,7 @@
 
 | Feature | Old | New | Issue | Comment | Beta blocker? | 
 | ------- | --- | --- | ----- | ------- | ------------- |
-| Wizard | yes | no | - | Use marketplace. Do we have our own marketplace? Can we upload/download/update apps (images)? | Y |
+| Wizard | yes | no | - (works) | Use marketplace. Do we have our own marketplace? Can we upload/download/update apps (images)? | Y |
 | SARA marketplace | (~Wizard) | possible | ? | technically possible, needs maintenance | N |
 | VirDir storage | yes | no | #5 | Run your own NFS server | Y |
 | VirDir/Backup  | yes | no | ? | (a) Roll your own, (b) new feature? | Y |
@@ -12,9 +12,9 @@
 | NTP service | on private net | ? | #9 | time synchronization | N |
 | MySQL aaS | shared setup | no | ? | Run your own on SSD | N |
 | Medium and Small nodes | yes | no | ? | no more dedicated nodes for size, different size VMs can run on the same node, users can use even 0.25 cpu | N |
-| Backups of accounting information | yes | ? | | in the new ON: log/DB of VM state changes | Y |
-| DNS server | yes | ? | ? | add dynamic DNS *vmname.project.cloudlet.sara.nl* entry | Y |
-| SSD nodes | yes | yes | ? | OS images will only run on SSDs | Y |
+| Backups of accounting information | yes | yes | #13 | in the new ON: log/DB of VM state changes | Y |
+| DNS server | yes | yes | #14 | add dynamic DNS *vmname.project.cloudlet.sara.nl* entry | Y |
+| SSD nodes | yes | yes | - (works) | OS images will only run on SSDs | Y |
 | Image upload | sftp via virdir | yes | #12 | upload or provide image path via opennebula interface | Y |
 | Image download | sftp via virdir | yes | #7  | not possible via opennebula | Y |
 | Documentation platform | redmine | yes | ? | possible options: gollum, sphinx, redmine | Y |
@@ -38,4 +38,5 @@
 | Resize data images| no | ? | ? | not needed in old cloud due to virdue |N |
 | Remove non used options in sunstone| no |? | ? | remove options like non KVM options | N |
 | use single read only CEPH image from multiple VM's | yes | ?| ? |  | N |
-| Benchmark speed between VM's| yes | ? | ? |QoS test |Y |
+| Benchmark speed between VM's| yes | yes | ? |QoS test |Y |
+| Course tutorials | yes | yes | ? | UVA/Unesco tutorial include all steps that a Cloud user requires. Repeat the practice to identify missing features | Y
