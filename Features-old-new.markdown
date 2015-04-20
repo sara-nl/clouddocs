@@ -33,4 +33,5 @@
 | OCCI | short of | ? | ? | rocci server |
 | Windows VMs | yes | yes | #6 | add to documentation |
 | MPI applications | yes | yes | ? | performance/scalability tests |
+| High memory node | yes | ? | ? | installation, configuration |
 
