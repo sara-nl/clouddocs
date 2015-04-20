@@ -8,7 +8,7 @@
 | VirDir/Backup  | yes | no | ? | (a) Roll your own, (b) new feature? |
 | HTTP proxy | on private net | ? | ? | Internet access for slaves with only private network |
 | DHCP service | on Internet and private net | nope | ? | no longer use of DHCP, contextualization for NIC IP addresses |
-| Contextualization | not used | yes | ? | communicates IP addresses and SSH keys to VM |
+| Contextualization | not used | yes | #8 | communicates IP addresses and SSH keys to VM |
 | NTP service | on private net | ? | ? | time synchronization |
 | MySQL aaS | shared setup | no | ? | Run your own on SSD |
 | Medium and Small nodes | yes | no | ? | no more dedicated nodes for size, different size VMs can run on the same node, users can use even 0.25 cpu |
