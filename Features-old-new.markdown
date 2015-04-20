@@ -38,4 +38,4 @@
 | Resize data images| no | ? | ? | not needed in old cloud due to virdue |N |
 | Remove non used options in sunstone| no |? | ? | remove options like non KVM options | N |
 | use single read only CEPH image from multiple VM's | yes | ?| ? |  | N |
-| Benchmark speed between VM's| yes | ? | ? |Y |
+| Benchmark speed between VM's| yes | ? | ? |QoS test |Y |
