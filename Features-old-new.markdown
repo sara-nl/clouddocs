@@ -22,7 +22,7 @@
 | Start a local image VM | yes | yes | #4 | add to documentation |
 | Sharing objects | yes | yes | ? | add to documentation |
 | VM management options | yes | yes | ? | add to documentation |
-| Assign project quota | yes | yes | ? | as projectadmin (advisor), as groupadmin (user)|
+| Create projects | yes | yes | ? | project == OpenNebula group, quota allocation as projectadmin (advisor), as groupadmin (user)|
 | Network Filters | yes | no | ? | add best pracices to documentation |
 | Lightpaths | yes | ? | ? | connect HPC Cloud to external location |
 | Resource usage page | redmine | yes | ? | display overall Cloud usage |
@@ -32,5 +32,5 @@
 | XML-RPC API | yes | yes | ? | add to documentation |
 | OCCI | short of | ? | ? | rocci server |
 | Windows VMs | yes | yes | #6 | add to documentation |
-
+| MPI applications | yes | yes | ? | performance/scalability tests |
 
