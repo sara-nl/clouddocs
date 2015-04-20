@@ -15,15 +15,15 @@
 | Backups of accounting information | yes | ? | | in the new ON: log/DB of VM state changes | Y |
 | DNS server | yes | ? | ? | add dynamic DNS *vmname.project.cloudlet.sara.nl* entry | Y |
 | SSD nodes | yes | yes | ? | OS images will only run on SSDs | Y |
-| Image upload | sftp via virdir | yes | ? | upload or provide image path via opennebula interface | Y |
+| Image upload | sftp via virdir | yes | #12 | upload or provide image path via opennebula interface | Y |
 | Image download | sftp via virdir | yes | #7  | not possible via opennebula | Y |
 | Documentation platform | redmine | yes | ? | possible options: gollum, sphinx, redmine | Y |
 | Start a marketplace VM | no | yes | #3 | add to documentation | Y |
 | Start a local image VM | yes | yes | #4 | add to documentation | Y |
 | Sharing objects (images, VMs...) | yes | yes | ? | add to documentation | Y |
 | VM management options | yes | yes | ? | add to documentation | Y |
-| Create projects | yes | yes | ? | project == OpenNebula group, quota allocation as projectadmin (advisor), as groupadmin (user) | Y |
-| Standardise views for users | ? | ? | ? | Decide how we arrange PIP views, other users' views, what they can do from each view... | Y | 
+| Create projects | yes | yes | #11 | project == OpenNebula group, quota allocation as projectadmin (advisor), as groupadmin (user) | Y |
+| Standardise views for users | no | yes | #10 | Decide how we arrange PIP views, other users' views, what they can do from each view... | Y | 
 | Network Filters | yes | no | ? | add best pracices to documentation | Y |
 | Lightpaths | yes | ? | ? | connect HPC Cloud to external location | N |
 | Resource usage page | redmine | yes | ? | display overall Cloud usage | N |
