@@ -37,4 +37,4 @@
 | High memory node | yes | ? | ? | installation, configuration | N |
 | Resize data images| no | ? | ? | not needed in old cloud due to virdue |N |
 | Remove non used options in sunstone| no |? | ? | remove options like non KVM options | N |
-| Single read only image from multiple VM's | yes | ?| ? | ? | N |
+| use single read only CEPH image from multiple VM's | yes | ?| ? |  | N |
