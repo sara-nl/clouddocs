@@ -9,7 +9,7 @@
 | HTTP proxy | on private net | ? | ? | Internet access for slaves with only private network |
 | DHCP service | on Internet and private net | nope | ? | no longer use of DHCP, contextualization for NIC IP addresses |
 | Contextualization | not used | yes | #8 | communicates IP addresses and SSH keys to VM |
-| NTP service | on private net | ? | ? | time synchronization |
+| NTP service | on private net | ? | #9 | time synchronization |
 | MySQL aaS | shared setup | no | ? | Run your own on SSD |
 | Medium and Small nodes | yes | no | ? | no more dedicated nodes for size, different size VMs can run on the same node, users can use even 0.25 cpu |
 | Backups of accounting information | yes | ? | | in the new ON: log/DB of VM state changes |
