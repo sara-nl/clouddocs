@@ -17,7 +17,7 @@
 | SSD nodes | yes | yes | - (works) | OS images will only run on SSDs | Y |
 | Image upload | sftp via virdir | yes | #12 | upload or provide image path via opennebula interface | Y |
 | Image download | sftp via virdir | yes | #7  | not possible via opennebula | Y |
-| Documentation platform | redmine | yes | ? | possible options: gollum, sphinx, redmine | Y |
+| Documentation platform | redmine | yes | #15 | possible options: gollum, sphinx, redmine | Y |
 | Start a marketplace VM | no | yes | #3 | add to documentation | Y |
 | Start a local image VM | yes | yes | #4 | add to documentation | Y |
 | Sharing objects (images, VMs...) | yes | yes | ? | add to documentation | Y |
