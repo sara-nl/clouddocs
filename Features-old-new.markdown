@@ -27,7 +27,7 @@
 | Network Filters | yes | yes | ? | add best pracices to documentation | Y |
 | Lightpaths | yes | ? | ? | connect HPC Cloud to external location | N |
 | Resource usage page | redmine | yes | ? | display overall Cloud usage | N |
-| Datablocks | yes | yes | ? | ceph block storage | Y |
+| Datablocks | yes | yes | #20 | ceph block storage | Y |
 | Resize images | no | yes | ? | add to documentation | N |
 | SURFsara app | yes | yes | ? | display system status on [user portal] (https://portal.surfsara.nl) | N |
 | XML-RPC API | yes | yes | ? | add to documentation | N |
