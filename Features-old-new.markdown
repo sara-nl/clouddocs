@@ -41,3 +41,5 @@
 | Benchmark speed between VM's| yes | yes | #17 |QoS test |Y |
 | Course tutorials | yes | yes | #22 | UVA/Unesco tutorial include all steps that a Cloud user requires. Repeat the practice to identify missing features | Y |
 | Snapshots | no | yes | #16 | investigate snapshots for creating Open Nebula image backups | N |
+| Admin portal | yes | yes | ? | ? | Y |
+| Accounting/reporting | yes | yes | ? | Needs to be queriable | Y |
