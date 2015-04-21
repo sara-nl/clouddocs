@@ -36,7 +36,7 @@
 | MPI applications | yes | yes | ? | performance/scalability tests | N |
 | High memory node | yes | ? | ? | installation, configuration | N |
 | Resize data images| no | ? | ? | not needed in old cloud due to virdue |N |
-| Remove non used options in sunstone| no |? | ? | remove options like non KVM options | N |
+| Remove non used options in sunstone| no |? | #21| remove options like non KVM options | N |
 | use single read only CEPH image from multiple VM's | yes | ?| ? |  | N |
 | Benchmark speed between VM's| yes | yes | #17 |QoS test |Y |
 | Course tutorials | yes | yes | ? | UVA/Unesco tutorial include all steps that a Cloud user requires. Repeat the practice to identify missing features | Y |
