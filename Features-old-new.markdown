@@ -39,4 +39,5 @@
 | Remove non used options in sunstone| no |? | ? | remove options like non KVM options | N |
 | use single read only CEPH image from multiple VM's | yes | ?| ? |  | N |
 | Benchmark speed between VM's| yes | yes | ? |QoS test |Y |
-| Course tutorials | yes | yes | ? | UVA/Unesco tutorial include all steps that a Cloud user requires. Repeat the practice to identify missing features | Y
+| Course tutorials | yes | yes | ? | UVA/Unesco tutorial include all steps that a Cloud user requires. Repeat the practice to identify missing features | Y |
+| Snapshots | no | yes | #16 | N |
