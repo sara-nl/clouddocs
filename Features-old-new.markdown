@@ -24,7 +24,7 @@
 | VM management options | yes | yes | #19  | add to documentation | Y |
 | Create projects | yes | yes | #11 | project == OpenNebula group, quota allocation as projectadmin (advisor), as groupadmin (user) | Y |
 | Standardise views for users | no | yes | #10 | Decide how we arrange PIP views, other users' views, what they can do from each view... | Y | 
-| Network Filters | yes | yes | ? | add best pracices to documentation | Y |
+| Network Filters | yes | yes | #23 | add best pracices to documentation | Y |
 | Lightpaths | yes | ? | ? | connect HPC Cloud to external location | N |
 | Resource usage page | redmine | yes | ? | display overall Cloud usage | N |
 | Datablocks | yes | yes | #20 | ceph block storage | Y |
