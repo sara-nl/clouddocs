@@ -21,7 +21,7 @@
 | Start a marketplace VM | no | yes | #3 | add to documentation | Y |
 | Start a local image VM | yes | yes | #4 | add to documentation | Y |
 | Sharing objects (images, VMs...) | yes | yes | ? | add to documentation | N |
-| VM management options | yes | yes | ? | add to documentation | Y |
+| VM management options | yes | yes | #19  | add to documentation | Y |
 | Create projects | yes | yes | #11 | project == OpenNebula group, quota allocation as projectadmin (advisor), as groupadmin (user) | Y |
 | Standardise views for users | no | yes | #10 | Decide how we arrange PIP views, other users' views, what they can do from each view... | Y | 
 | Network Filters | yes | yes | ? | add best pracices to documentation | Y |
