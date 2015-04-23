@@ -1,29 +1,29 @@
 ## What is a View
 
-The HPC Cloud offers different interface views to different types of users. Each view shows different information tabs and action buttons. Users can have one or multiple views depending on their role in the project. In case of multiple views, users can switch from one to another at will.
+The HPC Cloud interface offers different display options or *views* to different types of users. Each view shows different information tabs and action buttons. Users can have one or multiple views depending on their role in the project. In case of multiple views, users can switch from one to another at will.
 
 ## User types
 
-### Novice user
-* Standard View: **user**
+### Basic user
+* Standard View: **cloud**
 * Description: simplified view for accessing pre-defined objects (images, templates, VMs) 
 * Possible Functions: 
   * VM management
   * Display own quota
   * Display own accounting
   
-<screenshot>  
+![tag_name](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/raw/master/images/cloud_view.png)
 
 ### Advanced user   
-* Standard View: **user + cloud**
+* Standard View: **cloud + user**
 * Description: advanced view for creating and managing objects (images, templates, VMs) 
 * Possible Functions: 
   * Create Images
   * Create Templates
   * ACL management for objects
-  * All Possible Functions that *Novice User* has.
+  * All Possible Functions that *Basic User* has
   
-<screenshot>  
+![tag_name](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/raw/master/images/user_view.png) 
 
 ### Groupadmin user 
 * Standard View: **groupadmin**
@@ -33,18 +33,19 @@ The HPC Cloud offers different interface views to different types of users. Each
   * Define quotas for each user
   * Display accounting for each user
   * Display accounting for the whole project
-  * All Possible Functions that *Advanced User* has.
+  * All Possible Functions that *Advanced User* has
 
-<screenshot>  
+![tag_name](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/raw/master/images/groupadmin_view.png) 
 
 ## Switch views
 The *Groupadmin* and *Advanced* users have access to multiple views and can switch between these anytime. 
 
-* Switching from *user* to *cloud* view:
-* Switching from *cloud* to *user* view: 
+* Switching from *cloud* to *user* view:  
+In the user interface page, select the user icon at the top right (next to OpenNebula Home icon). Then select the "Change view" window, unfold the tab and switch the option to "user". Finally click on the "Update view" button as displayed below:
 
-## Configure Access 
-The *Groupadmin* is able to assign views to the project members.
+![tag_name](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/raw/master/images/switch_to_user_view.png) 
 
-* Assigning views to *Novice* users:
-* Assigning views to *Advanced* users:
+* Switching from *user* to *cloud* view:  
+In the user interface page, select the user icon at the top right (next to OpenNebula Home icon). Then unfold the tab and select "Settings". On the new window that appears, select the "Conf" tab on top right menu. Then unfold "Views" and switch the option to "cloud0". Finally click on the "Update config" button as displayed below:
+
+![tag_name](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/raw/master/images/switch_to_cloud_view.png) 
