@@ -43,3 +43,4 @@
 | Snapshots | no | yes | #16 | investigate snapshots for creating Open Nebula image backups | N |
 | Admin portal | yes | yes | #24 | design replacement of project administration | N |
 | Accounting/reporting | yes | yes | #25 | Needs to be queriable | N |
+| Document Dashboard | no | yes | ? | What do the "Hosts" CPU graphs mean? on the Dashboard? | N |
