@@ -1,4 +1,4 @@
-# Security groups (former _network filters_)
+# `Security group`s (former _network filters_)
 
 Security groups work as a way to externally specify what kind of network traffic can go in or out specific ports (or ranges) through an interface of a VM. You can consider it a basic firewall.
 
