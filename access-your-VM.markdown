@@ -2,7 +2,7 @@
 
 ## Introduction
 
-You have various options to access your virtual machine. To do things on your virtual machine, you can access your virtual machine using a shell, the built-in VNC client, or you can get a full virtual desktop. You can also put files on your virtual machine, and get your results back.
+You have various options to access your virtual machine. To do things on your virtual machine, you can access your virtual machine using a shell, the built-in VNC client, or you can get a full virtual desktop. 
 
 ## Running commands on your virtual machine
 
