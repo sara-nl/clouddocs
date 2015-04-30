@@ -16,6 +16,8 @@
 
 
 ### General
+
+
 Customize your Virtual Machine
 
 Virtual Machine from Scratch
@@ -25,6 +27,13 @@ Contextualization
 Dynamic Virtual Machine Management
 
 Sharing OpenNebula Objects
+
+[windows](Windows)
+
+[backup] (Backup)
+
+[licences](Licences)
+
 
 ### Disk Images
 Scratch Disk Images
@@ -46,17 +55,12 @@ Grid Storage
 
 Share Data between Virtual Machines
 
-Pilot Jobs
-
-
-
-[windows](Windows)
-
-[backup] (Backup)
-
-[licences](Licences)
-
 [Pilot Jobs](pilot)
+
+
+
+
+
 
 
 [Feature table old-new](Features-old-new)
