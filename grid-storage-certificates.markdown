@@ -11,18 +11,22 @@ Before starting, make sure that you already have a grid certificate (see [Using 
 The following procedure was tested in Ubuntu machines. For other linux distributions or extra information, please refer to [EGI IGTF Release](https://wiki.egi.eu/wiki/EGI_IGTF_Release)
 
 * Install the EUGridPMA PGP key as root:
+
 ``` bash
 VM$ curl https://dist.eugridpma.info/distribution/igtf/current/GPG-KEY-EUGridPMA-RPM-3 | sudo apt-key add - ```
 * Locate sources.list (*/etc/apt/sources.list*) and, as root, add the following lines in the file:
+
 ```
 #### EGI Trust Anchor Distribution ####
 deb http://repository.egi.eu/sw/production/cas/1/current egi-igtf core
 ```
 # Update and install the meta-package:
+
 ``` bash
 VM$ sudo apt-get update
 VM$ sudo apt-get install ca-policy-egi-core
 ```
+
 This will install a lot of packages (approx. 100).
 The directory /etc/grid-security/certificates/ that is created includes all the certificates from approved Certification Authorities.
 
@@ -42,6 +46,7 @@ VM$ openssl pkcs12 -in userkeycert.p12 -out ~/.globus/usercert.pem -clcerts -nok
 
 * Copy the p12 file to your VM.
 * Export the p12 file to a pem file and protect access
+
 ``` bash 
 VM$ openssl pkcs12 -in userkeycert.p12 -out userkeycert.pem -clcerts
 Enter Import Password: ### type your p12 password
@@ -53,6 +58,7 @@ VM$ ls -l userkeycert.pem
 -rw-r--r-- 1 demo demo 5929 Jun 24 16:42 userkeycert.p12
 -rw-r--r-- 1 demo demo 8240 Jun 24 16:42 userkeycert.pem
 ```
+
 If you want to leave the password for the exported key blank, add "-keypbe none".
 
 ## Install your certificate from ~/.globus/ with userkey.pem and usercert.pem
