@@ -35,7 +35,7 @@ security_groups
 
 ### Inside the VM
 MySQL server  
-Grid Storage(grid-storage)  
+[Grid Storage](grid-storage)  
 Share Data between Virtual Machines  
 [Pilot Jobs](pilot-jobs)  
 
