@@ -13,8 +13,24 @@ introduction, and you are recommended to start here.
 More advanced and specialized topics are dicsussed separately.
 
 
-## Logging in on the OpenNebula user interface
+## Logging in on the HPC Cloud User Interface
 
+The user interface of the HPC Cloud is where you manage your
+virtual machines, disks and networks. After your HPC Cloud project is
+approved, you receive a username and a password for the HPC Cloud user
+interface.
+
+To start building a virtual machine, go to
+```
+   https://ui.cloud.sara.nl
+```
+and log in with the username and password you received. Note that the
+username and password are *not* the username and password of the virtual
+machine you are going to create. These you will set yourself after you
+have created a virtual machine.
+
+
+## Exploring the HPC Cloud User Interface
 
 ## Importing an appliance from the marketplace
 
