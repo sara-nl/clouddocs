@@ -38,7 +38,7 @@ You need to complete step [[Grid storage certificates]] first.
 ## with your key and certificate in separate files
 
 Use a WebDAV client and connect to **bee34**.grid.sara.nl:
-```
+``` bash
 VM$ curl --capath /etc/grid-security/certificates/ --key ~/.globus/userkey.pem --cert ~/.globus/usercert.pem -L https://bee34.grid.sara.nl/pnfs/grid.sara.nl/data/VO_NAME/PATH -o LOCAL_NAME
 ```
 
@@ -51,10 +51,12 @@ You need to complete step [[Grid storage certificates]] first.
 *** Install and configure VOMS proxy support
 
 Install the VOMS client software:
-```VM$ sudo apt-get install voms-clients```
+```bash
+VM$ sudo apt-get install voms-clients
+```
 
 Create VOMS information files:
-```
+```bash
 VM$ VOMSNAME="lsgrid"
 VM$ sudo mkdir -p /opt/glite/etc/vomses/
 VM$ scp ui.grid.sara.nl:/etc/vomses/${VOMSNAME}-voms.grid.sara.nl .
@@ -66,7 +68,9 @@ VM$ sudo cp -r ${VOMSNAME}/ /etc/grid-security/vomsdir/
 
 ### Create a VOMS proxy
 
-```VM$$  voms-proxy-init -vomses lsgrid-voms.grid.sara.nl --voms lsgrid```
+```
+VM$$  voms-proxy-init -vomses lsgrid-voms.grid.sara.nl --voms lsgrid
+```
 
 
 ## Grid certificate and GridFTP
@@ -84,14 +88,18 @@ Ubuntu:
 
 Create a VOMS proxy (see above).
 
-```VM$ globus-url-copy gsiftp://fly1.grid.sara.nl:2811/pnfs/grid.sara.nl/data/lsgrid/luuku/testfile pipo.f```
+```
+VM$ globus-url-copy gsiftp://fly1.grid.sara.nl:2811/pnfs/grid.sara.nl/data/lsgrid/luuku/testfile pipo.f
+```
 
 ## UberFTP
 
 ### CentOS
 
 CentOS has a package uberftp which can be installed with:
-```VM$sudo yum install uberftp ```
+```
+VM$sudo yum install uberftp
+ ```
 
 ### Ubuntu
 
