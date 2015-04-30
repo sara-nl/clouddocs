@@ -13,7 +13,9 @@ The following procedure was tested in Ubuntu machines. For other linux distribut
 * Install the EUGridPMA PGP key as root:
 
 ``` bash
-VM$ curl https://dist.eugridpma.info/distribution/igtf/current/GPG-KEY-EUGridPMA-RPM-3 | sudo apt-key add - ```
+VM$ curl https://dist.eugridpma.info/distribution/igtf/current/GPG-KEY-EUGridPMA-RPM-3 | sudo apt-key add - 
+
+```
 
 * Locate sources.list (*/etc/apt/sources.list*) and, as root, add the following lines in the file:
 
