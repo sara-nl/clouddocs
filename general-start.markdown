@@ -32,6 +32,7 @@ have created a virtual machine.
 
 ## Exploring the HPC Cloud User Interface
 
+After you log in, you will 
 ## Importing an appliance from the marketplace
 
 
