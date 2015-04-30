@@ -28,7 +28,7 @@ The directory /etc/grid-security/certificates/ that is created includes all the 
 In case you encounter any problems see [here](https://wiki.egi.eu/wiki/EGI_IGTF_Release) or these steps and copy the whole */etc/grid-security/certificates/* directory from the user interface machine to your VM. 
 Be aware that this directory is often updated.
 
-##Install your certificate from a single .p12 file
+## Install your certificate from a single .p12 file
 
 *** Install separate certificate and key .pem files
 
