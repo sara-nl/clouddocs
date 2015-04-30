@@ -21,8 +21,9 @@ There are two ways to access Grid Storage from your virtual machines:
 ## CUA credentials and WebDAV
 
 Use a WebDAV client and connect to *@webdav@*@.grid.sara.nl@:
-'''VM$ curl -k -f -u USER -p -L https://webdav.grid.sara.nl/pnfs/grid.sara.nl/data/VO_NAME/PATH -o LOCAL_NAME
-'''Explanation of the flags:
+```
+VM$ curl -k -f -u USER -p -L https://webdav.grid.sara.nl/pnfs/grid.sara.nl/data/VO_NAME/PATH -o LOCAL_NAME
+```Explanation of the flags:
 * **-k** do not complain about bad server certificate (HTTPS)
 * **-f** if transfer fails, return a failure code, not the HTTP document describing the failure
 * **-u user** authenticate with CUA account
@@ -38,7 +39,9 @@ You need to complete step [[Grid storage certificates]] first.
 ## with your key and certificate in separate files
 
 Use a WebDAV client and connect to *@bee34@*@.grid.sara.nl@:
-```VM$ curl --capath /etc/grid-security/certificates/ --key ~/.globus/userkey.pem --cert ~/.globus/usercert.pem -L https://bee34.grid.sara.nl/pnfs/grid.sara.nl/data/VO_NAME/PATH -o LOCAL_NAME```
+```
+VM$ curl --capath /etc/grid-security/certificates/ --key ~/.globus/userkey.pem --cert ~/.globus/usercert.pem -L https://bee34.grid.sara.nl/pnfs/grid.sara.nl/data/VO_NAME/PATH -o LOCAL_NAME
+```
 
 ## Grid certificate and VOMS
 
@@ -49,7 +52,9 @@ You need to complete step [[Grid storage certificates]] first.
 *** Install and configure VOMS proxy support
 
 Install the VOMS client software:
-```VM$ sudo apt-get install voms-clients```
+```
+VM$ sudo apt-get install voms-clients
+```
 
 Create VOMS information files:
 ``` bash
@@ -82,7 +87,9 @@ Ubuntu:
 
 Create a VOMS proxy (see above).
 
-```VM$ globus-url-copy gsiftp://fly1.grid.sara.nl:2811/pnfs/grid.sara.nl/data/lsgrid/luuku/testfile pipo.f```
+```
+VM$ globus-url-copy gsiftp://fly1.grid.sara.nl:2811/pnfs/grid.sara.nl/data/lsgrid/luuku/testfile pipo.f
+```
 
 ## UberFTP
 
