@@ -13,10 +13,11 @@ The following procedure was tested in Ubuntu machines. For other linux distribut
 * Install the EUGridPMA PGP key as root:
 ```
 VM$ curl https://dist.eugridpma.info/distribution/igtf/current/GPG-KEY-EUGridPMA-RPM-3 | sudo apt-key add - ```
-* Locate sources.list (@/etc/apt/sources.list@) and, as root, add the following lines in the file:
+* Locate sources.list (*/etc/apt/sources.list*) and, as root, add the following lines in the file:
 ```
 #### EGI Trust Anchor Distribution ####
-deb http://repository.egi.eu/sw/production/cas/1/current egi-igtf core```
+deb http://repository.egi.eu/sw/production/cas/1/current egi-igtf core
+```
 # Update and install the meta-package:
 ```
 VM$ sudo apt-get update
@@ -32,7 +33,7 @@ Be aware that this directory is often updated.
 
 *** Install separate certificate and key .pem files
 
-```bash
+``` bash
 VM$ openssl pkcs12 -in userkeycert.p12 -out ~/.globus/userkey.pem -nocerts
 VM$ openssl pkcs12 -in userkeycert.p12 -out ~/.globus/usercert.pem -clcerts -nokeys
 ```
@@ -41,7 +42,7 @@ VM$ openssl pkcs12 -in userkeycert.p12 -out ~/.globus/usercert.pem -clcerts -nok
 
 * Copy the p12 file to your VM.
 * Export the p12 file to a pem file and protect access
-```bash
+```bash bash
 VM$ openssl pkcs12 -in userkeycert.p12 -out userkeycert.pem -clcerts
 Enter Import Password: ### type your p12 password
 MAC verified OK
@@ -54,7 +55,7 @@ VM$ ls -l userkeycert.pem
 ```
 If you want to leave the password for the exported key blank, add "-keypbe none".
 
-##Install your certificate from ~/.globus/ with userkey.pem and usercert.pem
+## Install your certificate from ~/.globus/ with userkey.pem and usercert.pem
 
 # Copy the **userkey.pem** and **usercert.pem** from the **~/.globus** directory to your VM:
 ```
@@ -63,7 +64,7 @@ UI$ scp ~/.globus/usercert.pem ~/.globus/userkey.pem username@145.100.xx.xxx:
 ```
 * Login to your VM.
 * Create a **~/.globus** directory (or any other name) and move your keys inside. Check that the permissions are correct:
-```bash
+``` bash
 VM$ mkdir ~/.globus
 VM$ chmod go= ~/.globus/
 VM$ mv usercert.pem userkey.pem ~/.globus/
