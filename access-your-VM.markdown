@@ -1,4 +1,4 @@
-# Accesssing your virtual machine
+# Accessing your virtual machine
 
 ## Introduction
 
@@ -15,24 +15,24 @@ First, you need to set up your Linux machine, using the following steps. These s
 create a network filter which allows inbound connections to your virtual machines on port 3389 
 configure your virtual machine template to use this network filter  
 modify the firewall settings to allow new inbound connections to your virtual machine on port 3389, for example by adding the following line to /etc/sysconfig/iptables:
-```
+``` bash
   -A INPUT -m state --state NEW -m tcp -p tcp --dport 3389 -j ACCEPT
 ```
  reload the firewall configuration, using
-```
+``` bash
   service iptables reload
 ```
  install tigervnc-server and xrdp:
-```
+``` bash
   yum install -y tigervnc-server xrdp
 ```
  start the xrdp service and make them start at boot time:
-```
+``` bash
   chkconfig --levels 5 xrdp on
   service xrdp start
 ```
 On newer Fedora systems, use
-```
+``` bash
   systemctl enable xrdp
   systemctl start xrdp
   systemctl enable xrdp-sesman
