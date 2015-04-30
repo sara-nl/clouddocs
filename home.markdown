@@ -1,22 +1,22 @@
 # HPC Cloud documentation
 
 ## Basics
-[introduction-to-cloud](Introduction to Cloud)
+[Introduction to Cloud](introduction-to-cloud)
 
-[estimate-your-resources] (Estimate your Resources)
+[Estimate your Resources] (estimate-your-resources)
 
 [general-start](General Start)
 
-[user-interface](User Interface)
+[User Interface](user-interface)
 
-[acces-your-VM]( Access your Virtual Machine)
+[Access your Virtual Machine](access-your-VM)
 
 
 ## Advanced Topics
 
-[Windows](Windows)
+[windows](Windows)
 [backup] (Backup)
-licences
+[licences](Licences)
 
 
 [Feature table old-new](Features-old-new)
