@@ -5,7 +5,7 @@
 
 [Estimate your Resources] (estimate-your-resources)
 
-[general-start](General Start)
+[General Start](general-start)
 
 [User Interface](user-interface)
 
