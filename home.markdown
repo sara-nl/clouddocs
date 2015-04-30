@@ -14,6 +14,32 @@
 
 ## Advanced Topics
 
+
+### General
+Customize your Virtual Machine
+Virtual Machine from Scratch
+Contextualization
+Dynamic Virtual Machine Management
+Sharing OpenNebula Objects
+
+### Disk Images
+Scratch Disk Images
+
+### Networks
+Virtual Network
+Lightpaths 
+
+### Security
+security_groups
+
+### Inside the VM
+MySQL server
+Grid Storage
+Share Data between Virtual Machines
+Pilot Jobs
+
+
+
 [windows](Windows)
 
 [backup] (Backup)
