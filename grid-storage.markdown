@@ -33,7 +33,7 @@ Use a WebDAV client and connect to **webdav**.grid.sara.nl:
 
 ## Grid certificate and WebDAV
 
-You need to complete step [[Grid storage certificates]] first.
+You need to complete step [Grid storage certificates](grid-storage-certificates) first.
 
 ## with your key and certificate in separate files
 
