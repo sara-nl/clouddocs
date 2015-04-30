@@ -15,8 +15,12 @@
 ## Advanced Topics
 
 [windows](Windows)
+
 [backup] (Backup)
+
 [licences](Licences)
+
+[Pilot Jobs](pilot)
 
 
 [Feature table old-new](Features-old-new)
