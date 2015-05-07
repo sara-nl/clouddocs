@@ -12,7 +12,19 @@ Therefore, in order to allow proper network usage, **you must personalise every 
 
 ```
 TODOcument: 
-* How to edit security groups in nics in templates
-* How to attach/dettach nics on-the-fly to running VMs
-* Compile a paradigmatic example: have a VM with all close except ports 53, 22, 80 and 443
+1. How to edit security groups in nics in templates
+2. How to attach/dettach nics on-the-fly to running VMs
+3. Compile a paradigmatic example: have a VM with all close except ports 53, 22, 80 and 443
 ```
+
+## `Security Group`s in `nic`s in `Template`s
+```
+TODOcument full section
+
+2015.05.07 - It **doesn't** work:
+* If you only add Security Group 103 to a nic (which should only allow port 22 to be reached), then you cannot SSH to that port!
+* If you only add the Security Groups 103 and 0 to a nic (allowing por 22 in/out and all out), then you can ALSO reach port 80!
+* If you only add Security Group 100 to a nic (which should only allow port 22 to be reached on virtual network 0), then you can ALSO reach port 80!
+```
+
+In your `Template` you can edit the `Network` section (you can select the `Template` you want to edit and then click on `Update`) and add/delete/modify `nic`s for that `Template`. For each `nic` on the left column (under the `+ Add another nic` button) you must choose a `Network` from the right, and you can also edit the `Security Group`s you want attached to that `nic` in the `Advanced Options` part of the `Network`.
