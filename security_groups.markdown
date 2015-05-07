@@ -28,3 +28,12 @@ TODOcument full section
 ```
 
 In your `Template` you can edit the `Network` section (you can select the `Template` you want to edit and then click on `Update`) and add/delete/modify `nic`s for that `Template`. For each `nic` on the left column (under the `+ Add another nic` button) you must choose a `Network` from the right, and you can also edit the `Security Group`s you want attached to that `nic` in the `Advanced Options` part of the `Network`.
+
+## `Security Group`s in hot-plugging `nic`s to VMs
+```
+TODOcument full section
+
+2015.05.07 - It **doesn't** work:
+* For starters, contextualisation doesn't work: the newly attached nic gets recognised by the OS, but it doesn't get an IP. Even if you run `/etc/init.d/vmcontext start`
+* If you start a VM without any nic attached and then you hot-plug one nic with only Security Group 103 attached, then...
+```
