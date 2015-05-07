@@ -34,6 +34,6 @@ In your `Template` you can edit the `Network` section (you can select the `Templ
 TODOcument full section
 
 2015.05.07 - It **doesn't** work:
-* For starters, contextualisation doesn't work: the newly attached nic gets recognised by the OS, but it doesn't get an IP. Even if you run `/etc/init.d/vmcontext start`
+* For starters, contextualisation doesn't work: the newly attached nic gets recognised by the OS, but it doesn't get an IP. Even if you run `/etc/init.d/vmcontext start`. In fact, the contextualisation disk doesn't get any new values for the newly attached nic.
 * If you start a VM without any nic attached and then you hot-plug one nic with only Security Group 103 attached, then...
 ```
