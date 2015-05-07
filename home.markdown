@@ -30,7 +30,7 @@ Virtual Network
 Lightpaths 
 
 ### Security
-security_groups
+[(Network) Security Groups](security_groups)
 
 
 ### Inside the VM
