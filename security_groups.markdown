@@ -6,6 +6,13 @@ IMPORTANT: my first test on 2015.05.29 indicates the filters DO NOT restrict as 
 
 `Security Group`s work as a means to protect your VM from the outside. They define what kind of network traffic can go in or out your VM through specific ports (or port ranges) through each network interface (`nic`) of a VM. You can consider `Security Group`s as a **basic firewall**.
 
-Every `Virtual Network` can have `Security Group`s attached. That way, when you attach a `nic` to a VM, the `Virtual Network` that you choose for that `nic` will bring those default `Security Group`s along with her. As a user, you can **create and modify your own `Security Group`s** (and also use those that others may have made visible for you) the way it suits your needs, but you **cannot modify `Virtual Network`s**. Therefore, the `Virtual Network`s that we set up for you have **NO** `Security Group`s attached. This also means that **no traffic can reach or leave your VMs by default**.
+Every `Virtual Network` can have `Security Group`s attached. That way, when you attach a `nic` to a VM, the `Virtual Network` that you choose for that `nic` will bring those default `Security Group`s along with her. As a user, you can **create and modify your own `Security Group`s** (and also use those that others may have made visible for you) the way it suits your needs, but you **cannot modify `Virtual Network`s**. Therefore, the `Virtual Network`s that we set up for you have **NO** `Security Group`s attached, which also means that **no traffic can reach or leave your VMs by default**.
 
 Therefore, in order to allow proper network usage, **you must personalise every `nic`** by attaching the `Security Group`s that you need.
+
+```
+TODOcument: 
+* How to edit security groups in nics in templates
+* How to attach/dettach nics on-the-fly to running VMs
+* Compile a paradigmatic example: have a VM with all close except ports 53, 22, 80 and 443
+```
