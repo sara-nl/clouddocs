@@ -24,7 +24,7 @@ In your `Template` you can edit the `Network` section (you can select the `Templ
 
 > **NOTE:** It is **NOT** possible to contextualise extra hot-plugged `nic`s, because the VM `context` (the virtual CD-ROM drive containing the contextualisation information) will **NOT** get updated to include extra information for the extra attached `nic`s.
 
-## Common security groups example
+## Typical `Security Group`s example
 
 >TODOcument : Compile a paradigmatic example for a VM with all ports closed except 53, 22, 80 and 443
 
