@@ -32,3 +32,29 @@ In your `Template` you can edit the `Network` section (you can select the `Templ
 >2015.05.07 - It **doesn't** work:
 >* For starters, contextualisation doesn't work: the newly attached nic gets recognised by the OS, but it doesn't get an IP. Even if you run `/etc/init.d/vmcontext start`. In fact, the contextualisation disk doesn't get any new values for the newly attached nic.
 >* If you start a VM without any nic attached and then you hot-plug one nic with only Security Group 103 attached, then...
+
+# Appendix
+>TODO delete these comments
+
+# Network contextualisation reference:
+
+You can mount the contextualisation file with:
+```
+mount -t iso9660 -L CONTEXT -o ro /mnt
+```
+
+```
+$ cat /mnt/context.sh
+...
+ETH0_IP='10.100.0.5'
+ETH0_MAC='...'
+ETH0_MASK='255.255.224.0'
+ETH0_NETWORK='10.100.0.0'
+ETH1_DNS='8.8.8.8'
+ETH1_GATEWAY='145.100.56.1'
+ETH1_IP='145.100.59.41'
+ETH1_MAC='...'
+ETH1_MASK='255.255.252.0'
+ETH1_NETWORK='145.100.59.0'
+...
+```
