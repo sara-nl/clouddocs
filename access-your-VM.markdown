@@ -6,6 +6,18 @@ You have various options to access your virtual machine. To do things on your vi
 
 ## Running commands on your virtual machine
 
+### Built-in VNC client
+
+### Secure Shell (SSH)
+
+![puttygen_default](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/d7f608312a9947b9d4dbe5f7f89aa752/puttygen_default.png)
+
+![puttygen_random](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/e620c352d8d92772119c456ccb97a617/puttygen_random.png)
+
+![puttygen_done](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/c734039e680a3dcfa385fc11fbd58c94/puttygen_done.png)
+
+
+
 ### Getting a virtual desktop on a Linux machine
 
 With Xrdp you can remotely log in on a virtual machine, giving you a full virtual desktop. Moreover, you can close the RDP window and pick up the session later, allowing you to continue to work on a graphical desktop while switching off your own work computer.
@@ -40,4 +52,5 @@ On newer Fedora systems, use
 ```
  You can now log in on the virtual machine using RDP. From Windows or Mac OSX, use "Remote Desktop Connection", sometimes supplied as an additional package to Microsoft Office. On a Linux desktop, use Rdesktop. **Important**: make sure to set the display to "millions of colors" (Mac OsX) or "high color (16-bits)" (Windows), because "thousands of colors" (Mac OsX) or "high color (15-bits)" (Windows) will give you a non-descriptive error.
  
+
 
