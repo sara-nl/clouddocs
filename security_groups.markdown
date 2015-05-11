@@ -8,11 +8,6 @@ Every `Virtual Network` can have `Security Group`s attached. That way, when you 
 
 Therefore, in order to allow proper network usage, **you must personalise every `nic`** by attaching the `Security Group`s that you need.
 
->TODOcument: 
->1. How to edit security groups in nics in templates
->2. How to attach/dettach nics on-the-fly to running VMs
->3. Compile a paradigmatic example: have a VM with all close except ports 53, 22, 80 and 443
-
 ## `Security Group`s in `nic`s in `Template`s
 
 > TODOcument full section
@@ -27,11 +22,11 @@ In your `Template` you can edit the `Network` section (you can select the `Templ
 
 ## `Security Group`s in hot-plugging `nic`s to VMs
 
->TODOcument full section
+> **NOTE:** It is **NOT** possible to contextualise extra hot-plugged `nic`s, because the VM `context` (the virtual CD-ROM drive containing the contextualisation information) will **NOT** get updated to include extra information for the extra attached `nic`s.
 
->2015.05.07 - It **doesn't** work:
->* For starters, contextualisation doesn't work: the newly attached nic gets recognised by the OS, but it doesn't get an IP. Even if you run `/etc/init.d/vmcontext start`. In fact, the contextualisation disk doesn't get any new values for the newly attached nic.
->* If you start a VM without any nic attached and then you hot-plug one nic with only Security Group 103 attached, then...
+## Common security groups example
+
+>TODOcument : Compile a paradigmatic example for a VM with all ports closed except 53, 22, 80 and 443
 
 # Appendix
 >TODO delete these comments
