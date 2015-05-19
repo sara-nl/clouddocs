@@ -16,7 +16,7 @@ Virtual Machine from Scratch
 Contextualization  
 Dynamic Virtual Machine Management  
 Sharing OpenNebula Objects  
-[windows](Windows)  
+[Windows](Windows)  
 [backup] (Backup)  
 [licences](Licences)  
 
