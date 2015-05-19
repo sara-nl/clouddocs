@@ -18,4 +18,4 @@ Once you have included your `image`s (along with the rest of the characteristics
 #TODOcument. Things like elasticity, self-service...
 
 # Resource sharing
-#TODOcument. Mention compute nodes and storage nodes, Ceph, and a best-effort basis.
+#TODOcument. Mention compute nodes and storage nodes, Ceph, and a best-effort basis. Also FAIR-SHARE
