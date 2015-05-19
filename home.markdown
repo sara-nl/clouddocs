@@ -1,7 +1,7 @@
 # HPC Cloud documentation
 
 ## Basics
-[Introduction to Cloud](introduction-to-cloud)  
+[Introduction to HPC Cloud](introduction-to-hpc-cloud)  
 [Estimate your Resources] (estimate-your-resources)  
 [General Start](general-start)  
 [User Interface](user-interface)  
