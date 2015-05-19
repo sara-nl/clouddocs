@@ -15,7 +15,7 @@ In particular, (storage) drives are called `image`s in OpenNebula. You can creat
 Once you have included your `image`s (along with the rest of the characteristics) into a `template`, you can _instantiate_ a VM out of the template and start working with it normally. You can check the rest of this documentation to learn more.
 
 ## Cloud characteristics
-#TODOcument
+#TODOcument. Things like elasticity, self-service...
 
 # Resource sharing
-#TODOcument
+#TODOcument. Mention compute nodes and storage nodes, Ceph, and a best-effort basis.
