@@ -38,6 +38,7 @@ MySQL server
 [Grid Storage](grid-storage)  
 Share Data between Virtual Machines  
 [Pilot Jobs](pilot-jobs)  
+[NFS](NFS)
 
 # Cloud Transition
 [Feature table old-new](Features-old-new)
