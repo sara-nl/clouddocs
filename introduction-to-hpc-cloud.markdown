@@ -1,3 +1,5 @@
+# Introduction
+
 SURFsara offers the HPC Cloud computing facility as a **IaaS** platform. 
 
 IaaS (Infrastructure as a Service) means that you get your own (virtual) environment to provision your own processing, storage and networking resources, where you can deploy, configure and run arbitrary software (including your operating system of choice).
@@ -11,3 +13,9 @@ A peculiarity of VMs is that they are precisely that, virtual, which means you c
 In particular, (storage) drives are called `image`s in OpenNebula. You can create them in OpenNebula itself, or you can also create them somewhere else and then upload them to the HPC Cloud. And you have a lot of storage space available because our underlying infrastructure is very big.
 
 Once you have included your `image`s (along with the rest of the characteristics) into a `template`, you can _instantiate_ a VM out of the template and start working with it normally. You can check the rest of this documentation to learn more.
+
+## Cloud characteristics
+#TODOcument
+
+# Resource sharing
+#TODOcument
