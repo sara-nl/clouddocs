@@ -22,7 +22,7 @@ Sharing OpenNebula Objects
 
 ### Disk Images
 Scratch Disk Images  
-Download an image  
+[Download an image](image_download)
 Create an Image on your own Machine  
 
 ### Networks
