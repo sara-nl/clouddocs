@@ -55,6 +55,8 @@ In order for a VM to have ports open on a `Network`, it must have a `nic` on tha
 
 In your `Template` you can edit the `Network` section (you can select the `Template` you want to edit and then click on _Update_) and add/delete/modify `nic`s for that `Template`. For each `nic` on the left column (under the _+ Add another nic_ button) you must choose a `Network` from the right, and you can also edit the `Security Group`s you want attached to that `nic` in the _Advanced Options_ part of the `Network`.
 
+![security_groups_on_template_screenshot](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/raw/master/images/security_groups_on_template.png)
+
 ## `Security Group`s in hot-plugging `nic`s to VMs
 
 > **NOTE:** It is **NOT** possible to contextualise extra hot-plugged `nic`s, because the VM `context` (the virtual CD-ROM drive containing the contextualisation information) will **NOT** get updated to include extra information for the extra attached `nic`s.
