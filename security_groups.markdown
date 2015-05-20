@@ -8,7 +8,7 @@ Every `Virtual Network` can have `Security Group`s attached. That way, when you 
 
 Therefore, in order to allow proper network usage, **you must personalise every `nic`** by attaching the `Security Group`s that you need.
 
-## `Security Group`s in `nic`s in `Template`s
+## `Security Group`s on `nic`s in `Template`s
 
 > TODOcument full section
 
