@@ -2,6 +2,8 @@
 
 >IMPORTANT: my first test on 2015.05.29 indicates the filters DO NOT restrict as I would think!
 
+>NOTE: All instructions and screenshots on this page are explained within the _User_ `View` (more on `View`s [here](user-interface))
+
 `Security Group`s work as a means to protect your VM from the outside. They define what kind of network traffic can go in and/or out of your VM through specific ports (or port ranges) through each network interface (`nic`) of a VM. You can consider `Security Group`s as a **basic firewall**.
 
 Every `Virtual Network` can have `Security Group`s attached. That way, when you attach a `nic` to a VM, the `Virtual Network` for that `nic` will bring those default `Security Group`s along with it. As a user, you can **create and modify your own `Security Group`s** (and also use those that others may have made visible to you) the way it suits your needs, but you **cannot modify `Virtual Network`s**. Therefore, the `Virtual Network`s that we set up for you have **NO** `Security Group`s attached, which also means that **no traffic can reach or leave your VMs by default**.
@@ -59,7 +61,11 @@ In your `Template` you can edit the `Network` section (you can select the `Templ
 
 ## `Security Group`s in hot-plugging `nic`s to VMs
 
-> **NOTE:** It is **NOT** possible to contextualise extra hot-plugged `nic`s, because the VM `context` (the virtual CD-ROM drive containing the contextualisation information) will **NOT** get updated to include extra information for the extra attached `nic`s.
+You can add new `nic`s to a running VM on the fly. If the operating system within the VM supports this feature, it will detect a new network adapter and you can configure it normally. This newly attached `nic` can also have specific `Security Group`s attached.
+
+> **NOTE:** It is **NOT** possible to contextualise extra hot-plugged `nic`s, because the VM `context` (the virtual CD-ROM drive containing the contextualisation information) will **NOT** get updated to include extra information for the extra attached `nic`s. Therefore, even if the operating system within the VM is able to recognise the new network adapter, it will not be properly configured (it will not have network access) unless you do so by hand.
+
+![security_groups_on_nic_screenshot](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/raw/master/images/security_groups_on_nic.png)
 
 ## Typical `Security Group`s example
 
