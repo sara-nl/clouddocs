@@ -2,17 +2,42 @@
 
 >IMPORTANT: my first test on 2015.05.29 indicates the filters DO NOT restrict as I would think!
 
-`Security Group`s work as a means to protect your VM from the outside. They define what kind of network traffic can go in or out your VM through specific ports (or port ranges) through each network interface (`nic`) of a VM. You can consider `Security Group`s as a **basic firewall**.
+`Security Group`s work as a means to protect your VM from the outside. They define what kind of network traffic can go in and/or out of your VM through specific ports (or port ranges) through each network interface (`nic`) of a VM. You can consider `Security Group`s as a **basic firewall**.
 
-Every `Virtual Network` can have `Security Group`s attached. That way, when you attach a `nic` to a VM, the `Virtual Network` that you choose for that `nic` will bring those default `Security Group`s along with her. As a user, you can **create and modify your own `Security Group`s** (and also use those that others may have made visible for you) the way it suits your needs, but you **cannot modify `Virtual Network`s**. Therefore, the `Virtual Network`s that we set up for you have **NO** `Security Group`s attached, which also means that **no traffic can reach or leave your VMs by default**.
+Every `Virtual Network` can have `Security Group`s attached. That way, when you attach a `nic` to a VM, the `Virtual Network` for that `nic` will bring those default `Security Group`s along with it. As a user, you can **create and modify your own `Security Group`s** (and also use those that others may have made visible to you) the way it suits your needs, but you **cannot modify `Virtual Network`s**. Therefore, the `Virtual Network`s that we set up for you have **NO** `Security Group`s attached, which also means that **no traffic can reach or leave your VMs by default**.
 
 Therefore, in order to allow proper network usage, **you must personalise every `nic`** by attaching the `Security Group`s that you need.
 
 ## Defining `Security Group`s
 
-To view the `Security Group`s you have available, click on the *Infrastructure* tab on the left menu, and then on the `Security Group`s item under that. 
+To view the `Security Group`s you have available, click on the _Infrastructure_ tab on the left menu, and then on the `Security Group`s item under that. 
 
 ![security_groups_screenshot](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/raw/master/images/security_groups.png)
+
+The `Security Group`s on that list are only those that you have the right to see. You can think of:
+* `Security Group`s that we have defined for you to use
+* `Security Group`s that someone from your project has shared with the whole project
+* `Security Group`s that someone from a different project has shared with all the HPC Cloud users
+* `Security Group`s that you have created yourself
+
+> **NOTE** that you can see, for every `Security Group`, the option to _Update_ (or edit) it, and you can even click on it and start changing things around. However, don't be deceived: you are likely **not** to be able to actually save the changes on all of them. For example, you cannot edit the `Security Group`s we make available by default to everybody.
+
+> When you click the green _Update_ button to try to submit your changes, your rights be checked. If you are trying to edit a `Security Group` that you don't have the right to edit, a red error message will pop up to notify you.
+
+### Viewing `Security Group`s
+
+As in other tables within the OpenNebula user interface, clicking on a row will display detailed information about that row. In this case, when you click on a `Security Group`, you can see some general sections (_Information_ with a numeric _id_ and the _name_; _Permissions_; _Ownership_; and some _Attributes_ space for key-value pairs) and the relevant _Rules_ section. **The `Rule`s** are the actual contents of the `Security Group`** and they define what network traffic is allowed to go through. The following example shows a typical example which opens port 22, with the intention of allowing SSH connections to a VM.
+
+![security_group_screenshot_view](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/raw/master/images/security_group_ssh.png)
+
+The screenshot shows that the `Rule`s of `Security Group` with id `105` and named `any_ssh` are the following:
+
+| Protocol | Type | Port Range | Network | ICMP Type |
+| -------- | ---- | ---------- | ------- | --------- |
+| TCP      | Inbound | 22      | Any     |           |
+| TCP      | Outbound | 22     | Any     |           |
+
+This tells us that the `Security Group` is composed of only 2 `Rule`s. The first `Rule` on the table states that _inbound_ network traffic over TCP destined to port 22 on any network, must be allowed in. The second `Rule` states that _outbound_ traffic over TCP from port 22 on any network should be allowed out.
 
 ## `Security Group`s on `nic`s in `Template`s
 
