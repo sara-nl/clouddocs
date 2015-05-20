@@ -24,13 +24,13 @@ The `Security Group`s on that list are only those that you have the right to see
 
 > When you click the green _Update_ button to try to submit your changes, your rights be checked. If you are trying to edit a `Security Group` that you don't have the right to edit, a red error message will pop up to notify you.
 
-### Viewing `Security Group`s
+### Viewing/Understanding `Security Group`s
 
-As in other tables within the OpenNebula user interface, clicking on a row will display detailed information about that row. In this case, when you click on a `Security Group`, you can see some general sections (_Information_ with a numeric _id_ and the _name_; _Permissions_; _Ownership_; and some _Attributes_ space for key-value pairs) and the relevant _Rules_ section. **The `Rule`s** are the actual contents of the `Security Group`** and they define what network traffic is allowed to go through. The following example shows a typical example which opens port 22, with the intention of allowing SSH connections to a VM.
+As in other tables within the OpenNebula user interface, clicking on a row will display detailed information about that row. In this case, when you click on a `Security Group`, you can see some general sections (_Information_ with a numeric _id_ and the _name_; _Permissions_; _Ownership_; and some _Attributes_ space for key-value pairs) and the relevant _Rules_ section. **The `Rule`s** are the actual contents of the `Security Group`** and they define what network traffic is allowed to go through. Because `Security Group`s are though of as a default-closed situation, so they can only be used to open things up (i.e.: you cannot have a `Security Group` to say "close this port"). The following example shows a typical example which opens port 22, with the intention of allowing SSH connections to a VM.
 
 ![security_group_screenshot_view](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/raw/master/images/security_group_ssh.png)
 
-The screenshot shows that the `Rule`s of `Security Group` with id `105` and named `any_ssh` are the following:
+Looking at the screenshot we see that `Security Group` with id `105`, named `any_ssh`, is composed of the following `Rule`s:
 
 | Protocol | Type | Port Range | Network | ICMP Type |
 | -------- | ---- | ---------- | ------- | --------- |
@@ -39,17 +39,21 @@ The screenshot shows that the `Rule`s of `Security Group` with id `105` and name
 
 This tells us that the `Security Group` is composed of only 2 `Rule`s. The first `Rule` on the table states that _inbound_ network traffic over TCP destined to port 22 on any network, must be allowed in. The second `Rule` states that _outbound_ traffic over TCP from port 22 on any network should be allowed out.
 
-## `Security Group`s on `nic`s in `Template`s
+In order to customise the ports you want to open, you can:
+* set multiple ports in the _Range_ of a `Rule` of a `Security Group` (only if you have the rights to edit that particular `Security Group`)
+* set multiple `Rule`s on the same `Security Group` (only if you have the rights to edit that particular `Security Group`)
+* combine multiple `Security Group`s on the same `nic`
 
-> TODOcument full section
+## `Security Group`s on `nic`s in `Template`s
 
 >2015.05.07 - It **doesn't** work:
 > * If you only add Security Group 103 to a nic (which should only allow port 22 to be reached), then you cannot SSH to that port!
 > * If you only add the Security Groups 103 and 0 to a nic (allowing por 22 in/out and all out), then you can ALSO reach port 80!
 > * If you only add Security Group 100 to a nic (which should only allow port 22 to be reached on virtual network 0), then you can ALSO reach port 80!
 
+In order for a VM to have ports open on a `Network`, it must have a `nic` on that `Network` with the appropriate `Security Group`s. One place to define `nic`s for a VM is in its `Template`.
 
-In your `Template` you can edit the `Network` section (you can select the `Template` you want to edit and then click on `Update`) and add/delete/modify `nic`s for that `Template`. For each `nic` on the left column (under the `+ Add another nic` button) you must choose a `Network` from the right, and you can also edit the `Security Group`s you want attached to that `nic` in the `Advanced Options` part of the `Network`.
+In your `Template` you can edit the `Network` section (you can select the `Template` you want to edit and then click on _Update_) and add/delete/modify `nic`s for that `Template`. For each `nic` on the left column (under the _+ Add another nic_ button) you must choose a `Network` from the right, and you can also edit the `Security Group`s you want attached to that `nic` in the _Advanced Options_ part of the `Network`.
 
 ## `Security Group`s in hot-plugging `nic`s to VMs
 
