@@ -12,7 +12,7 @@ Therefore, in order to allow proper network usage, **you must personalise every 
 
 To view the `Security Group`s you have available, click on the *Infrastructure* tab on the left menu, and then on the `Security Group`s item under that. 
 
-![security_groups_screenshot](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment.wiki/master/images/security_groups.png)
+![security_groups_screenshot](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/raw/master/images/security_groups.png)
 
 ## `Security Group`s on `nic`s in `Template`s
 
