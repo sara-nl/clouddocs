@@ -17,7 +17,7 @@ Edit the configuration files:
 Domain = server.world
 
 [root]# vi /etc/exports
-# add a line for each export, replace 10.X.Y.0/255.255.224.0 with your network address and mask
+# add a line for each export, replace 10.X.Y.0/255.255.224.0 with your project's private network address and mask
 /export-nfs  10.X.Y.0/255.255.224.0(rw,no_root_squash)
 ```
 
