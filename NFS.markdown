@@ -25,7 +25,7 @@ Start the daemon:
 ```sh
 [root]# systemctl enable rpcbind nfs-server nfs-lock nfs-idmap
 [root]# systemctl restart rpcbind
-[root]# systemctl start nfs-server nfs-lock nfs-idmap
+[root]# systemctl start nfs-server
 ```
 
 See also: http://www.unixmen.com/setting-nfs-server-client-centos-7/
