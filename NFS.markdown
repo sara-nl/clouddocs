@@ -5,6 +5,11 @@ Install the NFS SW:
 [root]# yum install nfs-utils
 ```
 
+Create the root (or multile roots) to export:
+```sh
+[root]# mkdir /export-nfs
+```
+
 Edit the configuration files:
 ```sh
 [root]# vi /etc/idmapd.conf
@@ -13,7 +18,7 @@ Domain = server.world
 
 [root]# vi /etc/exports
 # add a line for each export, replace 10.X.Y.0/255.255.224.0 with your network address and mask
-/share/  10.X.Y.0/255.255.224.0(rw,no_root_squash)
+/export-nfs  10.X.Y.0/255.255.224.0(rw,no_root_squash)
 ```
 
 Start the daemon:
