@@ -12,8 +12,8 @@ Edit the configuration files:
 Domain = server.world
 
 [root]# vi /etc/exports
-# write settings for NFS exports
-/home 10.0.0.0/24(rw,no_root_squash)
+# add a line for each export, replace 10.X.Y.0/19 with your network
+/share/  10.X.Y.0/19(rw,sync,no_root_squash,no_all_squash)
 ```
 
 Start the daemon:
