@@ -17,7 +17,7 @@ trusted (active)
   [...]
 ```
 
-### NFS
+### NFS source
 
 Install the NFS SW:
 ```sh
@@ -42,9 +42,43 @@ Domain = server.world
 
 Start the daemon:
 ```sh
-[root]# systemctl enable rpcbind nfs-server nfs-lock nfs-idmap
+[root]# systemctl enable rpcbind nfs-server
 [root]# systemctl restart rpcbind
 [root]# systemctl start nfs-server
+```
+
+### NFC clients
+
+Optionally open the firewall.
+
+Install the NFS package (see above).
+
+Create a mount point:
+```sh
+mkdir /mount-nfs
+```
+
+Mount the NFS volume manually:
+```sh
+# REPLACE 10.X.Y.S with the server's address:
+mount -t nfs 10.X.Y.S:/export-nfs /mount-nfs/
+```
+
+Check the mount:
+```sh
+mount
+[...]
+10.X.Y.S:/export-nfs on /mount-nfs type nfs4 (rw,relatime,vers=4.0,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=10.X.Y.C,local_lock=none,addr=10.X.Y.S)
+
+```
+
+Test by writing to a file in the client's `/mount-nfs` and reading on the server's `/export-nfs` and vice versa.
+
+Make permanent over reboots:
+```sh
+vi /etc/fstab
+# add a line and REPLACE 10.X.Y.S with the server's address:
+10.X.Y.S:/export-nfs	/mount-nfs nfs4 defaults  0 0
 ```
 
 See also: http://www.unixmen.com/setting-nfs-server-client-centos-7/
