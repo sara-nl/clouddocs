@@ -7,10 +7,9 @@ Open up the firewall on the project-private network (assumed to be on eth1 !)
 [root]# firewall-cmd --permanent --zone=trusted --change-interface=eth1
 # OR:
 [root]# firewall-cmd --permanent --zone=trusted --add-source=10.0.0.0/8
-[root]# systemctl stop firewalld
-[root]# systemctl start firewalld
+[root]# systemctl restart firewalld
 ```
-_Note:_ the `systemctl stop/start` is needed, other reload or reboots do not pick up the change(!)
+_Note:_ the `systemctl restart/stop/start` is needed, other reload or reboots do not pick up the change(!)
 Check with:
 ```sh
 [root]# firewall-cmd --zone=public --list-all
