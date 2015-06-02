@@ -2,27 +2,17 @@
 
 ### Firewall
 
-Open up the firewall on the project-private network (assumed to be on eth1 !)
+Open up the firewall on the project-private network:
 ```sh
-[root]# firewall-cmd --permanent --zone=trusted --change-interface=eth1
-# OR:
 [root]# firewall-cmd --permanent --zone=trusted --add-source=10.0.0.0/8
-[root]# systemctl restart firewalld
+[root]# firewall-cmd --reload
 ```
-_Note:_ the `systemctl restart/stop/start` is needed, other reload or reboots do not pick up the change(!)
 Check with:
 ```sh
-[root]# firewall-cmd --zone=public --list-all
-public (default, active)
-  interfaces: eth0
-  sources: 
-  services: dhcpv6-client ssh
-  [...]
-
 [root]#  firewall-cmd --zone=trusted --list-all
 trusted (active)
-  interfaces: eth1
-  sources: 
+  interfaces: 
+  sources: 10.0.0.0/8
   services:
   [...]
 ```
