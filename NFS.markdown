@@ -1,5 +1,32 @@
 ## NFS server on CentOS 7
 
+### Firewall
+
+Open up the firewallon the project-private network (assumed to be on eth1 !)
+```sh
+[root]# firewall-cmd --permanent --zone=trusted --change-interface=eth1
+[root]# systemctl stop firewalld
+[root]# systemctl start firewalld
+```
+_Note:_ the `systemctl stop/start` is needed, other reload or reboots do not pick up the change(!)
+Check with:
+```sh
+[root]# firewall-cmd --zone=public --list-all
+public (default, active)
+  interfaces: eth0
+  sources: 
+  services: dhcpv6-client ssh
+  _[...]_
+[root]#  firewall-cmd --zone=trusted --list-all
+trusted (active)
+  interfaces: eth1
+  sources: 
+  services:
+  [...]
+```
+
+### NFS
+
 Install the NFS SW:
 ```sh
 [root]# yum install nfs-utils
