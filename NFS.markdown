@@ -5,6 +5,8 @@
 Open up the firewall on the project-private network (assumed to be on eth1 !)
 ```sh
 [root]# firewall-cmd --permanent --zone=trusted --change-interface=eth1
+# OR:
+[root]# firewall-cmd --permanent --zone=trusted --add-source=10.0.0.0/8
 [root]# systemctl stop firewalld
 [root]# systemctl start firewalld
 ```
