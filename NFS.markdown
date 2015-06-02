@@ -2,7 +2,7 @@
 
 ### Firewall
 
-Open up the firewallon the project-private network (assumed to be on eth1 !)
+Open up the firewall on the project-private network (assumed to be on eth1 !)
 ```sh
 [root]# firewall-cmd --permanent --zone=trusted --change-interface=eth1
 [root]# systemctl stop firewalld
@@ -16,7 +16,8 @@ public (default, active)
   interfaces: eth0
   sources: 
   services: dhcpv6-client ssh
-  _[...]_
+  [...]
+
 [root]#  firewall-cmd --zone=trusted --list-all
 trusted (active)
   interfaces: eth1
