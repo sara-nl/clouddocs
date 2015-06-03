@@ -1,5 +1,9 @@
 # HPC Cloud documentation
 
+## Beta testing
+
+[Beta-test projects and users](Beta-testers)
+
 ## Basics
 [Introduction to HPC Cloud](introduction-to-hpc-cloud)  
 [Estimate your resources] (estimate-your-resources)  
