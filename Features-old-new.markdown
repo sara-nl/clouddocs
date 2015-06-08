@@ -2,8 +2,8 @@
 
 | Feature | Old | New | Issue | Comment | Beta blocker? | 
 | ------- | --- | --- | ----- | ------- | ------------- |
-| Wizard | yes | no | - (works) | Use marketplace. Do we have our own marketplace? Can we upload/download/update apps (images)? | Y |
-| SARA marketplace | (~Wizard) | possible | ? | technically possible, needs maintenance | N |
+| Wizard | yes | no | #8  (works) | Use marketplace. Do we have our own marketplace? Can we upload/download/update apps (images)? | Y |
+| SARA marketplace | (~Wizard) | possible | #8  | technically possible, needs maintenance | N |
 | VirDir storage | yes | no | #5 | Run your own NFS server | Y |
 | VirDir/Backup  | yes | no | #18  | (a) Roll your own, (b) new feature? | Y |
 | HTTP proxy | on private net | ? | ? | Squid: internet access for slaves with only private network | N |
