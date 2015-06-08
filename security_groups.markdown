@@ -24,7 +24,7 @@ The `Security Group`s on that list are only those that you have the right to see
 
 > **NOTE** that you can see, for every `Security Group`, the option to _Update_ (or edit) it, and you can even click on it and start changing things around. However, don't be deceived: you are likely **not** to be able to actually save the changes on all of them. For example, you cannot edit the `Security Group`s we make available by default to everybody.
 
-> When you click the green _Update_ button to try to submit your changes, your rights be checked. If you are trying to edit a `Security Group` that you don't have the right to edit, a red error message will pop up to notify you.
+> When you click the green _Update_ button to try to submit your changes, your rights will be checked. If you are trying to edit a `Security Group` that you don't have the right to edit, a red error message will pop up to notify you.
 
 ### Viewing/Understanding `Security Group`s
 
