@@ -1,10 +1,5 @@
 # HPC Cloud documentation
 
-## Beta testing
-
-[Beta-test projects and users](Beta-testers)  
-[Beta-test feedback and bugs](Beta-feedback)
-
 ## Basics
 [Introduction to HPC Cloud](introduction-to-hpc-cloud)  
 [Estimate your resources] (estimate-your-resources)  
@@ -21,9 +16,9 @@ Virtual Machine from Scratch
 Contextualization  
 Dynamic Virtual Machine Management  
 Sharing OpenNebula Objects  
-[Windows](Windows)  
-[backup] (Backup)  
-[licences](Licences)  
+Windows  
+Backup  
+Licences  
 
 ### Disk Images
 Scratch Disk Images  
@@ -42,8 +37,6 @@ Lightpaths
 MySQL server  
 [Grid Storage](grid-storage)  
 Share Data between Virtual Machines  
-[Pilot Jobs](pilot-jobs)  
+Pilot Jobs  
 [NFS](NFS)
 
-# Cloud Transition
-[Feature table old-new](Features-old-new)
