@@ -2,7 +2,8 @@
 
 ## Beta testing
 
-[Beta-test projects and users](Beta-testers)
+[Beta-test projects and users](Beta-testers)  
+[Beta-test feedback and bugs](Beta-feedback)
 
 ## Basics
 [Introduction to HPC Cloud](introduction-to-hpc-cloud)  
