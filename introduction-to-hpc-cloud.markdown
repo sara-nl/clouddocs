@@ -27,4 +27,6 @@ The HPC Cloud basically makes two kinds of hardware available to you: a) compute
 
 Within the scientific community, we aim at helping as many people's research projects as possible. The HPC Cloud offers you a lot of flexibility, and that means you can do a lot of things you usually cannot do in other traditional HPC environments: you can complete long-running computations, you can book large RAM memory spaces, you can dynamically link working processes, you can store a lot of data... But we demand that you do so responsibly. Our service is purposefully run as a **best-effort basis**, so we strive to deliver the best service possible we can at each moment to satisfy as many users as possible. When you claim some resources (say, some CPUs and some disk space), then they are assigned to you, and only to you. Please, make sure you make the most out of them, because that means that other users are kept away from those resources until you free them. Therefore, please, do release them once you are done with them; you will be facilitating someone else's research by doing so.
 
-## TODOcument: specs (what nodes we have, what are their characteristics...)
+> **NOTE:** 
+>
+> If you would like to know more details about the resources that are available, you can have a look at the [available resources page](resources-available).
