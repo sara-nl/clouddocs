@@ -44,3 +44,5 @@ Share Data between Virtual Machines
 Pilot Jobs  
 [NFS](NFS)
 
+## Service implementation
+[Available resources](resources-available)
