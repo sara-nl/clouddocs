@@ -1,5 +1,9 @@
 # HPC Cloud documentation
 
+> **NOTE:**
+>
+> This _wiki_ collects SURFsara's upcoming **new HPC Cloud** documentation. That new service is currently in **_beta_** status, and this documentation is heavily under construction. You can expect frequent changes in these pages.
+
 ## Basics
 [Introduction to HPC Cloud](introduction-to-hpc-cloud)  
 [Estimate your resources] (estimate-your-resources)  
