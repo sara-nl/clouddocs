@@ -1,8 +1,20 @@
 # User Interface
 
 ## Access the UI
+You can find the UI here: https://ui.hpccloud.surfsara.nl
+
+The UI (short for User Interface) is the web site that allows you to operate the HPC Cloud. Put simply: your way to manage (create/destroy) your Virtual Machines (VM). 
 
 ## Change your Password
+> **IMPORTANT**
+>
+>To protect your account, you are advised to change the password that we give you upon your first login. 
+
+This is how you change your password:
+
+1. Look at the top-right corner of the screen on the UI. There is a "buddy" icon that represents your user. Click there.
+2. On the screen that comes up, under "settings", you will see the option to change or update your password. Click there.
+3. On the new screen, type your new password and click the button to submit it.
 
 ## Views 
 
