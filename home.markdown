@@ -7,8 +7,8 @@
 ## Basics
 [Introduction to HPC Cloud](introduction-to-hpc-cloud)  
 [Estimate your resources] (estimate-your-resources)  
-[General start](general-start)  
 [User Interface](user-interface)  
+[General start](general-start)  
 [Access your Virtual Machine](access-your-VM)
 
 ## Advanced Topics
