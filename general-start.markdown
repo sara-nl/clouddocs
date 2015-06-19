@@ -10,7 +10,7 @@ This chapter teaches you how you can create a `Virtual Machine` (from now on, VM
 >
 > More advanced and specialized topics are discussed separately.
 >
-> If you are not yet acquainted with terms such us `Virtual Machine` (or VM), `template` and `image`, please visit [the introduction to HPC Cloud page](introduction-to-hpc-cloud)
+> If you are not yet acquainted with terms such us `Virtual Machine` (or VM), `template` and `image`, please visit [the introduction to the HPC Cloud documentation page](introduction-to-hpc-cloud)
 
 
 ## Logging into the HPC Cloud User Interface
