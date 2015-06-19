@@ -93,9 +93,36 @@ In the user interface, click the _buddy_ icon at the top right (next to the Home
 
 ![switch_user_to_cloud_img](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/raw/master/images/switch_to_cloud_view.png)  
 
-### Menu
+## Menu
+
+There is a menu on the left side within the **user** and **groupadmin** `view`s. The tabs displayed there are:
+* Dashboard
+* Virtual Resources
+* Infrastructure
+* Marketplace
+
+A description of each of these items follows. A vertical blue bar on the left of the tab tells which one is selected.
 
 #### Dashboard
+The Dashboard is the page where you can see a summary of the status of your project. Information includes:
+* daily graphs of CPU and memory usage
+* list of VMs
+* network and storage counters
+* quotas
+
 #### Virtual Resources
-#### infrastructure
+The _Virtual Resources_ menu allows you to manage several kinds of objects, with the focus on what allows you to create `VM`s. It offers 4 sub-options:
+* _Virtual Machines_: to manage `VM`s (i.e.: create, start, stop, suspend, delete...)
+* _Templates_: to manage `Template`s (i.e.: create, edit, delete) 
+* _Images_: to manage `Image`s
+* _Files & Kernels_: to manage _kernel_, _ramdisk_ and _context_ files that can be used from `Templates` and on `VM`s
+
+#### Infrastructure
+The _Infrastructure_ menu allows you mainly to see information about the supporting resources that are available in the HPC Cloud and how (much of) them you are using. It offers 3 sub-options:
+* _Datastores_: to see where you can take storage from and how much you are using of each
+* _Virtual Networks_: to see which networks you have available and which your `VM`s are using them 
+* _Security Groups_: the so-called `Security Group`s are meant to work as an external firewall on `VM`s. 
+> Our current implementation does **not** support `Security Group`s. We are working on possible alternatives. 
+
 #### Marketplace
+The _Marketplace_ tab connects to the OpenNebula Marketplace site and makes the so-called _Appliances_ from there available within the HPC Cloud user interface. _Appliances_ are ready-made `image`s (and, sometimes, `template`s as well), that you can import into your project so that you can instantiate `VM`s out of them. There are pre-made _appliances_ for CentOS and Ubuntu, for example. When you click on one of them, make sure you read the comments related to it (note that all of these comments is coming from the OpenNebula web site). You can contribute your own _appliances_ to the _Marketplace_ as well.
