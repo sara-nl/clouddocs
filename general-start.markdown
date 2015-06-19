@@ -2,37 +2,31 @@
 
 ## Introduction
 
-This chapter teaches you how you can create a Linux virtual machine by
-importing an appliance from the marketplace. The walk-through gives a
-good introduction to the concepts of the HPC Cloud, and if you are going
-to use a Linux virtual machine for your research, this will produce a
-working virtual machine for you to work with. Even if you are going to
-use a Windows virtual machine, this chapter still gives you a good
-introduction, and you are recommended to start here.
+This chapter teaches you how you can create a `Virtual Machine` (from now on, VM) running Linux, by importing an _appliance_ from the Marketplace. 
 
-More advanced and specialized topics are dicsussed separately.
+> **NOTE**
+>
+> This walk-through gives a good introduction to the concepts of the HPC Cloud, and if you are going to use a  VM running Linux for your research, this will produce a basic VM you can keep working with to install the software that you may need and where to process your data later on. Even if you are going to use a VM running Windows, this chapter still gives you a good introduction, and you are recommended to start here.
+>
+> More advanced and specialized topics are dicsussed separately.
 
 
-## Logging in on the HPC Cloud User Interface
+## Logging into the HPC Cloud User Interface
 
-The user interface of the HPC Cloud is where you manage your
-virtual machines, disks and networks. After your HPC Cloud project is
-approved, you receive a username and a password for the HPC Cloud user
-interface.
+The HPC Cloud User Interface (from now on, UI) is the web site where you manage your VMs, disks and networks. After your project is approved, you will receive a username and a password for the UI.
 
-To start building a virtual machine, go to
-```
-   https://ui.cloud.sara.nl
-```
-and log in with the username and password you received. Note that the
-username and password are *not* the username and password of the virtual
-machine you are going to create. These you will set yourself after you
-have created a virtual machine.
+You can reach the UI at the following URL: https://ui.hpccloud.surfsara.nl 
 
+> **NOTE**
+>
+> If you would like an explanation about the options you can see on the UI, please visit [the _User Interface_ documentation page](user-interface).
 
-## Exploring the HPC Cloud User Interface
+To start building a virtual machine, go to the UI and log in with the username and password you received. 
 
-After you log in, you will 
+> **NOTE**
+>
+> ...that the username and password are **not** for the VM you are going to create. You can set users and passwords later one, once you have created the VM.
+
 ## Importing an appliance from the marketplace
 
 
