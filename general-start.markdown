@@ -19,7 +19,7 @@ You can reach the UI at the following URL: https://ui.hpccloud.surfsara.nl
 
 > **NOTE**
 >
-> If you would like an explanation about the options you can see on the UI, please visit [the _User Interface_ documentation page](user-interface).
+> If you would like an explanation about the options you can see on the UI, please visit [the User Interface documentation page](user-interface).
 
 To start building a virtual machine, go to the UI and log in with the username and password you received. 
 
