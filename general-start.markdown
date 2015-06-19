@@ -8,7 +8,9 @@ This chapter teaches you how you can create a `Virtual Machine` (from now on, VM
 >
 > This walk-through gives a good introduction to the concepts of the HPC Cloud, and if you are going to use a  VM running Linux for your research, this will produce a basic VM you can keep working with to install the software that you may need and where to process your data later on. Even if you are going to use a VM running Windows, this chapter still gives you a good introduction, and you are recommended to start here.
 >
-> More advanced and specialized topics are dicsussed separately.
+> More advanced and specialized topics are discussed separately.
+>
+> If you are not yet acquainted with terms such us `Virtual Machine` (or VM), `template` and `image`, please visit [the introduction to HPC Cloud page](introduction-to-hpc-cloud)
 
 
 ## Logging into the HPC Cloud User Interface
