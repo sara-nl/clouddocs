@@ -1,3 +1,6 @@
+You need to perform several steps to make NFS work, each step may be slightly different for your OS.
+Below are the steps for CentOS 7.
+
 ## NFS server on CentOS 7
 
 ### Firewall
@@ -17,7 +20,7 @@ trusted (active)
   [...]
 ```
 
-### NFS source
+### NFS server
 
 Install the NFS SW:
 ```sh
@@ -28,6 +31,9 @@ Create the root (or multile roots) to export:
 ```sh
 [root]# mkdir /export-nfs
 ```
+
+You will need the network address and mask of your project's private network.
+If your VM's address on the private network is `10.X.Y.Z`, then the private network is `10.X.Y.0/255.255.224.0`.
 
 Edit the configuration files:
 ```sh
