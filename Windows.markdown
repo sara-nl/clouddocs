@@ -52,5 +52,5 @@ and 64 GB (or 68720MB)
 ## Upload context files
 ## Create template
 ## Install windows
-## Make contextulazation working
+## Make contextualisation working
 
