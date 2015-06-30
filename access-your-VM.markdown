@@ -12,7 +12,18 @@ Before accessing your machine you need to find out the address of your VM. There
 
 The IP adress can be found under `Virtual Resources->Virtual Machines`. The external IP to connect to starts with 145.100.XX.XX. If there is no IP address or only an IP address starting with 100.XX.XX.XX, please add a external network device to the VM.
 
-The Hostname can be found in the log of your VM. Goto `Virtual Resources->Virtual Machines`, click on your VM, `log` and on top you 
+The hostname can be found in the log of your VM. Goto `Virtual Resources->Virtual Machines`, click on your VM, `log` and on top of the log you will find the DNS address. 
+
+For example:
+  
+```sh
+Wed Jun 24 17:54:18 2015 [Z0][HKM][I]: Success executing Hook: SurfSARA_Dns: Added
+DNS record: vmname.projectname-institute.vm.surfsara.nl -> 145.100.68.93. 
+```
+
+In this cause the hostname of the server is vmname.projectname-institute.vm.surfsara.nl which points to IP-adres 145.100.68.93.
+
+You can predict the hostname: `${vmname}.${projectname}.vm.surfsara.nl`
 ## SSH access
 
 
