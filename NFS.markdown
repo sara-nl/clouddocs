@@ -71,14 +71,18 @@ Optionally open the firewall.
 
 Install the NFS package (see above).
 
-Create a mount point:
+Create a local mount point.
+The name chosen here is arbitrary, you are free to chose a different path.
 ```sh
 mkdir /mount-nfs
 ```
 
 Mount the NFS volume manually:
 ```sh
-# REPLACE 10.X.Y.S with the server's address:
+# REPLACE
+# 10.X.Y.S with the server's address,
+# /export-nfs with the server's export root and
+# /mount-nfs/ with your local mount point
 mount -t nfs 10.X.Y.S:/export-nfs /mount-nfs/
 ```
 
