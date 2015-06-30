@@ -30,12 +30,12 @@ trusted (active)
 
 Install the NFS SW:
 ```sh
-[root]# yum install nfs-utils
+sudo yum install nfs-utils
 ```
 
 Create the root (or multile roots) to export:
 ```sh
-[root]# mkdir /export-nfs
+sudo mkdir /export-nfs
 ```
 
 You will need the network address and mask of your project's private network.
