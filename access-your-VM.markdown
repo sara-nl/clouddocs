@@ -25,9 +25,9 @@ A way to generate a SSH key under Windows is with help of PutTTY-gen. PuTTYgen c
 
 
 
-![puttygen_random](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/e620c352d8d92772119c456ccb97a617/puttygen_random.png)
+![puttygen_random](https://doc.hpccloud.surfsara.nl/oortdoc/docs/blob/1165379110e1016947c8f405d79718ecbbf50021/images/puttygen_random.png)
 
-![puttygen_done](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/c734039e680a3dcfa385fc11fbd58c94/puttygen_done.png)
+![puttygen_done](https://doc.hpccloud.surfsara.nl/oortdoc/docs/blob/1165379110e1016947c8f405d79718ecbbf50021/images/puttygen_done.png)
 
 
 #### User view
