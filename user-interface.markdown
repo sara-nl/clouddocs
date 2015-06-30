@@ -55,7 +55,7 @@ A group administrator sees the most functionality (including administering other
   * Display own quota
   * Display own accounting
   
-![cloud_view_img](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/raw/master/images/cloud_view.png)
+![cloud_view_img](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/cloud_view.png)
 
 #### Advanced user   
 * Available views: **cloud** (and **user**)
