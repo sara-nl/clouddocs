@@ -50,10 +50,14 @@ The options you have for a `disk` are:
 
 When you select _Image_ as the storage option for a `disk` in a `template`, you see a table where get to choose the `image` you want from the list of your existing `image`s. You can sort and filter that table to help you find the `image` you want to see. When you find the `image` you want and you click on it, its name will appear in blue under that table.
 
-#### Choosing a _volatile_ `disk` as `disk` in a `template`
+#### Choosing a _volatile_ `disk` in a `template`
 
 When you select _Volatile Disk_ as the storage option for a `disk` in a `template`, you must specify the _Size_ you want for the `disk`. You can also specify the combination of _Type_ and/or _Format_. 
 
 >**NOTE:**
 >
 >It does not really matter what you choose for _FS_ and _Format_, because you can format your drives via the operating system tools
+
+#### Deleting a `disk` from a `template`
+
+Next to the name of each `disk` on the list of `disk`s when editing a `template`, you can see a black _(x)_ button. If you click on it, the `disk` will be removed from the `template`.
