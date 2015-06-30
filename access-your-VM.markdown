@@ -18,10 +18,12 @@ A way to generate a SSH key under Windows is with help of PutTTY-gen. PuTTYgen c
 
 * Start PuTTYgen
 * In the field "Type of key to generate", please select "SSH-2 RSA".
+![puttygen_default](https://doc.hpccloud.surfsara.nl/oortdoc/docs/blob/1165379110e1016947c8f405d79718ecbbf50021/images/puttygen_default.png)
+
 * Click on  "Generate".
 * Move your pointer under
 
-![puttygen_default](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/d7f608312a9947b9d4dbe5f7f89aa752/puttygen_default.png)
+
 
 ![puttygen_random](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/e620c352d8d92772119c456ccb97a617/puttygen_random.png)
 
