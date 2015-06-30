@@ -7,12 +7,15 @@ Below are the steps for CentOS 7.
 
 Open up the firewall on the project-private network:
 ```sh
-[root]# firewall-cmd --permanent --zone=trusted --add-source=10.0.0.0/8
-[root]# firewall-cmd --reload
+sudo firewall-cmd --permanent --zone=trusted --add-source=10.0.0.0/8
+sudo firewall-cmd --reload
 ```
 Check with:
 ```sh
-[root]#  firewall-cmd --zone=trusted --list-all
+sudo firewall-cmd --zone=trusted --list-all
+```
+Expected output:
+>```sh
 trusted (active)
   interfaces: 
   sources: 10.0.0.0/8
