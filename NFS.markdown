@@ -1,5 +1,5 @@
 You need to perform several steps to make NFS work, each step may be slightly different for your OS.
-Below are the steps for CentOS 7.
+Below are the steps for CentOS 7, both server and clients.
 
 ## NFS server on CentOS 7
 
@@ -33,7 +33,8 @@ Install the NFS SW:
 sudo yum install nfs-utils
 ```
 
-Create the root (or multile roots) to export:
+Create the root directory of the tree to export.
+The name chosen here, `/export-nfs`, is an example: you are free to use a different path.
 ```sh
 sudo mkdir /export-nfs
 ```
@@ -48,8 +49,9 @@ Edit the configuration file `/etc/idmapd.conf`, line 5: uncomment and change to 
 Domain = server.world
 ```
 
-Edit the configuration file `/etc/exports`: 
-add a line for each export, replace `10.X.Y.0/255.255.224.0` with your project's private network address and mask
+Edit the configuration file `/etc/exports` and add a line for our export.
+Replace `/export-nfs` with the root you have chosen,
+replace `10.X.Y.0/255.255.224.0` with your project's private network address and mask.
 
 >
 ```
@@ -63,7 +65,7 @@ sudo systemctl restart rpcbind
 sudo systemctl start nfs-server
 ```
 
-### NFC clients
+### NFS clients
 
 Optionally open the firewall.
 
