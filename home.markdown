@@ -15,7 +15,7 @@
 
 ### General
 
-Customize your Virtual Machine  
+[Customize your Virtual Machine](customize-your-vm)  
 Virtual Machine from Scratch  
 Contextualization  
 Dynamic Virtual Machine Management  
