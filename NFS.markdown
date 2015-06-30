@@ -17,6 +17,7 @@ sudo firewall-cmd --zone=trusted --list-all
 ```
 
 Expected output:
+
 >
 ```sh
 trusted (active)
