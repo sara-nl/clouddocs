@@ -5,33 +5,40 @@
 > This _wiki_ collects SURFsara's upcoming **new HPC Cloud** documentation. That new service is currently in **_beta_** status, and this documentation is heavily under construction. You can expect frequent changes in these pages.
 
 ## Basics
-[Introduction to HPC Cloud](introduction-to-hpc-cloud)  
-[Estimate your resources] (estimate-your-resources)  
-[User Interface](user-interface)  
-[General start](general-start)  
-[Access your Virtual Machine](access-your-VM)
+1. [Introduction to HPC Cloud](introduction-to-hpc-cloud)  
+1. [Estimate your resources] (estimate-your-resources)  
+1. [User Interface](user-interface)  
+1. [General start](general-start)  
+1. [Access your Virtual Machine](access-your-VM)
 
 ## Advanced Topics
 
 ### General
 
-[Customize your Virtual Machine](customize-your-vm)  
-Virtual Machine from Scratch  
-Contextualization  
-Dynamic Virtual Machine Management  
-Sharing OpenNebula Objects  
-[Install Windows](windows)  
-Backup  
-Licences  
+1. [Customise your Virtual Machine](customize-your-vm)
+ * [General options](customize-vm-general)
+ * [Storage options](customize-vm-storage)
+ * [Network options](customize-vm-network)
+ * OS Booting options
+ * Input/Output options
+ * Context options
+ * Other options
+1. Virtual Machine from Scratch  
+1. Contextualization  
+1. Dynamic Virtual Machine Management  
+1. Sharing OpenNebula Objects  
+1. [Install Windows](windows)  
+1. Backup  
+1. Licences  
 
 ### Disk Images
-Scratch Disk Images  
-[Download an image](image_download)  
-Create an Image on your own Machine  
+1. Scratch Disk Images  
+1. [Download an image](image_download)  
+1. Create an Image on your own Machine  
 
 ### Networks
-Virtual Network  
-Lightpaths 
+1. Virtual Network  
+1. Lightpaths 
 
 ### Security
 > **NOTE:**
@@ -40,10 +47,10 @@ Lightpaths
 
 
 ### Inside the VM
-MySQL server  
-[Grid Storage](grid-storage)    
-Pilot Jobs  
-[NFS](NFS) &ndash; Share Data between Virtual Machines
+1. MySQL server  
+1. [Grid Storage](grid-storage)    
+1. Pilot Jobs  
+1. [NFS](NFS) &ndash; Share Data between Virtual Machines
 
 ## Service implementation
-[Available resources](resources-available)
+1. [Available resources](resources-available)
