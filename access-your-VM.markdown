@@ -2,7 +2,8 @@
 
 ## Introduction
 
-You have various options to access your virtual machine. To do things on your virtual machine, you can access your virtual machine using a shell, the built-in VNC client, or you can get a full virtual desktop. 
+You have various options to access your virtual machine. To do things on your virtual machine, you can access your virtual machine using a SSH shell, the built-in VNC client, or you can get a full virtual desktop.  We strongly recommend to use the SSH shell and full virtual desktop for production purposes. The build in VNC client is great for troubleshooting in case of technical issues like crashing VM's or inaccessibility.
+  
 
 ## Running commands on your virtual machine
 
