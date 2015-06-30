@@ -15,7 +15,9 @@ Check with:
 sudo firewall-cmd --zone=trusted --list-all
 ```
 Expected output:
->```sh
+
+>
+```sh
 trusted (active)
   interfaces: 
   sources: 10.0.0.0/8
