@@ -41,10 +41,9 @@ Lightpaths
 
 ### Inside the VM
 MySQL server  
-[Grid Storage](grid-storage)  
-Share Data between Virtual Machines  
+[Grid Storage](grid-storage)    
 Pilot Jobs  
-[NFS](NFS)
+[NFS](NFS) &ndash; Share Data between Virtual Machines
 
 ## Service implementation
 [Available resources](resources-available)
