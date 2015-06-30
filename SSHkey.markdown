@@ -79,6 +79,6 @@ A way to generate a SSH key under Windows is with help of PutTTY-gen. PuTTYgen c
 ![puttygen_done](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/puttygen_done.png)
 
 * Fill in a passphrase in the "Key passphrase" field. A passphrase is the same as a password, but in general it contains more characters. Repeat the same passphrase in the  "Confirm passphrase" field. It is possible to not use a passphrase, but this is not considered as good practice in terms of security.
-* Save your private key at a secure spot with the "Save Private Key".
+* Save your private key at a secure spot (never share this file!) with the "Save Private Key". The extension of the file must be `.ppk`. You need this file later on to login to your machine.
 * Save your public key at with the "Save Pubilic Key".
 * Select all text from the "Public key for pasting into OpenSSH authorized_keys file" and copy paste this in OpenNebula [link link]
