@@ -104,4 +104,4 @@ but replace `10.X.Y.S` with the server's address:
 10.X.Y.S:/export-nfs	/mount-nfs nfs4 defaults  0 0
 ```
 
-See also: http://www.unixmen.com/setting-nfs-server-client-centos-7/
+See also: [www.unixmen.com/setting-nfs-server-client-centos-7](http://www.unixmen.com/setting-nfs-server-client-centos-7/)
