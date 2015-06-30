@@ -12,6 +12,19 @@ You have various options to access your virtual machine. To do things on your vi
 
 
 
+### Generate Secure Shell (SSH) key on windows
+
+A way to generate a SSH key under Windows is with help of PutTTY-gen. PuTTYgen can be downloaded at http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html or directly downloaded from http://the.earth.li/~sgtatham/putty/latest/x86/puttygen.exe .
+
+* Start PuTTYgen
+
+![puttygen_default](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/d7f608312a9947b9d4dbe5f7f89aa752/puttygen_default.png)
+
+![puttygen_random](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/e620c352d8d92772119c456ccb97a617/puttygen_random.png)
+
+![puttygen_done](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/c734039e680a3dcfa385fc11fbd58c94/puttygen_done.png)
+
+
 #### User view
 
 
