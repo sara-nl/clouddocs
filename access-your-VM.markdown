@@ -3,23 +3,60 @@
 ## Introduction
 
 You have various options to access your virtual machine. To do things on your virtual machine, you can access your virtual machine using a SSH shell, the built-in VNC client, or you can get a full virtual desktop.  We strongly recommend to use the SSH shell and full virtual desktop for production purposes. The build in VNC client is great for troubleshooting in case of technical issues like crashing VM's or inaccessibility.
+
+## Find IP-adres or hostname
+
+Before accessing your machine you need to find out the address of your VM. There are two addresses you can use:
+* IP adres
+* Hostname
+
+The IP adress can be found under `Virtual Resources->Virtual Machines`. The external IP to connect to starts with 145.100.XX.XX. If there is no IP address or only an IP address starting with 100.XX.XX.XX(which is an internal IP adrress), please add a external network device to the VM.
+
+The hostname can be found in the log of your VM. Goto `Virtual Resources->Virtual Machines`, click on your VM, `log` and on top of the log you will find the DNS address. 
+
+For example:
   
+```sh
+Wed Jun 24 17:54:18 2015 [Z0][HKM][I]: Success executing Hook: SurfSARA_Dns: Added
+DNS record: vmname.projectname-institute.vm.surfsara.nl -> 145.100.68.93. 
+```
 
-## Running commands on your virtual machine
+In this cause the hostname of the server is vmname.projectname-institute.vm.surfsara.nl which points to IP-adres 145.100.68.93.
 
-### Built-in VNC client
-#### Cloud view
-![vnc_cloudview](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/df27f2603fbaf79aa6f83abffe87b167/vnc_cloudview.png)
-
-
-
-
-
-#### User view
+You can predict the hostname: `${vmname}.${projectname}.vm.surfsara.nl`
+## SSH access
 
 
+### From a Linux or MacOS client
+
+MacOS and Linux comes with a build-in SSH client. To use this client open a terminal.
+
+#### Terminal only
+In a terminal type
+
+```sh
+ssh username@vmname.projectname-institute.vm.surfsara.nl
+```
+
+to connect to your Virtual Machine.
+
+#### Terminal with Graphical User Interface
+
+To make use of a graphical user interface (GUI) on your VM, add an additional `-X` to the command.  
+
+```sh
+ssh -X username@vmname.projectname-institute.vm.surfsara.nl
+```
+You might need to install additional software on MacOS when using the `-X` flag.
 
 
+
+### From a Windows client
+
+#### Terminal only
+http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+#### Terminal with Graphical User Interface
+http://mobaxterm.mobatek.net/
 
 
 ### Getting a virtual desktop on a Linux machine
@@ -56,6 +93,17 @@ On newer Fedora systems, use
 ```
  You can now log in on the virtual machine using RDP. From Windows or Mac OSX, use "Remote Desktop Connection", sometimes supplied as an additional package to Microsoft Office. On a Linux desktop, use Rdesktop. **Important**: make sure to set the display to "millions of colors" (Mac OsX) or "high color (16-bits)" (Windows), because "thousands of colors" (Mac OsX) or "high color (15-bits)" (Windows) will give you a non-descriptive error.
  
+
+
+### Built-in VNC client
+#### Cloud view
+![vnc_cloudview](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/df27f2603fbaf79aa6f83abffe87b167/vnc_cloudview.png)
+
+
+
+
+
+#### User view
 
 
 
