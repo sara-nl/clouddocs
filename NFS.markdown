@@ -3,8 +3,6 @@ Below are the steps for CentOS 7.
 
 ## NFS server on CentOS 7
 
-aap
-
 ### Firewall
 
 Open up the firewall on the project-private network:
@@ -12,15 +10,12 @@ Open up the firewall on the project-private network:
 sudo firewall-cmd --permanent --zone=trusted --add-source=10.0.0.0/8
 sudo firewall-cmd --reload
 ```
-
 Check with:
 ```sh
 sudo firewall-cmd --zone=trusted --list-all
 ```
 Expected output:
-
->
-```sh
+>```sh
 trusted (active)
   interfaces: 
   sources: 10.0.0.0/8
