@@ -16,9 +16,9 @@
 ### General
 
 1. [Customise your Virtual Machine](customize-your-vm)
- * General options
- * Storage options
- * Network options
+ * [General options](customize-vm-general)
+ * [Storage options](customize-vm-storage)
+ * [Network options](customize-vm-network)
  * OS Booting options
  * Input/Output options
  * Context options
