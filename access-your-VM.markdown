@@ -16,13 +16,6 @@ You have various options to access your virtual machine. To do things on your vi
 
 
 
-### Secure Shell (SSH)
-
-![puttygen_default](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/d7f608312a9947b9d4dbe5f7f89aa752/puttygen_default.png)
-
-![puttygen_random](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/e620c352d8d92772119c456ccb97a617/puttygen_random.png)
-
-![puttygen_done](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/c734039e680a3dcfa385fc11fbd58c94/puttygen_done.png)
 
 
 
