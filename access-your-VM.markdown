@@ -18,6 +18,7 @@ A way to generate a SSH key under Windows is with help of PutTTY-gen. PuTTYgen c
 
 * Start PuTTYgen
 * In the field "Type of key to generate", please select "SSH-2 RSA".
+
 ![puttygen_default](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/puttygen_default.png)
 
 * Click on  "Generate".
