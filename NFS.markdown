@@ -10,6 +10,9 @@ Open up the firewall on the project-private network:
 sudo firewall-cmd --permanent --zone=trusted --add-source=10.0.0.0/8
 sudo firewall-cmd --reload
 ```
+
+aap
+
 Check with:
 ```sh
 sudo firewall-cmd --zone=trusted --list-all
