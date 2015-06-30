@@ -90,8 +90,7 @@ Expected output:
 >
 ```
 [...]
-10.X.Y.S:/export-nfs on /mount-nfs type nfs4 (rw,relatime,vers=4.0,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=10.X.Y.C,local_lock=none,addr=10.X.Y.S)
-
+10.X.Y.S:/export-nfs on /mount-nfs type nfs4 > (rw,relatime,vers=4.0,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=10.X.Y.C,local_lock=none,addr=10.X.Y.S)
 ```
 
 Test by writing to a file in the client's `/mount-nfs` and reading on the server's `/export-nfs` and vice versa.
