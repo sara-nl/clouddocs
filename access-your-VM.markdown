@@ -10,7 +10,7 @@ Before accessing your machine you need to find out the address of your VM. There
 * IP adres
 * Hostname
 
-The IP adress can be found under `Virtual Resources->Virtual Machines`. The external IP to connect to starts with 145.100.XX.XX. If there is no IP address or only an IP address starting with 100.XX.XX.XX, please add a external network device to the VM.
+The IP adress can be found under `Virtual Resources->Virtual Machines`. The external IP to connect to starts with 145.100.XX.XX. If there is no IP address or only an IP address starting with 100.XX.XX.XX(which is an internal IP adrress), please add a external network device to the VM.
 
 The hostname can be found in the log of your VM. Goto `Virtual Resources->Virtual Machines`, click on your VM, `log` and on top of the log you will find the DNS address. 
 
@@ -29,7 +29,26 @@ You can predict the hostname: `${vmname}.${projectname}.vm.surfsara.nl`
 
 ### From a Linux or MacOS client
 
-MacOS and Linux comes with a build-in SSH client. To use this client open a terminal
+MacOS and Linux comes with a build-in SSH client. To use this client open a terminal.
+
+#### Terminal only
+In a terminal type
+
+```sh
+ssh username@vmname.projectname-institute.vm.surfsara.nl
+```
+
+to connect to your Virtual Machine.
+
+#### Terminal with Graphical User Interface
+
+To make use of a graphical user interface (GUI) on your VM, add an additional `-X` to the command.  
+
+```sh
+ssh -X username@vmname.projectname-institute.vm.surfsara.nl
+```
+You might need to install additional software on MacOS when using the `-X` flag.
+
 
 
 ### From a Windows client
