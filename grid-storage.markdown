@@ -21,8 +21,11 @@ There are two ways to access Grid Storage from your virtual machines:
 ## CUA credentials and WebDAV
 
 Use a WebDAV client and connect to **webdav**.grid.sara.nl:
-```VM$ curl -k -f -u USER -p -L https://webdav.grid.sara.nl/pnfs/grid.sara.nl/data/VO_NAME/PATH -o LOCAL_NAME
-```Explanation of the flags:
+```
+VM$ curl -k -f -u USER -p -L https://webdav.grid.sara.nl/pnfs/grid.sara.nl/data/VO_NAME/PATH -o LOCAL_NAME
+```
+Explanation of the flags:
+
 * **-k** do not complain about bad server certificate (HTTPS)
 * **-f** if transfer fails, return a failure code, not the HTTP document describing the failure
 * **-u user** authenticate with CUA account
@@ -48,7 +51,7 @@ VM$ curl --capath /etc/grid-security/certificates/ --key ~/.globus/userkey.pem -
 
 You need to complete step [[Grid storage certificates]] first.
 
-*** Install and configure VOMS proxy support
+### Install and configure VOMS proxy support
 
 Install the VOMS client software:
 ```bash
@@ -79,10 +82,12 @@ VM$$  voms-proxy-init -vomses lsgrid-voms.grid.sara.nl --voms lsgrid
 
 You need to complete step [[Grid storage certificates]] first.
 
-### Install @globus-url-copy@
+### Install `globus-url-copy`
 
 Ubuntu:
-```VM$ sudo apt-get install globus-gass-copy-progs```
+```
+VM$ sudo apt-get install globus-gass-copy-progs
+```
 
 ### Transfer a file
 
@@ -99,23 +104,22 @@ VM$ globus-url-copy gsiftp://fly1.grid.sara.nl:2811/pnfs/grid.sara.nl/data/lsgri
 CentOS has a package uberftp which can be installed with:
 ```
 VM$sudo yum install uberftp
- ```
+```
 
 ### Ubuntu
 
 For Ubuntu we made a Personal Package Archive(PPA), which contains a package to install uberftp. At the moment this is only tested for Ubuntu 14.04.
 
 To add a PPA to your system install add-apt-repository with
-``` bash
+```sh
 VM$sudo apt-get install software-properties-common
- ```
+```
 then add the PPA and install UberFTP
 
-```bash
+```sh
 VM$sudo add-apt-repository ppa:maarten-kooyman-6/ppa
 VM$sudo apt-get update
 VM$sudo apt-get install uberftp 
 ```
 
-
-See also: "uberftp documentation":https://github.com/JasonAlt/UberFTP/wiki/User-Guide
+See also: [uberftp documentation](https://github.com/JasonAlt/UberFTP/wiki/User-Guide)
