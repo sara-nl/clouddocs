@@ -34,7 +34,14 @@ Storage for a VM is specified in terms of `disk`s (which are `image`s linked to 
 * on the left, the list of all `disk`s already defined on that `template`
 * on the right, the particularities for a `disk` selected from the left.
 
-> **NOTE:**
+You can add as many `disk`s as you need to a given template, each referring to an existing `image` or to a _volatile_ `disk`. 
+
+>**Remember:**
+>
+>VMs are created by instantiating a `template`. Multiple VMs can share `image`s (regardless of the VMs' or `image`s' `template`s) only when the `image`s are **not** _persistent_.
+
+&nbsp;
+>**NOTE:**
 >
 > When you import an _appliance_ from the _Marketplace_, that action usually downloads one `template` along with an `image`, that gets listed on this _Storage_ screen of the `Template`.
 
