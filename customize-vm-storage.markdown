@@ -30,7 +30,11 @@ When you select _Image_ as the storage option for a `disk` in a `template`, you 
 
 >**⚠ WARNING:**
 >
->_Volatile_ `disk`s are only available as long as a VM is running with them attached, and everything stored on _Volatile_ `disk`s is lost once their associated VM is shut down. Make sure you understand this and, therefore, place in _volatile_ `disk`s only data that you are ready to loose.
+>_Volatile_ `disk`s are only available as long as a VM is running with them attached, and everything stored on _Volatile_ `disk`s is lost once their associated VM is shut down. 
+>
+>Furthermore, _volatile_ `disk`s **cannot** be _saved-as_. 
+>
+Make sure you understand these facts and, therefore, place in _volatile_ `disk`s only data that you are ready to loose after the VM is gone.
 
 When you select _Volatile Disk_ as the storage option for a `disk` in a `template`, you must specify the _Size_ you want for the `disk`. You can also specify the combination of _Type_ and/or _Format_. 
 
