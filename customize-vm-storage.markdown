@@ -1,19 +1,18 @@
 ## Editing _Storage_ options of a template
 
-Storage for a VM is specified in terms of `disk`s (which are `image`s linked to `template`s). On the _Storage_ tab of the `template` editing screen, you can see two columns:
+>**Remember:**
+>
+>VMs are created by instantiating a `template`, which is where you specify which `image`s the VM will need. Multiple VMs can **share** `image`s (regardless of any `template`s that the VMs or `image`s may be related to) only when the `image`s are **not _persistent_**.
+
+Storage for a VM is specified in terms of `disk`s (which are `image`s linked to `template`s). On the _Storage_ tab of the `template`-editing screen, you can see two columns:
 * on the left, the list of all `disk`s already defined on that `template`
 * on the right, the particularities for a `disk` selected from the left.
 
 You can add as many `disk`s as you need to a given template, each referring to an existing `image` or to a _volatile_ `disk`. 
 
->**Remember:**
->
->VMs are created by instantiating a `template`. Multiple VMs can share `image`s (regardless of the VMs' or `image`s' `template`s) only when the `image`s are **not** _persistent_.
-
-&nbsp;
 >**NOTE:**
 >
-> When you import an _appliance_ from the _Marketplace_, that action usually downloads one `template` along with an `image`, that gets listed on this _Storage_ screen of the `Template`.
+> When you import an _appliance_ from the _Marketplace_, that action usually downloads one `image` along with a `template`, that relates to it. You can still personalise that `template` on this _Storage_ tab of the `template`.
 
 ### Edit a `disk` for a `template`
 
@@ -29,11 +28,15 @@ When you select _Image_ as the storage option for a `disk` in a `template`, you 
 
 #### Choosing a _volatile_ `disk` in a `template`
 
+>**⚠ WARNING:**
+>
+>_Volatile_ `disk`s are only available as long as a VM is running with them attached, and everything stored on _Volatile_ `disk`s is lost once their associated VM is shut down. Make sure you understand this and, therefore, place in _volatile_ `disk`s only data that you are ready to loose.
+
 When you select _Volatile Disk_ as the storage option for a `disk` in a `template`, you must specify the _Size_ you want for the `disk`. You can also specify the combination of _Type_ and/or _Format_. 
 
 >**NOTE:**
 >
->It does not really matter what you choose for _FS_ and _Format_, because you can format your drives via the operating system tools
+>It does not really matter what you choose for _FS_ and _Format_, because you can format your drives via the operating system tools.
 
 #### Deleting a `disk` from a `template`
 
