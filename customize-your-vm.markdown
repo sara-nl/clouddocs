@@ -18,7 +18,7 @@ The tabs for editing a template are the following:
  * [General options](customize-vm-general)
  * [Storage options](customize-vm-storage)
  * [Network options](customize-vm-network)
- * OS Booting options
- * Input/Output options
+ * [OS Booting options](customize-vm-boot)
+ * [Input/Output options](customize-vm-io)
  * Context options
  * Other options
