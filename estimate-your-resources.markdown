@@ -5,7 +5,7 @@ A quota is a budget that the users within a project can benefit from. It is set 
 * an amount of storage space, measured in (multiples of) bytes
 * a begin and start date within which you can operate in the HPC Cloud
 
-In order to allocate a project, thus, we need to establish a quota for it. And we can only do so by know what you want to do. That is why it is important that you understand how to **estimate your needed quota**.
+In order to allocate a project, thus, we need to establish a quota for it. And we can only do so by knowing what you want to do. That is why it is important that you understand how to **estimate your needed quota**.
 
 We always recommend that you have run several tests of your programs somewhere else (e.g.: your laptop) before you submit your request to use the HPC Cloud. It would be ideal if you could try running several representative (input) samples and with several different amounts of CPU cores. That way you can see (and know in advance):
 * how long it takes to run a few input scenarios
