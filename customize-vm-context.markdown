@@ -33,7 +33,7 @@ On the _cloud_ `view`, under the _Virtual Resources_ menu, there is an item call
 
 Alternatively, or at the same time, on the _FILES_DS_ field you can write the raw line that should be copied into the `template` describing `file`s to include.
 
-The _Init scripts_ field allows you to specify scripts (programs) that must be run on the VM when it initialises. You can specify several of them and in which order like: `init.sh set_up_my_user.sh set_up_my_web_server.sh`
+The _Init scripts_ field allows you to specify scripts (programs) that must be run on the VM when the operating system within your VM is booting. You can specify several of them and in which order like: `init.sh set_up_my_user.sh set_up_my_web_server.sh`
 
 ### _User Inputs_ options
 
