@@ -45,3 +45,9 @@ When you select _Volatile Disk_ as the storage option for a `disk` in a `templat
 #### Deleting a `disk` from a `template`
 
 Next to the name of each `disk` on the list of `disk`s when editing a `template`, you can see a black _(x)_ button. If you click on it, the `disk` will be removed from the `template`.
+
+---
+
+>**NOTE on _Advanced options_**:
+>
+>The _Advanced options_ that you can see on the screen are very specific ones that we do not use  every day. If you think you need to use them, we recommend you try and learn about them on the official OpenNebula [documentation](http://docs.opennebula.org/) (for example, [here](http://docs.opennebula.org/4.12/user/virtual_resource_management/vm_guide.html)). And if you find benefits in using them, please send us an e-mail to let us know: helpdesk@surfsara.nl.
