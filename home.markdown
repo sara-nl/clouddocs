@@ -21,7 +21,7 @@
  * [Network options](customize-vm-network)
  * [OS Booting options](customize-vm-boot)
  * [Input/Output options](customize-vm-io)
- * Context options
+ * [Context options](customize-vm-context)
  * [Other options](customize-vm-other)
 1. Virtual Machine from Scratch  
 1. Contextualization  
