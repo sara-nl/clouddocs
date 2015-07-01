@@ -23,8 +23,8 @@
  * [Input/Output options](customize-vm-io)
  * [Context options](customize-vm-context)
  * [Other options](customize-vm-other)
-1. Virtual Machine from Scratch  
-1. [Contextualization](contextualization) **(still missing; just a placeholder)**  
+1. [Contextualization](contextualization) **(still missing; just a placeholder)** 
+1. A Virtual Machine from Scratch
 1. Dynamic Virtual Machine Management  
 1. Sharing OpenNebula Objects  
 1. [Install Windows](windows)  
