@@ -19,7 +19,7 @@
  * [General options](customize-vm-general)
  * [Storage options](customize-vm-storage)
  * [Network options](customize-vm-network)
- * OS Booting options
+ * [OS Booting options](customize-vm-boot)
  * Input/Output options
  * Context options
  * Other options
