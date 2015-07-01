@@ -19,7 +19,7 @@ You can configure the VNC connections that de HPC Cloud will serve for VMs insta
 
 ### Inputs
 
-If you plan on using a graphical environment through VNC, then you are advised to add the following _Input_ record, so that the mouse pointer will work properly:
+If you plan on using a graphical environment through VNC (such as GNOME or KDE; or Windows), then you are advised to add the following _Input_ record, so that the mouse pointer will work properly:
 
 * _TYPE_: Tablet
 * _BUS_: USB
