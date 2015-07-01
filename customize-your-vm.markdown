@@ -21,4 +21,4 @@ The tabs for editing a template are the following:
  * [OS Booting options](customize-vm-boot)
  * [Input/Output options](customize-vm-io)
  * Context options
- * Other options
+ * [Other options](customize-vm-other)
