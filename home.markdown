@@ -20,7 +20,7 @@
  * [Storage options](customize-vm-storage)
  * [Network options](customize-vm-network)
  * [OS Booting options](customize-vm-boot)
- * Input/Output options
+ * [Input/Output options](customize-vm-io)
  * Context options
  * Other options
 1. Virtual Machine from Scratch  
