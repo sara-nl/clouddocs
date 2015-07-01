@@ -22,7 +22,7 @@
  * [OS Booting options](customize-vm-boot)
  * [Input/Output options](customize-vm-io)
  * Context options
- * Other options
+ * [Other options](customize-vm-other)
 1. Virtual Machine from Scratch  
 1. Contextualization  
 1. Dynamic Virtual Machine Management  
