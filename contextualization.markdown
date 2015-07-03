@@ -40,7 +40,7 @@ On **Debian-based** operating systems (e.g.: Ubuntu, Mint), you can install the 
 1. Download the .deb file from https://github.com/OpenNebula/addon-context-linux/releases/latest.
 1. Bring the .deb to your VM
 1. Install the .deb by running (change the <package_name.deb> placeholder by the right file and path):
-```sh
+```
 dpkg -i <package_name.deb>
 ```
 
@@ -49,19 +49,27 @@ On **RedHat-based** operating systems (e.g.: CentOS, Fedora), you can install th
 1. Download the .rpm file from https://github.com/OpenNebula/addon-context-linux/releases/latest.
 1. Bring the .rpm to your VM
 1. Install the .deb by running (change the <package_name.rpm> placeholder by the right file and path):
-```sh
+```
 dpkg -i <package_name.rpm>
 ```
 
 ### SSH key for root
 You can let your VM require the root user to log in only with a valid [SSH key](https://en.wikipedia.org/wiki/Secure_Shell#Key_management). This option is the preferred way in the usual Marketplace appliances.
 
-TODOcument: say where to look for it in the template
+To enable SSH key _contextualization_, before you create your VM, on your `template`, on the template-editing screen, under the _Context_ tab, in the _Network & SSH_ subsection, make sure that the checkbox _Add SSH contextualization_ is checked.
+
+Then, if you paste your public key on the _Public Key_ field, that one will be set. Otherwise, the public key from your user profile will be set.
 
 ### Network configuration
 You can let your VM configure its `nic`s from the _context_. This option is the preferred way in the usual Marketplace appliances.
 
-TODOcument: say where to look for it in the template
+To enable network _contextualization_, before you create your VM, on your `template`, on the template-editing screen, under the _Context_ tab, in the _Network & SSH_ subsection, make sure that the checkbox _Add Network contextualization_ is checked.
 
 ### Init scripts
 You can have one (or more) scripts configure other aspects of your VM. For example, you can run a script that will check whether a given non-root user exists, and if it does not, then have the script create one for you.
+
+For that, you first need to create an (or several) `Init File`(s) on the _Files & Kernels_ section of the UI. Then, before you create your VM, on your `template`, on the template-editing screen, under the _Context_ tab, in the _Files_ subsection, you can refer to that (those) `Init File`(s) on the _Init scripts_ field (to include several of them, just type their names in the order you want them, separated by spaces).
+
+>**NOTE:**
+>
+>OpenNebula only delivers _contextualisation_ upon VM startup (from the external point of view). Therefore, any modification of the `template` or the `file`s that you make while the VM is running, will **not** be visible to that running VM. Further, even when you add `nic`s to a running VM, these will **not** be contextualised.
