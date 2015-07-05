@@ -66,8 +66,9 @@ We are going to work with a pre-made `image` that is available on the Marketplac
 Import the appliance by following the steps:
 
 1. From the **user** `view` or the **groupadmin** `view`, choose the
-	 _Marketplace_ tab on the left menu of the screen; in the screen shot,
-   it has been highlighted in red.
+   _Marketplace_ tab on the left menu of the screen, as shown in the
+   screen shot; in the screen shot, it has been highlighted in red.
+   ![marketplace step 1][marketplace_step_1]
 
 2. Next, look for the **Ubuntu - KVM** _appliance_ in the list; you can
 	 search for it by typing on the search box, and click on the name of
@@ -94,8 +95,8 @@ Import the appliance by following the steps:
    image and a template.
 
 You can verify that the process is complete by inspecting the _Template_
-and _Image_ sections in the HPC Cloud user interface. You should see
-your new image and template.
+and _Image_ sections in the _Virtual Infrastructure_ tab of the HPC Cloud
+user interface. You should see your new image and template.
 
 
 ## Adding an SSH key to your profile
@@ -200,3 +201,4 @@ The operating system on the machine will go through the boot process.
 ## Powering off and removing your machine
 
 
+[marketplace_step_1]:(https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/2c2a2c746faca8888e4d38f93d3b352c/marketplace_step1.png)
