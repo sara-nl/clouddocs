@@ -193,12 +193,33 @@ The operating system on the machine will go through the boot process.
 
 ## Logging in on your virtual machine
 
+After you have added your public key to your user profile, you should be able to log in on your virtual machine as _root_, allowing you to maintain your virtual machine.
 
+First, determine the ip-address of your virtual machine. The IP-address of your virtual machine
+is shown in the virtual machine overview, in the _Virtual Infrastructure_ tab of the user interface.
+The IP address is shown in the column titled _IPs_.
 
-## Adding a data storage
+If you use a Linux or a Mac OSX operating system, open a terminal window, and type
+```sh
+  ssh root@145.100.mmm.nnn
+```
+where you should replace _mmm_ and _nnn_ to match the IP address of your virtual machine.
+In the screen shot below, the IP address is _145.100.59.30_, so the correct command in this
+case is
+```sh
+  ssh root@145.100.59.30
+``` 
+**Note that this is an examle and you should change it to match your IP address.**
+
+If you use a Windows operating system, you should have imported your public and private keypair
+into _Putty_ or other terminal program. Use the IP of your virtual machine as host, use _root_ as
+username, and click _Connect_.
+
+If there were no errors, and if your local firewalls allows making remote connections, you should now be logged in on your virtual machine, as _root_. 
 
 
 ## Powering off and removing your machine
+
 
 
 [marketplace_step_1]:(https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/2c2a2c746faca8888e4d38f93d3b352c/marketplace_step1.png)
