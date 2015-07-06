@@ -66,8 +66,9 @@ We are going to work with a pre-made `image` that is available on the Marketplac
 Import the appliance by following the steps:
 
 1. From the **user** `view` or the **groupadmin** `view`, choose the
-	 _Marketplace_ tab on the left menu of the screen; in the screen shot,
-   it has been highlighted in red.
+   _Marketplace_ tab on the left menu of the screen, as shown in the
+   screen shot; in the screen shot, it has been highlighted in red.
+   ![marketplace step 1][marketplace_step_1]
 
 2. Next, look for the **Ubuntu - KVM** _appliance_ in the list; you can
 	 search for it by typing on the search box, and click on the name of
@@ -94,8 +95,8 @@ Import the appliance by following the steps:
    image and a template.
 
 You can verify that the process is complete by inspecting the _Template_
-and _Image_ sections in the HPC Cloud user interface. You should see
-your new image and template.
+and _Image_ sections in the _Virtual Infrastructure_ tab of the HPC Cloud
+user interface. You should see your new image and template.
 
 
 ## Adding an SSH key to your profile
@@ -192,11 +193,33 @@ The operating system on the machine will go through the boot process.
 
 ## Logging in on your virtual machine
 
+After you have added your public key to your user profile, you should be able to log in on your virtual machine as _root_, allowing you to maintain your virtual machine.
 
+First, determine the ip-address of your virtual machine. The IP-address of your virtual machine
+is shown in the virtual machine overview, in the _Virtual Infrastructure_ tab of the user interface.
+The IP address is shown in the column titled _IPs_.
 
-## Adding a data storage
+If you use a Linux or a Mac OSX operating system, open a terminal window, and type
+```sh
+  ssh root@145.100.mmm.nnn
+```
+where you should replace _mmm_ and _nnn_ to match the IP address of your virtual machine.
+In the screen shot below, the IP address is _145.100.59.30_, so the correct command in this
+case is
+```sh
+  ssh root@145.100.59.30
+``` 
+**Note that this is an examle and you should change it to match your IP address.**
+
+If you use a Windows operating system, you should have imported your public and private keypair
+into _Putty_ or other terminal program. Use the IP of your virtual machine as host, use _root_ as
+username, and click _Connect_.
+
+If there were no errors, and if your local firewalls allows making remote connections, you should now be logged in on your virtual machine, as _root_. 
 
 
 ## Powering off and removing your machine
 
 
+
+[marketplace_step_1]:images/general-start/marketplace_step1.png

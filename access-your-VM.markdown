@@ -4,15 +4,15 @@
 
 You have various options to access your virtual machine. To do things on your virtual machine, you can access your virtual machine using a SSH shell, the built-in VNC client, or you can get a full virtual desktop.  We strongly recommend to use the SSH shell and full virtual desktop for production purposes. The build in VNC client is great for troubleshooting in case of technical issues like crashing VM's or inaccessibility.
 
-## Find IP-adres or hostname
+## Find IP-address or Host name
 
 Before accessing your machine you need to find out the address of your VM. There are two addresses you can use:
-* IP adres
-* Hostname
+* IP address
+* Host name
 
-The IP adress can be found under `Virtual Resources->Virtual Machines`. The external IP to connect to starts with 145.100.XX.XX. If there is no IP address or only an IP address starting with 100.XX.XX.XX(which is an internal IP adrress), please add a external network device to the VM.
+The IP address can be found under `Virtual Resources->Virtual Machines`. The external IP to connect to starts with 145.100.XX.XX. If there is no IP address or only an IP address starting with 100.XX.XX.XX(which is an internal IP address), please add a external network device to the VM.
 
-The hostname can be found in the log of your VM. Goto `Virtual Resources->Virtual Machines`, click on your VM, `log` and on top of the log you will find the DNS address. 
+The host name can be found in the log of your VM. Goto `Virtual Resources->Virtual Machines`, click on your VM, `log` and on top of the log you will find the DNS address. 
 
 For example:
   
@@ -21,7 +21,7 @@ Wed Jun 24 17:54:18 2015 [Z0][HKM][I]: Success executing Hook: SurfSARA_Dns: Add
 DNS record: vmname.projectname-institute.vm.surfsara.nl -> 145.100.68.93. 
 ```
 
-In this cause the hostname of the server is vmname.projectname-institute.vm.surfsara.nl which points to IP-adres 145.100.68.93.
+In this cause the host name of the server is vmname.projectname-institute.vm.surfsara.nl which points to IP address 145.100.68.93.
 
 You can predict the hostname: `${vmname}.${projectname}.vm.surfsara.nl`
 ## SSH access
@@ -54,7 +54,26 @@ You might need to install additional software on MacOS when using the `-X` flag.
 ### From a Windows client
 
 #### Terminal only
-http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+A well known SSH client for Windows is PuTTY. You can download it at
+http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html. This client only work with a terminal and does not support a graphical user interface out of the box.
+
+To login to your server:
+- start Putty
+-  Fill in the Host Name (or IP address) the Host Name (or IP address) e.g. vmname.projectname-institute.vm.surfsara.nl or 145.100.XX.XX
+
+- Select `Connection ->Data` on the left hand panel
+- Fill in your user name at "Auto-login username" (for the first time you start a VM this should be "root" )
+- Select `Connection->SSH->Auth ` on the left hand panel
+- Select your private key by selecting the browse button and navigate to your private key (with the `.ppk` extension) and select the private key
+- Select `Session` on the left hand panel
+- Save the session by giving it a name under saved sessions and select the "save" button.
+- Click the "Open" button on the bottom the start the session.
+- Fill in your passphrase if set.
+- The first time you start a session to a VM a warning is given that the machine is not cached. Select "yes" to continue the session.
+- Now you logged on to your VM 
+
+
+
 #### Terminal with Graphical User Interface
 http://mobaxterm.mobatek.net/
 
