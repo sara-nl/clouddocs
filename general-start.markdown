@@ -222,4 +222,4 @@ If there were no errors, and if your local firewalls allows making remote connec
 
 
 
-[marketplace_step_1]:(https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/2c2a2c746faca8888e4d38f93d3b352c/marketplace_step1.png)
+[marketplace_step_1]:images/general-start/marketplace_step1.png
