@@ -5,11 +5,11 @@
 > This _wiki_ collects SURFsara's upcoming **new HPC Cloud** documentation. That new service is currently in **_beta_** status, and this documentation is heavily under construction. You can expect frequent changes in these pages.
 
 ## Basics
-1. [Introduction to HPC Cloud](introduction-to-hpc-cloud)  
-1. [Estimate your resources] (estimate-your-resources)  
-1. [User Interface](user-interface)  
-1. [General start](general-start)  
-1. [Access your Virtual Machine](access-your-VM)
+- [Introduction to HPC Cloud](introduction-to-hpc-cloud)  
+- [Estimate your resources] (estimate-your-resources)  
+- [User Interface](user-interface)  
+- [General start](general-start)  
+- [Access your Virtual Machine](access-your-VM)
 
 ## Advanced Topics
 
