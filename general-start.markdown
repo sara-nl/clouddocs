@@ -111,7 +111,7 @@ After you have created an SSH key, go to your profile by selecting your
 user name on the top-right of the screen, then select _Settings_. A
 dialogue pops up.
 
-In the dialoge, go to the _Info_ page; then locate the section _Public
+In the dialogue, go to the _Info_ page; then locate the section _Public
 SSH Key_, and click on the blue edit icon. You should now see an empty
 area.
 
