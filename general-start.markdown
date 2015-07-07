@@ -104,7 +104,7 @@ user interface. You should see your new image and template.
 If you remember from the description of the virtual machine, there is
 no password for the _root_ user. You have to add an SSH to your user
 profile. First, you need to create an SSH key; this process is described
-in TBD. This SSH key enables you to log in as root on your virtual
+in [SSHkey](SSHkey). This SSH key enables you to log in as root on your virtual
 machine with ```ssh```.
 
 After you have created an SSH key, go to your profile by selecting your
