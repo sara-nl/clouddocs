@@ -116,7 +116,9 @@ On newer Fedora systems, use
 
 ### Built-in VNC client
 #### Cloud view
-![vnc_cloudview](https://git.osd.surfsara.nl/cloud-adm/OpenNebula-4.12-deployment/uploads/df27f2603fbaf79aa6f83abffe87b167/vnc_cloudview.png)
+![vnc_cloud1](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/vnc_cloud1.png)
+
+![vnc_cloud2](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/vnc_cloud2.png)
 
 
 
