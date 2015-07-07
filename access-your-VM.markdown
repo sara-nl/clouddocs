@@ -125,7 +125,7 @@ On newer Fedora systems, use
 
 
 #### User view
-To start VNC you can click the small displayat the right side of your screen.
+To start VNC you can click the small display at the right side of your screen.
 
 
 ![vnc_userview](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/vnc_userview.png)
