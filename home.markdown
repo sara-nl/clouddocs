@@ -15,7 +15,7 @@
 
 ### General
 
-1. [Customise your Virtual Machine](customize-your-vm)
+* [Customise your Virtual Machine](customize-your-vm)
  * [General options](customize-vm-general)
  * [Storage options](customize-vm-storage)
  * [Network options](customize-vm-network)
@@ -23,22 +23,22 @@
  * [Input/Output options](customize-vm-io)
  * [Context options](customize-vm-context)
  * [Other options](customize-vm-other)
-1. [Contextualization](contextualization)
-1. A Virtual Machine from Scratch
-1. Dynamic Virtual Machine Management  
-1. Sharing OpenNebula Objects  
-1. [Install Windows](windows)  
-1. Backup  
-1. Licences  
+* [Contextualization](contextualization)
+* A Virtual Machine from Scratch
+* Dynamic Virtual Machine Management  
+* Sharing OpenNebula Objects  
+* [Install Windows](windows)  
+* Backup  
+* Licences  
 
 ### Disk Images
-1. Scratch Disk Images  
-1. [Download an image](image_download)  
-1. Create an Image on your own Machine  
+* Scratch Disk Images  
+* [Download an image](image_download)  
+* Create an Image on your own Machine  
 
 ### Networks
-1. Virtual Network  
-1. Lightpaths 
+* Virtual Network  
+* Lightpaths 
 
 ### Security
 > **NOTE:**
@@ -47,16 +47,16 @@
 
 
 ### Inside the VM
-1. MySQL server  
-1. [Grid Storage](grid-storage)    
-1. Pilot Jobs  
-1. [NFS](NFS) &ndash; Share Data between Virtual Machines
+* MySQL server  
+* [Grid Storage](grid-storage)    
+* Pilot Jobs  
+* [NFS](NFS) &ndash; Share Data between Virtual Machines
 
 
 ## Migrating from the old HPC Cloud to the new HPC Cloud
 
-1. [Replacing the VirDir](replacing-virdir)
+* [Replacing the VirDir](replacing-virdir)
 
 
 ## Service implementation
-1. [Available resources](resources-available)
+* [Available resources](resources-available)
