@@ -52,5 +52,11 @@
 1. Pilot Jobs  
 1. [NFS](NFS) &ndash; Share Data between Virtual Machines
 
+
+## Migrating from the old HPC Cloud to the new HPC Cloud
+
+1. [Replacing the VirDir](replacing-virdir)
+
+
 ## Service implementation
 1. [Available resources](resources-available)
