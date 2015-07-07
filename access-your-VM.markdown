@@ -124,5 +124,5 @@ On newer Fedora systems, use
 
 #### User view
 
-![vnc_cloudview](https://doc.hpccloud.surfsara.nl/oortdoc/docs/commits/master/images/vnc_cloudview.png)
+![vnc_cloudview](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/vnc_cloudview.png)
 
