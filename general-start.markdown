@@ -72,17 +72,22 @@ Import the appliance by following the steps:
 
 2. Next, look for the **Ubuntu - KVM** _appliance_ in the list; you can
 	 search for it by typing on the search box, and click on the name of
-   the image in the list. This will show the details about the images.
+   the image in the list. 
+
+   ![marketplace step 2][marketplace_step_2]
+
+   This will show the details about the images.
    The description mentions that there is no password for the root
    account and that you need to add an SSH public key to your user
    file. We will do this in a later step.
    Read the extended information related to the _appliance_ (especially,
    the bit about the _contextualization_ and _configuration_ options.
-   ![marketplace step 2][marketplace_step_2]
+
+   ![marketplace step 3.1][marketplace_step_3.1]
 
 3. Click on the _Import_ button at the top-right corner of the screen.
    A dialogue will pop up, asking you for a few details.
-   ![marketplace step 3.1][marketplace_step_3.1]
+   ![marketplace step 3.2][marketplace_step_3.2]
 
 4. The first setting is the datastore for images. Make sure that you
 	 select _104: local_images_ssd_.
