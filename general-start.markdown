@@ -78,9 +78,11 @@ Import the appliance by following the steps:
    file. We will do this in a later step.
    Read the extended information related to the _appliance_ (especially,
    the bit about the _contextualization_ and _configuration_ options.
+   ![marketplace step 2][marketplace_step_2]
 
 3. Click on the _Import_ button at the top-right corner of the screen.
    A dialogue will pop up, asking you for a few details.
+   ![marketplace step 3][marketplace_step_3]
 
 4. The first setting is the datastore for images. Make sure that you
 	 select _104: local_images_ssd_.
@@ -223,3 +225,6 @@ If there were no errors, and if your local firewalls allows making remote connec
 
 
 [marketplace_step_1]:images/general-start/marketplace_step1.png
+[marketplate_step_2]:images/general_start/marketplace_step2.png
+[marketplate_step_3]:images/general_start/marketplace_step3.png
+
