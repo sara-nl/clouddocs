@@ -225,8 +225,6 @@ If there were no errors, and if your local firewalls allows making remote connec
 
 
 [marketplace_step_1]:images/general-start/marketplace_step1.png
-
-[marketplate_step_2]:images/general_start/marketplace_step2.png
-
-[marketplate_step_3]:images/general_start/marketplace_step3.png
+[marketplace_step_2]:images/general_start/marketplace_step2.png
+[marketplace_step_3]:images/general_start/marketplace_step3.png
 
