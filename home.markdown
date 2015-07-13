@@ -28,7 +28,6 @@
 * Dynamic Virtual Machine Management  
 * Sharing OpenNebula Objects  
 * [Install Windows](windows)  
-* [Backups](backups)
 * Licences  
 
 ### Disk Images
