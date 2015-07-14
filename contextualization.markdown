@@ -21,6 +21,12 @@ In summary, OpenNebula provides out-of-the-box facilities to tell a VM about:
 The way this information is provided to your VM is by means of a **virtual CD-ROM** (or _contextualization CD-ROM_). OpenNebula builds an `image` (that you do **NOT** get to see on the UI) for each VM for which you have enabled _contextualization_, and it makes it available via the IDE driver so that you can mount it in your operating system. 
 
 ### Internal point of view
+
+
+>**NOTE:**
+>
+>Pre-packaged .deb and .rpm packages are available on the [releases directory](https://github.com/OpenNebula/addon-context-linux/releases/) of the _OpenNebula/addon-context-linux_ project in GitHub.
+
 Some very useful [standard (read .deb and .rpm) packages](https://github.com/OpenNebula/addon-context-linux) are also delivered by the OpenNebula developers, that you can install in your VM. These packages set the booting sequence of the VM up in such a way that the _context information_ is used to configure the VM even before the operating system will prompt for normal login. The packages mount the _context CD-ROM_, then process the files found there to configure the root user to require a private-public key pair to SSH into the VM. They also configure the network according to the _context_, which is very handy because your VM must use the MAC and IP addresses that the HPC Cloud grants them (otherwise, the VM will have no network connectivity).
 
 >**In short:**
