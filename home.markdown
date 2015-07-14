@@ -4,6 +4,10 @@
 >
 > This _wiki_ collects SURFsara's upcoming **new HPC Cloud** documentation. That new service is currently in **_beta_** status, and this documentation is heavily under construction. You can expect frequent changes in these pages.
 
+
+## Migrating from the old HPC Cloud
+* [Replacing the VirDir](replacing-virdir)
+
 ## Basics
 - [Introduction to HPC Cloud](introduction-to-hpc-cloud)  
 - [Estimate your resources] (estimate-your-resources)  
@@ -50,11 +54,6 @@
 * [Grid Storage](grid-storage)    
 * Pilot Jobs  
 * [NFS](NFS) &ndash; Share Data between Virtual Machines
-
-
-## Migrating from the old HPC Cloud to the new HPC Cloud
-
-* [Replacing the VirDir](replacing-virdir)
 
 
 ## Service implementation
