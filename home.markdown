@@ -25,7 +25,7 @@
  * [Other options](customize-vm-other)
 * [Contextualization](contextualization)
 * A Virtual Machine from Scratch
-* Dynamic Virtual Machine Management  
+* [Virtual Machine states](vm-states)  
 * Sharing OpenNebula Objects  
 * [Install Windows](windows)  
 * Licences  
