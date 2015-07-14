@@ -25,7 +25,7 @@ Cloud.
 You can share files with multiple virtual machines by setting up a
 _File Server_. 
 
-> ** NOTE **
+> **NOTE:** 
 >
 > The _VirDir_ was offered to users for various reasons. The most important
 > reason for having a _VirDir_ was because the HPC Cloud team found that
@@ -40,15 +40,15 @@ an _NFS_ or _NFS4_ file server; the section [NFS](nfs) describes how.
 For sharing files between Windows systems, you can use the Windows file
 sharing.
 
-For sharing files between linux systems and windows systems, you should
+For sharing files between Linux systems and Windows systems, you should
 set up an _SMB_ server.
 
 
 ## Automatic backup of files
 
 The current HPC Cloud no longer offers an automatic backup service.
-For long-term storage of important files, we recommend using the SURFsara
-central archive. 
+For long-term storage of important files, we recommend using the [SURFsara
+central archive](https://www.surf.nl/en/services-and-products/data-archive/index.html). 
 
 
 ## Storing many files reliably
@@ -89,5 +89,5 @@ To upload an image:
    * upload; this allows you to select a file from your local system to
      be uploaded
 
-Currently, downloading virtual disk images is not possible.
+Currently, [downloading virtual disk images](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/image_download) is not possible from the User Interface.
 
