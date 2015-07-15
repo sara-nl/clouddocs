@@ -111,3 +111,15 @@ This state **keeps blocking the resources** that the VM holds, so your quota kee
 The OS running on the VM receives the corresponding **ACPI** signal, so that it can shut down gracefully. Persistent and non-persistent images will keep their changes after the reboot because the VM is **not** deallocated. 
 
 The OS will go through a graceful reboot sequence.
+
+#### Reboot hard
+
+Can only be triggered when the VM is in state RUNNING.
+
+_Reboot hard_ leaves the VM in the RUNNING state. 
+
+This state **keeps blocking the resources** that the VM holds, so your quota keeps ticking.
+
+The OS running on the VM does **not** notice anything. Persistent and non-persistent images will keep their changes after the reboot because the VM is **not** deallocated. 
+
+The OS will boot again.
