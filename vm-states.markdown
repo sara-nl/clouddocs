@@ -91,3 +91,23 @@ This state **releases the resources** that the VM holds, so your quota does **no
 The OS running on the VM does **not** notice anything. Persistent and non-persistent images will keep their changes for the next _Resume_ action. If the VM is deleted in this status, non-persistent images will loose their changes, but persistent images will keep their changes.
 
 When you _Resume_ the VM (with the _Play_ button), it is **not** immediately restored: the scheduler must allocate resources again (the PROLOG state), then it will go to BOOT and then RUNNING. And the OS will boot again.
+
+##  The reset button
+
+Under the reset button you can find the following actions:
+
+* Reboot
+* Reboot hard
+* Delete and recreate
+
+#### Reboot
+
+Can only be triggered when the VM is in state RUNNING.
+
+_Reboot_ leaves the VM in the RUNNING state. 
+
+This state **keeps blocking the resources** that the VM holds, so your quota keeps ticking.
+
+The OS running on the VM receives the corresponding **ACPI** signal, so that it can shut down gracefully. Persistent and non-persistent images will keep their changes after the reboot because the VM is **not** deallocated. 
+
+The OS will go through a graceful reboot sequence.
