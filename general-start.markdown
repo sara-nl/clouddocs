@@ -211,12 +211,19 @@ If you use a Linux or a Mac OSX operating system, open a terminal window, and ty
   ssh root@145.100.mmm.nnn
 ```
 where you should replace _mmm_ and _nnn_ to match the IP address of your virtual machine.
-In the screen shot below, the IP address is _145.100.59.30_, so the correct command in this
-case is
+
+>**Note:**
+>You may have to specify which of your (multiple) public keys you want to use to connect to your VM. The `ssh` command can take an argument of the following form for that:
+ * the flag `-i`
+ * a space
+ * and the path to the public key file
+>
+>**Example:**
+>
+>In the screen shot below, the IP address is _145.100.59.30_. And suppose the public key we want to use from our laptop is ~/.ssh/id_rsa.pub. Then, the correct command in this case would be:
 ```sh
-  ssh root@145.100.59.30
+  ssh -i ~/.ssh/id_rsa.pub root@145.100.59.30
 ``` 
-**Note that this is an examle and you should change it to match your IP address.**
 
 If you use a Windows operating system, you should have imported your public and private keypair
 into _Putty_ or other terminal program. Use the IP of your virtual machine as host, use _root_ as
