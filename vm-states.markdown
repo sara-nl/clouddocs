@@ -4,11 +4,7 @@ The triggers to change state are _action_s. These actions can be triggered by a 
 
 ![vm_actions_img](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/vm_actions.png)
 
-## Actions on a running VM
-
-Most actions you can trigger on a VM, can only take place while the VM is in status RUNNING. The following sections describe those, following the actions buttons from left to right.
-
-###  The pause button
+##  The pause button
 
 Under the pause button you can find the following actions:
 
@@ -17,6 +13,8 @@ Under the pause button you can find the following actions:
 * Power Off hard
 
 #### Suspend
+
+Can only be triggered when the VM is in state RUNNING.
 
 _Suspend_ brings the VM to the SUSPENDED state, but first going through the SAVE state. The context of the VM is saved in the node where it is running. 
 
@@ -28,6 +26,8 @@ When you _Resume_ the VM (with the _Play_ button), it is immediately restored: f
 
 #### Poweroff
 
+Can only be triggered when the VM is in state RUNNING.
+
 _Poweroff_ brings the VM to the POWEROFF state, but first going through the SHUTDOWN state. The context of the VM is **not** saved. 
 
 This state **keeps blocking the resources** that the VM holds, so your quota keeps ticking.
@@ -38,6 +38,8 @@ When you _Resume_ the VM (with the _Play_ button), it is immediately restored: f
 
 #### Poweroff hard
 
+Can only be triggered when the VM is in state RUNNING.
+
 _Poweroff_ brings the VM to the POWEROFF state, but first going through the SHUTDOWN state. The context of the VM is **not** saved. 
 
 This state **keeps blocking the resources** that the VM holds, so your quota keeps ticking.
@@ -46,7 +48,7 @@ The OS running on the VM does **not** notice anything. Persistent and non-persis
 
 When you _Resume_ the VM (with the _Play_ button), it is immediately restored: first it will go to BOOT and then RUNNING. And the OS will boot again.
 
-###  The stop button
+##  The stop button
 
 Under the stop button you can find the following actions:
 
@@ -55,6 +57,8 @@ Under the stop button you can find the following actions:
 * Undeploy hard
 
 #### Stop
+
+Can only be triggered when the VM is in state RUNNING.
 
 _Stop_ brings the VM to the STOPPED state, but first going through the EPILOG state. The context of the VM is saved in the system datastore. 
 
@@ -66,6 +70,8 @@ When you _Resume_ the VM (with the _Play_ button), it is **not** immediately res
 
 #### Undeploy
 
+Can only be triggered when the VM is in state RUNNING.
+
 _Undeploy_ brings the VM to the UNDEPLOYED state, but first going through the SHUTDOWN state. The context of the VM is **not** saved. 
 
 This state **releases the resources** that the VM holds, so your quota does **not** tick. You keep your IP addresses.
@@ -75,6 +81,8 @@ The OS running on the VM receives the corresponding **ACPI** signal, so that it 
 When you _Resume_ the VM (with the _Play_ button), it is **not** immediately restored: the scheduler must allocate resources again (the PROLOG state), then it will go to BOOT and then RUNNING. And the OS will boot again.
 
 #### Undeploy hard
+
+Can only be triggered when the VM is in state RUNNING.
 
 _Undeploy_ brings the VM to the UNDEPLOYED state, but first going through the SHUTDOWN state. The context of the VM is **not** saved. 
 
