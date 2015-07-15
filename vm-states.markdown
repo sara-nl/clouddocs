@@ -22,7 +22,7 @@ _Suspend_ brings the VM to the SUSPENDED state, but first going through the SAVE
 
 This state **keeps blocking the resources** that the VM holds, so your quota keeps ticking.
 
-The OS running on the VM does **not** notice anything.
+The OS running on the VM does **not** notice anything. Persistent and non-persistent images will keep their changes for the next _Resume_ action. If the VM is deleted in this status, non-persistent images will loose their changes, but persistent images will keep their changes.
 
 When you _Resume_ the VM (with the _Play_ button), it is immediately restored: first it will go to BOOT and then RUNNING. The OS and processes will continue running from the point they were left.
 
@@ -32,13 +32,19 @@ _Poweroff_ brings the VM to the POWEROFF state, but first going through the SHUT
 
 This state **keeps blocking the resources** that the VM holds, so your quota keeps ticking.
 
-The OS running on the VM receives the corresponding **ACPI** signal, so that it can shut down gracefully. Persistent and non-persistent images will keep their changes for the next _Resume_ action. Non-persistent images will loose their changes if the VM is deleted in this status.
+The OS running on the VM receives the corresponding **ACPI** signal, so that it can shut down gracefully. Persistent and non-persistent images will keep their changes for the next _Resume_ action. If the VM is deleted in this status, non-persistent images will loose their changes, but persistent images will keep their changes.
 
 When you _Resume_ the VM (with the _Play_ button), it is immediately restored: first it will go to BOOT and then RUNNING. And the OS will boot again.
 
 #### Poweroff hard
 
->TODOcument
+_Poweroff_ brings the VM to the POWEROFF state, but first going through the SHUTDOWN state. The context of the VM is **not** saved. 
+
+This state **keeps blocking the resources** that the VM holds, so your quota keeps ticking.
+
+The OS running on the VM does **not** notice anything. Persistent and non-persistent images will keep their changes for the next _Resume_ action. If the VM is deleted in this status, non-persistent images will loose their changes, but persistent images will keep their changes.
+
+When you _Resume_ the VM (with the _Play_ button), it is immediately restored: first it will go to BOOT and then RUNNING. And the OS will boot again.
 
 ###  The stop button
 
@@ -47,3 +53,33 @@ Under the stop button you can find the following actions:
 * Stop
 * Undeploy
 * Undeploy hard
+
+#### Stop
+
+_Stop_ brings the VM to the STOPPED state, but first going through the EPILOG state. The context of the VM is saved in the system datastore. 
+
+This state **releases the resources** that the VM holds, so your quota does **not** tick. You keep your IP addresses.
+
+The OS running on the VM does **not** notice anything. Persistent and non-persistent images will keep their changes for the next _Resume_ action. If the VM is deleted in this status, non-persistent images will loose their changes, but persistent images will keep their changes.
+
+When you _Resume_ the VM (with the _Play_ button), it is **not** immediately restored: the scheduler must allocate resources again (the PROLOG state), then it will go to BOOT and then RUNNING. The OS and processes will continue running from the point they were left.
+
+#### Undeploy
+
+_Undeploy_ brings the VM to the UNDEPLOYED state, but first going through the SHUTDOWN state. The context of the VM is **not** saved. 
+
+This state **releases the resources** that the VM holds, so your quota does **not** tick. You keep your IP addresses.
+
+The OS running on the VM receives the corresponding **ACPI** signal, so that it can shut down gracefully. Persistent and non-persistent images will keep their changes for the next _Resume_ action. If the VM is deleted in this status, non-persistent images will loose their changes, but persistent images will keep their changes.
+
+When you _Resume_ the VM (with the _Play_ button), it is **not** immediately restored: the scheduler must allocate resources again (the PROLOG state), then it will go to BOOT and then RUNNING. And the OS will boot again.
+
+#### Undeploy hard
+
+_Undeploy_ brings the VM to the UNDEPLOYED state, but first going through the SHUTDOWN state. The context of the VM is **not** saved. 
+
+This state **releases the resources** that the VM holds, so your quota does **not** tick. You keep your IP addresses.
+
+The OS running on the VM does **not** notice anything. Persistent and non-persistent images will keep their changes for the next _Resume_ action. If the VM is deleted in this status, non-persistent images will loose their changes, but persistent images will keep their changes.
+
+When you _Resume_ the VM (with the _Play_ button), it is **not** immediately restored: the scheduler must allocate resources again (the PROLOG state), then it will go to BOOT and then RUNNING. And the OS will boot again.
