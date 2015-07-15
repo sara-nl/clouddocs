@@ -123,3 +123,15 @@ This state **keeps blocking the resources** that the VM holds, so your quota kee
 The OS running on the VM does **not** notice anything. Persistent and non-persistent images will keep their changes after the reboot because the VM is **not** deallocated. 
 
 The OS will boot again.
+
+#### Delete and recreate
+
+Can only be triggered when the VM is in state RUNNING.
+
+_Delete and recreate_ leaves the VM in the RUNNING state, after going through a CLEANUP and PROLOG cycle.
+
+This state **keeps blocking the resources** that the VM holds, so your quota keeps ticking. Resources are reallocated in the same node.
+
+The OS running on the VM does **not** notice anything. Persistent and non-persistent images will keep their changes after the reboot. 
+
+The OS will boot again.
