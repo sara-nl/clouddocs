@@ -22,7 +22,7 @@ Large data images are possible, as no disk space is used on the node where the V
 
 ## Images with `persistent=no` on datastore `ceph`
 
-> **⚠ WARNING:**
+> __⚠ WARNING__
 > 
 > This needs to be checked: behavior could be surprising.
 
