@@ -4,6 +4,10 @@ The triggers to change state are _action_s. These actions can be triggered by a 
 
 ![vm_actions_img](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/vm_actions.png)
 
+## The play button
+
+The play button can only be clicked when the VM is in state SUSPENDED or STOPPED. It _resumes_ the VM to bring it to RUNNING.
+
 ##  The pause button
 
 Under the pause button you can find the following actions:
@@ -132,7 +136,7 @@ _Delete and recreate_ leaves the VM in the RUNNING state, after going through a 
 
 This state **keeps blocking the resources** that the VM holds, so your quota keeps ticking. Resources are reallocated in the same node.
 
-The OS running on the VM does **not** notice anything. Non-persistent images will loose their changes, but persistent images will keep their changes.
+The OS running on the VM does **not** notice anything. Non-persistent images will loose their changes, and persistent images may become inconsistent if there are pending I/O operations that could not be flushed.
 
 The OS will boot again.
 
@@ -153,6 +157,10 @@ _Hold_ leaves the VM in the HOLD state. It is intended as a means to delay the s
 This state does **not** grab any resources, so your quota does not tick.
 
 The OS in your VM does not notice anything. No image will suffer any change.
+
+>**Note:**
+>
+>You can create a VM directly in HOLD status upong instantiating a template, by checking the box _Hold_ checkbox on the _Create Virtual Machine_ dialog.
 
 #### Release
 
@@ -181,3 +189,41 @@ Under the dust bin button you can find the following actions:
 * Shutdown
 * Shutdown hard
 * Delete
+
+#### Shutdown
+
+Can only be triggered when the VM is in state RUNNING.
+
+_Shutdown_ eliminates the VM from the system in a controlled way, first going through the SHUTDOWN state. 
+
+This state **frees resources** that the VM holds, so your quota does not tick.
+
+The OS running on the VM receives the corresponding **ACPI** signal, so that it can shut down gracefully. Non-persistent images will loose their changes, but persistent images will keep their changes. 
+
+The OS will go through a graceful shutdown sequence.
+
+You cannot _resume_ this VM; you can only instantiate its template again.
+
+#### Shutdown hard
+
+Can only be triggered when the VM is in state RUNNING.
+
+_Shutdown_ eliminates the VM from the system, first going through the SHUTDOWN state. 
+
+This state **frees resources** that the VM holds, so your quota does not tick.
+
+The OS running on the VM does **not** notice anything. Non-persistent images will loose their changes, but persistent images will keep their changes.
+
+You cannot _resume_ this VM; you can only instantiate its template again.
+
+#### Delete
+
+Can be triggered when the VM is in **any** state.
+
+_Delete_ abruptly destroys the image.
+
+This state **releases resources** that the VM holds, so your quota does not keep ticking.
+
+The OS running on the VM does **not** notice anything. Non-persistent images will loose their changes, and persistent images may become inconsistent if there are pending I/O operations that could not be flushed. Persistent images may become in status ERROR.
+
+You cannot _resume_ this VM; you can only instantiate its template again.
