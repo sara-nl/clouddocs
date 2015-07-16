@@ -13,8 +13,8 @@ The UI (short for User Interface) is the web site that allows you to operate the
 This is how you change your password:
 
 1. Look at the top-right corner of the screen on the UI. There is a _buddy_ icon that represents your user. Click on it.
-2. Click on _settings_, you will see the option to change or update your password. 
-3. On the new screen, type your new password and click the button to submit it.
+2. Click on _Settings_, you will see the option to change or update your password. If you use a `cloud view` (see section below for OpenNebula views), click on the _Change Password_ button.
+3. On the new screen, type your new password twice and click the button to submit it.
 
 ## Logging out
 
@@ -70,7 +70,7 @@ A group administrator sees the most functionality (including administering other
 
 #### Group Administrator user 
 * Standard View: **groupadmin** (and **cloud** and **user**)
-* Description: full control of the objects allocated to a project
+* Description: full control the project quota and members
 * Possible Functions: 
   * Create/Modify/Delete users in the project
   * Define quotas for each user
@@ -84,7 +84,7 @@ A group administrator sees the most functionality (including administering other
 Users with the **group administrator** and **advanced** roles have access to multiple views, and can switch between these anytime. 
 
 * Switching from **cloud** to **user** view:  
-In the user interface, select the user icon at the top right (next to the Home icon). Then select the _Change view_ button, unfold the tab and switch the option to **user**. Finally click on the _Update view_ button as displayed below:
+In the user interface, select the _buddy_ icon that represents your user at the top right (next to the Home icon). Then select the _Change view_ button, unfold the tab and switch the option to **user**. Finally click on the _Update view_ button as displayed below:
 
 ![switch_cloud_to_user_img](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/switch_to_user_view.png) 
 
@@ -99,7 +99,7 @@ There is a menu on the left side within the **user** and **groupadmin** `view`s.
 * Dashboard
 * Virtual Resources
 * Infrastructure
-* Marketplace
+* AppMarket
 
 A description of each of these items follows. A vertical blue bar on the left of the tab tells which one is selected.
 
@@ -124,5 +124,5 @@ The _Infrastructure_ menu allows you mainly to see information about the support
 * _Security Groups_: the so-called `Security Group`s are meant to work as an external firewall on `VM`s. 
 > Our current implementation does **not** support `Security Group`s. We are working on possible alternatives. 
 
-#### Marketplace
-The _Marketplace_ tab connects to the OpenNebula Marketplace site and makes the so-called _Appliances_ from there available within the HPC Cloud user interface. _Appliances_ are ready-made `image`s (and, sometimes, `template`s as well), that you can import into your project so that you can instantiate `VM`s out of them. There are pre-made _appliances_ for CentOS and Ubuntu, for example. When you click on one of them, make sure you read the comments related to it (note that all of these comments is coming from the OpenNebula web site). You can contribute your own _appliances_ to the _Marketplace_ as well.
+#### AppMarket
+The _AppMarket_ tab connects to the HPC Cloud Marketplace and makes the so-called _Appliances_ from there available within the HPC Cloud user interface. _Appliances_ are ready-made `image`s (and, sometimes, `template`s as well), that you can import into your project so that you can instantiate `VM`s out of them. There are pre-made _appliances_ for CentOS and Ubuntu, for example. When you click on one of them, make sure you read the comments related to it (note that all of these comments is coming from the OpenNebula web site). You can contribute your own _appliances_ to the _Marketplace_ as well.
