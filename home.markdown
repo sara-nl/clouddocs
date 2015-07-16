@@ -35,9 +35,10 @@
 * Licences  
 
 ### Disk Images
-* Scratch Disk Images  
+* [Scratch Disk Images](scratch_disks)
 * [Download an image](image_download)  
-* Create an Image on your own Machine  
+* Create an Image on your own Machine
+* [Disk Persistence](disk_persistence)
 
 ### Networks
 * Virtual Network  
