@@ -22,6 +22,10 @@ Large data images are possible, as no disk space is used on the node where the V
 
 ## Images with `persistent=no` on datastore `ceph`
 
+> **⚠ WARNING:**
+> 
+> This needs to be checked: behavior could be surprising.
+
 When a VM is created, images with `persistent=no` from the datastore `ceph` are copied for the private use by the VM.
 This takes some copying at startup and the copy is directly connected as a network disk to the node where the VM will run.
 
