@@ -35,10 +35,11 @@
 * Licences  
 
 ### Disk Images
+* [Image Storage](inage_storage)
 * [Scratch Disk Images](scratch_disks)
+* [Image Persistence](image_persistence)
 * [Download an image](image_download)  
 * Create an Image on your own Machine
-* [Disk Persistence](disk_persistence)
 
 ### Networks
 * Virtual Network  
