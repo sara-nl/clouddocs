@@ -16,15 +16,12 @@ Large data images are problematic, as the disk space needs to be available on th
 ## Images with `persistent=yes` on datastore `ceph`
 
 When a VM is created, images with `persistent=yes` on the datastore `ceph` are directly connected as a network disk to the node where the VM will run.
-This takes no copying at startup and all data transfer will go over the network.
+This takes no copying at startup and all data written to the VM's disk will go over the network to the image.
+This implies that if the VM is deleted or crashes, the image may be corrupt, just as with a real hard disk connected to a PC.
 
 Large data images are possible, as no disk space is used on the node where the VM runs.
 
 ## Images with `persistent=no` on datastore `ceph`
-
-> __⚠ WARNING__
-> 
-> This needs to be checked: behavior could be surprising.
 
 When a VM is created, images with `persistent=no` from the datastore `ceph` are copied for the private use by the VM.
 This takes some copying at startup and the copy is directly connected as a network disk to the node where the VM will run.
