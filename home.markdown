@@ -35,9 +35,9 @@
 * Licences  
 
 ### Disk Images
-* [Image Storage](inage_storage)
-* [Scratch Disk Images](scratch_disks)
+* [Image Storage](image_storage)
 * [Image Persistence](image_persistence)
+* [Scratch Disk Images](scratch_disk)
 * [Download an image](image_download)  
 * Create an Image on your own Machine
 
