@@ -182,7 +182,7 @@ This state will grab resources normally and let the quota start ticking.
 
 The OS may boot again.
 
-## The dust bin icon
+## The dust bin button
 
 Under the dust bin button you can find the following actions:
 
