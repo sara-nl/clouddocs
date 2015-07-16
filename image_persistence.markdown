@@ -10,6 +10,10 @@ This means, in short, that __changes are lost__.
 
 At each instantiation of the template, a copy of the image is made and attached as a disk to the VM. Any changes to the VM's disk are discarded when terminating the VM.
 
+If you want to run multiple VMs with a disk from the same image, you need `persistent=no`, because one disk image cannot be connected to more than one VM. Compare this to a real hard drive that can only be connected to one PC at a time. `Persistent=no` creates a copy for each VM. This implies that changes to the disk are not shared with or propagated to the other VMs.
+
+You can change the `persistent` property by selecting a disk and using the pencil icon to the right of the property.
+
 ![persistent_no](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/707dc6b9bad33fa149319adc1dd46548/persistent_no.png)
 
 ## Image: persistent = yes
