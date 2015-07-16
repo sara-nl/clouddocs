@@ -30,7 +30,7 @@
 * [Contextualization](contextualization)
 * A Virtual Machine from Scratch
 * [Virtual Machine states](vm-states)  
-* Sharing OpenNebula Objects  
+* [Sharing OpenNebula Objects](sharing-objects)  
 * [Install Windows](windows)  
 * Licences  
 
