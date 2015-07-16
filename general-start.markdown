@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This chapter teaches you how you can create a `Virtual Machine` (from now on, VM) running Linux, by importing an _appliance_ from the Marketplace. 
+This chapter teaches you how you can create a `Virtual Machine` (from now on, VM) running Linux, by importing an _appliance_ from the `AppMarket`. 
 
 > **NOTE**
 >
@@ -30,17 +30,15 @@ The hard disks in your virtual machine are not real; instead, all
 information on your hard disks are stored in big files on a file server.
 These files are usually called _disk images_ or simply _images_.
 
-To make starting a virtual machine easier, a _marketplace_ has been
+To make starting a virtual machine easier, a _marketplace_ called `AppMarket` has been
 provided with disk images which come pre-installed with an operating
-system. The marketplace also contains simple templates with settings to
+system. The AppMarket also contains simple templates with settings to
 get you started quickly. The combination of a pre-installed hard disk
 and a template is called an _appliance_.
 
-
-
 ## Logging into the HPC Cloud User Interface
 
-The HPC Cloud User Interface (from now on, UI) is the web site where you manage your VMs, disks and networks. After your project is approved, you will receive a username and a password for the UI.
+The HPC Cloud User Interface (from now on, UI) is the web site where you manage your VMs, disks and networks. After you grant access to the HPC Cloud, you will receive a username and a password for the UI.
 
 You can reach the UI at the following URL: https://ui.hpccloud.surfsara.nl 
 
@@ -54,40 +52,33 @@ To start building a virtual machine, go to the UI and log in with the username a
 >
 > ...that the username and password are **not** for the VM you are going to create. You can set users and passwords later one, once you have created the VM.
 
-## Importing an _appliance_ from the Marketplace
-We are going to work with a pre-made `image` that is available on the Marketplace. 
+## Importing an _appliance_ from the AppMarket
+We are going to work with a pre-made `image` that is available on the AppMarket. 
 
 > **NOTE**
 >
-> The Marketplace is a collection of so-called _appliances_. It is publicly available on the web of OpenNebula, and anybody can contribute their _appliances_ to it. It is a handy way to import, from within the well-known UI, useful images that are ready to use.
->
-> However, because of these open possibilities, it may also be the case that, when you are reading this documentation, the _appliance_ we mention here has changed or been removed. 
+> The AppMarket is a collection of so-called _appliances_ that is maintained by the HPC Cloud team. It is a handy way to import, from within the well-known UI, useful images that are ready to use. There is also an OpenNebula marketplace, publicly available on the website of OpenNebula, and anybody can contribute their _appliances_ to it.
 
 Import the appliance by following the steps:
 
 1. From the **user** `view` or the **groupadmin** `view`, choose the
-   _Marketplace_ tab on the left menu of the screen, as shown in the
+   _AppMarket_ tab on the left menu of the screen and then _Appliances_, as shown in the
    screen shot; in the screen shot, it has been highlighted in red.
-   ![marketplace step 1][marketplace_step_1]
+   ![appmarket step 1](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/appmarket_step_1.png)
 
-2. Next, look for the **Ubuntu - KVM** _appliance_ in the list; you can
-	 search for it by typing on the search box, and click on the name of
+2. Next, look for the **Ubuntu - KVM** _appliance_ in the list; click on the name of
    the image in the list. 
-
-   ![marketplace step 2][marketplace_step_2]
-
    This will show the details about the images.
    The description mentions that there is no password for the root
    account and that you need to add an SSH public key to your user
    file. We will do this in a later step.
    Read the extended information related to the _appliance_ (especially,
    the bit about the _contextualization_ and _configuration_ options.
-
-   ![marketplace step 3.1][marketplace_step_3.1]
+   ![appmarket step 2](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/appmarket_step_2.png)
 
 3. Click on the _Import_ button at the top-right corner of the screen.
    A dialogue will pop up, asking you for a few details.
-   ![marketplace step 3.2][marketplace_step_3.2]
+   ![appmarket step 3](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/appmarket_step_3.png)
 
 4. The first setting is the datastore for images. Make sure that you
 	 select _104: local_images_ssd_.
@@ -98,7 +89,7 @@ Import the appliance by following the steps:
    images, this will help you keep everything organized.
 
 6. Finally, click _Import_. This will start importing the appliance from 
-   the marketplace. When the import is succesful, it will create an
+   the marketplace. When the import is successful, it will create an
    image and a template.
 
 You can verify that the process is complete by inspecting the _Template_
@@ -150,14 +141,13 @@ now, we'll leave most settings alone, but you can browse through the
 different options. Select the _Network_ settings.
 
 3. The network settings shows which network is connected to each network
-	 interface. To connect interface 0 to the internet, select the network
-   called "internet", as shown in the screen shot.
-   
+	 interface. To connect _interface 0_ to the internet, select the network
+   called "internet", as shown in the screen shot.   
    Make sure that display shows that you have selected the "internet"
    network, as shown in the screen shot.
+   ![template IP](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/template_IP.png)
 
 4. Click "Update"
-
 
 
 ## Starting your virtual machine
@@ -171,8 +161,8 @@ empty.
 
 Start your first virtual machine using the following steps:
 
-1. click on the green plus sign, as shown in the screen shot. This opens
-	 a dialogue with options for your virtual machine.
+1. Click on the green plus sign, as shown in the screen shot. This opens a dialogue with options for your virtual machine.
+![startVM](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/startVM.png)
 
 2. The first step in the dialogue is to give your virtual machine a
 	 name. This name is also used in the host name of your machine later,
@@ -195,6 +185,8 @@ looking for a place where your virtual machine can actually run.
 
 When the required capacity becomes available your virtual machine will
 go through a few states, and eventually, it will appear as _RUNNING_.
+![testVM](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/testVM.png)
+
 The operating system on the machine will go through the boot process.
 
 
@@ -232,12 +224,13 @@ username, and click _Connect_.
 If there were no errors, and if your local firewalls allows making remote connections, you should now be logged in on your virtual machine, as _root_. 
 
 
-## Powering off and removing your machine
+## Shut down and remove your machine
 
+If you want to shutdown your VM and stop consuming quotas, perform the following steps:
 
+1. Tick the box to the left on the row with your VM and click "Shutdown" (upper right).
+![shutdownVM](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/shutdownVM.png)
 
-[marketplace_step_1]:images/general-start/marketplace_step1.png
-[marketplace_step_2]:images/general-start/marketplace_step2.png
-[marketplace_step_3.1]:images/general-start/marketplace_step3.1.png
-[marketplace_step_3.2]:images/general-start/marketplace_step3.2.png
-
+2. Refresh the Virtual Machines list (the two arrows chasing each other next to "+" button) until your VM is gone.
+That was the shutdown. Once the operation is finished, your VM will be removed from the display.   
+You can start a new VM from your existing image any time.
