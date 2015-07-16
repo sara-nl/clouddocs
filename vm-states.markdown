@@ -126,7 +126,7 @@ The OS will boot again.
 
 #### Delete and recreate
 
-Can only be triggered when the VM is in state RUNNING.
+Can be triggered when the VM is in **any** state.
 
 _Delete and recreate_ leaves the VM in the RUNNING state, after going through a CLEANUP and PROLOG cycle.
 
@@ -135,3 +135,49 @@ This state **keeps blocking the resources** that the VM holds, so your quota kee
 The OS running on the VM does **not** notice anything. Non-persistent images will loose their changes, but persistent images will keep their changes.
 
 The OS will boot again.
+
+##  The table button
+
+Under the table button you can find the following actions:
+
+* Hold
+* Release
+* Boot
+
+#### Hold
+
+Can only be triggered when the VM is in state PENDING. 
+
+_Hold_ leaves the VM in the HOLD state. It is intended as a means to delay the starting of a VM.
+
+This state does **not** grab any resources, so your quota does not tick.
+
+The OS in your VM does not notice anything. No image will suffer any change.
+
+#### Release
+
+Can only be triggered when the VM is in state HOLD.
+
+_Release_ resumes the start-up of a VM, to bring it to the RUNNING state.
+
+This state will grab resources normally and let the quota start ticking.
+
+The OS will boot again.
+
+#### Boot
+
+Can only be triggered when the VM is in state UNKNOWN or BOOT.
+
+_Boot_ tries to force a normal start-up of your VM by poking the hypervisor, to bring it to the RUNNING state.
+
+This state will grab resources normally and let the quota start ticking.
+
+The OS may boot again.
+
+## The dust bin icon
+
+Under the dust bin button you can find the following actions:
+
+* Shutdown
+* Shutdown hard
+* Delete
