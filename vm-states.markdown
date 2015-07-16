@@ -132,6 +132,6 @@ _Delete and recreate_ leaves the VM in the RUNNING state, after going through a 
 
 This state **keeps blocking the resources** that the VM holds, so your quota keeps ticking. Resources are reallocated in the same node.
 
-The OS running on the VM does **not** notice anything. Persistent and non-persistent images will keep their changes after the reboot. 
+The OS running on the VM does **not** notice anything. Non-persistent images will loose their changes, but persistent images will keep their changes.
 
 The OS will boot again.
