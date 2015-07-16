@@ -21,11 +21,10 @@ or the drop down menu to the right of the `clone` button.
 
 A disk image with `persistent=yes` will keep its changes after shutdown of the VM.
 
-At each instantiation of the template, the image may be directly connected to the VM so that all changes are written immediately or a copy is made first and changes are copied back at shutdown of the VM.
-
-`Persistent=yes` implies that you cannot to run multiple VMs with a disk from the same image, 
-because one disk image cannot be connected to more than one VM. 
-Compare this to a real hard drive that can only be connected to one PC at a time. 
+`Persistent=yes` implies that you cannot connect this disk image to more than one VM at the same time. 
+Compare this to a real hard drive that can only be connected to one PC at a time.
+It is possible to have the image in more than one template, as long as at most one template is instantiated.
+This can be useful when a template with 32 cores needs a software update: use a similar template with only one core.
 
 You can change the `persistent` property by selecting a disk and using the pencil icon to the right of the property
 or the drop down menu to the right of the `clone` button.
