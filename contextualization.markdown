@@ -60,7 +60,7 @@ yum install <package_name.rpm>
 ```
 
 ### SSH key for root
-You can let your VM require the root user to log in only with a valid [SSH key](https://en.wikipedia.org/wiki/Secure_Shell#Key_management). This option is the preferred way in the usual Marketplace appliances.
+You can let your VM require the root user to log in only with a valid [SSH key](https://en.wikipedia.org/wiki/Secure_Shell#Key_management). This option is the preferred way in the usual AppMarket appliances.
 
 To enable SSH key _contextualization_, before you create your VM, on your `template`, on the template-editing screen, under the _Context_ tab, in the _Network & SSH_ subsection, make sure that the checkbox _Add SSH contextualization_ is checked.
 
