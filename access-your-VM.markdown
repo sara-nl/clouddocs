@@ -91,15 +91,17 @@ To login to your VM:
 #### Terminal with Graphical User Interface
 If you want to have graphical programs running on the VM whose windows are displayed on your local computer and you are running Windows on your local computer, then you are advised to have a look at Mobaxterm, an application you can read about more at: http://mobaxterm.mobatek.net/
 
-### Getting a virtual desktop on a Linux machine
+## Getting a Remote Desktop on a Linux VM
 
-With Xrdp you can remotely log in on a virtual machine, giving you a full virtual desktop. Moreover, you can close the RDP window and pick up the session later, allowing you to continue to work on a graphical desktop while switching off your own work computer.
+With Xrdp you can remotely log in on a virtual machine, giving you a full virtual desktop. Moreover, you can close the RDP window and pick up the session later, allowing you to continue to work on a graphical desktop while switching off your own local computer.
 
-First, you need to set up your Linux machine, using the following steps. These steps describe the steps for Centos version 6, which is currently offered by the virtual machine wizard.
+First, you need to set up your Linux VM, using the following steps.
 
-create a network filter which allows inbound connections to your virtual machines on port 3389 
-configure your virtual machine template to use this network filter  
-modify the firewall settings to allow new inbound connections to your virtual machine on port 3389, for example by adding the following line to /etc/sysconfig/iptables:
+>**Note:**
+>
+>The following steps describe the procedure for setting up Xrdp in CentOS 6. Other distributions may require some variation, but the guidelines should remain analogous.
+
+1. **Open your firewall:** On your VM, modify the firewall settings to allow new inbound connections on port 3389, for example by adding the following line to /etc/sysconfig/iptables:
 ``` bash
   -A INPUT -m state --state NEW -m tcp -p tcp --dport 3389 -j ACCEPT
 ```
@@ -107,39 +109,46 @@ modify the firewall settings to allow new inbound connections to your virtual ma
 ``` bash
   service iptables reload
 ```
- install tigervnc-server and xrdp:
+2. **Install the Xrdp server:** In our distribution, install packages _tigervnc-server_ and _xrdp_:
 ``` bash
   yum install -y tigervnc-server xrdp
 ```
- start the xrdp service and make them start at boot time:
+3. **Configure the Xrdp service:** make the start at boot time, and start it for this session already:
 ``` bash
   chkconfig --levels 5 xrdp on
   service xrdp start
 ```
-On newer Fedora systems, use
+
+>**Note:**
+>
+>On newer Fedora-based systems, use
 ``` bash
   systemctl enable xrdp
   systemctl start xrdp
   systemctl enable xrdp-sesman
   systemctl start xrdp-sesman
 ```
- You can now log in on the virtual machine using RDP. From Windows or Mac OSX, use "Remote Desktop Connection", sometimes supplied as an additional package to Microsoft Office. On a Linux desktop, use Rdesktop. **Important**: make sure to set the display to "millions of colors" (Mac OsX) or "high color (16-bits)" (Windows), because "thousands of colors" (Mac OsX) or "high color (15-bits)" (Windows) will give you a non-descriptive error.
- 
+
+You can now log in on the virtual machine using RDP. From Windows or Mac OSX, use the _Remote Desktop Connection_ client, sometimes supplied as an additional package to _Microsoft Office_. On a Linux desktop, use _Rdesktop_. 
+
+>**Note:**
+>
+>Make sure to set the display to _millions of colors_ (Mac OsX) or _high color (16-bits)_ (Windows), because _thousands of colors_ (Mac OsX) or _high color (15-bits)_ (Windows) will give you a non-descriptive error.
 
 
 ### Built-in VNC client
+
+The built-in VNC console is accessible from your web browser, and you do **not** have to install anything on your VM for it to work. When you open it, you will see a screen as if a physical monitor would be connected to a computer.
+
+However, the button to launch that VNC client is placed in different locations depending on the `view` you are using on the UI. Here is a list of known views:
+
 #### Cloud view
 ![vnc_cloud1](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/vnc_cloud1.png)
 
 ![vnc_cloud2](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/vnc_cloud2.png)
 
-
-
-
-
-#### User view
+#### User view and Projectadmin view
 To start VNC you can click the small display at the right side of your screen.
-
 
 ![vnc_userview](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/vnc_userview.png)
 
