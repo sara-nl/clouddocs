@@ -8,7 +8,7 @@ Storage for a VM is specified in terms of `disk`s (which are `image`s linked to 
 * on the left, the list of all `disk`s already defined on that `template`
 * on the right, the particularities for a `disk` selected from the left.
 
-You can add as many `disk`s as you need to a given template, each referring to an existing `image` or to a _volatile_ `disk`. 
+You can add as many `disk`s as you need to a given `template`, each referring to an existing `image` or to a _volatile_ `disk`. 
 
 >**NOTE:**
 >
