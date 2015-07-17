@@ -127,4 +127,8 @@ The _Infrastructure_ menu allows you mainly to see information about the support
 > Our current implementation does **not** support `Security Group`s. We are working on possible alternatives. 
 
 #### AppMarket
-The _AppMarket_ tab connects to the HPC Cloud Marketplace and makes the so-called _Appliances_ from there available within the HPC Cloud user interface. _Appliances_ are ready-made `image`s (and, sometimes, `template`s as well), that you can import into your project so that you can instantiate `VM`s out of them. There are pre-made _appliances_ for CentOS and Ubuntu, for example. When you click on one of them, make sure you read the comments related to it (note that all of these comments is coming from the OpenNebula web site). You can contribute your own _appliances_ to the _Marketplace_ as well.
+The _AppMarket_ tab makes some so-called _Appliances_ available within the HPC Cloud user interface. _Appliances_ are ready-made `image`s (and, sometimes, `template`s as well), that you can import into your project so that you can instantiate `VM`s out of them. There exist pre-made _appliances_ for CentOS and Ubuntu, for example. When you click on one of them, make sure you read the comments related to it. 
+
+>**Note:**
+>
+>We expect to offer the possibility for users to contribute their own _appliances_ to the AppMarket in the future.
