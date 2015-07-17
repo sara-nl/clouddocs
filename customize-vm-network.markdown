@@ -10,7 +10,7 @@ You can add as many `nic`s as you need to a given template, each referring to an
 
 >**NOTE:**
 >
-> When you import an _appliance_ from the _Marketplace_, that action usually downloads one `template` along with an `image`. However, you usually have to add networks to the template after you have downloaded it. This is the place to do it.
+> When you import an _appliance_ from the _AppMarket_, that action usually downloads one `template` along with an `image`. However, you usually have to add networks to the template after you have downloaded it. This is the place to do it.
 
 ### Edit a `nic` for a `template`
 
