@@ -4,7 +4,7 @@
 >
 >VMs are created by instantiating a `template`. When you create a VM, the HPC Cloud looks for a place to run it where there actually is enough room. Then it copies the `image`s there and it starts a hypervisor (in our case, KVM); that is your VM. The hypervisor will look at the drives that exist within the `image`s and try to boot an operating system from them.
 
-On the _OS Booting_ tab of the `template`-editing screen you can specify information that you want KVM to know so that your VM boots according to these.
+On the _OS Booting_ tab of the `template`-editing screen you can specify information that you want KVM to know so that your VM boots according to that.
 
 There are 4 subsections on this tab:
 * _Boot_: for general booting options
