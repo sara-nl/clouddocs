@@ -24,7 +24,7 @@ The options you have for a `disk` are:
 
 #### Choosing an `image` as a `disk` in a `template`
 
-When you select _Image_ as the storage option for a `disk` in a `template`, you see a table where get to choose the `image` you want from the list of your existing `image`s. You can sort and filter that table to help you find the `image` you want to see. When you find the `image` you want and you click on it, its name will appear in blue under that table.
+When you select _Image_ as the storage option for a `disk` in a `template`, you see a table where you get to choose the `image` you want from the list of your existing `image`s. You can sort and filter that table to help you find the `image` you want to use. When you find the `image` you want and you click on it, its name will appear in blue under that table.
 
 #### Choosing a _volatile_ `disk` in a `template`
 
