@@ -35,7 +35,7 @@ Some very useful [standard (read .deb and .rpm) packages](https://github.com/Ope
 >
 >* You **must adapt your VM** to benefit from this _context_: your VM needs to actively read and interpret the _context_, or otherwise it will ignore the context. 
 >
->* In general, **VMs from Marketplace** appliances are set up to use _contextualization_.
+>* In general, **VMs made from AppMarket** appliances are set up to use _contextualization_.
 
 ## Contextualization in practice
 
