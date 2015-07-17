@@ -6,7 +6,7 @@ You can customise your VMs by editing the `template`s you instantiate the VMs fr
 
 In order to edit an existing template, under the _Virtual Resources_ menu, choose the _Templates_ item. This will show a list of available `template`s. Click on the one you want to edit. Extended information about that image will be displayed within two tabs: _Info_ and _Template_. 
 
-Over this extended information area, there are 3 buttons. One of them says _Update_. If you click there, you will be able to edit the _template_. Do it now; the button will become green and, to its right, you will see 2 modes for editing the _template_: a _Wizard_ mode and an _Advanced_ one. We will be describing here the _Wizard_ mode. 
+Above this extended information area, there are 3 buttons. One of them says _Update_. If you click there, you will be able to edit the _template_. Do it now; the button will become green and, to its right, you will see 2 modes for editing the _template_: a _Wizard_ mode and an _Advanced_ one. We will be describing here the _Wizard_ mode. 
 
 > **NOTE:**
 >
