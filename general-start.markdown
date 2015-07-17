@@ -14,7 +14,7 @@ This page teaches how to create a `Virtual Machine` (from now on, VM) running Li
 
 You use the HPC Cloud interface to build `virtual machine`s. 
 
-You build them by first describing all their parts. This description is called a `template`. 
+You build them by first describing all their parts. This description is called a `template`. You _instantiate_ a template to make a VM out of it.
 
 Storage drives (like hard disks) are `images`. They do not physically exist, but rather, they only exist as files in a backing file server.
 
@@ -73,55 +73,33 @@ and _Image_ sections in the _Virtual Infrastructure_ tab of the UI. You should s
 
 ## Adding an SSH key to your profile
 
-If you remember from the description of the virtual machine, there is
-no password for the _root_ user. You have to add an SSH to your user
-profile. First, you need to create an SSH key; this process is described
-in [SSHkey](SSHkey). This SSH key enables you to log in as root on your virtual
-machine with ```ssh```.
+If you remember from the description of the virtual machine, there is no password for the _root_ user. You have to add an SSH key to your user profile in order to be able to log in as root in your VM. 
 
-After you have created an SSH key, go to your profile by selecting your
-user name on the top-right of the screen, then select _Settings_. A
-dialogue pops up.
+First, you need to create an SSH key in your own computer. This process is described in [SSHkey](SSHkey). This SSH key enables you to log in as root on your virtual machine with ```ssh```.
 
-In the dialogue, go to the _Info_ page; then locate the section _Public
-SSH Key_, and click on the blue edit icon. You should now see an empty
-area.
+After you have created an SSH key, go to your _user profile_ by selecting the _buddy_ icon on the top-right of the screen, then select _Settings_. A dialogue pops up. In the dialogue, go to the _Info_ page; then locate the section _Public SSH Key_, and click on the blue _edit_ icon. You should now see an empty text area.
 
-Find the public key on your system; copy your public key, usually called
-```id_rsa.pub```, and paste the key into the text area.
+Find the file in your computer containing the public key you created (it is usually called ```id_rsa.pub``` and it is usually found in the ```.ssh``` directory in your ```$HOME```directory). Open the file, then copy the contents of the file (those contents are your public key) and paste those contents into the text area of the UI.
 
-You can close your profile; your public key is automatically stored in
-your profile.
-
+You can close your profile now. Your public key is automatically stored in your profile.
 
 ## Finishing the virtual machine configuration by editing the template
 
-You now have a template for a working virtual machine. However, in its
-current state, it is is not connected to the internet, so you cannot
-connect to it remotely.
-
+When you imported the _appliance_ fromt he AppMarket, it made a `template` available for you to make a virtual machine. However, the VM would not be connected to the internet yet, so you cannot connect to it remotely.
 
 ### Connecting your virtual machine to the internet
 
-Connect your virtual machine to the internet by
-following these steps:
+Allow your virtual machine to connect to the internet by following these steps:
 
-1. Go to the _Templates_ section. Find the template you just created, and
-click on it. You now see an overview of the template settings.
+1. Go to the _Templates_ section. Find the `template` you just created, and click on it. You now see an overview of the `template` settings.
 
-2. Click on _Update_ in the top-right of the screen to update the template.
-This shows the different configuration options for your template. For
-now, we'll leave most settings alone, but you can browse through the
-different options. Select the _Network_ settings.
+2. Click on _Update_ on the top-right of the screen to start editing the `template`.
+This shows the different configuration options for your `template`. For now, we will leave most settings alone, but you can browse through the different options. Select the _Network_ tab.
 
-3. The network settings shows which network is connected to each network
-	 interface. To connect _interface 0_ to the internet, select the network
-   called "internet", as shown in the screen shot.   
-   Make sure that display shows that you have selected the "internet"
-   network, as shown in the screen shot.
+3. The _Network_ tab shows which network interfaces (or `nic`s) your VM would have and to which networks they would be connected. To connect the only available `nic` at the moment (called _Interface 0_) to the internet, select the network called "internet", to the right of it, as shown on the screen shot. 
    ![template IP](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/template_IP.png)
 
-4. Click "Update"
+4. Click _Update_ to save your changes.
 
 
 ## Starting your virtual machine
