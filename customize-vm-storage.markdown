@@ -12,7 +12,7 @@ You can add as many `disk`s as you need to a given `template`, each referring to
 
 >**NOTE:**
 >
-> When you import an _appliance_ from the _Marketplace_, that action usually downloads one `image` along with a `template`, that relates to it. You can still personalise that `template` on this _Storage_ tab of the `template`.
+> When you import an _appliance_ from the AppMarket, that action usually downloads one `image` along with a `template`, that relates to it. You can still personalise that `template` on this _Storage_ tab of the `template`.
 
 ### Edit a `disk` for a `template`
 
