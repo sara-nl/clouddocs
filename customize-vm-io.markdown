@@ -26,7 +26,7 @@ If you plan on using a graphical environment through VNC (such as GNOME or KDE; 
 
 ---
 
-> **Appendix - List of supported keymaps**
+> **Appendix - List of supported keymaps for VNC**
 >
 > You can write one of the following values in the _Keymap_ field:
 * ar
