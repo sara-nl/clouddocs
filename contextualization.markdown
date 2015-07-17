@@ -54,9 +54,9 @@ On **RedHat-based** operating systems (e.g.: CentOS, Fedora), you can install th
 
 1. Download the .rpm file from https://github.com/OpenNebula/addon-context-linux/releases/latest.
 1. Bring the .rpm to your VM
-1. Install the .deb by running (change the <package_name.rpm> placeholder by the right file and path):
+1. Install the .rpm by running (change the <package_name.rpm> placeholder by the right file and path):
 ```
-dpkg -i <package_name.rpm>
+yum install <package_name.rpm>
 ```
 
 ### SSH key for root
