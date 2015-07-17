@@ -1,7 +1,9 @@
 # User Interface
 
 ## Access the user interface
-You can find the UI here: https://ui.hpccloud.surfsara.nl
+>**Note:**
+>
+>You can find the UI here: https://ui.hpccloud.surfsara.nl
 
 The UI (short for User Interface) is the web site that allows you to operate the HPC Cloud. Put simply: your way to manage (create/destroy) your Virtual Machines (VM). 
 
