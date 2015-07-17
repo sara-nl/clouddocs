@@ -166,9 +166,8 @@ If there were no errors, and if your firewalls allow making remote connections, 
 
 If you want to shutdown your VM and stop consuming quotas, perform the following steps:
 
-1. Tick the box to the left on the row with your VM and click "Shutdown" (upper right).
+1. Tick the box to the left on the row with your VM and click _Shutdown_ (upper right corner of the screen, under the _dust bin_ drop-down button).
 ![shutdownVM](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/shutdownVM.png)
 
-2. Refresh the Virtual Machines list (the two arrows chasing each other next to "+" button) until your VM is gone.
-That was the shutdown. Once the operation is finished, your VM will be removed from the display.   
-You can start a new VM from your existing image any time.
+2. Refresh the Virtual Machines list (by clicking on the two arrows chasing each other next to _+_ button) until your VM is gone.
+That was the shutdown. Once the operation is finished, your VM will be removed from the display and its resources freed. You can start a new VM from your existing `template` and `image` any time.
