@@ -4,7 +4,7 @@
 >
 >There is a specific [documentation page](contextualization) to explain more about the concepts of _Contextualisation_. 
 >
->Contextualisation on this page refers to what information is made available from OpenNebula to your VM. It is up to your VM to take this information and to something useful with it. Some packages exist for certain operating systems that may help, such as a `.deb` or an `.rpm` version.
+>Contextualisation on this page refers to what information is made available from OpenNebula to your VM. It is up to your VM to take this information and do something useful with it. Some packages exist for certain operating systems that may help, such as a `.deb` or an `.rpm` version.
 
 You can personalise the way you want contextualisation applied to your VM. The options are split into 4 subsections:
 
