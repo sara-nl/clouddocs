@@ -104,51 +104,39 @@ This shows the different configuration options for your `template`. For now, we 
 
 ## Starting your virtual machine
 
-This template is a description of a virtual machine. Now you can create
-a virtual machine.
+A `template` is a description of a virtual machine. The `template` we have been editing in this guide is now ready to create a virtual machine from it.
 
-Go to the _Virtual Machines_ section. This displays an overview of all
-running machines. If this is your first virtual machine, this list is
-empty.
+Go to the _Virtual Machines_ section of the UI. This displays an overview of all running VMs. If this is your first virtual machine, this list will be empty.
 
-Start your first virtual machine using the following steps:
+Start your virtual machine using the following steps:
 
-1. Click on the green plus sign, as shown in the screen shot. This opens a dialogue with options for your virtual machine.
+1. Click on the green plus sign, as shown in the screenshot. This opens a dialogue with options for your virtual machine.
 ![startVM](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/startVM.png)
 
-2. The first step in the dialogue is to give your virtual machine a
-	 name. This name is also used in the host name of your machine later,
-   ideally, give your machine a name consisting *only* of lowercase
-   letters, hyphens ('-'), or digits, but *no other characters or
-   spaces*. Note that the virtual machine name can be the same as the
-   name of the template.
+2. The first box in the dialogue is to give your virtual machine a name. This name is also used as the host name of your machine. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*. 
+
+>**Note:**
+>
+>The name for the VM can be the same as that of the `template`.
 
 3. The number of instances is 1, which is fine for now.
 
-4. The second step in the dialogue is to select a template. Since this
-	 is your first template, there is only one template in the list.
-   Select this template.
+4. The second step in the dialogue is to select a `template`. Since this is your first `template`, there is only one item in the list. Select this `template`.
 
-5. Click on the "Create" button at the bottom of the screen.
+5. Click on the _Create_ button at the bottom of the screen.
 
-Your machine will appear in the list of virtual machines. At first, it
-will have the state _PENDING_. Pending means that the cloud system is
-looking for a place where your virtual machine can actually run.
+Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That state means that the cloud system is looking for a place where your virtual machine can actually run.
 
-When the required capacity becomes available your virtual machine will
-go through a few states, and eventually, it will appear as _RUNNING_.
+When the required capacity becomes available, your virtual machine will go through a few other states, and eventually, it will appear as RUNNING.
 ![testVM](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/testVM.png)
 
 The operating system on the machine will go through the boot process.
 
-
 ## Logging in on your virtual machine
 
-After you have added your public key to your user profile, you should be able to log in on your virtual machine as _root_, allowing you to maintain your virtual machine.
+After you have added your public key to your user profile, you should be able to log in on your virtual machine as _root_, allowing you to perform maintenance tasks on your virtual machine.
 
-First, determine the ip-address of your virtual machine. The IP-address of your virtual machine
-is shown in the virtual machine overview, in the _Virtual Infrastructure_ tab of the user interface.
-The IP address is shown in the column titled _IPs_.
+You will need to find the IP address of your virtual machine, first. The IP address of your virtual machine is shown on in the _IPs_ column from the virtual machines list, under the _Virtual Infrastructure_ tab of the UI. 
 
 If you use a Linux or a Mac OSX operating system, open a terminal window, and type
 ```sh
@@ -169,11 +157,9 @@ where you should replace _mmm_ and _nnn_ to match the IP address of your virtual
   ssh -i ~/.ssh/id_rsa.pub root@145.100.59.30
 ``` 
 
-If you use a Windows operating system, you should have imported your public and private keypair
-into _Putty_ or other terminal program. Use the IP of your virtual machine as host, use _root_ as
-username, and click _Connect_.
+If you use a Windows operating system, you should have imported your public and private key pair into _Putty_ or other terminal program. Use the IP of your virtual machine as host, use _root_ as username, and click _Connect_.
 
-If there were no errors, and if your local firewalls allows making remote connections, you should now be logged in on your virtual machine, as _root_. 
+If there were no errors, and if your firewalls allow making remote connections, you should now be logged in on your virtual machine, as _root_. 
 
 
 ## Shut down and remove your machine
