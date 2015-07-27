@@ -57,6 +57,8 @@
 * Pilot Jobs  
 * [NFS](NFS) &ndash; Share Data between Virtual Machines
 
+## Tutorials
+* [Surfcursus - 5 Aug 2015](surfcursus-5-Aug-2015)
 
 ## Service implementation
 * [Available resources](resources-available)
