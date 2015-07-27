@@ -3,6 +3,10 @@
 * [General Information](#general) <br>
 * [Preparation](#preparation) <br>
 * [Hands-on](#hands-on) <br>
+  * [Access the user interface](#1.-Access-the-user-interface) <br>
+  * [My first VM](#2.-My-first-VM) <br>
+  * [Scale-up to a multicore VM](#3.-Scale-up-to-a-multicore-VM) <br>
+  * [Scale-out to multiple VMs](#4.-Scale-out-to-multiple-VMs) <br>
 * [Presentations](#presentations) <br>
 
 ## <a name="general"></a>General Information 
@@ -35,13 +39,13 @@ What you need for this tutorial:
 
 ## <a name="hands-on"></a> Hands-on
 
-### 1. Access the user interface
+### <a name="1.-Access-the-user-interface"></a> 1. Access the user interface
 #### Change your password
 #### Menu and UI features
 #### Add ssh keys to your profile
 #### Logout
 
-### 2. My first VM
+### <a name="2.-My-first-VM"></a> 2. My first VM
 #### Import pre-made image from the AppMarket
 #### Edit the Template
 #### Start the VM
@@ -51,7 +55,7 @@ What you need for this tutorial:
 #### Install & Run the example
 #### First shut-down
 
-### 3. Scale-up to a multicore VM
+### <a name="3.-Scale-up-to-a-multicore-VM"></a> 3. Scale-up to a multicore VM
 #### Add cores in Template
 #### Run the example
 
