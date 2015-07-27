@@ -2,7 +2,7 @@
 
 > **NOTE:**
 >
-> This _wiki_ collects SURFsara's **new HPC Cloud** documentation. The documentation pages here are heavily under construction and you can expect frequent changes.
+> This _wiki_ collects the documentation for the **new HPC Cloud** at SURFsara. The documentation pages here are heavily under construction and you can expect frequent changes.
 
 
 ## Migrating from the old HPC Cloud
