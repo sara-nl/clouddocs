@@ -52,13 +52,14 @@ and 64 GB (or 68720MB)
 ## Upload context files
 ## Create template
 ## Install windows
-![windows01](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/image/windows_install01.png)
-![windows02](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/image/windows_install02.png)
-![windows03](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/image/windows_install03.png)
-![windows04](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/image/windows_install04.png)
-![windows05](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/image/windows_install05.png)
-![windows06](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/image/windows_install06.png)
-![windows07](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/image/windows_install07.png)
+
+![windows01](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/windows_install01.png)
+![windows02](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/windows_install02.png)
+![windows03](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/windows_install03.png)
+![windows04](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/windows_install04.png)
+![windows05](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/windows_install05.png)
+![windows06](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/windows_install06.png)
+![windows07](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/windows_install07.png)
 
 
 ## Make contextualisation working
