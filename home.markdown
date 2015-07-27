@@ -14,6 +14,7 @@
 - [User Interface](user-interface)  
 - [General start](general-start)  
 - [Access your Virtual Machine](access-your-VM)
+- [Cloud Resource Usage](cloud-resource-usage)
 
 ## Advanced Topics
 
