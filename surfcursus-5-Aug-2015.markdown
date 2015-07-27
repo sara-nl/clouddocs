@@ -59,7 +59,7 @@ What you need for this tutorial:
 #### Add cores in Template
 #### Run the example
 
-### 4. Scale-out to multiple VMs
+### <a name="4.-Scale-out-to-multiple-VMs"></a> 4. Scale-out to multiple VMs
 #### Start 2 VMs from a single image
 #### Run the example
 
