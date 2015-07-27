@@ -3,6 +3,7 @@
 * [General Information](#general) <br>
 * [Preparation](#preparation) <br>
 * [Hands-on](#hands-on) <br>
+* [Presentations](#presentations) <br>
 
 ## <a name="general"></a>General Information 
 
@@ -15,4 +16,5 @@ What you need for this tutorial:
   * Linux and Mac have an SSH client on board, try "ssh" in a terminal.
   * Windows users should install [PuTTY](http://www.putty.org/) (screen based) or [OpenSSH](http://sshwindows.sourceforge.net/) for Windows (command-line only). See also: http://openssh.com/windows.html
 
-## <a name="materials"></a> Workshop materials
+## <a name="hands-on"></a> Hands-on
+
