@@ -35,6 +35,30 @@ What you need for this tutorial:
 
 ## <a name="hands-on"></a> Hands-on
 
+### 1. Access the user interface
+#### Change your password
+#### Menu and UI features
+#### Add ssh keys to your profile
+#### Logout
+
+### 2. My first VM
+#### Import pre-made image from the AppMarket
+#### Edit the Template
+#### Start the VM
+#### Login to the VM
+**Command-line access**  
+**Window-based access**  
+#### Install & Run the example
+#### First shut-down
+
+### 3. Scale-up to a multicore VM
+#### Add cores in Template
+#### Run the example
+
+### 4. Scale-out to multiple VMs
+#### Start 2 VMs from a single image
+#### Run the example
+
 ## <a name="presentations"></a> Presentations
 * Introduction to Cloud Computing `<slides>`
 * Introduction to SURFsara HPC Cloud `<slides>`
