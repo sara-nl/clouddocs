@@ -40,6 +40,7 @@ What you need for this tutorial:
 ## <a name="hands-on"></a> Hands-on
 
 ### <a name="1.-Access-the-user-interface"></a> 1. Access the user interface
+#### Login to the UI
 #### Change your password
 #### Menu and UI features
 #### Add ssh keys to your profile
@@ -47,7 +48,8 @@ What you need for this tutorial:
 
 ### <a name="2.-My-first-VM"></a> 2. My first VM
 #### Import pre-made image from the AppMarket
-#### Edit the Template
+#### Edit the Template  
+Edit persistence, nics, acpi
 #### Start the VM
 #### Login to the VM
 **Command-line access**  
