@@ -14,7 +14,7 @@
 - [User Interface](user-interface)  
 - [General start](general-start)  
 - [Access your Virtual Machine](access-your-VM)
-- [Cloud Resource Usage](cloud-resource-usage)
+- [Cloud Resource Usage](https://ui.hpccloud.surfsara.nl/oneinsight)
 
 ## Advanced Topics
 
