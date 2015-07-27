@@ -7,6 +7,23 @@
 
 ## <a name="general"></a>General Information 
 
+SURFsara has been operating an HPC Cloud service for years. Since recently we have launched a new HPC Cloud with a powerful new user interface and a complete new cluster with faster compute nodes and high-performant big storage volumes. The user interface is supported by OpenNebula 4 and our new cluster is called `Ooort`.
+
+This particular course aims to introduce SURF employees to the HPC Cloud by providing a set of lectures and hands-on examples on the real `Oort` infrastructure.
+
+**Date**: 5 August 2015  
+**Location**: SURFsara  
+**Program**:  
+>
+09:45 Welcome & coffee  
+10:00 Introduction in Cloud Computing  
+10:40 Introduction in HPC Cloud  
+11:30 HPC Cloud Demo  
+12:00 Lunch  
+12:45 Hands-on HPC Cloud  
+15:00 Wrap-up & questions  
+15:30 End  
+
 ## <a name="preparation"></a>Preparation 
 What you need for this tutorial:
 * A computer with full Internet access.
