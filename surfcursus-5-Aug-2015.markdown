@@ -1,7 +1,7 @@
 # SURFcursus - 5 Aug 2015
 
 * [General Information](#general) <br>
-* [Preparation](#preparation) <br>
+* [Prepare your laptop](#preparation) <br>
 * [Hands-on](#hands-on) <br>
   * [Access the user interface](#1.-Access-the-user-interface) <br>
   * [My first VM](#2.-My-first-VM) <br>
@@ -28,11 +28,11 @@ This particular course aims to introduce SURF employees to the HPC Cloud by prov
 15:00 Wrap-up & questions  
 15:30 End  
 
-## <a name="preparation"></a>Preparation 
+## <a name="preparation"></a>Prepare your laptop 
 What you need for this tutorial:
 * A computer with full Internet access.
 * A browser (Chrome or Firefox will do nicely).
-* A demo account. Choose any of the available accounts from `<here>` and reserve it by assigning your name next to it.
+* A demo account. Choose any of the available accounts from [here](https://docs.google.com/spreadsheets/d/1zUVq5VrZLHhoFs3YCwDGGeDGLXDYBhF7dRFPCDDIppg/edit?usp=sharing) and `reserve it by assigning your name` next to it.
 * An SSH client.
   * Linux and Mac users have an SSH client on board, try "ssh" in a terminal.
   * Windows users should install [PuTTY](http://www.putty.org/) (screen based) or [OpenSSH](http://sshwindows.sourceforge.net/) for Windows (command-line only). See also: http://openssh.com/windows.html
@@ -40,11 +40,36 @@ What you need for this tutorial:
 ## <a name="hands-on"></a> Hands-on
 
 ### <a name="1.-Access-the-user-interface"></a> 1. Access the user interface
+
 #### Login to the UI
+
+The UI (short for User Interface) is the web site that allows you to interact with the HPC Cloud.  
+* Open the UI page in your browser: https://ui.hpccloud.sara.nl/
+* Log in with your personal demo username and password. If you don't have an account yet, go back to [Prepare your laptop](#preparation) section.
+
+> **NOTE:** 
+> 
+> Your project for this tutorial is called `cloudcursus`.
+
 #### Change your password
+
+Let's change now the initial password:
+
+* Click the *buddy* icon that represents your user (cloudcursus-sXX) at the top-right corner of the screen on the UI. 
+* Click on Settings, you will see the option to change or update your password. 
+* Click on the Change Password button.
+* On the new screen, type your new password twice and click the button to submit it.
+
+#### Logout
+
+* Click the *buddy* icon that represents your user (cloudcursus-sXX) at the top-right corner of the screen on the UI. 
+* Choose the option Sign Out.
+
+From now on you can use your new password to login again to your Cloud account.
+
 #### Menu and UI features
 #### Add ssh keys to your profile
-#### Logout
+
 
 ### <a name="2.-My-first-VM"></a> 2. My first VM
 #### Import pre-made image from the AppMarket
