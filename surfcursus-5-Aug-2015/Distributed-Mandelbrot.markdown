@@ -1,3 +1,5 @@
+An example for the SURFcursus 5 Aug 2015.
+
 > :warning: **WARNING** under construction
 
 1. download one or both tar files: 
