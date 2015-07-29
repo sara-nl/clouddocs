@@ -1,5 +1,7 @@
 An example for the SURFcursus 5 Aug 2015.
 
+The code was taken from [mandelbrot-rmi](https://code.google.com/p/mandelbrot-rmi/), a distributed Manderbrot renderer based on [Java RMI](https://en.wikipedia.org/wiki/Java_remote_method_invocation).
+
 > :warning: **WARNING** under construction
 
 1. download one or both tar files: 
