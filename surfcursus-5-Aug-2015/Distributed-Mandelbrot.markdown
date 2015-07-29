@@ -1,8 +1,8 @@
 > :warning: **WARNING** under construction
 
 1. download one or both tar files: 
-  - one tar contains runnable class files, you need the Java Runtime Environment to execute
-  - the other tar the sources, you need `javac` to compile
+  - [mandelbrot-rmi-bin.tgz](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/6a3632b55bf4ae6dc0295fdd1dd24e8e/mandelbrot-rmi-bin.tgz) contains runnable class files, you need the Java Runtime Environment to execute
+  - [mandelbrot-rmi-source.tgz](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/58698ba30beb2ca5a329915afe8b748e/mandelbrot-rmi-source.tgz) contains the sources, you need `javac` to compile
 1. create a blank directory and extract the tar(s)
 ```
 mkdir mandelbrot-rmi
@@ -27,5 +27,5 @@ make # only if you build from source
   - left click will zoom in to the yellow rectangle
   - right click will zoom out
   - dragging will change the size of the rectangle
-1. repeat with different number of server names for the client[mandelbrot-rmi-bin.tgz](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/6a3632b55bf4ae6dc0295fdd1dd24e8e/mandelbrot-rmi-bin.tgz)
-[mandelbrot-rmi-source.tgz](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/58698ba30beb2ca5a329915afe8b748e/mandelbrot-rmi-source.tgz)
+1. repeat with different number of server names for the client
+
