@@ -1,7 +1,3 @@
-> **NOTE:**
->
-> This page is *still* under construction. Many changes will apply and the content here may or may not work for you.
-
 # SURFcursus - 5 Aug 2015
 
 * [General Information](#general) <br>
@@ -83,7 +79,7 @@ Edit persistence, nics, acpi
 #### Login to the VM
 **Command-line access**  
 **Window-based access**  
-#### Install & Run the example
+#### Install & Run [the example](surfcursus-5-Aug-2015/Distributed-Mandelbrot)
 #### First shut-down
 
 ### <a name="3.-Scale-up-to-a-multicore-VM"></a> 3. Scale-up to a multicore VM
