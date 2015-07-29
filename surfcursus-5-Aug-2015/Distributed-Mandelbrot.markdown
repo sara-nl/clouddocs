@@ -27,4 +27,5 @@ make # only if you build from source
   - left click will zoom in to the yellow rectangle
   - right click will zoom out
   - dragging will change the size of the rectangle
-1. repeat with different number of server names for the client
+1. repeat with different number of server names for the client[mandelbrot-rmi-bin.tgz](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/6a3632b55bf4ae6dc0295fdd1dd24e8e/mandelbrot-rmi-bin.tgz)
+[mandelbrot-rmi-source.tgz](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/58698ba30beb2ca5a329915afe8b748e/mandelbrot-rmi-source.tgz)
