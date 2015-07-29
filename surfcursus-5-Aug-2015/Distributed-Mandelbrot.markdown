@@ -11,7 +11,7 @@ curl -O https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/6a3632b55bf4ae6dc0
 ```
   - [mandelbrot-rmi-source.tgz](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/58698ba30beb2ca5a329915afe8b748e/mandelbrot-rmi-source.tgz) contains the sources, you need `javac` to compile
 ```
-curl -O https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/6a3632b55bf4ae6dc0295fdd1dd24e8e/mandelbrot-rmi-source.tgz
+curl -O https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/58698ba30beb2ca5a329915afe8b748e/mandelbrot-rmi-source.tgz
 ```
 1. create a blank directory and extract the tar(s)
 ```
