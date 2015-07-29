@@ -1,3 +1,7 @@
+> **NOTE:**
+>
+> This page is *still* under construction. Many changes will apply and the content here may or may not work for you.
+
 # SURFcursus - 5 Aug 2015
 
 * [General Information](#general) <br>
