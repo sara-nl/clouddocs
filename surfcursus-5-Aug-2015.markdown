@@ -72,12 +72,14 @@ From now on you can use your new password to login again to your Cloud account.
 #### Menu and UI features
 
 * Login to the [UI](https://ui.hpccloud.sara.nl/) with your demo account.
-* Dashboard
+* Dashboard: gives a summary of the project status, e.g. usage statistics.
 * Virtual Resources
- * Virtual Machines: 
- * Templates: give your computer the shape you want
- * Images:
-
+ * Virtual Machines: manage VMs (i.e.: create, start, shutdown, e.t.c.) and see all the actual running machines.
+ * Templates: this gives your computer the shape you want
+ * Images: this is the equivalent of a hard drive. Your OS and user data can be stored on this image.
+* Infrastructure: this field shows the available resources
+ * Datastores: 
+ * Virtual Networks:
 
 #### Add ssh keys to your profile
 
