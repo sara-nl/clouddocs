@@ -57,19 +57,28 @@ The UI (short for User Interface) is the web site that allows you to interact wi
 
 Let's change now the initial password:
 
-* Click the *buddy* icon that represents your user (cloudcursus-sXX) at the top-right corner of the screen on the UI. 
+* Click the *buddy* icon that represents your user `cloudcursus-sXX` at the top-right corner of the screen on the UI. 
 * Click on Settings, you will see the option to change or update your password. 
 * Click on the Change Password button.
 * On the new screen, type your new password twice and click the button to submit it.
 
 #### Logout
 
-* Click the *buddy* icon that represents your user (cloudcursus-sXX) at the top-right corner of the screen on the UI. 
+* Click the *buddy* icon that represents your user `cloudcursus-sXX` at the top-right corner of the screen on the UI. 
 * Choose the option Sign Out.
 
 From now on you can use your new password to login again to your Cloud account.
 
 #### Menu and UI features
+
+* Login to the [UI](https://ui.hpccloud.sara.nl/) with your demo account.
+* Dashboard
+* Virtual Resources
+ * Virtual Machines: 
+ * Templates: give your computer the shape you want
+ * Images:
+
+
 #### Add ssh keys to your profile
 
 
