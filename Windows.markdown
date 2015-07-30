@@ -34,7 +34,7 @@ your PC. Hit the green "Create" to upload the image.
 To create the virtIO image, go to the same procedure as before with
 the windows option, except the name of this images should be different
 e.g. "virtio_drivers" and choose in the image location box "provide
-path" the url to the virtIO iso disk (copy the link from http://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/ )
+path" the url to the virtIO iso disk (copy the link from https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso )
 
 ## Create an image as a installation target
 
