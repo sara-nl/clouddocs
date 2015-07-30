@@ -10,7 +10,7 @@ To install Windows you need you Windows installation image. SURFsara does not de
 images due to legal issues: you need to arrange your windows images and licence yourself. 
 
 Further more there are drivers needed to communicate between windows and the hardware in the most effective way. The drivers must be installed during installation of windows. The latest version of these driver can be found at http://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/ (no
-need to download this to your computer!) 
+need to download this to your computer!). These images are now moved to: https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
 
 To upload the images go to Virtual Resources --> Images. In here you
 see a overview of the images that are now available. To create new
