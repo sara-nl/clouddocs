@@ -32,7 +32,7 @@
 * A Virtual Machine from Scratch
 * [Virtual Machine states](vm-states)  
 * [Sharing OpenNebula Objects](sharing-objects)  
-* [Install Windows](windows)  
+* Install Windows  
 * Licences  
 
 ### Disk Images
