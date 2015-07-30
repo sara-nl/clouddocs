@@ -1,3 +1,6 @@
+---
+layout: default
+---
 >**NOTE:**
 >
 > This page still needs to be re-shaped. We are working on it.

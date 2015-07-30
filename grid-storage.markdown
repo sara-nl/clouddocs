@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Grid storage
 
 This documents the various ways to connect to Grid storage from a Cloud VM. 

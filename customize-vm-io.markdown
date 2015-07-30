@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## Editing _Input/Output_ options of a template
 
 >**Remember:**

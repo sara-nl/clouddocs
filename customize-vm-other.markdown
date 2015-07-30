@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## Editing _Other_ options of a template
 
 There is a tab on the `template`-editing screen that is labeled as _Other_. This allows you to add raw text for the hypervisor to interpret.

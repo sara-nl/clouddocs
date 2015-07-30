@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Accessing your virtual machine
 
 ## Introduction

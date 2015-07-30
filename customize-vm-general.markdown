@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## Editing _General_ options of a template
 
 When editing a template, the _General_ tab allows you to personalise:

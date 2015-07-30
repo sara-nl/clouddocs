@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Grid storage certificates
 
 For general information view [Grid Storage](Grid-storage).

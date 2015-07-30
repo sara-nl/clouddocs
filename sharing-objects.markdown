@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Sharing OpenNebula objects
 
 ## Introduction

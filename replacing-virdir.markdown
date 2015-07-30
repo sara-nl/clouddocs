@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # VirDir replacement for the new HPC Cloud
 
 ## Introduction

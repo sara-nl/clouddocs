@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Image Persistence
 
 In many cases, changes to a VM's disk should survive a shutdown an be present when it is launched again.

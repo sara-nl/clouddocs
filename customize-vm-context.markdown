@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## Editing _Context_ options of a template
 
 >**NOTE:**

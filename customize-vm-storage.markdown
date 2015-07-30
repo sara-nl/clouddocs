@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## Editing _Storage_ options of a template
 
 >**Remember:**

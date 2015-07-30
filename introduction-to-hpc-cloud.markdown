@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Introduction
 
 SURFsara offers the HPC Cloud computing facility as a **IaaS** platform. 

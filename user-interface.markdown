@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # User Interface
 
 ## Access the user interface

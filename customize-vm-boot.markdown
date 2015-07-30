@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## Editing _OS Booting_ options of a template
 
 >**Remember:**

@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## Quota estimation
 
 When you come to use the HPC Cloud you do so in the context of a project. A project is set to solve a problem, defined as some goals that you want to achieve. You must also have a plan on how you think you are going to tackle the problem to achieve those goals. You can work together with several people in a project. And every project gets a quota assigned.

@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## Editing _Network_ options of a template
 
 You can add virtual network cards (called `nic`s in OpenNebula) so that your VM gets network access. On the _Network_ tab of the `template`-editing screen, you can see two columns:

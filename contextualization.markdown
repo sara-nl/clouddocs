@@ -1,3 +1,6 @@
+---
+layout: default
+---
 >**NOTE:**
 >
 >We are working on writing this documentation page. In the meantime, you are advised to have a look at the official OpenNebula documentation pages:

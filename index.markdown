@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # HPC Cloud documentation
 
 > **NOTE:**

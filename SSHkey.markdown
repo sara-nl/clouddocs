@@ -1,3 +1,6 @@
+---
+layout: default
+---
 
 
 # Generate Secure Shell (SSH) key on Linux or MacOS

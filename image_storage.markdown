@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Image Storage
 
 When you create a disk image, you must choose where it is stored, under the heading `Datastore`.

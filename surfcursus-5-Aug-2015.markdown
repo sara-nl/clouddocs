@@ -1,3 +1,6 @@
+---
+layout: default
+---
 > :warning: **WARNING** under construction
 
 # SURFcursus - 5 Aug 2015

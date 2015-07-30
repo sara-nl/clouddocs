@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Resources available
 
 ## Compute nodes

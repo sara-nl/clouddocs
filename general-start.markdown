@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Your first virtual machine
 
 This page teaches how to create a `Virtual Machine` (from now on, VM) running Linux, by importing an _appliance_ from the `AppMarket`. 
