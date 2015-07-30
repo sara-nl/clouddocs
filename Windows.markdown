@@ -1,3 +1,7 @@
+>**NOTE:**
+>
+> This page still needs to be re-shaped. We are working on it.
+
 # Create a VM with Microsoft Windows
 ## Introduction
 The first step is to make an Windows installation disk with available on the HPCcloud. You can upload the disk directly or send a public URL to OpenNebula which is saved on the HPCcloud, where a virtual machine can read the image.
