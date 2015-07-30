@@ -123,8 +123,6 @@ The _Virtual Resources_ menu allows you to manage several kinds of objects, with
 The _Infrastructure_ menu allows you mainly to see information about the supporting resources that are available in the HPC Cloud and how (much of) them you are using. It offers 3 sub-options:
 * _Datastores_: to see where you can take storage from and how much you are using of each
 * _Virtual Networks_: to see which networks you have available and which your `VM`s are using them 
-* _Security Groups_: the so-called `Security Group`s are meant to work as an external firewall on `VM`s. 
-> Our current implementation does **not** support `Security Group`s. We are working on possible alternatives. 
 
 #### AppMarket
 The _AppMarket_ tab makes some so-called _Appliances_ available within the HPC Cloud user interface. _Appliances_ are ready-made `image`s (and, sometimes, `template`s as well), that you can import into your project so that you can instantiate `VM`s out of them. There exist pre-made _appliances_ for CentOS and Ubuntu, for example. When you click on one of them, make sure you read the comments related to it. 
