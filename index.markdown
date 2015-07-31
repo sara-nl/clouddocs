@@ -66,3 +66,9 @@ layout: default
 
 ## Service implementation
 * [Available resources](resources-available)
+
+## Contributing to the documentation
+
+You are welcome to contribute to this documentation. For this, you can fork our repository on GitHub and submit a pull request to inform us of your changes.
+
+Please find our [contribution guidelines](markdown-best-practice) before contributing updates, bug fixes, or other corrections.
