@@ -71,15 +71,15 @@ A way to generate a SSH key under Windows is with help of PutTTY-gen. PuTTYgen c
 * Start PuTTYgen
 * In the field "Type of key to generate", please select "SSH-2 RSA".
 
-![puttygen_default](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/puttygen_default.png)
+![puttygen_default](images/puttygen_default.png)
 
 * Click on  "Generate".
 
-![puttygen_random](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/puttygen_random.png)
+![puttygen_random](images/puttygen_random.png)
 
 * Move your pointer under the bar and move the mouse in this field until the bar is completely green.
 
-![puttygen_done](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/puttygen_done.png)
+![puttygen_done](images/puttygen_done.png)
 
 * Fill in a passphrase in the "Key passphrase" field. A passphrase is the same as a password, but in general it contains more characters. Repeat the same passphrase in the  "Confirm passphrase" field. It is possible to not use a passphrase, but this is not considered as good practice in terms of security.
 * Save your private key at a secure spot (never share this file!) with the "Save Private Key". The extension of the file must be `.ppk`. You need this file later on to login to your machine.
