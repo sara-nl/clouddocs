@@ -40,8 +40,8 @@ What you need for this tutorial:
 * An SSH client.
   * Linux and Mac users have an SSH client on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
   * Windows users should install 
-    * [PuTTY](http://www.putty.org/) (screen based) or [OpenSSH](http://sshwindows.sourceforge.net/) for Windows (command-line only). 
-    * [PutTTY-gen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) (screen based).
+     * [PuTTY](http://www.putty.org/) (screen based) or [OpenSSH](http://sshwindows.sourceforge.net/) for Windows (command-line only). 
+     * [PutTTY-gen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) (screen based).
 
 ## <a name="hands-on"></a> Hands-on
 
@@ -98,7 +98,9 @@ The [SSH key](https://en.wikipedia.org/wiki/Secure_Shell#Key_management) mechani
 Follow the steps below to add an ssh key to your profile: 
 
 * First [Generate an SSH key](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/SSHkey). If you already have one stored in your laptop, you may skip this step.
-* 
+* Then go to your user profile by selecting the *buddy* icon on the top-right of the screen, then select Settings. A dialogue pops up. In the dialogue, go to the Info page.
+* Locate the section Public SSH Key, and click on the blue edit icon. Paste here the public key you created.
+* Close the window. Your public key is automatically stored in your profile.
 
 ### <a name="2.-My-first-VM"></a> 2. My first VM
 #### Import pre-made image from the AppMarket
