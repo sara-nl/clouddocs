@@ -45,8 +45,8 @@ ls /virdir/Scratch
 
 ```sh
 sed -i '/^<\/VirtualHost>/c\
-        Alias /vd /virdir\
-       <Directory /virdir>\
+        Alias /vd /virdir/Scratch\
+       <Directory /virdir/Scratch>\
                Options Indexes FollowSymLinks MultiViews\
                AllowOverride None\
                Require ip 145.100.56.19\
@@ -63,7 +63,7 @@ service apache2 restart
  * fill in a _Name_
  * choose whether you want the `image` to be _Persistent_
  * in the _Image location:_ area, mark the _Provide a path_ radio button
- * fill in the _Path_ to the `image` file, pointing to the web server running in your _Bridge VM_, which will be something like: `http://145.100.X.X/vd/Scratch/2015MMDD:hh:mm_sometext` (you need to use the right IP instead of the _X.X_ and the actual name of the file, including the colons)
+ * fill in the _Path_ to the `image` file, pointing to the web server running in your _Bridge VM_, which will be something like: `http://145.100.X.X/vd/2015MMDD:hh:mm_sometext` (you need to use the right IP instead of the _X.X_ and the actual name of the file, including the colons)
  * Click on the _Advanced options_ dropdown area. There, you must fill in:
   * In _Device prefix_, type `vd`
   * In _Driver_, type `qcow2`
