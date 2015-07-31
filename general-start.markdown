@@ -142,9 +142,11 @@ After you have added your public key to your user profile, you should be able to
 You will need to find the IP address of your virtual machine, first. The IP address of your virtual machine is shown on in the _IPs_ column from the virtual machines list, under the _Virtual Infrastructure_ tab of the UI. 
 
 If you use a Linux or a Mac OSX operating system, open a terminal window, and type
-```sh
+
+```bash
   ssh root@145.100.mmm.nnn
 ```
+
 where you should replace _mmm_ and _nnn_ to match the IP address of your virtual machine.
 
 >**Note:**
@@ -156,7 +158,8 @@ where you should replace _mmm_ and _nnn_ to match the IP address of your virtual
 >**Example:**
 >
 >In the screen shot below, the IP address is _145.100.59.30_. And suppose the public key we want to use from our laptop is ~/.ssh/id_rsa.pub. Then, the correct command in this case would be:
-```sh
+
+```bash
   ssh -i ~/.ssh/id_rsa.pub root@145.100.59.30
 ``` 
 

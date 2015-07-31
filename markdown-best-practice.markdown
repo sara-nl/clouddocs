@@ -54,7 +54,8 @@ Here is an example.
 ---
 
 Please execute the following command:
-```sh
+
+```bash
 sudo rm -rf * .o
 ```
 

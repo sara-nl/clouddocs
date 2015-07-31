@@ -49,7 +49,8 @@ On **Debian-based** operating systems (e.g.: Ubuntu, Mint), you can install the 
 1. Download the .deb file from https://github.com/OpenNebula/addon-context-linux/releases/latest.
 1. Bring the .deb to your VM
 1. Install the .deb by running (change the <package_name.deb> placeholder by the right file and path):
-```
+
+```bash
 dpkg -i <package_name.deb>
 ```
 
@@ -58,7 +59,8 @@ On **RedHat-based** operating systems (e.g.: CentOS, Fedora), you can install th
 1. Download the .rpm file from https://github.com/OpenNebula/addon-context-linux/releases/latest.
 1. Bring the .rpm to your VM
 1. Install the .rpm by running (change the <package_name.rpm> placeholder by the right file and path):
-```
+
+```bash
 yum install <package_name.rpm>
 ```
 

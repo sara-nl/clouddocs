@@ -9,19 +9,21 @@ Below are the steps for CentOS 7, both server and clients.
 ### Firewall
 
 Open up the firewall on the project-private network:
-```sh
+
+```bash
 sudo firewall-cmd --permanent --zone=trusted --add-source=10.0.0.0/8
 sudo firewall-cmd --reload
 ```
 
 Check with:
-```sh
+
+```bash
 sudo firewall-cmd --zone=trusted --list-all
 ```
 Expected output:
 
 >
-```sh
+```bash
 trusted (active)
   interfaces: 
   sources: 10.0.0.0/8
@@ -32,13 +34,15 @@ trusted (active)
 ### NFS server
 
 Install the NFS SW:
-```sh
+
+```bash
 sudo yum install nfs-utils
 ```
 
 Create the root directory of the tree to export.
 The name chosen here, `/export-nfs`, is an example: you are free to use a different path.
-```sh
+
+```bash
 sudo mkdir /export-nfs
 ```
 
@@ -48,7 +52,7 @@ If your VM's address on the private network is `10.X.Y.Z`, then the private netw
 Edit the configuration file `/etc/idmapd.conf`, line 5: uncomment and change to your domain name
 
 >
-```
+```bash
 Domain = server.world
 ```
 
@@ -57,12 +61,13 @@ Replace `/export-nfs` with the root you have chosen,
 replace `10.X.Y.0/255.255.224.0` with your project's private network address and mask.
 
 >
-```
+```bash
 /export-nfs  10.X.Y.0/255.255.224.0(rw,no_root_squash)
 ```
 
 Start the daemon:
-```sh
+
+```bash
 sudo systemctl enable rpcbind nfs-server
 sudo systemctl restart rpcbind
 sudo systemctl start nfs-server
@@ -76,12 +81,14 @@ Install the NFS package (see above).
 
 Create a local mount point.
 The name chosen here is arbitrary, you are free to chose a different path.
-```sh
+
+```bash
 mkdir /mount-nfs
 ```
 
 Mount the NFS volume manually:
-```sh
+
+```bash
 # REPLACE
 # 10.X.Y.S with the server's address,
 # /export-nfs with the server's export root and
@@ -90,7 +97,8 @@ mount -t nfs 10.X.Y.S:/export-nfs /mount-nfs/
 ```
 
 Check the mount:
-```sh
+
+```bash
 mount
 ```
 

@@ -25,7 +25,7 @@ For every VM that you launch, the HPC Cloud assigns it a public host name. The h
 
 >For example:
 > 
->```sh
+>```bash
 >Wed Jun 24 17:54:18 2015 [Z0][HKM][I]: Success executing Hook: SurfSARA_Dns: Added
 >DNS record: vmname.projectname-institute.vm.surfsara.nl -> 145.100.68.93. 
 >```
@@ -48,16 +48,17 @@ MacOS and Linux come with built-in SSH clients. To use these, open a terminal.
 
 In a terminal type
 
-```sh
+```bash
 ssh username@vmname.projectname-institute.vm.surfsara.nl
 ```
+
 to connect to your Virtual Machine.
 
 #### Terminal with Graphical User Interface
 
 If you have a full desktop environment on your VM and would like to run graphical programs there whose windows you want to view on your local computer, add an additional **`-X`** to the command.  
 
-```sh
+```bash
 ssh -X username@vmname.projectname-institute.vm.surfsara.nl
 ```
 
@@ -105,19 +106,26 @@ First, you need to set up your Linux VM, using the following steps.
 >The following steps describe the procedure for setting up Xrdp in CentOS 6. Other distributions may require some variation, but the guidelines should remain analogous.
 
 1. **Open your firewall:** On your VM, modify the firewall settings to allow new inbound connections on port 3389, for example by adding the following line to /etc/sysconfig/iptables:
-``` bash
+
+```bash
   -A INPUT -m state --state NEW -m tcp -p tcp --dport 3389 -j ACCEPT
 ```
+
  reload the firewall configuration, using
-``` bash
+
+```bash
   service iptables reload
 ```
+
 2. **Install the Xrdp server:** In our distribution, install packages _tigervnc-server_ and _xrdp_:
-``` bash
+
+```bash
   yum install -y tigervnc-server xrdp
 ```
+
 3. **Configure the Xrdp service:** make the start at boot time, and start it for this session already:
-``` bash
+
+```bash
   chkconfig --levels 5 xrdp on
   service xrdp start
 ```
@@ -125,7 +133,8 @@ First, you need to set up your Linux VM, using the following steps.
 >**Note:**
 >
 >On newer Fedora-based systems, use
-``` bash
+
+```bash
   systemctl enable xrdp
   systemctl start xrdp
   systemctl enable xrdp-sesman

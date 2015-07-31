@@ -24,9 +24,11 @@ There are two ways to access Grid Storage from your virtual machines:
 ## CUA credentials and WebDAV
 
 Use a WebDAV client and connect to **webdav**.grid.sara.nl:
-```
+
+```bash
 VM$ curl -k -f -u USER -p -L https://webdav.grid.sara.nl/pnfs/grid.sara.nl/data/VO_NAME/PATH -o LOCAL_NAME
 ```
+
 Explanation of the flags:
 
 * **-k** do not complain about bad server certificate (HTTPS)
@@ -44,7 +46,8 @@ You need to complete step [Grid storage certificates](grid-storage-certificates)
 ## with your key and certificate in separate files
 
 Use a WebDAV client and connect to **bee34**.grid.sara.nl:
-``` bash
+
+```bash
 VM$ curl --capath /etc/grid-security/certificates/ --key ~/.globus/userkey.pem --cert ~/.globus/usercert.pem -L https://bee34.grid.sara.nl/pnfs/grid.sara.nl/data/VO_NAME/PATH -o LOCAL_NAME
 ```
 
@@ -57,11 +60,13 @@ You need to complete step [[Grid storage certificates]] first.
 ### Install and configure VOMS proxy support
 
 Install the VOMS client software:
+
 ```bash
 VM$ sudo apt-get install voms-clients
 ```
 
 Create VOMS information files:
+
 ```bash
 VM$ VOMSNAME="lsgrid"
 VM$ sudo mkdir -p /opt/glite/etc/vomses/
@@ -74,7 +79,7 @@ VM$ sudo cp -r ${VOMSNAME}/ /etc/grid-security/vomsdir/
 
 ### Create a VOMS proxy
 
-```
+```bash
 VM$$  voms-proxy-init -vomses lsgrid-voms.grid.sara.nl --voms lsgrid
 ```
 
@@ -88,7 +93,7 @@ You need to complete step [[Grid storage certificates]] first.
 ### Install `globus-url-copy`
 
 Ubuntu:
-```
+```bash
 VM$ sudo apt-get install globus-gass-copy-progs
 ```
 
@@ -96,7 +101,7 @@ VM$ sudo apt-get install globus-gass-copy-progs
 
 Create a VOMS proxy (see above).
 
-```
+```bash
 VM$ globus-url-copy gsiftp://fly1.grid.sara.nl:2811/pnfs/grid.sara.nl/data/lsgrid/luuku/testfile pipo.f
 ```
 
@@ -105,7 +110,8 @@ VM$ globus-url-copy gsiftp://fly1.grid.sara.nl:2811/pnfs/grid.sara.nl/data/lsgri
 ### CentOS
 
 CentOS has a package uberftp which can be installed with:
-```
+
+```bash
 VM$sudo yum install uberftp
 ```
 
@@ -114,12 +120,14 @@ VM$sudo yum install uberftp
 For Ubuntu we made a Personal Package Archive(PPA), which contains a package to install uberftp. At the moment this is only tested for Ubuntu 14.04.
 
 To add a PPA to your system install add-apt-repository with
-```sh
+
+```bash
 VM$sudo apt-get install software-properties-common
 ```
+
 then add the PPA and install UberFTP
 
-```sh
+```bash
 VM$sudo add-apt-repository ppa:maarten-kooyman-6/ppa
 VM$sudo apt-get update
 VM$sudo apt-get install uberftp 

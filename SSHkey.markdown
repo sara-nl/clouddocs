@@ -12,7 +12,8 @@ The first step is to check if you have already a SSH key. The default location i
 To check use ls `ls -l  ~/.ssh/`
 
 For example, this user have already a key available and could jump to "Copy your SSH key"
-```sh
+
+```bash
 $ ls -l  ~/.ssh/
 total 72
 -rw-------+ 1 user  staff    287 Mar 10 09:13 config
@@ -29,7 +30,7 @@ After this ssh-keygen asks for a passphrase. A passphrase is the same as a passw
 
 For example:
 
-```sh
+```bash
 $ssh-keygen -t rsa -b 4096 
 Generating public/private rsa key pair.
 Enter passphrase (empty for no passphrase):
@@ -51,15 +52,18 @@ The key s randomart image is:
 |                 |
 +-----------------+
 ```
+
 ## Copy your Public SSH key
 
 You can copy paste your public key after displaying with cat
-```sh
+
+```bash
 cat ~/.ssh/id_rsa.pub
 ```
 
 or on MacOS you can copy it directly into the paste buffer with:
-```sh
+
+```bash
 pbcopy < ~/.ssh/id_rsa.pub
 ```
 After copying you can paste the public key into OpenNebula
