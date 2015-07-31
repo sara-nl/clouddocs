@@ -67,4 +67,20 @@ service apache2 restart
  * fill in a _Name_. 
  * in the _Image location:_ area, mark the _Provide a path_ radio button
  * fill in the _Path_ to the `image` file, pointing to the web server running in your _Bridge VM_, which will be something like: `http://145.100.X.X/vd/Scratch/2015MMDD:hh:mm_sometext` (you need to use the right IP instead of the _X.X_ and the actual name of the file, including the colons)
+ * Click on the _Advanced options_ dropdown area. There, you must fill in:
+  * In _Device prefix_, type `vd`
+  * In _Driver_, type `qcow2`
 1. **On the new HPC Cloud:** Click on the green _Create_ button at the bottom of the form, and an `image` with the name you wrote on the form will appear on the images table, in status LOCKED. It will remain in that status until the UI has finished copying the file from your _Bridge VM_ to the new HPC Cloud. Then it will change to READY.
+
+## Make a `template` using that `image`
+
+You need to put that `image` that you imported into a `template`. We will do that now.
+
+1. **On the new HPC Cloud:** In the _Templates_ tab, click on the green _[+]_ button to begin making a new `template`.
+1. **On the new HPC Cloud:** In the _General_ tab, give it a _name_, the amount of _Memory_ that you want, the amount of _CPU_ and _VCPU_ you need, etc.
+1. **On the new HPC Cloud:** In the _Storage_ tab, choose your `image` for the _Disk 0_ disk.
+1. **On the new HPC Cloud:** In the _Network_ tab, choose network _internet_ for `nic` _Interface 0_, and add a new `nic`, which will get name _Interface 1_ to assign it to your internal network.
+1. **On the new HPC Cloud:** In the _Context_ tab, look for `Files` whose name begins with _one-context_. You should see 2 of them: one ending in _.deb_ and another one ending in _.rpm_. If your `image` is a CentOS one (or another Red-Hat-based one), you will want to check the box next to the _.rpm_ `file`. If your `image` is a Ubuntu one (or another Debian-based one), you will want to check the box next to the _.deb_ `file`.
+1. **On the new HPC Cloud:** We are done preparing the `template`. Click on the green _Create_ button on the top-left of the screen.
+
+## 
