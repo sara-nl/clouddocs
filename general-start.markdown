@@ -53,17 +53,17 @@ Import the appliance by following these steps:
 
 1. From the **user** `view` or the **groupadmin** `view`, choose the
    _AppMarket_ tab on the left menu of the screen and then _Appliances_ (in the screen shot, it has been highlighted in red).
-   ![appmarket step 1](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/appmarket_step_1.png)
+   ![appmarket step 1](images/appmarket_step_1.png)
 
 2. Next, look for the **Ubuntu - KVM** _appliance_ in the list; click on it. 
    This will show details about `image`s, `template`s and other attributes (including a textual description) that conform the _appliance_.
    The description mentions that there is no password for the root account and that you need to add an SSH public key to your user profile. We will do this in a later step.
    Read the extended information related to the _appliance_ (especially, the bit about the _contextualization_ and _configuration_ options).
-   ![appmarket step 2](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/appmarket_step_2.png)
+   ![appmarket step 2](images/appmarket_step_2.png)
 
 3. Click on the _Import_ button at the top-right corner of the screen.
    A dialogue will pop up, asking you for a few details.
-   ![appmarket step 3](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/appmarket_step_3.png)
+   ![appmarket step 3](images/appmarket_step_3.png)
 
 4. The first setting is the datastore for images. Make sure that you select _104: local images ssd_.
 
@@ -100,7 +100,7 @@ Allow your virtual machine to connect to the internet by following these steps:
 This shows the different configuration options for your `template`. For now, we will leave most settings alone, but you can browse through the different options. Select the _Network_ tab.
 
 3. The _Network_ tab shows which network interfaces (or `nic`s) your VM would have and to which networks they would be connected. To connect the only available `nic` at the moment (called _Interface 0_) to the internet, select the network called "internet", to the right of it, as shown on the screen shot. 
-   ![template IP](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/template_IP.png)
+   ![template IP](images/template_IP.png)
 
 4. Click _Update_ to save your changes.
 
@@ -114,7 +114,7 @@ Go to the _Virtual Machines_ section of the UI. This displays an overview of all
 Start your virtual machine using the following steps:
 
 1. Click on the green plus sign, as shown in the screenshot. This opens a dialogue with options for your virtual machine.
-![startVM](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/startVM.png)
+![startVM](images/startVM.png)
 
 2. The first box in the dialogue is to give your virtual machine a name. This name is also used as the host name of your machine. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*. 
 
@@ -131,7 +131,7 @@ Start your virtual machine using the following steps:
 Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That state means that the cloud system is looking for a place where your virtual machine can actually run.
 
 When the required capacity becomes available, your virtual machine will go through a few other states, and eventually, it will appear as RUNNING.
-![testVM](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/testVM.png)
+![testVM](images/testVM.png)
 
 The operating system on the machine will go through the boot process.
 
@@ -170,7 +170,7 @@ If there were no errors, and if your firewalls allow making remote connections, 
 If you want to shutdown your VM and stop consuming quotas, perform the following steps:
 
 1. Tick the box to the left on the row with your VM and click _Shutdown_ (upper right corner of the screen, under the _dust bin_ drop-down button).
-![shutdownVM](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/shutdownVM.png)
+![shutdownVM](images/shutdownVM.png)
 
 2. Refresh the Virtual Machines list (by clicking on the two arrows chasing each other next to _+_ button) until your VM is gone.
 That was the shutdown. Once the operation is finished, your VM will be removed from the display and its resources freed. You can start a new VM from your existing `template` and `image` any time.

@@ -18,7 +18,7 @@ If you want to run multiple VMs with a disk from the same image, you need `persi
 You can change the `persistent` property by selecting a disk and using the pencil icon to the right of the property
 or the drop down menu to the right of the `clone` button.
 
-![persistent_no](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/707dc6b9bad33fa149319adc1dd46548/persistent_no.png)
+![persistent_no](images/persistent_no.png)
 
 ## Image: persistent = yes
 
@@ -32,4 +32,4 @@ This can be useful when a template with 32 cores needs a software update: use a 
 You can change the `persistent` property by selecting a disk and using the pencil icon to the right of the property
 or the drop down menu to the right of the `clone` button.
 
-![persistent_yes](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/1608055fdce0fe9e41cc10176dbb9554/persistent_yes.png)
+![persistent_yes](images/persistent_yes.png)

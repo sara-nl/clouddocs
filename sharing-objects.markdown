@@ -11,7 +11,7 @@ Most of the objects you create in the cloud web interface can be shared with the
 
 To change the permissions, select the object in the interface and click anywhere on the row. This will pop up a window where you see _Info_ for the selected item and can set the sharing permissions.
 
-![sharing_object](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/sharing_object.png)
+![sharing_object](images/sharing_object.png)
 
 There are three levels of permissions: _Owner, Group, Other_. And there are three types of permissions you can grant: _Use, Manage, Admin_.
 

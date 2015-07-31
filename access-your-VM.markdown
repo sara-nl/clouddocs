@@ -146,12 +146,12 @@ The built-in VNC console is accessible from your web browser, and you do **not**
 However, the button to launch that VNC client is placed in different locations depending on the `view` you are using on the UI. Here is a list of known views:
 
 #### Cloud view
-![vnc_cloud1](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/vnc_cloud1.png)
+![vnc_cloud1](images/vnc_cloud1.png)
 
-![vnc_cloud2](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/vnc_cloud2.png)
+![vnc_cloud2](images/vnc_cloud2.png)
 
 #### User view and Projectadmin view
 To start VNC you can click the small display at the right side of your screen.
 
-![vnc_userview](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/vnc_userview.png)
+![vnc_userview](images/vnc_userview.png)
 

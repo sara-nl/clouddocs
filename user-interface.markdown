@@ -60,7 +60,7 @@ A group administrator sees the most functionality (including administering other
   * Display own quota
   * Display own accounting
   
-![cloud_view_img](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/cloud_view.png)
+![cloud_view_img](images/cloud_view.png)
 
 #### Advanced user   
 * Available views: **cloud** (and **user**)
@@ -71,7 +71,7 @@ A group administrator sees the most functionality (including administering other
   * Manage ACLs (Access Control Lists)
   * All functions that **basic user** has
   
-![user_view_img](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/user_view.png) 
+![user_view_img](images/user_view.png) 
 
 #### Group Administrator user 
 * Standard View: **groupadmin** (and **cloud** and **user**)
@@ -83,7 +83,7 @@ A group administrator sees the most functionality (including administering other
   * Display accounting for the whole project
   * All Possible Functions that **advanced user** has
 
-![groupadmin_view_img](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/groupadmin_view.png) 
+![groupadmin_view_img](images/groupadmin_view.png) 
 
 ### Switch views
 Users with the **group administrator** and **advanced** roles have access to multiple views, and can switch between these anytime. 
@@ -91,12 +91,12 @@ Users with the **group administrator** and **advanced** roles have access to mul
 * Switching from **cloud** to **user** view:  
 In the user interface, select the _buddy_ icon that represents your user at the top right (next to the Home icon). Then select the _Change view_ button, unfold the tab and switch the option to **user**. Finally click on the _Update view_ button as displayed below:
 
-![switch_cloud_to_user_img](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/switch_to_user_view.png) 
+![switch_cloud_to_user_img](images/switch_to_user_view.png) 
 
 * Switching from **user** to **cloud** view:  
 In the user interface, click the _buddy_ icon at the top right (next to the Home icon). On the pop-up menu select _Settings_. On the new window that appears, click on the _Conf_ tab on top right menu. Then unfold _Views_ and switch the option to **cloud**. Finally click on the _Update config_ button as displayed below:
 
-![switch_user_to_cloud_img](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/switch_to_cloud_view.png)  
+![switch_user_to_cloud_img](images/switch_to_cloud_view.png)  
 
 ## Menu
 

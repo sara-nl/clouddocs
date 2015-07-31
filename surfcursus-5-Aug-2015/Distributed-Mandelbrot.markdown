@@ -8,13 +8,13 @@ The code was taken from [mandelbrot-rmi](https://code.google.com/p/mandelbrot-rm
 > :warning: **WARNING** under construction
 
 1. download one or both tar files: 
-  - [mandelbrot-rmi-bin.tgz](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/6a3632b55bf4ae6dc0295fdd1dd24e8e/mandelbrot-rmi-bin.tgz) contains runnable class files, you need the Java Runtime Environment to execute
+  - [mandelbrot-rmi-bin.tgz](assets/mandelbrot-rmi-bin.tgz) contains runnable class files, you need the Java Runtime Environment to execute
 ```
-curl -O https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/6a3632b55bf4ae6dc0295fdd1dd24e8e/mandelbrot-rmi-bin.tgz
+curl -O assets/mandelbrot-rmi-bin.tgz
 ```
-  - [mandelbrot-rmi-source.tgz](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/58698ba30beb2ca5a329915afe8b748e/mandelbrot-rmi-source.tgz) contains the sources, you need `javac` to compile
+  - [mandelbrot-rmi-source.tgz](assets/mandelbrot-rmi-source.tgz) contains the sources, you need `javac` to compile
 ```
-curl -O https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/58698ba30beb2ca5a329915afe8b748e/mandelbrot-rmi-source.tgz
+curl -O assets/mandelbrot-rmi-source.tgz
 ```
 1. create a blank directory and extract the tar(s)
 ```

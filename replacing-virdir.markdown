@@ -92,5 +92,5 @@ To upload an image:
    * upload; this allows you to select a file from your local system to
      be uploaded
 
-Currently, [downloading virtual disk images](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/image_download) is not possible from the User Interface.
+Currently, [downloading virtual disk images](image_download) is not possible from the User Interface.
 

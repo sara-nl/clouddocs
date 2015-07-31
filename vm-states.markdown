@@ -7,7 +7,7 @@ An _action_ triggers a state change.
 These actions can be triggered by a user on the UI or by the environment itself. Example action names are: create, shutdown, resume...
 You can see most of these on the UI:
 
-![vm_actions_img](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/vm_actions.png)
+![vm_actions_img](images/vm_actions.png)
 
 ## The play button
 
