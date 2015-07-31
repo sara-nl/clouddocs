@@ -27,6 +27,7 @@ The `image` will now be copied to VirDir. Depending on its size, it may take qui
 >
 >In these steps you will be **exposing your VirDir** to the outside world. Make sure you understand the risks, and destroy the new VM you will be making as soon as you are finished importing the `image`.
 
+### Expose your image via a web server
 1. **On the old HPC Cloud:** From the wizard (tab _Create VM_), create a small new Ubuntu server VM. In further steps, we will call this the _Bridge VM_. Make sure you choose _yes_ on both questions from _Step 3_, so that your VM has ports open for the web server. Once the VM boots, on the noVNC console, wait for the first-run wizard to start; then provide there a password for root and create a non-root user. After the first-run wizard is complete, you will be prompted to log in.
 1. **On your laptop:** Make sure you can browse the landing page of the web server that is running on your _Bridge VM_ (i.e.: navigate to the external IP address of your _Bridge VM_, which has the form: 145.100.X.X).
 1. **On your laptop:** SSH into your _Bridge VM_ (remember, you need to use your **non-**root user. Once you are logged in as the plain user, become root by running the command `su -`.
@@ -44,8 +45,9 @@ mount -t nfs4 10.0.Y.4:/<group> /virdir
 ls /virdir/Scratch
 ```
 1. **On the _Bridge VM_:** The previous command should show the files that you have in your `/virdir/Scratch` directory. Among them, you should see the file for the `image` you _copied to VirDir_ in previous steps. Note the name.
-1. **On the _Bridge VM_:** Expose VirDir via the web server. You can run the following commands:
-```
+1. **On the _Bridge VM_:** Expose VirDir via the web server. You can run the following commands: 
+
+```sh
 sed -i '/^<\/VirtualHost>/c\
         Alias /vd /virdir\
        <Directory /virdir>\
@@ -58,6 +60,8 @@ sed -i '/^<\/VirtualHost>/c\
 
 service apache2 restart
 ```
+
+### Bring your image to the new HPC Cloud
 1. **On the new HPC Cloud:** Using the _user_ view, go to the _Images_ tab, and click on the green _[+]_ button to add a new `image`. A from will pop up.
 1. **On the new HPC Cloud:** On the _Create Image_ form:
  * fill in a _Name_. 
