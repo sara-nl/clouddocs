@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # VM migration guide
 
 This guide aims at helping you if you find yourself in the situation that you need to bring an existing `image` from the old HPC Cloud to the new one. Among other changes, the most notable one is that you are likely to have to [contextualise](contextualization) your VM so that it will have its network configured.
