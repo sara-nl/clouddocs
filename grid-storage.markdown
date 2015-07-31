@@ -93,6 +93,7 @@ You need to complete step [[Grid storage certificates]] first.
 ### Install `globus-url-copy`
 
 Ubuntu:
+
 ```bash
 VM$ sudo apt-get install globus-gass-copy-progs
 ```
