@@ -8,6 +8,9 @@
     <title>HPC Cloud documentation</title>
 
     {% include paths %}
+    <!-- Code highlighting -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
@@ -57,5 +60,8 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{{relative}}js/ie10-viewport-bug-workaround.js"></script>
 
+    <!-- Code highlighting -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
