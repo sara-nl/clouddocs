@@ -13,7 +13,7 @@ layout: default
 
 ## Basics
 - [Introduction to HPC Cloud](introduction-to-hpc-cloud)  
-- [Estimate your resources] (estimate-your-resources)  
+- [Estimate your resources](estimate-your-resources)  
 - [User Interface](user-interface)  
 - [General start](general-start)  
 - [Access your Virtual Machine](access-your-VM)
