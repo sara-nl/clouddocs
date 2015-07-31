@@ -92,5 +92,5 @@ You need to put that `image` that you imported into a `template`. We will do tha
 1. **On the new VM:** Mount the contextualization CD-ROM, by running this command: `mount -t iso9660 -L CONTEXT -o ro /mnt`
 1. **On the new VM:** Install the contextualization package that is appropriate for your VM:
  * if you are running CentOS (or a Red-Hat-based OS), use command: `yum install /mnt/one-context*.rpm`
- * if you are running Ubuntu (or a Debian-based OS), use command: `dpkg -i /mnt/one-context*.rpm`
+ * if you are running Ubuntu (or a Debian-based OS), use command: `dpkg -i /mnt/one-context*.deb`
 1. **On the new VM:** Restart your VM (run `reboot now`). Your VM should now be in a useable state (among other things, the network should be working).
