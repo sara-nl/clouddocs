@@ -64,3 +64,6 @@
 
 ## Service implementation
 * [Available resources](resources-available)
+
+## Current Resource Usage
+* [Resource usage](https://ui.hpccloud.surfsara.nl/oneinsight)
