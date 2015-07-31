@@ -73,17 +73,19 @@ From now on you can use your new password to login again to your Cloud account.
 
 #### Menu and UI features
 
-Let's find out what else is available on the UI:
+Let's find out what else is available on the UI. Click on each of the tabs below to inspect what :
 
 * Login to the [UI](https://ui.hpccloud.sara.nl/) with your demo account.
-* Dashboard: gives a summary of the project status, e.g. usage statistics.
+* Dashboard: gives an overview of the project status, like running machines or usage statistics. 
 * Virtual Resources
- * Virtual Machines: manage VMs (i.e.: create, start, shutdown, e.t.c.) and see all the actual running machines.
- * Templates: this gives your computer the shape you want
+ * Virtual Machines: manage your machines (i.e.: create, start, shutdown, e.t.c.) and see all the actual running machines.
+ * Templates: this gives your computer the shape you want. A template is just a recipe, not the machine itself. You define there, for example, how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc.
  * Images: this is the equivalent of a hard drive. Your OS and user data can be stored on this image.
-* Infrastructure: this field shows the available resources
- * Datastores: 
- * Virtual Networks:
+* Infrastructure
+ * Datastores: shows the available storage options and your quotas compared to full capacity.
+ * Virtual Networks: shows the available networks you can use for your project's VMs.
+* AppMarket 
+ * Appliances: these are ready-made images that you can import into your project and instantiate VMs. We have pre-made appliances for CentOS and Ubuntu.
 
 #### Add ssh keys to your profile
 
