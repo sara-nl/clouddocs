@@ -64,7 +64,8 @@ service apache2 restart
 ### Bring your image to the new HPC Cloud
 1. **On the new HPC Cloud:** Using the _user_ view, go to the _Images_ tab, and click on the green _[+]_ button to add a new `image`. A from will pop up.
 1. **On the new HPC Cloud:** On the _Create Image_ form:
- * fill in a _Name_. 
+ * fill in a _Name_
+ * choose whether you want the `image` to be _Persistent_
  * in the _Image location:_ area, mark the _Provide a path_ radio button
  * fill in the _Path_ to the `image` file, pointing to the web server running in your _Bridge VM_, which will be something like: `http://145.100.X.X/vd/Scratch/2015MMDD:hh:mm_sometext` (you need to use the right IP instead of the _X.X_ and the actual name of the file, including the colons)
  * Click on the _Advanced options_ dropdown area. There, you must fill in:
@@ -83,4 +84,13 @@ You need to put that `image` that you imported into a `template`. We will do tha
 1. **On the new HPC Cloud:** In the _Context_ tab, look for `Files` whose name begins with _one-context_. You should see 2 of them: one ending in _.deb_ and another one ending in _.rpm_. If your `image` is a CentOS one (or another Red-Hat-based one), you will want to check the box next to the _.rpm_ `file`. If your `image` is a Ubuntu one (or another Debian-based one), you will want to check the box next to the _.deb_ `file`.
 1. **On the new HPC Cloud:** We are done preparing the `template`. Click on the green _Create_ button on the top-left of the screen.
 
-## 
+## Start a VM and set contextualization up
+
+1. **On the new HPC Cloud:** Instantiate the `template`. This creates what we will further call _new VM_. On the VNC console, make sure the _new VM_ boots.
+1. **On the new HPC Cloud:** On the VNC console, log into your _new VM_ with your credentials, just as you were able to do on the old HPC Cloud. 
+1. **On the new VM:** Become root.
+1. **On the new VM:** Mount the contextualization CD-ROM, by running this command: `mount -t iso9660 -L CONTEXT -o ro /mnt`
+1. **On the new VM:** Install the contextualization package that is appropriate for your VM:
+ * if you are running CentOS (or a Red-Hat-based OS), use command: `yum install /mnt/one-context*.rpm`
+ * if you are running Ubuntu (or a Debian-based OS), use command: `dpkg -i /mnt/one-context*.rpm`
+1. **On the new VM:** Restart your VM (run `reboot now`). Your VM should now be in a useable state (among other things, the network should be working).
