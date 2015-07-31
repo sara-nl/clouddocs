@@ -69,6 +69,10 @@ service apache2 restart
   * In _Driver_, type `qcow2`
 1. **On the new HPC Cloud:** Click on the green _Create_ button at the bottom of the form, and an `image` with the name you wrote on the form will appear on the images table, in status LOCKED. It will remain in that status until the UI has finished copying the file from your _Bridge VM_ to the new HPC Cloud. Then it will change to READY.
 
+>**NOTE:**
+>
+>Once your `image` on the **new HPC Cloud** shows as READY, if you do not need to bring any more images over, then now is a good time to **destroy your _Bridge VM_**. You can delete it along with its associated `image` and `template`.
+
 ## Make a `template` using that `image`
 
 You need to put that `image` that you imported into a `template`. We will do that now.
