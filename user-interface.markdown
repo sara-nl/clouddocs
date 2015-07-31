@@ -123,7 +123,7 @@ The _Virtual Resources_ menu allows you to manage several kinds of objects, with
 * _Files & Kernels_: to manage _kernel_, _ramdisk_ and _context_ files that can be used from `Templates` and on `VM`s
 
 #### Infrastructure
-The _Infrastructure_ menu allows you mainly to see information about the supporting resources that are available in the HPC Cloud and how (much of) them you are using. It offers 3 sub-options:
+The _Infrastructure_ menu allows you mainly to see information about the supporting resources that are available in the HPC Cloud and how (much of) them you are using. It offers 2 sub-options:
 * _Datastores_: to see where you can take storage from and how much you are using of each
 * _Virtual Networks_: to see which networks you have available and which your `VM`s are using them 
 

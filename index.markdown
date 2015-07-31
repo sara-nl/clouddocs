@@ -68,6 +68,9 @@ layout: default
 ## Service implementation
 * [Available resources](resources-available)
 
+## Current Resource Usage
+* [Resource usage](https://ui.hpccloud.surfsara.nl/oneinsight)
+
 ## Contributing to the documentation
 
 You are welcome to contribute to this documentation. For this, you can fork our repository on GitHub and submit a pull request to inform us of your changes.

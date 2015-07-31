@@ -26,7 +26,7 @@ total 72
 
 Generation of a SSH key can be done with `ssh-keygen -t rsa -b 4096` 
 
-After this ssh-keygen asks for a passphrase. A passphrase is the same as a password, but in general it contains more characters. It is possible not use a passphrase, but this is not considered as good practice in terms of security. After entering your password ssh-keygen ask for conformation of the passphrase.
+After this ssh-keygen asks for a passphrase. A passphrase is the same as a password, but in general it contains more characters. It is possible not use a passphrase, but this is not considered as good practice in terms of security. After entering your password ssh-keygen asks for confirmation of the passphrase.
 
 For example:
 
@@ -88,4 +88,4 @@ A way to generate a SSH key under Windows is with help of PutTTY-gen. PuTTYgen c
 * Fill in a passphrase in the "Key passphrase" field. A passphrase is the same as a password, but in general it contains more characters. Repeat the same passphrase in the  "Confirm passphrase" field. It is possible to not use a passphrase, but this is not considered as good practice in terms of security.
 * Save your private key at a secure spot (never share this file!) with the "Save Private Key". The extension of the file must be `.ppk`. You need this file later on to login to your machine.
 * Save your public key at with the "Save Pubilic Key".
-* Select all text from the "Public key for pasting into OpenSSH authorized_keys file" and copy paste this in OpenNebula [link link]
+* Select all text from the "Public key for pasting into OpenSSH authorized_keys file" and copy paste this in [OpenNebula UI](https://ui.hpccloud.surfsara.nl/) *profile*.
