@@ -94,3 +94,7 @@ You need to put that `image` that you imported into a `template`. We will do tha
  * if you are running CentOS (or a Red-Hat-based OS), use command: `yum install /mnt/one-context*.rpm`
  * if you are running Ubuntu (or a Debian-based OS), use command: `dpkg -i /mnt/one-context*.deb`
 1. **On the new VM:** Restart your VM (run `reboot now`). Your VM should now be in a useable state (among other things, the network should be working).
+
+>**Note:**
+>
+>When you see that the contextualization is working (e.g.: the network works on the new VM), and if you made the `image` persistent, then you can delete the _one-context*_ _.deb_ or _.rpm_ `file` from the `template`. That `file` will still be there until you re-create the VM.
