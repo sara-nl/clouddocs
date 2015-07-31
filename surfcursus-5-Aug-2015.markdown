@@ -16,9 +16,9 @@ layout: default
 
 ## <a name="general"></a>General Information 
 
-SURFsara has been operating an HPC Cloud service for several years. Since recently we have launched a new HPC Cloud with a powerful new user interface and a complete new cluster with faster compute nodes and high-performant big storage volumes. The user interface is supported by **`OpenNebula 4`** and our new cluster is called **`Ooort`**.
+SURFsara has been operating an HPC Cloud as `IaaS` (Infrastructure as a Service) for several years. Since recently we have launched a new HPC Cloud with a powerful new user interface and a complete new cluster with faster compute nodes and high-performant big storage volumes. The user interface and cloud software relies on [OpenNebula 4](http://opennebula.org/) and our new cluster is called [Ooort](https://en.wikipedia.org/wiki/Oort_cloud).
 
-This particular course aims to introduce SURF employees to the HPC Cloud by providing a set of lectures and hands-on examples to run on the real `Oort` infrastructure.
+This particular course aims to introduce SURF employees to the HPC Cloud by providing a set of lectures and hands-on examples to run on the real **`Oort`** infrastructure. Here is a summary of the course outline:
 
 **Date**: 5 August 2015  
 **Location**: SURFsara  
@@ -33,14 +33,16 @@ This particular course aims to introduce SURF employees to the HPC Cloud by prov
 15:00 Wrap-up & questions  
 15:30 End  
 
+The rest of this page is dedicated to the section **Hands-on HPC Cloud**. 
+
 ## <a name="preparation"></a>Prepare your laptop 
 What you need for this tutorial:
 * A computer with full Internet access.
 * A browser (Chrome or Firefox will do nicely).
-* A demo account. Choose any of the available accounts from [here](https://docs.google.com/spreadsheets/d/1zUVq5VrZLHhoFs3YCwDGGeDGLXDYBhF7dRFPCDDIppg/edit?usp=sharing) and `reserve it by assigning your name` next to it.
+* A **demo account**. Pick the account that corresponds to your team's rank from [here](https://docs.google.com/spreadsheets/d/1zUVq5VrZLHhoFs3YCwDGGeDGLXDYBhF7dRFPCDDIppg/edit?usp=sharing).
 * An SSH client.
-  * Linux and Mac users have an SSH client on board, try "ssh" in a terminal.
-  * Windows users should install [PuTTY](http://www.putty.org/) (screen based) or [OpenSSH](http://sshwindows.sourceforge.net/) for Windows (command-line only). See also: http://openssh.com/windows.html
+  * Linux and Mac users have an SSH client on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
+  * Windows users should install [PuTTY](http://www.putty.org/) (screen based) or [OpenSSH](http://sshwindows.sourceforge.net/) for Windows (command-line only). 
 
 ## <a name="hands-on"></a> Hands-on
 
@@ -61,8 +63,8 @@ The UI (short for User Interface) is the web site that allows you to interact wi
 Let's change now the initial password:
 
 * Click the *buddy* icon that represents your user `cloudcursus-sXX` at the top-right corner of the screen on the UI. 
-* Click on Settings, you will see the option to change or update your password. 
-* Click on the Change Password button.
+* Click on Settings, you will see the option to update your password. 
+* Click on the `Update password` button.
 * On the new screen, type your new password twice and click the button to submit it.
 
 #### Logout
@@ -74,13 +76,17 @@ From now on you can use your new password to login again to your Cloud account.
 
 #### Menu and UI features
 
-* Login to the [UI](https://ui.hpccloud.sara.nl/) with your demo account.
-* Dashboard
-* Virtual Resources
- * Virtual Machines: 
- * Templates: give your computer the shape you want
- * Images:
+Let's find out what else is available on the UI:
 
+* Login to the [UI](https://ui.hpccloud.sara.nl/) with your demo account.
+* Dashboard: gives a summary of the project status, e.g. usage statistics.
+* Virtual Resources
+ * Virtual Machines: manage VMs (i.e.: create, start, shutdown, e.t.c.) and see all the actual running machines.
+ * Templates: this gives your computer the shape you want
+ * Images: this is the equivalent of a hard drive. Your OS and user data can be stored on this image.
+* Infrastructure: this field shows the available resources
+ * Datastores: 
+ * Virtual Networks:
 
 #### Add ssh keys to your profile
 

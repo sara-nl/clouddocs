@@ -53,4 +53,3 @@ make # only if you build from source
   - right click will zoom out
   - dragging will change the size of the rectangle
 1. repeat with different number of server names for the client
-

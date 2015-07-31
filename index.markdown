@@ -10,6 +10,7 @@ layout: default
 
 ## Migrating from the old HPC Cloud
 * [Replacing the VirDir](replacing-virdir)
+* [Migration guide - Run your old HPC Cloud images on the the new HPC Cloud](vm-migration-guide)
 
 ## Basics
 - [Introduction to HPC Cloud](introduction-to-hpc-cloud)  

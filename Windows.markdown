@@ -12,9 +12,10 @@ The first step is to make an Windows installation disk with available on the HPC
 To install Windows you need you Windows installation image. SURFsara does not deliver licences or Windows
 images due to legal issues: you need to arrange your windows images and licence yourself. 
 
-Further more there are drivers needed to communicate between windows and the hardware in the most effective way. The drivers must be installed during installation of windows. The latest version of these driver can be found at http://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/ (no
-need to download this to your computer!). These images are now moved to: https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
+Further more there are drivers needed to communicate between windows and the hardware in the most effective way. The drivers must be installed during installation of windows. The latest version of these driver can be found at https://fedoraproject.org/wiki/Windows_Virtio_Drivers#Direct_download (no
+need to download this to your computer!). 
 
+https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
 To upload the images go to Virtual Resources --> Images. In here you
 see a overview of the images that are now available. To create new
 image hit the green button with a plus sign. With this form you can
@@ -36,7 +37,7 @@ your PC. Hit the green "Create" to upload the image.
 To create the virtIO image, go to the same procedure as before with
 the windows option, except the name of this images should be different
 e.g. "virtio_drivers" and choose in the image location box "provide
-path" the url to the virtIO iso disk (copy the link from http://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/ )
+path" the url to the virtIO iso disk (copy the link from https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso )
 
 ## Create an image as a installation target
 
