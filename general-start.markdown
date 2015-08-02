@@ -69,7 +69,7 @@ Import the appliance by following these steps:
 6. Finally, click _Import_. This will start importing the appliance from  the AppMarket. When the import is successful, it will create an `image` and a `template`.
 
 You can verify that the process is complete by inspecting the _Template_
-and _Image_ sections in the _Virtual Infrastructure_ tab of the UI. You should see your new `image` and `template` there.
+and _Image_ sections in the _Virtual Resources_ tab of the UI. You should see your new `image` and `template` there.
 
 ## Adding an SSH key to your profile
 
@@ -85,7 +85,7 @@ You can close your profile now. Your public key is automatically stored in your 
 
 ## Finishing the virtual machine configuration by editing the template
 
-When you imported the _appliance_ fromt he AppMarket, it made a `template` available for you to make a virtual machine. However, the VM would not be connected to the internet yet, so you cannot connect to it remotely.
+When you imported the _appliance_ from the AppMarket, it made a `template` available for you to make a virtual machine. However, the VM would not be connected to the internet yet, so you cannot connect to it remotely.
 
 ### Connecting your virtual machine to the internet
 
