@@ -98,25 +98,71 @@ If you already have an SSH key stored in your laptop, you may skip this step.
 
 
 ### <a name="2.-My-first-VM"></a> 2. My first VM
+
+To make starting a virtual machine easier, we provide the `AppMarket`, which has appliances on available for you to pick and use. We will use the *AppMarket* to build a VM with the following steps:
+>
+* Import a pre-made disk or `Image` with a Linux Operating system.
+* Edit the VM description or `Template` to give your VM the shape you want. 
+* Instantiate the *Template to run your first `Virtual Machine`.
+
 #### Import pre-made image from the AppMarket
+
+* Login to the [UI](https://ui.hpccloud.surfsara.nl/).
+* Choose the *AppMarket* tab on the left menu of the screen and then *Appliances*.
+* Choose the OS system: **Ubuntu 15.04 Desktop - KVM** and click on the tick-box left to it. 
+* Click on the `Import` button at the top-right corner of the screen. 
+* A dialogue will pop up, asking you for a few details:
+  * Datastore for images: **104: local images ssd**. 
+  * Image Name: **Cursus Image**.
+  * Template Name: **Cursus Template**.
+* Finally, click the *Import* button. This will start importing the appliance from the AppMarket. You can close this window.
+
+> **NOTE:**
+You can verify that the process is complete by inspecting the *Images* tab under the `Virtual Resources` at the menu of the UI. You should see your new image there.
+
 #### Edit the Template  
-Edit persistence, nics, acpi
+
+When you imported the appliance from he AppMarket, it also made a template available for you to make a virtual machine. In the *Template* you can define how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc.
+
+Edit the created *Template* by following these steps:
+
+* Go to the Templates tab under the `Virtual Resources` at the menu of the UI.
+* Find the template you just created, and click on it. You now see an overview of the template settings.
+* Click on Update on the top-right of the screen to start editing the template. 
+* Browse through the different options (i.e. General, Storage, Network). Leave the default values, **except** for the following:
+  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Click once on **Name: internet* row.
+  * Select the `OS Booting` tab and then *Features*. Set: **ACPI to "Yes"** and **Localtime to "No"**.
+* Click *Update* on top to save your changes.
+
 #### Start the VM
 
-#### Menu and UI features
+A template is a description of a virtual machine. The template we have been editing in this guide is now ready to create a virtual machine from it.
 
-* Login to the [UI](https://ui.hpccloud.surfsara.nl/) with your demo account.
-* There is a menu on the left side. Click on each of the tabs to inspect what is available on the UI. A vertical blue bar on the left of the tab tells which one is selected.
+* Go to the *Virtual Machines* section. This displays an overview of all running VMs. This list is empty for now.
+* Click on the *green plus sign*.
+* Give your virtual machine a name: **My-First-VM** (no spaces).  
+This name is also used as the host name of your machine. 
+* Number of instances: **1**.
+* Select the template we just editted. Since this is your first template, there is only one item in the list. Select this template.
+* Click on the `Create` button at the bottom of the screen.
+
+> **NOTE:**  
+>Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That state means that the cloud system is looking for a place where your virtual machine can actually run.  
+>  
+>You can refresh with the sign next to the *green plus button*. When the required capacity becomes available, your VM will appear in Status: **RUNNING**. 
+
+
+#### What happened?
+
+You have just created a fresh, clean machine!
+
+Let's summarise what you have seen so far. From the menu on the left side, click on each of the tabs to inspect the information. A vertical blue bar on the left of the tab tells which one is selected.
+
 * *Dashboard*: shows an overview of the project status, like running machines or usage statistics. 
 * *Virtual Resources:*  
-  * `Virtual Machines`: here you can manage your machines (i.e.: create, start, shutdown).
-  * `Templates`: you define here how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc. The template gives your computer the shape you want. A template is just a recipe, not the machine itself.   
-  * `Images`: this is the equivalent of a hard drive. Your OS and user data can be stored on this image.
-* *Infrastructure:*
-  * `Datastores`: shows the available storage options and your quotas compared to full capacity.
-  * `Virtual Networks`: shows the available networks you can use for your project's VMs.
- * *AppMarket* 
-  * `Appliances`: these are ready-made images that you can import into your project and instantiate VMs. We have pre-made appliances for CentOS and Ubuntu.
+  * `Images`: this is the equivalent of a hard drive. Your OS and user data can be stored on this image.  
+  * `Templates`:  the template gives your computer the shape you want. A template is just a recipe, not the machine itself.   
+  * `Virtual Machines`: here you can manage your machines (i.e.: create, start, shutdown). Click anywhere on the running VM row. Inspect the Information tables that appear.
 
 #### Login to the VM
 The ready-made images in *AppMarket* do not provide a password for the root user. The only way to login in as root on your virtual machine is using the ssh keys.
@@ -127,7 +173,7 @@ The ready-made images in *AppMarket* do not provide a password for the root user
 
 ### <a name="3.-Scale-up-to-a-multicore-VM"></a> 3. Scale-up to a multicore VM
 #### Add cores in Template
-#### Run the example
+#### Run the example, persistence
 
 ### <a name="4.-Scale-out-to-multiple-VMs"></a> 4. Scale-out to multiple VMs (Optional)
 #### Start 2 VMs from a single image
