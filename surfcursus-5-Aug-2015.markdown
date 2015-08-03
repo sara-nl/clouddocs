@@ -52,7 +52,7 @@ What you need for this tutorial:
 
 #### Login to the UI
 
-The UI (short for User Interface) is the web site that allows you to manage you  part of the HPC Cloud.  
+The UI (short for User Interface) is the web site that allows you to manage your virtual machines in the HPC Cloud.  
 * Open the UI page in your browser: https://ui.hpccloud.surfsara.nl/
 * Log in with the username and password assigned to your team. If you don't have a demo account yet, go back to [Prepare your laptop](#preparation) section.
 
@@ -74,11 +74,12 @@ Let's change now the initial password:
 * Click your account's *buddy* icon at the top-right corner of the screen on the UI. 
 * Choose the option Sign Out.
 
-From now on you can use your new password to login again to your Cloud account.
+From now on you can use your new password to login to your Cloud account.
+Do so now.
 
 #### Add ssh keys to your profile
 
-Before launching your [first VM](#2.-My-first-VM), there is a last step to take on the [UI](https://ui.hpccloud.surfsara.nl/): **add an SSH key to your profile**.  
+Before launching your [first VM](#2.-My-first-VM), there is a last step to take in the [UI](https://ui.hpccloud.surfsara.nl/): **add an SSH key to your profile**.  
 *But what does this mean and why is it needed?*
 
 As said, the HPC Cloud users have full control of their virtual machines (IaaS). This means that you are administrator in your own VMs, in other words **root** user. 
