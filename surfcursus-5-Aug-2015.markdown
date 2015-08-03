@@ -39,6 +39,7 @@ What you need for this tutorial:
 * A computer with full Internet access.
 * A browser (Chrome or Firefox will do nicely).
 * A **demo account**. Pick the account that corresponds to your team from [here](https://docs.google.com/spreadsheets/d/1zUVq5VrZLHhoFs3YCwDGGeDGLXDYBhF7dRFPCDDIppg/edit?usp=sharing).
+* Java, at least version 8 (a.k.a. 1.7)
 * An SSH client.
   * Linux and Mac users don't need to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
   * Windows users need to install both: 
