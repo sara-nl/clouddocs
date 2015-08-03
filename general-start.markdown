@@ -136,7 +136,7 @@ The operating system on the machine will go through the boot process.
 
 After you have added your public key to your user profile, you should be able to log in on your virtual machine as _root_, allowing you to perform maintenance tasks on your virtual machine.
 
-You will need to find the IP address of your virtual machine, first. The IP address of your virtual machine is shown on in the _IPs_ column from the virtual machines list, under the _Virtual Infrastructure_ tab of the UI. 
+You will need to find the IP address of your virtual machine, first. The IP address of your virtual machine is shown on in the _IPs_ column from the virtual machines list, under the _Virtual Resources_ tab of the UI. 
 
 If you use a Linux or a Mac OSX operating system, open a terminal window, and type
 ```sh
