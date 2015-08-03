@@ -9,8 +9,7 @@
   * [My first VM](#2.-My-first-VM) <br>
   * [Persistence](#3.-Persistence) <br>
   * [Scale-up to a multicore VM](#4.-Scale-up-to-a-multicore-VM) <br>
-  * [Scale-out to multiple VMs](#5.-Scale-out-to-multiple-VMs) <br>
-  * [Adding disk on the fly](#6.-Adding-disk-on-the-fly) <br>
+  * [Extras](#5.-Extras) <br>
 * [Presentations](#presentations) <br>
 
 ## <a name="general"></a>General Information 
@@ -255,22 +254,26 @@ The disk image is now marked as **persistent**. This means that we can install o
 
 Let's install and run an example to investigate the HPC Cloud capabilities. The code was taken from [mandelbrot-rmi](https://code.google.com/p/mandelbrot-rmi/), a distributed Manderbrot renderer based on [Java RMI](https://en.wikipedia.org/wiki/Java_remote_method_invocation), with some small improvements.
 
+>**NOTE:**
+>
+> For the rest of the tutorial we will omit `root@surfsara-Desktop:~#` prompt in the instructions, in order to allow you copy-paste the commands directly in your terminal.
+
 * Login to the running VM again.
 * First update your system:
 
 ```sh
-root@surfsara-Desktop:~# apt-get update 
+apt-get update 
 ```
 
-* Install the *curl* package to enable downloads from URLs:
+* Install the *curl* package to enable downloads from known http links:
 
 ```sh
-root@surfsara-Desktop:~# apt-get install curl
+apt-get install curl
 ```
-* Install *java* as you need it to run the example (optionally try `java -version` to verify that is it is missing):
+* Install *java* as it is required for running the example (optionally try `java -version` to verify that is it is missing):
 
 ```sh
-root@surfsara-Desktop:~# apt-get install default-jre
+apt-get install default-jre
 ```
 
 * Download the example: 
@@ -279,18 +282,39 @@ root@surfsara-Desktop:~# apt-get install default-jre
 root@surfsara-Desktop:~# curl -O https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/f563e4302468a336c71aa013c337c636/mandelbrot-rmi-bin.tgz
 ```
 
+**Run the example**
 
+create a blank directory and extract the tar(s)
+mkdir mandelbrot-rmi
+cd mandelbrot-rmi
+tar xvzf ../mandelbrot-bin-src.tgz # or mandelbrot-rmi-src.tgz
+make # only if you build from source
+launch the first server that will pose as the RMI registry
+./startserver.sh first # arbitrary name argument
+launch additional servers with different names
+./startserver.sh banana
+./startserver.sh coconut
+launch a client on an X11 capable machine and pass it one or more server names
+./startclient.sh first banana coconut
+interact with the display:
+
+    left click will zoom in to the yellow rectangle
+    right click will zoom out
+    dragging will change the size of the rectangle
+
+repeat with different number of server names for the client
 
 
 ### <a name="4.-Scale-up-to-a-multicore-VM"></a> 3. Scale-up to a multicore VM
 #### Add cores in Template
 #### Run the example, persistence
 
-### <a name="5.-Scale-out-to-multiple-VMs"></a> 4. Scale-out to multiple VMs (Optional)
-#### Start 2 VMs from a single image
-#### Run the example
+### <a name="5.-Extras"></a> 5. Extras (Optional)
+#### Scale out to multiple VMs 
+Make non persistent, Start 2 VMs from a single image, Run the example
+#### Adding disk on the fly
+Create datablock, make persistent, attach it on running VM
 
-### <a name="6.-Adding-disk-on-the-fly"></a> 4. Adding disk on the fly (Optional)
 
 ## <a name="presentations"></a> Presentations
 * Introduction to Cloud Computing `<slides>`
