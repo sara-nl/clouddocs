@@ -181,11 +181,11 @@ Your VM IP address is shown on in the `IPs` column from the virtual machines lis
 * Login:
   * If you use a Linux or a Mac OSX operating system, open a terminal window, and type  
   **on your laptop**:
-  ```sh
+```sh
 ssh -X -i ~/.ssh/id_rsa root@145.100.59.102
 ``` 
   * If you use a Windows operating system, open PuTTY, and fill in (see [here](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/access-your-VM#From%20a%20Windows%20client) for detailed instructions):
-  ```sh
+```sh
 Host Name: root@145.100.59.102
 SSH key: browse to the location where you saved the private key.
 ```
@@ -198,7 +198,7 @@ SSH key: browse to the location where you saved the private key.
 
 * If everything went gracefully, the first time you login you will be asked to add the VM to the list of known hosts: type "Yes".
 * You should now see this line in your terminal:
-  ```sh
+```sh
 root@surfsara-Desktop:~#
 ```
 
@@ -207,7 +207,7 @@ This means that you are logged in successfully to your Virtual Machine!
 * Look around a bit, make yourself familiar with the system. 
 * Create a file (see: [touch command](https://en.wikipedia.org/wiki/Touch_(Unix)#Examples))
 * Logout by typing `exit` or `ctrl-D` in your terminal. (see: [exit command](https://en.wikipedia.org/wiki/Exit_(command)), do not use shutdown command):
-  ```sh
+```sh
 root@surfsara-Desktop:~# exit
 ```
 * Login again. *Is your file still there?* 
