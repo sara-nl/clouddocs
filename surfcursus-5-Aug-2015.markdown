@@ -187,6 +187,8 @@ If you use a Linux or a Mac OSX operating system, open a terminal window, and ty
 ssh -X -i ~/.ssh/id_rsa root@145.100.59.102 # replace id_rsa and IP address!
 ```
 
+The `-X` flag connects your X11 display to the VM so that the VM can open a window on your laptop.
+
 #### Login from Windows
 
 If you use a Windows operating system, open PuTTY, and fill in (see [here](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/access-your-VM#From%20a%20Windows%20client) for detailed instructions):
@@ -292,8 +294,11 @@ tar xvzf ../mandelbrot-rmi-bin.tgz
 ```
 
 * Launch the first server that will pose as the RMI registry with an arbitrary name argument, e.g. _apple_:
+  * Start a new local terminal and log in to your virtual machine, see above.
+  * run the following commands:
 
 ```sh
+cd ~/mandelbrot-rmi
 ./startserver.sh apple
 ```
 
