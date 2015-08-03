@@ -302,7 +302,8 @@ cd ~/mandelbrot-rmi
 ./startserver.sh apple
 ```
 
-* Return to the first terminal windo (connected to the VM with `ssh -X`), start a client and pass it the _apple_ server name:
+* Return to the first terminal window (connected to the VM with `ssh -X`), start a client and pass it the _apple_ server name:
+
 ```sh
 cd ~/mandelbrot-rmi
 ./startclient.sh apple
@@ -310,22 +311,32 @@ cd ~/mandelbrot-rmi
   A window should pop up on your laptop displaying a full _mandelbrot set_.
 
 * Interact with the display:
+
 > **NOTE:**
 Left click will zoom in to the yellow rectangle.  
 Right click will zoom out.  
 Dragging will change the size of the rectangle.  
 
+Client and server both log the time of the computation.
+
 You can kill the client or servers anytime with _Ctrl+C_.
 
-* Repeat with different number of server names for the client. Launch additional servers with different names. Start the new servers and the client, all in different terminals:  
+* Kill the client now.
+
+* Launch additional servers with different names. 
+Start the new servers and the client, all in different terminals:  
 
 ```sh
-./startserver.sh apple
+# new terminal, ssh to VM, then:
+cd ~/mandelbrot-rmi
 ./startserver.sh banana
-./startserver.sh coconut
-./startclient.sh apple banana coconut
 ```
+Repeat for _coconut_ or make up your own names.
 
+* In the client window, start the client with the names of your running servers.
+```
+./startclient.sh apple banana coconut # or your names
+```
 Observe the performance when adding extra servers.
 
 * Before moving to the next exercise, *remember to Shutdown your VM*.
