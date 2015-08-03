@@ -179,31 +179,28 @@ The way to login in as *root* on your virtual machine is using the ssh keys that
 * First find the IP address of your virtual machine.  
 Your VM IP address is shown on in the `IPs` column from the virtual machines list, under the Virtual Resources tab of the UI.
 
-##### Login from a UNIX system
+#### Login from a UNIX system
 
 If you use a Linux or a Mac OSX operating system, open a terminal window, and type  
 **on your laptop**:  
 ```sh
-ssh -X -i ~/.ssh/id_rsa root@145.100.59.102
+ssh -X -i ~/.ssh/id_rsa root@145.100.59.102 # replace id_rsa and IP address!
 ```
 
-##### Login from Windows
+#### Login from Windows
 
 If you use a Windows operating system, open PuTTY, and fill in (see [here](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/access-your-VM#From%20a%20Windows%20client) for detailed instructions):
-  
-```sh
-Host Name: root@145.100.59.102
+
+```
+Host Name: root@145.100.59.102 <-- replace IP address! 
 SSH key: browse to the location where you saved the private key.
 ```
- 
->**Example:**
->
->In the example above, the IP address is _145.100.59.102_ and the public key we want to use from our laptop is ~/.ssh/id_rsa.pub. Replace both values with your own! 
 
 #### First login
 
-* If everything went gracefully, the first time you login you will be asked to add the VM to the list of known hosts: type "Yes".
-* You should now see this line in your terminal:
+If everything went well, the first time you login you will be asked to add the VM to the list of known hosts: type "Yes".
+
+You should now see this line in your terminal:
 
 ```sh
 root@surfsara-Desktop:~#
@@ -218,6 +215,7 @@ This means that you are logged in successfully to your Virtual Machine!
 ```sh
 root@surfsara-Desktop:~# exit
 ```
+
 * Login again. *Is your file still there?* 
  
 #### First shut-down
