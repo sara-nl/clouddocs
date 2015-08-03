@@ -41,7 +41,7 @@
 * [Image Persistence](image_persistence)
 * [Scratch Disk Images](scratch_disk)
 * [Download an image](image_download)  
-* Create an Image on your own Machine
+* [Create an Image on your own laptop](image-on-own-laptop)
 
 ### Networks
 * Virtual Network  
