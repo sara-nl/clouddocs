@@ -302,17 +302,16 @@ cd ~/mandelbrot-rmi
 ./startserver.sh apple
 ```
 
-* Launch a client on an X11 capable machine and pass it the _apple_ server name:
-
+* Return to the first terminal windo (connected to the VM with `ssh -X`), start a client and pass it the _apple_ server name:
 ```sh
+cd ~/mandelbrot-rmi
 ./startclient.sh apple
 ``` 
+  A window should pop up on your laptop displaying a full _mandelbrot set_.
 
 * Interact with the display:
-
->**NOTE:**
->
-> Left click will zoom in to the yellow rectangle.  
+> **NOTE:**
+Left click will zoom in to the yellow rectangle.  
 Right click will zoom out.  
 Dragging will change the size of the rectangle.  
 
