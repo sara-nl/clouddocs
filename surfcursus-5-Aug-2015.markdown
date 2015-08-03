@@ -331,9 +331,11 @@ Start the new servers and the client, all in different terminals:
 cd ~/mandelbrot-rmi
 ./startserver.sh banana
 ```
+
 Repeat for _coconut_ or make up your own names.
 
 * In the client window, start the client with the names of your running servers.
+
 ```sh
 ./startclient.sh apple banana coconut # or your names
 ```
