@@ -9,6 +9,7 @@
   * [2. My first VM](#2.-My-first-VM) <br>
   * [3. Persistence](#3.-Persistence) <br>
   * [4. Scale-up to a multicore VM](#4.-Scale-up-to-a-multicore-VM) <br>
+  * [5. Wrap up](#5.-Wrap-up) <br> 
 * [Presentations](#presentations) <br>
 
 ## <a name="general"></a>General Information 
@@ -348,11 +349,20 @@ You can customise your VMs by editing the templates you instantiate the VMs from
 
 #### Run the example on the four-core VM
 
-* Instantiate a VM from the updated template
+* Instantiate a VM from the updated template.
 * Login to the VM. *Is your mandelbrot data there?*
 
 > **NOTE:**
 >Your VM was in a persistence mode.
+
+* Run the [same example](#3.-Persistence) with a single and then three different servers.
+* Repeat tests and observe the performance. *What is the gain?*
+
+### <a name="5.-Wrap-up"></a> 5. Wrap up
+
+* Play around, make your checks and don't forget to shut down all the running VMs when you are finished.
+
+>Remember: Your running VMs are consuming quota whether they are doing something useful or are idle.
 
 
 ## <a name="presentations"></a> Presentations
