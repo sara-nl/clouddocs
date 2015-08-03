@@ -7,9 +7,10 @@
 * [Hands-on](#hands-on) <br>
   * [Access the user interface](#1.-Access-the-user-interface) <br>
   * [My first VM](#2.-My-first-VM) <br>
-  * [Scale-up to a multicore VM](#3.-Scale-up-to-a-multicore-VM) <br>
-  * [Scale-out to multiple VMs](#4.-Scale-out-to-multiple-VMs) <br>
-  * [Adding disk on the fly](#5.-Adding-disk-on-the-fly) <br>
+  * [Persistence](#3.-Persistence) <br>
+  * [Scale-up to a multicore VM](#4.-Scale-up-to-a-multicore-VM) <br>
+  * [Scale-out to multiple VMs](#5.-Scale-out-to-multiple-VMs) <br>
+  * [Adding disk on the fly](#6.-Adding-disk-on-the-fly) <br>
 * [Presentations](#presentations) <br>
 
 ## <a name="general"></a>General Information 
@@ -166,18 +167,20 @@ Let's summarise what you have seen so far. From the menu on the left side, click
 
 #### Login to the VM
 
-The ready-made images in *AppMarket* do not provide a password for the root user. The way to login in as *root* on your virtual machine is using the ssh keys that [you stored](#1.-Access-the-user-interface) previously.
+You can interact with your VM with several ways: SSH, VNC or a remote desktop server. The ready-made images in *AppMarket* do not provide a password for the root user. The way to login in as *root* on your virtual machine is using the ssh keys that [you stored](#1.-Access-the-user-interface) previously.
 
-**Command-line access**  
+**Command-line access - SSH**  
 
 * First find the IP address of your virtual machine.  
 Your VM IP address is shown on in the `IPs` column from the virtual machines list, under the Virtual Resources tab of the UI. 
 * Login:
   * If you use a Linux or a Mac OSX operating system, open a terminal window, and type:
+
 ```sh
-ssh -X -i ~/.ssh/id_rsa root@145.100.59.102
+laptop:~# ssh -X -i ~/.ssh/id_rsa root@145.100.59.102
 ``` 
   * If you use a Windows operating system, open PuTTY, and type:
+
 ```sh
 Hostname: root@145.100.59.102
 SSH key: browse to the location where you saved the private key.
@@ -185,22 +188,78 @@ SSH key: browse to the location where you saved the private key.
  
 >**Example:**
 >
->In the example above, the IP address is _145.100.59.102_ and the public key we want to use from our laptop is ~/.ssh/id_rsa.pub. 
+>In the example above, the IP address is _145.100.59.102_ and the public key we want to use from our laptop is ~/.ssh/id_rsa.pub. Replace both values with your own! 
 
 `Window-based access - VNC ??`
-  
-#### Install & Run [the example](surfcursus-5-Aug-2015/Distributed-Mandelbrot)
+
+#### First login
+
+* If everything went gracefully, the first time you login you will be prompted to add the VM to the list of known hosts: type "Yes".
+* You should now see this line in your terminal:
+
+```sh
+root@surfsara-Desktop:~#
+```
+
+This means that you are logged in successfully to your Virtual Machine!
+* Look around a bit, make yourself familiar with the system. 
+* Create a file (see: [touch command](https://en.wikipedia.org/wiki/Touch_(Unix)#Examples))
+* Logout (do not use shutdown command): 
+```
+root@surfsara-Desktop:~# exit
+```
+* Login again. *Is your file still there?* 
+ 
 #### First shut-down
 
-### <a name="3.-Scale-up-to-a-multicore-VM"></a> 3. Scale-up to a multicore VM
+Let's shutdown your first VM and stop consuming quotas.
+
+* Tick the box to the left on the row with your VM.
+* At the upper right corner of the screen, under the dust bin drop-down button, unfold.
+* Click `Shutdown`. 
+* Refresh the Virtual Machines list (by clicking on the two arrows chasing each other next to + button) until your VM is gone. 
+
+> **NOTE:**
+>
+>That was the shutdown. Once the operation is finished, your VM will be removed from the display and its resources freed. You can start a new VM from your existing template and image any time.
+
+### <a name="3.-Persistence"></a> 1. Persistence
+
+Disk images can be "persistent" or not and you can switch that flag.
+
+*What does "persistent" mean?*
+- changes by the VM are copied back to the original disk image
+- if a VM runs with a persistent disk, you cannot launch a second VM using that disk
+
+*What does "non-persistent" mean?*
+- changes by a VM are lost at shutdown and not copied back to the original disk image
+- it possible to run multiple VMs using the same non-persistent disk
+
+> **NOTE:**
+>
+> The *AppMarket* image we created was set to **non-persistent** by default.
+
+#### Make your image non persistent
+* Go to *Images* tab under Virtual Resources and click on your *Cursus Image*
+* Under the Information section, find the "Persistent" entry. It says "no".
+* Switch the value to "yes".
+
+#### Deploy a persistent VM
+* Start your machine again. 
+* Check your changes made during the previous run. *Are your files still there?* 
+> During the previous run the VM's disk was "non-persistent".
+
+#### Install & Run [the example](surfcursus-5-Aug-2015/Distributed-Mandelbrot)
+
+### <a name="4.-Scale-up-to-a-multicore-VM"></a> 3. Scale-up to a multicore VM
 #### Add cores in Template
 #### Run the example, persistence
 
-### <a name="4.-Scale-out-to-multiple-VMs"></a> 4. Scale-out to multiple VMs (Optional)
+### <a name="5.-Scale-out-to-multiple-VMs"></a> 4. Scale-out to multiple VMs (Optional)
 #### Start 2 VMs from a single image
 #### Run the example
 
-### <a name="5.-Adding-disk-on-the-fly"></a> 4. Adding disk on the fly (Optional)
+### <a name="6.-Adding-disk-on-the-fly"></a> 4. Adding disk on the fly (Optional)
 
 ## <a name="presentations"></a> Presentations
 * Introduction to Cloud Computing `<slides>`
