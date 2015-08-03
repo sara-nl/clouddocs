@@ -9,7 +9,6 @@
   * [My first VM](#2.-My-first-VM) <br>
   * [Persistence](#3.-Persistence) <br>
   * [Scale-up to a multicore VM](#4.-Scale-up-to-a-multicore-VM) <br>
-  * [Extras](#5.-Extras) <br>
 * [Presentations](#presentations) <br>
 
 ## <a name="general"></a>General Information 
@@ -329,17 +328,23 @@ Observe the performance when adding extra servers.
 
 ### <a name="4.-Scale-up-to-a-multicore-VM"></a> 4. Scale-up to a multicore VM
 
-In this section, we will run the same example on a four-core VM, using the exact same image (=the *Cursus Image*.  
+In this section, we will run the same example on a four-core VM, using the exact same image, the *Cursus Image*.  
 
 #### Edit the Template
 
-#### Run the example, persistence
+The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your Virtual Machines (VMs) the form that you need them to have.
 
-### <a name="5.-Extras"></a> 5. Extras (Optional)
-#### Scale out to multiple VMs 
-Make non persistent, Start 2 VMs from a single image, Run the example
-#### Adding disk on the fly
-Create datablock, make persistent, attach it on running VM
+You can customise your VMs by editing the templates you instantiate the VMs from.
+
+* In order to edit an existing template, under the Virtual Resources menu, choose the `Templates` item. 
+* Click on the *Cursus Template* to edit. Extended information about that image will be displayed within two tabs: Info and Template.
+* Above this extended information area, there are 3 buttons. One of them says Update. If you click there, you will be able to edit the template: this the *Wizard mode*.
+* In the *General* tab edit the number of CPU and VCPU as:
+  * CPU: **4**
+  * VCPU: **4**
+* Whenever you are finished customising your template, make sure you click on the green Update button so that your changes are actually saved. 
+
+#### Run the example, persistence
 
 
 ## <a name="presentations"></a> Presentations
