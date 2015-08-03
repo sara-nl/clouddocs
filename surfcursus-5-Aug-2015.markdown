@@ -190,21 +190,14 @@ ssh -X -i ~/.ssh/id_rsa root@145.100.59.102 # replace id_rsa and IP address!
 #### Login from Windows
 
 If you use a Windows operating system, open PuTTY, and fill in (see [here](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/access-your-VM#From%20a%20Windows%20client) for detailed instructions):
-
-```
-Host Name: root@145.100.59.102 <-- replace IP address! 
-SSH key: browse to the location where you saved the private key.
-```
+* Host Name: root@145.100.59.102 *-- replace IP address!* 
+* SSH key: *-- browse to the location where you saved the private key.*
 
 #### First login
 
 If everything went well, the first time you login you will be asked to add the VM to the list of known hosts: type "Yes".
 
-You should now see this line in your terminal:
-
-```sh
-root@surfsara-Desktop:~#
-```
+You should now see this line in your terminal: `root@surfsara-Desktop:~#`
 
 This means that you are logged in successfully to your Virtual Machine!
 
@@ -213,7 +206,7 @@ This means that you are logged in successfully to your Virtual Machine!
 * Logout by typing `exit` or `ctrl-D` in your terminal. (see: [exit command](https://en.wikipedia.org/wiki/Exit_(command)), do not use shutdown command):
 
 ```sh
-root@surfsara-Desktop:~# exit
+exit
 ```
 
 * Login again. *Is your file still there?* 
