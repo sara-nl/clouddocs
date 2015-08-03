@@ -284,26 +284,46 @@ root@surfsara-Desktop:~# curl -O https://doc.hpccloud.surfsara.nl/oortdoc/docs/u
 
 **Run the example**
 
-create a blank directory and extract the tar(s)
+* Create a blank directory and extract the tar:
+
+```sh
 mkdir mandelbrot-rmi
 cd mandelbrot-rmi
-tar xvzf ../mandelbrot-bin-src.tgz # or mandelbrot-rmi-src.tgz
-make # only if you build from source
-launch the first server that will pose as the RMI registry
-./startserver.sh first # arbitrary name argument
-launch additional servers with different names
+tar xvzf ../mandelbrot-rmi-bin.tgz
+```
+
+* Launch the first server that will pose as the RMI registry with an arbitrary name argument, e.g. _apple_:
+
+```sh
+./startserver.sh apple
+```
+
+* Launch a client on an X11 capable machine and pass it the _apple_ server name:
+
+```sh
+./startclient.sh apple
+``` 
+
+* Interact with the display:
+
+>**NOTE:**
+>
+> Left click will zoom in to the yellow rectangle.  
+Right click will zoom out.  
+Dragging will change the size of the rectangle.  
+
+Kill anytime the client or servers with _Ctrl+C_.
+
+* Repeat with different number of server names for the client. Launch additional servers with different names. Start the new servers and the client, all in different terminals:  
+
+```sh
+./startserver.sh apple
 ./startserver.sh banana
 ./startserver.sh coconut
-launch a client on an X11 capable machine and pass it one or more server names
-./startclient.sh first banana coconut
-interact with the display:
+./startclient.sh apple banana coconut
+```
 
-    left click will zoom in to the yellow rectangle
-    right click will zoom out
-    dragging will change the size of the rectangle
-
-repeat with different number of server names for the client
-
+Observe the performance when adding extra servers.
 
 ### <a name="4.-Scale-up-to-a-multicore-VM"></a> 3. Scale-up to a multicore VM
 #### Add cores in Template
