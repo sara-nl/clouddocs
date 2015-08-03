@@ -279,7 +279,7 @@ apt-get install default-jre
 * Download the example: 
 
 ```sh
-root@surfsara-Desktop:~# curl -O https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/f563e4302468a336c71aa013c337c636/mandelbrot-rmi-bin.tgz
+curl -O https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/f563e4302468a336c71aa013c337c636/mandelbrot-rmi-bin.tgz
 ```
 
 **Run the example**
@@ -312,7 +312,7 @@ tar xvzf ../mandelbrot-rmi-bin.tgz
 Right click will zoom out.  
 Dragging will change the size of the rectangle.  
 
-Kill anytime the client or servers with _Ctrl+C_.
+You can kill the client or servers anytime with _Ctrl+C_.
 
 * Repeat with different number of server names for the client. Launch additional servers with different names. Start the new servers and the client, all in different terminals:  
 
@@ -325,8 +325,14 @@ Kill anytime the client or servers with _Ctrl+C_.
 
 Observe the performance when adding extra servers.
 
-### <a name="4.-Scale-up-to-a-multicore-VM"></a> 3. Scale-up to a multicore VM
-#### Add cores in Template
+* Before moving to the next exercise, *remember to Shutdown your VM*.
+
+### <a name="4.-Scale-up-to-a-multicore-VM"></a> 4. Scale-up to a multicore VM
+
+In this section, we will run the same example on a four-core VM, using the exact same image (=the *Cursus Image*.  
+
+#### Edit the Template
+
 #### Run the example, persistence
 
 ### <a name="5.-Extras"></a> 5. Extras (Optional)
