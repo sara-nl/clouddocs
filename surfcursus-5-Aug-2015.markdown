@@ -5,10 +5,10 @@
 * [General Information](#general) <br>
 * [Prepare your laptop](#preparation) <br>
 * [Hands-on](#hands-on) <br>
-  * [Access the user interface](#1.-Access-the-user-interface) <br>
-  * [My first VM](#2.-My-first-VM) <br>
-  * [Persistence](#3.-Persistence) <br>
-  * [Scale-up to a multicore VM](#4.-Scale-up-to-a-multicore-VM) <br>
+  * [1. Access the user interface](#1.-Access-the-user-interface) <br>
+  * [2. My first VM](#2.-My-first-VM) <br>
+  * [3. Persistence](#3.-Persistence) <br>
+  * [4. Scale-up to a multicore VM](#4.-Scale-up-to-a-multicore-VM) <br>
 * [Presentations](#presentations) <br>
 
 ## <a name="general"></a>General Information 
@@ -42,7 +42,7 @@ What you need for this tutorial:
   * Linux and Mac users don't need to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
   * Windows users need to install both: 
      * [PuTTY](http://www.putty.org/) (screen based) or [OpenSSH for Windows](http://sshwindows.sourceforge.net/) (command-line only). 
-     * [PutTTY-gen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) (screen based).
+     * [PuTTY-gen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) (screen based).
 
 ## <a name="hands-on"></a> Hands-on
 
@@ -102,7 +102,7 @@ To make starting a virtual machine easier, we provide the `AppMarket`, which has
 >
 * Import a pre-made disk or `Image` with a Linux Operating system.
 * Edit the VM description or `Template` to give your VM the shape you want. 
-* Instantiate the *Template to run your first `Virtual Machine`.
+* Instantiate the *Template* to run your first `Virtual Machine`.
 
 #### Import pre-made image from the AppMarket
 
@@ -110,7 +110,7 @@ To make starting a virtual machine easier, we provide the `AppMarket`, which has
 * Choose the *AppMarket* tab on the left menu of the screen and then *Appliances*.
 * Choose the OS system: **Ubuntu 15.04 Desktop - KVM** and click on the tick-box left to it. 
 * Click on the `Import` button at the top-right corner of the screen. 
-* A dialogue will pop up, asking you for a few details:
+* A dialogue will pop up, asking you for a few details. Edit as follows:
   * Datastore for images: **104: local images ssd**. 
   * Image Name: **Cursus Image**.
   * Template Name: **Cursus Template**.
@@ -144,6 +144,7 @@ This name is also used as the host name of your machine.
 * Number of instances: **1**.
 * Select the template we just edited. Since this is your first template, there is only one item in the list. Select the *Cursus Template*.
 * Click on the `Create` button at the bottom of the screen.
+* Refresh the VM status by clicking on the two arrows chasing each other next to "+" button.
 
 > **NOTE:**  
 >Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That state means that the cloud system is looking for a place where your virtual machine can actually run.  
@@ -188,11 +189,9 @@ SSH key: browse to the location where you saved the private key.
 >
 >In the example above, the IP address is _145.100.59.102_ and the public key we want to use from our laptop is ~/.ssh/id_rsa.pub. Replace both values with your own! 
 
-`Window-based access - VNC ??`
-
 #### First login
 
-* If everything went gracefully, the first time you login you will be prompted to add the VM to the list of known hosts: type "Yes".
+* If everything went gracefully, the first time you login you will be asked to add the VM to the list of known hosts: type "Yes".
 * You should now see this line in your terminal:
 
 ```sh
@@ -200,10 +199,12 @@ root@surfsara-Desktop:~#
 ```
 
 This means that you are logged in successfully to your Virtual Machine!
+
 * Look around a bit, make yourself familiar with the system. 
 * Create a file (see: [touch command](https://en.wikipedia.org/wiki/Touch_(Unix)#Examples))
-* Logout (do not use shutdown command): 
-```
+* Logout (see: [exit command](https://en.wikipedia.org/wiki/Exit_(command)), do not use shutdown command): 
+
+```sh
 root@surfsara-Desktop:~# exit
 ```
 * Login again. *Is your file still there?* 
@@ -245,6 +246,7 @@ Disk images can be "persistent" or not and you can switch that flag.
 #### Deploy a persistent VM
 * Start your machine again. 
 * Login and check your changes made during the previous run. *Are your files still there?* 
+
 > During the previous run the VM's disk was "non-persistent".
 
 #### Install & Run Mandelbrot
