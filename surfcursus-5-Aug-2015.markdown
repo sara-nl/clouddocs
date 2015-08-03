@@ -344,7 +344,13 @@ You can customise your VMs by editing the templates you instantiate the VMs from
   * VCPU: **4**
 * Whenever you are finished customising your template, make sure you click on the green Update button so that your changes are actually saved. 
 
-#### Run the example, persistence
+#### Run the example on the four-core VM
+
+* Instantiate a VM from the updated template
+* Login to the VM. *Is your mandelbrot data there?*
+
+> **NOTE:**
+>Your VM was in a persistence mode.
 
 
 ## <a name="presentations"></a> Presentations
