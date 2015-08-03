@@ -122,15 +122,15 @@ You can verify that the process is complete by inspecting the *Images* tab under
 
 #### Edit the Template  
 
-When you imported the appliance from he AppMarket, it also made a template available for you to make a virtual machine. In the *Template* you can define how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc.
+When you imported the appliance from the AppMarket, it also made a template available for you to make a virtual machine. In the *Template* you can define how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc.
 
 Edit the created *Template* by following these steps:
 
 * Go to the Templates tab under the `Virtual Resources` at the menu of the UI.
 * Find the template you just created, and click on it. You now see an overview of the template settings.
 * Click on Update on the top-right of the screen to start editing the template. 
-* Browse through the different options (i.e. General, Storage, Network). Leave the default values, **except** for the following:
-  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Click once on **Name: internet* row.
+* Browse through the different options (i.e. General, Storage, Network). Leave the default values, **except** for the following:  
+  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Click once on **Name: internet** row.
   * Select the `OS Booting` tab and then *Features*. Set: **ACPI to "Yes"** and **Localtime to "No"**.
 * Click *Update* on top to save your changes.
 
@@ -143,7 +143,7 @@ A template is a description of a virtual machine. The template we have been edit
 * Give your virtual machine a name: **My-First-VM** (no spaces).  
 This name is also used as the host name of your machine. 
 * Number of instances: **1**.
-* Select the template we just editted. Since this is your first template, there is only one item in the list. Select this template.
+* Select the template we just edited. Since this is your first template, there is only one item in the list. Select the *Cursus Template*.
 * Click on the `Create` button at the bottom of the screen.
 
 > **NOTE:**  
@@ -165,9 +165,30 @@ Let's summarise what you have seen so far. From the menu on the left side, click
   * `Virtual Machines`: here you can manage your machines (i.e.: create, start, shutdown). Click anywhere on the running VM row. Inspect the Information tables that appear.
 
 #### Login to the VM
-The ready-made images in *AppMarket* do not provide a password for the root user. The only way to login in as root on your virtual machine is using the ssh keys.
+
+The ready-made images in *AppMarket* do not provide a password for the root user. The way to login in as *root* on your virtual machine is using the ssh keys that [you stored](#1.-Access-the-user-interface) previously.
+
 **Command-line access**  
-**Window-based access**  
+
+* First find the IP address of your virtual machine.  
+Your VM IP address is shown on in the `IPs` column from the virtual machines list, under the Virtual Resources tab of the UI. 
+* Login:
+  * If you use a Linux or a Mac OSX operating system, open a terminal window, and type:
+```sh
+ssh -X -i ~/.ssh/id_rsa root@145.100.59.102
+``` 
+  * If you use a Windows operating system, open PuTTY, and type:
+```sh
+Hostname: root@145.100.59.102
+SSH key: browse to the location where you saved the private key.
+``` 
+ 
+>**Example:**
+>
+>In the example above, the IP address is _145.100.59.102_ and the public key we want to use from our laptop is ~/.ssh/id_rsa.pub. 
+
+`Window-based access - VNC ??`
+  
 #### Install & Run [the example](surfcursus-5-Aug-2015/Distributed-Mandelbrot)
 #### First shut-down
 
