@@ -179,10 +179,10 @@ Your VM IP address is shown on in the `IPs` column from the virtual machines lis
 ```sh
 laptop:~# ssh -X -i ~/.ssh/id_rsa root@145.100.59.102
 ``` 
-  * If you use a Windows operating system, open PuTTY, and type:
+  * If you use a Windows operating system, open PuTTY, and fill in (see [here](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/access-your-VM#From%20a%20Windows%20client) for detailed instructions):
 
 ```sh
-Hostname: root@145.100.59.102
+Host Name: root@145.100.59.102
 SSH key: browse to the location where you saved the private key.
 ``` 
  
@@ -223,7 +223,7 @@ Let's shutdown your first VM and stop consuming quotas.
 >
 >That was the shutdown. Once the operation is finished, your VM will be removed from the display and its resources freed. You can start a new VM from your existing template and image any time.
 
-### <a name="3.-Persistence"></a> 1. Persistence
+### <a name="3.-Persistence"></a> 3. Persistence
 
 Disk images can be "persistent" or not and you can switch that flag.
 
@@ -239,17 +239,20 @@ Disk images can be "persistent" or not and you can switch that flag.
 >
 > The *AppMarket* image we created was set to **non-persistent** by default.
 
-#### Make your image non persistent
+#### Make your image persistent
 * Go to *Images* tab under Virtual Resources and click on your *Cursus Image*
 * Under the Information section, find the "Persistent" entry. It says "no".
 * Switch the value to "yes".
 
 #### Deploy a persistent VM
 * Start your machine again. 
-* Check your changes made during the previous run. *Are your files still there?* 
+* Login and check your changes made during the previous run. *Are your files still there?* 
 > During the previous run the VM's disk was "non-persistent".
 
-#### Install & Run [the example](surfcursus-5-Aug-2015/Distributed-Mandelbrot)
+#### Install & Run Mandelbrot
+
+
+ [the example](surfcursus-5-Aug-2015/Distributed-Mandelbrot)
 
 ### <a name="4.-Scale-up-to-a-multicore-VM"></a> 3. Scale-up to a multicore VM
 #### Add cores in Template
