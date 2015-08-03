@@ -133,7 +133,7 @@ Edit the created *Template* by following these steps:
 * Find the template you just created, and click on it. You now see an overview of the template settings.
 * Click on Update on the top-right of the screen to start editing the template. 
 * Browse through the different options (i.e. General, Storage, Network). Leave the default values, **except** for the following:  
-  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Click once on **Name: internet** row.
+  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Click once on **Name: internet** row. You will see the feedback below: ![youselectednetwork](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/6ee7badd9825a4f49f842e4aba02a061/youselectednetwork.png)
   * Select the `OS Booting` tab and then *Features*. Set: **ACPI to "Yes"** and **Localtime to "No"**.
 * Click *Update* on top to save your changes.
 
