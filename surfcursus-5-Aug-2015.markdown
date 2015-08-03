@@ -160,7 +160,7 @@ This name is also used as the host name of your machine.
 
 You have just created a fresh, clean machine!
 
-Let's summarise what you have seen so far. From the menu on the left side, click on each of the tabs to inspect the information. A vertical blue bar on the left of the tab tells which one is selected.
+Let's summarise what you have seen so far. From the menu on the left side, click on each of the tabs to inspect the information. A vertical blue bar to the left of the tab tells which one is selected.
 
 * *Dashboard*: shows an overview of the project status, like running machines or usage statistics. 
 * *Virtual Resources:*  
@@ -170,7 +170,9 @@ Let's summarise what you have seen so far. From the menu on the left side, click
 
 #### Login to the VM
 
-You can interact with your VM with several ways: SSH, VNC or a remote desktop server. The ready-made images in *AppMarket* do not provide a password for the root user. The way to login in as *root* on your virtual machine is using the ssh keys that [you stored](#1.-Access-the-user-interface) previously.
+You can interact with your VM with several ways: SSH, VNC or a remote desktop server. 
+The ready-made images in *AppMarket* do not provide a password for the root user. 
+The way to login in as *root* on your virtual machine is using the ssh keys that you [stored in your profile](#1.-Access-the-user-interface) previously.
 
 **Command-line access - SSH**  
 
@@ -180,7 +182,7 @@ Your VM IP address is shown on in the `IPs` column from the virtual machines lis
   * If you use a Linux or a Mac OSX operating system, open a terminal window, and type:
 
 ```sh
-laptop:~# ssh -X -i ~/.ssh/id_rsa root@145.100.59.102
+laptop$ ssh -X -i ~/.ssh/id_rsa root@145.100.59.102
 ``` 
   * If you use a Windows operating system, open PuTTY, and fill in (see [here](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/access-your-VM#From%20a%20Windows%20client) for detailed instructions):
 
@@ -206,7 +208,7 @@ This means that you are logged in successfully to your Virtual Machine!
 
 * Look around a bit, make yourself familiar with the system. 
 * Create a file (see: [touch command](https://en.wikipedia.org/wiki/Touch_(Unix)#Examples))
-* Logout (see: [exit command](https://en.wikipedia.org/wiki/Exit_(command)), do not use shutdown command): 
+* Logout by typing `exit` or `ctrl-D` in your terminal. (see: [exit command](https://en.wikipedia.org/wiki/Exit_(command)), do not use shutdown command): 
 
 ```sh
 root@surfsara-Desktop:~# exit
@@ -267,14 +269,10 @@ Let's install and run an example to investigate the HPC Cloud capabilities. The 
 * First update your system:
 
 ```sh
-apt-get update 
+apt-get update
+apt-get upgrade
 ```
 
-* Install the *curl* package to enable downloads from known http links:
-
-```sh
-apt-get install curl
-```
 * Install *java* as it is required for running the example (optionally try `java -version` to verify that is it is missing):
 
 ```sh
@@ -284,7 +282,7 @@ apt-get install default-jre
 * Download the example: 
 
 ```sh
-curl -O https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/f563e4302468a336c71aa013c337c636/mandelbrot-rmi-bin.tgz
+wget https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/f563e4302468a336c71aa013c337c636/mandelbrot-rmi-bin.tgz
 ```
 
 **Run the example**
