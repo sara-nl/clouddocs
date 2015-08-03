@@ -48,11 +48,11 @@ What you need for this tutorial:
 
 ## <a name="hands-on"></a> Hands-on
 
-### <a name="1.-Access-the-user-interface"></a> 1. Access the user interface
+### <a name="1.-Access-the-user-interface"></a> 1. Access the User Interface
 
 #### Login to the UI
 
-The UI (short for User Interface) is the web site that allows you to interact with the HPC Cloud.  
+The UI (short for User Interface) is the web site that allows you to manage you  part of the HPC Cloud.  
 * Open the UI page in your browser: https://ui.hpccloud.surfsara.nl/
 * Log in with the username and password assigned to your team. If you don't have a demo account yet, go back to [Prepare your laptop](#preparation) section.
 
