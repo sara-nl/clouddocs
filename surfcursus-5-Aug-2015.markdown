@@ -90,8 +90,9 @@ Follow the steps below to add an ssh key to your profile:
 
 * First [Generate an SSH key](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/SSHkey). This will generate two files: a public and a private key. The private key will stay safe in your laptop, the public key will be copied to the [UI](https://ui.hpccloud.surfsara.nl/).    
 If you already have an SSH key stored in your laptop, you may skip this step.
-* Then go to your user profile by selecting the *buddy* icon on the top-right of the screen and select Settings. A dialogue pops up. In the dialogue, go to the Info page.
-* Locate the section `Public SSH Key`, and click on the blue edit icon. Copy the **public** key you created and paste it here.
+* Copy the contents of your **public** ssh key on your laptop (file ends in `.pub`).
+* Go to your user profile by selecting the *buddy* icon on the top-right of the screen and select Settings. A dialogue pops up. In the dialogue, go to the Info page.
+* Locate the section `Public SSH Key`, and click on the blue edit icon. Paste the **public** key contents.
 * Close the window. Your public key is automatically stored in your profile.
 
 > **NOTE:** 
