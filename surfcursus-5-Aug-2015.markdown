@@ -251,8 +251,36 @@ Disk images can be "persistent" or not and you can switch that flag.
 
 #### Install & Run Mandelbrot
 
+The disk image is now marked as **persistent**. This means that we can install our software or store data in the VM and make sure that everything will remain in the VM once it is shutdown and re-instantiated.
 
- [the example](surfcursus-5-Aug-2015/Distributed-Mandelbrot)
+Let's install and run an example to investigate the HPC Cloud capabilities. The code was taken from [mandelbrot-rmi](https://code.google.com/p/mandelbrot-rmi/), a distributed Manderbrot renderer based on [Java RMI](https://en.wikipedia.org/wiki/Java_remote_method_invocation), with some small improvements.
+
+* Login to the running VM again.
+* First update your system:
+
+```sh
+root@surfsara-Desktop:~# apt-get update 
+```
+
+* Install the *curl* package to enable downloads from URLs:
+
+```sh
+root@surfsara-Desktop:~# apt-get install curl
+```
+* Install *java* as you need it to run the example (optionally try `java -version` to verify that is it is missing):
+
+```sh
+root@surfsara-Desktop:~# apt-get install default-jre
+```
+
+* Download the example: 
+
+```sh
+root@surfsara-Desktop:~# curl -O https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/f563e4302468a336c71aa013c337c636/mandelbrot-rmi-bin.tgz
+```
+
+
+
 
 ### <a name="4.-Scale-up-to-a-multicore-VM"></a> 3. Scale-up to a multicore VM
 #### Add cores in Template
