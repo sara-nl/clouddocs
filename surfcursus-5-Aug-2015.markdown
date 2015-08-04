@@ -297,7 +297,7 @@ tar xvzf ../mandelbrot-rmi-bin.tgz
 ```
 
 * Launch the first server that will pose as the RMI registry with an arbitrary name argument, e.g. _apple_:
-  * Start a new local terminal and log in to your virtual machine, see above.
+  * Start a new local terminal and log in to your virtual machine, see [above](#login-to-the-vm).
   * run the following commands:
 
 ```sh
