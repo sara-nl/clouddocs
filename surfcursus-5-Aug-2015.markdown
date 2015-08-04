@@ -281,7 +281,7 @@ apt-get install default-jre
 * Download the example: 
 
 ```sh
-wget https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/f563e4302468a336c71aa013c337c636/mandelbrot-rmi-bin.tgz
+wget https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/5ff08311df2b62dc3f2d34e693ae569d/mandelbrot-rmi-bin.tgz
 ```
 
 **Run the example**
@@ -383,3 +383,4 @@ You can customise your VMs by editing the templates you instantiate the VMs from
 ## <a name="presentations"></a> Presentations
 * Introduction to Cloud Computing `<slides>`
 * Introduction to SURFsara HPC Cloud `<slides>`
+
