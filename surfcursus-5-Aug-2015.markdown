@@ -200,6 +200,7 @@ The `-X` flag connects your X11 display to the VM so that the VM can open a wind
 If you use a Windows operating system, open PuTTY, and fill in (see [here](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/access-your-VM#from-a-windows-client) for detailed instructions):
 * Host Name: root@145.100.59.102 *-- replace IP address!* 
 * SSH key: *-- browse to the location where you saved the private key.*
+* Enable X11 display so that the VM can open a window on your laptop: Unfold Connection -> SSH -> X11 -> tick the box **Enable x11 forwarding**.
 
 #### First login
 
