@@ -19,7 +19,7 @@ SURFsara has been operating the HPC Cloud as `IaaS` (Infrastructure as a Service
 This particular course aims to introduce SURF employees to the HPC Cloud by providing a set of lectures and hands-on examples to run on the real **`Oort`** infrastructure. Here is a summary of the course outline:
 
 **Date**: 5 August 2015  
-**Location**: SURFsara  
+**Location**: SURFsara VK1 & 2  
 **Program**:  
 >
 09:45 Welcome & coffee  
