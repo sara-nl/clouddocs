@@ -1,5 +1,3 @@
-> :warning: **WARNING** under construction
-
 # SURFcursus - 5 Aug 2015
 
 * [General Information](#general) <br>
