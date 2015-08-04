@@ -316,7 +316,8 @@ cd ~/mandelbrot-rmi
 * Interact with the display:
 
 > **NOTE:**
-Left click will zoom in to the yellow rectangle.  
+>
+>Left click will zoom in to the yellow rectangle.  
 Right click will zoom out.  
 Dragging will change the size of the rectangle.  
 
