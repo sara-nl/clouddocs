@@ -374,6 +374,7 @@ You can customise your VMs by editing the templates you instantiate the VMs from
 
 * Run the [same example](#install-amp-run-mandelbrot) with a single server.
 * Start a new terminal and connect to the VM. Type the following command:
+
 ```sh
 ps -eo pid,psr,pcpu,args | sed -n -e '1p' -e '/java/p'
 ```
