@@ -369,6 +369,8 @@ You can customise your VMs by editing the templates you instantiate the VMs from
   * VCPU: **4**
 * Whenever you are finished customising your template, make sure you click on the green Update button so that your changes are actually saved. 
 
+That was it. From now on you will get a 4-core VM running using the same *Cursus Image* (where the mandelbrot example is saved).
+
 #### Run the example on the four-core VM
 
 * Instantiate a VM from the updated template.
