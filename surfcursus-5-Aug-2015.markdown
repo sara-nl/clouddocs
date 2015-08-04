@@ -371,6 +371,7 @@ You can customise your VMs by editing the templates you instantiate the VMs from
 
 > **NOTE:**
 >Your VM's image was (and is) persistent.
+
 * Run the [same example](#install-amp-run-mandelbrot) with a single server.
 * Start a new terminal and connect to the VM. Type the following command:
 ```sh
