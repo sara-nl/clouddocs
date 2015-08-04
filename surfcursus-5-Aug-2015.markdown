@@ -371,10 +371,27 @@ You can customise your VMs by editing the templates you instantiate the VMs from
 
 > **NOTE:**
 >Your VM's image was (and is) persistent.
+* Run the [same example](#install-amp-run-mandelbrot) with a single server.
+* Start a new terminal and connect to the VM. Type the following command:
+```sh
+ps -eo pid,psr,pcpu,args | sed -n -e '1p' -e '/java/p'
+```
+  This shows the running Java processes and the CPU number on which it runs (solumn `PSR`).
+* Stop server(s) and client.
+* Launch multiple servers server on different CPUs:
+  * Start new terminals as needed and run variations on the following command:
 
-* Run the [same example](#install-amp-run-mandelbrot) with a single and then three different servers.
-* Repeat tests and observe the performance. *What is the gain?*
+```sh
+cd ~/mandelbrot-rmi
+taskset -c 2 ./startserver.sh mango # replace '2' with the CPU number and 'mango' with your server name
+```
+* Start the client on a separate processor:
 
+```sh
+taskset -c 0 ./startserver.sh pineapple grape mango # use your server names. duh.
+```
+
+* Observe the performance. *What is the gain?*
 ### <a name="5.-Wrap-up"></a> 5. Wrap up
 
 * Play around, make your checks and don't forget to [shut down](#first-shut-down) all the running VMs when you are finished.
