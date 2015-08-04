@@ -387,7 +387,7 @@ ps -eo pid,psr,pcpu,args | sed -n -e '1p' -e '/java/p'
 ```
   This shows the running Java processes and the CPU number on which it runs (solumn `PSR`).
 * Stop server(s) and client.
-* Launch multiple servers server on different CPUs:
+* Launch multiple servers on different CPUs:
   * Start new terminals as needed and run variations on the following command:
 
 ```sh
@@ -397,7 +397,7 @@ taskset -c 2 ./startserver.sh mango # replace '2' with the CPU number and 'mango
 * Start the client on a separate processor:
 
 ```sh
-taskset -c 0 ./startserver.sh pineapple grape mango # use your server names. duh.
+taskset -c 0 ./startclient.sh pineapple grape mango # use your server names. duh.
 ```
 
 * Observe the performance. *What is the gain?*
