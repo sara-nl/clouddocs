@@ -46,6 +46,9 @@ What you need for this tutorial:
   * Windows users need to install both: 
      * [PuTTY](http://www.putty.org/) (screen based) or [OpenSSH for Windows](http://sshwindows.sourceforge.net/) (command-line only). 
      * [PuTTY-gen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) (screen based).
+* An X-window client.
+  * Linux and Mac users don't need to install anything as X11 is on board.
+  * Windows users need to install [Xming](http://sourceforge.net/projects/xming/).
 
 ## <a name="hands-on"></a> Hands-on
 
