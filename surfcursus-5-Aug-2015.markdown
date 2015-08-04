@@ -134,7 +134,8 @@ Edit the created *Template* by following these steps:
 * Find the template you just created, and click on it. You now see an overview of the template settings.
 * Click on Update on the top-right of the screen to start editing the template. 
 * Browse through the different options (i.e. General, Storage, Network). Leave the default values, **except** for the following:  
-  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Click once on **Name: internet** row. You will see the feedback below: ![youselectednetwork](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/6ee7badd9825a4f49f842e4aba02a061/youselectednetwork.png)
+  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Click once on **Name: internet** row. You will see the feedback below:  
+![youselectednetwork](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/6ee7badd9825a4f49f842e4aba02a061/youselectednetwork.png)
   * Select the `OS Booting` tab and then *Features*. Set: **ACPI to "Yes"** and **Localtime to "No"**.
 * Click *Update* on top to save your changes.
 
@@ -147,7 +148,8 @@ A template is a description of a virtual machine. The template we have been edit
 * Give your virtual machine a name: **My-First-VM** (no spaces).  
 This name is also used as the host name of your machine. 
 * Number of instances: **1**.
-* Select the template we just edited. Since this is your first template, there is only one item in the list. Select the *Cursus Template*.
+* Select the template we just edited. Since this is your first template, there is only one item in the list. Select the *Cursus Template*. You will see the feedback below:  
+![select_template](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/a3f8cc6160ae62f6132937f2749a0f80/select_template.png)
 * Click on the `Create` button at the bottom of the screen.
 * Refresh the VM status by clicking on the two arrows chasing each other next to "+" button.
 
@@ -383,4 +385,3 @@ You can customise your VMs by editing the templates you instantiate the VMs from
 ## <a name="presentations"></a> Presentations
 * Introduction to Cloud Computing `<slides>`
 * Introduction to SURFsara HPC Cloud `<slides>`
-
