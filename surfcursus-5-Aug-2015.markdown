@@ -369,7 +369,7 @@ You can customise your VMs by editing the templates you instantiate the VMs from
 > **NOTE:**
 >Your VM's image was (and is) persistent.
 
-* Run the [same example](#3.-Persistence) with a single and then three different servers.
+* Run the [same example](#install-amp-run-mandelbrot) with a single and then three different servers.
 * Repeat tests and observe the performance. *What is the gain?*
 
 ### <a name="5.-Wrap-up"></a> 5. Wrap up
