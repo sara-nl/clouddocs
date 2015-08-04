@@ -374,7 +374,7 @@ You can customise your VMs by editing the templates you instantiate the VMs from
 
 ### <a name="5.-Wrap-up"></a> 5. Wrap up
 
-* Play around, make your checks and don't forget to shut down all the running VMs when you are finished.
+* Play around, make your checks and don't forget to [shut down](#first-shut-down) all the running VMs when you are finished.
 
 >Remember: Your running VMs are consuming quota whether they are doing something useful or are idle.
 
