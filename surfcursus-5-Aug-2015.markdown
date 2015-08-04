@@ -367,7 +367,7 @@ You can customise your VMs by editing the templates you instantiate the VMs from
 * Login to the VM. *Is your mandelbrot data there?*
 
 > **NOTE:**
->Your VM was in a persistence mode.
+>Your VM's image was (and is) persistent.
 
 * Run the [same example](#3.-Persistence) with a single and then three different servers.
 * Repeat tests and observe the performance. *What is the gain?*
