@@ -134,7 +134,8 @@ Edit the created *Template* by following these steps:
 * Find the template you just created, and click on it. You now see an overview of the template settings.
 * Click on Update on the top-right of the screen to start editing the template. 
 * Browse through the different options (i.e. General, Storage, Network). Leave the default values, **except** for the following:  
-  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Click once on **Name: internet** row. You will see the feedback below: ![youselectednetwork](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/6ee7badd9825a4f49f842e4aba02a061/youselectednetwork.png)
+  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Click once on **Name: internet** row. You will see the feedback below:  
+![youselectednetwork](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/6ee7badd9825a4f49f842e4aba02a061/youselectednetwork.png)
   * Select the `OS Booting` tab and then *Features*. Set: **ACPI to "Yes"** and **Localtime to "No"**.
 * Click *Update* on top to save your changes.
 
@@ -147,7 +148,8 @@ A template is a description of a virtual machine. The template we have been edit
 * Give your virtual machine a name: **My-First-VM** (no spaces).  
 This name is also used as the host name of your machine. 
 * Number of instances: **1**.
-* Select the template we just edited. Since this is your first template, there is only one item in the list. Select the *Cursus Template*.
+* Select the template we just edited. Since this is your first template, there is only one item in the list. Select the *Cursus Template*. You will see the feedback below:  
+![select_template](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/a3f8cc6160ae62f6132937f2749a0f80/select_template.png)
 * Click on the `Create` button at the bottom of the screen.
 * Refresh the VM status by clicking on the two arrows chasing each other next to "+" button.
 
@@ -173,7 +175,7 @@ Let's summarise what you have seen so far. From the menu on the left side, click
 
 You can interact with your VM with several ways: SSH, VNC or a remote desktop server. 
 The ready-made images in *AppMarket* do not provide a password for the root user. 
-The way to login in as *root* on your virtual machine is using the ssh keys that you [stored in your profile](#1.-Access-the-user-interface) previously.
+The way to login in as *root* on your virtual machine is using the ssh keys that you [stored in your profile](#add-ssh-keys-to-your-profile) previously.
 
 **Command-line access - SSH**  
 
@@ -370,27 +372,8 @@ You can customise your VMs by editing the templates you instantiate the VMs from
 > **NOTE:**
 >Your VM's image was (and is) persistent.
 
-* Run the [same example](#install-amp-run-mandelbrot) with a single server.
-* Start a new terminal and connect to the VM. Type the following command:
-```sh
-ps -eo pid,psr,pcpu,args | sed -n -e '1p' -e '/java/p'
-```
-  This shows the running Java processes and the CPU number on which it runs (solumn `PSR`).
-* Stop server(s) and client.
-* Launch multiple servers server on different CPUs:
-  * Start new terminals as needed and run variations on the following command:
-
-```sh
-cd ~/mandelbrot-rmi
-taskset -c 2 ./startserver.sh mango # replace '2' with the CPU number and 'mango' with your server name
-```
-* Start the client on a separate processor:
-
-```sh
-taskset -c 0 ./startserver.sh pineapple grape mango # use your server names. duh.
-```
-
-* Observe the performance. *What is the gain?*
+* Run the [same example](#install-amp-run-mandelbrot) with a single and then three different servers.
+* Repeat tests and observe the performance. *What is the gain?*
 
 ### <a name="5.-Wrap-up"></a> 5. Wrap up
 
@@ -402,4 +385,3 @@ taskset -c 0 ./startserver.sh pineapple grape mango # use your server names. duh
 ## <a name="presentations"></a> Presentations
 * Introduction to Cloud Computing `<slides>`
 * Introduction to SURFsara HPC Cloud `<slides>`
-
