@@ -158,7 +158,7 @@ While running the Windows installer, you will reach a step in which you have to 
 1. **On the Windows VM:** Again, on the next screen, click on _Scan_ if the list of detected drivers is not updated. Then install the driver. At this point, the originally white area shows one entry: your disk.
 1. **On the Windows VM:** You can finally click on the drive to get Windows installed on it.
 
-You can continue with the rest of the Windows process normally.
+You can continue with the rest of the Windows installation process normally.
 
 ## Configure the contextualization
 
