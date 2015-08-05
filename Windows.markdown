@@ -2,7 +2,118 @@
 >
 > This page still needs to be re-shaped. We are working on it.
 
+---
+
+>**NOTE:**
+>
+>We do **not** have any Windows licence or Windows distribution available for you. You will need to have these yourself.
+
 # Create a VM with Microsoft Windows
+
+In order to run Windows on a VM, you will need to proceed with the full installation as if it would be a local physical machine (e.g.: your laptop). But then, with the extra overhead of making the necessary adjustments so that your VM will work in the virtual environment that the HPC Cloud offers. These are the steps that we will carry out to make it work:
+
+1. Prepare the installation
+1. Run the installation
+1. Configure the contextualization
+1. Enable Remote Desktop
+
+Let us look into these steps with more detail.
+
+## Prepare the installation
+
+>**NOTE:**
+>
+>Make sure you have your Windows ISO available in your laptop, so that you can upload it to the HPC Cloud.
+
+In this section we will be setting up the environment within your project (or _Group_) space in the HPC Cloud. It involves:
+
+1. Creating an `image` that will be empty in the beginning, which will work as an empty hard drive where you will install Windows
+1. Creating an `image` with the Windows installation media, by uploading your Windows ISO
+1. Creating an `image` with the Virtio drivers for Windows, by fetching an ISO from the Internet
+1. Creating a couple of `file`s on the UI by downloading them from the Internet and uploading them to the UI
+1. Creating a `template` where you bring all these components together, which you can use to start a VM from
+
+### Creating the destination hard drive
+
+Analogously to your laptop, your VM needs a hard drive where the operating system can be installed and where it will live. We will create one here.
+
+1. **On the UI:** Go to the _Images_ tab (under _Virtual Resources_), and click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `image`. A form will pop up.
+1. **On the UI:** On the form that popped up:
+  * type in a meaningful _Name_ (e.g.: windows_drive)
+  * type in a meaningful _Description_ (optional)
+  * choose _Type_ _DATABLOCK_
+  * leave _Datastore_ with _104: local_images_ssd_
+  * check the _Persistent_ checkbox
+  * on the _Image location:_ group, choose radio button _Empty datablock_
+  * and give it a _Size_ that is meaningful to you (e.g.: our test with installing Windows 8.1 required already 10GB for Windows alone, so we filled in 20GB)
+1. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while it is being created. When it is created it will come to status _READY_.
+
+### Uploading the Windows ISO
+
+1. **On the UI:** On the _Images_ tab (under _Virtual Resources_), click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `image`. A form will pop up.
+1. **On the UI:** On the form that popped up:
+  * click on the gray _Reset_ button at the bottom of it
+  * type in a meaningful _Name_ (e.g.: windows_iso)
+  * type in a meaningful _Description_ (optional)
+  * choose _Type_ _CDROM_
+  * leave _Datastore_ with _104: local_images_ssd_
+  * leave the _Persistent_ checkbox unchecked
+  * on the _Image location:_ group, choose radio button _Upload_; then, underneath, click on _Choose file_ to have a dialogue pop up where you will look for the path on your laptop where you have your Windows .iso file and, finally, choose the .iso file to close the pop-up dialogue to return ton the original form 
+1. **On the UI:** Click the green button _Create_ on the form, to submit it. A progress bar will show at the bottom of the screen, which will advance as the upload of your .iso file evolves. When the upload is complete, a new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while it is being created. When it is created it will come to status _READY_.
+
+### Fetching the Virtio drivers
+
+The best way to make physical hardware (namely: hard drives and network adapters) available to VMs in the HPC Cloud is by using Virtio drivers. However, Windows does not natively support those drivers, but if we make them available to the Windows installer, we will have no problem using them. This requires making them available externally, and that is what we will do in this step.
+
+1. **On the UI:** On the _Images_ tab (under _Virtual Resources_), click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `image`. A form will pop up.
+1. **On the UI:** On the form that popped up:
+  * click on the gray _Reset_ button at the bottom of it
+  * type in a meaningful _Name_ (e.g.: virtio_drivers_iso)
+  * type in a meaningful _Description_ (optional)
+  * choose _Type_ _CDROM_
+  * leave _Datastore_ with _104: local_images_ssd_
+  * leave the _Persistent_ checkbox unchecked
+  * on the _Image location:_ group, choose radio button _Provide a path_; then, underneath, type the following URL in the _Path_ field: https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
+1. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while data is being downloaded from the URL you wrote. When it is created it will come to status _READY_.
+
+### Fetching the contextualization files
+
+>**NOTE:**
+>
+>You can read more about Windows contextualization for OpenNebula here: https://github.com/OpenNebula/addon-context-windows
+
+On the HPC Cloud, VMs use the [contextualization](contextualization) mechanism to configure themselves. In particular, you will need to have 2 files on your VM so that it can actually configure itself. We will be making those available in this step so that, at a later step, we can make your VM use them. 
+
+1. **On the UI:** On the _Files & Kernels_ tab (under _Virtual Resources_), click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `file`. A form will pop up.
+1. **On the UI:** On the form that popped up:
+  * type in a meaningful _Name_ (e.g.: context.ps1)
+  * type in a meaningful _Description_ (optional)
+  * choose _Type_ _CONTEXT_
+  * leave _Datastore_ with _105: local_files_ssd_
+  * on the _Image location:_ group, choose radio button _Provide a path_; then, underneath, type the following URL in the _Path_ field: https://raw.githubusercontent.com/OpenNebula/addon-context-windows/master/context.ps1
+1. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `file` will show on the _Files_ list, and it will keep in status _LOCKED_ while data is being downloaded from the URL you wrote. When it is created it will come to status _READY_. 
+
+Now, the other `file:
+
+1. **On the UI:** On the _Files & Kernels_ tab (under _Virtual Resources_), click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `file`. A form will pop up.
+1. **On the UI:** On the form that popped up:
+  * type in a meaningful _Name_ (e.g.: startup.vbs)
+  * type in a meaningful _Description_ (optional)
+  * choose _Type_ _CONTEXT_
+  * leave _Datastore_ with _105: local_files_ssd_
+  * on the _Image location:_ group, choose radio button _Provide a path_; then, underneath, type the following URL in the _Path_ field: https://raw.githubusercontent.com/OpenNebula/addon-context-windows/master/startup.vbs
+1. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `file` will show on the _Files_ list, and it will keep in status _LOCKED_ while data is being downloaded from the URL you wrote. When it is created it will come to status _READY_. 
+
+### Create a template
+
+Now that we have all components ready in the UI, we are ready to bring them together. On the HPC Cloud, we do that on a `template`.
+
+
+
+
+---
+---
+
 ## Introduction
 The first step is to make an Windows installation disk with available on the HPCcloud. You can upload the disk directly or send a public URL to OpenNebula which is saved on the HPCcloud, where a virtual machine can read the image.
 
