@@ -31,7 +31,7 @@ The `image` will now be copied to VirDir. Depending on its size, it may take qui
 
 ```sh
 cd
-wget https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/setup_bridge_vm.sh
+wget https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/scripts/setup_bridge_vm.sh
 chmod +x ./setup_bridge_vm.sh
 ```
 
