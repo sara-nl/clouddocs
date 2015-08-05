@@ -383,7 +383,7 @@ That was it. From now on you will get a 4-core VM running using the same *Cursus
 ```sh
 ps -eo pid,psr,pcpu,args | sed -n -e '1p' -e '/java/p'
 ```
-  This shows the running Java processes and the CPU number on which it runs (solumn `PSR`).
+  This shows the running Java processes and the CPU number on which it runs (column `PSR`).
 * Stop server(s) and client.
 * Launch multiple servers on different CPUs:
   * Start new terminals as needed and run variations on the following command:
