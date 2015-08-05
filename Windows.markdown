@@ -39,7 +39,7 @@ Analogously to your laptop, your VM needs a hard drive where the operating syste
 
 1. **On the UI:** Go to the _Images_ tab (under _Virtual Resources_), and click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `image`. A form will pop up.
 1. **On the UI:** On the form that popped up:
-  * type in a meaningful _Name_ (e.g.: windows_drive)
+  * type in a meaningful _Name_ (e.g.: **windows_drive**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _DATABLOCK_
   * leave _Datastore_ with _104: local_images_ssd_
@@ -53,7 +53,7 @@ Analogously to your laptop, your VM needs a hard drive where the operating syste
 1. **On the UI:** On the _Images_ tab (under _Virtual Resources_), click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `image`. A form will pop up.
 1. **On the UI:** On the form that popped up:
   * click on the gray _Reset_ button at the bottom of it
-  * type in a meaningful _Name_ (e.g.: windows_iso)
+  * type in a meaningful _Name_ (e.g.: **windows_iso**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _CDROM_
   * leave _Datastore_ with _104: local_images_ssd_
@@ -68,7 +68,7 @@ The best way to make physical hardware (namely: hard drives and network adapters
 1. **On the UI:** On the _Images_ tab (under _Virtual Resources_), click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `image`. A form will pop up.
 1. **On the UI:** On the form that popped up:
   * click on the gray _Reset_ button at the bottom of it
-  * type in a meaningful _Name_ (e.g.: virtio_drivers_iso)
+  * type in a meaningful _Name_ (e.g.: **virtio_drivers_iso**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _CDROM_
   * leave _Datastore_ with _104: local_images_ssd_
@@ -86,7 +86,7 @@ On the HPC Cloud, VMs use the [contextualization](contextualization) mechanism t
 
 1. **On the UI:** On the _Files & Kernels_ tab (under _Virtual Resources_), click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `file`. A form will pop up.
 1. **On the UI:** On the form that popped up:
-  * type in a meaningful _Name_ (e.g.: context.ps1)
+  * type in a meaningful _Name_ (e.g.: **context.ps1**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _CONTEXT_
   * leave _Datastore_ with _105: local_files_ssd_
@@ -97,7 +97,7 @@ Now, the other `file:
 
 1. **On the UI:** On the _Files & Kernels_ tab (under _Virtual Resources_), click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `file`. A form will pop up.
 1. **On the UI:** On the form that popped up:
-  * type in a meaningful _Name_ (e.g.: startup.vbs)
+  * type in a meaningful _Name_ (e.g.: **startup.vbs**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _CONTEXT_
   * leave _Datastore_ with _105: local_files_ssd_
@@ -108,6 +108,30 @@ Now, the other `file:
 
 Now that we have all components ready in the UI, we are ready to bring them together. On the HPC Cloud, we do that on a `template`.
 
+1. **On the UI:** On the _Templates_ tab (under _Virtual Resources_), click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `template`. The page will change into the _Create Template_ screen.
+1. **On the UI:** On the _Create Template_ screen, on the _General_ tab:
+  * type in a meaningful _Name_ (e.g.: windows_setup)
+  * type in a meaningful _Description_ (optional)
+  * choose a _Logo_ that you like
+  * type in (or drag the slider) 8GB of _Memory_
+  * type in (or drag the slider) 1 CPU
+1. **On the UI:** On the same _Create Template_ screen, on the _Storage_ tab:
+  * for the _Disk 0_ (on the left column of the screen), choose the **windows_drive** `image` (from the table on the right of the screen) that you created as the first `image` of this guide
+  * click on the _+ Add another disk_ button (that will make a new _Disk 1_), and then choose the **windows_iso** `image` you created as a second `image` of this guide
+  * click again on the _+ Add another disk_ button (to make a new _Disk 2_), and then choose the **virtio_drivers_iso** `image`
+1. **On the UI:** On the same _Create Template_ screen, on the _Network_ tab:
+  * for the _Interface 0_ (on the left column of the screen), choose the **internet** `network` (from the table on the right of the screen)
+  * click on the _+ Add another nic_ button (that will make a new _Interface 1_), and then choose your internal `network` (it will be the only other `network ` that you can see on the right that is not called **internet**)
+1.  **On the UI:** On the same _Create Template_ screen, on the _OS Booting_ tab:
+  * for the _1st Boot_ field, choose _CDROM_
+  * for the _2nd Boot_ field, choose _HD_
+1.  **On the UI:** On the same _Create Template_ screen, on the _Input/Output_ tab:
+  * click on the _VNC_ radio button
+  * on the _Inputs group_, choose _Tablet_ on the first dropdown menu, then _USB_ on the second dropdown menu and finally click on the _Add_ button. A new entry will appear below those dropdowns with what you just selected.
+1.  **On the UI:** On the same _Create Template_ screen, on the _Context_ tab:
+  * click on _Files_ on the left column of the screen
+  * make sure you check the check boxes for the files you created before; those are: **context.ps1** and **startup.vbs**
+1. **On the UI:** We are ready defining the `template`, so click on the green _Create_ button at the top of the screen. A new `template` will show on the _Templates_ list.
 
 
 
