@@ -36,7 +36,7 @@ The rest of this page is dedicated to the section **Hands-on HPC Cloud**.
 What you need for this tutorial:
 * A computer with full Internet access.
 * A browser (Chrome or Firefox will do nicely).
-* A **demo account**. Pick the account that corresponds to your team from [here](https://docs.google.com/spreadsheets/d/1zUVq5VrZLHhoFs3YCwDGGeDGLXDYBhF7dRFPCDDIppg/edit?usp=sharing). The password will be provided by the workshop organizers.  
+* A **demo account**. Pick the account that corresponds to your team from `here` (no longer available). The password will be provided by the workshop organizers.  
 *The accounts will remain active until 15th of August.*
 * Java, at least version 8 (a.k.a. 1.7)
 * An SSH client.
