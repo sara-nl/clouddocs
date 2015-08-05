@@ -13,7 +13,7 @@
 In order to run Windows on a VM, you will need to proceed with the full installation as if it would be a local physical machine (e.g.: your laptop). But then, with the extra overhead of making the necessary adjustments so that your VM will work in the virtual environment that the HPC Cloud offers. These are the steps that we will carry out to make it work:
 
 1. Prepare the installation
-1. Run the installation
+1. Run the Windows installation
 1. Configure the contextualization
 1. Enable Remote Desktop
 
@@ -110,7 +110,7 @@ Now that we have all components ready in the UI, we are ready to bring them toge
 
 1. **On the UI:** On the _Templates_ tab (under _Virtual Resources_), click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `template`. The page will change into the _Create Template_ screen.
 1. **On the UI:** On the _Create Template_ screen, on the _General_ tab:
-  * type in a meaningful _Name_ (e.g.: windows_setup)
+  * type in a meaningful _Name_ (e.g.: **windows_setup**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose a _Logo_ that you like
   * type in (or drag the slider) 8GB of _Memory_
@@ -133,7 +133,40 @@ Now that we have all components ready in the UI, we are ready to bring them toge
   * make sure you check the check boxes for the files you created before; those are: **context.ps1** and **startup.vbs**
 1. **On the UI:** We are ready defining the `template`, so click on the green _Create_ button at the top of the screen. A new `template` will show on the _Templates_ list.
 
+## Run the Windows installation
 
+We will now create a VM and run the Windows installation on it.
+
+1. **On the UI:** Go to the _Virtual Machines_ tab (under _Virtual Resources_). Click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new VM. A form will pop up.
+1. **On the UI:** On the form that popped up:
+  * type in a meaningful _Name_ (e.g.: **windows_first**)
+  * choose the template you defined before (i.e.: windows_setup)
+1. **On the UI:** We are ready defining the VM, so click on the green _Create_ button at the bottom of the form. A new VM will show on the _Virtual Machines_ list. It will go through several states (e.g.: PENDING, PROLOG...) until it reaches the RUNNING state. 
+1. **On the UI:** You can then start operating within your VM. Click on the _screen_-like button that you can see to the right of your VM on the list. It will pop-up the VNC console, so you should be able to see the welcome screen of your Windows installation.
+
+Now you need to install Windows, by following the steps you would normally follow. Only, with one caveat: you need to install the Virtio drivers, as pointed out before. 
+
+### Installing the Virtio drivers
+
+While running the Windows installer, you will reach a step in which you have to choose which disk (or drive) to install Windows on. It will be empty, because the disks are made available to your VM via Virtio, but you have not installed the Virtio drivers yet so your Windows installation cannot see the disk. This is how you do it:
+
+1. **On the Windows VM:** At the step where you need to choose a disk on which to install Windows, click on the _Load driver_ button (under the big white empty area). A dialogue pops up.
+1. **On the Windows VM:** On the pop-up dialogue, click on the _Browse..._ button. A _Browse for folder_ tree will pop-up now.
+1. **On the Windows VM:** We will start with the network interfaces driver. On the chooser tree, you will see two entries that represent two CD-ROM drives. Click on the one that holds the Virtio drivers (therefore, **not** the one labeled CONTEXT), and open folder _NetKVM_, then the folder that matches your Windows version, and then the 64-bit or 32-bit version depending on your Windows as well.
+1. **On the Windows VM:** After you chose the folder, a pop up will show the drivers that it could locate (or click on _Scan_ to refresh the list). Doubleclick the only entry that you should see, so that it is installed.
+1. **On the Windows VM:** Now we will repeat the process for the disks driver. On the chooser tree, you will see two entries that represent two CD-ROM drives. Click again on the one that holds the Virtio drivers (therefore, **not** the one labeled CONTEXT), and open folder called _virtiostor_, then the folder that matches your Windows version, and then the 64-bit or 32-bit version depending on your Windows as well.
+1. **On the Windows VM:** Again, on the next screen, click on _Scan_ if the list of detected drivers is not updated. Then install the driver. At this point, the originally white area shows one entry: your disk.
+1. **On the Windows VM:** You can finally click on the drive to get Windows installed on it.
+
+You can continue with the rest of the Windows process normally.
+
+## Configure the contextualization
+
+>TODOcument
+
+## Enable Remote Desktop
+
+>TODOcument
 
 ---
 ---
