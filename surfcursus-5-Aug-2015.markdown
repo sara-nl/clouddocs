@@ -45,7 +45,8 @@ What you need for this tutorial:
      * [PuTTY](http://www.putty.org/) (screen based) or [OpenSSH for Windows](http://sshwindows.sourceforge.net/) (command-line only). 
      * [PuTTY-gen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) (screen based).
 * An X-window client.
-  * Linux and Mac users don't need to install anything as X11 is on board.
+  * Linux and Mac users don't need to install anything as X11 is on board.  
+*Note: the newest Mac OS releases might not have X11.app installed. In that case, get XQuarz from [here](http://xquartz.macosforge.org/landing/).*
   * Windows users need to install [Xming](http://sourceforge.net/projects/xming/).
 
 ## <a name="hands-on"></a> Hands-on
