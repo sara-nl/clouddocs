@@ -11,5 +11,5 @@ In total the full capacity of Oort will be:
 * One High memory node 
   * 40 cores - 3.2TB local disk and 2TB RAM  
 
-* Storage:
-  * 900TB Ceph object storage (x3 redundancy- 2.7PB total) on 10Gbit network per node, with SSD caching
+* Shared Storage:
+  * 900TB Ceph object storage (x3 redundancy- 2.7PB total) on 10Gbit network per storage node, with SSD caching
