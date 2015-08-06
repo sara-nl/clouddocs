@@ -1,11 +1,5 @@
 >**NOTE:**
 >
-> This page still needs to be re-shaped. We are working on it.
-
----
-
->**NOTE:**
->
 >We do **not** have any Windows licence or Windows distribution available for you. You will need to have these yourself.
 
 # Create a VM with Microsoft Windows
