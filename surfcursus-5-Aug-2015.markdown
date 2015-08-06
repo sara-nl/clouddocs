@@ -409,4 +409,4 @@ taskset -c 0 ./startclient.sh pineapple grape mango # use your server names. duh
 
 ## <a name="presentations"></a> Presentations
 * [Introduction to Cloud Computing](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/presentations/cloud_intro_05082015.pdf)
-* Introduction to SURFsara HPC Cloud `<slides>`
+* [Introduction to SURFsara HPC Cloud](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/presentations/cloud_intro_05082015.pdf)
