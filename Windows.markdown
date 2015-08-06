@@ -15,7 +15,8 @@ In order to run Windows on a VM, you will need to proceed with the full installa
 1. Prepare the installation
 1. Run the Windows installation
 1. Configure the contextualization
-1. Enable Remote Desktop
+1. Prepare your VM for production
+  1. Enable Remote Desktop
 
 Let us look into these steps with more detail.
 
@@ -80,7 +81,9 @@ The best way to make physical hardware (namely: hard drives and network adapters
 
 >**NOTE:**
 >
->You can read more about Windows contextualization for OpenNebula here: https://github.com/OpenNebula/addon-context-windows
+>You can read more about Windows contextualization for OpenNebula here: 
+> * https://github.com/OpenNebula/addon-context-windows
+> * http://docs.opennebula.org/4.12/user/virtual_machine_setup/windows_context.html
 
 On the HPC Cloud, VMs use the [contextualization](contextualization) mechanism to configure themselves. In particular, you will need to have 2 files on your VM so that it can actually configure itself. We will be making those available in this step so that, at a later step, we can make your VM use them. 
 
@@ -158,13 +161,43 @@ While running the Windows installer, you will reach a step in which you have to 
 1. **On the Windows VM:** Again, on the next screen, click on _Scan_ if the list of detected drivers is not updated. Then install the driver. At this point, the originally white area shows one entry: your disk.
 1. **On the Windows VM:** You can finally click on the drive to get Windows installed on it.
 
-You can continue with the rest of the Windows installation process normally.
+You can continue with the rest of the Windows installation process normally. Then, reboot so that your freshly installed Windows starts up (make sure you do not start the installation again).
 
 ## Configure the contextualization
 
->TODOcument
+Once your fresly installed Windows starts, we will configure your VM so that it auto-configures itself on start up (e.g.: at this point, you can see that there is no active network connection, so you cannot even browse the web).
 
-## Enable Remote Desktop
+1. **On the Windows VM:** Open a file explorer, and browse the _CONTEXT_ CD-ROM. You should be able to see at least 3 files on that CD-ROM. Two of them should be the ones we manually added to the _Context_ tab of the `template` some steps ago, called: _context.ps1_ and _startup.vbs_.
+1. **On the Windows VM:** From the _CONTEXT_ CD-ROM, copy both files **context.ps1** and **startup.vbs** to the **C:\** drive. They will thus become reachable at C:\context.ps1 and C:\startup.vbs.
+1. **On the Windows VM:** We must configure the C:\startup.vbs file as a start-up script, so that Windows runs it automatically upon booting. To do that, start by right-clicking on the Windows _Start_ button, and then choose option _Run_. A dialogue will pop up.
+1. **On the Windows VM:** On the dialogue that just popped up, type the following in the _Open:_ field: `gepedit.msc`. A new window titled _Local Group Policy Editor_ will show.
+1. **On the Windows VM:** On the _Local Group Policy Editor_, navigate to _Computer Configuration_ > _Windows Settings_ > _Scripts (Startup/Shutdown)_. Then doubleclick on _Startup_. A new _Startup Properties_ dialogue will pop up.
+1. **On the Windows VM:** On the _Startup Properties_ dialogue, click on the _Add_ button. A new _Add a Script_ dialogue will pop up.
+1. **On the Windows VM:** On the _Add a Script_ dialogue, click on the _Browse..._ button, and look there for the C:\startup.vbs file. A new entry will appear on the _Startup Properties_ dialogue indicating that you have added the new startup script.
+1. **On the Windows VM:** You can reboot your Windows now. When it boots up, and (probably) after a while after you log in, your network adapters will stop showing the yellow warning icon and you should be able to browse the Internet now.
+1. **On the UI:** You can now shut your VM down. We will remove all the installation media and prepare your VM for production.
+
+## Prepare the VM for production
+
+Once you have installed and configured your Windows, you do not need the installation media or files around any more. We will make a new `template` to use only the disk that we need.
+
+1. **On the UI:** Begin creating a new `template` the usual way.
+1. **On the UI:** On the _Create Template_ screen, on the _General_ tab:
+  * type in a meaningful _Name_ (e.g.: **my_research_run**)
+  * give it as much memory and as many CPU's as you need
+1. **On the UI:** On the same _Create Template_ screen, on the _Storage_ tab:
+  * for the _Disk 0_ (on the left column of the screen), choose the **windows_drive** `image` (from the table on the right of the screen) that you created as the first `image` of this guide, and where you have installed Windows
+1. **On the UI:** On the same _Create Template_ screen, on the _Network_ tab:
+  * for the _Interface 0_ (on the left column of the screen), choose the **internet** `network` (from the table on the right of the screen)
+  * click on the _+ Add another nic_ button (that will make a new _Interface 1_), and then choose your internal `network` (it will be the only other `network ` that you can see on the right that is not called **internet**)
+1.  **On the UI:** On the same _Create Template_ screen, on the _Input/Output_ tab:
+  * click on the _VNC_ radio button
+  * on the _Inputs group_, choose _Tablet_ on the first dropdown menu, then _USB_ on the second dropdown menu and finally click on the _Add_ button. A new entry will appear below those dropdowns with what you just selected.
+1. **On the UI:** We are ready defining the `template`, so click on the green _Create_ button at the top of the screen. A new `template` will show on the _Templates_ list.
+
+From now on, you will use this `template` to run your VM.
+
+### Enable Remote Desktop
 
 >TODOcument
 
