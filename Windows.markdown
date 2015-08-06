@@ -14,7 +14,7 @@ In order to run Windows on a VM, you will need to proceed with the full installa
 
 1. Prepare the installation
 1. Run the Windows installation
-1. Configure the contextualization
+1. Configure contextualization
 1. Prepare your VM for production
   1. Enable Remote Desktop
 
@@ -161,11 +161,11 @@ While running the Windows installer, you will reach a step in which you have to 
 1. **On the Windows VM:** Again, on the next screen, click on _Scan_ if the list of detected drivers is not updated. Then install the driver. At this point, the originally white area shows one entry: your disk.
 1. **On the Windows VM:** You can finally click on the drive to get Windows installed on it.
 
-You can continue with the rest of the Windows installation process normally. Then, reboot so that your freshly installed Windows starts up (make sure you do not start the installation again).
+You can continue with the rest of the Windows installation process normally. Then, reboot so that your newly installed Windows starts up (make sure you do not start the installation again).
 
-## Configure the contextualization
+## Configure contextualization
 
-Once your fresly installed Windows starts, we will configure your VM so that it auto-configures itself on start up (e.g.: at this point, you can see that there is no active network connection, so you cannot even browse the web).
+Once your freshly installed Windows starts, we will configure your VM so that it auto-configures itself on start up (e.g.: at this point, you can see that there is no active network connection, so you cannot even browse the web).
 
 1. **On the Windows VM:** Open a file explorer, and browse the _CONTEXT_ CD-ROM. You should be able to see at least 3 files on that CD-ROM. Two of them should be the ones we manually added to the _Context_ tab of the `template` some steps ago, called: _context.ps1_ and _startup.vbs_.
 1. **On the Windows VM:** From the _CONTEXT_ CD-ROM, copy both files **context.ps1** and **startup.vbs** to the **C:\** drive. They will thus become reachable at C:\context.ps1 and C:\startup.vbs.
@@ -199,13 +199,23 @@ From now on, you will use this `template` to run your VM.
 
 ### Enable Remote Desktop
 
->TODOcument
+Having to connect to the VM via the VNC console on the web UI is somewhat tedious and rather limited, so you probably want to access your VM via Remote Desktop. Here is how you can do that:
+
+1. **In your local network:** Make sure your firewall (maybe in your home router) has port 3389 open for your laptop.
+1. **On the Windows VM:** Right-click on the Windows _Start_ button, and then choose option _Run_. A dialogue will pop up.
+1. **On the Windows VM:** On the dialogue that just popped up, type the following in the _Open:_ field: `gepedit.msc`. A new window titled _Local Group Policy Editor_ will show.
+1. **On the Windows VM:** On the _Local Group Policy Editor_, navigate to _Computer Configuration_ > _Administrative Templates_ > _Windows Components_ > _Remote Desktop Services_ > _Remote Desktop Session Host_ > _Security_. 
+1. **On the Windows VM:** Change the following two settings (doubleclick on each of them):
+  * _Require use of specific security layer for remote (RDP) connections_ from _Not configured_ to _Enabled_, and then choose on the dropdown _Security Layer_, the value _RDP_.
+  * _Require user authentication for remote connections by using Network Level Authentications_ from _Not configured to _Disabled_.
+1. **On the Windows VM:** Restart your Windows.
+
+You should now be able to connect to your VM using a Remote Desktop client.
 
 ---
 ---
 
-
-## Install windows
+## Appendix: Some Windows installation screenshots
 
 ![windows01](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/windows_install01.png)
 ![windows02](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/images/windows_install02.png)
