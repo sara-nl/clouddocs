@@ -186,7 +186,9 @@ Once you have installed and configured your Windows, you do not need the install
   * click on the _+ Add another nic_ button (that will make a new _Interface 1_), and then choose your internal `network` (it will be the only other `network ` that you can see on the right that is not called **internet**)
 1.  **On the UI:** On the same _Create Template_ screen, on the _Input/Output_ tab:
   * click on the _VNC_ radio button
-  * on the _Inputs group_, choose _Tablet_ on the first dropdown menu, then _USB_ on the second dropdown menu and finally click on the _Add_ button. A new entry will appear below those dropdowns with what you just selected.
+  * on the _Inputs_ group, choose _Tablet_ on the first dropdown menu, then _USB_ on the second dropdown menu and finally click on the _Add_ button. A new entry will appear below those dropdowns with what you just selected.
+1.  **On the UI:** On the same _Create Template_ screen, on the _Other_ tab, you want to tell Windows how to use multiple cores:
+  * within the _RAW data_ group, choose for the _Type_ dropdown menu _kvm_, then in the _DATA_ textfield to the right of it, write `<cpu><topology sockets='1' cores='4' threads='1'/></cpu>` (you should replace the `cores` number with the amount of them you need).
 1. **On the UI:** We are ready defining the `template`, so click on the green _Create_ button at the top of the screen. A new `template` will show on the _Templates_ list.
 
 From now on, you will use this `template` to run your VM.
@@ -207,7 +209,20 @@ Having to connect to the VM via the VNC console on the web UI is somewhat tediou
 You should now be able to connect to your VM using a Remote Desktop client.
 
 ---
----
+## Appendix: Alternative CPU topology configuration
+In the _Prepare your VM for production_ section, we wrote a way to configure your VM so that Windows will understand what to do with the cores the VM has available. However, some users have reported that the following helped them instead:
+```
+<vcpu placement='static'>4</vcpu>
+<cputune>
+<vcpupin vcpu='0' cpuset='1'/>
+<vcpupin vcpu='1' cpuset='2'/>
+<vcpupin vcpu='2' cpuset='3'/>
+<vcpupin vcpu='3' cpuset='4'/>
+</cputune>
+<cpu mode='host-passthrough'>
+<topology sockets='1' cores='4' threads='1'/>
+</cpu>
+```
 
 ## Appendix: Some Windows installation screenshots
 
