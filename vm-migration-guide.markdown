@@ -30,35 +30,15 @@ The `image` will now be copied to VirDir. Depending on its size, it may take qui
 1. **On the old HPC Cloud:** From the wizard (tab _Create VM_), create a small new Ubuntu server VM. In further steps, we will call this the _Bridge VM_. Make sure you choose _yes_ on both questions from _Step 3_, so that your VM has ports open for the web server. Once the VM boots, on the noVNC console, wait for the first-run wizard to start; then provide there a password for root and create a non-root user. After the first-run wizard is complete, you will be prompted to log in.
 1. **On your laptop:** Make sure you can browse the landing page of the web server that is running on your _Bridge VM_ (i.e.: navigate to the external IP address of your _Bridge VM_, which has the form: 145.100.X.X).
 1. **On your laptop:** SSH into your _Bridge VM_ (remember, you need to use your **non-**root user. Once you are logged in as the plain user, become root by running the command `su -`.
-1. **On the _Bridge VM_:** As root on the SSH connection you opened on the previous step, make a new directory in which to mount VirDir. We will call it `/virdir`. The command is:
-```
-mkdir /virdir
-```
-1. **On the old HPC Cloud UI:** Find out your internal network IP. It will be of the form `10.0.Y.Z`. You will need to remember the value for that `Y`. Write down also the name of your project, which is the value for column _Group_ on the list of VMs.
-1. **On the _Bridge VM_:** You will mount VirDir. In the following commands, substitute the values for `Y` and `<group>` you gathered in the previous step:
-```
-mount -t nfs4 10.0.Y.4:/<group> /virdir
-```
-1. **On the _Bridge VM_:** Make sure you can see a `/Scratch` directory under `/virdir` now. That way you make sure you have successfully mounted your VirDir. You can use the following command:
-```
-ls /virdir/Scratch
-```
-1. **On the _Bridge VM_:** The previous command should show the files that you have in your `/virdir/Scratch` directory. Among them, you should see the file for the `image` you _copied to VirDir_ in previous steps. Note the name.
-1. **On the _Bridge VM_:** Expose VirDir via the web server. You can run the following commands: 
+1. **On the _Bridge VM_:** As root on the SSH connection you opened on the previous step, download the script we have prepared, that will share your VirDir to the new HPC Cloud only, and then run it. Just run these commands for that:
 
 ```sh
-sed -i '/^<\/VirtualHost>/c\
-        Alias /vd /virdir\
-       <Directory /virdir>\
-               Options Indexes FollowSymLinks MultiViews\
-               AllowOverride None\
-               Require ip 145.100.56.19\
-       </Directory>\
-</VirtualHost>
-' /etc/apache2/sites-available/000-default.conf
-
-service apache2 restart
+cd
+wget https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/scripts/setup_bridge_vm.sh
+chmod +x ./setup_bridge_vm.sh
 ```
+
+You can now run this file giving your _Group_ name as a parameter: `./setup_bridge_vm.sh <group_name>`
 
 ### Bring your image to the new HPC Cloud
 1. **On the new HPC Cloud:** Using the _user_ view, go to the _Images_ tab, and click on the green _[+]_ button to add a new `image`. A from will pop up.
@@ -66,7 +46,7 @@ service apache2 restart
  * fill in a _Name_
  * choose whether you want the `image` to be _Persistent_
  * in the _Image location:_ area, mark the _Provide a path_ radio button
- * fill in the _Path_ to the `image` file, pointing to the web server running in your _Bridge VM_, which will be something like: `http://145.100.X.X/vd/Scratch/2015MMDD:hh:mm_sometext` (you need to use the right IP instead of the _X.X_ and the actual name of the file, including the colons)
+ * fill in the _Path_ to the `image` file, pointing to the web server running in your _Bridge VM_, which will be something like: `http://145.100.X.X/vd/2015MMDD:hh:mm_sometext` (you need to use the right IP instead of the _X.X_ and the actual name of the file, including the colons)
  * Click on the _Advanced options_ dropdown area. There, you must fill in:
   * In _Device prefix_, type `vd`
   * In _Driver_, type `qcow2`
@@ -100,4 +80,4 @@ You need to put that `image` that you imported into a `template`. We will do tha
 
 >**Note:**
 >
->When you see that the contextualization is working (e.g.: the network works on the new VM), and if you made the `image` persistent, then you can delete the _one-context*_ _.deb_ or _.rpm_ `file` from the `template`. That `file` will still be there until you re-create the VM.
+>When you see that the contextualization is working (e.g.: the network works on the new VM), and if you made the `image` persistent, then you can delete the _one-context*_ _.deb_ or _.rpm_ `file` from the `template`. That `file` will still be visible in your VM until you re-create the VM.

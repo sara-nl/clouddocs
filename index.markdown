@@ -18,7 +18,6 @@ layout: default
 - [User Interface](user-interface)  
 - [General start](general-start)  
 - [Access your Virtual Machine](access-your-VM)
-- [Cloud Resource Usage](https://ui.hpccloud.surfsara.nl/oneinsight)
 
 ## Advanced Topics
 
@@ -36,7 +35,7 @@ layout: default
 * A Virtual Machine from Scratch
 * [Virtual Machine states](vm-states)  
 * [Sharing OpenNebula Objects](sharing-objects)  
-* Install Windows  
+* [Install Windows](windows)
 * Licences  
 
 ### Disk Images
@@ -44,7 +43,7 @@ layout: default
 * [Image Persistence](image_persistence)
 * [Scratch Disk Images](scratch_disk)
 * [Download an image](image_download)  
-* Create an Image on your own Machine
+* [Create an Image on your own laptop](image-on-own-laptop)
 
 ### Networks
 * Virtual Network  
@@ -69,7 +68,7 @@ layout: default
 * [Available resources](resources-available)
 
 ## Current Resource Usage
-* [Resource usage](https://ui.hpccloud.surfsara.nl/oneinsight)
+* [Resource usage](https://ui.hpccloud.surfsara.nl/oneinsight) :warning: **WARNING** under construction
 
 ## Contributing to the documentation
 

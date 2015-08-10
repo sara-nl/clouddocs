@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-
-
 # Generate Secure Shell (SSH) key on Linux or MacOS
 
 ## Check if SSH key already exists
@@ -87,5 +85,5 @@ A way to generate a SSH key under Windows is with help of PutTTY-gen. PuTTYgen c
 
 * Fill in a passphrase in the "Key passphrase" field. A passphrase is the same as a password, but in general it contains more characters. Repeat the same passphrase in the  "Confirm passphrase" field. It is possible to not use a passphrase, but this is not considered as good practice in terms of security.
 * Save your private key at a secure spot (never share this file!) with the "Save Private Key". The extension of the file must be `.ppk`. You need this file later on to login to your machine.
-* Save your public key at with the "Save Pubilic Key".
+* Save also your public key with the "Save Pubilic Key". The extension of the file should be `.pub`. You need this file later on to copy to your UI profile.
 * Select all text from the "Public key for pasting into OpenSSH authorized_keys file" and copy paste this in [OpenNebula UI](https://ui.hpccloud.surfsara.nl/) *profile*.
