@@ -41,6 +41,7 @@ You can now run this file giving your _Group_ name as a parameter: `./setup_brid
 1. **On the new HPC Cloud:** Using the _user_ view, go to the _Images_ tab, and click on the green _[+]_ button to add a new `image`. A from will pop up.
 1. **On the new HPC Cloud:** On the _Create Image_ form:
  * fill in a _Name_
+ * make sure that, for field _Datastore_, you chose _104: local-images-ssd_
  * choose whether you want the `image` to be _Persistent_
  * in the _Image location:_ area, mark the _Provide a path_ radio button
  * fill in the _Path_ to the `image` file, pointing to the web server running in your _Bridge VM_, which will be something like: `http://145.100.X.X/vd/2015MMDD:hh:mm_sometext` (you need to use the right IP instead of the _X.X_ and the actual name of the file, including the colons)
