@@ -30,6 +30,7 @@
  * [Other options](customize-vm-other)
 * [Contextualization](contextualization)
 * A Virtual Machine from Scratch
+ * [Fedora using their ready-made images](vm-scratch-fedora-cloud)
 * [Virtual Machine states](vm-states)  
 * [Sharing OpenNebula Objects](sharing-objects)  
 * [Install Windows](windows)
