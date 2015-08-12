@@ -5,7 +5,7 @@ Fedora offer images that are ready to use _on the cloud_. You can find them here
 The following instructions explain how to use one of their prepared images to (astonishingly easily) create a running VM out of it in the HPC Cloud.
 
 >**NOTE:**
->The VM that you make out of this image will be automatically making use of contextualization with cloud-init. Make sure you have your public ssh-key configured either in your user profile or in the template, before you create your VM. That way you will be able to log into your VM with the username **fedora** and your private key.
+>The VM that you can start from this image will be automatically making use of contextualization with cloud-init. Make sure you have your public ssh-key configured either in your user profile or in the template, before you create your VM. That way you will be able to ssh into your VM with the username **fedora** and your private key.
 
 ## Importing the Image
 1. **On the Fedora web page:** On the _Cloud_ section of the downloads page, locate the link to their Qcow2 image and copy it to the paperclip (at the time of writing this article, the URL is this one: https://download.fedoraproject.org/pub/fedora/linux/releases/22/Cloud/x86_64/Images/Fedora-Cloud-Base-22-20150521.x86_64.qcow2)
