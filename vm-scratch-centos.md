@@ -1,4 +1,4 @@
-# Creating a VM from scratch - Ubuntu
+# Creating a VM from scratch - CentOS
 
 Although a number of useable _appliances_ are available in the AppMarket to allow easily creating VMs from the UI, sometimes you may need a specific distribution or a different version that you can find on the AppMarket. In that case, you can resort to installing the operating system from scratch, as you would install it on your own laptop.
 
@@ -19,7 +19,7 @@ We will be developing these topics in the following subsections
 
 In this section we will be setting up the environment within your project (or _Group_) space in the HPC Cloud. It involves:
 
-1. Creating an `image` that will be empty in the beginning, which will work as an empty hard drive where you will install Ubuntu
+1. Creating an `image` that will be empty in the beginning, which will work as an empty hard drive where you will install CentOS
 1. Creating an `image` with the CentOS installation media, by fetching the distribution ISO
 1. Creating a `template` where you bring all these components together, which you can use to start a VM from
 
@@ -88,7 +88,7 @@ We will now create a VM and run the CentOS installation on it.
   * type in a meaningful _Name_ (e.g.: **centos_first**)
   * choose the template you defined before (i.e.: centos_setup)
 1. **On the UI:** We are ready defining the VM, so click on the green _Create_ button at the bottom of the form. A new VM will show on the _Virtual Machines_ list. It will go through several states (e.g.: PENDING, PROLOG...) until it reaches the RUNNING state. 
-1. **On the UI:** You can then start operating within your VM. Click on the _screen_-like button that you can see to the right of your VM on the list. It will pop-up the VNC console, so you should be able to see the welcome screen of your Ubuntu installation.
+1. **On the UI:** You can then start operating within your VM. Click on the _screen_-like button that you can see to the right of your VM on the list. It will pop-up the VNC console, so you should be able to see the welcome screen of your CentOS installation.
 
 Now you need to install CentOS, by following the steps you would normally follow (note, however, that at this point you have no network connection unless you define it manually).
 
