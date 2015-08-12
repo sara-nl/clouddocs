@@ -1,6 +1,6 @@
 # Creating a Fedora VM - the easy way
 
-Fedora offer images that are ready to use _on the cloud_. You can find more about it here: https://getfedora.org/en/cloud/download/
+Fedora offer images that are ready to use _on the cloud_. You can find them here: https://getfedora.org/en/cloud/download/
 
 The following instructions explain how to use one of their prepared images to (astonishingly easily) create a running VM out of it in the HPC Cloud.
 
