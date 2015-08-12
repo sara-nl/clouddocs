@@ -110,6 +110,12 @@ yum install /mnt/*.rpm
 1. **On the VM:** You can reboot your CentOS now. When it boots up, you should be able to browse the Internet now. You can also test SSH-ing into your VM with your private key.
 1. **On the UI:** You can now shut your VM down. We will remove all the installation media and prepare your VM for production.
 
+>**NOTE:**
+>
+>Alternatively, you can use [cloud-init](http://cloudinit.readthedocs.org/en/latest/index.html) as a contextualization configurer. CentOS has support for it via the standard yum repos, so you can install it via `yum install cloud-init`. Our tests indicate that network works, but there does not seem to be a default user configured to use public/private keys to SSH to the VM.
+>
+>A possible way to do it: you can first use the one-context-XXX.rpm package, reboot to let the network be contextualised, then install cloud-init and after that uninstall the one-context-XXX.rpm package.
+
 ## Prepare the VM for production
 
 Once you have installed and configured your CentOS, you do not need the installation media or `file`s around any more. We will make a new `template` to use only the disk that we need.
