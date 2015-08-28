@@ -154,7 +154,7 @@ where you should replace _mmm_ and _nnn_ to match the IP address of your virtual
 >
 >In the screen shot below, the IP address is _145.100.59.30_. And suppose the public key we want to use from our laptop is ~/.ssh/id_rsa.pub. Then, the correct command in this case would be:
 ```sh
-  ssh -i ~/.ssh/id_rsa.pub root@145.100.59.30
+  ssh -i ~/.ssh/id_rsa root@145.100.59.30
 ``` 
 
 If you use a Windows operating system, you should have imported your public and private key pair into _Putty_ or other terminal program. Use the IP of your virtual machine as host, use _root_ as username, and click _Connect_.
