@@ -62,6 +62,7 @@ You need to put that `image` that you imported into a `template`. We will do tha
 1. **On the new HPC Cloud:** In the _General_ tab, give it a _name_, the amount of _Memory_ that you want, the amount of _CPU_ and _VCPU_ you need, etc.
 1. **On the new HPC Cloud:** In the _Storage_ tab, choose your `image` for the _Disk 0_ disk.
 1. **On the new HPC Cloud:** In the _Network_ tab, choose network _internet_ for `nic` _Interface 0_, and add a new `nic`, which will get name _Interface 1_ to assign it to your internal network.
+1. **On the new HPC Cloud: ** In the Input/Output tab, select the VNC radio button in order to be able to use noVNC via the browser.
 1. **On the new HPC Cloud:** In the _Context_ tab, look for `Files` whose name begins with _one-context_. You should see 2 of them: one ending in _.deb_ and another one ending in _.rpm_. If your `image` is a CentOS one (or another Red-Hat-based one), you will want to check the box next to the _.rpm_ `file`. If your `image` is a Ubuntu one (or another Debian-based one), you will want to check the box next to the _.deb_ `file`.
 1. **On the new HPC Cloud:** We are done preparing the `template`. Click on the green _Create_ button on the top-left of the screen.
 
