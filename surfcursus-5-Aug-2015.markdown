@@ -94,7 +94,7 @@ In general, *root* users can access a machine with a password. However, password
 
 Follow the steps below to add an ssh key to your profile: 
 
-* First [Generate an SSH key](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/SSHkey). This will generate two files: a public and a private key. The private key will stay safe in your laptop, the public key will be copied to the [UI](https://ui.hpccloud.surfsara.nl/).    
+* First [Generate an SSH key](SSHkey). This will generate two files: a public and a private key. The private key will stay safe in your laptop, the public key will be copied to the [UI](https://ui.hpccloud.surfsara.nl/).    
 If you already have an SSH key stored in your laptop, you may skip this step.
 * Copy the contents of your **public** ssh key on your laptop (file ends in `.pub`).
 * Go to your user profile by selecting the *buddy* icon on the top-right of the screen and select Settings. A dialogue pops up. In the dialogue, go to the Info page.
@@ -140,7 +140,7 @@ Edit the created *Template* by following these steps:
 * Click on Update on the top-right of the screen to start editing the template. 
 * Browse through the different options (i.e. General, Storage, Network). Leave the default values, **except** for the following:  
   * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Click once on **Name: internet** row. You will see the feedback below:  
-![youselectednetwork](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/6ee7badd9825a4f49f842e4aba02a061/youselectednetwork.png)
+![youselectednetwork](images/youselectednetwork.png)
   * Select the `OS Booting` tab and then *Features*. Set: **ACPI to "Yes"** and **Localtime to "No"**.
 * Click *Update* on top to save your changes.
 
@@ -154,7 +154,7 @@ A template is a description of a virtual machine. The template we have been edit
 This name is also used as the host name of your machine. 
 * Number of instances: **1**.
 * Select the template we just edited. Since this is your first template, there is only one item in the list. Select the *Cursus Template*. You will see the feedback below:  
-![select_template](https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/a3f8cc6160ae62f6132937f2749a0f80/select_template.png)
+![select_template](images/select_template.png)
 * Click on the `Create` button at the bottom of the screen.
 * Refresh the VM status by clicking on the two arrows chasing each other next to "+" button.
 
@@ -199,7 +199,7 @@ The `-X` flag connects your X11 display to the VM so that the VM can open a wind
 
 #### Login from Windows
 
-If you use a Windows operating system, open PuTTY, and fill in (see [here](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/access-your-VM#from-a-windows-client) for detailed instructions):
+If you use a Windows operating system, open PuTTY, and fill in (see [here](access-your-VM#from-a-windows-client) for detailed instructions):
 * Host Name: root@145.100.59.102 *-- replace IP address!* 
 * SSH key: *-- browse to the location where you saved the private key.*
 * Enable X11 display so that the VM can open a window on your laptop: Unfold Connection -> SSH -> X11 -> tick the box **Enable x11 forwarding**.
@@ -289,7 +289,7 @@ apt-get install default-jre
 * Download the example: 
 
 ```sh
-wget https://doc.hpccloud.surfsara.nl/oortdoc/docs/uploads/5ff08311df2b62dc3f2d34e693ae569d/mandelbrot-rmi-bin.tgz
+wget https://doc.hpccloud.surfsara.nl/assets/mandelbrot-rmi-bin.tgz
 ```
 
 **Run the example**
@@ -411,5 +411,5 @@ taskset -c 0 ./startclient.sh pineapple grape mango # use your server names. duh
 
 
 ## <a name="presentations"></a> Presentations
-* [Introduction to Cloud Computing](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/presentations/cloud_intro_05082015.pdf)
-* [Introduction to SURFsara HPC Cloud](https://doc.hpccloud.surfsara.nl/oortdoc/docs/raw/master/presentations/SURFcursus-0508-presentation.pdf)
+* [Introduction to Cloud Computing](assets/cloud_intro_05082015.pdf)
+* [Introduction to SURFsara HPC Cloud](assets/SURFcursus-0508-presentation.pdf)

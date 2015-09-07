@@ -11,13 +11,13 @@ The code was taken from [mandelbrot-rmi](https://code.google.com/p/mandelbrot-rm
   - [mandelbrot-rmi-bin.tgz](../assets/mandelbrot-rmi-bin.tgz) contains runnable class files, you need the Java Runtime Environment to execute
 
 ```bash
-curl -O http://hpccloud.docs.surfsaralabs.nl/assets/mandelbrot-rmi-bin.tgz
+curl -O https://doc.hpccloud.surfsara.nl/assets/mandelbrot-rmi-bin.tgz
 ```
 
   - [mandelbrot-rmi-source.tgz](../assets/mandelbrot-rmi-source.tgz) contains the sources, you need `javac` to compile
 
 ```bash
-curl -O http://hpccloud.docs.surfsaralabs.nl/assets/mandelbrot-rmi-source.tgz
+curl -O https://doc.hpccloud.surfsara.nl/assets/mandelbrot-rmi-source.tgz
 ```
 
 1. create a blank directory and extract the tar(s)
