@@ -79,4 +79,4 @@ You need to put that `image` that you imported into a `template`. We will do tha
 
 >**Note:**
 >
->When you see that the contextualization is working (e.g.: the network works on the new VM), and if you made the `image` persistent, then you can delete the _one-context*_ _.deb_ or _.rpm_ `file` from the `template`. That `file` will still be visible in your VM until you re-create the VM.
+>When you see that the contextualization is working (e.g.: the network works on the new VM), and if you made the `image` persistent, then you can delete the _one-context*_ _.deb_ or _.rpm_ `file` from the `template`. That `file` will still be visible in your VM until you re-create the VM. 
