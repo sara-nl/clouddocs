@@ -4,7 +4,7 @@ layout: default
 # Image Storage
 
 When you create a disk image, you must choose where it is stored, under the heading `Datastore`.
-You have the clice between `local_images_ssd` and `ceph`.
+You have the choice between `local_images_ssd` and `ceph`.
 
 ## Images on datastore `local_images_ssd`
 

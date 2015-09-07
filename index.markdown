@@ -33,6 +33,8 @@ layout: default
  * [Other options](customize-vm-other)
 * [Contextualization](contextualization)
 * A Virtual Machine from Scratch
+ * [CentOS using an ISO](vm-scratch-centos)
+ * [Fedora using their ready-made images](vm-scratch-fedora-cloud)
 * [Virtual Machine states](vm-states)  
 * [Sharing OpenNebula Objects](sharing-objects)  
 * [Install Windows](windows)
@@ -53,7 +55,7 @@ layout: default
 > **NOTE:**
 >
 > You are strongly advised to set up your **own firewall** inside your virtual machines. OpenNebula offers now the so-called `Security Groups` instead of the old `Network filters`. However, they do not work in the current implementation, so we are pursuing other ways to provide a form of external firewall. 
-
+* [Installing `fail2ban`](fail2ban)
 
 ### Inside the VM
 * MySQL server  

@@ -1,16 +1,21 @@
 ---
 layout: default
 ---
-# Generate Secure Shell (SSH) key on Linux or MacOS
+>**NOTE:**
+>
+>SSH private/public key pairs are great for allowing passwordless access to a remote system, and also more secure than traditional passwords. You can find abundant information on the Internet about how it all works, but as a summary, you need to have a file on your local computer (say, your laptop) with the private key, and you need to make a matching public key available on the remote computer (say, your VM). Then, when you are going to connect to the remote machine from your laptop, these keys will be compared and, if they successfully relate to one-another, your SSH connection will be established. 
 
-## Check if SSH key already exists
+The mechanism to allow connecting with SSH private/public key pairs is already configured (and recommended) on the appliances you can get from the AppMarket. Therefore, you need to have (otherwise, generate) a working private/public key pair on your laptop in order to be able to connect to a VM created from the AppMarket.
+
+# Generate a Secure Shell (SSH) key on Linux or MacOS
+
+## Check if an SSH key already exists
 
 The first step is to check if you have already a SSH key. The default location is ~/.ssh/id_rsa for the private key and  ~/.ssh/id_rsa.pub for your public key. 
 
 To check use ls `ls -l  ~/.ssh/`
 
-For example, this user have already a key available and could jump to "Copy your SSH key"
-
+For example, this user already has a key available and could jump to section "Copy your SSH key"
 ```bash
 $ ls -l  ~/.ssh/
 total 72
@@ -20,16 +25,18 @@ total 72
 -rw-r--r--+ 1 user  staff  17351 Jun 30 12:13 known_hosts
 ````
 
-## Generate SSH key
+## Generate an SSH key
 
 Generation of a SSH key can be done with `ssh-keygen -t rsa -b 4096` 
 
-After this ssh-keygen asks for a passphrase. A passphrase is the same as a password, but in general it contains more characters. It is possible not use a passphrase, but this is not considered as good practice in terms of security. After entering your password ssh-keygen asks for confirmation of the passphrase.
+>**NOTE:**
+>
+>After this ssh-keygen asks for a passphrase. A passphrase is the same as a password, but in general it contains more characters. It is possible not use a passphrase, but this is not considered as good practice in terms of security. After entering your password ssh-keygen asks for confirmation of the passphrase.
 
 For example:
 
 ```bash
-$ssh-keygen -t rsa -b 4096 
+$ ssh-keygen -t rsa -b 4096 
 Generating public/private rsa key pair.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
@@ -51,6 +58,17 @@ The key s randomart image is:
 +-----------------+
 ```
 
+### Extra requirements for Mac OS
+
+On Mac OS you still need some extra commands:
+
+```bash
+cd ~/.ssh
+ssh-keygen -y -f id_rsa > id_rsa.pub
+chmod 600 id_rsa.*
+ssh-add -K
+```
+
 ## Copy your Public SSH key
 
 You can copy paste your public key after displaying with cat
@@ -66,7 +84,7 @@ pbcopy < ~/.ssh/id_rsa.pub
 ```
 After copying you can paste the public key into OpenNebula
 
-# Generate Secure Shell (SSH) key on Windows
+# Generate a Secure Shell (SSH) key on Windows
 
 A way to generate a SSH key under Windows is with help of PutTTY-gen. PuTTYgen can be downloaded at http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html or directly downloaded from http://the.earth.li/~sgtatham/putty/latest/x86/puttygen.exe .
 

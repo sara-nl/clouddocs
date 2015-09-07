@@ -44,6 +44,7 @@ You can now run this file giving your _Group_ name as a parameter: `./setup_brid
 1. **On the new HPC Cloud:** Using the _user_ view, go to the _Images_ tab, and click on the green _[+]_ button to add a new `image`. A from will pop up.
 1. **On the new HPC Cloud:** On the _Create Image_ form:
  * fill in a _Name_
+ * make sure that, for field _Datastore_, you chose _104: local-images-ssd_
  * choose whether you want the `image` to be _Persistent_
  * in the _Image location:_ area, mark the _Provide a path_ radio button
  * fill in the _Path_ to the `image` file, pointing to the web server running in your _Bridge VM_, which will be something like: `http://145.100.X.X/vd/2015MMDD:hh:mm_sometext` (you need to use the right IP instead of the _X.X_ and the actual name of the file, including the colons)
@@ -64,6 +65,7 @@ You need to put that `image` that you imported into a `template`. We will do tha
 1. **On the new HPC Cloud:** In the _General_ tab, give it a _name_, the amount of _Memory_ that you want, the amount of _CPU_ and _VCPU_ you need, etc.
 1. **On the new HPC Cloud:** In the _Storage_ tab, choose your `image` for the _Disk 0_ disk.
 1. **On the new HPC Cloud:** In the _Network_ tab, choose network _internet_ for `nic` _Interface 0_, and add a new `nic`, which will get name _Interface 1_ to assign it to your internal network.
+1. **On the new HPC Cloud:** In the Input/Output tab, select the VNC radio button in order to be able to use noVNC via the browser.
 1. **On the new HPC Cloud:** In the _Context_ tab, look for `Files` whose name begins with _one-context_. You should see 2 of them: one ending in _.deb_ and another one ending in _.rpm_. If your `image` is a CentOS one (or another Red-Hat-based one), you will want to check the box next to the _.rpm_ `file`. If your `image` is a Ubuntu one (or another Debian-based one), you will want to check the box next to the _.deb_ `file`.
 1. **On the new HPC Cloud:** We are done preparing the `template`. Click on the green _Create_ button on the top-left of the screen.
 
