@@ -88,7 +88,9 @@ Have a look at the source and notice the blank line between `Expected output:` a
 This seems to be the only way to have different editord and renderers create the same output. 
 
 ### Creating a new page
-You can create a new page, by creating a new markdown file. Start the file with the name of the template you want to use. Available templates can be seen in the _layouts directory. You can use the filename, without the extension. For example:
+You can create a new page, by creating a new markdown file. The file should have .markdown as extension, because else the 'Edit on GitHub' button will not function.
+
+Start the file with the name of the template you want to use. Available templates can be seen in the _layouts directory. You can use the filename, without the extension. For example:
 
 ```
 ---
