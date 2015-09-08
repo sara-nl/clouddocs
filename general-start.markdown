@@ -163,7 +163,7 @@ where you should replace _mmm_ and _nnn_ to match the IP address of your virtual
   ssh -i ~/.ssh/id_rsa root@145.100.59.30
 ``` 
 
-If you use a Windows operating system, you should have imported your public and private key pair into _Putty_ or other terminal program. Use the IP of your virtual machine as host, use _root_ as username, and click _Connect_ (see instructions [here](https://doc.hpccloud.surfsara.nl/oortdoc/docs/wikis/access-your-VM#from-a-windows-client)).
+If you use a Windows operating system, you should have imported your public and private key pair into _Putty_ or other terminal program. Use the IP of your virtual machine as host, use _root_ as username, and click _Connect_ (see instructions [here](access-your-VM#from-a-windows-client)).
 
 If there were no errors, and if your firewalls allow making remote connections, you should now be logged in on your virtual machine, as _root_. 
 
