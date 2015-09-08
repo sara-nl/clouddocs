@@ -75,6 +75,6 @@ layout: default
 
 ## Contributing to the documentation
 
-If you have any comments, please let us know by sending us an e-mail at helpdesk@surfsara.nl. Alternatively, you are welcome to contribute to this documentation directly. For this, you can fork our repository on GitHub and submit a pull request to inform us of your changes.
+If you have any comments, please let us know by sending us an e-mail at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments). Alternatively, you are welcome to contribute to this documentation directly. For this, you can fork our repository on GitHub and submit a pull request to inform us of your changes.
 
 Please find our [contribution guidelines](markdown-best-practice) before more information about forking, contributing updates, bug fixes, or other corrections.
