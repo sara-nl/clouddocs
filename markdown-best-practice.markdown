@@ -105,7 +105,7 @@ After these three lines, you can add regular markdown. You can link to the new f
 Before commiting anything, you can first have a look at your changes using Jekyll. You can install Jekyll normally (see link to Jekyll website at the top of this page), or use docker for this. From the root of this repository, run:
 
 ```bash
-sudo docker run --detach --name=jekyll --label=jekyll --volume=$(pwd):/srv/jekyll -t jekyll/jekyll jekyll s
+sudo docker run --detach --name=jekyll --label=jekyll --volume=$(pwd):/srv/jekyll -t jekyll/jekyll:pages jekyll s
 sudo docker inspect jekyll | grep '"IPAddress"' | sed -re 's|[[:space:]]*"IPAddress": "([^"]+)",|View your documentation at http://\1:4000|'
 ```
 
