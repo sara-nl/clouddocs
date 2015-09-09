@@ -115,4 +115,4 @@ Please, also have a look at the [Docker documentation](https://docs.docker.com/)
 
 ### Other
 
-Please add more best practise.
+Please add more best practices here.
