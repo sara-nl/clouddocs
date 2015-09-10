@@ -106,7 +106,7 @@ Before commiting anything, you can first have a look at your changes using Jekyl
 
 ```bash
 sudo docker run --detach --name=jekyll --label=jekyll --volume=$(pwd):/srv/jekyll -t jekyll/jekyll:pages jekyll s
-sudo docker inspect jekyll | grep '"IPAddress"' | sed -re 's|[[:space:]]*"IPAddress": "([^"]+)",|View your documentation at http://\1:4000|'
+sudo docker inspect jekyll | grep '"IPAddress"' | sed -re 's|[[:space:]]*"IPAddress": "([^"]+)",|View your documentation at http://\1|'
 ```
 
 This will start the Docker container in the background and show you the address where you can view your documentation. This is basically through HTTP access on port 4000 of the IP address of your container.
