@@ -15,6 +15,8 @@ You can add as many `nic`s as you need to a given template, each referring to an
 >
 > When you import an _appliance_ from the _AppMarket_, that action usually downloads one `template` along with an `image`. However, you usually have to add networks to the template after you have downloaded it. This is the place to do it.
 
+The assignment of hostnames and IP addresses to VMs is covered in [Accessing your virtual machine](access-your-VM).
+
 ### Edit a `nic` for a `template`
 
 When you click on a `nic` of a `template` (on the left column of the _Network_ tab), or when you click on _+Add another nic_, you will select that `nic` for editing (it will get a blue line on the left of its name and its options will show on the area to the right of it). 
