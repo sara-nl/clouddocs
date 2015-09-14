@@ -38,7 +38,7 @@ _File Server_.
 > file server, while the underlying architecture is no longer a bottleneck.
 
 For sharing files with other Linux systems, you should use
-an _NFS_ or _NFS4_ file server; the section [NFS](nfs) describes how.
+an _NFS_ or _NFS4_ file server; the section [NFS](NFS) describes how.
 
 For sharing files between Windows systems, you can use the Windows file
 sharing.
