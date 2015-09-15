@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# HPC Cloud documentation
+# SURFsara HPC Cloud documentation
 
 > **NOTE:**
 >
