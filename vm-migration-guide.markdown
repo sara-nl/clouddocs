@@ -6,6 +6,7 @@ layout: default
 This guide aims at helping you if you find yourself in the situation that you need to bring an existing `image` from the old HPC Cloud to the new one. Among other changes, the most notable one is that you are likely to have to [contextualise](contextualization) your VM so that it will have its network configured.
 
 The steps we will follow are the following:
+
 1. Export your `image` on the old HPC Cloud
 1. Import that `image` into the new HPC Cloud
 1. Make a `template` using that `image`
