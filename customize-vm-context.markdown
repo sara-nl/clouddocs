@@ -19,6 +19,7 @@ You can personalise the way you want contextualisation applied to your VM. The o
 ### _Network & SSH_ options
 
 Under the _Network & SSH_ subsection, you can choose to:
+
 * enable/disable the contextualisation features for SSH
   * If you enable the tick-box and you paste a [public key](https://en.wikipedia.org/wiki/Public-key_cryptography) on the _Public Key_ box, then this public key will become available on the VM and you will be able to log into your VM with the private-public key pair for that public key. If you enable the tick-box but leave the _Public Key_ box empty on the template, then the VM will receive the user's _Public SSH Key_.
 * enable/disable the contextualisatation features for networking
@@ -32,7 +33,7 @@ Under the _Network & SSH_ subsection, you can choose to:
 
 ### _Files_ options
 
-On the _cloud_ `view`, under the _Virtual Resources_ menu, there is an item called _Files & Kernels_. You can create `file`s of _Type_ _Context_ there. Then, you can link them to the `template` you are editing under the _Files_ subsection of the _Context_ tab. These files will then be made available on the contextualisation CD-ROM so that the VM can access them, and you can use them in your programs on your VM right away.
+On the _user_ `view`, under the _Virtual Resources_ menu, there is an item called _Files & Kernels_. You can create `file`s of _Type_ _Context_ there. Then, you can link them to the `template` you are editing under the _Files_ subsection of the _Context_ tab. These files will then be made available on the contextualisation CD-ROM so that the VM can access them, and you can use them in your programs on your VM right away.
 
 Alternatively, or at the same time, on the _FILES_DS_ field you can write the raw line that should be copied into the `template` describing `file`s to include.
 
