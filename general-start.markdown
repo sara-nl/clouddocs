@@ -115,7 +115,6 @@ Go to the _Virtual Machines_ section of the UI. This displays an overview of all
 Start your virtual machine using the following steps:
 
 1. Click on the green plus sign, as shown in the screenshot. This opens a dialogue with options for your virtual machine.
-
 ![startVM](images/startVM.png)
 
 2. The first box in the dialogue is to give your virtual machine a name. This name is also used as the host name of your machine. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*. 
@@ -176,7 +175,6 @@ If there were no errors, and if your firewalls allow making remote connections, 
 If you want to shutdown your VM and stop consuming quotas, perform the following steps:
 
 1. Tick the box to the left on the row with your VM and click _Shutdown_ (upper right corner of the screen, under the _dust bin_ drop-down button).
-
 ![shutdownVM](images/shutdownVM.png)
 
 2. Refresh the Virtual Machines list (by clicking on the two arrows chasing each other next to _+_ button) until your VM is gone.
