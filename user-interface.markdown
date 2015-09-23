@@ -4,11 +4,12 @@ layout: default
 # User Interface
 
 ## Access the user interface
->**Note:**
->
->You can find the UI here: https://ui.hpccloud.surfsara.nl
 
 The UI (short for User Interface) is the web site that allows you to operate the HPC Cloud. Put simply: your way to manage (create/destroy) your Virtual Machines (VM). 
+
+>**Note:**
+>
+>You can find the UI here: [https://ui.hpccloud.surfsara.nl](https://ui.hpccloud.surfsara.nl)
 
 ## Change your Password
 > **IMPORTANT**
@@ -18,7 +19,7 @@ The UI (short for User Interface) is the web site that allows you to operate the
 This is how you change your password:
 
 1. Look at the top-right corner of the screen on the UI. There is a _buddy_ icon that represents your user. Click on it.
-2. Click on _Settings_, you will see the option to change or update your password. If you use a `cloud view` (see section below for OpenNebula views), click on the _Change Password_ button.
+2. Click on _Settings_, you will see the option to change or update your password. If you use a `user view` (see section below for OpenNebula views), click on the _Update Password_ button.
 3. On the new screen, type your new password twice and click the button to submit it.
 
 ## Logging out
@@ -32,7 +33,7 @@ Whenever you are ready to stop working for the day on the HPC Cloud, you are adv
 This is how you log out:
 
 1. Look at the top-right corner of the screen on the UI. There is a _buddy_ icon that represents your user. Click on it.
-2. Under the _buddy_, you will get an option to log out (you may also see the text _Sign Out_). Click there, and the welcome page will come up asking you to fill your username and password in again.
+2. Under the _buddy_, you will get an option to  _Sign Out_. Click there, and the welcome page will come up asking you to fill your username and password in again.
 
 ## Views 
 OpenNebula's `view`s are a way to present functionality on the screen. The simpler the `view`, the less functionality it tends to offer, but the easier to understand and operate it tends to be. 
@@ -100,7 +101,8 @@ In the user interface, click the _buddy_ icon at the top right (next to the Home
 
 ## Menu
 
-There is a menu on the left side within the **user** and **groupadmin** `view`s. The tabs displayed there are:
+There is a menu on the left side within the **user** `view`. The tabs displayed there are:
+
 * Dashboard
 * Virtual Resources
 * Infrastructure
@@ -110,6 +112,7 @@ A description of each of these items follows. A vertical blue bar on the left of
 
 #### Dashboard
 The Dashboard is the page where you can see a summary of the status of your project. Information includes:
+
 * daily graphs of CPU and memory usage
 * list of VMs
 * network and storage counters
@@ -117,6 +120,7 @@ The Dashboard is the page where you can see a summary of the status of your proj
 
 #### Virtual Resources
 The _Virtual Resources_ menu allows you to manage several kinds of objects, with the focus on what allows you to create `VM`s. It offers 4 sub-options:
+
 * _Virtual Machines_: to manage `VM`s (i.e.: create, start, stop, suspend, delete...)
 * _Templates_: to manage `Template`s (i.e.: create, edit, delete) 
 * _Images_: to manage `Image`s
@@ -124,6 +128,7 @@ The _Virtual Resources_ menu allows you to manage several kinds of objects, with
 
 #### Infrastructure
 The _Infrastructure_ menu allows you mainly to see information about the supporting resources that are available in the HPC Cloud and how (much of) them you are using. It offers 2 sub-options:
+
 * _Datastores_: to see where you can take storage from and how much you are using of each
 * _Virtual Networks_: to see which networks you have available and which your `VM`s are using them 
 
