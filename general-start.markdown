@@ -27,7 +27,7 @@ To make starting a virtual machine easier, we provide the AppMarket, which has _
 
 The HPC Cloud User Interface (from now on, UI) is the web site where you manage your VMs. 
 
-You can reach the UI at the following URL: https://ui.hpccloud.surfsara.nl
+You can reach the UI at the following URL: [https://ui.hpccloud.surfsara.nl](https://ui.hpccloud.surfsara.nl)
 
 After you are granted access to the HPC Cloud, you will receive a username and a password for this UI. 
 
@@ -51,7 +51,7 @@ We are going to work with a pre-made `image` that is available on the AppMarket.
 
 Import the appliance by following these steps:
 
-1. From the **user** `view` or the **groupadmin** `view`, choose the
+1. From the **user** `view`, choose the
    _AppMarket_ tab on the left menu of the screen and then _Appliances_ (in the screen shot, it has been highlighted in red).
    ![appmarket step 1](images/appmarket_step_1.png)
 
@@ -71,8 +71,7 @@ Import the appliance by following these steps:
 
 6. Finally, click _Import_. This will start importing the appliance from  the AppMarket. When the import is successful, it will create an `image` and a `template`.
 
-You can verify that the process is complete by inspecting the _Template_
-and _Image_ sections in the _Virtual Resources_ tab of the UI. You should see your new `image` and `template` there.
+You can verify that the process is complete by inspecting the _Template_ and _Image_ sections in the _Virtual Resources_ tab of the UI. You should see your new `image` and `template` there.
 
 ## Adding an SSH key to your profile
 
@@ -84,7 +83,9 @@ After you have created an SSH key, go to your _user profile_ by selecting the _b
 
 Find the file in your computer containing the public key you created (it is usually called ```id_rsa.pub``` and it is usually found in the ```.ssh``` directory in your ```$HOME```directory). Open the file, then copy the contents of the file (those contents are your public key) and paste those contents into the text area of the UI.
 
-You can close your profile now. Your public key is automatically stored in your profile.
+![import_ssh_key_img](images/import_ssh_key.png)
+
+You can just close this window now. Your public key is automatically stored in your profile.
 
 ## Finishing the virtual machine configuration by editing the template
 
@@ -114,6 +115,7 @@ Go to the _Virtual Machines_ section of the UI. This displays an overview of all
 Start your virtual machine using the following steps:
 
 1. Click on the green plus sign, as shown in the screenshot. This opens a dialogue with options for your virtual machine.
+
 ![startVM](images/startVM.png)
 
 2. The first box in the dialogue is to give your virtual machine a name. This name is also used as the host name of your machine. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*. 
@@ -124,13 +126,14 @@ Start your virtual machine using the following steps:
 
 3. The number of instances is 1, which is fine for now.
 
-4. The second step in the dialogue is to select a `template`. Since this is your first `template`, there is only one item in the list. Select this `template`.
+4. The second step in the dialogue is to select a `template`. Since this is your first `template`, there is only one item in the list. Select this `template` by clicking on it.
 
 5. Click on the _Create_ button at the bottom of the screen.
 
 Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That state means that the cloud system is looking for a place where your virtual machine can actually run.
 
-When the required capacity becomes available, your virtual machine will go through a few other states, and eventually, it will appear as RUNNING.
+When the required capacity becomes available, your virtual machine will go through a few other states, and eventually, it will appear as RUNNING. Refresh the VM status by clicking on the two arrows chasing each other next to “+” button.
+
 ![testVM](images/testVM.png)
 
 The operating system on the machine will go through the boot process.
@@ -173,6 +176,7 @@ If there were no errors, and if your firewalls allow making remote connections, 
 If you want to shutdown your VM and stop consuming quotas, perform the following steps:
 
 1. Tick the box to the left on the row with your VM and click _Shutdown_ (upper right corner of the screen, under the _dust bin_ drop-down button).
+
 ![shutdownVM](images/shutdownVM.png)
 
 2. Refresh the Virtual Machines list (by clicking on the two arrows chasing each other next to _+_ button) until your VM is gone.
