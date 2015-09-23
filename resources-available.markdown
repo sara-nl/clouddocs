@@ -5,14 +5,15 @@ layout: default
 
 The compute nodes are the physical machines where you can run Virtual Machines (VMs). 
 
-In total the full capacity of Oort will be:
+In total the full physical capacity of `Oort` will be:
 
-* 32 HPC nodes x 64 cores (hyperthreading enabled)
-  * 21 HPC nodes with SSDs - 3.2TB local disk and 256GB RAM per node
-  * 11 HPC nodes with SSDs - 1.2TB local disk and 256GB RAM per node
+* 32 HPC compute nodes @ 64 cores (hyperthreading enabled), 256GB RAM, 3.2 TB local SSD disk 
 
-* One High memory node 
-  * 40 cores - 3.2TB local disk and 2TB RAM  
+* 12 GPU compute nodes @ 32 cores, 256 GB RAM, 3.2 TB local SSD disk
 
-* Shared Storage:
-  * 900TB Ceph object storage (x3 redundancy- 2.7PB total) on 10Gbit network per storage node, with SSD caching
+* 1 High memory node @ 40 cores, 2TB RAM, 3.2 TB local SSD disk  
+
+* 900 TB Ceph distributed object storage with SSD caching
+  * 2.7 PB total shared storage (~ 900 TB x 3 redundancy) 
+  * 10Gbit network connection per storage node
+  
