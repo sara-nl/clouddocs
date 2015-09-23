@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Customize your Virtual Machine
+# Customise your Virtual Machine
 
 The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your Virtual Machines (VMs) the _form_ that you need them to have.
 
