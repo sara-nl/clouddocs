@@ -11,6 +11,7 @@ layout: default
 ## Migrating from the old HPC Cloud
 * [Replacing the VirDir](replacing-virdir)
 * [Migration guide - Run your old HPC Cloud images on the the new HPC Cloud](vm-migration-guide)
+* Migration guide - Transfer your old HPC Cloud data on the the new HPC Cloud
 
 ## Basics
 - [Introduction to HPC Cloud](introduction-to-hpc-cloud)  
@@ -18,6 +19,7 @@ layout: default
 - [User Interface](user-interface)  
 - [General start](general-start)  
 - [Access your Virtual Machine](access-your-VM)
+- Create datablocks
 
 ## Advanced Topics
 
@@ -71,7 +73,7 @@ layout: default
 * [Available resources](resources-available)
 
 ## Current Resource Usage
-* [Resource usage](https://ui.hpccloud.surfsara.nl/oneinsight) :warning: **WARNING** under construction
+* [Resource usage](https://ui.hpccloud.surfsara.nl/oneinsight) ⚠ **WARNING** under construction
 
 ## Contributing to the documentation
 
