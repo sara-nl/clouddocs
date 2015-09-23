@@ -10,10 +10,12 @@ layout: default
 ## Contextualization explained
 
 _Contextualization_ in OpenNebula refers to:
+
 * the act and effect of OpenNebula making information from the environment available meant for a VM to configure itself. This information is called the _context_.
 * the system that enables the former
 
 In summary, OpenNebula provides out-of-the-box facilities to tell a VM about:
+
 * SSH authentication: what certificates or passwords should the VM recognise to allow SSH access to it
 * Network configuration: how each `nic` on the VM must be configured (e.g.: IP addresses, network masks...)
 * Other variables: the VM receives a file with a list of ⟨key, value⟩ pairs that you specify in the `template`
