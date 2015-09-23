@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+# Virtual Machine states
+
 A VM can find itself on a number of different states. Each of those states have a name and a meaning. The state a VM is in also determines the set of states it can move to. Example state names are: PROLOG, BOOT, RUNNING...
 
 An _action_ triggers a state change. 
@@ -8,6 +11,15 @@ These actions can be triggered by a user on the UI or by the environment itself.
 You can see most of these on the UI:
 
 ![vm_actions_img](images/vm_actions.png)
+
+>**Note:**
+>
+> We recommend you to use mainly the following states for your VM management: 
+> * Shutdown: the VM will shut down gracefully. Click the dust bin button and then *Shutdown*.
+> * Stop: the VM keeps its changes for the next *Resume* action. Click on the stop square button and then *Stop*. A VM in STOPPED state does not consume quota.
+> * Resume: resumes a STOPPED VM. Click on the play button. It will bring the STOPPED to RUNNING state.
+> * Delete: destroys the VM. Click the dust bin button and then *Delete*. The image may become in status ERROR.
+
 
 ## The play button
 
