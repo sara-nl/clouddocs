@@ -21,6 +21,7 @@ Once you have included your `image`s (along with the rest of the characteristics
 
 ## Cloud characteristics
 We say that our service is an HPC Cloud system. But what do we mean by cloud? Largely taken out of _[The NIST Definition of Cloud Computing](http://csrc.nist.gov/publications/nistpubs/800-145/SP800-145.pdf)_, a system can be called a cloud when it shows the following characteristics:
+
 * On-demand self-service: you can provision compute capabilities as you need them
 * Broad network access: you can access compute capabilities over the network through standard mechanisms
 * Resource pooling: our (physical) resources are pooled, to serve users in a multi-tenant model, with resources dynamically assigned and reassigned according to consumer demand
@@ -28,7 +29,7 @@ We say that our service is an HPC Cloud system. But what do we mean by cloud? La
 * Measured service: the system measures and reports back to you on how much you have used. 
 
 # Resource sharing
-The HPC Cloud basically makes two kinds of hardware available to you: a) compute nodes and b) storage space. These, of course, are physical machines that we have set up and configured to run the cloud software which allows you to see your virtual environment and operate within it. In general, you do not need to trouble yourself with all the nitty-gritty details of the real world, but we expect you to understand that the physical resources that we have are limited. Therefore, we expect of you to work responsibly with them. 
+The HPC Cloud basically makes two kinds of hardware available to you: a) **compute nodes** and b) **storage space**. These, of course, are physical machines that we have set up and configured to run the cloud software which allows you to see your virtual environment and operate within it. In general, you do not need to trouble yourself with all the nitty-gritty details of the real world, but we expect you to understand that the physical resources that we have are limited. Therefore, we expect of you to work responsibly with them. 
 
 Within the scientific community, we aim at helping as many people's research projects as possible. The HPC Cloud offers you a lot of flexibility, and that means you can do a lot of things you usually cannot do in other traditional HPC environments: you can complete long-running computations, you can book large RAM memory spaces, you can dynamically link working processes, you can store a lot of data... But we demand that you do so responsibly. Our service is purposefully run as a **best-effort basis**, so we strive to deliver the best service possible we can at each moment to satisfy as many users as possible. When you claim some resources (say, some CPUs and some disk space), then they are assigned to you, and only to you. Please, make sure you make the most out of them, because that means that other users are kept away from those resources until you free them. Therefore, please, do release them once you are done with them; you will be facilitating someone else's research by doing so.
 
