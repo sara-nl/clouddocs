@@ -108,6 +108,12 @@ This shows the different configuration options for your `template`. For now, we 
 
 ## Starting your virtual machine
 
+>**Note:**
+>
+> When you import an appliance from the AppMarket, the disk image is normally non persistent. 
+> This means, in short, that your changes are lost. Before starting your VM, always make a check 
+> if [Image Persistence](image_persistence) is set to the desired mode (yes or no).
+
 A `template` is a description of a virtual machine. The `template` we have been editing in this guide is now ready to create a virtual machine from it.
 
 Go to the _Virtual Machines_ section of the UI. This displays an overview of all running VMs. If this is your first virtual machine, this list will be empty.
