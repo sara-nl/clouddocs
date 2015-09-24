@@ -39,12 +39,13 @@ wget https://doc.hpccloud.surfsara.nl/assets/setup_bridge_vm.sh
 chmod +x ./setup_bridge_vm.sh
 ```
 
-You can now run this file giving your _Group_ name as a parameter: `./setup_bridge_vm.sh <group_name>`
+**On the _Bridge VM_:** Run this file giving your _Group_ name as a parameter: `./setup_bridge_vm.sh <group_name>`
 
 ### Bring your image to the new HPC Cloud
 1. **On the new HPC Cloud:** Using the _user_ view, go to the _Images_ tab, and click on the green _[+]_ button to add a new `image`. A from will pop up.
 1. **On the new HPC Cloud:** On the _Create Image_ form:
  * fill in a _Name_
+ * choose Type: OS
  * make sure that, for field _Datastore_, you chose _104: local-images-ssd_
  * choose whether you want the `image` to be _Persistent_
  * in the _Image location:_ area, mark the _Provide a path_ radio button
