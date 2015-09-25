@@ -19,7 +19,6 @@ layout: default
 - [User Interface](user-interface)  
 - [General start](general-start)  
 - [Access your Virtual Machine](access-your-VM)
-- Create datablocks
 
 ## Advanced Topics
 
@@ -45,6 +44,7 @@ layout: default
 ### Disk Images
 * [Image Storage](image_storage)
 * [Image Persistence](image_persistence)
+* [Create datablocks](create-datablocks)
 * [Scratch Disk Images](scratch_disk)
 * [Download an image](image_download)  
 * [Create an Image on your own laptop](image-on-own-laptop)
