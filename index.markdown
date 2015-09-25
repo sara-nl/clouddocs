@@ -67,7 +67,7 @@ layout: default
 * [NFS](NFS) &ndash; Share Data between Virtual Machines
 
 ## Tutorials
-* [Surfcursus - 5 Aug 2015](surfcursus-2015-Aug-05)
+* [Surfcursus - 15 Oct 2015](surfcursus-2015-Oct-15)
 
 ## Service implementation
 * [Available resources](resources-available)
