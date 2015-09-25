@@ -24,18 +24,18 @@ In this section we will be setting up an empty disk on [ceph Datastore](image_st
 4. Fill in the *Create image* form that popped up:
 	* Name: give a name meaningful for your datablock, e.g. **output data**. You will use this name later in your `Template`.
 	* Description (optional): give information about the datablock
-    * Type: set to `datablock`
+    * Type: set to *DATABLOCK*
     * Datastore: choose `106: ceph`
     * Check *Persistent* checkbox. If you omit this, your data will not be saved on the disk once you shutdown the VM. You can also change this flag later from the [image persistence](image_persistence) properties.
     * On the _Image location:_ group, choose radio button _Empty datablock_
-    * Give it a _Size_ in MB that is meaningful to you (e.g.: set 10000 to create a 10GB disk)
-    * Keep _FS Type_: raw
+    * Give it a _Size_ in MB that is meaningful to you (e.g. insert 10000 to create a 10GB disk)
+    * Keep _FS Type_: raw 
 ![add_datablock](images/add_datablock.png)
 5. Click the green button *Create* on the form, to submit it. 
 
 >**NOTE:**
 >
->A new image will show on the `Images` list, and it will keep in status LOCKED while it is being created. When it is created it will come to status READY.
+>A new image will show on the `Images` list, and it will keep in status LOCKED while it is being created. When it is created it will come to status READY. Then you *still* have to format and mount the disk.
 
 
 ## Add the new datadisk to the template
@@ -71,4 +71,4 @@ mount /dev/vdb /data
 
 >**NOTE:**
 >
->The first two commands only need to be run once (and destroy everything on your disk!), the final one needs to be run every time you start the image or you can add this to /etc/fstab to be done automatically.
+>The first two commands only need to be run once (and destroy everything on your disk!). The mount command (third one) needs to be run every time you start the image or you can add this line to /etc/fstab to be done automatically: `/dev/vdb /data xfs defaults 0 0`. 
