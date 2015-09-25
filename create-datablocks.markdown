@@ -16,21 +16,21 @@ The steps you require to add a `Ceph datablock` to your Virtual Machine are:
 
 ## Create a new empty datadisk
 
-In this section we will be setting up an empty disk on [ceph Datastore[(image_storage).
+In this section we will be setting up an empty disk on [ceph Datastore](image_storage).
 
 1. Login to the UI at the following URL: [https://ui.hpccloud.surfsara.nl](https://ui.hpccloud.surfsara.nl)
 2. From the menu at the left pane, select the *Images* page under *Virtual Resources*.
 3. Click on the green [+] button on the top. A new window appears titled *Create image*.
 4. Fill in the *Create image* form that popped up:
-	* Name: give a name meaningful for your datablock, e.g. **output data** You will use this name later in your `Template`.
+	* Name: give a name meaningful for your datablock, e.g. **output data**. You will use this name later in your `Template`.
 	* Description (optional): give information about the datablock
     * Type: set to `datablock`
-    * Datastore: choose *106: ceph*
+    * Datastore: choose `106: ceph`
     * Check *Persistent* checkbox. If you omit this, your data will not be saved on the disk once you shutdown the VM. You can also change this flag later from the [image persistence](image_persistence) properties.
-	* on the _Image location:_ group, choose radio button _Empty datablock_
-  	* and give it a _Size_ in MB that is meaningful to you (e.g.: set 10000 to crate a 10GB disk)
-  	* keep _FS Type_: raw
-  	![add_datablock](images/add_datablock.png)
+    * On the _Image location:_ group, choose radio button _Empty datablock_
+    * Give it a _Size_ in MB that is meaningful to you (e.g.: set 10000 to create a 10GB disk)
+    * Keep _FS Type_: raw
+![add_datablock](images/add_datablock.png)
 5. Click the green button *Create* on the form, to submit it. 
 
 >**NOTE:**
@@ -62,10 +62,11 @@ In this section we show you how you can start using the new disk.
 2. Once the `VM` is in RUNNING state, ssh as root to the machine using your SSH-key. 
 3. Run `fdisk -l` and see that your new datablock is there (Disk /dev/vdb: 10.5 GB).
 4. Mount the datadisk in the VM:
+
 ```sh
-mkdir /data
-mkfs -t xfs /dev/vdb
-mount /dev/vdb /data
+mkdir /data  
+mkfs -t xfs /dev/vdb  
+mount /dev/vdb /data  
 ```
 
 >**NOTE:**
