@@ -27,9 +27,11 @@ The steps to migrate your data to the new Cloud are the following:
 
 1. **On the new HPC Cloud UI:** Login to your VM with the datablock attached and mounted on the previous step.
 2. **On the new HPC Cloud UI:** Start transferring your files or direcories to the mounted /data (or other mount point of your choice) directory. Replace [old-cloud-VM-username] with your own VM username (not the UI username), [old-cloud-VM-publicIP] with the external 145.100.XX.XX IP, [absolute-path-to-data] with the directory on your old cloud VM that you want to migrate:
-```bash
+
+```sh
 rsync -av [old-cloud-VM-username]@[old-cloud-VM-publicIP]:[absolute-path-to-data] /data/
 ```
 >**Note:**
-> Before removing any useful data from the old Cloud VM , make sure that the transfer was successful and copied on a [persistent](image_persistence) Ceph datablock.
->
+> 
+>Before removing any useful data from the old Cloud VM , make sure that the transfer was successful and copied on a [persistent](image_persistence) Ceph datablock.
+
