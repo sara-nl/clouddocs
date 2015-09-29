@@ -22,8 +22,9 @@ This particular course aims to introduce SURF employees to the HPC Cloud by prov
 **Date**: 15 October 2015  
 **Location**: SURFsara VK1 & 2  
 **Program**:  
+
 >
-09:45 Welcome & coffee  
+>09:45 Welcome & coffee  
 10:00 Presentation in Cloud Computing  
 10:30 Presentation in SURFsara HPC Cloud  
 11:15 HPC Cloud Demo& instructions  
@@ -36,6 +37,7 @@ This particular course aims to introduce SURF employees to the HPC Cloud by prov
 ## <a name="preparation"></a>Prepare your laptop 
 
 What you need for this tutorial:
+
 * A computer with full Internet access.
 * A browser (Chrome or Firefox will do nicely).
 * Java, at least version 8 (a.k.a. 1.7)
@@ -47,12 +49,14 @@ What you need for this tutorial:
   * Windows users need to install [Xming](http://sourceforge.net/projects/xming/).
  
 ## <a name="hands-on"></a> Hands-on
-The hands-on tutorial has two parts. The exercises in part A will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood the part A, then continue to part B with more `advanced` examples on the HPC Cloud. If you finish both part A & B and wish to know more about the HPC Cloud, try the additional exercises in `extras`.
+The hands-on tutorial has two parts. The exercises in part A will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood the part A, then continue to part B with more `advanced` examples on the HPC Cloud. If you manage to finish both part A & B and wish to know more about the HPC Cloud, then try also the additional exercises in `extras`.
+
   * [Surfcursus - Part A](surfcursus-part-A-2015-Oct-15)
   * [Surfcursus - Part B](surfcursus-part-B-2015-Oct-15)
   * [Surfcursus - Extras](surfcursus-extras-2015-Oct-15) (optional)
 
 ## <a name="presentations"></a> Presentations
-* [Introduction to Cloud Computing](assets/cloud_intro_05082015.pdf)
-* [Introduction to SURFsara HPC Cloud](assets/SURFcursus-0508-presentation.pdf)
+
+* [Introduction to Cloud Computing](assets/cloud_intro_15102015.pdf)
+* [Introduction to SURFsara HPC Cloud](assets/hpc_cloud_15102015.pdf)
 
