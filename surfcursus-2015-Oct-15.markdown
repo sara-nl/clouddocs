@@ -27,7 +27,7 @@ This particular course aims to introduce SURF employees to the HPC Cloud by prov
 >09:45 Welcome & coffee  
 10:00 Presentation in Cloud Computing  
 10:30 Presentation in SURFsara HPC Cloud  
-11:15 HPC Cloud Demo& instructions  
+11:15 HPC Cloud Demo & instructions  
 12:00 Lunch  
 12:45 Hands-on HPC Cloud   
 15:00 Wrap-up & questions    
@@ -42,11 +42,11 @@ What you need for this tutorial:
 * A browser (Chrome or Firefox will do nicely).
 * Java, at least version 8 (a.k.a. 1.7)
 * An SSH client.
-  * Linux and Mac users don't need to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
-  * Windows users need to download and install [git for windows](https://git-for-windows.github.io/).   
+  * Linux and Mac users: don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
+  * Windows users: download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between `Git-2.5.3-32-bit.exe` or `Git-2.5.3-64-bit.exe`.
 * An X-window client.
-  * Linux and Mac users normally don't need to install anything as X11 is on board. However, the newest Mac OS releases might not have X11.app installed. In that case, get XQuarz from [here](http://xquartz.macosforge.org/landing/).*
-  * Windows users need to install [Xming](http://sourceforge.net/projects/xming/).
+  * Linux and Mac users normally don't need to install anything as X11 is on board. However, the newest Mac OS releases might not have X11.app installed. In that case, install XQuarz from [here](http://xquartz.macosforge.org/landing/).
+  * Windows users: install Xming from [here](http://sourceforge.net/projects/xming/).
  
 ## <a name="hands-on"></a> Hands-on
 The hands-on tutorial has two parts. The exercises in part A will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood the part A, then continue to part B with more `advanced` examples on the HPC Cloud. If you manage to finish both part A & B and wish to know more about the HPC Cloud, then try also the additional exercises in `extras`.
