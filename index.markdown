@@ -68,6 +68,8 @@ layout: default
 
 ## Tutorials
 * [Surfcursus - 15 Oct 2015](surfcursus-2015-Oct-15)
+  * [Surfcursus - Part A](surfcursus-part-A-2015-Oct-15)
+  * [Surfcursus - Part B](surfcursus-part-B-2015-Oct-15)
 
 ## Service implementation
 * [Available resources](resources-available)
