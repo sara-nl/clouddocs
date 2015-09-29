@@ -211,6 +211,7 @@ Having to connect to the VM via the VNC console on the web UI is somewhat tediou
 You should now be able to connect to your VM using a Remote Desktop client.
 
 ---
+
 ## Appendix: Alternative CPU topology configuration
 
 In the _Prepare your VM for production_ section, we wrote a way to configure your VM so that Windows will understand what to do with the cores the VM has available. However, some users have reported that the following helped them instead:
