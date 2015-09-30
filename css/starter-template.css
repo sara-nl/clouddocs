@@ -8,3 +8,11 @@ body {
 img {
   max-width: 100%;
 }
+#navbar .searchbox {
+  padding-top: 12px;
+  padding-right: 15px;
+  float: right;
+}
+.searchbox {
+  display: none;
+}

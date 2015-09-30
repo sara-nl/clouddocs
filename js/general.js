@@ -35,5 +35,11 @@
     // And set the right href to the links
     $('a.edit').attr( 'href', githubBaseEditURL + editLocation + '.markdown' ).attr( 'style', '' );
     $('a.comments').attr( 'href', 'mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments%20on%20page:%20' + encodeURIComponent( editLocation ) );
+
+    // Now enable the search bars
+    $('.searchbutton').on( 'click', function() {
+      location.assign( 'https://www.google.nl/search?q=site%3A' + encodeURIComponent( location.hostname ) + '+' + encodeURIComponent( $('.searchfield', $(this).parents('.searchbox').first() ).val() ) );
+    } );
+    $('.searchbox').show();
   } );
 })();
