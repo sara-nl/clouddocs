@@ -23,7 +23,7 @@ The following instructions explain how to use one of their prepared images to (a
  * Click on the _Advanced options_ dropdown area. There, you must fill in:
   * In _Device prefix_, type `vd`
   * In _Driver_, type `qcow2`
-1. **On the HPC Cloud UI:** Click on the green _Create_ button at the bottom of the form, and an `image` with the name you wrote on the form will appear on the images table, in status LOCKED. It will remain in that status until the UI has finished copying the file from Fedora's servers to the new HPC Cloud. Then it will change to READY.
+1. **On the HPC Cloud UI:** Click on the green _Create_ button at the bottom of the form, and an `image` with the name you wrote on the form will appear on the images table, in status LOCKED. It will remain in that status until the UI has finished copying the file from Fedora's servers to the HPC Cloud. Then it will change to READY.
 
 ## Make a `template` using that `image`
 
