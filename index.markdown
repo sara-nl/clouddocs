@@ -8,10 +8,7 @@ layout: default
 > This _wiki_ collects the documentation for the **new HPC Cloud** at SURFsara. The documentation pages here are heavily under construction and you can expect frequent changes.  We welcome your comments or corrections at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments) or see the bottom of this page on how to contribute directly to help us improve the documentation.  
 
 
-## Migrating from the old HPC Cloud
-* [Replacing the VirDir](replacing-virdir)
-* [Migration guide - Run your old HPC Cloud images on the the new HPC Cloud](vm-migration-guide)
-* [Migration guide - Transfer your old HPC Cloud data on the the new HPC Cloud](data-migration)
+
 
 ## Basics
 - [Introduction to HPC Cloud](introduction-to-hpc-cloud)  
