@@ -11,6 +11,7 @@ layout: default
 * [Hands-on](#hands-on) <br>
   * [Surfcursus - Part A](surfcursus-part-A-2015-Oct-15)
   * [Surfcursus - Part B](surfcursus-part-B-2015-Oct-15)
+  * [Surfcursus - Extras](surfcursus-extras-2015-Oct-15)
 * [Presentations](#presentations) <br>
 
 ## <a name="general"></a>General Information 
@@ -36,7 +37,7 @@ This particular course aims to introduce SURF employees to the HPC Cloud by prov
 
 ## <a name="preparation"></a>Preparation
 
-Participants should bring a laptop that is Internet connected and has a functioning browser. Prior experience in [Linux commands](http://cli.learncodethehardway.org/book/) will help but is not required. 
+Participants should bring a laptop that is Internet connected and has a functioning browser. Prior experience in [Linux commands](http://cli.learncodethehardway.org/book/) will help but is not a prerequisite. 
 
 So what you need for this tutorial:
 
@@ -51,7 +52,7 @@ So what you need for this tutorial:
   * Windows users: install Xming from [here](http://sourceforge.net/projects/xming/).
  
 ## <a name="hands-on"></a> Hands-on
-The hands-on tutorial has two parts. The exercises in part A will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood the part A, then continue to part B with more `advanced` examples on the HPC Cloud. If you manage to finish both part A & B and wish to know more about the HPC Cloud, then try also the additional exercises in `extras`.
+The hands-on tutorial has two parts. The exercises in part A will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood part A, then continue to part B with more `advanced` examples on the HPC Cloud. If you manage to finish both part A & B and wish to know more, try also the additional exercises in `extras`.
 
   * [Surfcursus - Part A](surfcursus-part-A-2015-Oct-15)
   * [Surfcursus - Part B](surfcursus-part-B-2015-Oct-15)
