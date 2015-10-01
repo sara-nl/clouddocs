@@ -7,7 +7,7 @@ layout: default
 # SURFcursus - 15 Oct 2015
 
 * [General Information](#general) <br>
-* [Prepare your laptop](#preparation) <br>
+* [Preparation](#preparation) <br>
 * [Hands-on](#hands-on) <br>
   * [Surfcursus - Part A](surfcursus-part-A-2015-Oct-15)
   * [Surfcursus - Part B](surfcursus-part-B-2015-Oct-15)
@@ -34,9 +34,11 @@ This particular course aims to introduce SURF employees to the HPC Cloud by prov
 15:30 Borrel
 16:00 End  
 
-## <a name="preparation"></a>Prepare your laptop 
+## <a name="preparation"></a>Preparation
 
-What you need for this tutorial:
+Participants should bring a laptop that is Internet connected and has a functioning browser. Prior experience in [Linux commands](http://cli.learncodethehardway.org/book/) will help but is not required. 
+
+So what you need for this tutorial:
 
 * A computer with full Internet access.
 * A browser (Chrome or Firefox will do nicely).
