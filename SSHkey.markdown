@@ -7,15 +7,22 @@ layout: default
 
 The mechanism to allow connecting with SSH private/public key pairs is already configured (and recommended) on the appliances you can get from the AppMarket. Therefore, you need to have (otherwise, generate) a working private/public key pair on your laptop in order to be able to connect to a VM created from the AppMarket.
 
-# Generate a Secure Shell (SSH) key on Linux or MacOS
+# Generate a Secure Shell (SSH) key on Linux or MacOS or Windows (GitBash)
+
+To apply the following instructions you need a terminal. Linux and Mac users have one installed by default. Windows users can download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between `Git-XXX-32-bit.exe` or `Git-XXX-64-bit.exe`. For Windows users with PuttyGen, see the instructions in the next section.
 
 ## Check if an SSH key already exists
 
-The first step is to check if you have already a SSH key. The default location is ~/.ssh/id_rsa for the private key and  ~/.ssh/id_rsa.pub for your public key. 
+The first step is to check if you have already a SSH key. Start a terminal (in Mac/Linux) or GitBas (in Windows). The default location is ~/.ssh/id_rsa for the private key and  ~/.ssh/id_rsa.pub for your public key. 
 
-To check use ls `ls -l  ~/.ssh/`
+To check use ls 
+
+```sh
+ls -l  ~/.ssh/
+```
 
 For example, this user already has a key available and could jump to section "Copy your SSH key"
+
 ```bash
 $ ls -l  ~/.ssh/
 total 72
@@ -23,7 +30,7 @@ total 72
 -rw-------+ 1 user  staff   1679 Nov 25  2014 id_rsa
 -rw-r--r--+ 1 user  staff    409 Nov 25  2014 id_rsa.pub
 -rw-r--r--+ 1 user  staff  17351 Jun 30 12:13 known_hosts
-````
+```
 
 ## Generate an SSH key
 
@@ -84,7 +91,7 @@ pbcopy < ~/.ssh/id_rsa.pub
 ```
 After copying you can paste the public key into OpenNebula
 
-# Generate a Secure Shell (SSH) key on Windows
+# Generate a Secure Shell (SSH) key on Windows with PuTTYgen
 
 A way to generate a SSH key under Windows is with help of PutTTY-gen. PuTTYgen can be downloaded at http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html or directly downloaded from http://the.earth.li/~sgtatham/putty/latest/x86/puttygen.exe .
 
