@@ -16,11 +16,12 @@ layout: default
 
 * Pick the **`demo account`** account that corresponds to your team from [here](https://drive.google.com/open?id=1zUVq5VrZLHhoFs3YCwDGGeDGLXDYBhF7dRFPCDDIppg). 
   * The password will be provided by the workshop organizers.  
-  * The accounts will remain active until `23rd of October`.*
+  * The accounts will remain active until `23rd of October`.
 
 The UI (short for User Interface) is the web site that allows you to manage your virtual machines in the HPC Cloud.  
-* Open the UI page in your browser: https://ui.hpccloud.surfsara.nl/
-* Log in with the username and password assigned to your team. If you don't have a demo account yet, go back to [prepare your laptop](#preparation) section.
+
+* Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/)
+* Log in with the username and password assigned to your team (demo account).
 
 > **NOTE:** 
 > 
@@ -54,8 +55,23 @@ In general, *root* users can access a machine with a password. However, password
 
 Follow the steps below to add an ssh key to your profile: 
 
-* First [Generate an SSH key](SSHkey). This will generate two files: a public and a private key. The private key will stay safe in your laptop, the public key will be copied to the [UI](https://ui.hpccloud.surfsara.nl/).    
-If you already have an SSH key stored in your laptop, you may skip this step.
+* First we will generate an `SSH key` pair. 
+  * Check if you already have an SSH key pair stored in your laptop. Start a terminal (in Mac/Linux) or GitBash (in Windows) and type:
+
+```sh
+ls -l ~/.ssh/
+```
+
+  * If you see the files `id_rsa.pub` and `id_rsa`, continue to the next step. If not, then generate a new SSH key pair by typing the following command (you may leave empty all the fields that show):
+  
+```sh
+ssh-keygen -t rsa -b 4096
+```
+
+This will generate two files: a public and a private key. The private key will stay safe in your laptop, the public key will be copied to the [UI](https://ui.hpccloud.surfsara.nl/).  
+
+If you have problems in any of the steps above, have a look in the detailed guide to [Generate an SSH key](SSHkey).
+  
 * Copy the contents of your **public** ssh key on your laptop (file ends in `.pub`).
 * Go to your user profile by selecting the *buddy* icon on the top-right of the screen and select Settings. A dialogue pops up. In the dialogue, go to the Info page.
 * Locate the section `Public SSH Key`, and click on the blue edit icon. Paste the **public** key contents.
