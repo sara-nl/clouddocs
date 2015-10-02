@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # PuTTY tools
 
 ## Generate SSH key on Windows with PuTTYgen
