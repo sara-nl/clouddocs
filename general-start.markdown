@@ -149,7 +149,7 @@ After you have added your public key to your user profile, you should be able to
 
 You will need to find the IP address of your virtual machine, first. The IP address of your virtual machine is shown on in the _IPs_ column from the virtual machines list, under the _Virtual Resources_ tab of the UI. 
 
-If you use a Linux or a Mac OSX operating system, open a terminal window, and type
+If you use a Linux or a Mac OSX or a Windows (GitBash) operating system, open a terminal window, and type
 
 ```bash
   ssh root@145.100.mmm.nnn
@@ -171,7 +171,7 @@ where you should replace _mmm_ and _nnn_ to match the IP address of your virtual
   ssh -i ~/.ssh/id_rsa root@145.100.59.30
 ``` 
 
-If you use a Windows operating system, you should have imported your public and private key pair into _Putty_ or other terminal program. Use the IP of your virtual machine as host, use _root_ as username, and click _Connect_ (see instructions [here](access-your-VM#from-a-windows-client)).
+If you use a Windows operating system and _Putty_ use the IP of your virtual machine as host, use _root_ as username, and click _Connect_ (see instructions [here](putty-tools#ssh-access-from-a-windows-putty-client)).
 
 If there were no errors, and if your firewalls allow making remote connections, you should now be logged in on your virtual machine, as _root_. 
 
