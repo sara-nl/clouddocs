@@ -41,11 +41,11 @@ You can predict the host name: `${vmname}.${projectname}.vm.surfsara.nl`
 
 ## SSH access
 
-### From a Linux or MacOS  or Window (GitBash) client 
+### From a Linux or MacOS  or Windows (GitBash) client 
 
 * MacOS and Linux come with built-in SSH clients. To use these, open a terminal.
 * Windows users can download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between `Git-XXX-32-bit.exe` or `Git-XXX-64-bit.exe`. 
-  * For Windows users that want to use Putty, see the instructions for [Putty tools](putty-tools#ssh-access-from-a-windows-putty-client).
+  * For Windows users that want to use Putty, see the instructions for [Putty tools](putty-tools).
 
 #### Terminal only
 
