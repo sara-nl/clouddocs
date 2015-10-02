@@ -41,9 +41,11 @@ You can predict the host name: `${vmname}.${projectname}.vm.surfsara.nl`
 
 ## SSH access
 
-### From a Linux or MacOS client
+### From a Linux or MacOS  or Window (GitBash) client 
 
-MacOS and Linux come with built-in SSH clients. To use these, open a terminal.
+* MacOS and Linux come with built-in SSH clients. To use these, open a terminal.
+* Windows users can download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between `Git-XXX-32-bit.exe` or `Git-XXX-64-bit.exe`. 
+  * For Windows users that want to use Putty, see the instructions for [Putty tools](putty-tools#generate-ssh-key-on-windows-with-puttygen).
 
 #### Terminal only
 
@@ -67,33 +69,10 @@ ssh -X username@vmname.projectname-institute.vm.surfsara.nl
 >
 >You might need to install additional software on MacOS when using the `-X` flag.
 
-### From a Windows client
-
-#### Terminal only
-A well known SSH client for Windows is PuTTY. 
-
->**Note:**
->You can download Putty [here](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html). 
->
->This client only works with a terminal and does **not** support a graphical user interface out of the box.
-
-To login to your VM:
-1. start Putty  
-2. Fill in the Host Name (or IP address) the Host Name (or IP address) e.g. vmname.projectname-institute.vm.surfsara.nl or 145.100.XX.XX  
-3. Select _Connection ->Data_ on the left hand panel  
-4. Fill in your user name at _Auto-login username_ (for the first time you start a VM this should be _root_ )  
-5. Select _Connection->SSH->Auth_ on the left-hand panel  
-6. Select your private key by selecting the _browse_ button and navigate to your private key (with the `.ppk` extension)  
-7. Select _Session_ on the left-hand panel  
-8. Save the session by giving it a name under _saved sessions_ and click on the _save_ button.  
-9. Click the _Open_ button.  
-10. In case you have set a passphrase on your certificate, you will have to fill it in.  
-11. Now you are logged on to your VM  
-
 >**Note:**
 >The first time you start a session to a VM a warning is given that the machine is not cached. Select _yes_ to continue the session.
 
-#### Terminal with Graphical User Interface
+#### Terminal with Graphical User Interface for Windows only
 If you want to have graphical programs running on the VM whose windows are displayed on your local computer and you are running Windows on your local computer, then you are advised to have a look at Mobaxterm, an application you can read about more at: [http://mobaxterm.mobatek.net/](http://mobaxterm.mobatek.net/)
 
 ## Getting a Remote Desktop on a Linux VM
