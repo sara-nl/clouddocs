@@ -67,7 +67,7 @@ ssh -X username@vmname.projectname-institute.vm.surfsara.nl
 
 >**Note:**
 >
->You might need to install additional software on MacOS when using the `-X` flag.
+>You might need to install additional software on MacOS or Windows when using the `-X` flag.
 
 >**Note:**
 >The first time you start a session to a VM a warning is given that the machine is not cached. Select _yes_ to continue the session.
