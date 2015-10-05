@@ -79,53 +79,7 @@ If you want to have graphical programs running on the VM whose windows are displ
 
 With Xrdp you can remotely log in on a virtual machine, giving you a full virtual desktop. Moreover, you can close the RDP window and pick up the session later, allowing you to continue to work on a graphical desktop while switching off your own local computer.
 
-First, you need to set up your Linux VM, using the following steps.
-
->**Note:**
->
->The following steps describe the procedure for setting up Xrdp in CentOS 6. Other distributions may require some variation, but the guidelines should remain analogous.
-
-* **Open your firewall:** On your VM, modify the firewall settings to allow new inbound connections on port 3389, for example by adding the following line to /etc/sysconfig/iptables:
-
-```bash
-  -A INPUT -m state --state NEW -m tcp -p tcp --dport 3389 -j ACCEPT
-```
-
- reload the firewall configuration, using
-
-```bash
-  service iptables reload
-```
-
-* **Install the Xrdp server:** In our distribution, install packages _tigervnc-server_ and _xrdp_ (on Centos 6.5 you need first to install the EPEL repository):
-
-```bash
-  yum install -y tigervnc-server xrdp
-```
-
-* **Configure the Xrdp service:** make the start at boot time, and start it for this session already:
-
-```bash
-  chkconfig --levels 5 xrdp on
-  service xrdp start
-```
-
->**Note:**
->
->On newer Fedora-based systems, use
-
-```bash
-  systemctl enable xrdp
-  systemctl start xrdp
-  systemctl enable xrdp-sesman
-  systemctl start xrdp-sesman
-```
-
-You can now log in on the virtual machine using RDP. From Windows or Mac OSX, use the _Remote Desktop Connection_ client, sometimes supplied as an additional package to _Microsoft Office_. On a Linux desktop, use _Rdesktop_. 
-
->**Note:**
->
->Make sure to set the display to _millions of colors_ (Mac OsX) or _high color (16-bits)_ (Windows), because _thousands of colors_ (Mac OsX) or _high color (15-bits)_ (Windows) will give you a non-descriptive error.
+Further instructions can be found at [ X-server Remote Desktop Protocol (Xrdp)](xrdp)
 
 
 ### Built-in VNC client
