@@ -62,12 +62,12 @@ Now you connect to your machine. However, Ubuntu default settings are to create 
   username=ask
   password=ask
   ip=127.0.0.1
-  port=5912
+  port=ask5910
 ```
 
 * Log into your VM with RDP and use port "-1" for the first session and start your virtual desktop.
 * Exit the RDP client (the VM keeps running and keeps resuming resources)
-* Log in again and use port 5912 (default value) and you will continue the previous session.
+* Log in again and use port 5910 (default value) and you will continue the previous session.
 
 
 
