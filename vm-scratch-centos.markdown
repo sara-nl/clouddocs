@@ -72,9 +72,9 @@ Now that we have all components ready in the UI, we are ready to bring them toge
 4. **On the UI:** On the same _Create Template_ screen, on the _Network_ tab:
   * for the _Interface 0_ (on the left column of the screen), choose the **internet** `network` (from the table on the right of the screen)
   * click on the _+ Add another nic_ button (that will make a new _Interface 1_), and then choose your internal `network` (it will be the only other `network ` that you can see on the right that is not called **internet**)
-5.  **On the UI:** On the same _Create Template_ screen, on the _OS Booting_ tab:
-  * for the _1st Boot_ field, choose _CDROM_
-  * for the _2nd Boot_ field, choose _HD_
+5.  **On the UI:** On the same _Create Template_ screen, on the _OS Booting_ tab (note! use the following boot order, otherwise, changes are not saved due to a bug in opennebula):
+  * for the _1st Boot_ field, **choose _HD_**
+  * for the _2nd Boot_ field, **choose _CDROM_** 
 6.  **On the UI:** On the same _Create Template_ screen, on the _Input/Output_ tab:
   * click on the _VNC_ radio button
   * on the _Inputs group_, choose _Tablet_ on the first dropdown menu, then _USB_ on the second dropdown menu and finally click on the _Add_ button. A new entry will appear below those dropdowns with what you just selected.
@@ -102,11 +102,13 @@ Once your freshly installed CentOS starts, we will configure your VM so that it 
 
 1. **On the VM:** Open a file explorer, and browse the _CONTEXT_ CD-ROM. You should be able to see at least 2 files on that CD-ROM. One of them should be the one we manually added to the _Context_ tab of the `template` some steps ago, called: _one-context-4.14.1.rpm_.
 2. **On the VM:** Open a terminal and mount the _CONTEXT_ CD-ROM: 
+
 ```sh
 mount -t iso9660 -L CONTEXT -o ro /mnt
 ```
  
 3. **On the VM:** On the same terminal, install the .rpm file: 
+
 ```sh
 yum install /mnt/*.rpm
 ```
