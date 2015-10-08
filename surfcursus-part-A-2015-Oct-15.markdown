@@ -6,6 +6,8 @@ layout: default
 
 # SURFcursus - part A
 
+This is part one of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-15).
+
 * [Hands-on part A](#hands-on) <br>
   * [1. Access the user interface](#1.-Access-the-user-interface) <br>
   * [2. My first VM](#2.-My-first-VM) <br>
