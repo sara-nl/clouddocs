@@ -109,8 +109,9 @@ Let's start.
   * Template Name: **Cursus Template**.
 * Finally, click the *Import* button. This will start importing the appliance from the AppMarket. You can close this window.
 
-> **NOTE:**
-You can verify that the process is complete by inspecting the *Images* tab under the `Virtual Resources` at the menu of the UI. You should see your new image there.
+> **Food for brain:**
+>
+> You can verify that the process is complete by inspecting the *Images* tab under the `Virtual Resources` at the menu of the UI. You should see your new image there. What is the STATUS of the image? Refresh.
 
 #### Edit the Template  
 
@@ -193,7 +194,10 @@ This means that you are logged in successfully to your Virtual Machine!
 exit
 ```
 
-* Login again. *Is your file still there?* 
+> **Food for brain:**
+>
+> Login to your VM again. *Is your file still there?* 
+
  
 #### First shut-down
 
@@ -202,11 +206,13 @@ Let's shutdown your first VM. Anytime the VM is idle, you should shut it down to
 * Tick the box to the left on the row with your VM.
 * At the upper right corner of the screen, under the dust bin drop-down button, unfold.
 * Click `Shutdown`. 
-* Refresh the Virtual Machines list (by clicking on the two arrows chasing each other next to + button) until your VM is gone. 
+* Refresh the Virtual Machines list (by clicking on the two arrows chasing each other next to + button) until your VM is gone. You can start a new VM from your existing template and image any time.
 
-> **NOTE:**
+> **Food for brain:**
 >
->That was the shutdown. Once the operation is finished, your VM will be removed from the display and its resources freed. You can start a new VM from your existing template and image any time.
+> Start your VM again. *Is your file still there?* 
+
+* Once your operations are finished, shutdown the VM. It will be removed from the display and its resources will be freed. 
 
 ### Next: part B
 Now that you completed the Tutorial [SURFcursus - part A](surfcursus-part-A-2015-Oct-15), please continue with Tutorial [SURFcursus - part B](surfcursus-part-B-2015-Oct-15).
