@@ -169,7 +169,15 @@ The way to login into your virtual machine is the ssh keys that you [stored in y
 * First find the IP address of your virtual machine.  
 Your VM IP address is shown on in the `IPs` column from the virtual machines list, under the Virtual Resources tab of the UI.
 
-* Start a terminal (in Mac/Linux) or GitBash (in Windows) and type:
+* Start a terminal (in Mac/Linux) or GitBash (in Windows).
+
+* If you use GitBash (in Windows) type the following command. If not, skip it:
+
+```sh
+export DISPLAY=localhost:0.0
+```
+
+* Connect to your VM, type:
 
 ```sh
 ssh -X root@145.100.59.102 # replace with your IP address!
