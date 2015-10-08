@@ -211,6 +211,7 @@ Let's shutdown your first VM. Anytime the VM is idle, you should shut it down to
 
 > **Food for brain:**
 >
+> Check and refresh the "Images" and "Templates" tabs. *Is your image and your template still there?*
 > Start your VM again. *Is your file still there?* 
 
 * Once your operations are finished, shutdown the VM. It will be removed from the display and its resources will be freed. 
