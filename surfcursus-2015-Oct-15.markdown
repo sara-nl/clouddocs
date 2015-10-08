@@ -52,7 +52,9 @@ So what you need for this tutorial:
   * Windows users: install Xming from [here](http://sourceforge.net/projects/xming/).
  
 ## <a name="hands-on"></a> Hands-on
-The hands-on tutorial has two parts. The exercises in part A will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood part A, then continue to part B with more `advanced` examples on the HPC Cloud. If you manage to finish both part A & B and wish to know more, try also the additional exercises in `extras`.
+The hands-on tutorial has two parts. The exercises in part A will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood part A, then continue to part B with more `advanced` examples on the HPC Cloud. 
+
+If you manage to finish both part A & B and wish to know more, try also the additional exercises in `extras`.
 
   * [Surfcursus - Part A](surfcursus-part-A-2015-Oct-15)
   * [Surfcursus - Part B](surfcursus-part-B-2015-Oct-15)
