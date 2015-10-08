@@ -2,8 +2,6 @@
 layout: default
 ---
 
-⚠ **WARNING** under construction
-
 # SURFcursus - part A
 
 This is part one of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-15).
