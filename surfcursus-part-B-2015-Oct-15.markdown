@@ -6,6 +6,9 @@ layout: default
 
 # SURFcursus - part B
 
+This is part one of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-15).  
+**If you have not completed (and understood)** [SURFcursus - part A](surfcursus-part-A-2015-Oct-15), please do so first.
+
 * [Hands-on part B](#hands-on) <br>
   * [3. Persistence](#3.-Persistence) <br>
   * [4. Scale-up to a multicore VM](#4.-Scale-up-to-a-multicore-VM) <br>
