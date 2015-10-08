@@ -70,11 +70,13 @@ ls -l ~/.ssh/
 ssh-keygen -t rsa -b 4096
 ```
 
-This will generate two files: a public and a private key. The private key will stay safe in your laptop, the public key will be copied to the [UI](https://ui.hpccloud.surfsara.nl/).  
+This will generate two files: a public key (`id_rsa.pub`) and a private key (`id_rsa`). Do you see the files in your ~/.ssh/ directory?  
 
 If you have problems in any of the steps above, have a look in the detailed guide to [Generate an SSH key](SSHkey).
-  
-* Copy the contents of your **public** ssh key on your laptop (file ends in `.pub`).
+
+The private key will stay safe in your laptop, the public key will be copied to the [UI](https://ui.hpccloud.surfsara.nl/): 
+
+* Open your **public** ssh key (the file ends in `.pub`) and copy the content.
 * Go to your user profile by selecting the *buddy* icon on the top-right of the screen and select Settings. A dialogue pops up. In the dialogue, go to the Info page.
 * Locate the section `Public SSH Key`, and click on the blue edit icon. Paste the **public** key contents.
 * Close the window. Your public key is automatically stored in your profile.
@@ -87,10 +89,13 @@ If you have problems in any of the steps above, have a look in the detailed guid
 ### <a name="2.-My-first-VM"></a> 2. My first VM
 
 To make starting a virtual machine easier, we provide the `AppMarket`, which has appliances on available for you to pick and use. We will use the *AppMarket* to build a VM with the following steps:
+
 >
 * Import a pre-made disk or `Image` with a Linux Operating system.
 * Edit the VM description or `Template` to give your VM the shape you want. 
 * Instantiate the *Template* to run your first `Virtual Machine`.
+
+Let's start.
 
 #### Import pre-made image from the AppMarket
 
@@ -119,7 +124,6 @@ Edit the created *Template* by following these steps:
 * Browse through the different options (i.e. General, Storage, Network). Leave the default values, **except** for the following:  
   * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Click once on **Name: internet** row. You will see the feedback below:  
 ![youselectednetwork](images/youselectednetwork.png)
-  * Select the `OS Booting` tab and then *Features*. Set: **ACPI to "Yes"** and **Localtime to "No"**.
 * Click *Update* on top to save your changes.
 
 #### Start the VM
@@ -128,7 +132,7 @@ A template is a description of a virtual machine. The template we have been edit
 
 * Go to the *Virtual Machines* section. This displays an overview of all running VMs. This list is empty for now.
 * Click on the *green plus sign*.
-* Give your virtual machine a name: **My-First-VM** (no spaces).  
+* Give your virtual machine a name: **My First VM**.  
 This name is also used as the host name of your machine. 
 * Number of instances: **1**.
 * Select the template we just edited. Since this is your first template, there is only one item in the list. Select the *Cursus Template*. You will see the feedback below:  
@@ -165,22 +169,13 @@ The way to login in as *root* on your virtual machine is using the ssh keys that
 * First find the IP address of your virtual machine.  
 Your VM IP address is shown on in the `IPs` column from the virtual machines list, under the Virtual Resources tab of the UI.
 
-#### Login from a UNIX system
+* Start a terminal (in Mac/Linux) or GitBash (in Windows) and type:
 
-If you use a Linux or a Mac OSX operating system, open a terminal window, and type  
-**on your laptop**:  
 ```sh
-ssh -X -i ~/.ssh/id_rsa root@145.100.59.102 # replace id_rsa and IP address!
+ssh -X root@145.100.59.102 # replace IP address!
 ```
 
-The `-X` flag connects your X11 display to the VM so that the VM can open a window on your laptop.
-
-#### Login from Windows
-
-If you use a Windows operating system, open PuTTY, and fill in (see [here](access-your-VM#from-a-windows-client) for detailed instructions):
-* Host Name: root@145.100.59.102 *-- replace IP address!* 
-* SSH key: *-- browse to the location where you saved the private key.*
-* Enable X11 display so that the VM can open a window on your laptop: Unfold Connection -> SSH -> X11 -> tick the box **Enable x11 forwarding**.
+The `-X` flag connects your display to the VM so that the VM can open a graphical window on your laptop.
 
 #### First login
 
@@ -202,7 +197,7 @@ exit
  
 #### First shut-down
 
-Let's shutdown your first VM and stop consuming quotas.
+Let's shutdown your first VM. Anytime the VM is idle, you should shut it down to stop consuming unused resources.
 
 * Tick the box to the left on the row with your VM.
 * At the upper right corner of the screen, under the dust bin drop-down button, unfold.
@@ -213,3 +208,5 @@ Let's shutdown your first VM and stop consuming quotas.
 >
 >That was the shutdown. Once the operation is finished, your VM will be removed from the display and its resources freed. You can start a new VM from your existing template and image any time.
 
+### Next: part B
+Now that you completed the Tutorial [SURFcursus - part A](surfcursus-part-A-2015-Oct-15), please continue with Tutorial [SURFcursus - part B](surfcursus-part-B-2015-Oct-15).
