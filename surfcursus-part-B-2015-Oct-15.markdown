@@ -6,7 +6,7 @@ layout: default
 
 # SURFcursus - part B
 
-This is part one of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-15).  
+This is part two of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-15).  
 **If you have not completed (and understood)** [SURFcursus - part A](surfcursus-part-A-2015-Oct-15), please do so first.
 
 * [Hands-on part B](#hands-on) <br>
@@ -17,28 +17,28 @@ This is part one of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-
 
 ### <a name="3.-Persistence"></a> 3. Persistence
 
-Disk images can be "persistent" or not and you can switch that flag.
+Disk images can be `persistent` or not and you can switch that flag.
 
-*What does "persistent" mean?*
-- changes by the VM are copied back to the original disk image
-- if a VM runs with a persistent disk, you cannot launch a second VM using that disk
+* What does `persistent` mean?
+  *  changes by the VM are copied back to the original disk image
+  *  if a VM runs with a persistent disk, you cannot launch a second VM using that disk
 
-*What does "non-persistent" mean?*
-- changes by a VM are lost at shutdown and not copied back to the original disk image
-- it possible to run multiple VMs using the same non-persistent disk
+* What does `non-persistent` mean?
+  * changes by a VM are lost at shutdown and not copied back to the original disk image
+  * it possible to run multiple VMs using the same non-persistent disk
 
-> **NOTE:**
+> **Food for brain:**
 >
-> The *AppMarket* image we created was set to **non-persistent** by default.
+> Was the first image that you imported `persistent` or not?
 
 #### Make your image persistent
-* Go to *Images* tab under Virtual Resources and click on your *Cursus Image*
-* Under the Information section, find the "Persistent" entry. It says "no".
+* Go to *Images* tab under Virtual Resources and click on the **Cursus Image**.
+* Under the Information section, find the *Persistent* entry. It says "no".
 * Switch the value to "yes".
 
 #### Deploy a persistent VM
-* Start your machine again. 
-* Login and check your changes made during the previous run. *Are your files still there?* 
+* Start your virtual machine again. 
+* Login and check your changes made during the previous run. 
 
 > During the previous run the VM's disk was "non-persistent".
 
@@ -183,6 +183,8 @@ taskset -c 0 ./startclient.sh pineapple grape mango # use your server names. duh
 ```
 
 * Observe the performance. *What is the gain?*
+
+
 ### <a name="5.-Wrap-up"></a> 5. Wrap up
 
 * Play around, make your checks and don't forget to [shut down](#first-shut-down) all the running VMs when you are finished.
