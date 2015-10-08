@@ -126,21 +126,22 @@ yum install /mnt/*.rpm
 
 Once you have installed and configured your CentOS, you do not need the installation media or `file`s around any more. We will make a new `template` to use only the disk that we need.
 
-1. **On the UI:** Begin creating a new `template` the usual way.
-2. **On the UI:** On the _Create Template_ screen, on the _General_ tab:
+1. **On the UI:** First change the image where you installed the OS from `datablock` to `OS`. From the `images` tab, click on the **centos_drive** row and then switch *Type: `OS`*.
+2. **On the UI:** Begin creating a new `template` the usual way.
+3. **On the UI:** On the _Create Template_ screen, on the _General_ tab:
   * type in a meaningful _Name_ (e.g.: **my_research_run**)
   * give it as much memory and as many CPU's as you need
-3. **On the UI:** On the same _Create Template_ screen, on the _Storage_ tab:
+4. **On the UI:** On the same _Create Template_ screen, on the _Storage_ tab:
   * for the _Disk 0_ (on the left column of the screen), choose the **centos_drive** `image` (from the table on the right of the screen) that you created as the first `image` of this guide, and where you have installed CentOS
-4. **On the UI:** On the same _Create Template_ screen, on the _Network_ tab:
+5. **On the UI:** On the same _Create Template_ screen, on the _Network_ tab:
   * for the _Interface 0_ (on the left column of the screen), choose the **internet** `network` (from the table on the right of the screen)
   * click on the _+ Add another nic_ button (that will make a new _Interface 1_), and then choose your internal `network` (it will be the only other `network ` that you can see on the right that is not called **internet**)
-5.  **On the UI:** On the same _Create Template_ screen, on the _Input/Output_ tab:
+6.  **On the UI:** On the same _Create Template_ screen, on the _Input/Output_ tab:
   * click on the _VNC_ radio button
   * on the _Inputs_ group, choose _Tablet_ on the first dropdown menu, then _USB_ on the second dropdown menu and finally click on the _Add_ button. A new entry will appear below those dropdowns with what you just selected.
-6.  **On the UI:** On the same _Create Template_ screen, on the _OS Booting_ tab, you want to set some _Features_ (click on _Features_ on the left column):
+7.  **On the UI:** On the same _Create Template_ screen, on the _OS Booting_ tab, you want to set some _Features_ (click on _Features_ on the left column):
   * set in _ACPI_: _yes_
   * set in _Localtime_: _no_
-7. **On the UI:** We are ready defining the `template`, so click on the green _Create_ button at the top of the screen. A new `template` will show on the _Templates_ list.
+8. **On the UI:** We are ready defining the `template`, so click on the green _Create_ button at the top of the screen. A new `template` will show on the _Templates_ list.
 
 From now on, you will use this `template` to run your VM.
