@@ -42,7 +42,7 @@ Disk images can be `persistent` or not and you can switch that flag.
 
 > During the previous run the VM's disk was "non-persistent".
 
-#### Install & Run Mandelbrot
+#### Install and Run Mandelbrot
 
 The disk image is now marked as **persistent**. This means that we can install our software or store data in the VM and make sure that everything will remain in the VM once it is shutdown and re-instantiated.
 
@@ -156,14 +156,15 @@ That was it. From now on you will get a 4-core VM running using the same *Cursus
 > **NOTE:**
 >Your VM's image was (and is) persistent.
 
-* Run the [same example](#install-&-run-mandelbrot) with a single server.
+* Run the [same example](#install-and-run-mandelbrot) with a single server.
 * Start a new terminal and connect to the VM. Type the following command:
 
 ```sh
 ps -eo pid,psr,pcpu,args | sed -n -e '1p' -e '/java/p'
 ```
 
-  This shows the running Java processes and the CPU number on which it runs (column `PSR`).
+This shows the running Java processes and the CPU number on which it runs (column `PSR`).
+
 * Stop server(s) and client.
 * Launch multiple servers on different CPUs:
   * Start new terminals as needed and run variations on the following command:
