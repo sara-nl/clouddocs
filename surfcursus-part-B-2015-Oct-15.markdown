@@ -6,7 +6,7 @@ layout: default
 
 # SURFcursus - part B
 
-This is part two of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-15).  
+This is part B of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-15).  
 **If you have not completed (and understood)** [SURFcursus - part A](surfcursus-part-A-2015-Oct-15), please do so first.
 
 * [Hands-on part B](#hands-on) <br>
@@ -38,7 +38,7 @@ Disk images can be `persistent` or not and you can switch that flag.
 
 #### Deploy a persistent VM
 * Start your virtual machine again. 
-* Login and check your changes made during the previous run. 
+* Login and check the files you made during the previous run. 
 
 > During the previous run the VM's disk was "non-persistent".
 
@@ -50,20 +50,14 @@ Let's install and run an example to investigate the HPC Cloud capabilities. The 
 
 >**NOTE:**
 >
-> For the rest of the tutorial we will omit `root@surfsara-Desktop:~#` prompt in the instructions, in order to allow you copy-paste the commands directly in your terminal.
+> For the rest of the tutorial we will omit `ubuntu@ip-145-100-59-197:~$` prompt in the instructions, in order to allow you copy-paste the commands directly in your terminal.
 
 * Login to the running VM again.
-* First update your system:
-
-```sh
-apt-get update
-apt-get upgrade
-```
 
 * Install *java* as it is required for running the example (optionally try `java -version` to verify that is it is missing):
 
 ```sh
-apt-get install default-jre
+sudo apt-get install default-jre
 ```
 
 * Download the example: 
@@ -83,7 +77,7 @@ tar xvzf ../mandelbrot-rmi-bin.tgz
 ```
 
 * Launch the first server that will pose as the RMI registry with an arbitrary name argument, e.g. _apple_:
-  * Start a new local terminal and log in to your virtual machine, see [above](#login-to-the-vm).
+  * Start a new local terminal (Linux or Mac users) or Gitbash (Windows) and log in to your virtual machine, see [above](#login-to-the-vm).
   * run the following commands:
 
 ```sh
@@ -129,6 +123,7 @@ Repeat for _coconut_ or make up your own names.
 ```sh
 ./startclient.sh apple banana coconut # or your names
 ```
+
 Observe the performance when adding extra servers.
 
 * Before moving to the next exercise, *remember to Shutdown your VM*.
@@ -161,12 +156,13 @@ That was it. From now on you will get a 4-core VM running using the same *Cursus
 > **NOTE:**
 >Your VM's image was (and is) persistent.
 
-* Run the [same example](#install-amp-run-mandelbrot) with a single server.
+* Run the [same example](#install-&-run-mandelbrot) with a single server.
 * Start a new terminal and connect to the VM. Type the following command:
 
 ```sh
 ps -eo pid,psr,pcpu,args | sed -n -e '1p' -e '/java/p'
 ```
+
   This shows the running Java processes and the CPU number on which it runs (column `PSR`).
 * Stop server(s) and client.
 * Launch multiple servers on different CPUs:
@@ -176,6 +172,7 @@ ps -eo pid,psr,pcpu,args | sed -n -e '1p' -e '/java/p'
 cd ~/mandelbrot-rmi
 taskset -c 2 ./startserver.sh mango # replace '2' with the CPU number and 'mango' with your server name
 ```
+
 * Start the client on a separate processor:
 
 ```sh
@@ -187,6 +184,9 @@ taskset -c 0 ./startclient.sh pineapple grape mango # use your server names. duh
 
 ### <a name="5.-Wrap-up"></a> 5. Wrap up
 
-* Play around, make your checks and don't forget to [shut down](#first-shut-down) all the running VMs when you are finished.
+* Play around, make your checks and don't forget to [shut down](surfcursus-part-A-2015-Oct-15#first-shut-down) all the running VMs when you are finished.
 
 >Remember: Your running VMs are consuming quota whether they are doing something useful or are idle.
+
+### Next: Extras
+You have completed the Tutorial [SURFcursus - part B](surfcursus-part-B-2015-Oct-15). If you want more of the HPC Cloud, see [Surfcursus - Extras](surfcursus-extras-2015-Oct-15).
