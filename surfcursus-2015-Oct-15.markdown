@@ -23,13 +23,13 @@ This particular course aims to introduce SURF employees to the HPC Cloud by prov
 **Program**:  
 
 >
->09:45 Welcome & coffee  
-10:00 Presentation in Cloud Computing  
-10:30 Presentation in SURFsara HPC Cloud  
-11:15 HPC Cloud Demo & instructions  
-12:00 Lunch  
-12:45 Hands-on HPC Cloud   
-15:00 Wrap-up & questions    
+>10:15 Welcome & coffee  
+10:30 Presentation in Cloud Computing  
+11:00 Presentation in SURFsara HPC Cloud  
+11:30 HPC Cloud Demo & instructions  
+12:15 Lunch  
+13:00 Hands-on HPC Cloud   
+15:15 Wrap-up & questions    
 15:30 Borrel
 16:00 End  
 
