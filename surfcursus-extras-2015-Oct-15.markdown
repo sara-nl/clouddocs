@@ -10,10 +10,14 @@ This is part one of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-
 **You should have completed (and understood)** [SURFcursus - part A](surfcursus-part-A-2015-Oct-15) and [SURFcursus - part B](surfcursus-part-B-2015-Oct-15),  before trying these extras.
 
 * [Hands-on Extras](#hands-on) <br>
-  * [6. Add a datablock](#6.-Add-a-datablock) <br>
-  * [7. Install a virtual](#7.-Install-a-virtual-Desktop) <br>
+  * [6. Install a virtual Desktop](#6.-Install-a-virtual-Desktop) <br>
+  * [7. Add a datablock](#6.-Add-a-datablock) <br>
 
-### <a name="6.-Add-a-datablock"></a> 6. Add a datablock
+
+### <a name="6.-Install-a-virtual-Desktop"></a> 6. Install a virtual Desktop
+
+
+### <a name="7.-Add-a-datablock"></a> 7. Add a datablock
 
 When you create a disk image, you must choose where it is stored, under the heading `Datastore`. You have the choice between `local_images_ssd` and `ceph`. The best practise to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock`(s). 
 
@@ -81,8 +85,15 @@ mount /dev/vdb /data
 
 >**Food for brain:**
 >
-> Logout and login again. Is your file still in `/data` directory? Shutdown the VM and start it again, do you see your changes on the datablock?
+> Create a file in your in `/data` directory. Logout and login again. Is your file still there? Shutdown the VM and start it again, do you see your changes on the datablock?
+
+* From now on, you can transfr files from e.g. your laptop on the newly created disk. 
+
+>**Food for brain:**
+>
+> Try to copy a file from your laptop to `/data`, e.g with `scp myfile ubuntu@145.100.59.233:/data`. Does it work? Do you have the permissions to do so? 
 
 
-### <a name="7.-Install-a-virtual-Desktop"></a> 7. Install a virtual Desktop
-
+>**Note:**
+>
+> Shut down all the VMs when you are done
