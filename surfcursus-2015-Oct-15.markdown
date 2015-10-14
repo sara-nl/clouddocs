@@ -67,7 +67,8 @@ If you manage to finish both part A & B and wish to know more about the HPC Clou
 * In the terminal that appears, copy and paste the following commands: 
 >
 ```sh
-echo "export DISPLAY=localhost:0.0" >> $HOME/.bashrc` # press enter
+# press enter to submit each command
+echo "export DISPLAY=localhost:0.0" >> $HOME/.bashrc` 
 source $HOME/.bashrc
 ```
 >
