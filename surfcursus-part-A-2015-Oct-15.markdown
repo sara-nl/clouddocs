@@ -15,8 +15,8 @@ This is part A of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-15
 The UI (short for User Interface) is the web site that allows you to manage your `Virtual Machines` (`VM`s) on the HPC Cloud. In this section you will personalise your UI account by following these steps: 
 
 > 
-* Login and change your UI password.  
-* Add an "SSH key" to your profile. This will enable secure access in your VMs.    
+1. Logging in and changing your UI password.  
+1. Adding an "SSH key" to your profile. This will enable secure access in your VMs.    
 
 Let's start.
 
