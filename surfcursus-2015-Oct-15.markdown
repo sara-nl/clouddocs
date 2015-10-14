@@ -62,7 +62,8 @@ If you manage to finish both part A & B and wish to know more about the HPC Clou
 > **NOTE: only for Windows users**
 >
 > For the course purposes you will need to start a graphical window in your laptop that is connected to your HPC Cloud machine. To make this work, you need to adjust the following setting:  
-> * Open GitBash.
+>
+* Open GitBash.
 * In the terminal that appears, copy and paste this command: `echo "export DISPLAY=localhost:0.0" >> $HOME/.bashrc` (press enter).
 * Close the Gitbash window.
 
