@@ -139,21 +139,21 @@ Repeat for _coconut_ or make up your own names.
 
 ### <a name="4.-Scale-up-to-a-multicore-VM"></a> 4. Scale-up to a multicore VM
 
-In this section, we will run the same example on a four-core VM, using the exact same image, the *Cursus Image*.  
+The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your Virtual Machines (VMs) the form that you need them to have. In this section, you will run the same Mandelbrot example on a *four-core* VM, using the exact same image, the *Cursus Image*. To scale-up your VM to use multiple cores you need to:
+
+> 
+* Edit your Template.
+* Re-instantiate a VM from the modified Template.
 
 #### Edit the Template
 
-The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your Virtual Machines (VMs) the form that you need them to have.
-
 You can customise your VMs by editing the templates you instantiate the VMs from.
 
-* In order to edit an existing template, under the Virtual Resources menu, choose the `Templates` item. 
-* Click on the *Cursus Template* to edit. Extended information about that image will be displayed within two tabs: Info and Template.
-* Above this extended information area, there are 3 buttons. One of them says Update. If you click there, you will be able to edit the template: this the *Wizard mode*.
+* In order to edit your existing template, choose the `Cursus Template` item and then *Update* buttons on the top right.
 * In the *General* tab edit the number of CPU and VCPU as:
   * CPU: **4**
   * VCPU: **4**
-* Whenever you are finished customising your template, make sure you click on the green Update button so that your changes are actually saved. 
+* When you are done, click on the green *Update* button so that your changes are actually saved. 
 
 That was it. From now on you will get a 4-core VM running using the same *Cursus Image* (where the mandelbrot example is saved).
 
