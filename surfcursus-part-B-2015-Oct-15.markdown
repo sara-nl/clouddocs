@@ -189,7 +189,9 @@ taskset -c 2 ./startserver.sh mango # replace '2' with the CPU number and 'mango
 taskset -c 0 ./startclient.sh pineapple grape mango # use your server names. duh.
 ```
 
-* Observe the performance. *What is the gain?*
+> **Food for brain:**
+>
+> Observe the performance. *Is there any gain?*
 
 
 ### <a name="5.-Wrap-up"></a> 5. Wrap up
