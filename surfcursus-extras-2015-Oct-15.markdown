@@ -10,14 +10,11 @@ This is part one of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-
 **You should have completed (and understood)** [SURFcursus - part A](surfcursus-part-A-2015-Oct-15) and [SURFcursus - part B](surfcursus-part-B-2015-Oct-15),  before trying these extras.
 
 * [Hands-on Extras](#hands-on) <br>
-  * [6. Install a virtual Desktop](#6.-Install-a-virtual-Desktop) <br>
-  * [7. Add a datablock](#6.-Add-a-datablock) <br>
+  * [6. Add a datablock](#6.-Add-a-datablock) <br>
+  * [7. Install a virtual Desktop](#7.-Install-a-virtual-Desktop) <br>
+ 
 
-
-### <a name="6.-Install-a-virtual-Desktop"></a> 6. Install a virtual Desktop
-
-
-### <a name="7.-Add-a-datablock"></a> 7. Add a datablock
+### <a name="6.-Add-a-datablock"></a> 6. Add a datablock
 
 When you create a disk image, you must choose where it is stored, under the heading `Datastore`. You have the choice between `local_images_ssd` and `ceph`. The best practise to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock`(s). 
 
@@ -92,6 +89,19 @@ mount /dev/vdb /data
 >**Food for brain:**
 >
 > Try to copy a file from your laptop to `/data`, e.g with `scp myfile ubuntu@145.100.59.233:/data`. Does it work? Do you have the permissions to do so? 
+
+
+### <a name="7.-Install-a-virtual-Desktop"></a> 7. Install a virtual Desktop
+
+You have various options to access your virtual machine. In the previous sections you used an SSH shell. In this section you will install a full virtual desktop to get a graphical desktop of your remote VM, all in your laptop. What you need to do:
+
+>
+* Configure your VM to allow the remote desktop connection.
+* Create a user account on your VM and connect to it.
+
+#### Remote desktop configurations
+
+* Install the necessary software and setup the xrdp client.
 
 
 >**Note:**
