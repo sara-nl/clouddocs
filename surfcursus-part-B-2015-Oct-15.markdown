@@ -15,7 +15,7 @@ This is part B of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-15
 
 ### <a name="3.-Persistence"></a> 3. Persistence
 
-Disk images can be `persistent` or not and you can switch that flag.
+Disk images can be `persistent` or not and you can switch that flag. 
 
 * What does `persistent` mean?
   *  changes by the VM are copied back to the original disk image
@@ -28,6 +28,13 @@ Disk images can be `persistent` or not and you can switch that flag.
 > **Food for brain:**
 >
 > Was the first image that you imported `persistent` or not?
+
+In this section you will work with persistent images to install an application in your VM. You will go through these steps: 
+
+> 
+* Make your image persistent.
+* Deploy a VM using the persistent image.
+* Install and Run Mandelbrot in your VM.
 
 #### Make your image persistent
 * Go to *Images* tab under Virtual Resources and click on the **Cursus Image**.
