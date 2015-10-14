@@ -2,23 +2,19 @@
 layout: default
 ---
 
-⚠ **WARNING** under construction
-
 # SURFcursus - Extras
 
 This is part one of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-15).
 **You should have completed (and understood)** [SURFcursus - part A](surfcursus-part-A-2015-Oct-15) and [SURFcursus - part B](surfcursus-part-B-2015-Oct-15),  before trying these extras.
 
 * [Hands-on Extras](#hands-on) <br>
-  * [6. Add a datablock](#6.-Add-a-datablock) <br>
-  * [7. Install a virtual Desktop](#7.-Install-a-virtual-Desktop) <br>
- 
+  * [Working with Storage](#Working-with-storage) <br>
 
-### <a name="6.-Add-a-datablock"></a> 6. Add a datablock
+The current HPC Cloud offers two storage types: `Ceph` and `SSD`. Data stored on Ceph is replicated, to protect against data loss in case of hardware failure. The best practise is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock`(s). 
 
-When you create a disk image, you must choose where it is stored, under the heading `Datastore`. You have the choice between `local_images_ssd` and `ceph`. The best practise to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock`(s). 
+### <a name="Working-with-storage"></a> Working with Storage
 
-The first appliance you imported, created the OS image on `local_images_ssd`. In this section you will use the othe *Datastore* option, namely `ceph`, by following these steps: 
+When you create a disk image, you must choose where it is stored, under the heading `Datastore`. You have the choice between `local_images_ssd` and `ceph`.  The first appliance you imported, created the OS image on `local_images_ssd`. In this section you will use the other *Datastore* option, namely `ceph`, by following these steps: 
 
 >
 * Create a new empty datadisk
@@ -90,38 +86,6 @@ mount /dev/vdb /data
 >
 > Try to copy a file from your laptop to `/data`, e.g with `scp myfile ubuntu@145.100.59.233:/data`. Does it work? Do you have the permissions to do so? 
 
-
-### <a name="7.-Install-a-virtual-Desktop"></a> 7. Install a virtual Desktop
-
-You have various options to access your virtual machine. In the previous sections you used an SSH shell. In this section you will install a full virtual desktop to get a graphical desktop of your remote VM, all in your laptop. What you need to do:
-
->
-* Configure your VM to allow the remote desktop connection.
-* Create a user account on your VM and connect to it.
-
-#### Remote desktop configurations
-
-* Allow connection, install the necessary software and setup xrdp in your VM:
-
-```sh
-sudo su
-ufw allow 3389
-ufw enable
-apt-get install xrdp
-service xrdp restart
-```
-From now on you can get a graphical desktop to your VM.
-
-* Make a user to connect to it:
-
-```sh
-adduser homer # replace with your name
-```
-
-* Open *Remote Desktop Connection* application in your laptop.
-* For Mac users, set the display to millions of colors.
-* In Copmuter: fill in your VM's IP.
-* Connect.
 
 >**Note:**
 >
