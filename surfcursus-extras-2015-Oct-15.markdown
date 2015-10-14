@@ -87,7 +87,7 @@ mount /dev/vdb /data
 >
 > Create a file in your in `/data` directory. Logout and login again. Is your file still there? Shutdown the VM and start it again, do you see your changes on the datablock?
 
-* From now on, you can transfr files from e.g. your laptop on the newly created disk. 
+* From now on, you can transfer files from e.g. your laptop on the newly created disk. 
 
 >**Food for brain:**
 >
