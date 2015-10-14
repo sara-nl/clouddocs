@@ -33,7 +33,7 @@ At this point you should not have any running VMs. Let's create a new disk.
   * Datastore: **106: ceph**.
   * Check the **Persistent** checkbox.
   * On the _Image location:_ group, choose radio button _Empty datablock_.
-  * Give it a _Size_ in MB: **2000** (2GB).
+  * Give it a _Size_ in MB: **2000** (is 2GB).
   * Keep _FS Type_: raw. 
 * Click the green button *Create* on the form, to submit it. 
 
@@ -61,7 +61,7 @@ Let's start using the new disk.
 sudo fdisk -l 
 ``` 
 
-* You need to format the drive now. To format it with the XFS file install `xfsprogs`: 
+* You need to format the drive now. To format it with the XFS file system install `xfsprogs`: 
 
 ```sh
 sudo apt-get install xfsprogs
@@ -75,7 +75,7 @@ sudo mkfs -t xfs /dev/vdb
 sudo mount /dev/vdb /data  
 ```
 
-* Arrange the permissions to allow non-root access the /data directory:
+* Arrange the permissions to allow non-root access to the /data directory:
 
 ```sh
 sudo chown ubuntu:ubuntu -R /data
@@ -83,13 +83,15 @@ sudo chown ubuntu:ubuntu -R /data
 
 >**Food for brain:**
 >
-> Create new files or folders in your in `/data` directory. Logout and login again. Are your changes still there? Shutdown the VM and start it again, do you see the files on the datablock? Mount the datadisk again, do you see the files now?
+> Create new files or folders in your in `/data` directory. Logout and login again. *Are your changes still there?*
+> Shutdown the VM and start it again. *Do you see the files on the datablock?* 
+> Hint: when you start the VM the datadisk is not automatically mounted.
 
-* From now on, you can transfer files from e.g. your laptop on the newly created disk. 
+* From now on, you can transfer files from your laptop on the newly created disk. 
 
 >**Food for brain:**
 >
-> Try to copy a file from your laptop to `/data`, e.g with `scp myfile ubuntu@145.100.59.197:/data`. Then login to the VM and inspect the changes.
+> Try to copy a file from your laptop to `/data`, e.g. with `scp myfile ubuntu@145.100.59.197:/data`. Then login to the VM and inspect the changes.
 
 >**Note:**
 >
