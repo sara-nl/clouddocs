@@ -41,21 +41,21 @@ In this section you will work with persistent images to install an application i
 * Under the Information section, find the *Persistent* entry. It says "no".
 * Switch the value to "yes".
 
-#### Deploy a persistent VM
+#### Start a persistent VM
 * Start your virtual machine again. 
 * Login and check the files you made during the previous run. 
 
-> During the previous run the VM's disk was "non-persistent".
+> During the previous run the VM's disk was *non-persistent*.
 
 #### Install and Run Mandelbrot
 
-The disk image is now marked as **persistent**. This means that we can install our software or store data in the VM and make sure that everything will remain in the VM once it is shutdown and re-instantiated.
+The disk image is now marked as **persistent**. This means that you can install your software or store your data in the VM and make sure that everything will remain in the VM once it is shutdown and re-instantiated.
 
 Let's install and run an example to investigate the HPC Cloud capabilities. The code was taken from [mandelbrot-rmi](https://code.google.com/p/mandelbrot-rmi/), a distributed Manderbrot renderer based on [Java RMI](https://en.wikipedia.org/wiki/Java_remote_method_invocation), with some small improvements.
 
 >**NOTE:**
 >
-> For the rest of the tutorial we will omit `ubuntu@ip-145-100-59-197:~$` prompt in the instructions, in order to allow you copy-paste the commands directly in your terminal.
+> For the rest of the tutorial we will omit `ubuntu@ip-145-100-59-102:~$` prompt in the instructions, in order to allow you copy-paste the commands directly in your terminal.
 
 * Login to the running VM again.
 
@@ -79,24 +79,25 @@ wget https://doc.hpccloud.surfsara.nl/assets/mandelbrot-rmi-bin.tgz
 mkdir mandelbrot-rmi
 cd mandelbrot-rmi
 tar xvzf ../mandelbrot-rmi-bin.tgz
+ls
 ```
 
-* Launch the first server that will pose as the RMI registry with an arbitrary name argument, e.g. _apple_:
+* Launch the first Mandelbrot server that will pose as the RMI registry with an arbitrary name argument, e.g. *apple*. To do this:
   * Start a new local terminal (Linux or Mac users) or Gitbash (Windows) and log in to the same virtual machine.
-  * run the following commands:
+  * Run the following commands:
 
 ```sh
-cd ~/mandelbrot-rmi
+cd $HOME/mandelbrot-rmi
 ./startserver.sh apple
 ```
 
-* Return to the first terminal window (connected to the VM with `ssh -X`). You will now start a client and pass it the _apple_ server name:
+* Return to the first terminal window (connected to the VM with `ssh -X`). You will now start a Mandelbrot client and pass it the _apple_ server name:
 
 ```sh
-cd ~/mandelbrot-rmi
+cd $HOME/mandelbrot-rmi
 ./startclient.sh apple
 ``` 
-  A window should pop up on your laptop displaying a full _mandelbrot set_.
+  A window should pop up on your laptop displaying a full *Mandelbrot* set.
 
 * Interact with the display:
 
@@ -108,13 +109,13 @@ Dragging will change the size of the rectangle.
 
 > **Food for brain:**
 >
-> The client and server both log the time of the computation. Zoom in on the mandelbrot and inspect the info in the terminals.
+> The Mandelbrot client and server both display logging info and the computation time. Zoom in on the mandelbrot and inspect this inforamtion.
 
-You can stop the client or server applications anytime with _Ctrl+C_.
+You can stop the Mandelbrot client or server applications anytime with _Ctrl+C_.
 
 * Terminate the client now.
 
-* Launch additional servers with different names. 
+* Launch additional Mandelbrot servers with different names. 
 Start the new servers and the client, all in different terminals:  
 
 ```sh
@@ -165,7 +166,7 @@ That was it. From now on you will get a 4-core VM running using the same *Cursus
 > **NOTE:**
 >Your VM's image was (and is) persistent.
 
-* Run the [same example](#install-and-run-mandelbrot) with a single server.
+* Run the [same example](#install-and-run-mandelbrot) with a single Mandelbrot server.
 * Start a new terminal and connect to the VM. Type the following command:
 
 ```sh
@@ -174,12 +175,12 @@ ps -eo pid,psr,pcpu,args | sed -n -e '1p' -e '/java/p'
 
 This shows the running Java processes and the CPU number on which it runs (column `PSR`).
 
-* Stop server(s) and client.
-* Launch multiple servers on different CPUs:
+* Stop Mandelbrot server(s) and client.
+* Launch multiple servers on different CPUs. To do this:
   * Start new terminals as needed and run variations on the following command:
 
 ```sh
-cd ~/mandelbrot-rmi
+cd $HOME/mandelbrot-rmi
 taskset -c 2 ./startserver.sh mango # replace '2' with the CPU number and 'mango' with your server name
 ```
 
