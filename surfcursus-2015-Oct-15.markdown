@@ -2,8 +2,6 @@
 layout: default
 ---
 
-⚠ **WARNING** under construction
-
 # SURFcursus - 15 Oct 2015
 
 * [General Information](#general) <br>
@@ -44,13 +42,16 @@ So what you need for this tutorial:
 * A computer with full Internet access.
 * A browser (Chrome or Firefox will do nicely).
 * Java, at least version 8 (a.k.a. 1.7)
-* An SSH client.
-  * Linux and Mac users: don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
-  * Windows users: download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between `Git-2.5.3-32-bit.exe` or `Git-2.5.3-64-bit.exe`.
 * An X-window client.
   * Linux and Mac users normally don't need to install anything as X11 is on board. However, the newest Mac OS releases might not have X11.app installed. In that case, install XQuarz from [here](http://xquartz.macosforge.org/landing/).
   * Windows users: install Xming from [here](http://sourceforge.net/projects/xming/).
- 
+* An SSH client.
+  * Linux and Mac users: don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
+  * Windows users: download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between `Git-2.5.3-32-bit.exe` or `Git-2.5.3-64-bit.exe`.
+
+> **NOTE: for Windows only users**
+>
+
 ## <a name="hands-on"></a> Hands-on
 The hands-on tutorial has two parts. The exercises in part A will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood part A, then continue to part B with more `advanced` examples on the HPC Cloud. 
 
