@@ -99,7 +99,7 @@ Next, you will copy the public key (`id_rsa.pub`) to the [UI](https://ui.hpcclou
 To start a virtual machine easily, we provide the HPC Cloud `AppMarket`. This repository contains common appliances for you to pick and use. In this section you will use the AppMarket to build your first VM with the following steps:
 
 >
-* Import a pre-made disk, called `Image`, which includes a Linux Operating system.
+* Import a pre-made disk, called `Image`, which includes a Linux operating system.
 * Create the description of your VM, called `Template`, which gives your VM the shape you want. 
 * Instantiate the *Template* to run your first `Virtual Machine`.
 * Access your `Virtual Machine` and shut it down.
@@ -120,7 +120,7 @@ Let's run the first machine on the HPC Cloud.
 
 > **Food for brain:**
 >
-> You can verify that the process is complete by inspecting the *Images* tab under the `Virtual Resources` on left menu. You should see your new image there. *What is the STATUS of the image?* Refresh with the sign next to the *green plus button* until it is READY.
+> You can verify that the process is complete by inspecting the `Images` tab under the `Virtual Resources` on left menu. You should see your new image there. *What is the STATUS of the image?* Refresh with the sign next to the *green plus button* until it is READY.
 
 #### Edit the Template  
 
@@ -168,14 +168,14 @@ Let's summarise what you have seen so far. From the menu on the left side, click
 
 #### Login to the VM
 
-You can interact with your VM with several ways: Command-line (SSH), VNC or a remote desktop server. We will start with SSH in a terminal.
+You can interact with your VM with several ways: Command-line (SSH), VNC or a remote desktop server. We will use SSH in a terminal.
 
 The way to login into your virtual machine is the ssh keys that you [stored in your profile](#add-ssh-keys-to-your-profile) previously.
 
 **Command-line access - SSH**  
 
 * First find the IP address of your virtual machine.  
-Your VM IP address is shown on in the `IPs` column from the virtual machines list, under the Virtual Resources tab of the UI.
+Your VM IP address is shown on in the `IPs` column from the virtual machines list on the UI.
 
 * Start a terminal (in Mac/Linux) or GitBash (in Windows).
 
@@ -197,10 +197,10 @@ This means that you are logged in successfully to your Virtual Machine!
 
 * Look around a bit, make yourself familiar with the system. 
 * Create a file (see: [touch command](https://en.wikipedia.org/wiki/Touch_(Unix)#Examples))
-* Logout by typing `exit` or `ctrl-D` in your terminal. (see: [exit command](https://en.wikipedia.org/wiki/Exit_(command)), do not use shutdown command):
+* Logout by typing `logout` or `ctrl-D` in your terminal (see: [exit command](https://en.wikipedia.org/wiki/Exit_(command)), do not use shutdown command):
 
 ```sh
-exit
+ubuntu@ip-145-100-59-197:~$ logout
 ```
 
 > **Food for brain:**
@@ -218,10 +218,10 @@ Let's shutdown your first VM. Anytime the VM is idle, you should shut it down to
 
 > **Food for brain:**
 >
-> Check and refresh the "Images" and "Templates" tabs. *Is your image and your template still there?*
+> Check and refresh the *Images* and *Templates* tabs. *Is your image and your template still there?*
 > Start your VM again. *Is your file still there?* 
 
-* Before you move to the next sections, shutdown the VM again to free the resources. 
+* Before you move to the next sections, remember to shutdown the VM. 
 
 ### Next: part B
 Now that you completed the Tutorial [SURFcursus - part A](surfcursus-part-A-2015-Oct-15), please continue with Tutorial [SURFcursus - part B](surfcursus-part-B-2015-Oct-15).
