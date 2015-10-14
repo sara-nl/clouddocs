@@ -14,7 +14,7 @@ The current HPC Cloud offers two storage types: `Ceph` and `SSD`. Data stored on
 
 ### <a name="Working-with-storage"></a> Working with Storage
 
-When you create a disk image, you must choose where it is stored, under the heading `Datastore`. You have the choice between `local_images_ssd` and `ceph`.  The first appliance you imported, created the OS image on `local_images_ssd`. In this section you will use the other *Datastore* option, namely `ceph`, by following these steps: 
+When you create a disk image, you must choose where it is stored, under the heading `Datastore`. You have the choice between `local_images_ssd` and `ceph`.  The first appliance you imported, created the OS image on `local_images_ssd`. In this section you will use the `ceph` *Datastore* option, by following these steps: 
 
 >
 * Create a new empty datadisk
@@ -25,16 +25,16 @@ At this point you should not have any running VMs. Let's create a new disk.
 
 #### Create a new empty datadisk
 
-* From the  [UI](https://ui.hpccloud.surfsara.nl) menu at the left pane, select the *Images* page under *Virtual Resources*.
+* From the [UI](https://ui.hpccloud.surfsara.nl) menu at the left pane, select the *Images* page under *Virtual Resources*.
 * Click on the green [+] button on the top. 
-* In the *Create image* window, fill in the form as:
- * Name: **my data**. You will use this name later in your `Template`.
-	* Type: **DATABLOCK**.
- * Datastore: **106: ceph**.
- * Check the **Persistent** checkbox.
- * On the _Image location:_ group, choose radio button _Empty datablock_.
- * Give it a _Size_ in MB: **2000** (2GB).
- * Keep _FS Type_: raw. 
+* In the *Create image* window, fill in the form as:  
+  * Name: **my data**. You will use this name later in your `Template`.
+  * Type: **DATABLOCK**.
+  * Datastore: **106: ceph**.
+  * Check the **Persistent** checkbox.
+  * On the _Image location:_ group, choose radio button _Empty datablock_.
+  * Give it a _Size_ in MB: **2000** (2GB).
+  * Keep _FS Type_: raw. 
 * Click the green button *Create* on the form, to submit it. 
 
 >**NOTE:**
@@ -47,7 +47,7 @@ In order to let you VM know about the new datablock, you need to add it to your 
 
 * Open your *Template* (or create a new).
 * Select the *Storage* tab from the menu bar.
-* Click on the _+ Add another disk_ button (that will make a new _Disk 1_), and then choose the **output data** `image` you created as a second `image`.
+* Click on the _+ Add another disk_ button (that will make a new _Disk 1_), and then choose the **my data** `image` you created as a second `image`.
 * Finish with the *Update* button on the top to submit it.
 
 #### Mount the datadisk in the VM
@@ -55,37 +55,41 @@ In order to let you VM know about the new datablock, you need to add it to your 
 Let's start using the new disk.
 
 * Create a new `VM` from the `Template` you created in the previous step. 
-* Once the `VM` is in RUNNING state, login and check if your new datablock is there.
+* Once the `VM` is in RUNNING state, login and check if your new datablock is there:
 
 ```sh
-sudo su
-fdisk -l 
+sudo fdisk -l 
 ``` 
 
 * You need to format the drive now. To format it with the XFS file install `xfsprogs`: 
 
 ```sh
-apt-get install xfsprogs
+sudo apt-get install xfsprogs
 ```
 
 * Mount the datadisk in the VM:
 
 ```sh
-mkdir /data  
-mkfs -t xfs /dev/vdb  
-mount /dev/vdb /data  
+sudo mkdir /data  
+sudo mkfs -t xfs /dev/vdb  
+sudo mount /dev/vdb /data  
+```
+
+* Arrange the permissions to allow non-root access the /data directory:
+
+```sh
+sudo chown ubuntu:ubuntu -R /data
 ```
 
 >**Food for brain:**
 >
-> Create a file in your in `/data` directory. Logout and login again. Is your file still there? Shutdown the VM and start it again, do you see your changes on the datablock?
+> Create new files or folders in your in `/data` directory. Logout and login again. Are your changes still there? Shutdown the VM and start it again, do you see the files on the datablock? Mount the datadisk again, do you see the files now?
 
 * From now on, you can transfer files from e.g. your laptop on the newly created disk. 
 
 >**Food for brain:**
 >
-> Try to copy a file from your laptop to `/data`, e.g with `scp myfile ubuntu@145.100.59.233:/data`. Does it work? Do you have the permissions to do so? 
-
+> Try to copy a file from your laptop to `/data`, e.g with `scp myfile ubuntu@145.100.59.197:/data`. Then login to the VM and inspect the changes.
 
 >**Note:**
 >
