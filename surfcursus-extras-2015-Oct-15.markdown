@@ -101,8 +101,27 @@ You have various options to access your virtual machine. In the previous section
 
 #### Remote desktop configurations
 
-* Install the necessary software and setup the xrdp client.
+* Allow connection, install the necessary software and setup xrdp in your VM:
 
+```sh
+sudo su
+ufw allow 3389
+ufw enable
+apt-get install xrdp
+service xrdp restart
+```
+From now on you can get a graphical desktop to your VM.
+
+* Make a user to connect to it:
+
+```sh
+adduser homer # replace with your name
+```
+
+* Open *Remote Desktop Connection* application in your laptop.
+* For Mac users, set the display to millions of colors.
+* In Copmuter: fill in your VM's IP.
+* Connect.
 
 >**Note:**
 >
