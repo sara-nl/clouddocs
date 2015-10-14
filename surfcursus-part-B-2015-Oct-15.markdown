@@ -75,7 +75,7 @@ tar xvzf ../mandelbrot-rmi-bin.tgz
 ```
 
 * Launch the first server that will pose as the RMI registry with an arbitrary name argument, e.g. _apple_:
-  * Start a new local terminal (Linux or Mac users) or Gitbash (Windows) and log in to your virtual machine, see [above](#login-to-the-vm).
+  * Start a new local terminal (Linux or Mac users) or Gitbash (Windows) and log in to the same virtual machine.
   * run the following commands:
 
 ```sh
@@ -83,7 +83,7 @@ cd ~/mandelbrot-rmi
 ./startserver.sh apple
 ```
 
-* Return to the first terminal window (connected to the VM with `ssh -X`), start a client and pass it the _apple_ server name:
+* Return to the first terminal window (connected to the VM with `ssh -X`). You will now start a client and pass it the _apple_ server name:
 
 ```sh
 cd ~/mandelbrot-rmi
@@ -99,11 +99,13 @@ cd ~/mandelbrot-rmi
 Right click will zoom out.  
 Dragging will change the size of the rectangle.  
 
-Client and server both log the time of the computation.
+> **Food for brain:**
+>
+> The client and server both log the time of the computation. Zoom in on the mandelbrot and inspect the info in the terminals.
 
-You can kill the client or servers anytime with _Ctrl+C_.
+You can stop the client or server applications anytime with _Ctrl+C_.
 
-* Kill the client now.
+* Terminate the client now.
 
 * Launch additional servers with different names. 
 Start the new servers and the client, all in different terminals:  
@@ -122,7 +124,9 @@ Repeat for _coconut_ or make up your own names.
 ./startclient.sh apple banana coconut # or your names
 ```
 
-Observe the performance when adding extra servers.
+> **Food for brain:**
+>
+> Observe the performance in the terminals when adding extra servers.
 
 * Before moving to the next exercise, *remember to Shutdown your VM*.
 
