@@ -53,7 +53,7 @@ So what you need for this tutorial:
 ## <a name="hands-on"></a> Hands-on
 The hands-on tutorial has two parts. The exercises in part A will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood part A, then continue to part B with more `advanced` examples on the HPC Cloud. 
 
-If you manage to finish both part A & B and wish to know more, try also the additional exercises in `extras`.
+If you manage to finish both part A & B and wish to know more about the HPC Cloud, try also the additional exercises in `extras`.
 
   * [Surfcursus - Part A](surfcursus-part-A-2015-Oct-15)
   * [Surfcursus - Part B](surfcursus-part-B-2015-Oct-15)
@@ -61,10 +61,10 @@ If you manage to finish both part A & B and wish to know more, try also the addi
 
 > **NOTE: only for Windows users**
 >
-> For the course purposes you will need to start a grapgical window in your laptop that is connected to your Cloud VM. For this, you need to adjust the following setting:
-* Open GitBash.
+> For the course purposes you will need to start a graphical window in your laptop that is connected to your HPC Cloud machine. To make this work, you need to adjust the following setting:  
+> * Open GitBash.
 * In the terminal that appears, copy and paste this command: `echo "export DISPLAY=localhost:0.0" >> $HOME/.bashrc` (press enter).
-* Close the window.
+* Close the Gitbash window.
 
 ## <a name="presentations"></a> Presentations
 
