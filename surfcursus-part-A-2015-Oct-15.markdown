@@ -91,7 +91,7 @@ Next, you will copy the public key (`id_rsa.pub`) to the [UI](https://ui.hpcclou
 
 > **NOTE:** 
 > 
-> Adding the SSH key to you profile is one time task. It is possible to use multiple keys for different VMs but there is no need to repeat this procedure for the rest of the tutorial. 
+> Adding an SSH key to you profile is a one-time task. It is possible to use multiple keys for different VMs but there is no need to repeat this procedure for the rest of the tutorial. 
 
 
 ### <a name="2.-My-first-VM"></a> 2. My first VM
