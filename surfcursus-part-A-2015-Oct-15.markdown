@@ -87,7 +87,7 @@ Next, you will copy the public key (`id_rsa.pub`) to the [UI](https://ui.hpcclou
 * Open your **public** ssh key file (id_rsa.pub) and copy the content to clipboard.
 * Go to your user profile and select *Settings* from the *buddy* icon. In the dialogue that pops up, go to the *Info* page.
 * Locate the section `Public SSH Key`, and click on the blue edit icon. Paste the content of your **public** ssh key (id_rsa.pub) file.
-* Close the window. Your public key is automatically stored in your profile. Open the *Info* page again to check if it is there.
+* Close the window. There is no *Save* button, but your public key is automatically stored in your profile. Open the *Info* page again to check if it is there.
 
 > **NOTE:** 
 > 
@@ -113,7 +113,7 @@ Let's run the first machine on the HPC Cloud.
 * Choose the image: **Ubuntu 14.04 Desktop**. Click on the tick-box next to it.
 * Click on the `Import` button at the top-right corner of the screen. 
 * A dialogue will pop up, asking you for a few details. Edit as follows:
-  * Datastore for images: **104: local images ssd**. 
+  * Select the Datastore for the images: **104: local images ssd**. 
   * Image Name: **Cursus Image**.
   * Template Name: **Cursus Template**.
 * Finally, click the *Import* button. This will start importing the appliance from the AppMarket. You can close this window.
@@ -132,7 +132,7 @@ Edit the created *Template* with these steps:
 * Find the template you just created, and click on it. Next we will modify it.
 * Click on *Update* on the top-right of the screen to start editing the template. 
 * Browse through the different options (i.e. General, Storage, Network). Leave the default values, **except** for the following:  
-  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Click once on **Name: internet** row. You will see the feedback below:  
+  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Select the row **Name: internet** (click once on it). You will see the feedback below:  
 ![youselectednetwork](images/youselectednetwork.png)
 * Click *Update* on top to save your changes.
 
@@ -151,7 +151,7 @@ This name is also used as the host name of your machine.
 * Refresh the VM status by clicking on the two arrows chasing each other next to "+" button.
 
 > **NOTE:**  
->Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. The cloud system is looking for a place where your virtual machine can actually run. This depends on the amount of cores, or memory, or disk that you asked in the template. When the required capacity becomes available, your VM will appear in Status: **RUNNING**. Refresh with the sign next to the *green plus button* until the VM is running.
+>Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. The cloud system is looking for a place where your virtual machine can actually run. This depends on the amount of cores, or memory, or disk that you asked in the template. Refresh with the sign next to the *green plus button*. When the required capacity becomes available, your VM will appear in Status: **RUNNING**. 
 
 
 #### What happened?
@@ -168,7 +168,7 @@ Let's summarise what you have seen so far. From the menu on the left side, click
 
 #### Login to the VM
 
-You can interact with your VM with several ways: Command-line (SSH), VNC or a remote desktop server. We will use SSH in a terminal.
+You can interact with your VM with several ways: Command-line (SSH), VNC (UI browser window) or a remote desktop server. We will use SSH in a terminal.
 
 The way to login into your virtual machine is the ssh keys that you [stored in your profile](#add-ssh-keys-to-your-profile) previously.
 
@@ -182,7 +182,7 @@ Your VM IP address is shown on in the `IPs` column from the virtual machines lis
 * To connect to your VM, type:
 
 ```sh
-ssh -X ubuntu@145.100.59.102 # replace with your IP address!
+ssh -X ubuntu@145.100.59.197 # replace with your IP address!
 ```
 
 The `-X` flag connects your display to the VM so that the VM can open a graphical window on your laptop.
@@ -191,16 +191,28 @@ The `-X` flag connects your display to the VM so that the VM can open a graphica
 
 If everything went well, the first time you login you will be asked to add the VM to the list of known hosts: type *Yes*.
 
-You should now see this line in your terminal: `ubuntu@ip-145-100-59-197:~$`
+You should now see a similar line in your terminal: `ubuntu@ip-145-100-59-102:~$` 
 
 This means that you are logged in successfully to your Virtual Machine!
 
-* Look around a bit, make yourself familiar with the system. 
-* Create a file (see: [touch command](https://en.wikipedia.org/wiki/Touch_(Unix)#Examples))
-* Logout by typing `logout` or `ctrl-D` in your terminal (see: [exit command](https://en.wikipedia.org/wiki/Exit_(command)), do not use shutdown command):
+* Look around a bit, make yourself familiar with the system: 
 
 ```sh
-ubuntu@ip-145-100-59-197:~$ logout
+ubuntu@ip-145-100-59-102:~$ ls /
+ubuntu@ip-145-100-59-102:~$ cd /home/ubuntu/
+```
+
+* Create a file:
+
+```sh
+ubuntu@ip-145-100-59-102:~$ echo "Some text ..." > myfile
+ubuntu@ip-145-100-59-102:~$ cat myfile
+```
+
+* Logout by typing `logout` or `ctrl-D` in your terminal ( do not use shutdown command):
+
+```sh
+ubuntu@ip-145-100-59-102:~$ logout
 ```
 
 > **Food for brain:**
@@ -214,7 +226,7 @@ Let's shutdown your first VM. Anytime the VM is idle, you should shut it down to
 
 * Tick the box to the left on the row with your VM.
 * At the upper right corner of the screen, under the dust bin drop-down button, click `Shutdown`. 
-* Refresh the Virtual Machines list (by clicking on the two arrows chasing each other next to + button) until your VM is gone. It will be removed from the display, but you can start a new VM from your existing template and image any time.
+* Refresh (by clicking on the two arrows chasing each other next to + button) until your VM is gone from the list. It will be removed from the display, but you can start it any time.
 
 > **Food for brain:**
 >
