@@ -37,6 +37,7 @@ layout: default
 * [Sharing OpenNebula Objects](sharing-objects)  
 * [Install Windows](Windows)
 * Licences  
+* [User management](usermanagement)
 
 ### Disk Images
 * [Image Storage](image_storage)
