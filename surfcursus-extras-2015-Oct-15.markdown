@@ -10,7 +10,7 @@ This is part one of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-
 * [Hands-on Extras](#hands-on) <br>
   * [Working with Storage](#Working-with-storage) <br>
 
-The current HPC Cloud offers two storage types: `Ceph` and `SSD`. Data stored on Ceph is replicated, to protect against data loss in case of hardware failure. The best practise is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock`(s). 
+The current HPC Cloud offers two storage types: `Ceph` and `SSD`. Data stored on Ceph is replicated, to protect against data loss in case of hardware failure. The best practice is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock`(s). 
 
 ### <a name="Working-with-storage"></a> Working with Storage
 
