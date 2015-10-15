@@ -41,7 +41,7 @@ So what you need for this tutorial:
 
 * A computer with full Internet access.
 * A browser (Chrome or Firefox will do nicely).
-* Java, at least version 8 (a.k.a. 1.7)
+* Java, at least version 7 (a.k.a. 1.7)
 * An X-window client.
   * Linux and Mac users normally don't need to install anything as X11 is on board. However, the newest Mac OS releases might not have X11.app installed. In that case, install XQuarz from [here](http://xquartz.macosforge.org/landing/).
   * Windows users: install Xming from [here](http://sourceforge.net/projects/xming/).
