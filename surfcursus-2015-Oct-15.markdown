@@ -76,6 +76,6 @@ source $HOME/.bashrc
 
 ## <a name="presentations"></a> Presentations
 
-* [Introduction to Cloud Computing](assets/cloud_intro_15102015.pdf)
+* [Introduction to Cloud Computing](assets/cloud_intro_20151015.pdf)
 * [Introduction to SURFsara HPC Cloud](assets/hpc_cloud_15102015.pdf)
 
