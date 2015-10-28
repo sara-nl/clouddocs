@@ -23,7 +23,7 @@ Let's start.
 
 #### Login to the UI
 
-* Pick the **`demo account`** account that corresponds to your team from [here](https://drive.google.com/open?id=1zUVq5VrZLHhoFs3YCwDGGeDGLXDYBhF7dRFPCDDIppg). 
+* Pick the **`demo account`** account that corresponds to your team. 
   * You will receive the password by the workshop organizers.  
   * Your account will remain active until `23rd of October`.
 
