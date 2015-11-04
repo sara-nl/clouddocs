@@ -103,6 +103,17 @@ Now, the other `file:
   * on the _Image location:_ group, choose radio button _Provide a path_; then, underneath, type the following URL in the _Path_ field: https://raw.githubusercontent.com/OpenNebula/addon-context-windows/master/startup.vbs
 1. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `file` will show on the _Files_ list, and it will keep in status _LOCKED_ while data is being downloaded from the URL you wrote. When it is created it will come to status _READY_. 
 
+If we leave it here, then you VM will be configured only once ever. If you want the VM to be reconfigured every time it boots, then you need to delete a _flag_ file that prevents contextualisation from happening ever again. We have added a script that will delete this file for you every time Windows shuts down or reboots. Here is how you add it:
+
+1. **On the UI:** On the _Files & Kernels_ tab (under _Virtual Resources_), click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `file`. A form will pop up.
+1. **On the UI:** On the form that popped up:
+  * type in a meaningful _Name_ (e.g.: **shutdown.vbs**, we will use this name later)
+  * type in a meaningful _Description_ (optional)
+  * choose _Type_ _CONTEXT_
+  * leave _Datastore_ with _105: local_files_ssd_
+  * on the _Image location:_ group, choose radio button _Provide a path_; then, underneath, type the following URL in the _Path_ field: https://raw.githubusercontent.com/sara-nl/clouddocs/gh-pages/assets/shutdown.vbs
+1. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `file` will show on the _Files_ list, and it will keep in status _LOCKED_ while data is being downloaded from the URL you wrote. When it is created it will come to status _READY_. 
+
 ### Create a template
 
 Now that we have all components ready in the UI, we are ready to bring them together. On the HPC Cloud, we do that on a `template`.
@@ -129,7 +140,7 @@ Now that we have all components ready in the UI, we are ready to bring them toge
   * on the _Inputs group_, choose _Tablet_ on the first dropdown menu, then _USB_ on the second dropdown menu and finally click on the _Add_ button. A new entry will appear below those dropdowns with what you just selected.
 1.  **On the UI:** On the same _Create Template_ screen, on the _Context_ tab:
   * click on _Files_ on the left column of the screen
-  * make sure you check the check boxes for the files you created before; those are: **context.ps1** and **startup.vbs**
+  * make sure you check the check boxes for the files you created before; those are: **context.ps1**,  **startup.vbs** and **shutdown.vbs**
 1. **On the UI:** We are ready defining the `template`, so click on the green _Create_ button at the top of the screen. A new `template` will show on the _Templates_ list.
 
 ## Run the Windows installation
@@ -163,13 +174,16 @@ You can continue with the rest of the Windows installation process normally. The
 
 Once your freshly installed Windows starts, we will configure your VM so that it auto-configures itself on start up (e.g.: at this point, you can see that there is no active network connection, so you cannot even browse the web).
 
-1. **On the Windows VM:** Open a file explorer, and browse the _CONTEXT_ CD-ROM. You should be able to see at least 3 files on that CD-ROM. Two of them should be the ones we manually added to the _Context_ tab of the `template` some steps ago, called: _context.ps1_ and _startup.vbs_.
-1. **On the Windows VM:** From the _CONTEXT_ CD-ROM, copy both files **context.ps1** and **startup.vbs** to the `C:\` drive. They will thus become reachable at C:\context.ps1 and C:\startup.vbs.
-1. **On the Windows VM:** We must configure the C:\startup.vbs file as a start-up script, so that Windows runs it automatically upon booting. To do that, start by right-clicking on the Windows _Start_ button, and then choose option _Run_. A dialogue will pop up.
+1. **On the Windows VM:** Open a file explorer, and browse the _CONTEXT_ CD-ROM. You should be able to see at least 4 files on that CD-ROM. Three of them should be the ones we manually added to the _Context_ tab of the `template` some steps ago, called: _context.ps1_, _startup.vbs_ and _shutdown.vbs_.
+1. **On the Windows VM:** From the _CONTEXT_ CD-ROM, copy the 3 files **context.ps1**, **startup.vbs** and **shutdown.vbs** to the `C:\` drive. They will thus become reachable at C:\context.ps1, C:\startup.vbs and C:\shutdown.vbs.
+1. **On the Windows VM:** We must configure the C:\startup.vbs file as a start-up script, so that Windows runs it automatically upon booting. We must also configure the C:\shutdown.vbs file as a _shutdown script_, so that Windows runs it automatically upon shutting down. To do all of this, start by right-clicking on the Windows _Start_ button, and then choose option _Run_. A dialogue will pop up.
 1. **On the Windows VM:** On the dialogue that just popped up, type the following in the _Open:_ field: `gpedit.msc`. A new window titled _Local Group Policy Editor_ will show.
 1. **On the Windows VM:** On the _Local Group Policy Editor_, navigate to _Computer Configuration_ > _Windows Settings_ > _Scripts (Startup/Shutdown)_. Then doubleclick on _Startup_. A new _Startup Properties_ dialogue will pop up.
 1. **On the Windows VM:** On the _Startup Properties_ dialogue, click on the _Add_ button. A new _Add a Script_ dialogue will pop up.
-1. **On the Windows VM:** On the _Add a Script_ dialogue, click on the _Browse..._ button, and look there for the C:\startup.vbs file. A new entry will appear on the _Startup Properties_ dialogue indicating that you have added the new startup script. Click *OK* and *Apply*.
+1. **On the Windows VM:** On the _Add a Script_ dialogue, click on the _Browse..._ button, and look there for the C:\startup.vbs file. A new entry will appear on the _Startup Properties_ dialogue indicating that you have added the new startup script. Click *OK*, then *Apply* and then *OK* again, to return to the _Scripts (Startup/Shutdown)_ window.
+1. **On the Windows VM:** We will now tackle the shutdown script. Doubleclick on _Shutdown_. A new _Shutdown Properties_ dialogue will pop up.
+1. **On the Windows VM:** On the _Shutdown Properties_ dialogue, click on the _Add_ button. A new _Add a Script_ dialogue will pop up.
+1. **On the Windows VM:** On the _Add a Script_ dialogue, click on the _Browse..._ button, and look there for the C:\shutdown.vbs file. A new entry will appear on the _Shutdown Properties_ dialogue indicating that you have added the new shutdown script. Click *OK* and *Apply*.
 1. **On the Windows VM:** You can reboot your Windows now. When it boots up, and (probably) after a while after you log in, your network adapters will stop showing the yellow warning icon and you should be able to browse the Internet now.
 1. **On the UI:** You can now shut your VM down. We will remove all the installation media and prepare your VM for production.
 
