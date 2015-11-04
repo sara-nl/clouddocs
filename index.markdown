@@ -46,6 +46,7 @@ layout: default
 * [Scratch Disk Images](scratch_disk)
 * [Download an image](image_download)  
 * [Create an Image on your own laptop](image-on-own-laptop)
+* [Create a snapshot of an image in a running VM](storage_snapshot)
 
 ### Networks
 * Virtual Network  

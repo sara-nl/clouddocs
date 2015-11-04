@@ -18,6 +18,8 @@ If you want to run multiple VMs with a disk from the same image, you need `persi
 You can change the `persistent` property by selecting a disk and using the pencil icon to the right of the property
 or the drop down menu to the right of the `clone` button.
 
+If you have a non-persistent disk, but found that you have made changes you do want to keep. Please refer to the page about [storage snapshots](storage_snapshot).
+
 ![persistent_no](images/persistent_no.png)
 
 ## Image: persistent = yes
