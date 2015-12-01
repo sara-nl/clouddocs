@@ -2,9 +2,6 @@
 layout: default
 ---
 
-⚠ **WARNING** under construction
-
-
 # UNESCO-IHE workshop - part A
 
 This is part A of the Tutorial [UNESCO-IHE workshop - 11 Dec 2015](wshop-uihe-2015-12-11).
@@ -150,7 +147,7 @@ A template is just a description of a virtual machine that we want to build. Let
 This name is also used as the host name of your machine. 
 * Number of instances: **1**.
 * Select the *Course Template* (click once on it). Since this is your first template, there is only one item in the list. You will see the feedback below:  
-![select_template](images/select_template.png)
+![select_template](images/select_template2.png)
 * Click on the `Create` button at the bottom of the screen.
 * Refresh the VM status by clicking on the two arrows chasing each other next to "+" button.
 
@@ -254,7 +251,7 @@ In this section you will work with persistent images. You will go through these 
 
 > 
 * Making your image persistent.
-* Deploying a VM using the persistent image.
+* Starting a VM using the persistent image.
 
 #### Make your image persistent
 * Go to *Images* tab under Virtual Resources and click on the **Course Image**.
@@ -269,7 +266,7 @@ In this section you will work with persistent images. You will go through these 
 
 > **Note:**
 >
-> Your running VMs are consuming quota whether they are doing something useful or are idle. So before you move to the next part, **remember to shutdown the VMs**. 
+> Your running VMs are consuming quota whether they are doing something useful or are idle. So before you move to the next part of this workshop, **remember to shutdown the VMs**. 
 
 ### Next: part B
 Now that you completed the Tutorial [UNESCO-IHE - Part A (morning)](wshop-uihe-part-A-2015-Dec-11), please continue with Tutorial [UNESCO-IHE - Part B (afternoon)](wshop-uihe-part-B-2015-Dec-11).
