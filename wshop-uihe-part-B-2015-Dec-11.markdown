@@ -30,7 +30,7 @@ that, at least for a reduced number of processors, when you add more of them it 
 We have prepared a cloud image (from now on simply _an image_) where we have compiled and installed XBeach for a user called `clouder` (short for CLOUD usER). You can find the image on your images list. It's called `xbeach_centos_7`.
 
 **Exercise a1:** Make a 2-core VM out of the provided XBeach image.
-  1. Create a 2-core template that will use the provided XBeach image, and connect it to both the internet and your private project's internal network.
+  1. On the UI, create a 2-core template that will use the provided XBeach image, and connect it to both the internet and your private project's internal network.
   2. Launch a VM from that template
   3. Connect to the VNC console so that you can follow the first-run wizard that the image is configured to run upon first start-up. It will ask you to set up a password for users `root` and `clouder`. Make sure you remember the passwords you set up.
   4. Connect via SSH to the VM with user `clouder` (this image has SSH root access disabled) so that you can work more comfortably. Can you see where XBeach is installed?
@@ -85,7 +85,6 @@ We have installed OpenMPI (one MPI implementation; others exist, such as MPItch)
   ```sh
   mpirun -np 4 xbeach
   ```
-  
   2. Run XBeach via `mpirun` with 6 processes:
   
   ```sh
@@ -99,4 +98,117 @@ We have installed OpenMPI (one MPI implementation; others exist, such as MPItch)
 * Can you make a (mental) picture of how the different processes are working on the input data and communicating among themselves?
 * Do you think that how the program we are running (in this case, XBeach) is made (written, compiled) affects how better it gets when you add more processes to fulfill the task? And the input data, does it influence that?
 
+### d) Running XBeach with multiple cores among multiple VMs
 
+MPI is able to communicate within processes that may physically by running on different (virtual) machines. We are going to make this happen now.
+
+There is a fair amount of configuration that needs to happen among all the machines involved in cooperating for running MPI jobs. We have prepared a couple of scripts that you can use for that, and you can find those on `clouder`'s following directory: `~/w/ssh`
+
+#### Master-workers concept
+
+A typical way of considering a cluster is to have a **master** node (or host) where you can externally log into and launch the programs, along with a set of **worker** nodes that the master knows about and where it delegates computing workload.
+
+In our exercises, we will consider one master and one worker node. Both will compute (so the master will not be just a passive node, but it will also contribute to the output). We will not consider any job-submitting queues, but rather, we will let MPI communicate over SSH. For that, both the master and the worker need to be able to SSH to each-other without requiring a password (a.k.a. **passwordless ssh**). We provide you with a script that you can run in each of the machines (in this case just one master an one worker) to do this interactively in a, hopefully, easy way.
+
+To make it easier, all nodes where MPI will run a program must have that program installed the same way in the same path. Because we only provide you with one image with all installed, that is already done.
+
+Also, usually the worker nodes are protected (inaccessible) from the outside world, so you can only reach them normally from within the internal network. We will simulate this as well. We have provided a script to configure the master and another for the worker node, which will change the hostname and also shutdown the external network interface on the worker node.
+
+#### Launch a 2-core worker VM
+**Exercise d1:** Launch another VM that will become a worker
+  1. On the UI, create a 2-core template that will use the provided XBeach image, and connect it to both the internet and your private project's internal network.
+  2. Launch a VM from that template
+  3. Connect to the VNC console so that you can follow the first-run wizard that the image is configured to run upon first start-up. It will ask you to set up a password for users `root` and `clouder`. Make sure you remember the passwords you set up.
+
+#### Configure master and worker VMs
+**Exercise d2:** Configure the **master** node
+  1. Make sure you have an SSH connection to the VM we have been playing with so far (so, not the one you just created). This will become the master from now on.
+  2. Write down the **internal** ip address of the master node.
+  3. Run our configuration script to turn the VM into the master:
+   
+  ```sh
+  cd ~/w/ssh && ./makeme_master.sh
+  ```
+
+> **_Food for brain d2:_**
+>
+> * What has just happened!?
+
+**Exercise d3:** Configure the **worker** node
+  1. Open a VNC console to the second VM you launched (the worker-to-be).
+  2. Write down the **internal** ip address of the worker node.
+  3. Become root
+
+  ```sh
+  su -
+  ```
+  4. Run our configuration script to make the VM the worker. You will need the master's **INTERNAL** ip address
+  
+  ```sh
+  cd /home/clouder/w/ssh && ./makeme_worker.sh 1 <master_ip>
+  ```
+
+> **_Food for brain d3:_**
+>
+> * Why do we recommend you to use the VNC console on this VM?
+* What has just happened!? Why do you need to become root? Why does the script require those parameters?
+
+**Exercise d4:** Configure passwordless-ssh between the pair of VMs
+  1. **On the master**, make sure you are logged in as `clouder`. Run the script we provide you with to enable passwordless-ssh, so that the `clouder` user on the worker node can connect to the master node without requiring a password. You will need to type in the **INTERNAL** ip address of the worker: 
+  
+  ```sh
+  cd ~/w/ssh && ./set_passwordless_ssh.sh <worker_ip>
+  ```
+  2. **On the worker**, make sure you are logged in as `clouder`. Run the script we provide you with to enable passwordless-ssh, so that the `clouder` user on the master node can connect to the worker node without requiring a password. You will need to type in the **INTERNAL** ip address of the master: 
+  
+  ```sh
+  cd ~/w/ssh && ./set_passwordless_ssh.sh <master_ip>
+  ```
+  3. **On the master**, try to SSH to the worker's internal ip address. Does it require a password? If it does, repeat the first step of this exercise.
+  4. **On the worker**, try to SSH to the master's internal ip address. Does it require a password? If it does, repate the second step of this exercise.
+
+**Exercise d5:** Configure the firewall
+
+MPI needs to communicate through the network between master and worker. They are both running a firewall. To avoid problems and because this is just a test scenario, we will trust all traffic coming from our **internal** interfaces.
+
+  1. **On the master**, make sure you are logged in as `root`: 
+  
+  ```sh
+  su -
+  ```
+  2. **On the master**, Trust the internal interface: 
+  
+  ```sh
+  firewall-cmd --zone=trusted --change-interface=eth1
+  ```
+  1. **On the worker**, make sure you are logged in as `root`: 
+  
+  ```sh
+  su -
+  ```
+  2. **On the worker**, Trust the internal interface: 
+  
+  ```sh
+  firewall-cmd --zone=trusted --change-interface=eth1
+  ```
+
+> **NOTE:**
+>
+> If you feel safe enough in our environment, you can disable the firewall all the way on the worker nodes. For that, as root, run: 
+>
+```sh
+service firewalld stop.
+```
+
+**Exercise d6:** Run XBeach over master and worker
+
+  1. **On the master**, make sure you are logged in as `clouder`. Change directory to the `base` example.
+  2. **On the master**, run XBeach with 4 processors over the 2 nodes (pay attention to the comma separating the master and the worker's ip addresses):
+  
+  ```sh
+  mpirun -np 4 -H <master_ip>,<worker_ip> xbeach
+  ```
+
+> **_Food for brain d6:_**
+>
+> * How long does it take to run the same example you run on a the previous exercises? Does it take more, less, or about the same as before?
