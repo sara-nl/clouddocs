@@ -50,8 +50,53 @@ We have prepared a cloud image (from now on simply _an image_) where we have com
   xbeach
   ```
   
-> **_Food for brain:_**
+> **_Food for brain b1:_**
 >
 > * How many processes is XBeach using? Where can you see that? (hint, look at the beginning of the output of XBeach, where a lot of information about the run is printed)
 * XBeach requires that you have a file parameters.txt on the directory where you run the xbeach command, with instructions it will use for input, output, etc. (look for the user manual and search within it).
 * For future reference, you should write down somewhere how long it takes to run.
+
+### c) Running XBeach with multiple cores
+
+MPI (Message-Passing Interface) is a parallel programming paradigm in which multiple OS processes are able to communicate among themselves to cooperatively perform a computation. If your program it to benefit from this paradigm, it must be able to support it, of course; and it just so happens that XBeach does. Because you created a VM with 2 cores in section a), you can benefit from allowing two independent processes to work on their own share of the problem.
+
+We have installed OpenMPI (one MPI implementation; others exist, such as MPItch) on the VM. We can leverage the power of MPI to allow XBeach to work with 2 processes. MPI provides a program which allows to run another program (in this case, XBeach) with multiple MPI processes; is called `mpirun`. Check the man pages for it: `man mpirun`. Have a look at the different flags (options) it can take. How can you tell `mpirun` which program to run? And how can you tell the amount of processes it must create?
+
+**Exercise c1:** Run XBeach with 2 processes in the previous VM
+  1. Make sure you are at the **`base`** example directory:
+  
+  ```sh
+  cd ~/w/xbeach/examples/base
+  ```
+  3. Run XBeach via `mpirun` with 2 processes:
+  
+  ```sh
+  mpirun -np 2 xbeach
+  ```
+
+> **_Food for brain c1:_**
+>
+> * How many processes is XBeach using? How can you make sure you are running 2 processes and not any more or any less? Where can you see that? (hint: look at the beginning of the output of XBeach, and also, on a different terminal, see what the command `top` can tell you; you may want to look at the man pages for `top`, like: `man top`)
+* How long does it take to run the  example? And in the previous exercise? Does it take more, less, or about the same time when you use 1 more process?
+
+**Exercise c2:** Run XBeach with 4 and 6 processes in the same VM
+  1. Run XBeach via `mpirun` with 4 processes:
+  
+  ```sh
+  mpirun -np 4 xbeach
+  ```
+  
+  2. Run XBeach via `mpirun` with 6 processes:
+  
+  ```sh
+  mpirun -np 6 xbeach
+  ```
+
+> **_Food for brain c2:_**
+>
+> * How about running the example with more processes than cores are available in the VM? Does it overall take more, less or about the same time as during the 1 or 2-core runs?
+* Can you explain the running time differences?
+* Can you make a (mental) picture of how the different processes are working on the input data and communicating among themselves?
+* Do you think that how the program we are running (in this case, XBeach) is made (written, compiled) affects how better it gets when you add more processes to fulfill the task? And the input data, does it influence that?
+
+
