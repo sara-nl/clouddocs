@@ -30,22 +30,28 @@ that, at least for a reduced number of processors, when you add more of them it 
 We have prepared a cloud image (from now on simply _an image_) where we have compiled and installed XBeach for a user called `clouder` (short for CLOUD usER). You can find the image on your images list. It's called `xbeach_centos_7`.
 
 **Exercise a1:** Make a 2-core VM out of the provided XBeach image.
-  1. On the UI, create a 2-core template that will use the provided XBeach image, and connect it to both the internet and your private project's internal network.
-  2. Launch a VM from that template
-  3. Connect to the VNC console so that you can follow the first-run wizard that the image is configured to run upon first start-up. It will ask you to set up a password for users `root` and `clouder`. Make sure you remember the passwords you set up.
-  4. Connect via SSH to the VM with user `clouder` (this image has SSH root access disabled) so that you can work more comfortably. Can you see where XBeach is installed?
+
+1. On the UI, create a 2-core template that will use the provided XBeach image, and connect it to both the internet and your private project's internal network.
+
+1. Launch a VM from that template
+
+1. Connect to the VNC console so that you can follow the first-run wizard that the image is configured to run upon first start-up. It will ask you to set up a password for users `root` and `clouder`. Make sure you remember the passwords you set up.
+
+1. Connect via SSH to the VM with user `clouder` (this image has SSH root access disabled) so that you can work more comfortably. Can you see where XBeach is installed?
 
 ### b) Simply running XBeach
 
 **Exercise b1:** Simply run XBeach in a VM
-  1. On `clouder`'s home directory, you have a directory called `w`, within it another called `xbeach`, and within it another called `examples`. We found these examples on the source code distribution of XBeach. You can read the readme.txt file there to find some description of the different examples.
-  2. Let us focus on the base example. Change directory to it:
+
+1. On `clouder`'s home directory, you have a directory called `w`, within it another called `xbeach`, and within it another called `examples`. We found these examples on the source code distribution of XBeach. You can read the readme.txt file there to find some description of the different examples.
+
+1. Let us focus on the base example. Change directory to it:
   
 ```bash
   cd ~/w/xbeach/examples/base
 ```
   
-  3. Run the command `xbeach` there:
+1. Run the command `xbeach` there:
   
   ```bash
   xbeach
