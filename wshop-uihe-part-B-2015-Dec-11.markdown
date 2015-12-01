@@ -71,6 +71,7 @@ MPI (Message-Passing Interface) is a parallel programming paradigm in which mult
 We have installed OpenMPI (one MPI implementation; others exist, such as MPItch) on the VM. We can leverage the power of MPI to allow XBeach to work with 2 processes. MPI provides a program which allows to run another program (in this case, XBeach) with multiple MPI processes; is called `mpirun`. Check the man pages for it: `man mpirun`. Have a look at the different flags (options) it can take. How can you tell `mpirun` which program to run? And how can you tell the amount of processes it must create?
 
 **Exercise c1:** Run XBeach with 2 processes in the previous VM
+
 1. Make sure you are at the **`base`** example directory:
   
 ```sh
@@ -89,6 +90,7 @@ mpirun -np 2 xbeach
 * How long does it take to run the  example? And in the previous exercise? Does it take more, less, or about the same time when you use 1 more process?
 
 **Exercise c2:** Run XBeach with 4 and 6 processes in the same VM
+
 1. Run XBeach via `mpirun` with 4 processes:
 
 ```sh
@@ -126,14 +128,20 @@ Also, usually the worker nodes are protected (inaccessible) from the outside wor
 
 #### Launch a 2-core worker VM
 **Exercise d1:** Launch another VM that will become a worker
+
 1. On the UI, create a 2-core template that will use the provided XBeach image, and connect it to both the internet and your private project's internal network.
+
 2. Launch a VM from that template
+
 3. Connect to the VNC console so that you can follow the first-run wizard that the image is configured to run upon first start-up. It will ask you to set up a password for users `root` and `clouder`. Make sure you remember the passwords you set up.
 
 #### Configure master and worker VMs
 **Exercise d2:** Configure the **master** node
+
 1. Make sure you have an SSH connection to the VM we have been playing with so far (so, not the one you just created). This will become the master from now on.
+
 2. Write down the **internal** ip address of the master node.
+
 3. Run our configuration script to turn the VM into the master:
  
 ```sh
@@ -145,8 +153,11 @@ cd ~/w/ssh && ./makeme_master.sh
 > * What has just happened!?
 
 **Exercise d3:** Configure the **worker** node
+
 1. Open a VNC console to the second VM you launched (the worker-to-be).
+
 2. Write down the **internal** ip address of the worker node.
+
 3. Become root
 
 ```sh
@@ -165,6 +176,7 @@ cd /home/clouder/w/ssh && ./makeme_worker.sh 1 <master_ip>
 * What has just happened!? Why do you need to become root? Why does the script require those parameters?
 
 **Exercise d4:** Configure passwordless-ssh between the pair of VMs
+
 1. **On the master**, make sure you are logged in as `clouder`. Run the script we provide you with to enable passwordless-ssh, so that the `clouder` user on the worker node can connect to the master node without requiring a password. You will need to type in the **INTERNAL** ip address of the worker: 
 
 ```sh
@@ -178,6 +190,7 @@ cd ~/w/ssh && ./set_passwordless_ssh.sh <master_ip>
 ```
 
 3. **On the master**, try to SSH to the worker's internal ip address. Does it require a password? If it does, repeat the first step of this exercise.
+
 4. **On the worker**, try to SSH to the master's internal ip address. Does it require a password? If it does, repate the second step of this exercise.
 
 **Exercise d5:** Configure the firewall
@@ -219,6 +232,7 @@ service firewalld stop.
 **Exercise d6:** Run XBeach over master and worker
 
 1. **On the master**, make sure you are logged in as `clouder`. Change directory to the `base` example.
+
 2. **On the master**, run XBeach with 4 processors over the 2 nodes (pay attention to the comma separating the master and the worker's ip addresses):
 
 ```sh
