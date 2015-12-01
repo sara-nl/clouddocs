@@ -12,6 +12,7 @@ This is part A of the Tutorial [UNESCO-IHE workshop - 11 Dec 2015](wshop-uihe-20
 * [Hands-on part A](#hands-on) <br>
   * [1. Access the user interface](#1.-Access-the-user-interface) <br>
   * [2. My first VM](#2.-My-first-VM) <br>
+  * [3. Persistence](#3.-Persistence) <br>
 
 ### <a name="1.-Access-the-user-interface"></a> 1. Access the User Interface
 
@@ -232,9 +233,43 @@ Let's shutdown your first VM. Anytime the VM is idle, you should shut it down to
 > **Food for brain:**
 >
 > Check and refresh the *Images* and *Templates* tabs. *Is your image and your template still there?*
-> Start your VM again. *Is your file still there?* 
 
-* Before you move to the next part, **remember to shutdown the VM**. 
+### <a name="3.-Persistence"></a> 3. Persistence
+
+Disk images can be `persistent` or not and you can switch that flag. 
+
+* What does `persistent` mean?
+  *  changes by the VM are copied back to the original disk image
+  *  if a VM runs with a persistent disk, you cannot launch a second VM using that disk
+
+* What does `non-persistent` mean?
+  * changes by a VM are lost at shutdown and not copied back to the original disk image
+  * it possible to run multiple VMs using the same non-persistent disk
+
+> **Food for brain:**
+>
+> Was the first image that you imported `persistent` or not?
+
+In this section you will work with persistent images. You will go through these steps: 
+
+> 
+* Making your image persistent.
+* Deploying a VM using the persistent image.
+
+#### Make your image persistent
+* Go to *Images* tab under Virtual Resources and click on the **Course Image**.
+* Under the Information section, find the *Persistent* entry. It says "no".
+* Switch the value to "yes".
+
+#### Start a persistent VM
+* Start your virtual machine again. 
+* Login and check the files you created during the previous run ([first VM](#2.-My-first-VM)). 
+
+> During the previous run the VM's disk was *non-persistent*.
+
+> **Note:**
+>
+> Your running VMs are consuming quota whether they are doing something useful or are idle. So before you move to the next part, **remember to shutdown the VMs**. 
 
 ### Next: part B
 Now that you completed the Tutorial [UNESCO-IHE - Part A (morning)](wshop-uihe-part-A-2015-Dec-11), please continue with Tutorial [UNESCO-IHE - Part B (afternoon)](wshop-uihe-part-B-2015-Dec-11).
