@@ -262,7 +262,8 @@ In this section you will work with persistent images. You will go through these 
 * Start your virtual machine again. 
 * Login and check the files you created during the previous run ([first VM](#2.-My-first-VM)). 
 
-> During the previous run the VM's disk was *non-persistent*.
+> **Food for brain:**
+> During the previous run the VM's disk was *non-persistent*. From now on, you can store data to your VM that will be stored even if you restart your VM. Try it.
 
 > **Note:**
 >
