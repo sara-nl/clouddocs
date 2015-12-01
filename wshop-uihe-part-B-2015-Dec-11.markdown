@@ -44,6 +44,7 @@ We have prepared a cloud image (from now on simply _an image_) where we have com
   ```sh
   cd ~/w/xbeach/examples/base
   ```
+  
   3. Run the command `xbeach` there:
   
   ```sh
