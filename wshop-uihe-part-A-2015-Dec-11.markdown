@@ -15,7 +15,7 @@ This is part A of the Tutorial [UNESCO-IHE workshop - 11 Dec 2015](wshop-uihe-20
 
 ### <a name="1.-Access-the-user-interface"></a> 1. Access the User Interface
 
-The UI (short for User Interface) is the web site that allows you to manage your `Virtual Machines` (`VM`s) on the HPC Cloud. In this section you will personalise your UI account by following these steps: 
+The UI (short for User Interface) is the web site that allows you to manage your `Virtual Machines` (`VM`s) on the HPC Cloud. In this section you will personalise your UI account in these steps: 
 
 > 
 1. Logging in and changing your UI password.  
@@ -72,7 +72,7 @@ Follow the steps below to add an ssh key to your profile:
 ls -l $HOME/.ssh/
 ```
 
-  * If you see the files `id_rsa.pub` and `id_rsa`, skip the next command. If not, generate a new SSH key pair:
+  * If you see the files `id_rsa.pub` and `id_rsa`, skip the next command. If not, type the following command to generate a new SSH key pair:
   
 ```sh
 # just press enter in every question that shows
@@ -87,10 +87,10 @@ If you have problems creating the SSH keys, get help from the detailed guide [Ge
 
 Next, you will copy the public key (`id_rsa.pub`) to the [UI](https://ui.hpccloud.surfsara.nl/), but you will keep the matching private key (`id_rsa`) safe in your laptop: 
 
-* Open your **public** ssh key file (id_rsa.pub) and copy the content to clipboard.
+* Open your **public** ssh key file (id_rsa.pub) and copy the content to clipboard, e.g. `cat  $HOME/.ssh/id_rsa.pub`
 * Go to your user profile and select *Settings* from the *buddy* icon. In the dialogue that pops up, go to the *Info* page.
 * Locate the section `Public SSH Key`, and click on the blue edit icon. Paste the content of your **public** ssh key (id_rsa.pub) file.
-* Close the window. There is no *Save* button, but your public key is automatically stored in your profile. Open the *Info* page again to check if it is there.
+* Close the window. There is no *Save* button, but your public key is automatically stored in your profile.  
 
 > **NOTE:** 
 > 
@@ -117,8 +117,8 @@ Let's run the first machine on the HPC Cloud.
 * Click on the `Import` button at the top-right corner of the screen. 
 * A dialogue will pop up, asking you for a few details. Edit as follows:
   * Select the Datastore for the images: **104: local images ssd**. 
-  * Image Name: **Cursus Image**.
-  * Template Name: **Cursus Template**.
+  * Image Name: **Course Image**.
+  * Template Name: **Course Template**.
 * Finally, click the *Import* button. This will start importing the appliance from the AppMarket. You can close this window.
 
 > **Food for brain:**
@@ -137,7 +137,7 @@ Edit the created *Template* with these steps:
 * Browse through the different options (i.e. General, Storage, Network). Leave the default values, **except** for the following:  
   * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Select the row **Name: internet** (click once on it). You will see the feedback below:  
 ![youselectednetwork](images/youselectednetwork.png)
-* Click *Update* on top to save your changes.
+* Click the green button *Update* on top to save your changes.
 
 #### Start the VM
 
@@ -148,7 +148,7 @@ A template is just a description of a virtual machine that we want to build. Let
 * Give your virtual machine a name: **My First VM**.  
 This name is also used as the host name of your machine. 
 * Number of instances: **1**.
-* Select the *Cursus Template* (click once on it). Since this is your first template, there is only one item in the list. You will see the feedback below:  
+* Select the *Course Template* (click once on it). Since this is your first template, there is only one item in the list. You will see the feedback below:  
 ![select_template](images/select_template.png)
 * Click on the `Create` button at the bottom of the screen.
 * Refresh the VM status by clicking on the two arrows chasing each other next to "+" button.
@@ -185,10 +185,8 @@ Your VM IP address is shown on in the `IPs` column from the virtual machines lis
 * To connect to your VM, type:
 
 ```sh
-ssh -X ubuntu@145.100.59.197 # replace with your IP address!
+ssh ubuntu@145.100.59.197 # replace with your IP address!
 ```
-
-The `-X` flag connects your display to the VM so that the VM can open a graphical window on your laptop.
 
 #### First login
 
@@ -236,7 +234,7 @@ Let's shutdown your first VM. Anytime the VM is idle, you should shut it down to
 > Check and refresh the *Images* and *Templates* tabs. *Is your image and your template still there?*
 > Start your VM again. *Is your file still there?* 
 
-* Before you move to the next sections, remember to shutdown the VM. 
+* Before you move to the next part, **remember to shutdown the VM**. 
 
 ### Next: part B
 Now that you completed the Tutorial [UNESCO-IHE - Part A (morning)](wshop-uihe-part-A-2015-Dec-11), please continue with Tutorial [UNESCO-IHE - Part B (afternoon)](wshop-uihe-part-B-2015-Dec-11).
