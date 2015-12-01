@@ -15,6 +15,7 @@ In this advanced part of our HPC Cloud tutorial we ask you to play around with a
 ## Running a real tool in parallel: XBeach
 
 From the [XBeach website](http://oss.deltares.nl/web/xbeach/):
+
 > XBeach is a two-dimensional model for wave propagation, long waves and mean flow, sediment transport and morphological changes of the nearshore area, beaches, dunes and backbarrier during storms.
 
 Several of your colleagues have repeatedly mentioned to SURFsara that they are using it for their research/work projects, so we figure it is a rather commonplace tool in your field. It is written largely in the FORTRAN programming language, and it has built-in MPI capabilities. This exercise will let you use XBeach, see it run in parallel, first with several processors within a single VM and then over multiple VMs.
@@ -45,17 +46,17 @@ We have prepared a cloud image (from now on simply _an image_) where we have com
 
 1. On `clouder`'s home directory, you have a directory called `w`, within it another called `xbeach`, and within it another called `examples`. We found these examples on the source code distribution of XBeach. You can read the readme.txt file there to find some description of the different examples.
 
-1. Let us focus on the base example. Change directory to it:
+2. Let us focus on the base example. Change directory to it:
   
 ```bash
-  cd ~/w/xbeach/examples/base
+cd ~/w/xbeach/examples/base
 ```
   
-1. Run the command `xbeach` there:
+3. Run the command `xbeach` there:
   
-  ```bash
-  xbeach
-  ```
+```bash
+xbeach
+```
   
 > **_Food for brain b1:_**
 >
