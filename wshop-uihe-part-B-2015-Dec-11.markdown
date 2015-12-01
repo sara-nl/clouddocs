@@ -212,3 +212,23 @@ service firewalld stop.
 > **_Food for brain d6:_**
 >
 > * How long does it take to run the same example you run on a the previous exercises? Does it take more, less, or about the same as before?
+
+### d) BONUS _food for brain_
+
+This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
+
+**Bonus 1:** What do you need to do to make more workers available? Is our image enough? Go ahead: try to have 2 workers of 1 core each. Run XBeach among them. Does the run time of the example reduce? And if you have 2 workers, 2 cores each? And 3 workers, 2 cores each? And... Is it worth parallelising a lot?
+
+**Bonus 2:** We have configured everything regarding MPI for you. How can you install it yourself? What do you need? Is it available for your favourite operating system? Go ahead and install it.
+
+**Bonus 3:** It can become a problem when you have to copy and install your program "everywhere" in the same place. This can be alleviated by sharing your `/home` folder via NFS. Can you set that up?
+
+**Bonus 4:** We have downloaded the source code of XBeach, compiled it, and installed it. Can you do that yourself as well?
+
+**Bonus 5:** Having to dowload, compile yourself the source code of the tool you need, and install it, is a very common workflow. Do you have a tool in this situation? Can it benefit from MPI? Please, let us know. Can you successfully get it running? Can you parallelise it?
+
+**Bonus 6:** Using SSH might be a way to go along, but when you have multiple things to run at a time, ensuring users' access, passwordless permissions... There exist cluster-building tools based on job queues, like Sun (now Oracle) Grid Engine, Torque, etc. Can you find out more? Can you set it up?
+
+**Bonus 7:** MPI is an implementation of a technique for parallelising computations. Another common technique is _shared memory_. One implementation for that technique is OpenMP. You can read more about it at their website: http://openmp.org/wp/. 
+  * Can you set up a VM and run a program that benefits from OpenMP?
+  * Does it make any sense to mix MPI and OpenMP? Are OpenMP-enabled MPI processes the same as MPI-enabled OpenMP programs?
