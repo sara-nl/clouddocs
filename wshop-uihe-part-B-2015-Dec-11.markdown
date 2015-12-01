@@ -41,13 +41,13 @@ We have prepared a cloud image (from now on simply _an image_) where we have com
   1. On `clouder`'s home directory, you have a directory called `w`, within it another called `xbeach`, and within it another called `examples`. We found these examples on the source code distribution of XBeach. You can read the readme.txt file there to find some description of the different examples.
   2. Let us focus on the base example. Change directory to it:
   
-  ```sh
+  ```bash
   cd ~/w/xbeach/examples/base
   ```
   
   3. Run the command `xbeach` there:
   
-  ```sh
+  ```bash
   xbeach
   ```
   
