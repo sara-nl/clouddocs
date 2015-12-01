@@ -47,11 +47,13 @@ We have prepared a cloud image (from now on simply _an image_) where we have com
 1. On `clouder`'s home directory, you have a directory called `w`, within it another called `xbeach`, and within it another called `examples`. We found these examples on the source code distribution of XBeach. You can read the readme.txt file there to find some description of the different examples.
 
 2. Let us focus on the base example. Change directory to it:
+
 ```bash
 cd ~/w/xbeach/examples/base
 ```
   
 3. Run the command `xbeach` there:
+
 ```bash
 xbeach
 ```
@@ -69,16 +71,16 @@ MPI (Message-Passing Interface) is a parallel programming paradigm in which mult
 We have installed OpenMPI (one MPI implementation; others exist, such as MPItch) on the VM. We can leverage the power of MPI to allow XBeach to work with 2 processes. MPI provides a program which allows to run another program (in this case, XBeach) with multiple MPI processes; is called `mpirun`. Check the man pages for it: `man mpirun`. Have a look at the different flags (options) it can take. How can you tell `mpirun` which program to run? And how can you tell the amount of processes it must create?
 
 **Exercise c1:** Run XBeach with 2 processes in the previous VM
-  1. Make sure you are at the **`base`** example directory:
+1. Make sure you are at the **`base`** example directory:
   
-  ```sh
-  cd ~/w/xbeach/examples/base
-  ```
-  3. Run XBeach via `mpirun` with 2 processes:
-  
-  ```sh
-  mpirun -np 2 xbeach
-  ```
+```sh
+cd ~/w/xbeach/examples/base
+```
+3. Run XBeach via `mpirun` with 2 processes:
+
+```sh
+mpirun -np 2 xbeach
+```
 
 > **_Food for brain c1:_**
 >
@@ -86,16 +88,16 @@ We have installed OpenMPI (one MPI implementation; others exist, such as MPItch)
 * How long does it take to run the  example? And in the previous exercise? Does it take more, less, or about the same time when you use 1 more process?
 
 **Exercise c2:** Run XBeach with 4 and 6 processes in the same VM
-  1. Run XBeach via `mpirun` with 4 processes:
-  
-  ```sh
-  mpirun -np 4 xbeach
-  ```
-  2. Run XBeach via `mpirun` with 6 processes:
-  
-  ```sh
-  mpirun -np 6 xbeach
-  ```
+1. Run XBeach via `mpirun` with 4 processes:
+
+```sh
+mpirun -np 4 xbeach
+```
+2. Run XBeach via `mpirun` with 6 processes:
+
+```sh
+mpirun -np 6 xbeach
+```
 
 > **_Food for brain c2:_**
 >
