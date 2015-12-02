@@ -32,27 +32,27 @@ We have prepared a cloud image (from now on simply _an image_) where we have com
 
 **Exercise a1:** Make a 2-core VM out of the provided XBeach image.
 
-1. On the UI, create a 2-core template that will use the provided XBeach image, and connect it to both the internet and your private project's internal network.
+* On the UI, create a 2-core template that will use the provided XBeach image, and connect it to both the internet and your private project's internal network.
 
-1. Launch a VM from that template
+* Launch a VM from that template
 
-1. Connect to the VNC console so that you can follow the first-run wizard that the image is configured to run upon first start-up. It will ask you to set up a password for users `root` and `clouder`. Make sure you remember the passwords you set up.
+* Connect to the VNC console so that you can follow the first-run wizard that the image is configured to run upon first start-up. It will ask you to set up a password for users `root` and `clouder`. Make sure you remember the passwords you set up.
 
-1. Connect via SSH to the VM with user `clouder` (this image has SSH root access disabled) so that you can work more comfortably. Can you see where XBeach is installed?
+* Connect via SSH to the VM with user `clouder` (this image has SSH root access disabled) so that you can work more comfortably. Can you see where XBeach is installed?
 
 ### b) Simply running XBeach
 
 **Exercise b1:** Simply run XBeach in a VM
 
-1. On `clouder`'s home directory, you have a directory called `w`, within it another called `xbeach`, and within it another called `examples`. We found these examples on the source code distribution of XBeach. You can read the readme.txt file there to find some description of the different examples.
+* On `clouder`'s home directory, you have a directory called `w`, within it another called `xbeach`, and within it another called `examples`. We found these examples on the source code distribution of XBeach. You can read the readme.txt file there to find some description of the different examples.
 
-2. Let us focus on the base example. Change directory to it:
+* Let us focus on the base example. Change directory to it:
 
 ```bash
 cd ~/w/xbeach/examples/base
 ```
   
-3. Run the command `xbeach` there:
+* Run the command `xbeach` there:
 
 ```bash
 xbeach
@@ -72,13 +72,13 @@ We have installed OpenMPI (one MPI implementation; others exist, such as MPItch)
 
 **Exercise c1:** Run XBeach with 2 processes in the previous VM
 
-1. Make sure you are at the **`base`** example directory:
+* Make sure you are at the **`base`** example directory:
   
 ```sh
 cd ~/w/xbeach/examples/base
 ```
 
-2. Run XBeach via `mpirun` with 2 processes:
+* Run XBeach via `mpirun` with 2 processes:
 
 ```sh
 mpirun -np 2 xbeach
@@ -91,13 +91,13 @@ mpirun -np 2 xbeach
 
 **Exercise c2:** Run XBeach with 4 and 6 processes in the same VM
 
-1. Run XBeach via `mpirun` with 4 processes:
+* Run XBeach via `mpirun` with 4 processes:
 
 ```sh
 mpirun -np 4 xbeach
 ```
 
-2. Run XBeach via `mpirun` with 6 processes:
+* Run XBeach via `mpirun` with 6 processes:
 
 ```sh
 mpirun -np 6 xbeach
@@ -129,20 +129,20 @@ Also, usually the worker nodes are protected (inaccessible) from the outside wor
 #### Launch a 2-core worker VM
 **Exercise d1:** Launch another VM that will become a worker
 
-1. On the UI, create a 2-core template that will use the provided XBeach image, and connect it to both the internet and your private project's internal network.
+* On the UI, create a 2-core template that will use the provided XBeach image, and connect it to both the internet and your private project's internal network.
 
-2. Launch a VM from that template
+* Launch a VM from that template
 
-3. Connect to the VNC console so that you can follow the first-run wizard that the image is configured to run upon first start-up. It will ask you to set up a password for users `root` and `clouder`. Make sure you remember the passwords you set up.
+* Connect to the VNC console so that you can follow the first-run wizard that the image is configured to run upon first start-up. It will ask you to set up a password for users `root` and `clouder`. Make sure you remember the passwords you set up.
 
 #### Configure master and worker VMs
 **Exercise d2:** Configure the **master** node
 
-1. Make sure you have an SSH connection to the VM we have been playing with so far (so, not the one you just created). This will become the master from now on.
+* Make sure you have an SSH connection to the VM we have been playing with so far (so, not the one you just created). This will become the master from now on.
 
-2. Write down the **internal** ip address of the master node.
+* Write down the **internal** ip address of the master node.
 
-3. Run our configuration script to turn the VM into the master:
+* Run our configuration script to turn the VM into the master:
  
 ```sh
 cd ~/w/ssh && ./makeme_master.sh
@@ -154,11 +154,11 @@ cd ~/w/ssh && ./makeme_master.sh
 
 **Exercise d3:** Configure the **worker** node
 
-1. Open a VNC console to the second VM you launched (the worker-to-be).
+* Open a VNC console to the second VM you launched (the worker-to-be).
 
-2. Write down the **internal** ip address of the worker node.
+* Write down the **internal** ip address of the worker node.
 
-3. Become root
+* Become root
 
 ```sh
 su -
@@ -177,45 +177,45 @@ cd /home/clouder/w/ssh && ./makeme_worker.sh 1 <master_ip>
 
 **Exercise d4:** Configure passwordless-ssh between the pair of VMs
 
-1. **On the master**, make sure you are logged in as `clouder`. Run the script we provide you with to enable passwordless-ssh, so that the `clouder` user on the worker node can connect to the master node without requiring a password. You will need to type in the **INTERNAL** ip address of the worker: 
+* **On the master**, make sure you are logged in as `clouder`. Run the script we provide you with to enable passwordless-ssh, so that the `clouder` user on the worker node can connect to the master node without requiring a password. You will need to type in the **INTERNAL** ip address of the worker: 
 
 ```sh
 cd ~/w/ssh && ./set_passwordless_ssh.sh <worker_ip>
 ```
 
-2. **On the worker**, make sure you are logged in as `clouder`. Run the script we provide you with to enable passwordless-ssh, so that the `clouder` user on the master node can connect to the worker node without requiring a password. You will need to type in the **INTERNAL** ip address of the master: 
+* **On the worker**, make sure you are logged in as `clouder`. Run the script we provide you with to enable passwordless-ssh, so that the `clouder` user on the master node can connect to the worker node without requiring a password. You will need to type in the **INTERNAL** ip address of the master: 
 
 ```sh
 cd ~/w/ssh && ./set_passwordless_ssh.sh <master_ip>
 ```
 
-3. **On the master**, try to SSH to the worker's internal ip address. Does it require a password? If it does, repeat the first step of this exercise.
+* **On the master**, try to SSH to the worker's internal ip address. Does it require a password? If it does, repeat the first step of this exercise.
 
-4. **On the worker**, try to SSH to the master's internal ip address. Does it require a password? If it does, repate the second step of this exercise.
+* **On the worker**, try to SSH to the master's internal ip address. Does it require a password? If it does, repate the second step of this exercise.
 
 **Exercise d5:** Configure the firewall
 
 MPI needs to communicate through the network between master and worker. They are both running a firewall. To avoid problems and because this is just a test scenario, we will trust all traffic coming from our **internal** interfaces.
 
-1. **On the master**, make sure you are logged in as `root`: 
+* **On the master**, make sure you are logged in as `root`: 
 
 ```sh
 su -
 ```
 
-2. **On the master**, Trust the internal interface: 
+* **On the master**, Trust the internal interface: 
 
 ```sh
 firewall-cmd --zone=trusted --change-interface=eth1
 ```
 
-3. **On the worker**, make sure you are logged in as `root`: 
+* **On the worker**, make sure you are logged in as `root`: 
 
 ```sh
 su -
 ```
 
-4. **On the worker**, Trust the internal interface: 
+* **On the worker**, Trust the internal interface: 
 
 ```sh
 firewall-cmd --zone=trusted --change-interface=eth1
@@ -231,9 +231,9 @@ service firewalld stop.
 
 **Exercise d6:** Run XBeach over master and worker
 
-1. **On the master**, make sure you are logged in as `clouder`. Change directory to the `base` example.
+* **On the master**, make sure you are logged in as `clouder`. Change directory to the `base` example.
 
-2. **On the master**, run XBeach with 4 processors over the 2 nodes (pay attention to the comma separating the master and the worker's ip addresses):
+* **On the master**, run XBeach with 4 processors over the 2 nodes (pay attention to the comma separating the master and the worker's ip addresses):
 
 ```sh
 mpirun -np 4 -H <master_ip>,<worker_ip> xbeach
