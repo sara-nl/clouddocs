@@ -66,7 +66,7 @@ xbeach
 
 ### c) Running XBeach with multiple cores
 
-MPI (Message-Passing Interface) is a parallel programming paradigm in which multiple OS processes are able to communicate among themselves to cooperatively perform a computation. If your program it to benefit from this paradigm, it must be able to support it, of course; and it just so happens that XBeach does. Because you created a VM with 2 cores in section a), you can benefit from allowing two independent processes to work on their own share of the problem.
+MPI (Message-Passing Interface) is a parallel programming paradigm in which multiple OS processes are able to communicate among themselves to cooperatively perform a computation. Your program must be able to support this paradigm in order to benefit from it, of course; and it just so happens that XBeach does. Because you created a VM with 2 cores in section a), you can benefit from allowing two independent processes to work on their own share of the problem.
 
 We have installed OpenMPI (one MPI implementation; others exist, such as MPItch) on the VM. We can leverage the power of MPI to allow XBeach to work with 2 processes. MPI provides a program which allows to run another program (in this case, XBeach) with multiple MPI processes; is called `mpirun`. Check the man pages for it: `man mpirun`. Have a look at the different flags (options) it can take. How can you tell `mpirun` which program to run? And how can you tell the amount of processes it must create?
 
