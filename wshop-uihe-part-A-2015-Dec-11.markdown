@@ -11,7 +11,7 @@ This is part A of the Tutorial [UNESCO-IHE workshop - 11 Dec 2015](wshop-uihe-20
   * [2. My first VM](#2.-My-first-VM) <br>
   * [3. Persistence](#3.-Persistence) <br>
 
-### <a name="1.-Access-the-user-interface"></a> 1. Access the User Interface
+### <a name="1.-Access-the-user-interface"></a> a) Access the User Interface
 
 The UI (short for User Interface) is the web site that allows you to manage your `Virtual Machines` (`VM`s) on the HPC Cloud. In this section you will personalise your UI account in these steps: 
 
@@ -95,7 +95,7 @@ Next, you will copy the public key (`id_rsa.pub`) to the [UI](https://ui.hpcclou
 > Adding an SSH key to you profile is a one-time task. It is possible to use multiple keys for different VMs but there is no need to repeat this procedure for the rest of the tutorial. 
 
 
-### <a name="2.-My-first-VM"></a> 2. My first VM
+### <a name="2.-My-first-VM"></a> b) My first VM
 
 To start a virtual machine easily, we provide the HPC Cloud `AppMarket`. This repository contains common appliances for you to pick and use. In this section you will use the AppMarket to build your first VM with the following steps:
 
@@ -234,7 +234,7 @@ Let's shut your first VM down. Anytime you expect your VM to become idle, you sh
 >
 > Check and refresh the `Images` and `Templates` tabs. *Are your `image` and `template` still there?*
 
-### <a name="3.-Persistence"></a> 3. Persistence
+### <a name="3.-Persistence"></a> c) Persistence
 
 `Images` can be **persistent**. We say they are **persistent** when the `persistent` box is ticked on the UI and **non-persistent** when the `persistent` box is not ticked. 
 
@@ -271,6 +271,16 @@ In this section you will work with **persistent** images. You will go through th
 > **Note:**
 >
 > Your running VMs are exclusively occupying resources (and hence, consuming quota from your group even though we haven't explicitly made you aware of it in the course material) whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**. 
+
+### <a name="4.-Bonus"></a> d) Bonus food for brain
+
+This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
+
+**Bonus 1:** The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!!!
+
+**Bonus 2:** In Part A of the workshop (this page) you have explored the UI and learnt how to import an _appliance_ from the AppMarket. However, many people come to the HPC Cloud because they can install and run their own operating system. In particular, Windows is very popular among UNESCO-IHE users. 
+  * Can you think of (and sketch) the steps that you would need to follow to create a VM running your favourite operating system?
+  * Can you find three articles in the HPC Cloud Documentation that show how to install different operating systems from scratch? 
 
 ### Next: part B
 Now that you have completed the Tutorial [UNESCO-IHE - Part A (morning)](wshop-uihe-part-A-2015-Dec-11), you are ready to move on and continue with Tutorial [UNESCO-IHE - Part B (afternoon)](wshop-uihe-part-B-2015-Dec-11).
