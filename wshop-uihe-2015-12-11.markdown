@@ -2,13 +2,13 @@
 layout: default
 ---
 
+# UNESCO-IHE workshop - 11 Dec 2015
+
 <div style="float:right;" markdown="1">
 
 ![XBeach logo](images/Unesco-Ihe-logo.png)
 
 </div>
-
-# UNESCO-IHE workshop - 11 Dec 2015
 
 * [General Information](#general) <br>
 * [Preparation](#preparation) <br>
