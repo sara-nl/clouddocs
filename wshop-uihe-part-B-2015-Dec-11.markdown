@@ -12,11 +12,11 @@ In this advanced part of our HPC Cloud tutorial we ask you to play around with a
 
 ## Running a real tool in parallel: XBeach
 
-<span style="float:right" markdown="1">
+<div style="float:right;" markdown="1">
 
 ![XBeach logo](images/XBeach_logo.png)
 
-</span>
+</div>
 
 From the [XBeach website](http://oss.deltares.nl/web/xbeach/):
 
