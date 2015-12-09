@@ -121,115 +121,118 @@ Let's run the first machine on the HPC Cloud.
 
 > **Food for brain:**
 >
-> You can verify that the process is complete by inspecting the `Images` tab under the `Virtual Resources` on left menu. You should see your new image there. *What is the STATUS of the image?* Refresh with the sign next to the *green plus button* until it is READY.
+> * When you click on the _body_ of an _appliance_, you can see detailed information about that _appliance_. Can you see this detailed information about the _appliance_ we are using in this exercise?
+> * When you _import_ an _appliance_, this will create (at least) one `image` and one `template`, as explained during the presentation. In the UI you have an `Images` tab and another `Templates` tab under the `Virtual Resources` option on the left menu. You should see your new `image` and `template` there. 
+  * Can you see them?
+  * What is the STATUS of the `image` just after it you import it?
+  * Refresh with the sign next to the *green plus button* until it is READY.
 
 #### Edit the Template  
 
-When you imported the appliance from the AppMarket, it created an `Image` and a `Template` for you. In the *Template* you can define how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc.
+When you imported the appliance from the AppMarket, it created an `image` and a `template` for you. In the `template` you can define how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc. Following the instructions of the extended information of the _appliance_ that you imported, we will have to adapt the `template` before we can use it to create VMs out of it.
 
-Edit the created *Template* with these steps:
+Edit the imported `template` with these steps:
 
-* Go to the Templates tab under the `Virtual Resources` on the left menu.
-* Find the template you just created, and click on it. Next we will modify it.
-* Click on *Update* on the top-right of the screen to start editing the template. 
-* Browse through the different options (i.e. General, Storage, Network). Leave the default values, **except** for the following:  
-  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Select the row **Name: internet** (click once on it). You will see the feedback below:  
+* Go to the `Templates` tab under the `Virtual Resources` on the left menu.
+* Find the `template` you just imported, and click on it (anywhere **except** the tick-box).
+* Click on the `Update` button on the top-right of the screen to start editing the template. 
+* Browse through the different tabs there (i.e. `General`, `Storage`, `Network`). Leave the default values, **except** for the following:  
+  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Select the row **Name: internet** (click once on it). You can see the feedback below:  
 ![youselectednetwork](images/youselectednetwork.png)
-* Click the green button *Update* on top to save your changes.
+* Click the green button `Update` at the top, to save your changes.
 
 #### Start the VM
 
-A template is just a description of a virtual machine that we want to build. Let's create the actual virtual machine from it.
+A `template` is just a description of a virtual machine that we want to build. Let's create the actual virtual machine from it.
 
-* Go to the *Virtual Machines* section. This displays an overview of all *running* VMs. This list is empty for now.
-* Click on the *green plus sign*.
+* Go to the `Virtual Machines` section on the left menu. This displays an overview of all the existing VMs that you have the right to see. This list is (probably) empty at the moment.
+* Click on the *green plus sign* to bring up a pop-up dialogue to create a VM.
 * Give your virtual machine a name: **My First VM**.  
 This name is also used as the host name of your machine. 
 * Number of instances: **1**.
-* Select the *Course Template* (click once on it). Since this is your first template, there is only one item in the list. You will see the feedback below:  
+* Select the *Course Template* (click once on it). Since this is your first template, there is only one item in the list. You can see the feedback below:  
 ![select_template](images/select_template2.png)
 * Click on the `Create` button at the bottom of the screen.
-* Refresh the VM status by clicking on the two arrows chasing each other next to "+" button.
+* Refresh the VM status by clicking on the symbol of the two arrows chasing each other next to `[+]` button.
 
 > **NOTE:**  
->Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. The cloud system is looking for a place where your virtual machine can actually run. This depends on the amount of cores, or memory, or disk that you asked in the template. Refresh with the sign next to the *green plus button*. When the required capacity becomes available, your VM will appear in Status: **RUNNING**. 
+>Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. The HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of cores, memory, and disk that you asked in the `template`. Keep refreshing the list by clicking on the symbol of the two arrows chasing each other next to `[+]` button. When the required capacity becomes available, your VM will show the status **RUNNING**. Only then can you actually use your VM.
 
 
 #### What happened?
 
-You have just created a fresh, clean machine!
+Congratulations! You have just created a fresh, clean virtual machine!
 
-Let's summarise what you have seen so far. From the menu on the left side, click on each of the tabs to inspect the information. A vertical blue bar to the left of the tab tells which one is selected.
+Let's summarise what you have seen so far. From the menu on the left side, click on each of the tabs to inspect the information. A vertical blue bar to the left of one (and only one) tab tells you which one you are currently seeing.
 
-* *Dashboard*: shows an overview of the project status, like running machines or usage statistics. 
-* *Virtual Resources:*  
-  * `Images`: this is the equivalent of a hard drive. Your OS is stored on this image.  
-  * `Templates`:  the template gives your computer the shape you want. A template is just a recipe, not the machine itself.   
-  * `Virtual Machines`: here you can manage your machines (i.e.: create, start, shutdown). Click anywhere on the running VM row. Inspect the Information tables that appear.
+* `Dashboard`: shows an overview of the project status, like the amount of running machines or usage statistics. 
+* `Virtual Resources`:  
+  * `Images`: this is the equivalent of a hard drive. Your OS is stored on this `image`.  
+  * `Templates`:  the `template` gives your VM the shape you want. A template is just a recipe; not the machine itself.   
+  * `Virtual Machines`: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box, that is). Inspect the information tables that appear which show extended details.
 
 #### Login to the VM
 
-You can interact with your VM with several ways: Command-line (SSH), VNC (UI browser window) or a remote desktop server. We will use SSH in a terminal.
+You can interact with your VM with several ways: command-line (e.g.: SSH), VNC (UI in your browser) or a remote desktop. We will use SSH in a terminal for the moment.
 
 The way to login into your virtual machine is the ssh keys that you [stored in your profile](#add-ssh-keys-to-your-profile) previously.
 
 **Command-line access - SSH**  
 
-* First find the IP address of your virtual machine.  
-Your VM IP address is shown on in the `IPs` column from the virtual machines list on the UI.
+* First find the IP address of your virtual machine. Your VM's IP address is shown on in the `IPs` column from the virtual machines list on the UI.
 
-* Start a terminal (in Mac/Linux) or GitBash (in Windows).
+* On your laptop, start a terminal (in Mac/Linux) or GitBash (in Windows).
 
-* To connect to your VM, type:
+* In your terminal, to connect to your VM, type:
 
 ```sh
-ssh ubuntu@145.100.59.197 # replace with your IP address!
+ssh ubuntu@145.100.59.XYZ # replace with your IP address!
 ```
 
 #### First login
 
-If everything went well, the first time you login you will be asked to add the VM to the list of known hosts: type *Yes*.
+If everything went well, the first time you try to login your terminal will ask you to add the VM's IP to the list of known hosts. Type *Yes*, in that case.
 
-You should now see a similar line in your terminal: `ubuntu@ip-145-100-59-102:~$` 
+You should now see a similar line in your terminal: `ubuntu@ip-145-100-59-XYZ:~$` 
 
 This means that you are logged in successfully to your Virtual Machine!
 
 * Look around a bit, make yourself familiar with the system: 
 
 ```sh
-ubuntu@ip-145-100-59-102:~$ ls /
-ubuntu@ip-145-100-59-102:~$ cd /home/ubuntu/
+ubuntu@ip-145-100-59-XYZ:~$ ls /
+ubuntu@ip-145-100-59-ZYZ:~$ cd /home/ubuntu/
 ```
 
 * Create a file:
 
 ```sh
-ubuntu@ip-145-100-59-102:~$ echo "Some text ..." > myfile
-ubuntu@ip-145-100-59-102:~$ cat myfile
+ubuntu@ip-145-100-59-XYZ:~$ echo "Some text ..." > myfile
+ubuntu@ip-145-100-59-XYZ:~$ cat myfile
 ```
 
-* Logout by typing `logout` or `ctrl-D` in your terminal ( do not use shutdown command):
+* Logout by typing `logout` or `ctrl-D` in your terminal (do **NOT** issue any shutdown command):
 
 ```sh
-ubuntu@ip-145-100-59-102:~$ logout
+ubuntu@ip-145-100-59-XYZ:~$ logout
 ```
 
 > **Food for brain:**
 >
-> Login to your VM again. *Is your file still there?* 
+> Log in to your VM again. *Is your file still there?* 
 
  
-#### First shut-down
+#### First shutdown
 
-Let's shutdown your first VM. Anytime the VM is idle, you should shut it down to stop consuming unused resources.
+Let's shut your first VM down. Anytime you expect your VM to become idle, you should shut it down to stop consuming these resources that your VM is holding but not using.
 
 * Tick the box to the left on the row with your VM.
 * At the upper right corner of the screen, under the dust bin drop-down button, click `Shutdown`. 
-* Refresh (by clicking on the two arrows chasing each other next to + button) until your VM is gone from the list. It will be removed from the display, but you can start it any time.
+* Refresh (by clicking on the two arrows chasing each other next to + button) until your VM is gone from the list. It will be removed from the display, but you can start it again whenever you need it.
 
 > **Food for brain:**
 >
-> Check and refresh the *Images* and *Templates* tabs. *Is your image and your template still there?*
+> Check and refresh the `Images` and `Templates` tabs. *Is your image and your template still there?*
 
 ### <a name="3.-Persistence"></a> 3. Persistence
 
