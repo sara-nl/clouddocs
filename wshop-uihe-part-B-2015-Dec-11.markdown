@@ -2,8 +2,6 @@
 layout: default
 ---
 
-⚠ **WARNING** under construction
-
 >**NOTE:**
 >
 > This is the **second** (and advanced) part of the [UNESCO-IHE tutorial](wshop-uihe-2015-12-11) about the HPC Cloud. 
@@ -13,6 +11,12 @@ layout: default
 In this advanced part of our HPC Cloud tutorial we ask you to play around with a parallel processing technique (multiprocessing): message-passing (MPI). For this UNESCO-IHE tutorial, we also want to give you a taste of how tools that you can use in the water management field can be used on the HPC Cloud. In particular, we have prepared an exercise for you to run XBeach with multiple processors over multiple VMs.
 
 ## Running a real tool in parallel: XBeach
+
+<span style="float:right" markdown="1">
+
+![XBeach logo](images/XBeach_logo.png)
+
+</span>
 
 From the [XBeach website](http://oss.deltares.nl/web/xbeach/):
 
