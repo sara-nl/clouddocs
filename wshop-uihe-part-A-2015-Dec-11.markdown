@@ -226,51 +226,51 @@ ubuntu@ip-145-100-59-XYZ:~$ logout
 
 Let's shut your first VM down. Anytime you expect your VM to become idle, you should shut it down to stop consuming these resources that your VM is holding but not using.
 
-* Tick the box to the left on the row with your VM.
+* On the UI, Tick the box to the left on the row with your VM.
 * At the upper right corner of the screen, under the dust bin drop-down button, click `Shutdown`. 
 * Refresh (by clicking on the two arrows chasing each other next to + button) until your VM is gone from the list. It will be removed from the display, but you can start it again whenever you need it.
 
 > **Food for brain:**
 >
-> Check and refresh the `Images` and `Templates` tabs. *Is your image and your template still there?*
+> Check and refresh the `Images` and `Templates` tabs. *Are your `image` and `template` still there?*
 
 ### <a name="3.-Persistence"></a> 3. Persistence
 
-Disk images can be `persistent` or not and you can switch that flag. 
+`Images` can be **persistent**. We say they are **persistent** when the `persistent` box is ticked on the UI and **non-persistent** when the `persistent` box is not ticked. 
 
-* What does `persistent` mean?
-  *  changes by the VM are copied back to the original disk image
-  *  if a VM runs with a persistent disk, you cannot launch a second VM using that disk
+* What does **persistent** mean?
+  *  Changes by the VM are copied back to the original `image` (upon normal VM shutdown)
+  *  If a VM is running with a **persistent** disk, you cannot launch a second VM using that `image`
 
-* What does `non-persistent` mean?
-  * changes by a VM are lost at shutdown and not copied back to the original disk image
-  * it possible to run multiple VMs using the same non-persistent disk
+* What does **non-persistent** mean?
+  * Changes by a VM are lost at shutdown and not copied back to the original `image`
+  * It **is** possible to run multiple VMs using the same single **non-persistent** `image`
 
 > **Food for brain:**
 >
-> Was the first image that you imported `persistent` or not?
+> Was the first image that you imported `persistent` or wasn't it?
 
-In this section you will work with persistent images. You will go through these steps: 
+In this section you will work with **persistent** images. You will go through these steps: 
 
 > 
 * Making your image persistent.
 * Starting a VM using the persistent image.
 
 #### Make your image persistent
-* Go to *Images* tab under Virtual Resources and click on the **Course Image**.
-* Under the Information section, find the *Persistent* entry. It says "no".
-* Switch the value to "yes".
+* Go to `Images` tab under `Virtual Resources` on the left menu, and click anywhere (except the tick-box, that is) on the row for the `image` you created before that you named **Course Image** .
+* Under the `Information` section, find the `Persistent` attribute. It says _No_, at the moment.
+* Switch the value to _Yes_.
 
 #### Start a persistent VM
 * Start your virtual machine again. 
-* Login and check the files you created during the previous run ([first VM](#2.-My-first-VM)). 
+* Log in and check the files you created during the previous run ([first VM](#2.-My-first-VM)). 
 
 > **Food for brain:**
-> During the previous run the VM's disk was *non-persistent*. From now on, you can store data to your VM that will be stored even if you restart your VM. Try it.
+> During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written on the backing `image` even if you restart your VM. Try it.
 
 > **Note:**
 >
-> Your running VMs are consuming quota whether they are doing something useful or are idle. So before you move to the next part of this workshop, **remember to shutdown the VMs**. 
+> Your running VMs are exclusively occupying resources (and hence, consuming quota from your group even though we haven't explicitly made you aware of it in the course material) whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**. 
 
 ### Next: part B
-Now that you completed the Tutorial [UNESCO-IHE - Part A (morning)](wshop-uihe-part-A-2015-Dec-11), please continue with Tutorial [UNESCO-IHE - Part B (afternoon)](wshop-uihe-part-B-2015-Dec-11).
+Now that you have completed the Tutorial [UNESCO-IHE - Part A (morning)](wshop-uihe-part-A-2015-Dec-11), you are ready to move on and continue with Tutorial [UNESCO-IHE - Part B (afternoon)](wshop-uihe-part-B-2015-Dec-11).
