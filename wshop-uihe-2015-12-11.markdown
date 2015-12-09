@@ -6,7 +6,17 @@ layout: default
 
 <div style="float:right;" markdown="1">
 
+<div>
+
 ![XBeach logo](images/Unesco-Ihe-logo.png)
+
+</div>
+
+<div>
+
+![SURFsara logo](images/SURFsara_logo.png)
+
+</div>
 
 </div>
 
