@@ -231,14 +231,6 @@ su -
 firewall-cmd --zone=trusted --change-interface=eth1
 ```
 
-> **NOTE:**
->
-> If you feel safe enough in our environment, you can disable the firewall all the way on the worker nodes. For that, as root, run: 
->
-```sh
-service firewalld stop.
-```
-
 **Exercise d6:** Run XBeach over master and worker
 
 * **On the master**, make sure you are logged in as `clouder`. Change directory to the `base` example.
@@ -246,7 +238,7 @@ service firewalld stop.
 * **On the master**, run XBeach with 4 processors over the 2 nodes (pay attention to the comma separating the master and the worker's ip addresses):
 
 ```sh
-mpirun -np 4 -H <master_ip>,<worker_ip> xbeach
+mpirun -np 4 -H <master_INTERNAL_ip>,<worker_INTERNAL_ip> xbeach
 ```
 
 > **_Food for brain d6:_**
