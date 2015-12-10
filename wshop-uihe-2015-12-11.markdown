@@ -54,5 +54,5 @@ The hands-on tutorial has two parts: part A and part B. The exercises in part A 
 ## <a name="presentations"></a> Presentations
 
 * [HPC Cloud at SURFsara](assets/2015.12.11%20-%20UNESCO-IHE%20-%20Tutorial%20intro.pdf)
-* [Design a parallel application](assets/<todo>.pdf)
+* [Design a parallel application](assets/UNESCO_parallel_appications.pdf)
 
