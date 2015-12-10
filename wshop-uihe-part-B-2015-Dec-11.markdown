@@ -36,7 +36,13 @@ We have prepared a cloud image (from now on simply _an image_) where we have com
 
 **Exercise a1:** Make a 2-core VM out of the provided XBeach image.
 
-* On the UI, create a 2-core template that will use the provided XBeach image, and connect it to both the internet and your private project's internal network.
+* On the UI, create a 2-core template that will use the provided XBeach image:
+  * On the Templates tab (under Virtual Resources), click on the green [+] button to create a new template
+  * Edit the *General* tab: type in a meaningful Name e.g. **xbeach setup**, type in **2 CPUs**, type in **4GB Memory** 
+  * Edit the *Storage* tab: for the Disk 0, choose the **xbeach_centos_7** (from the table on the right of the screen) 
+  * Edit the *Network* tab: for the Interface 0, choose the **internet network**. Click on the + Add another nic button (that will make a new Interface 1), and then choose **wshop-uihe.int** 
+  * Edit the *Input/Output* tab: click on the **VNC** radiobutton
+  * Finally, click on the green *Create* button at the top of the screen
 
 * Launch a VM from that template
 
