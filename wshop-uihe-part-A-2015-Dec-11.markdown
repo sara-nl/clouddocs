@@ -24,7 +24,7 @@ Let's start.
 
 #### Login to the UI
 
-* Pick the **`demo account`** account that corresponds to your team from [here](https://docs.google.com/spreadsheets/d/1zUVq5VrZLHhoFs3YCwDGGeDGLXDYBhF7dRFPCDDIppg/edit?usp=sharing). 
+* Pick the **`demo account`** account that corresponds to your team. 
   * You will receive the password by the workshop organizers.  
   * Your account will remain active until `21st of December`.
 
