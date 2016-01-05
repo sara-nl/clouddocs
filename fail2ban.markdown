@@ -18,8 +18,9 @@ Fail2ban has the concept of 'jails', which are daemons the service monitors, and
 
 ### Installing fail2ban
 
-To install fail2ban on Centos7, use
+To install fail2ban on Centos7, you'll also need the EPEL repository. You can install the repository and fail2ban by running these commands as root (or prepend them with 'sudo'):
 ```
+    yum install epel-release
     yum install fail2ban
 ```
 
