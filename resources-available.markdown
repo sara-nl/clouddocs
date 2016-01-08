@@ -16,7 +16,7 @@ The compute nodes are the physical machines where you can run Virtual Machines (
   * 32 CPU cores
   * 2 GPU's of type K2 GRID, accessible through PCI passthrough, enabling applications to get the performance boost of the direct access to a GPU card
   * 256 GB RAM
-  * 3.2 TB local SSD disk
+  * 800 GB local SSD disk
 
 * 1 High memory node, having:
   * 40 CPU cores
