@@ -4,7 +4,7 @@ layout: default
 
 # UvA workshop - 2016-01-25
 
-> ##Warning: Under construction
+> ## Warning: Under construction
 
 * [General Information](#general) <br>
 * [Preparation](#preparation) <br>
