@@ -181,10 +181,11 @@ Once your freshly installed Windows starts, we will configure your VM so that it
 1. **On the Windows VM:** On the _Local Group Policy Editor_, navigate to _Computer Configuration_ > _Windows Settings_ > _Scripts (Startup/Shutdown)_. Then doubleclick on _Startup_. A new _Startup Properties_ dialogue will pop up.
 1. **On the Windows VM:** On the _Startup Properties_ dialogue, click on the _Add_ button. A new _Add a Script_ dialogue will pop up.
 1. **On the Windows VM:** On the _Add a Script_ dialogue, click on the _Browse..._ button, and look there for the C:\startup.vbs file. A new entry will appear on the _Startup Properties_ dialogue indicating that you have added the new startup script. Click *OK*, then *Apply* and then *OK* again, to return to the _Scripts (Startup/Shutdown)_ window.
+1. **On the Windows VM:** You can reboot your Windows now. When it boots up, and (probably) after a while after you log in, your network adapters will stop showing the yellow warning icon and you should be able to browse the Internet now.
 1. **On the Windows VM:** We will now tackle the shutdown script. Doubleclick on _Shutdown_. A new _Shutdown Properties_ dialogue will pop up.
 1. **On the Windows VM:** On the _Shutdown Properties_ dialogue, click on the _Add_ button. A new _Add a Script_ dialogue will pop up.
 1. **On the Windows VM:** On the _Add a Script_ dialogue, click on the _Browse..._ button, and look there for the C:\shutdown.vbs file. A new entry will appear on the _Shutdown Properties_ dialogue indicating that you have added the new shutdown script. Click *OK* and *Apply*.
-1. **On the Windows VM:** You can reboot your Windows now. When it boots up, and (probably) after a while after you log in, your network adapters will stop showing the yellow warning icon and you should be able to browse the Internet now.
+1. **On the Windows VM:** You can reboot your Windows again. Make sure you have internet again.
 1. **On the UI:** You can now shut your VM down. We will remove all the installation media and prepare your VM for production.
 
 ## Prepare the VM for production
