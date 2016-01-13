@@ -2,10 +2,10 @@
 layout: default
 ---
 
-# SURFcursus - part B
+# UvA workshop 2016-01-25 - part B
 
-This is part B of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-15).  
-**If you have not completed (and understood)** [SURFcursus - part A](surfcursus-part-A-2015-Oct-15), please do so first.
+This is part B of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).  
+**If you have not completed (and understood)** [Surfcursus - Part A](UvAworkshop-2016-01-25-partA), please do so first.
 
 * [Hands-on part B](#hands-on) <br>
   * [3. Persistence](#3.-Persistence) <br>
@@ -202,4 +202,4 @@ taskset -c 0 ./startclient.sh pineapple grape mango # use your server names. duh
 >Remember: Your running VMs are consuming quota whether they are doing something useful or are idle.
 
 ### Next: Extras
-You have completed the Tutorial [SURFcursus - part B](surfcursus-part-B-2015-Oct-15). If you want more of the HPC Cloud, see [Surfcursus - Extras](surfcursus-extras-2015-Oct-15).
+You have completed the Tutorial [Surfcursus - Part B](UvAworkshop-2016-01-25-partB). If you want more of the HPC Cloud, see [Surfcursus - Extras](UvAworkshop-2016-01-25-extras).

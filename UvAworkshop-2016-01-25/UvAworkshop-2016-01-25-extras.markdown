@@ -2,10 +2,10 @@
 layout: default
 ---
 
-# SURFcursus - Extras
+# UvA workshop 2016-01-25 - Extras
 
-This is part one of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-15).
-**You should have completed (and understood)** [SURFcursus - part A](surfcursus-part-A-2015-Oct-15) and [SURFcursus - part B](surfcursus-part-B-2015-Oct-15),  before trying these extras.
+This is part one of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).
+**You should have completed (and understood)** [Surfcursus - Part A](UvAworkshop-2016-01-25-partA) and [Surfcursus - Part B](UvAworkshop-2016-01-25-partB),  before trying these extras.
 
 * [Hands-on Extras](#hands-on) <br>
   * [Working with Storage](#Working-with-storage) <br>

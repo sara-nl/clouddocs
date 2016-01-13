@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# SURFcursus - part A
+# UvA workshop 2016-01-25 - part A
 
-This is part A of the Tutorial [SURFcursus - 15 Oct 2015](surfcursus-2015-Oct-15).
+This is part A of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).
 
 * [Hands-on part A](#hands-on) <br>
   * [1. Access the user interface](#1.-Access-the-user-interface) <br>
@@ -236,4 +236,4 @@ Let's shutdown your first VM. Anytime the VM is idle, you should shut it down to
 * Before you move to the next sections, remember to shutdown the VM. 
 
 ### Next: part B
-Now that you completed the Tutorial [SURFcursus - part A](surfcursus-part-A-2015-Oct-15), please continue with Tutorial [SURFcursus - part B](surfcursus-part-B-2015-Oct-15).
+Now that you completed the Tutorial [Surfcursus - Part A](UvAworkshop-2016-01-25-partA), please continue with Tutorial [Surfcursus - Part B](UvAworkshop-2016-01-25-partB).

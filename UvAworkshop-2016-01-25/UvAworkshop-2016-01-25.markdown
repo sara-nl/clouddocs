@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# UvA workshop - 2016-01-25
+# UvA workshop 2016-01-25
 
-> ##Warning: Under construction
+> ## Warning: Under construction
 
 * [General Information](#general) <br>
 * [Preparation](#preparation) <br>
@@ -20,20 +20,17 @@ SURFsara has been operating the HPC Cloud as `IaaS` (Infrastructure as a Service
 
 This particular course aims to introduce SURF employees to the HPC Cloud by providing a set of lectures and hands-on examples to run on the real **`Oort`** infrastructure. Here is a summary of the course outline:
 
-**Date**: 15 October 2015  
+**Date**: 25 January 2016  
 **Location**: SURFsara VK1 & 2  
-**Program**:  
 
->
->10:15 Welcome & coffee  
-10:30 Presentation in Cloud Computing  
-11:00 Presentation in SURFsara HPC Cloud  
-11:30 HPC Cloud Demo & instructions  
-12:15 Lunch  
-13:00 Hands-on HPC Cloud   
-15:15 Wrap-up & questions    
-15:30 Borrel
-16:00 End  
+### Agenda
+>09:00 Welcome & coffee  
+09:15 Presentation in HPC Cloud at SURFsara & Demo  
+10:00 Hands-on Part A  
+12:30 Lunch   
+13:30 Presentation in Parallel Applications  & Demo  
+14:15 Hands-on Part B   
+17:00 End  
 
 ## <a name="preparation"></a>Preparation
 
