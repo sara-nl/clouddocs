@@ -199,7 +199,7 @@ taskset -c 0 ./startclient.sh pineapple grape mango # use your server names. duh
 
 ### <a name="5.-Wrap-up"></a> 5. Wrap up
 
-* Play around, make your checks and don't forget to [shut down](#first-shut-down) all the running VMs when you are finished.
+* Play around, make your checks and don't forget to [shut down](UvAworkshop-2016-01-25-partA#first-shut-down) all the running VMs when you are finished.
 
 >Remember: Your running VMs are consuming quota whether they are doing something useful or are idle.
 
