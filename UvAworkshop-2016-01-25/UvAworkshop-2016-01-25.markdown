@@ -9,9 +9,9 @@ layout: default
 * [General Information](#general) <br>
 * [Preparation](#preparation) <br>
 * [Hands-on](#hands-on) <br>
-  * [Surfcursus - Part A](UvAworkshop-2016-01-25-partA)
-  * [Surfcursus - Part B](UvAworkshop-2016-01-25-partB)
-  * [Surfcursus - Extras](UvAworkshop-2016-01-25-extras)
+  * [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA)
+  * [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB)
+  * [UvA workshop 2016-01-25 - Extras](UvAworkshop-2016-01-25-extras)
 * [Presentations](#presentations) <br>
 
 ## <a name="general"></a>General Information 
@@ -46,7 +46,7 @@ So what you need for this tutorial:
   * Windows users: install Xming from [here](http://sourceforge.net/projects/xming/).
 * An SSH client.
   * Linux and Mac users: don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
-  * Windows users: download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between `Git-2.5.3-32-bit.exe` or `Git-2.5.3-64-bit.exe`.
+  * Windows users: download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between the `-32-bit.exe` or the `-64-bit.exe`.
 
 
 ## <a name="hands-on"></a> Hands-on
@@ -54,9 +54,9 @@ The hands-on tutorial has two parts. The exercises in part A will give you a fir
 
 If you manage to finish both part A & B and wish to know more about the HPC Cloud, try also the additional exercises in `extras`.
 
-  * [Surfcursus - Part A](surfcursus-part-A-2015-Oct-15)
-  * [Surfcursus - Part B](surfcursus-part-B-2015-Oct-15)
-  * [Surfcursus - Extras](surfcursus-extras-2015-Oct-15) (optional)
+  * [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA)
+  * [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB)
+  * [UvA workshop 2016-01-25 - Extras](UvAworkshop-2016-01-25-extras) (optional)
 
 > **NOTE: only for Windows users**
 >

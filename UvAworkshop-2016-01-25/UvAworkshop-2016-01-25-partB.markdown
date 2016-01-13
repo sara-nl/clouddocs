@@ -7,7 +7,7 @@ layout: default
 > ## Warning: Under construction
 
 This is part B of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).  
-**If you have not completed (and understood)** [Surfcursus - Part A](UvAworkshop-2016-01-25-partA), please do so first.
+**If you have not completed (and understood)** [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA), please do so first.
 
 * [Hands-on part B](#hands-on) <br>
   * [3. Persistence](#3.-Persistence) <br>
@@ -199,9 +199,9 @@ taskset -c 0 ./startclient.sh pineapple grape mango # use your server names. duh
 
 ### <a name="5.-Wrap-up"></a> 5. Wrap up
 
-* Play around, make your checks and don't forget to [shut down](surfcursus-part-A-2015-Oct-15#first-shut-down) all the running VMs when you are finished.
+* Play around, make your checks and don't forget to [shut down](#first-shut-down) all the running VMs when you are finished.
 
 >Remember: Your running VMs are consuming quota whether they are doing something useful or are idle.
 
 ### Next: Extras
-You have completed the Tutorial [Surfcursus - Part B](UvAworkshop-2016-01-25-partB). If you want more of the HPC Cloud, see [Surfcursus - Extras](UvAworkshop-2016-01-25-extras).
+You have completed the Tutorial [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB). If you want more of the HPC Cloud, see [UvA workshop 2016-01-25 - Extras](UvAworkshop-2016-01-25-extras).

@@ -238,4 +238,4 @@ Let's shutdown your first VM. Anytime the VM is idle, you should shut it down to
 * Before you move to the next sections, remember to shutdown the VM. 
 
 ### Next: part B
-Now that you completed the Tutorial [Surfcursus - Part A](UvAworkshop-2016-01-25-partA), please continue with Tutorial [Surfcursus - Part B](UvAworkshop-2016-01-25-partB).
+Now that you completed the Tutorial [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA), please continue with Tutorial [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB).

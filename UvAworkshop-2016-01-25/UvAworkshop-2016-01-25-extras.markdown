@@ -7,7 +7,7 @@ layout: default
 > ## Warning: Under construction
 
 This is part one of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).
-**You should have completed (and understood)** [Surfcursus - Part A](UvAworkshop-2016-01-25-partA) and [Surfcursus - Part B](UvAworkshop-2016-01-25-partB),  before trying these extras.
+**You should have completed (and understood)** [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA) and [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB),  before trying these extras.
 
 * [Hands-on Extras](#hands-on) <br>
   * [Working with Storage](#Working-with-storage) <br>
