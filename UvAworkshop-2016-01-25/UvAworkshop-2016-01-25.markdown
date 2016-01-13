@@ -6,6 +6,11 @@ layout: default
 
 > ## Warning: Under construction
 
+<div style="float:right;" markdown="1">
+![UvA logo](images/UvA-logo.png)
+![SURFsara logo](images/SURFsara_logo.png)
+</div>
+
 * [General Information](#general) <br>
 * [Preparation](#preparation) <br>
 * [Hands-on](#hands-on) <br>
@@ -75,6 +80,6 @@ source $HOME/.bashrc
 
 ## <a name="presentations"></a> Presentations
 
-* [Introduction to Cloud Computing](assets/cloud_intro_20151015.pdf)
-* [Introduction to SURFsara HPC Cloud](assets/2015.10.15_SURFcourse_oort.pdf)
+* [Introduction to HPC Cloud Computing](assets/20160125-hpccloud-intro.pdf) **NEEDS UPLOADING AS `assets/20160125-hpccloud-intro.pdf`**
+* [Parallel computation on the HPC Cloud](assets/20160125-hpccloud-parallel.pdf) **NEEDS UPLOADING AS `assets/20160125-hpccloud-parallel.pdf`**
 
