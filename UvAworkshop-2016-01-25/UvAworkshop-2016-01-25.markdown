@@ -8,6 +8,7 @@ layout: default
 
 <div style="float:right;" markdown="1">
 ![UvA logo](/images/UvA-logo.png)
+
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
