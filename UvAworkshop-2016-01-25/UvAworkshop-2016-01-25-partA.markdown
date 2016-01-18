@@ -92,7 +92,7 @@ Next, you will copy the public key (`id_rsa.pub`) to the [UI](https://ui.hpcclou
 > Adding an SSH key to you profile is a one-time task. It is possible to use multiple keys for different VMs but there is no need to repeat this procedure for the rest of the tutorial. 
 
 
-### <a name="2.-My-first-VM"></a> b) My first VM
+### <a name="2.-My-first-VM"></a> 2. My first VM
 
 To start a virtual machine easily, we provide the HPC Cloud `AppMarket`. This repository contains common appliances for you to pick and use. In this section you will use the AppMarket to build your first VM with the following steps:
 
@@ -231,56 +231,16 @@ Let's shut your first VM down. Anytime you expect your VM to become idle, you sh
 >
 > Check and refresh the `Images` and `Templates` tabs. *Are your `image` and `template` still there?*
 
-### <a name="3.-Persistence"></a> c) Persistence
-
-`Images` can be **persistent**. We say they are **persistent** when the `persistent` box is ticked on the UI and **non-persistent** when the `persistent` box is not ticked. 
-
-* What does **persistent** mean?
-  *  Changes by the VM are copied back to the original `image` (upon normal VM shutdown)
-  *  If a VM is running with a **persistent** disk, you cannot launch a second VM using that `image`
-
-* What does **non-persistent** mean?
-  * Changes by a VM are lost at shutdown and not copied back to the original `image`
-  * It **is** possible to run multiple VMs using the same single **non-persistent** `image`
-
-> **Food for brain:**
->
-> Was the first image that you imported `persistent` or wasn't it?
-
-In this section you will work with **persistent** images. You will go through these steps: 
-
-> 
-* Making your image persistent.
-* Starting a VM using the persistent image.
-
-#### Make your image persistent
-* Go to `Images` tab under `Virtual Resources` on the left menu, and click anywhere (except the tick-box, that is) on the row for the `image` you created before that you named **Course Image** .
-* Under the `Information` section, find the `Persistent` attribute. It says _No_, at the moment.
-* Switch the value to _Yes_.
-
-#### Start a persistent VM
-* Start your virtual machine again. 
-* Log in and check the files you created during the previous run ([first VM](#2.-My-first-VM)). 
-
-> **Food for brain:**
-> During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written on the backing `image` even if you restart your VM. Try it.
-
 > **Note:**
 >
 > Your running VMs are exclusively occupying resources (and hence, consuming quota from your group even though we haven't explicitly made you aware of it in the course material) whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**. 
 
-### <a name="4.-Bonus"></a> d) Bonus food for brain
+### <a name="Bonus"></a> Bonus food for brain
 
 This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
 
-**Bonus 1:** The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!!!
+**Bonus** The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!!!
 
-**Bonus 2:** In Part A of the workshop (this page) you have explored the UI and learnt how to import an _appliance_ from the AppMarket. However, many people come to the HPC Cloud because they can install and run their own operating system. In particular, Windows is very popular among UNESCO-IHE users. 
-
-  * Can you think of (and sketch) the steps that you would need to follow to create a VM running your favourite operating system?
-  * Can you find three articles in the HPC Cloud Documentation that show how to install different operating systems from scratch? 
-
-* Before you move to the next sections, remember to shutdown the VM. 
 
 ### Next: part B
-Now that you completed the Tutorial [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA), please continue with Tutorial [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB).
+Now that you completed the Tutorial [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA), please continue with Tutorial [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB). Before you move to the next sections, remember to shutdown the VM. 
