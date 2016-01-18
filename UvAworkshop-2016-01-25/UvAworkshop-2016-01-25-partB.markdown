@@ -17,7 +17,7 @@ This is part B of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25)
 >
 > For the rest of the tutorial we will omit `ubuntu@ip-145-100-59-102:~$` prompt in the instructions, in order to allow you copy-paste the commands directly in your terminal.
 
-### <a name="3.-Persistence"></a> c) Persistence
+### <a name="3.-Persistence"></a> 3. Persistence
 
 `Images` can be **persistent**. We say they are **persistent** when the `persistent` box is ticked on the UI and **non-persistent** when the `persistent` box is not ticked. 
 
@@ -164,9 +164,6 @@ sudo chown ubuntu:ubuntu -R /data
 >
 > Try to copy a file from your laptop to `/data`, e.g. with `scp myfile ubuntu@145.100.59.197:/data`. Then login to the VM and inspect the changes.
 
->**Note:**
->
-> Shut down all the VMs when you are done
 
 ### <a name="6.-Wrap-up"></a> 6. Wrap up
 
