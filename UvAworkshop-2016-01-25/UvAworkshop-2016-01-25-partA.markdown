@@ -275,12 +275,11 @@ This section is meant as extra questions that we thought would be nice for you t
 
 **Bonus 1:** The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!!!
 
-**Bonus 2:** In Part A of the workshop (this page) you have explored the UI and learnt how to import an _appliance_ from the AppMarket. However, many people come to the HPC Cloud because they can install and run their own operating system. In particular, Windows is very popular among UNESCO-IHE users. 
+**Bonus 2:** In Part A of the workshop (this page) you have explored the UI and learnt how to import an _appliance_ from the AppMarket. However, many people come to the HPC Cloud because they can install and run their own operating system. In particular, Windows is very popular among our users. 
 
   * Can you think of (and sketch) the steps that you would need to follow to create a VM running your favourite operating system?
   * Can you find three articles in the HPC Cloud Documentation that show how to install different operating systems from scratch? 
 
-* Before you move to the next sections, remember to shutdown the VM. 
 
 ### Next: part B
-Now that you completed the Tutorial [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA), please continue with Tutorial [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB).
+Now that you completed the Tutorial [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA), please continue with Tutorial [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB). Before you move to the next sections, remember to shutdown the VM. 
