@@ -12,6 +12,6 @@ This is part one of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-2
 * [OpenMP: calculating _pi_](UvAworkshop-2016-01-25-OpenMP)
   Using a simple algorithm to calculate _&pi;_ as an example, you see the impact of parallelizing with OpenMP.  
 * [MPI: xBeach](UvAworkshop-2016-01-25-xBeach)
-  XBeach is a two-dimensional model for wavehitting the shore, using MPI to parallelize the computations.
+  XBeach is a two-dimensional model for waves hitting the shore, using MPI to parallelize the computations.
 * [master/slaves: Mandelbrot](UvAworkshop-2016-01-25-Mandelbrot)
   A simple example showing master/slaves (or master/workers) parallelization.
