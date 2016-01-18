@@ -11,7 +11,6 @@ This is part B of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25)
   * [3. Persistence](#3.-Persistence) <br>
   * [4. Scale-up to a multicore VM](#4.-Scale-up-to-a-multicore-VM) <br>
   * [5. Working with Storage](#5.-Working-with-storage) <br>
-  * [6. Wrap up](#5.-Wrap-up) <br> 
 
 >**NOTE:**
 >
@@ -165,13 +164,9 @@ sudo chown ubuntu:ubuntu -R /data
 > Try to copy a file from your laptop to `/data`, e.g. with `scp myfile ubuntu@145.100.59.197:/data`. Then login to the VM and inspect the changes.
 
 
-### <a name="6.-Wrap-up"></a> 6. Wrap up
-
-* Play around, make your checks and don't forget to [shut down](UvAworkshop-2016-01-25-partA#first-shut-down) all the running VMs when you are finished.
-
 >**Note:**
 >
-> Shut down all the VMs when you are done. Your running VMs are consuming quota whether they are doing something useful or are idle.
+>  Play around, make your checks and shut down all the VMs when you are done. Your running VMs are consuming quota whether they are doing something useful or are idle.
 
 
 ### <a name="Bonus"></a> Bonus food for brain
