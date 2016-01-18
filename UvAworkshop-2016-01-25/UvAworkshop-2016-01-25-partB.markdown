@@ -81,7 +81,7 @@ That was it. From now on you will get a 4-core VM running using the same *Cursus
 >Your VM's image was (and is) persistent.
 
 
-### <a name="5. Working-with-storage"></a> 5. Working with Storage
+### <a name="5.-Working-with-storage"></a> 5. Working with Storage
 
 The current HPC Cloud offers two storage types: `Ceph` and `SSD`. Data stored on Ceph is replicated, to protect against data loss in case of hardware failure. The best practice is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock`(s). 
 
