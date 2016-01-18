@@ -4,8 +4,6 @@ layout: default
 
 # UvA workshop 2016-01-25 - part A
 
-> ## Warning: Under construction
-
 This is part A of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).
 
 * [Hands-on part A](#hands-on) <br>
@@ -27,7 +25,7 @@ Let's start.
 
 * Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/)
 * Log in with your `demo` username and password.
-  * Your username is **demouvaXY**, replace XY with the number assigned to you.
+  * Your username is **demouvaXY**, replace `XY` with the number assigned to you.
   * You will receive the password by the workshop organizers.
 
 > **NOTE:** 
@@ -281,7 +279,6 @@ This section is meant as extra questions that we thought would be nice for you t
 
   * Can you think of (and sketch) the steps that you would need to follow to create a VM running your favourite operating system?
   * Can you find three articles in the HPC Cloud Documentation that show how to install different operating systems from scratch? 
-
 
 * Before you move to the next sections, remember to shutdown the VM. 
 
