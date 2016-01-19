@@ -100,7 +100,6 @@ Next, you will copy the public key (`id_rsa.pub`) to the [UI](https://ui.hpcclou
 
 To start a virtual machine easily, we provide the HPC Cloud `AppMarket`. This repository contains common appliances for you to pick and use. In this section you will use the AppMarket to build your first VM with the following steps:
 
->
 * Importing a pre-made disk, called `Image`, which includes a Linux operating system.
 * Creating the description of your VM, called `Template`, which gives your VM the shape you want. 
 * Instantiating the *Template* to run your first `Virtual Machine`.
