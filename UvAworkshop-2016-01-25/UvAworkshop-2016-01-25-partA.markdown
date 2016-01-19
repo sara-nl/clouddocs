@@ -23,13 +23,9 @@ Let's start.
 #### Login to the UI
 
 * Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/)
-* Log in with your `demo` username and password.
+* Log in:
   * Your username is **demouvaXY**, replace `XY` with the number assigned to you.
   * You will receive the password from the workshop organizers.
-
-> **NOTE:** 
-> 
-> Your project for this tutorial is called `demouva`.
 
 #### Change your password
 
@@ -90,10 +86,7 @@ Next, you will copy the public key (`id_rsa.pub`) to the [UI](https://ui.hpcclou
 * Locate the section `Public SSH Key`, and click on the blue edit icon. Paste the content of your **public** ssh key (id_rsa.pub) file.
 * Close the window. There is no *Save* button, but your public key is automatically stored in your profile.  
 
-> **NOTE:** 
-> 
-> Adding an SSH key to you profile is a one-time task. It is possible to use multiple keys for different VMs but there is no need to repeat this procedure for the rest of the tutorial. 
-
+Adding an SSH key to you profile is a one-time task. It is possible to use multiple keys for different VMs but there is no need to repeat this procedure for the rest of the tutorial. 
 
 ### <a name="2.-My-first-VM"></a> 2. My first VM
 
