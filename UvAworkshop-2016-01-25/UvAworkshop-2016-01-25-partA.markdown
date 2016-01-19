@@ -14,7 +14,6 @@ This is part A of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25)
 
 The UI (short for User Interface) is the web site that allows you to manage your `Virtual Machines` (`VM`s) on the HPC Cloud. In this section you will personalise your UI account by following these steps: 
 
-> 
 1. Logging in and changing your UI password.  
 1. Adding an "SSH key" to your profile. This will enable secure access in your VMs.    
 
@@ -26,7 +25,7 @@ Let's start.
 * Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/)
 * Log in with your `demo` username and password.
   * Your username is **demouvaXY**, replace `XY` with the number assigned to you.
-  * You will receive the password by the workshop organizers.
+  * You will receive the password from the workshop organizers.
 
 > **NOTE:** 
 > 
@@ -70,16 +69,16 @@ ls -l $HOME/.ssh/
 * If you see the files `id_rsa.pub` and `id_rsa`, skip the next command.
 * The `ssh-keygen` command generates two files: a _public_ key (`id_rsa.pub`) and a _private_ key (`id_rsa`).
   The _public_ key contains only public information and may be distributed to anybody, the _private_ key must be kept secret and is for your eyes only. Protect the private key with a long passphrase, see [ssh passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/).   
-  This starts the following dialogue:
+  Now start the following command and dialogue:
 
 ```sh
 ssh-keygen -t rsa -b 4096
 ```
 
-> `Generating public/private rsa key pair.`
-> `Enter file in which to save the key (/Users/markus/.ssh/id_rsa):`     ### _you can press return here_
-> `Enter passphrase (empty for no passphrase):`     ### see [ssh passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/) 
-> `Enter same passphrase again:`
+> Generating public/private rsa key pair.
+> Enter file in which to save the key (/Users/markus/.ssh/id_rsa):     ### _you can press return here_
+> Enter passphrase (empty for no passphrase):     ### _choose a long passphrase see [ssh passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/)_ 
+> Enter same passphrase again:
 
 You should now see the two files in your $HOME/.ssh/ directory.
 If you have problems creating the SSH keys, get help from the detailed guide [Generate an SSH key](/SSHkey).
