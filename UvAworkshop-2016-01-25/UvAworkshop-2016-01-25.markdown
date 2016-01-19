@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# UvA workshop 2016-01-25
-
 > ## Warning: Under construction
+
+# UvA workshop 2016-01-25
 
 <div style="float:right;" markdown="1">
 ![UvA logo](/images/UvA-logo.png)
@@ -30,15 +30,15 @@ This particular course aims to introduce SURF employees to the HPC Cloud by prov
 Here is a summary of the course outline:
 
 **Date**: 25 January 2016  
-**Location**: SURFsara VK1 & 2  
+**Location**: Science Park 904, Rooms: SP-B0.201  
 
 ### Agenda
 >09:00 Welcome & coffee  
-09:15 Presentation in HPC Cloud at SURFsara & Demo  
-10:00 Hands-on Part A  
+09:15 Presentation in HPC Cloud at SURFsara (Markus van Dijk)
+10:00 Hands-on Part A & B 
 12:30 Lunch   
-13:30 Presentation in Parallel Applications  & Demo  
-14:15 Hands-on Part B   
+13:30 Presentation in Parallel Applications (Natalie Danezi) 
+14:15 Hands-on Extras  
 17:00 End  
 
 ## <a name="preparation"></a>Preparation
@@ -53,20 +53,16 @@ So what you need for this tutorial:
 * An SSH client.
   * Linux and Mac users: don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
   * Windows users: download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between the `-32-bit.exe` or the `-64-bit.exe`.
-* Java, at least version 7 (a.k.a. 1.7)
-* An X11 client.
-  * Linux and Mac users normally don't need to install anything as X11 is on board. However, the newest Mac OS releases might not have X11.app installed. In that case, install XQuarz from [here](http://xquartz.macosforge.org/landing/).
-  * Windows users: see [X11 on Microsoft Windows](UvAworkshop-2016-01-25-MS-X11)
 
 
 ## <a name="hands-on"></a> Hands-on
 The hands-on tutorial has two parts. The exercises in part A will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood part A, then continue to part B with more `advanced` examples on the HPC Cloud. 
 
-If you manage to finish both part A & B and wish to know more about the HPC Cloud, try also the additional exercises in `extras`.
+If you manage to finish both part A & B and wish to know more about the HPC Cloud, try also the more advanced exercises in `extras`.
 
   * [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA)
   * [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB)
-  * [UvA workshop 2016-01-25 - Extras](UvAworkshop-2016-01-25-extras) (optional)
+  * [UvA workshop 2016-01-25 - Extras](UvAworkshop-2016-01-25-extras)
 
 ## <a name="presentations"></a> Presentations
 
