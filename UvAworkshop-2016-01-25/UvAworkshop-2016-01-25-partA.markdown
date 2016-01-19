@@ -55,9 +55,7 @@ Before launching your [first VM](#2.-My-first-VM), there is a last thing to arra
 
 As an HPC Cloud user you have full control of your virtual machines (IaaS). This means that you are administrator in your own VMs, in other words `root` user. 
 
-Most authentication is done with a username/password, but passwords are easy to forget and often not strong enough to withstand cracking.  
-Root access needs good security because it gives full control over the host and is a well known username.  
-SSH offers [public key](https://en.wikipedia.org/wiki/Public-key_cryptography) authentication, a method to access a remote machine securely and with not much trouble. 
+Most authentication is done with a username/password, but passwords are easy to forget and often not strong enough to withstand cracking. Root access needs good security because it gives full control over the host and is a well known username. SSH offers [public key](https://en.wikipedia.org/wiki/Public-key_cryptography) authentication, a method to access a remote machine securely and with not much trouble.
 
 Follow the steps below to add an ssh key to your profile: 
 
@@ -79,8 +77,7 @@ ssh-keygen -t rsa -b 4096
 > **NOTE:**
 >
 > This command will generate two files: a public key (`id_rsa.pub`) and a private key (`id_rsa`). You should see now the files in your $HOME/.ssh/ directory.
-> The **public** kety contains only public information and may be distributed to anybody, the **private** key must be kept secret and is for your eyes only.    
-> Protect the private key with a long passphrase, you need to type it in only once a day.
+> The **public** kety contains only public information and may be distributed to anybody, the **private** key must be kept secret and is for your eyes only. Protect the private key with a long passphrase, you need to type it in only once a day.
 
 If you have problems creating the SSH keys, get help from the detailed guide [Generate an SSH key](SSHkey).
 
