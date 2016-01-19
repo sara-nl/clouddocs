@@ -59,27 +59,30 @@ Most authentication is done with a username/password, but passwords are easy to 
 
 Follow the steps below to add an ssh key to your profile: 
 
-* First generate an `SSH public key pair`: 
-  * Start a terminal (in Mac/Linux) or GitBash (in Windows). 
-  * Check if you already have an SSH key pair stored in your laptop. Type:
+First generate an `SSH public key pair`: 
+* Start a terminal (in Mac/Linux) or GitBash (in Windows). 
+* Check if you already have an SSH key pair stored in your laptop. Type:
 
 ```sh
 ls -l $HOME/.ssh/
 ```
 
-  * If you see the files `id_rsa.pub` and `id_rsa`, skip the next command. If not, type the following command to generate a new SSH key pair:
-  
+* If you see the files `id_rsa.pub` and `id_rsa`, skip the next command.
+* The `ssh-keygen` command generates two files: a _public_ key (`id_rsa.pub`) and a _private_ key (`id_rsa`).
+  The _public_ key contains only public information and may be distributed to anybody, the _private_ key must be kept secret and is for your eyes only. Protect the private key with a long passphrase, see [ssh passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/).   
+  This starts the following dialogue:
+
 ```sh
-# just press enter in every question that shows
 ssh-keygen -t rsa -b 4096
 ```
 
-> **NOTE:**
->
-> This command will generate two files: a public key (`id_rsa.pub`) and a private key (`id_rsa`). You should see now the files in your $HOME/.ssh/ directory.
-> The **public** kety contains only public information and may be distributed to anybody, the **private** key must be kept secret and is for your eyes only. Protect the private key with a long passphrase, you need to type it in only once a day.
+> `Generating public/private rsa key pair.`
+> `Enter file in which to save the key (/Users/markus/.ssh/id_rsa):`     ### _you can press return here_
+> `Enter passphrase (empty for no passphrase):`     ### see [ssh passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/) 
+> `Enter same passphrase again:`
 
-If you have problems creating the SSH keys, get help from the detailed guide [Generate an SSH key](SSHkey).
+You should now see the two files in your $HOME/.ssh/ directory.
+If you have problems creating the SSH keys, get help from the detailed guide [Generate an SSH key](/SSHkey).
 
 Next, you will copy the public key (`id_rsa.pub`) to the [UI](https://ui.hpccloud.surfsara.nl/), but you will keep the matching private key (`id_rsa`) safe in your laptop: 
 
