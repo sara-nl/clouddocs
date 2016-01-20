@@ -8,15 +8,15 @@ This is part B of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25)
 **If you have not completed (and understood)** [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA), please do so first.
 
 * [Hands-on part B](#hands-on) <br>
-  * [3. Persistence](#3.-Persistence) <br>
-  * [4. Scale-up to a multicore VM](#4.-Scale-up-to-a-multicore-VM) <br>
-  * [5. Working with Storage](#5.-Working-with-storage) <br>
+1. [Persistence](#persistence) <br>
+2. [Scale up to a multicore VM](#scale-up-to-a-multicore-vm) <br>
+3. [Working with Storage](#working-with-storage) <br>
 
 >**NOTE:**
 >
 > For the rest of the tutorial we will omit `ubuntu@ip-145-100-59-102:~$` prompt in the instructions, in order to allow you copy-paste the commands directly in your terminal.
 
-### <a name="3.-Persistence"></a> 3. Persistence
+### 1. Persistence
 
 `Images` can be **persistent**. We say they are **persistent** when the `persistent` box is ticked on the UI and **non-persistent** when the `persistent` box is not ticked. 
 
@@ -51,7 +51,7 @@ In this section you will work with **persistent** images. You will go through th
 > During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written on the backing `image` even if you restart your VM. Try it.
 
 
-### <a name="4.-Scale-up-to-a-multicore-VM"></a> 4. Scale-up to a multicore VM
+### 2. Scale up to a multicore VM
 
 The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your Virtual Machines (VMs) the form that you need them to have. In this section, you will start a *four-core* VM, using the exact same image, the *Cursus Image*. To scale-up your VM to use multiple cores you will be:
 
@@ -80,7 +80,7 @@ That was it. From now on you will get a 4-core VM running using the same *Cursus
 >Your VM's image was (and is) persistent.
 
 
-### <a name="5.-Working-with-storage"></a> 5. Working with Storage
+### 3. Working with Storage
 
 The current HPC Cloud offers two storage types: `Ceph` and `SSD`. Data stored on Ceph is replicated, to protect against data loss in case of hardware failure. The best practice is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock`(s). 
 
