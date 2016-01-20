@@ -6,7 +6,7 @@ layout: default
 
 This is part A of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).
 
-Her are your first steps:
+Here are your first steps:
 1. [Access the user interface](#access-the-user-interface)
 2. [Add your SSH key](#add-your-ssh-key)
 3. [My first VM](#my-first-vm)
