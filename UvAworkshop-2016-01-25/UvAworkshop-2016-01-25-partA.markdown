@@ -6,11 +6,12 @@ layout: default
 
 This is part A of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).
 
-* [Hands-on part A](#hands-on) <br>
-  * [1. Access the user interface](#1.-Access-the-user-interface) <br>
-  * [2. My first VM](#2.-My-first-VM) <br>
+* [Hands-on part A](#hands-on)
+  * [1. Access the user interface](#Access-the-user-interface)
+  * [2. Add your SSH key](#Add-your-SSH-key)
+  * [3. My first VM](#My-first-VM)
 
-### <a name="1.-Access-the-user-interface"></a> 1. Access the User Interface
+### <a name="Access-the-user-interface"></a> 1. Access the User Interface
 
 The UI (short for User Interface) is the web site that allows you to manage your `Virtual Machines` (`VM`s) on the HPC Cloud. In this section you will personalise your UI account by following these steps: 
 
@@ -43,7 +44,7 @@ Let's change now the initial password:
 From now on you can use your new password to login to the [UI](https://ui.hpccloud.surfsara.nl/).
 Do so now.
 
-#### Add ssh keys to your profile
+### 2. Add your SSH key
 
 Before launching your [first VM](#2.-My-first-VM), there is a last thing to arrange in your [UI](https://ui.hpccloud.surfsara.nl/) account: **add an SSH key to your profile**.  
 *But what does this mean and why is it needed?*
@@ -89,7 +90,7 @@ Next, you will copy the public key (`id_rsa.pub`) to the [UI](https://ui.hpcclou
 
 Adding an SSH key to you profile is a one-time task. It is possible to use multiple keys for different VMs but there is no need to repeat this procedure for the rest of the tutorial. 
 
-### <a name="2.-My-first-VM"></a> 2. My first VM
+### <a name="My-first-VM">3. My first VM</a>
 
 To start a virtual machine easily, we provide the HPC Cloud `AppMarket`. This repository contains common appliances for you to pick and use. In this section you will use the AppMarket to build your first VM with the following steps:
 
