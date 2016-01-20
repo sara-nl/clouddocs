@@ -65,7 +65,7 @@ ls -l $HOME/.ssh/
 
 * If you see the files `id_rsa.pub` and `id_rsa`, skip the next command.
 * The `ssh-keygen` command generates two files: a _public_ key (`id_rsa.pub`) and a _private_ key (`id_rsa`).
-  The _public_ key contains only public information and may be distributed to anybody, the _private_ key must be kept secret and is for your eyes only. You can even protect the private key further with a long passphrase, see [ssh passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/), but this is optional.   
+  The _public_ key contains only public information and may be distributed to anybody, the _private_ key must be kept secret and is for your eyes only. Protect the private key with a long passphrase, see [ssh passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/).   
   Now start the following command and dialogue:
 
 ```sh
@@ -74,7 +74,8 @@ ssh-keygen -t rsa -b 4096
 
 > Generating public/private rsa key pair.
 > Enter file in which to save the key (/Users/markus/.ssh/id_rsa):     ### _you can press return here_
-> Enter passphrase (empty for no passphrase):     ### _you can press return here_
+> Enter passphrase (empty for no passphrase):     ### _choose a long passphrase see [ssh passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/)_ 
+> Enter same passphrase again:
 
 You should now see the two files in your $HOME/.ssh/ directory. Check.
 If you have problems creating the SSH keys, get help from the detailed guide [Generate an SSH key](/SSHkey).
