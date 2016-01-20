@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+# Use Secure Shell (SSH) private/public keys (Linux/Mac/Windows)
+
 ## Summary
 
 SSH private/public key pairs are great for allowing passwordless access to a remote system, and also more secure than traditional passwords.  You can find abundant information on the Internet about how it all works. Here is a summary.
@@ -11,17 +14,17 @@ The mechanism to allow connecting with SSH private/public key pairs is already c
 
 ## Preparation
 
-To apply the following instructions you need a terminal.
+To apply the following instructions you need a terminal on your local machine (laptop).
 
 * Linux and Mac users have one installed by default.
 * Windows users can download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between `Git-XXX-32-bit.exe` or `Git-XXX-64-bit.exe`.
   * For Windows users that want to use PuttyGen, see the instructions for [Putty tools](putty-tools#generate-ssh-key-on-windows-with-puttygen).
 
-## Generate a Secure Shell (SSH) key on Linux or MacOS or Windows (GitBash)
+## Generate an SSH private/public key pair
 
-### Check if an SSH key already exists
+### Check existing SSH keys
 
-The first step is to check if you have already a SSH key. Start a terminal (in Mac/Linux) or GitBash (in Windows). The default location is ~/.ssh/id_rsa for the private key and  ~/.ssh/id_rsa.pub for your public key.
+The first step is to check if you have already a SSH key. Start a terminal (in Mac/Linux) or GitBash (in Windows). The default location is `~/.ssh/id_rsa` for the private key and  `~/.ssh/id_rsa.pub` for your public key.
 
 To check use `ls`:
 
@@ -30,13 +33,14 @@ ls -l  ~/.ssh/
 ```
 
 If you see the following files in your output, you already have a key available and can skip to section _"Add the key to the local ssh-agent"_
+
 ```
 total 72
 -rw-------+ 1 user  staff   1679 Nov 25  2014 id_rsa
 -rw-r--r--+ 1 user  staff    409 Nov 25  2014 id_rsa.pub
 ```
 
-## Generate an SSH key
+### Generate an SSH key
 
 Generation of a SSH key is done with the command `ssh-keygen`.
 
@@ -55,18 +59,23 @@ For more information, please see [Working with SSH key passphrases](https://help
 
 Open a terminal and type `ssh-keygen`. An example dialogue is shown below.
 Notes:
-(1) Leave the output file name blank for the default file name, or type a variation of `~/.ssh/my_chosen_name`.
-(2) Do choose and remember an easy but long passphrase.
-(3) If you forget the passphrase, you need to generate a new key pair and replace the old public keys you installed on remote hosts.
+
+1. Leave the output file name blank for the default file name, or type a variation of `~/.ssh/my_chosen_name`.
+2. Do choose and remember an easy but long passphrase.
+3. If you forget the passphrase, you need to generate a new key pair and replace the old public keys you installed on remote hosts.
+
+Command:
 
 ```bash
 ssh-keygen
 ```
-Output:
+
+Interaction:
+
 ```
 Generating public/private rsa key pair.
-Enter file in which to save the key (~/.ssh/id_rsa): ### (1)
-Enter passphrase (empty for no passphrase): ### (2)
+Enter file in which to save the key (~/.ssh/id_rsa): ### see note 1
+Enter passphrase (empty for no passphrase): ### see note 2
 Enter same passphrase again:
 Your identification has been saved in ~/.ssh/id_rsa
 Your public key has been saved in ~/.ssh/id_rsa.pub
@@ -86,17 +95,21 @@ The key s randomart image is:
 +----[SHA256]-----+
 ```
 
-# Using `ssh-agent`
+## Using `ssh-agent`
 
 SSH-agent is a service on your laptop to remember your ssh passphrase during your local session (thai is, until you log out from your laptop).
 This way, you do not have to type in that loooong passphrase every time you unlock your private key.
 
-## Add the key to the local ssh-agent
+### Add the key to the local ssh-agent
+
+Command:
 
 ```bash
 ssh-add ~/.ssh/id_rsa ### or the file name you provided to ssh-keygen
 ```
+
 Output:
+
 ```
 Enter passphrase for ~/.ssh/id_rsa: ### type it in
 Identity added: ~/.ssh/id_rsa
@@ -104,17 +117,21 @@ Identity added: ~/.ssh/id_rsa
 
 ### List keys currently in ssh-agent
 
+Command:
+
 ```bash
-ssh-add -L
+ssh-add -l
 ```
-Output:
+
+Output will be one line for each key currently stored in the ssh-agent:
+
 ```
-sh-rsa AAAAB3NzaC1yc2[...]dkxvgY2f9P ~/.ssh/id_rsa
+2048 SHA256:ajAxT3T3ZKl2rALBGGmMqufU0n6XAU15lj+fObZEvrI ~/.ssh/id_rsa (RSA)
 ```
 
 ## Copy your Public SSH key
 
-You can copy/paste your public key after displaying with cat
+You can copy/paste your public key after displaying with `cat`
 
 ```bash
 cat ~/.ssh/id_rsa.pub
