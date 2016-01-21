@@ -145,10 +145,6 @@ This name is also used as the host name of your machine.
 * Click on the `Create` button at the bottom of the screen.
 * Refresh the VM status by clicking on the symbol of the two arrows chasing each other next to `[+]` button.
 
-> **NOTE:**  
->Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. The HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of cores, memory, and disk that you asked in the `template`. Keep refreshing the list by clicking on the symbol of the two arrows chasing each other next to `[+]` button. When the required capacity becomes available, your VM will show the status **RUNNING**. Only then can you actually use your VM.
-
-
 #### What happened?
 
 Congratulations! You have just created a fresh, clean virtual machine!
@@ -160,6 +156,9 @@ Let's summarise what you have seen so far. From the menu on the left side, click
   * `Images`: this is the equivalent of a hard drive. Your OS is stored on this `image`.  
   * `Templates`:  the `template` gives your VM the shape you want. A template is just a recipe; not the machine itself.   
   * `Virtual Machines`: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box, that is). Inspect the information tables that appear which show extended details.
+
+> **NOTE:**  
+>Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. The HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of cores, memory, and disk that you asked in the `template`. Keep refreshing the list by clicking on the symbol of the two arrows chasing each other next to `[+]` button. When the required capacity becomes available, your VM will show the status **RUNNING**. Only then can you actually use your VM.
 
 #### Login to the VM
 
