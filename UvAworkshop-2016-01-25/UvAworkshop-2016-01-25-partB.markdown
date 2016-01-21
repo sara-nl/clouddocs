@@ -45,7 +45,6 @@ In this section you will work with **persistent** images. You will go through th
 #### Start a persistent VM
 * Start your virtual machine again. 
 * Log in and check the files you created during the previous run [(Part A)](UvAworkshop-2016-01-25-partA). 
-* You can verify that you are logged-in a four-core VM with the command: `cat /proc/cpuinfo`
 
 > **Food for brain:**
 > During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written on the backing `image` even if you restart your VM. Try it.
@@ -74,6 +73,8 @@ That was it. From now on you will get a 4-core VM running using the same *Cursus
 
 * Instantiate a VM from the updated template.
 * Login to the VM. *Is your data there?*
+* You can verify that you are logged-in a four-core VM with the command: `cat /proc/cpuinfo`
+
 
 > **NOTE:**
 >Your VM's image was (and is) persistent.
