@@ -164,7 +164,7 @@ Let's summarise what you have seen so far. From the menu on the left side, click
 
 You can interact with your VM with several ways: command-line (e.g.: SSH), VNC (UI in your browser) or a remote desktop. We will use SSH in a terminal for the moment.
 
-The way to login into your virtual machine is the ssh keys that you [stored in your profile](#add-ssh-keys-to-your-profile) previously.
+The way to login into your virtual machine is the ssh keys that you [stored in your profile](#add-your-ssh-key) previously.
 
 **Command-line access - SSH**  
 
@@ -175,35 +175,35 @@ The way to login into your virtual machine is the ssh keys that you [stored in y
 * In your terminal, to connect to your VM, type:
 
 ```sh
-ssh ubuntu@145.100.59.XYZ # replace with your IP address!
+ssh ubuntu@145.100.58.XYZ # replace 145.100.58.XYZ with your IP address!
 ```
 
 #### First login
 
 If everything went well, the first time you try to login your terminal will ask you to add the VM's IP to the list of known hosts. Type *Yes*, in that case.
 
-You should now see a similar line in your terminal: `ubuntu@ip-145-100-59-XYZ:~$`
+You should now see a similar line in your terminal: `ubuntu@ip-145-100-58-XYZ:~$`
 
 This means that you are logged in successfully to your Virtual Machine!
 
 * Look around a bit, make yourself familiar with the system:
 
 ```sh
-ubuntu@ip-145-100-59-XYZ:~$ ls /
-ubuntu@ip-145-100-59-ZYZ:~$ cd /home/ubuntu/
+ubuntu@ip-145-100-58-XYZ:~$ ls /
+ubuntu@ip-145-100-58-ZYZ:~$ cd /home/ubuntu/
 ```
 
 * Create a file:
 
 ```sh
-ubuntu@ip-145-100-59-XYZ:~$ echo "Some text ..." > myfile
-ubuntu@ip-145-100-59-XYZ:~$ cat myfile
+ubuntu@ip-145-100-58-XYZ:~$ echo "Some text ..." > myfile
+ubuntu@ip-145-100-58-XYZ:~$ cat myfile
 ```
 
 * Logout by typing `logout` or `ctrl-D` in your terminal (do **NOT** issue any shutdown command):
 
 ```sh
-ubuntu@ip-145-100-59-XYZ:~$ logout
+ubuntu@ip-145-100-58-XYZ:~$ logout
 ```
 
 > **Food for brain:**
@@ -221,7 +221,7 @@ Let's shut your first VM down. Anytime you expect your VM to become idle, you sh
 
 > **Food for brain:**
 >
-> Check and refresh the `Images` and `Templates` tabs. *Are your `image` and `template` still there?*
+> When the VM has been _shut down_ and disappeared from the list, check and refresh the `Images` and `Templates` tabs. *Are your `image` and `template` still there?*
 
 > **Note:**
 >
@@ -231,7 +231,7 @@ Let's shut your first VM down. Anytime you expect your VM to become idle, you sh
 
 This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
 
-**Bonus** The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!!!
+**Bonus:** The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!!!
 
 
 ### Next: part B
