@@ -48,7 +48,7 @@ total 72
 
 ### Private key passphrase
 
-When you create a private/public key peir, you will need a passphrase to **protect your local private key**. It is never sent to the remote host.
+When you create a private/public key pair, you will need a passphrase to **protect your local private key**. It is never sent to the remote host.
 
 What is a good passphrase? Choose a long sentence, for example a quote that you like, of more than 35 characters. Because of the length, there is no need to substitute letters with symbols or leave out spaces or punctuation.
 
