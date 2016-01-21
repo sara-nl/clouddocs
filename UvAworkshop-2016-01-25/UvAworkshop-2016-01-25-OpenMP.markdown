@@ -4,11 +4,10 @@ layout: default
 
 # UvA workshop 2016-01-25 - OpenMP: calculate _pi_
 
-> ## Warning: Under construction
-
-This is an exercise in the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).
+This is an exercise in the Extras of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).
 **You should have completed (and understood)** [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA) and [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB) before trying this exercise.
 
+In this advanced part of our HPC Cloud tutorial we ask you to play around with a parallel processing technique (multithreading). For this puspose, we will use an implementation of _pi_ calculation using `OpenMP`. You will be asked to perform multiple runs of each program, so that fluctuations caused by e.g. network can be middled out. The output of each program includes results for run time in _wall-clock_, _user_ and _system_ time. Please see if the differences are significant or not for the different exercise scenarios.
 
 a) Setting up a VM with `calculate _pi_` example
 
