@@ -9,7 +9,7 @@ This is an exercise in the Extras of the Tutorial [UvA workshop 2016-01-25](UvAw
 
 In this advanced part of our HPC Cloud tutorial we ask you to play around with a parallel processing technique (multithreading). For this puspose, we will use an implementation of _pi_ calculation using `OpenMP`. You will be asked to perform multiple runs of each program, so that fluctuations caused by e.g. network can be middled out. The output of each program includes results for run time in _wall-clock_, _user_ and _system_ time.
 
-This exercise will let you use OpenMP, see it run in parallel, first with a serial implementation within a single multicore VM and then with diffrent parallel implementations. Please observe if the differences are significant or not for the scenarios below.
+This exercise will let you use OpenMP, first with a serial implementation within a single multicore VM and then with diffrent parallel implementations. Please observe if the differences are significant or not for the scenarios below.
 
 ### a) Setting up a VM with `calculate _pi_` example
 
@@ -32,30 +32,57 @@ gcc -v
 make -v 
 ```
 
-* Download the example to your VM from ![here](exercises/gridpi-mp.tar) and uncompress the file:
+* Download the example to your VM and uncompress the file:
 
 ```sh
 wget https://doc.hpccloud.surfsara.nl/UvAworkshop-2016-01-25/exercises/gridpi-mp.tar 
 tar -xvf gridpi-mp.tar 
 ```
 
+* Inspect what files are in the example directory:
+* 
 
-b) Running the serial example
+```sh
+cd gridpi-mp/
+ls -l 
+```
 
-* Ther file `gridpi-serial.c` contains a simple workload (calculate pi) in a simple,
-serial implementation. Have a look inside the file.
-* Compile and run a few times.
+### b) Simply running the serial example
 
-c) Running the OpenMP simple version
+* The file `gridpi-serial.c` contains a simple workload (calculate pi) in a simple,
+serial implementation. Have a look inside the file, e.g. `cat gridpi-serial.c`
+* Compile the gridpi-serial.c program:
+
+```sh
+gcc -std=c99 -Wall -Werror -pedantic gridpi-serial.c -o gridpi-serial
+```
+
+* Run the serial program a few times:
+
+```sh
+./gridpi-serial
+```
+
+### Running the OpenMP simple version
 
 * The file gridpi-mp-simple.c is a first stab at using OpenMP on gridpi-simple.c.
 * Have a look at the differences in the code.
+* Compile the gridpi-mp-simple.c program:
 
-> **_Food for brain c:_**
+```sh
+gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-simple.c -lm -o gridpi-mp-simple 
+```
+
+* Run a few times
+```sh
+./gridpi-mp-simple
+```
+
+> **_Food for brain_**
 >
-> Compile and run a few times, observe the difference in performance. Can you explain?
+> Observe the difference in performance. Can you explain?
 
-(d) Running the OpenMP optimized version
+(c) Running the OpenMP optimized version
 
 * The file gridpi-mp-alt.c tries to optimize on gridpi-mp-simple.c,
 * Have a look at the differences in the code.
@@ -64,17 +91,17 @@ c) Running the OpenMP simple version
 >
 > Compile and run a few times, observe the difference in performance. Can you explain? 
 
-(e) Running the OpenMP optimized alternative version
+(d) Running the OpenMP optimized alternative version
 
 * The file gridpi-mp-reduction.c uses another approach to optimize on gridpi-mp-simple.c,
 * Have a look at the differences in the code.
 * Compile and run a few times, observe the difference in performance. Can you explain?
 
-> **_Food for brain e1:_**
+> **_Food for brain d1:_**
 >
 > Compile and run a few times, observe the difference in performance. Can you explain? 
 
-> **_Food for brain e2:_**
+> **_Food for brain d2:_**
 >
 > Compare the three implementations that use OpenMP again. Any insights?
 
