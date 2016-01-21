@@ -93,7 +93,7 @@ To start a virtual machine easily, we provide the HPC Cloud `AppMarket`. This re
 * Importing a pre-made disk, called `Image`, which includes a Linux operating system.
 * Creating the description of your VM, called `Template`, which gives your VM the shape you want.
 * Instantiating the *Template* to run your first `Virtual Machine`.
-* Accessing your `Virtual Machine` and shut it down.
+* Accessing your `Virtual Machine` and shutting it down.
 
 Let's run the first machine on the HPC Cloud.
 
@@ -111,8 +111,8 @@ Let's run the first machine on the HPC Cloud.
 
 > **Food for brain:**
 >
-> * When you click on the _body_ of an _appliance_, you can see detailed information about that _appliance_. Can you see this detailed information about the _appliance_ we are using in this exercise?
-> * When you _import_ an _appliance_, this will create (at least) one `image` and one `template`, as explained during the presentation. In the UI you have an `Images` tab and another `Templates` tab under the `Virtual Resources` option on the left menu. You should see your new `image` and `template` there.
+> * When you click on the selected _appliance_ (hit anywhere on the row), you can see detailed information about that _appliance_. Can you see this detailed information about the _appliance_ we are using in this exercise?
+> * When you _import_ an _appliance_, this will create one `image` and one `template`, as explained during the presentation. In the UI you have an `Images` tab and another `Templates` tab under the `Virtual Resources` option on the left menu. You should see your new `image` and `template` there.
   * Can you see them?
   * What is the STATUS of the `image` just after it you import it?
   * Refresh with the sign next to the *green plus button* until it is READY.
