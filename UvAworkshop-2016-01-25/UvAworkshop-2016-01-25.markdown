@@ -2,8 +2,6 @@
 layout: default
 ---
 
-> ## Warning: Under construction
-
 # UvA workshop 2016-01-25
 
 <div style="float:right;" markdown="1">
@@ -56,9 +54,7 @@ So what you need for this tutorial:
 
 
 ## <a name="hands-on"></a> Hands-on
-The hands-on tutorial has two parts. The exercises in part A will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood part A, then continue to part B with more `advanced` examples on the HPC Cloud. 
-
-If you manage to finish both part A & B and wish to know more about the HPC Cloud, try also the more advanced exercises in `extras`.
+The hands-on tutorial has two parts. The exercises in part *A & B* will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood this, then continue to *Extras* with more `advanced` examples on the HPC Cloud. 
 
   * [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA)
   * [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB)
