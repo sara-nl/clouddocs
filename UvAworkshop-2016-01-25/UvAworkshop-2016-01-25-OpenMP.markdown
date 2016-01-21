@@ -15,7 +15,7 @@ This exercise will let you use OpenMP, first with a serial implementation within
 
 * On the UI, create a 2-core template that will use your existing `Course Image`:
   * On the Templates tab (under Virtual Resources), click on the green [+] button to create a new template
-  * Edit the *General* tab: type in a meaningful Name e.g. **Openmp setup**, type in **2 CPUs**, type in **4GB Memory** 
+  * Edit the *General* tab: type in a meaningful Name e.g. **Openmp setup**, type in **2 CPUs** and **2 VCPUs**, type in **4GB Memory** 
   * Edit the *Storage* tab: for the Disk 0, choose the **Course Image** (from the table on the right of the screen) 
   * Edit the *Network* tab: for the Interface 0, choose the **internet network**.  
   * Edit the *Input/Output* tab: click on the **VNC** radiobutton
@@ -122,10 +122,10 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 >
 > Compare the three implementations that use OpenMP again. Any insights?
 >
-> Replace your VM with one that has more cores (use the templates).
+> Replace your VM with one that has more cores (use the `Templates`).
 > Play around with the parameters in the source files (e.g. POINTS_ON_AXIS).
 > Does the performance scale for all of the implementations? Can you explain?
 
-> **_Note:_**
+> **Note:**
 > Do not forget to shutdown your VM when you are done with your performance tests.
 
