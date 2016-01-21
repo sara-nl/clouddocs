@@ -4,21 +4,27 @@ layout: default
 
 # Use Secure Shell (SSH) private/public keys (Linux/Mac/Windows)
 
+
 ## Summary
 
-SSH private/public key pairs are great for allowing passwordless access to a remote system, and also more secure than traditional passwords.  You can find abundant information on the Internet about how it all works. Here is a summary.
+As an HPC Cloud user you have full control of your virtual machines (IaaS). This means that you are administrator in your own VMs, in other words `root` user.
 
-You need to have a file on your local computer (say, your laptop) with the private key, and you need to install its matching public key the remote computers you want to access (say, your VM). Then, when you are going to connect to the remote machine from your laptop, the private and public keys will be compared and, if they successfully relate to one-another, your SSH connection will be established.
+Most authentication is done with a username/password, but passwords are easy to forget and often not strong enough to withstand cracking. Root access needs good security because it gives full control over the host and is a well known username. 
 
-The mechanism to allow connecting with SSH private/public key pairs is already configured (and recommended) on the appliances you can get from the AppMarket. Therefore, you need to have a  private/public key pair on your laptop in order to be able to connect to a VM created from the AppMarket.
+SSH offers [public key](https://en.wikipedia.org/wiki/Public-key_cryptography) authentication, a method to access a remote machine securely and with not much trouble.
+This is great for allowing passwordless access to a remote system, and also more secure than traditional passwords.  You can find abundant information on the Internet about how it all works.
+
+You need to have a file on your local computer (say, your laptop) with a private key, and you need to install its matching public key on the remote computers you want to access (say, your VM). Then, when you are going to connect to the remote machine from your laptop, the private and public keys will be compared and, if they successfully relate to one-another, your SSH connection will be established.
+
+The mechanism to allow connecting with SSH private/public key pairs is already configured (and recommended) on the appliances you can get from the AppMarket. Therefore, you need to have a private/public key pair on your laptop in order to be able to connect to a VM created from the AppMarket.
 
 ## Preparation
 
 To apply the following instructions you need a terminal on your local machine (laptop).
 
-* Linux and Mac users have one installed by default.
+* Linux and Mac users have a terminal installed by default.
 * Windows users can download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between `Git-XXX-32-bit.exe` or `Git-XXX-64-bit.exe`.
-  * For Windows users that want to use PuttyGen, see the instructions for [Putty tools](putty-tools#generate-ssh-key-on-windows-with-puttygen).
+  * Windows users who prefer PuttyGen should look at the instructions for [Putty tools](putty-tools#generate-ssh-key-on-windows-with-puttygen).
 
 ## Generate an SSH private/public key pair
 
@@ -40,13 +46,9 @@ total 72
 -rw-r--r--+ 1 user  staff    409 Nov 25  2014 id_rsa.pub
 ```
 
-### Generate an SSH key
-
-Generation of a SSH key is done with the command `ssh-keygen`.
-
 ### Private key passphrase
 
-Ssh-keygen will ask for a passphrase to **protect your local private key**. It is never sent to the remote host.
+When you create a private/public key peir, you will need a passphrase to **protect your local private key**. It is never sent to the remote host.
 
 What is a good passphrase? Choose a long sentence, for example a quote that you like, of more than 35 characters. Because of the length, there is no need to substitute letters with symbols or leave out spaces or punctuation.
 
@@ -108,7 +110,7 @@ Command:
 ssh-add ~/.ssh/id_rsa ### or the file name you provided to ssh-keygen
 ```
 
-Output:
+Interaction:
 
 ```
 Enter passphrase for ~/.ssh/id_rsa: ### type it in
