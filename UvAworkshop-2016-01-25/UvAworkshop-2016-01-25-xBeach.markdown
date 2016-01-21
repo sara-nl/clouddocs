@@ -25,23 +25,23 @@ This exercise will let you use XBeach, see it run in parallel, first with severa
 
 ### a) Setting up a VM with XBeach
 
-We have prepared a cloud image (from now on simply _an image_) where we have compiled and installed XBeach for a user called `clouder` (short for CLOUD usER). You can find the image on your images list. It's called `xbeach`.
+We have prepared a cloud image where we have compiled and installed XBeach for a user called `clouder` (short for CLOUD usER). You can find the image on your images list. It's called `xbeach`.
 
 **Exercise a1:** Make a 2-core VM out of the provided XBeach image.
 
 * On the UI, create a 2-core template that will use the provided XBeach image:
   * On the Templates tab (under Virtual Resources), click on the green [+] button to create a new template
   * Edit the *General* tab: type in a meaningful Name e.g. **xbeach setup**, type in **2 CPUs**, type in **4GB Memory** 
-  * Edit the *Storage* tab: for the Disk 0, choose the **xbeach_centos_7** (from the table on the right of the screen) 
-  * Edit the *Network* tab: for the Interface 0, choose the **internet network**. Click on the + Add another nic button (that will make a new Interface 1), and then choose **wshop-uihe.int** 
+  * Edit the *Storage* tab: for the Disk 0, choose the **xbeach** (from the table on the right of the screen) 
+  * Edit the *Network* tab: for the Interface 0, choose the **internet network**. Click on the + Add another nic button (that will make a new Interface 1), and then choose **demouva.int** 
   * Edit the *Input/Output* tab: click on the **VNC** radiobutton
   * Finally, click on the green *Create* button at the top of the screen
 
-* Launch a VM from that template
+* Launch a VM from that template (xbeach setup)
 
 * Connect to the VNC console so that you can follow the first-run wizard that the image is configured to run upon first start-up. It will ask you to set up a password for users `root` and `clouder`. Make sure you remember the passwords you set up.
 
-* Connect via SSH to the VM with user `clouder` (this image has SSH root access disabled) so that you can work more comfortably. Can you see where XBeach is installed?
+* Connect via SSH to the VM with user `clouder` as `ssh clouder@145.100.58.XYZ` (this image has SSH root access disabled) so that you can work more comfortably. Can you see where XBeach is installed?
 
 ### b) Simply running XBeach
 
@@ -167,10 +167,10 @@ cd ~/w/ssh && ./makeme_master.sh
 su -
 ```
 
-4. Run our configuration script to make the VM the worker. You will need the master's **INTERNAL** ip address
+* Run our configuration script to make the VM the worker. You will need the master's **INTERNAL** ip address
 
 ```sh
-cd /home/clouder/w/ssh && ./makeme_worker.sh 1 <master_ip>
+cd /home/clouder/w/ssh && ./makeme_worker.sh 1 <master_internal_ip>
 ```
 
 > **_Food for brain d3:_**
@@ -183,13 +183,13 @@ cd /home/clouder/w/ssh && ./makeme_worker.sh 1 <master_ip>
 * **On the master**, make sure you are logged in as `clouder`. Run the script we provide you with to enable passwordless-ssh, so that the `clouder` user on the worker node can connect to the master node without requiring a password. You will need to type in the **INTERNAL** ip address of the worker: 
 
 ```sh
-cd ~/w/ssh && ./set_passwordless_ssh.sh <worker_ip>
+cd ~/w/ssh && ./set_passwordless_ssh.sh <worker_internal_ip>
 ```
 
 * **On the worker**, make sure you are logged in as `clouder`. Run the script we provide you with to enable passwordless-ssh, so that the `clouder` user on the master node can connect to the worker node without requiring a password. You will need to type in the **INTERNAL** ip address of the master: 
 
 ```sh
-cd ~/w/ssh && ./set_passwordless_ssh.sh <master_ip>
+cd ~/w/ssh && ./set_passwordless_ssh.sh <master_internal_ip>
 ```
 
 * **On the master**, try to SSH to the worker's internal ip address. Does it require a password? If it does, repeat the first step of this exercise.
@@ -255,5 +255,8 @@ This section is meant as extra questions that we thought would be nice for you t
 **Bonus 6:** Using SSH might be a way to go along, but when you have multiple things to run at a time, ensuring users' access, passwordless permissions... There exist cluster-building tools based on job queues, like Sun (now Oracle) Grid Engine, Torque, etc. Can you find out more? Can you set it up?
 
 **Bonus 7:** MPI is an implementation of a technique for parallelising computations. Another common technique is _shared memory_. One implementation for that technique is OpenMP. You can read more about it at their website: http://openmp.org/wp/. 
-  * Can you set up a VM and run a program that benefits from OpenMP?
+
+  * Can you set up a VM and run a program that benefits from OpenMP? See _calculate pi_ example in [UvA workshop 2016-01-25 - Extras](UvAworkshop-2016-01-25-extras).
   * Does it make any sense to mix MPI and OpenMP? Are OpenMP-enabled MPI processes the same as MPI-enabled OpenMP programs?
+
+ If you want more of the advanced exercises on the HPC Cloud, see [UvA workshop 2016-01-25 - Extras](UvAworkshop-2016-01-25-extras).
