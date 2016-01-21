@@ -52,9 +52,8 @@ In this section you will work with **persistent** images. You will go through th
 
 ### 2. Scale up to a multicore VM
 
-The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your Virtual Machines (VMs) the form that you need them to have. In this section, you will start a *four-core* VM, using the exact same image, the *Cursus Image*. To scale-up your VM to use multiple cores you will be:
+The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your Virtual Machines (VMs) the form that you need them to have. In this section, you will start a _four-core_ VM, using the exact same image, the _Cursus Image_. To scale-up your VM to use multiple cores you will be:
 
-> 
 * Editting your Template.
 * Re-instantiating a VM from the modified Template.
 
@@ -62,15 +61,15 @@ The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows y
 
 You can customise your VMs by editing the templates you instantiate the VMs from.
 
-* In order to edit your existing template, choose the `Cursus Template` item and then *Update* buttons on the top right.
+* In order to edit your existing template, choose the `Cursus Template` item and then `Update` buttons on the top right.
 * In the *General* tab edit the number of CPU and VCPU as:
   * CPU: **4**
   * VCPU: **4**
-* When you are done, click on the green *Update* button so that your changes are actually saved. 
+* When you are done, click on the green _Update_ button so that your changes are actually saved. 
 
 That was it. From now on you will get a 4-core VM running using the same *Cursus Image*.
 
-#### Run the example on the four-core VM
+#### Instantiate the four-core VM
 
 * Instantiate a VM from the updated template.
 * Login to the VM. *Is your data there?*
