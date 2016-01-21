@@ -13,7 +13,7 @@ This is an exercise in the Extras of Tutorial [UvA workshop 2016-01-25](UvAworks
 
 </div>
 
-In this advanced part of our HPC Cloud tutorial we ask you to play around with a parallel processing technique (multiprocessing): message-passing (MPI). For this tutorial, we will use a tool from the water management field, called `xBeach`. In particular, we have prepared few exercises for you to run XBeach with multiple processors over multiple VMs.
+In this advanced part of our HPC Cloud tutorial we ask you to play around with a parallel processing technique (multiprocessing): message-passing (MPI). For this puspose, we will use a tool from the water management field, called `xBeach`. In particular, we have prepared few exercises for you to run XBeach with multiple processors over multiple VMs.
 
 ## Running a real tool in parallel: XBeach
 
@@ -25,7 +25,7 @@ This exercise will let you use XBeach, see it run in parallel, first with severa
 
 ### a) Setting up a VM with XBeach
 
-We have prepared a cloud image (from now on simply _an image_) where we have compiled and installed XBeach for a user called `clouder` (short for CLOUD usER). You can find the image on your images list. It's called `xbeach_centos_7`.
+We have prepared a cloud image (from now on simply _an image_) where we have compiled and installed XBeach for a user called `clouder` (short for CLOUD usER). You can find the image on your images list. It's called `xbeach`.
 
 **Exercise a1:** Make a 2-core VM out of the provided XBeach image.
 
