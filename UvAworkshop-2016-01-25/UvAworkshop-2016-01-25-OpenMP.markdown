@@ -7,7 +7,9 @@ layout: default
 This is an exercise in the Extras of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).
 **You should have completed (and understood)** [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA) and [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB) before trying this exercise.
 
-In this advanced part of our HPC Cloud tutorial we ask you to play around with a parallel processing technique (multithreading). For this puspose, we will use an implementation of _pi_ calculation using `OpenMP`. You will be asked to perform multiple runs of each program, so that fluctuations caused by e.g. network can be middled out. The output of each program includes results for run time in _wall-clock_, _user_ and _system_ time. Please see if the differences are significant or not for the different exercise scenarios.
+In this advanced part of our HPC Cloud tutorial we ask you to play around with a parallel processing technique (multithreading). For this puspose, we will use an implementation of _pi_ calculation using `OpenMP`. You will be asked to perform multiple runs of each program, so that fluctuations caused by e.g. network can be middled out. The output of each program includes results for run time in _wall-clock_, _user_ and _system_ time.
+
+This exercise will let you use OpenMP, see it run in parallel, first with a serial implementation within a single multicore VM and then with diffrent parallel implementations. Please observe if the differences are significant or not for the scenarios below.
 
 a) Setting up a VM with `calculate _pi_` example
 
