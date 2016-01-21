@@ -4,9 +4,7 @@ layout: default
 
 # UvA workshop 2016-01-25 - MPI: xBeach
 
-> ## Warning: Under construction
-
-This is an exercise in the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).
+This is an exercise in the Extras of Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).
 **You should have completed (and understood)** [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA) and [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB) before trying this exercise.
 
 <div style="float:right;" markdown="1">
@@ -15,21 +13,15 @@ This is an exercise in the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-0
 
 </div>
 
-In this advanced part of our HPC Cloud tutorial we ask you to play around with a parallel processing technique (multiprocessing): message-passing (MPI). For this UNESCO-IHE tutorial, we also want to give you a taste of how tools that you can use in the water management field can be used on the HPC Cloud. In particular, we have prepared an exercise for you to run XBeach with multiple processors over multiple VMs.
+In this advanced part of our HPC Cloud tutorial we ask you to play around with a parallel processing technique (multiprocessing): message-passing (MPI). For this tutorial, we will use a tool from the water management field, called `xBeach`. In particular, we have prepared few exercises for you to run XBeach with multiple processors over multiple VMs.
 
 ## Running a real tool in parallel: XBeach
 
 From the [XBeach website](http://oss.deltares.nl/web/xbeach/):
 
-> XBeach is a two-dimensional model for wave propagation, long waves and mean flow, sediment transport and morphological changes of the nearshore area, beaches, dunes and backbarrier during storms.
+> XBeach is a two-dimensional model for wave propagation, long waves and mean flow, sediment transport and morphological changes of the nearshore area, beaches, dunes and backbarrier during storms. It is written largely in the FORTRAN programming language, and it has built-in MPI capabilities. 
 
-Several of your colleagues have repeatedly mentioned to SURFsara that they are using it for their research/work projects, so we figure it is a rather commonplace tool in your field. It is written largely in the FORTRAN programming language, and it has built-in MPI capabilities. This exercise will let you use XBeach, see it run in parallel, first with several processors within a single VM and then over multiple VMs.
-
-> **NOTE:**
->
->Your tutorial facilitators today are no experts on the tool itself. We do not know how to interpret the inputs or the results (we do not even know if the results are correct!). We will be happy to hear feedback from you on this matter ;-).
-Hopefully, you will be able to run it successfully with all the knowledge you have gathered so far, and see
-that, at least for a reduced number of processors, when you add more of them it tends to takes less to solve the problem.
+This exercise will let you use XBeach, see it run in parallel, first with several processors within a single VM and then over multiple VMs.
 
 ### a) Setting up a VM with XBeach
 
