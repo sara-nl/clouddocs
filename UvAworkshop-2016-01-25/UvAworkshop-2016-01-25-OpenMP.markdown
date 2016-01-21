@@ -40,7 +40,6 @@ tar -xvf gridpi-mp.tar
 ```
 
 * Inspect what files are in the example directory:
-* 
 
 ```sh
 cd gridpi-mp/
@@ -63,9 +62,9 @@ gcc -std=c99 -Wall -Werror -pedantic gridpi-serial.c -o gridpi-serial
 ./gridpi-serial
 ```
 
-### Running the OpenMP simple version
+### c) Running the OpenMP simple version
 
-* The file gridpi-mp-simple.c is a first stab at using OpenMP on gridpi-simple.c.
+* The file gridpi-mp-simple.c is a first stab at using OpenMP on gridpi-simple.c
 * Have a look at the differences in the code.
 * Compile the gridpi-mp-simple.c program:
 
@@ -74,43 +73,59 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-simple.c -lm -o gridpi-m
 ```
 
 * Run a few times
+
 ```sh
 ./gridpi-mp-simple
 ```
 
 > **_Food for brain_**
 >
-> Observe the difference in performance. Can you explain?
+> Observe the difference in performance compared to exercise b). Can you explain?
 
-(c) Running the OpenMP optimized version
+### d) Running the OpenMP optimized version
 
-* The file gridpi-mp-alt.c tries to optimize on gridpi-mp-simple.c,
+* The file gridpi-mp-alt.c tries to optimize on gridpi-mp-simple.c
 * Have a look at the differences in the code.
+* Compile the gridpi-mp-alt.c program:
 
-> **_Food for brain d:_**
+```sh
+gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-alt.c -lm -o gridpi-mp-alt
+```
+
+* Run a few times
+
+```sh
+./gridpi-mp-alt
+```
+
+> **_Food for brain_**
 >
-> Compile and run a few times, observe the difference in performance. Can you explain? 
+> Observe the difference in performance compared to exercise b) and c). Can you explain?
 
-(d) Running the OpenMP optimized alternative version
+### e) Running the OpenMP optimized alternative version
 
-* The file gridpi-mp-reduction.c uses another approach to optimize on gridpi-mp-simple.c,
+* The file gridpi-mp-reduction.c uses another approach to optimize on gridpi-mp-simple.c
 * Have a look at the differences in the code.
-* Compile and run a few times, observe the difference in performance. Can you explain?
+* Compile the gridpi-mp-reduction.c program:
 
-> **_Food for brain d1:_**
->
-> Compile and run a few times, observe the difference in performance. Can you explain? 
+```sh
+gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridpi-mp-reduction
+```
 
-> **_Food for brain d2:_**
+* Run a few times
+
+```sh
+./gridpi-mp-reduction
+```
+
+> **_Food for brain_**
 >
 > Compare the three implementations that use OpenMP again. Any insights?
-
-> **_Food for brain e3:_**
 >
-> Replace your VM with one that has more cores (use the templates|new wizard).
+> Replace your VM with one that has more cores (use the templates).
 > Play around with the parameters in the source files (e.g. POINTS_ON_AXIS).
 > Does the performance scale for all of the implementations? Can you explain?
 
 > **_Note:_**
-> Do not forget to shutdown your VM.
+> Do not forget to shutdown your VM when you are done with your performance tests.
 
