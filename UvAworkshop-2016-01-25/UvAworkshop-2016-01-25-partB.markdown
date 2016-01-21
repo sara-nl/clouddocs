@@ -14,11 +14,11 @@ This is part B of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25)
 
 >**NOTE:**
 >
-> For the rest of the tutorial we will omit `ubuntu@ip-145-100-59-102:~$` prompt in the instructions, in order to allow you copy-paste the commands directly in your terminal.
+> For the rest of the tutorial we will omit `ubuntu@ip-145-100-58-XYZ:~$` prompt in the instructions, in order to allow you copy-paste the commands directly in your terminal.
 
 ### 1. Persistence
 
-`Images` can be **persistent**. We say they are **persistent** when the `persistent` box is ticked on the UI and **non-persistent** when the `persistent` box is not ticked. 
+`Images` can be **persistent** or **non-persistent**. We say they are **persistent** when the `persistent` box is ticked on the UI and **non-persistent** when the `persistent` box is not ticked. 
 
 * What does **persistent** mean?
   *  Changes by the VM are copied back to the original `image` (upon normal VM shutdown)
@@ -34,7 +34,6 @@ This is part B of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25)
 
 In this section you will work with **persistent** images. You will go through these steps: 
 
-> 
 * Making your image persistent.
 * Starting a VM using the persistent image.
 
@@ -45,7 +44,7 @@ In this section you will work with **persistent** images. You will go through th
 
 #### Start a persistent VM
 * Start your virtual machine again. 
-* Log in and check the files you created during the previous run ([first VM](#2.-My-first-VM)). 
+* Log in and check the files you created during the previous run [(Part A)](UvAworkshop-2016-01-25-partA). 
 
 > **Food for brain:**
 > During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written on the backing `image` even if you restart your VM. Try it.
