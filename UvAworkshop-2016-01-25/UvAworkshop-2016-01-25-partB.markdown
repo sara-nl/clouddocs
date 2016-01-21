@@ -137,11 +137,16 @@ sudo fdisk -l
 sudo apt-get install xfsprogs
 ```
 
-* Mount the datadisk in the VM:
+* Create the directory where you will mount the Ceph datablock:
 
 ```sh
 sudo mkdir /data  
 sudo mkfs -t xfs /dev/vdb  
+```
+
+* Mount the datadisk in the VM:
+
+```sh
 sudo mount /dev/vdb /data  
 ```
 
@@ -153,7 +158,7 @@ sudo chown ubuntu:ubuntu -R /data
 
 >**Food for brain:**
 >
-> Create new files or folders in your in `/data` directory. Logout and login again. *Are your changes still there?*
+> Create new files or folders in your in `/data` directory. Logout and login again. *Are your changes still there?*. Check with `ls /data/`.
 > Shutdown the VM and start it again. *Do you see the files on the datablock?* 
 > Hint: when you start the VM the datadisk is not automatically mounted.
 
