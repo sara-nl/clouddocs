@@ -11,12 +11,34 @@ In this advanced part of our HPC Cloud tutorial we ask you to play around with a
 
 This exercise will let you use OpenMP, see it run in parallel, first with a serial implementation within a single multicore VM and then with diffrent parallel implementations. Please observe if the differences are significant or not for the scenarios below.
 
-a) Setting up a VM with `calculate _pi_` example
+### a) Setting up a VM with `calculate _pi_` example
 
-* Start a VM with 2 CPUs and a Linux distribution.
-* Install the gcc compiler and gnu make if needed.
-* Copy the example files to your VM from **here**
-* Do not forget to shutdown your VM when finished.
+* On the UI, create a 2-core template that will use your existing `Course Image`:
+  * On the Templates tab (under Virtual Resources), click on the green [+] button to create a new template
+  * Edit the *General* tab: type in a meaningful Name e.g. **Openmp setup**, type in **2 CPUs**, type in **4GB Memory** 
+  * Edit the *Storage* tab: for the Disk 0, choose the **Course Image** (from the table on the right of the screen) 
+  * Edit the *Network* tab: for the Interface 0, choose the **internet network**.  
+  * Edit the *Input/Output* tab: click on the **VNC** radiobutton
+  * Finally, click on the green *Create* button at the top of the screen
+
+* Launch a VM from that template (Openmp setup)
+
+* Install the gcc compiler and gnu make:
+
+```sh
+sudo apt-get install build-essential 
+# Optionally verify gcc and GNU make installation and version
+gcc -v  
+make -v 
+```
+
+* Download the example to your VM from ![here](exercises/gridpi-mp.tar) and uncompress the file:
+
+```sh
+wget https://doc.hpccloud.surfsara.nl/UvAworkshop-2016-01-25/exercises/gridpi-mp.tar 
+tar -xvf gridpi-mp.tar 
+```
+
 
 b) Running the serial example
 
