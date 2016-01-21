@@ -7,8 +7,9 @@ layout: default
 This is part A of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).
 
 Here are your first steps:
+
 1. [Access the user interface](#access-the-user-interface)
-2. [Add your SSH key](#add-your-ssh-key)
+2. [Add your public SSH key](#add-your-public-ssh-key)
 3. [My first VM](#my-first-vm)
 
 ### 1. Access the User Interface
@@ -40,55 +41,28 @@ Let's check if it worked.
 From now on you can use your new password to login to the [UI](https://ui.hpccloud.surfsara.nl/).
 Do so now.
 
-### 2. Add your SSH key
+### 2. Add your public SSH key
 
-Before launching your [first VM](#my-first-vm), there is a last thing to arrange in your [UI](https://ui.hpccloud.surfsara.nl/) account: **add an SSH key to your profile**.  
-*But what does this mean and why is it needed?*
+To complete the set-up of your cloud account, you need to **add an SSH public key to your profile**. This is a one-time task.
 
-As an HPC Cloud user you have full control of your virtual machines (IaaS). This means that you are administrator in your own VMs, in other words `root` user.
+* First, read about SSH and public keys on the [Use Secure Shell (SSH) private/public keys](/SSHkey) page.<br />
+If you are already familiar with SSH public keys, you can skip reading this page.
+* You need a private/public key pair in your `~/.ssh/` directory. Create one now if needed.
+* Check with the command `ls ~/.ssh`: you should see files `id_rsa` and `id_rsa.pub`.
 
-Most authentication is done with a username/password, but passwords are easy to forget and often not strong enough to withstand cracking. Root access needs good security because it gives full control over the host and is a well known username. SSH offers [public key](https://en.wikipedia.org/wiki/Public-key_cryptography) authentication, a method to access a remote machine securely and with not much trouble.
+Next, you will copy the public SSH key (`id_rsa.pub`) to the [UI](https://ui.hpccloud.surfsara.nl/), but you will keep the matching private key (`id_rsa`) safe in your laptop.
 
-Follow the steps below to add an ssh key to your profile:
-
-First generate an `SSH public key pair`:
-
-* Start a terminal (in Mac/Linux) or GitBash (in Windows).
-* Check if you already have an SSH key pair stored in your laptop. Type:
-
-```sh
-ls -l $HOME/.ssh/
-```
-
-* If you see the files `id_rsa.pub` and `id_rsa`, skip the next command.
-* The `ssh-keygen` command generates two files: a _public_ key (`id_rsa.pub`) and a _private_ key (`id_rsa`).
-  The _public_ key contains only public information and may be distributed to anybody, the _private_ key must be kept secret and is for your eyes only. Protect the private key with a long passphrase, see [ssh passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/).   
-  Now start the following command and dialogue:
-
-```sh
-ssh-keygen -t rsa -b 4096
-```
-
-> Generating public/private rsa key pair.
-> Enter file in which to save the key (/Users/markus/.ssh/id_rsa):     ### _you can press return here_
-> Enter passphrase (empty for no passphrase):     ### _choose a long passphrase see [ssh passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/)_
-> Enter same passphrase again:
-
-You should now see the two files in your $HOME/.ssh/ directory. Check.
-If you have problems creating the SSH keys, get help from the detailed guide [Generate an SSH key](/SSHkey).
-
-Next, you will copy the public key (`id_rsa.pub`) to the [UI](https://ui.hpccloud.surfsara.nl/), but you will keep the matching private key (`id_rsa`) safe in your laptop:
-
-* Open your **public** ssh key file (id_rsa.pub) and copy the content to clipboard, e.g. `cat  $HOME/.ssh/id_rsa.pub`
-* Go to your user profile and select *Settings* from the *buddy* icon. In the dialogue that pops up, go to the *Info* page.
-* Locate the section `Public SSH Key`, and click on the blue edit icon. Paste the content of your **public** ssh key (id_rsa.pub) file.
-* Close the window. There is no *Save* button, but your public key is automatically stored in your profile.  
-
-Adding an SSH key to you profile is a one-time task. It is possible to use multiple keys for different VMs but there is no need to repeat this procedure for the rest of the tutorial.
+* Copy the content of your **public** SSH key to clipboard, e.g. do `cat ~/.ssh/id_rsa.pub` and select and copy all of that text.
+* Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *Settings* from the *buddy* icon. 
+* Locate the section `Public SSH Key` (if needed, click the *Info* icon) and click on the blue edit icon.
+* Paste the content of your public SSH key file into the text edit box.
+* There is no `Save` button: click outside the text edit box to complete your action, e.g. on the words "Public SSH Key".
+* Check the contents of box against your public key: it should start with `ssh-rsa AAAAB`...
+* Close the window.
 
 ### 3. My first VM
 
-To start a virtual machine easily, we provide the HPC Cloud `AppMarket`. This repository contains common appliances for you to pick and use. In this section you will use the AppMarket to build your first VM with the following steps:
+To create a virtual machine easily, we provide the HPC Cloud `AppMarket`. This repository contains common appliances for you to pick and use. In this section you will use the AppMarket to build your first VM with the following steps:
 
 * Importing a pre-made disk, called `Image`, which includes a Linux operating system.
 * Creating the description of your VM, called `Template`, which gives your VM the shape you want.
@@ -164,7 +138,7 @@ Let's summarise what you have seen so far. From the menu on the left side, click
 
 You can interact with your VM with several ways: command-line (e.g.: SSH), VNC (UI in your browser) or a remote desktop. We will use SSH in a terminal for the moment.
 
-The way to login into your virtual machine is the ssh keys that you [stored in your profile](#add-your-ssh-key) previously.
+The way to login into your virtual machine is the SSH keys that you [stored in your profile](#add-your-ssh-key) previously.
 
 **Command-line access - SSH**  
 
@@ -200,7 +174,7 @@ ubuntu@ip-145-100-58-XYZ:~$ echo "Some text ..." > myfile
 ubuntu@ip-145-100-58-XYZ:~$ cat myfile
 ```
 
-* Logout by typing `logout` or `ctrl-D` in your terminal (do **NOT** issue any shutdown command):
+* Logout by typing `logout` or `ctrl-D` in your terminal (do **not** issue any shutdown command):
 
 ```sh
 ubuntu@ip-145-100-58-XYZ:~$ logout
@@ -215,13 +189,13 @@ ubuntu@ip-145-100-58-XYZ:~$ logout
 
 Let's shut your first VM down. Anytime you expect your VM to become idle, you should shut it down to stop consuming these resources that your VM is holding but not using.
 
-* On the UI, Tick the box to the left on the row with your VM.
+* In the cloud UI, tick the box to the left on the row with your VM.
 * At the upper right corner of the screen, under the dust bin drop-down button, click `Shutdown`.
 * Refresh (by clicking on the two arrows chasing each other next to + button) until your VM is gone from the list. It will be removed from the display, but you can start it again whenever you need it.
 
 > **Food for brain:**
 >
-> When the VM has been _shut down_ and disappeared from the list, check and refresh the `Images` and `Templates` tabs. *Are your `image` and `template` still there?*
+> When the VM has been _shut down_ and disappeared from the list, check and refresh the `Images` and `Templates` tabs. *Are your image and template still there?*
 
 > **Note:**
 >
