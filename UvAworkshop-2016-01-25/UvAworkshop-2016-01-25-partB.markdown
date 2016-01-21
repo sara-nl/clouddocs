@@ -173,7 +173,7 @@ sudo chown ubuntu:ubuntu -R /data
 
 This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
 
-**Bonus:** In Part A of the workshop (this page) you have explored the UI and learnt how to import an _appliance_ from the AppMarket. However, many people come to the HPC Cloud because they can install and run their own operating system. In particular, Windows is very popular among our users. 
+**Bonus:** In Parts A & B of the workshop you have explored the UI and learnt how to import an _appliance_ from the AppMarket. However, many people come to the HPC Cloud because they can install and run their own operating system. In particular, Windows is very popular among our users. 
 
   * Can you think of (and sketch) the steps that you would need to follow to create a VM running your favourite operating system?
   * Can you find three articles in the HPC Cloud Documentation that show how to install different operating systems from scratch? 
