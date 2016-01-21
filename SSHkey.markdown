@@ -55,7 +55,7 @@ Neither do I, this has been taken care of. You type the passphrase once after lo
 
 For more information, please see [Working with SSH key passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/)
 
-### Generate a provate/public key pair
+### Generate a private/public key pair
 
 Open a terminal and type `ssh-keygen`. An example dialogue is shown below.
 Notes:
