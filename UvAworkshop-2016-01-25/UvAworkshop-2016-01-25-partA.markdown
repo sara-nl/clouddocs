@@ -104,7 +104,7 @@ Let's run the first machine on the HPC Cloud.
 * Choose the image: **Ubuntu 14.04 Desktop**. Click on the tick-box next to it.
 * Click on the `Import` button at the top-right corner of the screen.
 * A dialogue will pop up, asking you for a few details. Edit as follows:
-  * Select the Datastore for the images: **104: local images ssd**.
+  * Select the Datastore for the images: **115: images_ssd_gpu**.
   * Image Name: **Course Image**.
   * Template Name: **Course Template**.
 * Finally, click the *Import* button. This will start importing the appliance from the AppMarket. You can close this window.
