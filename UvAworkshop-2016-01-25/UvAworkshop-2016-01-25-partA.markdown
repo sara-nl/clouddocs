@@ -42,7 +42,7 @@ Do so now.
 
 ### 2. Add your SSH key
 
-Before launching your [first VM](#2.-My-first-VM), there is a last thing to arrange in your [UI](https://ui.hpccloud.surfsara.nl/) account: **add an SSH key to your profile**.  
+Before launching your [first VM](#my-first-vm), there is a last thing to arrange in your [UI](https://ui.hpccloud.surfsara.nl/) account: **add an SSH key to your profile**.  
 *But what does this mean and why is it needed?*
 
 As an HPC Cloud user you have full control of your virtual machines (IaaS). This means that you are administrator in your own VMs, in other words `root` user.
