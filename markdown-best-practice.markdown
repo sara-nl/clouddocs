@@ -8,7 +8,7 @@ You are welcome to add your additions and improvements to the documentation dire
 
  1. [Fork](https://help.github.com/articles/fork-a-repo/) our repository
  2. Git pull your fork
- 3. Make your changes and commit and push them back to GitHub
+ 3. Make your changes, commit and push them back to GitHub
  4. Create a [pull request](https://help.github.com/articles/proposing-changes-to-a-project-with-pull-requests/) to inform us of your changes
  5. After we've reviewed and accepted your work, we will merge your commits and the documentation will be updated automatically.
 
@@ -24,32 +24,32 @@ However, don't worry to much about all this new information. You'll see that mar
 
 ## MarkDown best practice for SURFsara HPC Cloud documentation
 
-Please consult the following guidelines before contributing updates, bug fixes, 
+Please consult the following guidelines before contributing updates, bug fixes,
 or other corrections.
 
 > **NOTE:**
 >
-> _This section is still under construction. As we need your feedback to keep 
-improving the documentation, we encourange you to send your remarks at 
+> _This section is still under construction. As we need your feedback to keep
+improving the documentation, we encourange you to send your remarks at
 helpdesk@surfsara.nl._
 
 ### Text emphasis conventions
 
 * Highlight text  
-Highlight important text in **bold letters**. Have a look at the source and 
+Highlight important text in **bold letters**. Have a look at the source and
 notice the double asterisks wrapping the emphasised text.
 
 * OpenNebula keywords  
-We want to distinguish `OpenNebula` keywords, such as `Virtual Machine` or 
+We want to distinguish `OpenNebula` keywords, such as `Virtual Machine` or
 `Template`. Have a look at the source and notice the accents wrapping the keywords.
 
 * Menu items  
-We want to emphasise user interface menu items, such as _Sign Out_. Have a look 
+We want to emphasise user interface menu items, such as _Sign Out_. Have a look
 at the source and notice the underscore wrapping the keyword.
 
 * Important notice  
 Callouts and text blocks of high attention should be different to body text.  
-Here is an example. 
+Here is an example.
 
 > **NOTE**
 >
@@ -85,7 +85,7 @@ rm: .o: No such file or directory
 ---
 
 Have a look at the source and notice the blank line between `Expected output:` and the `>`.
-This seems to be the only way to have different editord and renderers create the same output. 
+This seems to be the only way to have different editord and renderers create the same output.
 
 ### Creating a new page
 You can create a new page, by creating a new markdown file. The file should have .markdown as extension, because else the 'Edit on GitHub' button will not function.
