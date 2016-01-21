@@ -129,3 +129,4 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 > **Note:**
 > Do not forget to shutdown your VM when you are done with your performance tests.
 
+ If you want more of the advanced exercises on the HPC Cloud, see [UvA workshop 2016-01-25 - Extras](UvAworkshop-2016-01-25-extras).
