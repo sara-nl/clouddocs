@@ -45,6 +45,7 @@ In this section you will work with **persistent** images. You will go through th
 #### Start a persistent VM
 * Start your virtual machine again. 
 * Log in and check the files you created during the previous run [(Part A)](UvAworkshop-2016-01-25-partA). 
+* You can verify that you are logged-in a four-core VM with the command: `cat /proc/cpuinfo`
 
 > **Food for brain:**
 > During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written on the backing `image` even if you restart your VM. Try it.
