@@ -66,7 +66,7 @@ layout: default
 * [NFS](NFS) &ndash; Share Data between Virtual Machines
 
 ## Tutorials
-* UvA HPC and Big Data course, [HPC Cloud workshop](UvAworkshop-2016-01-25/UvAworkshop-2016-01-25)
+* UvA HPC and Big Data course, [HPC Cloud workshop 2016-01-25](UvAworkshop-2016-01-25/UvAworkshop-2016-01-25)
 * [UNESCO-IHE workshop - 11 Dec 2015](wshop-uihe-2015-12-11)
 * [Surfcursus - 15 Oct 2015](surfcursus-2015-Oct-15)
 
