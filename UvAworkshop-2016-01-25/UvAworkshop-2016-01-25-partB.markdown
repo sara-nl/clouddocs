@@ -4,6 +4,12 @@ layout: default
 
 # UvA workshop 2016-01-25 - part B
 
+<div style="float:right;" markdown="1">
+![UvA logo](/images/UvA-logo.png)
+
+![SURFsara logo](/images/SURFsara_logo.png)
+</div>
+
 This is part B of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).  
 **If you have not completed (and understood)** [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA), please do so first.
 
