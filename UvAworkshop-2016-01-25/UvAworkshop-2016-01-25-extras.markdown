@@ -22,6 +22,3 @@ You will find several _Food for brain_ questions in each exercise that you might
 
 * [MPI: xBeach](UvAworkshop-2016-01-25-xBeach)
   XBeach is a two-dimensional model for waves hitting the shore, using MPI to parallelise the computations.
-
-* [master/slaves: Mandelbrot](UvAworkshop-2016-01-25-Mandelbrot)
-  A graphical example showing master/slaves (or master/workers) parallelisation.
