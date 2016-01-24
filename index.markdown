@@ -66,14 +66,10 @@ layout: default
 * [NFS](NFS) &ndash; Share Data between Virtual Machines
 
 ## Tutorials
+* UvA HPC and Big Data course, [HPC Cloud workshop](UvAworkshop-2016-01-25/UvAworkshop-2016-01-25)
 * [UNESCO-IHE workshop - 11 Dec 2015](wshop-uihe-2015-12-11)
-  * [UNESCO-IHE - Part A (morning)](wshop-uihe-part-A-2015-Dec-11)
-  * [UNESCO-IHE - Part B (afternoon)](wshop-uihe-part-B-2015-Dec-11)
 * [Surfcursus - 15 Oct 2015](surfcursus-2015-Oct-15)
-  * [Surfcursus - Part A](surfcursus-part-A-2015-Oct-15)
-  * [Surfcursus - Part B](surfcursus-part-B-2015-Oct-15)
-  * [Surfcursus - Extras](surfcursus-extras-2015-Oct-15)
-  
+
 ## Service implementation
 * [Available resources](resources-available)
 
