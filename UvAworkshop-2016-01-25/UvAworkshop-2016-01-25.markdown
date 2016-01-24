@@ -63,5 +63,5 @@ The hands-on tutorial has two parts. The exercises in part *A & B* will give you
 ## <a name="presentations"></a> Presentations
 
 * [Introduction to HPC Cloud Computing](assets/20160125-hpccloud-intro.pdf) **NEEDS UPLOADING AS `assets/20160125-hpccloud-intro.pdf`**
-* [Parallel computation on the HPC Cloud](assets/20160125-hpccloud-parallel.pdf) **NEEDS UPLOADING AS `assets/20160125-hpccloud-parallel.pdf`**
+* [Parallel computation on the HPC Cloud](assets/20160125-hpccloud-parallel.pdf) 
 
