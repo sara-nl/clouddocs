@@ -4,6 +4,12 @@ layout: default
 
 # UvA workshop 2016-01-25 - Extras
 
+<div style="float:right;" markdown="1">
+![UvA logo](/images/UvA-logo.png)
+
+![SURFsara logo](/images/SURFsara_logo.png)
+</div>
+
 These are the extras of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25).
 **You should have completed (and understood)** [UvA workshop 2016-01-25 - Part A](UvAworkshop-2016-01-25-partA) and [UvA workshop 2016-01-25 - Part B](UvAworkshop-2016-01-25-partB),  before trying these extras.
 
