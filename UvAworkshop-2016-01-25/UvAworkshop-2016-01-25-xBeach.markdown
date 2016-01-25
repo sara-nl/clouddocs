@@ -64,7 +64,7 @@ xbeach
 > **_Food for brain b1:_**
 >
 > * How many processes is XBeach using? Where can you see that? (hint, look at the beginning of the output of XBeach, where a lot of information about the run is printed)
-* XBeach requires that you have a file parameters.txt on the directory where you run the xbeach command, with instructions it will use for input, output, etc. (look for the user manual and search within it).
+* XBeach requires that you have a file parameters.txt on the directory where you run the xbeach command, with instructions it will use for input, output, etc. What information is in the file? 
 * For future reference, you should write down somewhere how long it takes to run.
 
 ### c) Running XBeach with multiple cores
