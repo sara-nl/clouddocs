@@ -117,6 +117,12 @@ Enter passphrase for ~/.ssh/id_rsa: ### type it in
 Identity added: ~/.ssh/id_rsa
 ```
 
+If this fails because "Could not open a connection to your authentication agent", you need to start ssh-agent before you run the ssh-add command:
+
+```bash
+eval `ssh-agent -s`
+```
+
 ### List keys currently in ssh-agent
 
 Command:
