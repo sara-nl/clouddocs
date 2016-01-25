@@ -22,3 +22,9 @@ You will find several _Food for brain_ questions in each exercise that you might
 
 * [MPI: xBeach](UvAworkshop-2016-01-25-xBeach)
   XBeach is a two-dimensional model for waves hitting the shore, using MPI to parallelize the computations.
+
+## Assignment
+
+For those who submit an assignment on the HPC Cloud course, please run both exercises [OpenMP: calculating _pi_](UvAworkshop-2016-01-25-OpenMP) and [MPI: xBeach](UvAworkshop-2016-01-25-xBeach) and answer the `Food for brain` questions. For bonus marks you can aswer also the questions `BONUS food for brain`.   
+Send your answers to: markus.vandijk@surfsara.nl and Anatoli.Danezi@surfsara.nl by **1st of February 2016**. 
+
