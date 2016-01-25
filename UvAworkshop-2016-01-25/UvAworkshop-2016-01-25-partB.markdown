@@ -24,7 +24,7 @@ This is part B of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25)
 
 ### 1. Persistence
 
-`Images` can be **persistent** or **non-persistent**. We say they are **persistent** when the `persistent` box is ticked on the UI and **non-persistent** when the `persistent` box is not ticked. 
+`Images` can be **persistent** or **non-persistent**. We say they are **persistent** when the `persistent` box is ticked on the UI and **non-persistent** when the `persistent` box is not ticked.
 
 * What does **persistent** mean?
   *  Changes by the VM are copied back to the original `image` (upon normal VM shutdown)
@@ -38,7 +38,7 @@ This is part B of the Tutorial [UvA workshop 2016-01-25](UvAworkshop-2016-01-25)
 >
 > Was the first image that you imported `persistent` or wasn't it?
 
-In this section you will work with **persistent** images. You will go through these steps: 
+In this section you will work with **persistent** images. You will go through these steps:
 
 * Making your image persistent.
 * Starting a VM using the persistent image.
@@ -49,8 +49,8 @@ In this section you will work with **persistent** images. You will go through th
 * Switch the value to _Yes_.
 
 #### Start a persistent VM
-* Start your virtual machine again. 
-* Log in and check the files you created during the previous run [(Part A)](UvAworkshop-2016-01-25-partA). 
+* Start your virtual machine again.
+* Log in and check the files you created during the previous run [(Part A)](UvAworkshop-2016-01-25-partA).
 
 > **Food for brain:**
 > During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written on the backing `image` even if you restart your VM. Try it.
@@ -71,7 +71,7 @@ You can customise your VMs by editing the templates you instantiate the VMs from
 * In the *General* tab edit the number of CPU and VCPU as:
   * CPU: **4**
   * VCPU: **4**
-* When you are done, click on the green _Update_ button so that your changes are actually saved. 
+* When you are done, click on the green _Update_ button so that your changes are actually saved.
 
 That was it. From now on you will get a 4-core VM running using the same *Cursus Image*.
 
@@ -88,21 +88,21 @@ That was it. From now on you will get a 4-core VM running using the same *Cursus
 
 ### 3. Working with Storage
 
-The current HPC Cloud offers two storage types: `Ceph` and `SSD`. Data stored on Ceph is replicated, to protect against data loss in case of hardware failure. The best practice is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock`(s). 
+The current HPC Cloud offers two storage types: `Ceph` and `SSD`. Data stored on Ceph is replicated, to protect against data loss in case of hardware failure. The best practice is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock`(s).
 
-When you create a disk image, you must choose where it is stored, under the heading `Datastore`. You have the choice between `images_ssd_gpu` and `ceph`.  The first appliance you imported, created the OS image on `images_ssd_gpu`. In this section you will use the `ceph` *Datastore* option, by following these steps: 
+When you create a disk image, you must choose where it is stored, under the heading `Datastore`. You have the choice between `images_ssd_gpu` and `ceph`.  The first appliance you imported, created the OS image on `images_ssd_gpu`. In this section you will use the `ceph` *Datastore* option, by following these steps:
 
 * Creating a new empty datadisk
 * Adding the new datadisk to the template
 * Mounting the datadisk in the VM
 
-At this point you should not have any running VMs. If you do, shut them down. 
+At this point you should not have any running VMs. If you do, shut them down.
 Let's create a new disk.
 
 #### Create a new empty datadisk
 
 * From the [UI](https://ui.hpccloud.surfsara.nl) menu at the left pane, select the *Images* page under *Virtual Resources*.
-* Click on the green [+] button on the top. 
+* Click on the green [+] button on the top.
 * In the *Create image* window, fill in the form as:  
   * Name: **my data**. You will use this name later in your `Template`.
   * Type: **DATABLOCK**.
@@ -110,8 +110,8 @@ Let's create a new disk.
   * Check the **Persistent** checkbox.
   * On the _Image location:_ group, choose radio button _Empty datablock_.
   * Give it a _Size_ in MB: **2000** (is 2GB).
-  * Keep _FS Type_: raw. 
-* Click the green button *Create* on the form, to submit it. 
+  * Keep _FS Type_: raw.
+* Click the green button *Create* on the form, to submit it.
 
 >**NOTE:**
 >
@@ -130,14 +130,14 @@ In order to let you VM know about the new datablock, you need to add it to your 
 
 Let's start using the new disk.
 
-* Create a new `VM` from the `Template` you created in the previous step. 
+* Create a new `VM` from the `Template` you created in the previous step.
 * Once the `VM` is in RUNNING state, login and check if your new datablock is there:
 
 ```sh
-sudo fdisk -l 
-``` 
+sudo fdisk -l
+```
 
-* You need to format the drive now. To format it with the XFS file system install `xfsprogs`: 
+* You need to format the drive now. To format it with the XFS file system install `xfsprogs`:
 
 ```sh
 sudo apt-get install xfsprogs
@@ -165,10 +165,10 @@ sudo chown ubuntu:ubuntu -R /data
 >**Food for brain:**
 >
 > Create new files or folders in your in `/data` directory. Logout and login again. *Are your changes still there?* Check with `ls /data/`.
-> Shutdown the VM and start it again. *Do you see the files on the datablock?* 
-> Hint: when you start the VM the datadisk is not automatically mounted. You should issue the mont command once again.
+> Shutdown the VM and start it again. *Do you see the files on the datablock?*
+> Hint: when you start the VM the datadisk is not automatically mounted. You should issue the mount command once again.
 
-* From now on, you can transfer files from your laptop on the newly created disk. 
+* From now on, you can transfer files from your laptop on the newly created disk.
 
 >**Food for brain:**
 >
@@ -184,10 +184,10 @@ sudo chown ubuntu:ubuntu -R /data
 
 This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
 
-**Bonus:** In Parts A & B of the workshop you have explored the UI and learnt how to import an _appliance_ from the AppMarket. However, many people come to the HPC Cloud because they can install and run their own operating system. In particular, Windows is very popular among our users. 
+**Bonus:** In Parts A & B of the workshop you have explored the UI and learnt how to import an _appliance_ from the AppMarket. However, many people come to the HPC Cloud because they can install and run their own operating system. In particular, Windows is very popular among our users.
 
   * Can you think of (and sketch) the steps that you would need to follow to create a VM running your favourite operating system?
-  * Can you find three articles in the HPC Cloud Documentation that show how to install different operating systems from scratch? 
+  * Can you find three articles in the HPC Cloud Documentation that show how to install different operating systems from scratch?
 
 
 ### Next: Extras
