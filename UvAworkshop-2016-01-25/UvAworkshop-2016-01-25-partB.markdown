@@ -67,7 +67,7 @@ The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows y
 
 You can customise your VMs by editing the templates you instantiate the VMs from.
 
-* In order to edit your existing template, choose the `Cursus Template` item and then `Update` buttons on the top right.
+* In order to edit your existing template, choose the `Course Template` item and then `Update` buttons on the top right.
 * In the *General* tab edit the number of CPU and VCPU as:
   * CPU: **4**
   * VCPU: **4**
