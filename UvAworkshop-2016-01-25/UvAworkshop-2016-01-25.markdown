@@ -34,9 +34,9 @@ Here is a summary of the course outline:
 >09:00 Welcome & coffee  
 09:15 Presentation in HPC Cloud at SURFsara (Markus van Dijk)
 10:00 Hands-on Part A & B 
-12:30 Lunch   
-13:30 Presentation in Parallel Applications (Natalie Danezi) 
-14:15 Hands-on Extras  
+12:00 Lunch   
+13:00 Presentation in Parallel Applications (Natalie Danezi) 
+13:45 Hands-on Extras  
 17:00 End  
 
 ## <a name="preparation"></a>Preparation
