@@ -24,7 +24,7 @@ SURFsara has been operating the HPC Cloud as `IaaS` (Infrastructure as a Service
 Since recently we have launched a new HPC Cloud with a powerful new user interface and a complete new cluster with fast compute nodes and high-performant big storage volumes. 
 The user interface and cloud software relies on [OpenNebula 4](http://opennebula.org/) and our new cluster is called _Oort_, after the [Oort cloud](https://en.wikipedia.org/wiki/Oort_cloud).
 
-This particular course aims to introduce SURF employees to the HPC Cloud by providing a set of lectures and hands-on examples to run on the real **`Oort`** infrastructure. 
+This particular course aims to introduce the workshop participants to the HPC Cloud by providing a set of lectures and hands-on examples to run on the real **`Oort`** infrastructure. 
 Here is a summary of the course outline:
 
 **Date**: 25 January 2016  
