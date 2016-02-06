@@ -5,16 +5,16 @@ layout: default
 
 > **NOTE:**
 >
-> This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages here are heavily under construction and you can expect frequent changes.  We welcome your comments or corrections at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments) or see the bottom of this page on how to contribute directly to help us improve the documentation.  
+> This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages here are heavily under construction and you can expect frequent changes.  We welcome your comments or corrections at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments) or see the bottom of this page on how to contribute directly to help us improve the documentation.
 
 
 
 
 ## Basics
-- [Introduction to HPC Cloud](introduction-to-hpc-cloud)  
-- [Estimate your resources](estimate-your-resources)  
-- [User Interface](user-interface)  
-- [General start](general-start)  
+- [Introduction to HPC Cloud](introduction-to-hpc-cloud)
+- [Estimate your resources](estimate-your-resources)
+- [User Interface](user-interface)
+- [General start](general-start)
 - [Access your Virtual Machine](access-your-VM)
 
 ## Advanced Topics
@@ -33,10 +33,11 @@ layout: default
 * A Virtual Machine from Scratch
   * [CentOS using an ISO](vm-scratch-centos)
   * [Fedora using their ready-made images](vm-scratch-fedora-cloud)
-* [Virtual Machine states](vm-states)  
-* [Sharing OpenNebula Objects](sharing-objects)  
+* [Virtual Machine states](vm-states)
+* [Sharing OpenNebula Objects](sharing-objects)
+* [Attaching a GPU to a VM](gpu-attach)
 * [Install Windows](Windows)
-* Licences  
+* Licences
 * [User management](usermanagement)
 
 ### Disk Images
@@ -44,12 +45,12 @@ layout: default
 * [Image Persistence](image_persistence)
 * [Create datablocks](create-datablocks)
 * [Scratch Disk Images](scratch_disk)
-* [Download an image](image_download)  
+* [Download an image](image_download)
 * [Create an Image on your own laptop](image-on-own-laptop)
 * [Create a snapshot of an image in a running VM](storage_snapshot)
 
 ### Networks
-* Virtual Network  
+* Virtual Network
 * Lightpaths 
 
 ### Security
@@ -60,9 +61,9 @@ layout: default
 * [Installing `fail2ban`](fail2ban)
 
 ### Inside the VM
-* MySQL server  
-* [Grid Storage](grid-storage)    
-* Pilot Jobs  
+* MySQL server
+* [Grid Storage](grid-storage)
+* Pilot Jobs
 * [NFS](NFS) &ndash; Share Data between Virtual Machines
 
 ## Tutorials
