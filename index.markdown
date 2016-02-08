@@ -65,6 +65,7 @@ layout: default
 * [Grid Storage](grid-storage)
 * Pilot Jobs
 * [NFS](NFS) &ndash; Share Data between Virtual Machines
+* [SoftDrive](softdrive)
 
 ## Tutorials
 * [HPC Cloud workshop 2016-01-25](UvAworkshop-2016-01-25/UvAworkshop-2016-01-25) (part of the [UvA HPC and Big Data course](http://hpc.uva.nl))
