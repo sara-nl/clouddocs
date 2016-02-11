@@ -14,12 +14,12 @@ You can see most of these on the UI:
 
 >**Note:**
 >
-> We recommend you to use mainly the following states for your VM management: 
-> * Shutdown: the VM will shut down gracefully. Click the dust bin button and then *Shutdown*.
-> * Stop: the VM keeps its changes for the next *Resume* action. Click on the stop square button and then *Stop*. A VM in STOPPED state does not consume quota.
-> * Resume: resumes a STOPPED VM. Click on the play button. It will bring the STOPPED to RUNNING state.
-> * Delete: destroys the VM. Click the dust bin button and then *Delete*. The image may become in status ERROR.
-
+> We recommend you **mainly** use the following actions for managing your VMs: 
+> * **Shutdown**: the VM will shut down gracefully. Click the dust bin button and then *Shutdown*.
+> * **Stop**: the VM keeps its changes for the next *Resume* action. Click on the stop square button and then *Stop*. A VM in STOPPED state does not consume quota.
+> * **Resume**: resumes a STOPPED VM. Click on the play button. It will bring the STOPPED to RUNNING state.
+>
+> If you ever find a VM in a status that these actions cannot trigger any further changes, you may want to contact us at helpdesk@surfsara.nl. 
 
 ## The play button
 
@@ -68,6 +68,10 @@ This state **keeps blocking the resources** that the VM holds, so your quota kee
 The OS running on the VM does **not** notice anything. Persistent and non-persistent images will keep their changes for the next _Resume_ action. If the VM is deleted in this status, non-persistent images will lose their changes, but persistent images will keep their changes.
 
 When you _Resume_ the VM (with the _Play_ button), it is immediately restored: first it will go to BOOT and then RUNNING. And the OS will boot again.
+
+> **Note:**
+>
+> You can use the state POWEROFF to change the capacity of your VM (if you have allowed this from the VM's template) by editing the CPU and RAM values under the _Capacity_ tab of the VM's extended information screen.
 
 ##  The stop button
 
