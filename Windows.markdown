@@ -244,6 +244,10 @@ In the _Prepare your VM for production_ section, we wrote a way to configure you
 </cpu>
 ```
 
+>**NOTE:**
+>
+>Some users report suffering from very unstable (to the point of unuseable) systems with Windows **7** running on more than 16 cores.
+
 ## Appendix: Some Windows installation screenshots
 
 ![windows01](images/windows_install01.png)
