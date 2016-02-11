@@ -55,8 +55,8 @@ Import the appliance by following these steps:
    _AppMarket_ tab on the left menu of the screen and then _Appliances_ (in the screen shot, it has been highlighted in red).
    ![appmarket step 1](images/appmarket_step_1.png)
 
-2. Next, look for the **Ubuntu - KVM** _appliance_ in the list; click on it.
-   This will show details about `image`s, `template`s and other attributes (including a textual description) that conform the _appliance_.
+2. Next, look for the **Ubuntu 14.04 Server** _appliance_ in the list; click on it.
+   This will show details about `image`s, `template`s and other attributes (including a textual description) that conform the _appliance_. Please, read the `Description` now.
    The description mentions that there is no password for the root account and that you need to add an SSH public key to your user profile. We will do this in a later step.
    Read the extended information related to the _appliance_ (especially, the bit about the _contextualization_ and _configuration_ options).
    ![appmarket step 2](images/appmarket_step_2.png)
@@ -77,7 +77,7 @@ You can verify that the process is complete by inspecting the _Template_ and _Im
 
 If you remember from the description of the virtual machine, there is no password for the _root_ user. You have to add an SSH key to your user profile in order to be able to log in as root in your VM.
 
-First, you need to create an SSH key in your own computer. This process is described in [SSHkey](SSHkey). This SSH key enables you to log in as root on your virtual machine with ```ssh```.
+First, you need to create an SSH key in your own computer. This process is described in [a different article](SSHkey). This SSH key enables you to log in to your virtual machine with ```ssh```.
 
 After you have created an SSH key, go to your _user profile_ by selecting the _buddy_ icon on the top-right of the screen, then select _Settings_. A dialogue pops up. In the dialogue, go to the _Info_ page; then locate the section _Public SSH Key_, and click on the blue _edit_ icon. You should now see an empty text area.
 
@@ -85,7 +85,7 @@ Find the file in your computer containing the public key you created (it is usua
 
 ![import_ssh_key_img](images/import_ssh_key.png)
 
-You can just close this window now. Your public key is automatically stored in your profile.
+You can just close this dialogue now. Your public key is automatically stored in your profile.
 
 ## Finishing the virtual machine configuration by editing the template
 
@@ -100,7 +100,7 @@ Allow your virtual machine to connect to the internet by following these steps:
 2. Click on _Update_ on the top-right of the screen to start editing the `template`.
 This shows the different configuration options for your `template`. For now, we will leave most settings alone, but you can browse through the different options. Select the _Network_ tab.
 
-3. The _Network_ tab shows which network interfaces (or `nic`s) your VM would have and to which networks they would be connected. To connect the only available `nic` at the moment (called _Interface 0_) to the internet, select the network called "internet", to the right of it, as shown on the screen shot.
+3. The _Network_ tab shows which network interfaces (or `nic`s) your VM would have and to which networks they would be connected. To connect the only available `nic` at the moment (called _NIC 0_) to the internet, select the network called "internet", to the right of it, as shown on the screen shot.
    ![template IP](images/template_IP.png)
 
 4. Click _Update_ to save your changes.
@@ -110,9 +110,9 @@ This shows the different configuration options for your `template`. For now, we 
 
 >**Note:**
 >
-> When you import an appliance from the AppMarket, the disk image is normally non persistent.
-> This means, in short, that your changes are lost. Before starting your VM, always make a check
-> if [Image Persistence](image_persistence) is set to the desired mode (yes or no).
+> When you import an appliance from the AppMarket, the disk image is normally non-persistent.
+> This means, in short, that your changes are lost when you shut your VM down. Before starting your VM, always check
+> whether [Image Persistence](image_persistence) is set to the desired mode (yes or no).
 
 A `template` is a description of a virtual machine. The `template` we have been editing in this guide is now ready to create a virtual machine from it.
 
@@ -123,11 +123,7 @@ Start your virtual machine using the following steps:
 1. Click on the green plus sign, as shown in the screenshot. This opens a dialogue with options for your virtual machine.
 ![startVM](images/startVM.png)
 
-2. The first box in the dialogue is to give your virtual machine a name. This name is also used as the host name of your machine. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*.
-
->**Note:**
->
->The name for the VM can be the same as that of the `template`.
+2. The first box in the dialogue is to give your virtual machine a name. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*.
 
 3. The number of instances is 1, which is fine for now.
 
@@ -145,14 +141,14 @@ The operating system on the machine will go through the boot process.
 
 ## Logging in on your virtual machine
 
-After you have added your public key to your user profile, you should be able to log in on your virtual machine as _root_, allowing you to perform maintenance tasks on your virtual machine.
+After you have added your public key to your user profile, you should be able to log in on your virtual machine as user _ubuntu_, allowing you to perform maintenance tasks on your virtual machine by using `sudo`.
 
 You will need to find the IP address of your virtual machine, first. The IP address of your virtual machine is shown on in the _IPs_ column from the virtual machines list, under the _Virtual Resources_ tab of the UI.
 
-If you use a Linux or a Mac OSX or a Windows (GitBash) operating system, open a terminal window, and type
+If you use a Linux or a Mac OSX open a terminal (if you are using Windows then open a GitBash terminal) and type:
 
 ```bash
-  ssh root@145.100.mmm.nnn
+  ssh ubuntu@145.100.mmm.nnn
 ```
 
 where you should replace _mmm_ and _nnn_ to match the IP address of your virtual machine.
@@ -168,20 +164,27 @@ where you should replace _mmm_ and _nnn_ to match the IP address of your virtual
 >In the screen shot below, the IP address is _145.100.59.30_. And suppose the public key we want to use from our laptop is ~/.ssh/id_rsa.pub. Then, the correct command in this case would be:
 
 ```bash
-  ssh -i ~/.ssh/id_rsa root@145.100.59.30
+  ssh -i ~/.ssh/id_rsa ubuntu@145.100.59.30
 ```
+>**Note for Windows:**
+>
+>If you are using _Putty_, then use the IP of your virtual machine as _host_, _ubuntu_ as _username_, and click _Connect_ (see instructions [here](putty-tools#ssh-access-from-a-windows-putty-client)).
 
-If you use a Windows operating system and _Putty_ use the IP of your virtual machine as host, use _root_ as username, and click _Connect_ (see instructions [here](putty-tools#ssh-access-from-a-windows-putty-client)).
+If there were no errors, and if your firewalls allow making remote connections, you should now be logged in on your virtual machine, as user _ubuntu_.
 
-If there were no errors, and if your firewalls allow making remote connections, you should now be logged in on your virtual machine, as _root_.
-
+>**Note: Operating as user _root_**
+>
+>Many tasks in Linux require your becoming user _root_. The recommended way of operating as _root_ in Ubuntu is to run your  commands prefixed by `sudo`. For example, to install a common text editor, you would run: `sudo apt-get install vim`.
+>
+>However, if what you would like is to become _root_ in a terminal so that you do not have to bother with the `sudo` prefix, then you can do that like this: `sudo su -`. From then on, everything you run in that terminal will take place as the _root_ user.
 
 ## Shut down and remove your machine
 
-If you want to shutdown your VM and stop consuming quotas, perform the following steps:
+If you want to shutdown your VM and stop consuming your quotas, perform the following steps:
 
-1. Tick the box to the left on the row with your VM and click _Shutdown_ (upper right corner of the screen, under the _dust bin_ drop-down button).
+1. Tick the box to the left on the row of your VM and click _Shutdown_ (upper right corner of the screen, under the _dust bin_ drop-down button).
 ![shutdownVM](images/shutdownVM.png)
 
 2. Refresh the Virtual Machines list (by clicking on the two arrows chasing each other next to _+_ button) until your VM is gone.
+
 That was the shutdown. Once the operation is finished, your VM will be removed from the display and its resources freed. You can start a new VM from your existing `template` and `image` any time.
