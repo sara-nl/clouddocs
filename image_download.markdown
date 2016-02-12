@@ -16,6 +16,7 @@ You can download a copy of an `image` by attaching that image as if it were just
 1. Attaching the `image` you want to download to the **Utility VM**
 1. Making a file out of the `image` you want to download
 1. Downloading the file you just created
+1. Clearing your footprints
 
 Each section now goes into more detail for each of the previous steps.
 
