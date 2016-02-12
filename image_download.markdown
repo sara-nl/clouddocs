@@ -7,7 +7,7 @@ layout: default
 >
 > At the current stage it is **not** possible to download `image`s directly from the user interface. However, the instructions here allow you to fetch a copy of an `image` of yours off the HPC Cloud at your own pace. 
 >
-> If you find yourself struggling to succeed in following these instructions, you may ask the SURFsara Cloud operators to try to make an `image` available for you by sending an e-mail to our [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl).
+> If you find yourself struggling to succeed in following these instructions, you may ask the HPC Cloud operators to try to make an `image` available for you by sending an e-mail to our [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl).
 
 You can download a copy of an `image` by attaching that image as if it were just another storage drive to a running VM. The following overview outlines the steps we will be following throughout this guide. We will be:
 
