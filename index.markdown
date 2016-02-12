@@ -43,7 +43,7 @@ layout: default
 ### Disk Images
 * [Image Storage](image_storage)
 * [Image Persistence](image_persistence)
-* [Create datablocks](create-datablocks)
+* [Extra storage: datablocks](create-datablocks)
 * [Scratch Disk Images](scratch_disk)
 * [Download an image](image_download)
 * [Create an Image on your own laptop](image-on-own-laptop)
