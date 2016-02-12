@@ -14,7 +14,7 @@ You can download a copy of an `image` by attaching that image as if it were just
 1. Making sure the `image` you want to download is **not** in use by any VM
 1. Starting a VM **without** using the `image` you want to download (for example, create a new one from the _AppMarket_) Let's call this **Utility VM**
 1. Attaching the `image` you want to download to the **Utility VM**
-1. Making a file out of the `image` you want to download
+1. Making a file off the `image` you want to download
 1. Downloading the file you just created
 1. Clearing your footprints
 
@@ -72,7 +72,7 @@ We will now hot-attach the `image` you want to download to the _Utility VM_. But
  * **In the _Utility VM_:** Become _root_, with `sudo su -`
  * **In the _Utility VM_:** Run again `fdisk -l`. You should see a new drive in the listing from that command, likely: `Disk /dev/vdc: ...`. For the rest of the guide we will assume that the `image` you want to download is located in `/dev/vdc`.
 
-## Making a file of the image to be downloaded
+## Making a file off the image to be downloaded
 
 We will be making a bit-by-bit copy of the `image` you want to download, and storing that copy into a plain file that you can then download. We will be using the command `dd` which does all of that for you (you can read more in [Wikipedia](https://en.wikipedia.org/wiki/Dd_(Unix)).
 
