@@ -88,9 +88,13 @@ For that, you first need to create an (or several) `Init File`(s) on the _Files 
 >
 >OpenNebula only delivers _contextualisation_ upon VM startup (from the external point of view). Therefore, any modification of the `template` or the `file`s that you make while the VM is running, will **not** be visible to that running VM. Further, even when you add `nic`s to a running VM, these will **not** be contextualised.
 
-#### Init scripts caveats
+#### Scripts caveats; cloud-init
 
-Aside from OpenNebula's contextualisation scripts, an alternative de-facto standard is emerging called cloud-init. 
+Aside from OpenNebula's contextualisation scripts, an alternative de-facto standard is emerging called [cloud-init](https://cloudinit.readthedocs.org/en/latest/). 
+
+> **NOTE:**
+>
+> OpenNebula's notes on cloud-init are available in [their documentation](  http://docs.opennebula.org/4.14/user/virtual_machine_setup/cloud-init.html)
 
 It looks like cloud-init's scripts may suffer from having Python3 as the default Python interpreter. If you need to install Python3, you are using cloud-init and you notice that your VM suddenly fails to be properly contextualised, you may want to have an alternate Python2 installation and have the init scripts use this instead.
 
