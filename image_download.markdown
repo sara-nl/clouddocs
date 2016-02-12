@@ -84,6 +84,10 @@ We will be making a bit-by-bit copy of the `image` you want to download, and sto
 
 1. **In your laptop:** You can now download the file via SSH. For example, you can use `scp` or `sftp`. Like this: `scp admincentos@145.100.XXX.YYY:/wagon/image_file.img`.
 
+> **Hint:**
+>
+> If you are acquainted with different virtualisation technologies and know about things such us the _qcow2_ format and tools like _qemu_, then you may want to convert the raw image you have just created into any other format you may like. It may be worth looking into this because using a format with compression may save some bandwith and download time.
+
 ## Clearing your footprints
 
 Once you have downloaded the `image_file.img` file, you can destroy all the scaffolding you rigged up to be able to download it. That means that you can:
