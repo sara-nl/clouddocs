@@ -59,4 +59,4 @@ You are all set now and can launch the VM.
 
 ## Inside your VM
 
-Depending on the OS and software you run inside your VM, you might need to install drivers, libraries or even a complete development environment for GPU or configure your software to use the GPU. For example, in Ubuntu, the 'multiverse' repository contains the 'nvidia-cuda-toolkit'.
+To make full use of the GPU capabilities please install the corresponding drivers and toolkit for you distro from the official Nvidia repositories which can be found [here](https://developer.nvidia.com/cuda-downloads). From there please follow the post installation [instructions](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#package-manager-installation) 
