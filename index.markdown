@@ -35,10 +35,14 @@ layout: default
   * [Fedora using their ready-made images](vm-scratch-fedora-cloud)
 * [Virtual Machine states](vm-states)
 * [Sharing OpenNebula Objects](sharing-objects)
-* [Attaching a GPU to a VM](gpu-attach)
 * [Install Windows](Windows)
 * Licences
 * [User management](usermanagement)
+
+### GPU
+
+* [Attaching a GPU to a VM](gpu-attach)
+* [Deep learning use case](gpu-deep-learn)
 
 ### Disk Images
 * [Image Storage](image_storage)
