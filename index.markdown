@@ -71,6 +71,9 @@ layout: default
 * [NFS](NFS) &ndash; Share Data between Virtual Machines
 * [SoftDrive](softdrive)
 
+### Automation
+* [Getting started with the XML-RPC API](xmlrpc-start)
+
 ## Tutorials
 * [HPC Cloud workshop 2016-01-25](UvAworkshop-2016-01-25/UvAworkshop-2016-01-25) (part of the [UvA HPC and Big Data course](http://hpc.uva.nl))
 * [UNESCO-IHE workshop - 11 Dec 2015](wshop-uihe-2015-12-11)
@@ -78,9 +81,7 @@ layout: default
 
 ## Service implementation
 * [Available resources](resources-available)
-
-## Current Resource Usage
-* [Resource usage](https://ui.hpccloud.surfsara.nl/oneinsight) ⚠ **WARNING** under construction
+* [Resource usage](https://ui.hpccloud.surfsara.nl/oneinsight) [⚠ **WARNING:** under construction]
 
 ## Contributing to the documentation
 
