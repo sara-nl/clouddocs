@@ -4,9 +4,11 @@ body {
 .starter-template {
   padding: 40px 15px;
 }
-
 img {
   max-width: 100%;
+}
+blockquote {
+  font-size: 14px;
 }
 #navbar .searchbox {
   padding-top: 12px;
