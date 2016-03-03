@@ -10,6 +10,9 @@ img {
 blockquote {
   font-size: 14px;
 }
+code {
+  color: #333;
+}
 #navbar .searchbox {
   padding-top: 12px;
   padding-right: 15px;
