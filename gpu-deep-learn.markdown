@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # GPU deep learning use case
 
 >**NOTE:**
