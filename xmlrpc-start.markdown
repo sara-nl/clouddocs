@@ -13,7 +13,7 @@ The `endpoint` is **not** yet accessible. However, in general terms, this docume
 
 OpenNebula offers an XML-RPC API. We have it available at:
 
-> ⚠ **WARNING:** The URL will be released soon.
+> **NOTE:** The URL will be released soon.
 
 That URL is called the `endpoint`. At the server side, this `endpoint` allows you to operate with your UI's username and password as if you were operating on the UI itself. The beauty of having an API is that you can build programs that can handle interactions for you (think, for example, of shutting VMs down automatically once your computation is finished, so that you do not consume your quota).
 
