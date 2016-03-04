@@ -6,7 +6,7 @@ layout: default
 
 > ⚠ **WARNING:**
 >
-> We are still actively working on this documentation page, along with the opening of the API. 
+> We are still actively working on this documentation page, along with the opening of the API.
 The `endpoint` is **not** yet accessible. However, in general terms, this documentation should already be valid for showcasing the XML-RPC API and giving you an idea of how to get started.
 
 ## Introduction: endpoint and bindings
@@ -19,7 +19,7 @@ That URL is called the `endpoint`. At the server side, this `endpoint` allows yo
 
 And you can also get some extra information in formats that you can process. For example, you can look at your accounting status and, therefore, know how much of your CPU quota you have left.
 
-In principle, you can "talk" directly to the XML-RPC `endpoint` just by sending HTTP POST requests and reading the information back from the HTTP responses. However, that can become rather tedious very quickly, because all communication must take place via XML, so most of your code should then need to be for creating, sending, receiving and extracting XML. 
+In principle, you can "talk" directly to the XML-RPC `endpoint` just by sending HTTP POST requests and reading the information back from the HTTP responses. However, that can become rather tedious very quickly, because all communication must take place via XML, so most of your code should then need to be for creating, sending, receiving and extracting XML.
 
 >**NOTE:**
 >
@@ -28,7 +28,7 @@ In principle, you can "talk" directly to the XML-RPC `endpoint` just by sending 
 In order to hide all this XML-processing tediousness from the programmer, OpenNebula provide some bindings for programming languages. They make using the API a more intuitive experience. They offer bindings for the following languages:
 
 * [Ruby](http://docs.opennebula.org/4.14/integration/system_interfaces/ruby.html)
-* [Java](http://docs.opennebula.org/4.14/integration/system_interfaces/java.html) 
+* [Java](http://docs.opennebula.org/4.14/integration/system_interfaces/java.html)
 
 The community has created bindings for other languages, like:
 
@@ -38,7 +38,7 @@ The community has created bindings for other languages, like:
 
 >**NOTE:**
 >
->We chose to use Python bindings because we have received many questions already about this language. We will be happy to include information about your favourite binding if you help us. 
+>We chose to use Python bindings because we have received many questions already about this language. We will be happy to include information about your favourite binding if you help us.
 
 ### Setting up the environment
 
@@ -114,6 +114,7 @@ zlib                      1.2.8                         0
 We will now use the Python bindings to send a simple request to the HPC Cloud `endpoint` that will tell you the version of OpenNebula that we have installed.
 
 The following commands will:
+
 1. create a directory that will act as our "project"
 2. create a new file with a very basic first use of the API
 
@@ -150,7 +151,7 @@ if __name__ == '__main__':
 
 >**NOTE:**
 >
->Pay attention to filling your username and password in the file! Save the file. 
+>Pay attention to filling your username and password in the file! Save the file.
 
 Now, let's run it:
 
