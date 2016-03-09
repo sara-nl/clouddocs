@@ -12,7 +12,7 @@ The UI (short for User Interface) is the web site that allows you to operate the
 >You can find the UI here: [https://ui.hpccloud.surfsara.nl](https://ui.hpccloud.surfsara.nl)
 
 ## Change your Password
-> **IMPORTANT**
+> ⚠ **WARNING:**
 >
 >To protect your account, you are advised to change the password that we give you upon your first login.
 
