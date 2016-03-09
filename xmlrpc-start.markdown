@@ -12,7 +12,9 @@ OpenNebula offers an XML-RPC API, which you can use mainly for automating tasks 
 http://ui.hpccloud.surfsara.nl:2633/RPC2
 ```
 
-> ⚠ **WARNING:** For security reasons, the endpoint will remain avaliable **only** from within VMs' networks for the time being.
+> ⚠ **WARNING:** 
+>
+>For security reasons, the endpoint will remain avaliable **only** from within VMs' networks for the time being.
 
 That URL is called the `endpoint`. At the server side, this `endpoint` allows you to operate with your UI's username and password as if you were operating on the UI itself. The beauty of having an API is that you can build programs that can handle interactions for you (think, for example, of shutting VMs down automatically once your computation is finished, so that you do not consume your quota).
 
