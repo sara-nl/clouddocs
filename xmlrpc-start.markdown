@@ -165,3 +165,33 @@ It should print something like:
 >```sh
 4.14.2
 ```
+
+## API explanation
+
+OpenNebula's XML-RPC API is best described as a collection of _actions_ that you can invoke to query, create, modify and delete the different kinds of (let us call them) _objects_ that OpenNebula knows. In this sense, an _object_ can be a VM or an `image` (for example), and examples of _actions_ can be `create a new image` or `tell me which VMs I am running`. The XML-RPC documentation tells you which of these _actions_ (which they call _methods_) are available. The documentation describes, per _method_:
+
+* what is the _method_'s name
+* which parameters the _method_ accepts
+* what the _method_ returns
+
+### _Method_ names
+In general terms, _method_ names for actions than can take effect directly on objects, have the form `one.<object>.<action>`. The `<object>` part is rather intuitive (e.g.: `vm` for actions on VMs, `image` for images...), and if you want to look for what different `<action>` options are available for a given type of object, they are shown grouped on the documentation. For example, if you want to change the name of a VM you can use method `one.vm.rename`, and if you want to create a new VM you can use method `one.vm.allocate`. 
+
+If you want to query about several items of certain type of object (e.g.: tell me my VMs), you usually find an accompanying _pool_, in the form `<object>pool` that you can query. For example, to list all your VMs, you can use method `one.vmpool.info`.
+
+### _Method_ parameters
+
+Each _method_ requires a certain set of parameters. The parameters are positional, so if you see that a method is described as required 2 arguments, the order in which the parameters are described is the order in which you should provide your arguments as well. Each _method_ and its parameters have a different meaning, although, in general terms, you can expect that:
+
+* _methods_ that create objects require (among others) an input parameter describing what the object should be like (e.g.: for a VM, you need to provide a string representing the `template` for that VM; that is precisely what _method_ `one.vm.allocate` requires as a second argument)
+* _methods_ that modify or delete objects and _methods_ that query about a single object require (among others) an input parameter with the ID of the object you want to work on (e.g.: to rename a VM, that is precisely what _methods_ `one.vm.rename`, `one.vm.delete` and `one.vm.info` require as their second argument)
+* _methods_ that query about a list of objects usually require (among others) some input parameters that allow you to filter the queried objects (e.g.: to query about the list of VMs you have, _method_ `one.vmpool.info` takes as 2nd parameter a number indicating whether you want to see your group's VM or only your VMs; the 3rd and 4th parameters allow you to paginate results; the 5th parameter allows you to show only VMs in a given state)
+
+### _Method_ output
+
+Normally, results are received as a 3-tuple where:
+
+* the first element tells whether the request was successful or not
+* the second element contains the returned information when the request was successful, or otherwise the error message if the call returned an error
+* the third element is a numeric error code
+
