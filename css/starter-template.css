@@ -4,6 +4,10 @@ body {
 .starter-template {
   padding: 40px 15px;
 }
+h2::before {
+    content: "■";
+    padding-right: 0.2em;
+}
 img {
   max-width: 100%;
 }
