@@ -82,7 +82,7 @@ Run in a terminal:
 conda create --name one_api_env python=2.7
 source activate one_api_env
 conda install pip
-pip install git+https://github.com/python-oca/python-oca.git@master
+pip install oca
 ```
 
 You can now verify the packages that you have available in the current environment by running:
@@ -96,7 +96,7 @@ That should return something like:
 >```sh
 # packages in environment at ~/conda/envs/one_api_env:
 #
-oca                       4.15.0a1                  <pip>
+oca                       4.10.0                    <pip>
 openssl                   1.0.2f                        0
 pip                       8.0.2                    py27_0
 python                    2.7.11                        0
@@ -135,7 +135,7 @@ import oca                          # this imports the OpenNebula API bindings
 class VersionCheck():
     """A simple OpenNebula API test class"""
 
-    ONE_ENDPOINT = 'endpoint_URL'
+    ONE_ENDPOINT = 'http://ui.hpccloud.surfsara.nl:2633/RPC2'
     ONE_USER = 'UI_username'          # replace this with your HPC Cloud UI username
     ONE_PASSWORD = 'UI_password'      # replace this with your HPC Cloud UI password
 
