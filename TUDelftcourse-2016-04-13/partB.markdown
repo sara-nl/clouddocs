@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TUDelft course 2016-04-13 - part A
+# TUDelft course 2016-04-13 - part B
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![TUDelft logo](/images/TUDelft_logo.png)
