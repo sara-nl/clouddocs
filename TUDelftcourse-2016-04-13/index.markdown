@@ -13,9 +13,9 @@ layout: default
 * [General Information](#general) <br>
 * [Preparation](#preparation) <br>
 * [Hands-on](#hands-on) <br>
-  * [Part A](UvAworkshop-2016-01-25-partA)
-  * [Part B](UvAworkshop-2016-01-25-partB)
-  * [Extras](UvAworkshop-2016-01-25-extras)
+  * [Part A](partA)
+  * [Part B](partB)
+  * [Extras](extras)
 * [Presentations](#presentations)
 
 ## <a name="general"></a>General Information 
@@ -56,9 +56,9 @@ So what you need for this tutorial:
 ## <a name="hands-on"></a> Hands-on
 The hands-on tutorial has three parts. The exercises in part *A & B* will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood this, then continue to the *Extras* part with more `advanced` examples on the HPC Cloud. 
 
-  * [Part A](TUDelftcourse-2016-04-13/partA)
-  * [Part B](TUDelftcourse-2016-04-13/partB)
-  * [Extras](TUDelftcourse-2016-04-13/extras)
+  * [Part A](partA)
+  * [Part B](partB)
+  * [Extras](extras)
 
 ## <a name="presentations"></a> Presentations
 
