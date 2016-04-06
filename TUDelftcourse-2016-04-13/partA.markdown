@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is part A of the Tutorial [TUDelft course 2016-04-13](./index).
+This is part A of the Tutorial [TUDelft course 2016-04-13](.).
 
 Here are your first steps:
 
