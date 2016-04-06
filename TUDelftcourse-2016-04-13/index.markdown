@@ -4,7 +4,7 @@ layout: default
 
 # TUDelft course 2016-04-13
 
-<div style="float:right;" markdown="1">
+<div style="float:right;max-width:205px;" markdown="1">
 ![TUDelft logo](/images/TUDelft_logo.png)
 
 ![SURFsara logo](/images/SURFsara_logo.png)
