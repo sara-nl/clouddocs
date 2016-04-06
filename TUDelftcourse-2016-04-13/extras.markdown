@@ -2,17 +2,13 @@
 layout: default
 ---
 
-# TUDelft course 2016-04-13 - Extras
+# TUDelft course 2016-04-13 - part B
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![TUDelft logo](/images/TUDelft_logo.png)
 
-<div style="float:right;" markdown="1">
-![UvA logo](/images/UvA-logo.png)
-
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
-
 
 These are the extras of the Tutorial [TUDelft course 2016-04-13](.).
 **You should have completed (and understood)** [Part A](partA) and [Part B](partB), before trying these extras.
