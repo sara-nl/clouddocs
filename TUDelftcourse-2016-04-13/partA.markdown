@@ -216,7 +216,7 @@ This section is meant as extra questions that we thought would be nice for you t
 
 
 ### Next: part B
-Now that you completed part A of the Tutorial [TUDelft course 2016-04-13](./index). Please continue with Tutorial [Part B](partB). 
+Now that you completed part A of the Tutorial [TUDelft course 2016-04-13](.). Please continue with Tutorial [Part B](partB). 
 
 >**NOTE:**
 >
