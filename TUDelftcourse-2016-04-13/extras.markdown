@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TUDelft course 2016-04-13 - part B
+# TUDelft course 2016-04-13 - Extras
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![TUDelft logo](/images/TUDelft_logo.png)
@@ -18,9 +18,17 @@ The exercises below can be done in any order and you can do none or more, depend
 
 You will find several _Food for brain_ questions in each exercise that you might encounter when working with **Parallel programming** techniques. We advice that you perform many tests, observe the results (write down execution times, change parameters, make tables, draw graphs...), and think about your answers.
 
-* [OpenMP: calculating _&pi;_](OpenMP)
+## OpenMP
+
+Link: [OpenMP: calculating _&pi;_](OpenMP)
+  
   Using a simple algorithm to calculate _&pi;_ as an example, you see the impact of **parallel programming** with OpenMP taking different approaches.
 
-* [MPI: xBeach](xBeach)
+## MPI
+
+## XBeach
+
+Link: [MPI: xBeach](xBeach)
+  
   XBeach is a two-dimensional model for waves hitting the shore, using MPI to parallelize the computations.
 
