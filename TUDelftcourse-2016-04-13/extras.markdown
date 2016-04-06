@@ -11,6 +11,7 @@ layout: default
 </div>
 
 These are the extras of the Tutorial [TUDelft course 2016-04-13](.).
+
 **You should have completed (and understood)** [Part A](partA) and [Part B](partB), before trying these extras.
 
 The exercises below can be done in any order and you can do none or more, depending on your enthusiasm and available time.
