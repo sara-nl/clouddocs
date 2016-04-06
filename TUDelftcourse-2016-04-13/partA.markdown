@@ -106,7 +106,7 @@ Edit the imported `template` with these steps:
 * Click on the _Update_ button on the top-right of the screen to start editing the template.
 * Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...). Leave the default values, **except** for the following:  
   * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Select the row **Name: internet** (click once on it). You can see the feedback below:  
-![youselectednetwork](images/youselectednetwork.png)
+![youselectednetwork](/images/youselectednetwork.png)
 * Click the green button `Update` at the top, to save your changes.
 
 #### Start the VM
@@ -118,7 +118,7 @@ A `template` is just a description of the virtual machine that we want to build.
 * Give your virtual machine a name: **My First VM**. This name is also used as the VM's host name.
 * Number of instances: **1**.
 * Select the *Course Template* (click once on it). Since this is your first `template`, there is only one item in the list. You can see the feedback below:  
-![select_template](images/select_template2.png)
+![select_template](/images/select_template2.png)
 * Click on the `Create` button at the bottom of the screen.
 * Refresh the VM status by clicking on the symbol of the two arrows chasing each other next to `[+]` button.
 
