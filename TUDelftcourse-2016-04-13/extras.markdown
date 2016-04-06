@@ -13,6 +13,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
+
 These are the extras of the Tutorial [TUDelft course 2016-04-13](.).
 **You should have completed (and understood)** [Part A](partA) and [Part B](partB), before trying these extras.
 
