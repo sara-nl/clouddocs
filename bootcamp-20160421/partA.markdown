@@ -5,7 +5,9 @@ layout: default
 # SURF Research Boot Camp 2016-04-13 - part A
 
 <div style="float:right;max-width:205px;" markdown="1">
+<div style="height:77px;">
 ![TUDelft logo](/images/surflogo.png)
+</div>
 
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
