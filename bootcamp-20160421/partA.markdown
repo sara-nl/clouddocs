@@ -22,7 +22,7 @@ Here are your first steps:
 
 ### 1. Access the User Interface
 
-The UI (short for User Interface) is the web site that allows you to manage your _Virtual Machines_ (or _VM_ s) on the HPC Cloud. Let's log in.
+The UI (short for User Interface) is the web site that allows you to manage your _Virtual Machines_ (or VMs) on the HPC Cloud. Let's log in.
 
 #### Log in to the UI
 
