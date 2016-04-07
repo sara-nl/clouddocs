@@ -2,15 +2,15 @@
 layout: default
 ---
 
-# TUDelft course 2016-04-13 - part A
+# SURF Research Boot Camp 2016-04-13 - part A
 
 <div style="float:right;max-width:205px;" markdown="1">
-![TUDelft logo](/images/TUDelft_logo.png)
+![TUDelft logo](/images/surflogo.png)
 
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is part A of the Tutorial [TUDelft course 2016-04-13](.).
+This is part A of the Tutorial [SURF Research Boot Camp 2016-04-13](.).
 
 Here are your first steps:
 
@@ -215,8 +215,8 @@ This section is meant as extra questions that we thought would be nice for you t
 **Bonus:** The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!!!
 
 
-### Next: part B
-Now that you completed part A of the Tutorial [TUDelft course 2016-04-13](.). Please continue with Tutorial [Part B](partB). 
+### Next: part XXX
+Now that you completed part A of the Tutorial [SURF Research Boot Camp 2016-04-13](.). Please continue with part XXX [Part B](partB). 
 
 >**NOTE:**
 >
