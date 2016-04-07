@@ -21,7 +21,7 @@ This is part B of the Tutorial [TUDelft course 2016-04-13](.).
 
 >**NOTE:**
 >
-> For the rest of the tutorial we will omit `ubuntu@ip-145-100-58-XYZ:~$` prompt in the instructions, in order to allow you copy-paste the commands directly in your terminal.
+> For the rest of the tutorial we will omit the `ubuntu@ip-145-100-58-XYZ:~$` prompt in the instructions, in order to allow you copy-n-paste the commands directly in your terminal.
 
 ### 1. Persistence
 
@@ -45,8 +45,8 @@ In this section you will work with **persistent** images. You will go through th
 * Starting a VM using the persistent image.
 
 #### Make your image persistent
-* Go to `Images` tab under `Virtual Resources` on the left menu, and click anywhere (except the tick-box, that is) on the row for the `image` you created before that you named **Course Image** .
-* Under the `Information` section, find the `Persistent` attribute. It says _No_, at the moment.
+* Go to `Images` tab under _<i class="fa fa-cloud"></i> Virtual Resources_ on the left menu, and click anywhere except the tick-box on the row for the `image` you created before that you called **Course Image** .
+* On the _<i class="fa fa-info-circle"></i> Info_ tab, under the _Information_ section, find the _Persistent_ attribute. It says _No_, at the moment.
 * Switch the value to _Yes_.
 
 #### Start a persistent VM
