@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# SURF Research Boot Camp 2016-04-13 - part A
+# SURF Research Boot Camp 2016-04-13
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![SURF logo](/images/surf_logo.png)
