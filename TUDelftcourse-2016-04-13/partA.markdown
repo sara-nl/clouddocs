@@ -128,7 +128,7 @@ Congratulations! You have just created a fresh, clean virtual machine!
 
 Let's summarise what you have seen so far. From the menu on the left side, click on each of the tabs to inspect the information. A vertical blue bar to the left of one (and only one) tab tells you which one you are currently seeing.
 
-* _Dashboard_: shows an overview of the project status, like the amount of running machines or usage statistics.
+* _<i class="fa fa-tachometer"></i> Dashboard_: shows an overview of the project status, like the amount of running machines or usage statistics.
 * _<i class="fa fa-cloud"></i> Virtual Resources_:  
   * _Images_: this is the equivalent of a hard drive. Your OS is stored on this `image`.  
   * _Templates_:  the `template` gives your VM the shape you want. A `template` is just a recipe; not the machine itself.   
