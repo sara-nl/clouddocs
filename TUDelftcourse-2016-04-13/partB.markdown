@@ -103,9 +103,9 @@ Let's create a new `image`.
 #### Create a new empty `image` for bulk data
 
 * On the [UI](https://ui.hpccloud.surfsara.nl), from the menu on the left, select the _Images_ page under _<i class="fa fa-cloud"></i> Virtual Resources_.
-* Click on the green [+] button on the top.
+* Click on the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button on the top.
 * In the *Create image* window, fill in the form as:  
-  * Name: **my data**. You will use this name later in your `Template`.
+  * Name: **my data**. You will use this name later in your `template`.
   * Type: **DATABLOCK**.
   * Datastore: **106: ceph**.
   * Check the **Persistent** checkbox.
@@ -116,18 +116,18 @@ Let's create a new `image`.
 
 >**NOTE:**
 >
->A new image will show on the `Images` list, and it will keep in status LOCKED while it is being created. When it is created it will come to status READY. Then you *still* have to format and mount the disk.
+>A new `image` will show on the _Images_ list, and it will keep in status LOCKED while it is being created. When it is created it will come to status READY. Then you *still* have to format and mount the disk.
 
-#### Add the new datadisk to the template
+#### Add the new image to the template
 
 In order to let you VM know about the new datablock, you need to add it to your VM's `template`:
 
-* Open your *Template* (or create a new).
-* Select the *Storage* tab from the menu bar.
-* Click on the _+ Add another disk_ button (that will make a new _Disk 1_), and then choose the **my data** `image` you created as a second `image`.
+* Open the screen to edit the `template` (or create a new one from scratch).
+* Select the _<i class="fa fa-tasks"></i> Storage_ tab.
+* Click on the _+ Add another disk_ button (that will make a new _Disk 1_), and then choose the **my data** `image` you created, as a second `image`.
 * Finish with the *Update* button on the top to submit it.
 
-#### Mount the datadisk in the VM
+#### Mount the image in the VM
 
 Let's start using the new disk.
 
