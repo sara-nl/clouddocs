@@ -90,7 +90,7 @@ Let's run your first VM on the HPC Cloud.
 > **Food for brain:**
 >
 > * When you click on an `appliance` (anywhere on the row except for the tick-box), then you can see detailed information about that `appliance`. Can you see this detailed information about the `appliance` we are using in this exercise?
-> * When you import an `appliance`, this will create one `image` and one `template`, as explained during the introductory presentation. In the UI you have an _Images_ tab and another _Templates_ tab under the _Virtual Resources_ entry on the left menu. You should see your new `image` and `template` there.
+> * When you import an `appliance`, this will create one `image` and one `template`, as explained during the introductory presentation. In the UI you have an _Images_ tab and another _Templates_ tab under the _<i class="fa fa-user fa-lg fa-fw header-icon"></i> Virtual Resources_ entry on the left menu. You should see your new `image` and `template` there.
   * Can you see them?
   * What is the STATUS of the `image` just after it you import it?
   * Refresh with the sign next to the *green plus button* until it is READY.
