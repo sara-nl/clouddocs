@@ -218,7 +218,7 @@ This section is meant as extra questions that we thought would be nice for you t
 
 
 ### Next: Calculate _&pi;_
-Now you completed part A of the Tutorial [SURF Research Boot Camp 2016-04-13](.). Please continue with part [Calculate _&pi;_](extraPI). 
+You have completed part A of the Tutorial [SURF Research Boot Camp 2016-04-13](.). Please continue with part [Calculate _&pi;_](extraPI). 
 
 >**NOTE:**
 >
