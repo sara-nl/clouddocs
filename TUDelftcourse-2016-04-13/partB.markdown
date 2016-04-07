@@ -89,20 +89,20 @@ That was it. From now on you will get a 4-core VM running using the same *Cursus
 
 ### 3. Working with Storage
 
-The current HPC Cloud offers two storage types: `Ceph` and `SSD`. Data stored on Ceph is replicated, to protect against data loss in case of hardware failure. The best practice is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock`(s).
+The current HPC Cloud offers two storage types: **Ceph** and **SSD**. Data stored on `Ceph` is replicated to protect against data loss in case of hardware failure. The best practice is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock(s)`.
 
-When you create a disk image, you must choose where it is stored, under the heading `Datastore`. You have the choice between `images_ssd_gpu` and `ceph`.  The first appliance you imported, created the OS image on `images_ssd_gpu`. In this section you will use the `ceph` *Datastore* option, by following these steps:
+When you create an `image`, you must choose where it is stored, under the heading _Datastore_. You have the choice between `local_images_ssd` and `ceph`.  The first `appliance` you imported, created the OS image on `local_images_ssd`. In this section you will use the `ceph` `datastore` option, by following these steps:
 
-* Creating a new empty datadisk
-* Adding the new datadisk to the template
-* Mounting the datadisk in the VM
+* Creating a new empty `image` for bulk data
+* Adding the new `image` to the `template`
+* Mounting the `image` in the VM
 
-At this point you should not have any running VMs. If you do, shut them down.
-Let's create a new disk.
+At this point you should **not** have any running VMs. If you do, shut them down.
+Let's create a new `image`.
 
-#### Create a new empty datadisk
+#### Create a new empty `image` for bulk data
 
-* From the [UI](https://ui.hpccloud.surfsara.nl) menu at the left pane, select the *Images* page under *Virtual Resources*.
+* On the [UI](https://ui.hpccloud.surfsara.nl), from the menu on the left, select the _Images_ page under _<i class="fa fa-cloud"></i> Virtual Resources_.
 * Click on the green [+] button on the top.
 * In the *Create image* window, fill in the form as:  
   * Name: **my data**. You will use this name later in your `Template`.
