@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TUDelft course 2016-04-13  <br/> Extras - Calculating _&pi;_ with OpenMP
+# TUDelft course 2016-04-13  <br/> Extras - Wave simulation with OpenMP
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![TUDelft logo](/images/TUDelft_logo.png)
@@ -12,17 +12,17 @@ layout: default
 
 This is an exercise from the (extras) part of the Tutorial [TUDelft course 2016-04-13](.).
 
-In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **shared-memory** system. For this puspose, we will be running a Monte Carlo simulation to calculate an approximation of the value of _&pi;_. 
+In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **message-passing** system. For this puspose, we will be running wave simulations using MPI. We will approximate solutions for the wave differential equation in 2D, by using numerical methods. 
 
 >**NOTE:**
 >
 >You are now in the advanced section of the workshop. You have your laptop and an Internet connection. We expect you will be able to find out more on your own about things that we hardly/don't explain but which you think you need. For example, if we were you, at this point we would've already googled for several things: 
 >
->1. Monte Carlo simulation
->1. Monte Carlo pi
->1. OpenMP cheatsheet
+>1. Numerical methods
+>1. Wave differential equation
+>1. MPI cheatsheet
 
-We provide you with an implementation of that simulation using `OpenMP`. You will be asked to perform multiple runs of each program, so that fluctuations caused by e.g. network can be middled out. The output of each program includes results for run time in _wall-clock_, _user_ and _system_ time.
+We provide you with an implementation of that simulation using `MPI`. You will be asked to perform multiple runs of each program, so that fluctuations caused by e.g. network can be middled out. The output of each program includes results for run time in _wall-clock_, _user_ and _system_ time.
 
 This exercise will let you use OpenMP, first with a serial implementation within a single multicore VM and then with diffrent parallel implementations. Please observe if the differences are significant or not for the scenarios below.
 
