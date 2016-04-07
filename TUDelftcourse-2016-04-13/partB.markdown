@@ -78,13 +78,13 @@ That was it. From now on you will get a 4-core VM running using the same *Cursus
 
 #### Instantiate the four-core VM
 
-* Instantiate a VM from the updated template.
+* Instantiate a VM from the updated `template`.
 * Login to the VM. *Is your data there?*
-* You can verify that you are logged-in a four-core VM with the command: `cat /proc/cpuinfo`
+* You can verify that you are logged in on a four-core VM with the command: `cat /proc/cpuinfo`
 
 
 > **NOTE:**
->Your VM's image was (and is) persistent.
+>Your VM's `image` was (and is) persistent.
 
 
 ### 3. Working with Storage
