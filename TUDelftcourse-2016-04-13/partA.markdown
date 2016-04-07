@@ -66,11 +66,11 @@ Next, you will copy the public SSH key (`id_rsa.pub`) to the UI, but you will ke
 
 ### 3. My first VM
 
-Using the HPC Cloud revolves around making Virtual Machines (VM). We provide the HPC Cloud **AppMarket** to facilitate creating simple VMs. The AppMarket contains common ready-made appliances for you to pick and use. In this section you will use the AppMarket to build your first VM with the following steps:
+Using the HPC Cloud revolves around making Virtual Machines (VM). We provide the HPC Cloud **AppMarket** to facilitate creating simple VMs. The AppMarket contains common ready-made _appliances_ for you to pick and use. In this section you will use the AppMarket to build your first VM with the following steps:
 
-* Importing a pre-made `Image`, with a Linux operating system installed.
-* Reviewing the shape of the VM (so-called `Template`) you want.
-* Instantiating the `Template` to run your first VM.
+* Importing a pre-made `image`, with a Linux operating system installed.
+* Reviewing the shape of the VM (so-called `template`) to match what you want.
+* Instantiating the `template` to run your first VM.
 * Accessing your VM and shutting it down.
 
 Let's run your first VM on the HPC Cloud.
