@@ -107,7 +107,7 @@ Edit the imported `template` with these steps:
 * Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...). Leave the default values, **except** for the following:  
   * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or nics) for your VM. Select the row **Name: internet** (click once on it). You can see the feedback below:  
 ![youselectednetwork](/images/youselectednetwork.png)
-* Click the green button `Update` at the top, to save your changes.
+* Click the green button _Update_ at the top, to save your changes.
 
 #### Start the VM
 
@@ -119,8 +119,8 @@ A `template` is just a description of the virtual machine that we want to build.
 * Number of instances: **1**.
 * Select the *Course Template* (click once on it). Since this is your first `template`, there is only one item in the list. You can see the feedback below:  
 ![select_template](/images/select_template2.png)
-* Click on the `Create` button at the bottom of the screen.
-* Refresh the VM status by clicking on the symbol of the two arrows chasing each other next to `[+]` button.
+* Click on the _Create_ button at the bottom of the screen.
+* Refresh the VM status by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus"></i>_ button.
 
 #### What happened?
 
@@ -135,7 +135,7 @@ Let's summarise what you have seen so far. From the menu on the left side, click
   * _Virtual Machines_: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box, that is). Inspect the information tables that appear, which show extended details.
 
 > **NOTE:**  
->Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of cores, memory, and disk that you asked in the `template`. Keep refreshing the list by clicking on the symbol of the two arrows chasing each other next to `[+]` button. When the required capacity becomes available, your VM will show the status **RUNNING**. Only then can you actually use your VM.
+>Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of cores, memory, and disk that you asked in the `template`. Keep refreshing the list by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to green _<i class="fa fa-plus"></i>_ button. When the required capacity becomes available, your VM will show the status **RUNNING**. Only then can you actually use your VM.
 
 #### Log in to the VM
 
@@ -198,7 +198,7 @@ Let's shut your first VM down. Anytime you expect your VM to be doing nothing us
 
 * In the cloud UI, tick the box to the left on the row with your VM.
 * At the upper right corner of the screen, under the dust bin drop-down button, click `Shutdown`.
-* Refresh (by clicking on the two arrows chasing each other next to the _[+]_ button) until your VM is gone from the list. It will be removed from the display, but you can start it again whenever you need it.
+* Refresh (by clicking on the two arrows chasing each other, _<i class="fa fa-refresh"></i>_, next to the green _<i class="fa fa-plus"></i>_ button) until your VM is gone from the list. It will be removed from the display, but you can start it again whenever you need it.
 
 > **Food for brain:**
 >
