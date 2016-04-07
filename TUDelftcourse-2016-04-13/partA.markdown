@@ -90,22 +90,22 @@ Let's run your first VM on the HPC Cloud.
 > **Food for brain:**
 >
 > * When you click on an `appliance` (anywhere on the row except for the tick-box), then you can see detailed information about that `appliance`. Can you see this detailed information about the `appliance` we are using in this exercise?
-> * When you import an `appliance`, this will create one `image` and one `template`, as explained during the introductory presentation. In the UI you have an _Images_ tab and another _Templates_ tab under the _<i class="fa fa-lg fa-fw fa-cloud"></i> Virtual Resources_ entry on the left menu. You should see your new `image` and `template` there.
+> * When you import an `appliance`, this will create one `image` and one `template`, as explained during the introductory presentation. In the UI you have an _Images_ tab and another _Templates_ tab under the _<i class="fa fa-cloud"></i> Virtual Resources_ entry on the left menu. You should see your new `image` and `template` there.
   * Can you see them?
   * What is the STATUS of the `image` just after it you import it?
   * Refresh with the sign next to the *green plus button* until it is READY.
 
 #### Review the Template  
 
-When you imported the appliance from the AppMarket, it created an `image` and a `template` for you. In the `template` you can define how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc. Following the instructions of the extended information of the `appliance` that you imported, we will have to adapt the `template` before we can use it to create VMs out of it.
+When you imported the `appliance` from the AppMarket, it created an `image` and a `template` for you. In the `template` you can define how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc. Following the instructions of the extended information of the `appliance` that you imported, we will have to adapt the `template` before we can use it to create VMs out of it.
 
 Edit the imported `template` with these steps:
 
-* Go to the _Templates_ tab under _<i class="fa fa-lg fa-fw fa-cloud"></i> Virtual Resources_ on the left menu.
+* Go to the _Templates_ tab under _<i class="fa fa-cloud"></i> Virtual Resources_ on the left menu.
 * Find the `template` you just imported, and click on it (anywhere **except** the tick-box).
 * Click on the _Update_ button on the top-right of the screen to start editing the template.
 * Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...). Leave the default values, **except** for the following:  
-  * Select the `Network` tab which shows the network interfaces (or nics) for your VM. Select the row **Name: internet** (click once on it). You can see the feedback below:  
+  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or nics) for your VM. Select the row **Name: internet** (click once on it). You can see the feedback below:  
 ![youselectednetwork](/images/youselectednetwork.png)
 * Click the green button `Update` at the top, to save your changes.
 
@@ -129,7 +129,7 @@ Congratulations! You have just created a fresh, clean virtual machine!
 Let's summarise what you have seen so far. From the menu on the left side, click on each of the tabs to inspect the information. A vertical blue bar to the left of one (and only one) tab tells you which one you are currently seeing.
 
 * _Dashboard_: shows an overview of the project status, like the amount of running machines or usage statistics.
-* _<i class="fa fa-lg fa-fw fa-cloud"></i> Virtual Resources_:  
+* _<i class="fa fa-cloud"></i> Virtual Resources_:  
   * _Images_: this is the equivalent of a hard drive. Your OS is stored on this `image`.  
   * _Templates_:  the `template` gives your VM the shape you want. A `template` is just a recipe; not the machine itself.   
   * _Virtual Machines_: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box, that is). Inspect the information tables that appear, which show extended details.
