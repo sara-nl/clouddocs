@@ -59,9 +59,9 @@ Next, you will copy the public SSH key (`id_rsa.pub`) to the UI, but you will ke
 
 * Copy the content of your **public** SSH key to the clipboard (for example, by doing `cat ~/.ssh/id_rsa.pub`, then selecting and copying all of that text).
 * Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *<i class="fa fa-cog"></i> Settings* from the *buddy* icon  <i class="fa fa-user"></i>. 
-* Locate the section `Public SSH Key` (if needed, click the *Info* icon) and click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
+* Locate the section _Public SSH Key_ (if needed, click the *Info* icon) and click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
 * Paste the content of your public SSH key file into the text box.
-* There is no `Save` button; click outside the text box to complete your action (e.g.: on the words "Public SSH Key").
+* There is no _Save_ button; click outside the text box to complete your action (e.g.: on the words "Public SSH Key").
 * Check the contents of box against your public key and verify they match: it should start with `ssh-rsa AAAAB`...
 
 ### 3. My first VM
