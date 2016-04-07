@@ -217,8 +217,8 @@ This section is meant as extra questions that we thought would be nice for you t
 **Bonus:** The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!!!
 
 
-### Next: part XXX
-Now that you completed part A of the Tutorial [SURF Research Boot Camp 2016-04-13](.). Please continue with part XXX [Part B](partB). 
+### Next: Calculate _&pi;_
+Now you completed part A of the Tutorial [SURF Research Boot Camp 2016-04-13](.). Please continue with part [Calculate _&pi;_](extraPI). 
 
 >**NOTE:**
 >
