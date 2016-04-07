@@ -33,7 +33,7 @@ The UI (short for User Interface) is the web site that allows you to manage your
 
 Let's change the initial password now.
 
-* Locate the *buddy* icon <i class="fa fa-user fa-lg fa-fw"></i> with your user name at the top-right corner of the screen.
+* Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen.
 * Click it, select *<i class="fa fa-cog"></i> Settings* and then use the _Update password_ button.
 * On the new screen, fill in a new password (twice) and click the *Change* button to submit it.
 
@@ -41,7 +41,7 @@ Let's change the initial password now.
 
 Let's check whether it worked.
 
-* Click your *buddy* icon  <i class="fa fa-user fa-lg fa-fw header-icon"></i>.
+* Click your *buddy* icon  <i class="fa fa-user"></i>.
 * Choose *Sign Out*.
 
 From now on you can use your new password to log in to the [UI](https://ui.hpccloud.surfsara.nl/). Do so now.
@@ -58,7 +58,7 @@ If you are already familiar with SSH public keys, you can skip reading this page
 Next, you will copy the public SSH key (`id_rsa.pub`) to the UI, but you will keep the matching private key (`id_rsa`) safe in your laptop.
 
 * Copy the content of your **public** SSH key to the clipboard (for example, by doing `cat ~/.ssh/id_rsa.pub`, then selecting and copying all of that text).
-* Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *<i class="fa fa-cog"></i> Settings* from the *buddy* icon  <i class="fa fa-user fa-lg fa-fw header-icon"></i>. 
+* Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *<i class="fa fa-cog"></i> Settings* from the *buddy* icon  <i class="fa fa-user"></i>. 
 * Locate the section `Public SSH Key` (if needed, click the *Info* icon) and click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
 * Paste the content of your public SSH key file into the text box.
 * There is no `Save` button; click outside the text box to complete your action (e.g.: on the words "Public SSH Key").
