@@ -33,7 +33,7 @@ The UI (short for User Interface) is the web site that allows you to manage your
 
 Let's change the initial password now.
 
-* Locate the *buddy* icon with your user name at the top-right corner of the screen.
+* Locate the *buddy* <i class="fa fa-user fa-lg fa-fw header-icon"></i> icon with your user name at the top-right corner of the screen.
 * Click it, select *Settings* and then use the `Update password` button.
 * On the new screen, fill in a new password (twice) and click the *Change* button to submit it.
 
