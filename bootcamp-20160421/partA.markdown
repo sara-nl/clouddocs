@@ -7,7 +7,9 @@ layout: default
 <div style="float:right;max-width:205px;" markdown="1">
 ![SURF Academy logo](/images/surf_academy_logo.png)
 
+<div style="float:right;max-height:56.547px;" markdown="1">
 ![SURFsara logo](/images/SURFsara_logo.png)
+</div>
 </div>
 
 This is part A of the Tutorial [SURF Research Boot Camp 2016-04-13](.).
