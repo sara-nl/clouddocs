@@ -166,14 +166,14 @@ sudo chown ubuntu:ubuntu -R /data
 >**Food for brain:**
 >
 > Create new files or folders in your in `/data` directory. Logout and login again. *Are your changes still there?* Check with `ls /data/`.
-> Shutdown the VM and start it again. *Do you see the files on the datablock?*
-> Hint: when you start the VM the datadisk is not automatically mounted. You should issue the mount command once again.
+> Shut the VM down and start it again. *Do you see the files on the datablock?*
+> Hint: when you start the VM the datablock is not automatically mounted. You should issue the mount command once again.
 
 * From now on, you can transfer files from your laptop on the newly created disk.
 
 >**Food for brain:**
 >
-> Try to copy a file from your laptop to `/data`, e.g. with `scp myfile ubuntu@145.100.58.XYZ:/data`. Then login to the VM and inspect the changes.
+> Try to copy a file from your laptop to `/data`, e.g. with `scp myfile ubuntu@145.100.58.XYZ:/data`. Then log in to the VM and inspect the changes.
 
 
 >**Note:**
