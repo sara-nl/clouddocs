@@ -66,7 +66,7 @@ Next, you will copy the public SSH key (`id_rsa.pub`) to the UI, but you will ke
 
 ### 3. My first VM
 
-Using the HPC Cloud revolves around making Virtual Machines (VM). We provide the HPC Cloud **AppMarket** to facilitate creating simple VMs. The AppMarket contains common ready-made _appliances_ for you to pick and use. In this section you will use the AppMarket to build your first VM with the following steps:
+Using the HPC Cloud revolves around making Virtual Machines (VM). We provide the HPC Cloud **AppMarket** to facilitate creating simple VMs. The AppMarket contains common ready-made `appliances` for you to pick and use. In this section you will use the AppMarket to build your first VM with the following steps:
 
 * Importing a pre-made `image`, with a Linux operating system installed.
 * Reviewing the shape of the VM (so-called `template`) to match what you want.
@@ -78,7 +78,7 @@ Let's run your first VM on the HPC Cloud.
 #### Import an appliance from the AppMarket
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
-* Choose the *AppMarket* tab on the left menu of the screen and then *Appliances*.
+* Choose the *<i class="fa fa-lg"></i> AppMarket* tab on the left menu of the screen and then *Appliances*.
 * Select the `appliance` **Ubuntu 14.04 Desktop** by clicking on the tick-box next to it. 
 * Click on the _Import_ button at the top-right corner of the screen.
 * A dialogue will pop up, asking you for a few details. Edit as follows:
