@@ -42,7 +42,7 @@ Let's change the initial password now.
 Let's check whether it worked.
 
 * Click your *buddy* icon  <i class="fa fa-user"></i>.
-* Choose *Sign Out*.
+* Choose *<i class="fa fa-power-off"></i> Sign Out*.
 
 From now on you can use your new password to log in to the [UI](https://ui.hpccloud.surfsara.nl/). Do so now.
 
