@@ -93,7 +93,7 @@ Let's run your first VM on the HPC Cloud.
 > * When you import an `appliance`, this will create one `image` and one `template`, as explained during the introductory presentation. In the UI you have an _Images_ tab and another _Templates_ tab under the _<i class="fa fa-cloud"></i> Virtual Resources_ entry on the left menu. You should see your new `image` and `template` there.
   * Can you see them?
   * What is the STATUS of the `image` just after it you import it?
-  * Refresh with the sign next to the *green plus button* until it is READY.
+  * Refresh with the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;"></i>_ button until it is READY.
 
 #### Review the Template  
 
@@ -114,13 +114,13 @@ Edit the imported `template` with these steps:
 A `template` is just a description of the virtual machine that we want to build. Let's create the actual virtual machine from it.
 
 * Go to the _Virtual Machines_ section on the left menu. This displays an overview of all the existing VMs that you have the right to see. This list is (probably) empty at the moment.
-* Click on the *green plus sign* to bring up a pop-up dialogue to create a VM.
+* Click on the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;"></i>_ button to bring up a pop-up dialogue to create a VM.
 * Give your virtual machine a name: **My First VM**. This name is also used as the VM's host name.
 * Number of instances: **1**.
 * Select the *Course Template* (click once on it). Since this is your first `template`, there is only one item in the list. You can see the feedback below:  
 ![select_template](/images/select_template2.png)
 * Click on the _Create_ button at the bottom of the screen.
-* Refresh the VM status by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus"></i>_ button.
+* Refresh the VM status by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;"></i>_ button.
 
 #### What happened?
 
@@ -135,7 +135,7 @@ Let's summarise what you have seen so far. From the menu on the left side, click
   * _Virtual Machines_: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box, that is). Inspect the information tables that appear, which show extended details.
 
 > **NOTE:**  
->Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of cores, memory, and disk that you asked in the `template`. Keep refreshing the list by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to green _<i class="fa fa-plus"></i>_ button. When the required capacity becomes available, your VM will show the status **RUNNING**. Only then can you actually use your VM.
+>Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of cores, memory, and disk that you asked in the `template`. Keep refreshing the list by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;"></i>_ button. When the required capacity becomes available, your VM will show the status **RUNNING**. Only then can you actually use your VM.
 
 #### Log in to the VM
 
@@ -198,7 +198,7 @@ Let's shut your first VM down. Anytime you expect your VM to be doing nothing us
 
 * In the cloud UI, tick the box to the left on the row with your VM.
 * At the upper right corner of the screen, under the dust bin drop-down button, click `Shutdown`.
-* Refresh (by clicking on the two arrows chasing each other, _<i class="fa fa-refresh"></i>_, next to the green _<i class="fa fa-plus"></i>_ button) until your VM is gone from the list. It will be removed from the display, but you can start it again whenever you need it.
+* Refresh (by clicking on the two arrows chasing each other, _<i class="fa fa-refresh"></i>_, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;"></i>_ button) until your VM is gone from the list. It will be removed from the display, but you can start it again whenever you need it.
 
 > **Food for brain:**
 >
