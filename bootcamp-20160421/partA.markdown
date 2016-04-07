@@ -7,7 +7,7 @@ layout: default
 <div style="float:right;max-width:205px;" markdown="1">
 ![SURF Academy logo](/images/surf_academy_logo.png)
 
-<div style="float:right;max-height:56px;" markdown="1">
+<div style="max-wdith:177px;" markdown="1">
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 </div>
