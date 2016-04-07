@@ -16,7 +16,7 @@ In this advanced part of our HPC Cloud tutorial we ask you to play around with a
 
 >**NOTE:**
 >
->You are now in the advanced section of the workshop. You have your laptop and an Internet connection. We expect you will be able to find out more on your own about things that we hardly/don't explain but which you think you need. For example, if we were you, at this point we would've googled 2 things: 
+>You are now in the advanced section of the workshop. You have your laptop and an Internet connection. We expect you will be able to find out more on your own about things that we hardly/don't explain but which you think you need. For example, if we were you, at this point we would've already googled for several things: 
 >
 >1. Monte Carlo simulation
 >1. Monte Carlo pi
