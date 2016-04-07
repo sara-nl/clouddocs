@@ -34,8 +34,8 @@ Here is a summary of the course outline:
 **Location**: Marinus Ruppertgebouw op de Leuvenlaan 21, Utrecht.  
 
 ### Agenda
->12:30 Presentation: HPC Cloud at SURFsara (Ander Astudillo)
-13:00 Hands-on introduction (Markus van Dijk)
+>12:30 Presentation: HPC Cloud at SURFsara (Ander Astudillo)  
+13:00 Hands-on introduction (Markus van Dijk)  
 13:10 Hands-on
 14:30 End  
 
