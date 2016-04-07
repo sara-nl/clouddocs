@@ -34,7 +34,7 @@ The UI (short for User Interface) is the web site that allows you to manage your
 Let's change the initial password now.
 
 * Locate the *buddy* icon <i class="fa fa-user fa-lg fa-fw header-icon"></i> with your user name at the top-right corner of the screen.
-* Click it, select *Settings* and then use the `Update password` button.
+* Click it, select *<i class="fa fa-cog"></i> Settings* and then use the `Update password` button.
 * On the new screen, fill in a new password (twice) and click the *Change* button to submit it.
 
 #### Logout
@@ -58,7 +58,7 @@ If you are already familiar with SSH public keys, you can skip reading this page
 Next, you will copy the public SSH key (`id_rsa.pub`) to the UI, but you will keep the matching private key (`id_rsa`) safe in your laptop.
 
 * Copy the content of your **public** SSH key to the clipboard (for example, by doing `cat ~/.ssh/id_rsa.pub`, then selecting and copying all of that text).
-* Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *Settings* from the *buddy* icon  <i class="fa fa-user fa-lg fa-fw header-icon"></i>. 
+* Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *<i class="fa fa-cog"></i> Settings* from the *buddy* icon  <i class="fa fa-user fa-lg fa-fw header-icon"></i>. 
 * Locate the section `Public SSH Key` (if needed, click the *Info* icon) and click on the blue edit icon.
 * Paste the content of your public SSH key file into the text box.
 * There is no `Save` button; click outside the text box to complete your action (e.g.: on the words "Public SSH Key").
@@ -90,7 +90,7 @@ Let's run your first VM on the HPC Cloud.
 > **Food for brain:**
 >
 > * When you click on an `appliance` (anywhere on the row except for the tick-box), then you can see detailed information about that `appliance`. Can you see this detailed information about the `appliance` we are using in this exercise?
-> * When you import an `appliance`, this will create one `image` and one `template`, as explained during the introductory presentation. In the UI you have an _Images_ tab and another _Templates_ tab under the _<i class="fa fa-user fa-lg fa-fw header-icon"></i> Virtual Resources_ entry on the left menu. You should see your new `image` and `template` there.
+> * When you import an `appliance`, this will create one `image` and one `template`, as explained during the introductory presentation. In the UI you have an _Images_ tab and another _Templates_ tab under the _<i class="fa fa-lg fa-fw fa-cloud"></i> Virtual Resources_ entry on the left menu. You should see your new `image` and `template` there.
   * Can you see them?
   * What is the STATUS of the `image` just after it you import it?
   * Refresh with the sign next to the *green plus button* until it is READY.
@@ -101,7 +101,7 @@ When you imported the appliance from the AppMarket, it created an `image` and a 
 
 Edit the imported `template` with these steps:
 
-* Go to the _Templates_ tab under _Virtual Resources_ on the left menu.
+* Go to the _Templates_ tab under _<i class="fa fa-lg fa-fw fa-cloud"></i> Virtual Resources_ on the left menu.
 * Find the `template` you just imported, and click on it (anywhere **except** the tick-box).
 * Click on the _Update_ button on the top-right of the screen to start editing the template.
 * Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...). Leave the default values, **except** for the following:  
@@ -129,7 +129,7 @@ Congratulations! You have just created a fresh, clean virtual machine!
 Let's summarise what you have seen so far. From the menu on the left side, click on each of the tabs to inspect the information. A vertical blue bar to the left of one (and only one) tab tells you which one you are currently seeing.
 
 * _Dashboard_: shows an overview of the project status, like the amount of running machines or usage statistics.
-* _Virtual Resources_:  
+* _<i class="fa fa-lg fa-fw fa-cloud"></i> Virtual Resources_:  
   * _Images_: this is the equivalent of a hard drive. Your OS is stored on this `image`.  
   * _Templates_:  the `template` gives your VM the shape you want. A `template` is just a recipe; not the machine itself.   
   * _Virtual Machines_: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box, that is). Inspect the information tables that appear, which show extended details.
