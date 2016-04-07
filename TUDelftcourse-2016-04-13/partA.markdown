@@ -78,7 +78,7 @@ Let's run your first VM on the HPC Cloud.
 #### Import an appliance from the AppMarket
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
-* Choose the *<i class="fa fa-lg"></i> AppMarket* tab on the left menu of the screen and then *Appliances*.
+* Choose the *<i class="fa fa-truck"></i> AppMarket* tab on the left menu of the screen and then *Appliances*.
 * Select the `appliance` **Ubuntu 14.04 Desktop** by clicking on the tick-box next to it. 
 * Click on the _Import_ button at the top-right corner of the screen.
 * A dialogue will pop up, asking you for a few details. Edit as follows:
