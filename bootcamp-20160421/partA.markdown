@@ -6,7 +6,7 @@ layout: default
 
 <div style="float:right;max-width:205px;" markdown="1">
 <div style="height:77px;" markdown="1">
-![TUDelft logo](/images/surflogo.png)
+![SURF logo](/images/surflogo.png)
 </div>
 
 ![SURFsara logo](/images/SURFsara_logo.png)
