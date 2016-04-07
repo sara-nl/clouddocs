@@ -63,7 +63,7 @@ ls -l
 
 ### b) Serial runs
 
-* The file **`gridpi-serial.c`** contains a simple workload (calculate pi) in a simple,
+* The code in file **`gridpi-serial.c`** calculates _&pi;_ in a simple,
 serial implementation. Have a look inside the file, e.g. `cat gridpi-serial.c`
 * Compile the `gridpi-serial.c` program:
 
