@@ -18,6 +18,7 @@ layout: default
   * [Part A](partA)
   * Extras:
     * [Extras - _&pi;_](extraPI)
+    * [Extras - Remote Desktop](extraRemoteDesktop)
 * [Presentations](#presentations)
 
 ## <a name="general"></a>General Information 
@@ -59,6 +60,7 @@ The hands-on tutorial has two parts. The exercises in part *A* will give you a f
   * [Part A](partA)
   * Extras:
     * [Extras - _&pi;_](extraPI)
+    * [Extras - Remote Desktop](extraRemoteDesktop)
 
 ## <a name="presentations"></a> Presentations
 
