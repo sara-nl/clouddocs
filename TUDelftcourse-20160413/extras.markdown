@@ -26,9 +26,5 @@ Link: [OpenMP: calculating _&pi;_](OpenMP)
 
 ## MPI
 
-## XBeach
-
-Link: [MPI: xBeach](xBeach)
-  
-  XBeach is a two-dimensional model for waves hitting the shore, using MPI to parallelize the computations.
+Link: [MPI: Wave equetion](MPI)
 
