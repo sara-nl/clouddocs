@@ -48,6 +48,9 @@ We will be creating a 2-core VM for this exercise.
 * Install the gcc compiler and gnu make:
 
 ```sh
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe"
+sudo apt-get update
+
 sudo apt-get install build-essential 
 # Optionally verify gcc and GNU make installation and version
 gcc -v  
@@ -74,6 +77,12 @@ tar -zxf waveeq.tar.gz
 ```sh
 cd waveeq/
 ls -l 
+```
+
+* Compile the program:
+
+```sh
+make wave4
 ```
 
 ---
@@ -188,3 +197,31 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 > Do not forget to shutdown your VM when you are done with your performance tests.
 
  If you want more of the advanced exercises on the HPC Cloud, see [Extras](extras).
+
+
+### Time measurement
+
+In order to help measuring times, we can give you the hints in this section.
+
+* You can use the `time` facility from `bash` to measure the time it takes to run a command, like: `time command`. It will return 3 lines via stderr with: overall time and the subparts for user time and system time. 
+
+* The plain format for the output of `time` is not very helpful for operating with the values; you can redefine it with the environment variable `TIMEFORMAT`. The value `%R` asks `time` to return the amount of seconds and milliseconds; that is much easier to operate with.
+
+* Given a set of lines containing a number each, the following one-liner will compute the average and deviation, and print them in 2 lines: `awk '{sum += $1; sumsq+=$1*$1 } END {print "   avg " (sum/NR) "\nstddev " sqrt(sumsq/NR - (sum/NR) * (sum/NR))}'`. 
+  * For example, if you have a file called `my_nums.txt` containing one number per line, you can compute average and standard deviation for those numbers like: `cat my_nums.txt | awk '{sum += $1; sumsq+=$1*$1 } END {print "   avg " (sum/NR) "\nstddev " sqrt(sumsq/NR - (sum/NR) * (sum/NR))}`
+
+* You can run and measure a same command a given number of times by using a _for-loop_, like: `for run in {1..3}; do time COMMAND_HERE; done 2>&1`
+
+* All together, an example for running a our `wave4` program 20 times with 2 processors and then compute the average running time, using an intermediate output-collection file (while, at the same time, showing progress on screen), could be:
+
+```sh
+TIMEFORMAT=$'elapsed %R' bash -c 'for i in {1..20}; do echo [iter $i]; time mpirun -n 2 ./wave4; done 2>&1 | tee times_n2.txt'
+
+cat times_n2.txt | grep ^elapsed | sed -e s/.*\ // | awk '{sum += $1; sumsq+=$1*$1 } END {print "   avg " (sum/NR) "\nstddev " sqrt(sumsq/NR - (sum/NR) * (sum/NR))}'
+```
+
+An explanation on the previous code listing:
+
+* The first line runs the command in a loop and takes all output into the `times_n2.txt` file. Every iteration, the `time` command outputs a line like `elapsed ...`.
+
+* The second line reads the `times_n2.txt` file; it filters all lines to take only those that start with `elapsed`. For each of these lines, `sed` takes only the number after the space. Finally, `awk` processes all these numbers and, when it is done, it prints out the average and standard deviation.
