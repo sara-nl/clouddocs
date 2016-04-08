@@ -24,17 +24,24 @@ In this advanced part of our HPC Cloud tutorial we ask you to play around with a
 
 We provide you with an implementation of that simulation using `MPI`. You will be asked to perform multiple runs of each program, so that fluctuations caused by e.g. network can be middled out. The output of each program includes results for run time in _wall-clock_, _user_ and _system_ time.
 
-This exercise will let you use OpenMP, first with a serial implementation within a single multicore VM and then with diffrent parallel implementations. Please observe if the differences are significant or not for the scenarios below.
-
 ### a) Setting up a VM for the exercise
 
-* On the UI, create a 2-core `template` that will use your existing **Course Image**:
-  * On the _Templates_ tab (under _<i class="fa fa-cloud"></i> Virtual Resources_), click on the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button to create a new `template`
-  * Edit the _<i class="fa fa-laptop"></i> General_ tab: type in a meaningful Name e.g. **OpenMP setup**, type in **2 CPUs** and **2 VCPUs**, type in **4GB Memory** 
-  * Edit the _<i class="fa fa-tasks"></i> Storage_ tab: for the _Disk 0_, choose the **Course Image** (from the table on the right of the screen) 
-  * Edit the _<i class="fa fa-globe"></i> Network_ tab: for the _Interface 0_, choose the _Internet network_.  
+We will be creating a 2-core VM for this exercise.
+
+* On the UI, import an Ubuntu `appliance` from the AppMarket:
+  * On the _appliances_ tab (under _<i class="fa fa-truck"></i> AppMarket_), import another copy of the **Ubuntu Desktop** `appliance`. Give the `image` and `template` the name: **mpi_wave**
+
+* Edit the `image` to make it **persistent**.
+
+* Edit the `template` to make it a 2-core one:
+  * On the _Templates_ tab (under _<i class="fa fa-cloud"></i> AppMarket_), locate the **mpi_wave** `template` and click anywhere on its row (except the checkbox) to show its extended information. Then click the _Update_ button.
+  * Edit the _<i class="fa fa-laptop"></i> General_ tab: type in a meaningful Name e.g. **MPI wave**, type in **2 CPUs** and **2 VCPUs**, type in **4GB Memory** 
+  * Edit the _<i class="fa fa-tasks"></i> Storage_ tab: for the _Disk 0_, choose the **mpi_wave** (from the table on the right of the screen) 
+  * Edit the _<i class="fa fa-globe"></i> Network_ tab: 
+    * for the _NIC 0_, choose the _Internet network_
+    * add a second `nic`; for this second `nic`, _NIC 1_, choose the _surfcursus.int_ network
   * Edit the _<i class="fa fa-exchange"></i> Input/Output_ tab: click on the _VNC_ radiobutton
-  * Finally, click on the green *Create* button at the top of the screen
+  * Finally, click on the green *Update* button at the top of the screen
 
 * Launch a VM from that `template`
 
@@ -47,21 +54,31 @@ gcc -v
 make -v 
 ```
 
-* Download the [code file](code/gridpi-mp.tar) to your VM and uncompress the file:
+* Install other dependencies that our program requires:
 
 ```sh
-wget https://doc.hpccloud.surfsara.nl/TUDelftcourse-2016-04-13/code/gridpi-mp.tar 
-tar -xvf gridpi-mp.tar 
+sudo apt-get install libhdf5-serial-dev libopenmpi-dev openmpi-bin openmpi-common hdf5-tools ImageMagick gnuplot
+```
+
+### b) Preparing the program
+
+* Download the [code file](code/waveeq.tar.gz) to your VM and uncompress the file:
+
+```sh
+wget https://github.com/sara-nl/clouddocs/raw/gh-pages/TUDelftcourse-20160413/code/waveeq.tar.gz 
+tar -zxf waveeq.tar.gz 
 ```
 
 * Inspect what files are in the example directory:
 
 ```sh
-cd gridpi-mp/
+cd waveeq/
 ls -l 
 ```
 
-### b) Serial runs
+---
+
+### c) Serial runs
 
 * The code in file **`gridpi-serial.c`** calculates _&pi;_ in a simple,
 serial implementation. Have a look inside the file, e.g. `cat gridpi-serial.c`
