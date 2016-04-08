@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TUDelft course 2016-04-13  <br/> Extras - Wave simulation with OpenMP
+# TUDelft course 2016-04-13  <br/> Extras - Wave simulation with MPI
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![TUDelft logo](/images/TUDelft_logo.png)
