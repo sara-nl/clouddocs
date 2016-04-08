@@ -184,6 +184,78 @@ mpirun -n 4 ./wave4
 
 ### f) Scaling out to multiple VMs 
 
+MPI is able to communicate within processes that may physically by running on different (virtual) machines. We are going to make this happen now.
+
+There is a fair amount of configuration that needs to happen among all the machines involved in cooperating for running MPI jobs. We have prepared a couple of scripts that you can use for that
+
+#### Master-workers concept
+
+A typical way of considering a cluster is to have a **master** node (or host) where you can externally log into and launch the programs, along with a set of **worker** nodes that the master knows about and where it delegates computing workload.
+
+In our exercises, we will consider one master and one worker node. Both will compute (so the master will not be just a passive node, but it will also contribute to the output). We will not consider any job-submitting queues, but rather, we will let MPI communicate over SSH. For that, both the master and the worker need to be able to SSH to each-other without requiring a password (a.k.a. **passwordless ssh**). We provide you with a script that you can run in each of the machines (in this case just one master an one worker) to do this interactively in a, hopefully, easy way.
+
+To make it easier, all nodes where MPI will run a program must have that program installed the same way in the same path. Because we have been carefully building the `image` so far, that is already done.
+
+Also, usually the worker nodes are protected (inaccessible) from the outside world, so you can only reach them normally from within the internal network. We will simulate this as well. We have provided a script to configure the master and another for the worker node, which will change the hostname and also shutdown the external network interface on the worker node.
+
+#### Launch a 2-core worker VM
+**Exercise f1:** Launch another VM that will become a worker
+
+* On the UI, instantiate the **mpi_wave** template again.
+
+#### Configure master and worker VMs
+
+**Exercise f2:** Configure the **master** node
+
+* Make sure you have an SSH connection to the VM we have been playing with so far (so, not the one you just created). This will become the master from now on.
+
+* Write down the **internal** ip address of the master node.
+
+* Run our configuration script to turn the VM into the master:
+
+```sh
+cd
+wget https://github.com/sara-nl/clouddocs/raw/gh-pages/TUDelftcourse-20160413/code/makeme_master.sh
+chmod +x makeme_master.sh
+sudo ./makeme_master.sh
+```
+
+> **_Food for brain f2:_**
+>
+> * What has just happened?
+
+**Exercise f3:** Configure the **worker** node
+
+Let's start by giving `root` a password on the worker node, so that we can use the VNC console. 
+
+* ssh into the worker node and run commands (type the passwords when you are asked to): 
+```sh
+sudo su -
+passwd
+```
+
+* Now open the NoVNC console on the UI for the worker node and log in as root. 
+
+>**IMPORTANT!**
+>
+>* Do **not** go any further until you are sure that you can log in as root in the worker node via the NoVNC console.
+
+* Back in the SSH terminal you have for the worker, leave the root user shell to become _ubuntu_ again, and then run our configuration script to turn the VM into the worker (replacing XXX.YYY.ZZZ.TTT with the INTERNAL IP address of the master):
+
+```sh
+exit
+cd
+wget https://github.com/sara-nl/clouddocs/raw/gh-pages/TUDelftcourse-20160413/code/makeme_worker.sh
+chmod +x makeme_worker.sh
+sudo ./makeme_worker.sh 1 XXX.YYY.ZZZ.TTT
+```
+
+> **_Food for brain f3:_**
+>
+> * Why do we recommend you to use the VNC console on this VM? 
+> * What has just happened!? Why do you need to become root? Why does the script require those parameters?
+
+
 ---
 
 > **NOTE:**
