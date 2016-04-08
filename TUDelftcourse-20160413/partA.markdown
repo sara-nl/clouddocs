@@ -105,7 +105,7 @@ Edit the imported `template` with these steps:
 * Find the `template` you just imported, and click on it (anywhere **except** the tick-box).
 * Click on the _Update_ button on the top-right of the screen to start editing the template.
 * Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...). Leave the default values, **except** for the following:  
-  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or nics) for your VM. Select the row **Name: internet** (click once on it). You can see the feedback below:  
+  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM. Select the row **Name: internet** (click once on it). You can see the feedback below:  
 ![youselectednetwork](/images/youselectednetwork.png)
 * Click the green button _Update_ at the top, to save your changes.
 
