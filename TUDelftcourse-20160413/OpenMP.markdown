@@ -32,7 +32,7 @@ This exercise will let you use OpenMP, first with a serial implementation within
   * On the _Templates_ tab (under _<i class="fa fa-cloud"></i> Virtual Resources_), click on the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button to create a new `template`
   * Edit the _<i class="fa fa-laptop"></i> General_ tab: type in a meaningful Name e.g. **OpenMP setup**, type in **2 CPUs** and **2 VCPUs**, type in **4GB Memory** 
   * Edit the _<i class="fa fa-tasks"></i> Storage_ tab: for the _Disk 0_, choose the **Course Image** (from the table on the right of the screen) 
-  * Edit the _<i class="fa fa-globe"></i> Network_ tab: for the _Interface 0_, choose the _Internet network_.  
+  * Edit the _<i class="fa fa-globe"></i> Network_ tab: for the _NIC 0_, choose the _Internet network_.  
   * Edit the _<i class="fa fa-exchange"></i> Input/Output_ tab: click on the _VNC_ radiobutton
   * Finally, click on the green *Create* button at the top of the screen
 
