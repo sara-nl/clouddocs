@@ -255,11 +255,51 @@ sudo ./makeme_worker.sh 1 XXX.YYY.ZZZ.TTT
 > * Why do we recommend you to use the VNC console on this VM? 
 > * What has just happened!? Why do you need to become root? Why does the script require those parameters?
 
+#### Configuring the firewall
 
+The `appliances` that we deliver on the AppMarket come with a firewall running on the operating system, called UFW. MPI needs to communicate through the network between master and worker. They are both running a firewall. To avoid problems and because this is just a test scenario, we will trust all traffic coming from our internal interfaces.
+
+* **On the master**, run the following commands: `sudo ufw allow in on eth1 && sudo service ufw restart`
+* **On the worker**, run the same commands: `sudo ufw allow in on eth1 && sudo service ufw restart`
+
+#### Launching a run over multiple VMs
+
+**Exercise f4:** Run over 2 VMs
+
+* **On the master**, make sure you are logged in as user _ubuntu_. Run our program with 4 processors over the 2 nodes (pay attention to the comma separating the master and the worker’s ip addresses):
+
+```sh
+mpirun -np 4 -H <master_INTERNAL_ip>,<worker_INTERNAL_ip> /home/ubuntu/waveeq/wave4
+```
+
+> **_Food for brain f4:_**
+>
+> * Is the output image from this multi-process the same as that from previous runs?
+> * Can you make a batch of several runs (e.g.: 20) and calculate the average runtime and standard deviation?
+> * How many processes are running? (hint: use the `top` command on different terminals)
+> * Do you see any significant time improvement as compared to the previous runs? Can you explain the improvement (or lack thereof)?
+
+### d) BONUS _food for brain_
+
+This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
+
+**Bonus 1:** What do you need to do to make more workers available? Is our image enough? Go ahead: try to have 2 more workers of 1 core each. Then run the program among them. Does the run time reduce? And if you have 2 workers, 2 cores each? And 3 workers, 2 cores each? And... Is it worth parallelising a lot? Where is the optimum?
+
+**Bonus 2:** It can become a problem when you have to copy and install your program and data "everywhere" in the same place. This can be alleviated by sharing your `/home` folder via NFS. Can you set that up?
+
+**Bonus 3:** Having to dowload, compile yourself the source code of the tool you need, and install it, is a very common workflow. Do you have a tool in this situation? Can it benefit from MPI? Please, let us know. Can you successfully get it running? Can you parallelise it?
+
+**Bonus 4:** Using SSH might be a way to go along, but when you have multiple things to run at a time, ensuring users' access, passwordless permissions... There exist cluster-building tools based on job queues, like Sun (now Oracle) Grid Engine, Torque, etc. Can you find out more? Can you set it up?
+
+**Bonus 7:** MPI is an implementation of a technique for parallelising computations. Another common technique is _shared memory_. One implementation for that technique is OpenMP. You can read more about it at their website: http://openmp.org/wp/. 
+  * Our program can also benefit from OpenMP. Does it make any sense to mix MPI and OpenMP? Are OpenMP-enabled MPI processes the same as MPI-enabled OpenMP programs?
+  * Can you make the program benefit from OpenMP at the same time as MPI?
+
+---
 ---
 
 > **NOTE:**
-> Do not forget to shutdown your VM when you are done with your performance tests.
+> Do not forget to shutdown your VMs when you are done with your performance tests.
 
  If you want more of the advanced exercises on the HPC Cloud, see [Extras](extras).
 
