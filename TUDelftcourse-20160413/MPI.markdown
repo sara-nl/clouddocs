@@ -22,7 +22,11 @@ In this advanced part of our HPC Cloud tutorial we ask you to play around with a
 >1. Wave differential equation
 >1. MPI cheatsheet
 
-We provide you with an implementation of that simulation using `MPI`. You will be asked to perform multiple runs of each program, so that fluctuations caused by e.g. network can be middled out. The output of each program includes results for run time in _wall-clock_, _user_ and _system_ time.
+We provide you with an implementation of that simulation using `MPI`. You will be asked to perform multiple runs of each program, so that fluctuations caused by e.g. network can be middled out. 
+
+>**Tip:**
+>
+>We recommend you have a look at the end of this page for some hints on how to help measuring time, running a program multiple times and computing an average time out of multiple measurements.
 
 ### a) Setting up a VM for the exercise
 
@@ -85,113 +89,92 @@ ls -l
 make wave4
 ```
 
----
-
 ### c) Serial runs
 
-* The code in file **`gridpi-serial.c`** calculates _&pi;_ in a simple,
-serial implementation. Have a look inside the file, e.g. `cat gridpi-serial.c`
-* Compile the `gridpi-serial.c` program:
+The code in file **`wave4.c`** is where the main routine is. It uses functionality from other `.c` and `.h` files, but the main loop is there. The main loop understands how many MPI processes must be created and it divides the space among them to distribute work.
+
+When the program runs, it writes output to file `wave4.h5` in [HDF5](https://www.hdfgroup.org/HDF5/) format. 
+
+* In the main routine you can find the main variables it uses:
+  * `c` is the wave propagation speed
+  * `zeta` is the damping coefficient
+  * `m` and `n` are the spatial dimmensions; you can play with these to make a bigger/smaller surface
+  * `nt` is the temporal dimmension; you can play with this to make a longer/shorter time simulation
+  * `nt_i` is the _checkpoint_ interval: output will be written to file every so many `nt_i` time iterations. 
+
+We invite you to explore the code to get familiar with it. If you change any of these values, please remember to compile the program again for the changes to make effect.
+
+You can run the program in a single process with the following command:
 
 ```sh
-gcc -std=c99 -Wall -Werror -pedantic gridpi-serial.c -o gridpi-serial
+./wave4
 ```
 
-* Run the serial program a few times:
+You can use the provided program `h5anim` to read from the output file of the `wave4` program (remember, called `wave4.h5`) and create an animated `wave4-anim.gif`. You do it so:
 
 ```sh
-./gridpi-serial
+./h5anim wave4.h5 u
 ```
 
-> **_Food for brain b1:_**
->
-> * Can you make a batch of several runs (e.g.: 100) and calculate the average runtime and standard deviation?
-
-
-### c) Simple OpenMP version
-
-* The file **`gridpi-mp-simple.c`** is a first turn over `gridpi-simple.c` to use OpenMP.
-* Have a look at the differences in the code.
-* Compile the `gridpi-mp-simple.c` program:
-
-```sh
-gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-simple.c -lm -o gridpi-mp-simple 
-```
-
-* Run a few times
-
-```sh
-./gridpi-mp-simple
-```
+Then you can use any browser to view the animated gif, or install program `gifview` (with `sudo apt-get install gifsicle`) and see it so: `gifview --animate wave4-anim.gif`.
 
 > **_Food for brain c1:_**
 >
-> * Can you make a batch of several runs (e.g.: 100) and calculate the average runtime and standard deviation?
-> * How many threads are running?
-> * Can you explain the differences in the code between this file and that of the previous exercise? In particular:
->   * What runs in parallel? What not?
->   * Which variables are used where?
+> * Can you make a batch of several runs (e.g.: 20) and calculate the average runtime and standard deviation?
 
-### d) Running the OpenMP optimised version
+d) Shut the VM down and prepare for multi-VM
 
-* The file **`gridpi-mp-alt.c`** tries to optimise on `gridpi-mp-simple.c`
-* Have a look at the differences in the code.
-* Compile the `gridpi-mp-alt.c` program:
+We made the `image` persistent so that when shutting the VM down, changes would be saved and kept for the next run. But changes are only saved when you actually shut the VM down gracefully. Do so now **from the UI**, by shutting the VM down just as you learnt on [Part A](partA).
 
-```sh
-gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-alt.c -lm -o gridpi-mp-alt
-```
+* Refesh the list of VMs (remember, the _<i class="fa fa-refresh"></i>_ icon) while you see your VM go through the different states: SHUTDOWN, EPILOG..., until it disappears.
 
-* Run a few times
+We will want to show how to **scale out** later, and that will involve multiple VMs, as explained during the presentation. In order for multiple VMs to be able to run out of the same `image`, this must be non-persistent (as explained in [Part B](partB)). Let's do that now:
 
-```sh
-./gridpi-mp-alt
-```
+* Go to the _Images_ tab, open the extended information for the **mpi_wave** `image` and switch the value for field _Persistent_ to **no**.
 
-> **_Food for brain d1:_**
+>**IMPORTANT**
 >
-> * Can you make a batch of several runs (e.g.: 100) and calculate the average runtime and standard deviation?
-> * How many threads are running?
-> * Can you explain the differences in the code between this file and those of previous exercises b) and c)? In particular:
->   * What runs in parallel? What not?
->   * Which variables are used where?
+>Now that the `image` is non-persistent, no changes will be saved when you shut down a VM using it. If you require so at some point, you will have to make it persistent first!
 
+### e) Multicore version
 
-### e) Running the OpenMP optimised alternative version
+Because the program is ready for MPI, you can use `mpirun` to use multiple cores. 
 
-* The file **`gridpi-mp-reduction.c`** uses another approach to optimise on `gridpi-mp-simple.c`
-* Have a look at the differences in the code.
-* Compile the `gridpi-mp-reduction.c` program:
+**Exercse e1:** Try it now with 2 cores, like this:
 
-```sh
-gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridpi-mp-reduction
-```
+* Start a new VM out of the **mpi_wave** `template`. 
+* SSH into that VM. Remember to use the `-X` parameter for the `ssh` program (and before the `ubuntu` user name) so that you can visualise the .gif. Like: `ssh -X ubuntu@145.100...`. 
+* Go to the `waveeq` directory: `cd waveeq`
 
-* Run a few times
+You can now run the program with 2 processes like:
 
 ```sh
-./gridpi-mp-reduction
+mpirun -n 2 ./wave4
 ```
 
 > **_Food for brain e1:_**
 >
-> * Can you make a batch of several runs (e.g.: 100) and calculate the average runtime and standard deviation?
-> * How many threads are running?
-> * Can you explain the differences in the code between this file and those of previous exercises b) and c)? In particular:
->   * What runs in parallel? What not?
->   * Which variables are used where?
+> * Can you make a batch of several runs (e.g.: 20) and calculate the average runtime and standard deviation?
+> * How many processes are running? (hint: use the `top` command on a different terminal)
+> * Do you see any significant time improvement as compared to running it with one process? Can you explain the improvement (or lack thereof)?
 
-### f) Running the OpenMP optimised alternative version
+**Exercise e2:** You can try to run now the program with more processes. For example, with 4:
 
-* Replace your VM with one that has more cores (hint: make a new `template`). 
-* Run some batches of each of the exercises b), c) and d) again. 
+```sh
+mpirun -n 4 ./wave4
+```
 
 > **_Food for brain e2:_**
 >
->How do times with more cores compare to those before? <br/> (hint: make a table where each row is each exercise, one column is the average time and deviation you measured before and the second column is what you measured now)
-> * Play around with the parameters in the source files (e.g. POINTS_ON_AXIS) <br/> (hint: add an extra column to the table for each parameter you change)
-> * Does the performance scale for all of the implementations? Do you see any number where it ceases to make sense to scale? Can you explain?
-> * Can you draw some curves (graphs) with the measurements you have gathered? How do they compare?
+> * Can you make a batch of several runs (e.g.: 20) and calculate the average runtime and standard deviation?
+> * How many processes are running? (hint: use the `top` command on a different terminal)
+> * Do you see any significant time improvement as compared to the previous runs? Can you explain the improvement (or lack thereof)?
+
+**Exercise e3:** Try now running the program with a couple more configurations, like 6 processors or 8. Any improvement in time?
+
+### f) Scaling out to multiple VMs 
+
+---
 
 > **NOTE:**
 > Do not forget to shutdown your VM when you are done with your performance tests.
