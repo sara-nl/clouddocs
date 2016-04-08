@@ -122,19 +122,27 @@ Then you can use any browser to view the animated gif, or install program `gifvi
 >
 > * Can you make a batch of several runs (e.g.: 20) and calculate the average runtime and standard deviation?
 
-d) Shut the VM down and prepare for multi-VM
+### d) Prepare for multi-VM
 
-We made the `image` persistent so that when shutting the VM down, changes would be saved and kept for the next run. But changes are only saved when you actually shut the VM down gracefully. Do so now **from the UI**, by shutting the VM down just as you learnt on [Part A](partA).
+We will want to show how to **scale out** later, and that will involve multiple VMs, as explained during the presentation. In order for multiple VMs to be able to run out of the same `image`, this must be non-persistent (as explained in [Part B](partB)). 
 
-* Refesh the list of VMs (remember, the _<i class="fa fa-refresh"></i>_ icon) while you see your VM go through the different states: SHUTDOWN, EPILOG..., until it disappears.
+* Let's prepare passwordless ssh among these VMs. For that, we will create a new SSH key-pair for user _ubuntu_ in these VMs, and add the public key to the list of authorised keys. Like this:
 
-We will want to show how to **scale out** later, and that will involve multiple VMs, as explained during the presentation. In order for multiple VMs to be able to run out of the same `image`, this must be non-persistent (as explained in [Part B](partB)). Let's do that now:
+```sh
+ssh-keygen -t rsa -f /home/ubuntu/.ssh/id_rsa
+cat .ssh/id_rsa.pub >> .ssh/authorized_keys
+```
 
-* Go to the _Images_ tab, open the extended information for the **mpi_wave** `image` and switch the value for field _Persistent_ to **no**.
+Previously we made the `image` persistent so that when shutting the VM down, changes would be saved and kept for the next run. But changes are only saved when you actually shut the VM down gracefully. 
+
+* Let's shut down the VM now **from the UI**, just as you learnt on [Part A](partA) (remember, the red dust-bin button).
+  * Refesh the list of VMs (remember, the _<i class="fa fa-refresh"></i>_ icon) while you see your VM go through the different states: SHUTDOWN, EPILOG..., until it disappears.
 
 >**IMPORTANT**
 >
 >Now that the `image` is non-persistent, no changes will be saved when you shut down a VM using it. If you require so at some point, you will have to make it persistent first!
+
+* Go to the _Images_ tab, open the extended information for the **mpi_wave** `image` and switch the value for field _Persistent_ to **no**.
 
 ### e) Multicore version
 
@@ -154,6 +162,7 @@ mpirun -n 2 ./wave4
 
 > **_Food for brain e1:_**
 >
+> * Is the output image from this multi-process the same as the single-core one?
 > * Can you make a batch of several runs (e.g.: 20) and calculate the average runtime and standard deviation?
 > * How many processes are running? (hint: use the `top` command on a different terminal)
 > * Do you see any significant time improvement as compared to running it with one process? Can you explain the improvement (or lack thereof)?
@@ -166,6 +175,7 @@ mpirun -n 4 ./wave4
 
 > **_Food for brain e2:_**
 >
+> * Is the output image from this multi-process the same as that from previous runs?
 > * Can you make a batch of several runs (e.g.: 20) and calculate the average runtime and standard deviation?
 > * How many processes are running? (hint: use the `top` command on a different terminal)
 > * Do you see any significant time improvement as compared to the previous runs? Can you explain the improvement (or lack thereof)?
