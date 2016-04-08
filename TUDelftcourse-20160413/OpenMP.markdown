@@ -50,7 +50,7 @@ make -v
 * Download the [code file](code/gridpi-mp.tar) to your VM and uncompress the file:
 
 ```sh
-wget https://doc.hpccloud.surfsara.nl/TUDelftcourse-2016-04-13/code/gridpi-mp.tar 
+wget https://doc.hpccloud.surfsara.nl/TUDelftcourse-20160413/code/gridpi-mp.tar 
 tar -xvf gridpi-mp.tar 
 ```
 
