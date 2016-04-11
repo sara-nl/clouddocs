@@ -12,7 +12,7 @@ layout: default
 
 This is part A of the Tutorial [TUDelft course 2016-04-13](.).
 
-Here are your first steps:
+This tutorial will touch the following topics:
 
 1. [Access the user interface](#access-the-user-interface)
 2. [Add your public SSH key](#add-your-public-ssh-key)
@@ -20,7 +20,7 @@ Here are your first steps:
 
 ### 1. Access the User Interface
 
-The UI (short for User Interface) is the web site that allows you to manage your _Virtual Machines_ (or _VM_ s) on the HPC Cloud. Let's log in.
+The UI (User Interface) is the web site that allows you to manage your _Virtual Machines_ (or _VM_ s) on the HPC Cloud.
 
 #### Log in to the UI
 
@@ -31,7 +31,7 @@ The UI (short for User Interface) is the web site that allows you to manage your
 
 #### Change your password
 
-Let's change the initial password now.
+Once you login to the UI, it is a best practice to change the initial password.
 
 * Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen.
 * Click it, select *<i class="fa fa-cog"></i> Settings* and then use the _Update password_ button.
@@ -48,7 +48,7 @@ From now on you can use your new password to log in to the [UI](https://ui.hpccl
 
 ### 2. Add your public SSH key
 
-To complete the setup for your HPC Cloud account, you need to **add an SSH public key to your profile**. This is a one-time task.
+To complete the setup of your HPC Cloud account, you need to **add an SSH public key to your profile**. This is a one-time task.
 
 * First, read about SSH and public keys on the [private/public keys](/SSHkey) page.<br />
 If you are already familiar with SSH public keys, you can skip reading this page.
@@ -58,7 +58,7 @@ If you are already familiar with SSH public keys, you can skip reading this page
 Next, you will copy the public SSH key (`id_rsa.pub`) to the UI, but you will keep the matching private key (`id_rsa`) safe in your laptop.
 
 * Copy the content of your **public** SSH key to the clipboard (for example, by doing `cat ~/.ssh/id_rsa.pub`, then selecting and copying all of that text).
-* Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *<i class="fa fa-cog"></i> Settings* from the *buddy* icon  <i class="fa fa-user"></i>. 
+* Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *<i class="fa fa-cog"></i> Settings* from the *buddy* icon  <i class="fa fa-user"></i>.
 * Locate the section _Public SSH Key_ (if needed, click the *<i class="fa fa-info-circle"></i> Info* icon) and click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
 * Paste the content of your public SSH key file into the text box.
 * There is no _Save_ button; click outside the text box to complete your action (e.g.: on the words "Public SSH Key").
@@ -79,7 +79,7 @@ Let's run your first VM on the HPC Cloud.
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
 * Choose the *<i class="fa fa-truck"></i> AppMarket* tab on the left menu of the screen and then *Appliances*.
-* Select the `appliance` **Ubuntu 14.04 Desktop** by clicking on the tick-box next to it. 
+* Select the `appliance` **Ubuntu 14.04 Desktop** by clicking on the tick-box next to it.
 * Click on the _Import_ button at the top-right corner of the screen.
 * A dialogue will pop up, asking you for a few details. Edit as follows:
   * Select the Datastore for the images: **104: local_images_ssd**.
@@ -216,7 +216,7 @@ This section is meant as extra questions that we thought would be nice for you t
 
 
 ### Next: part B
-Now that you completed part A of the Tutorial [TUDelft course 2016-04-13](.). Please continue with Tutorial [Part B](partB). 
+Now that you completed part A of the Tutorial [TUDelft course 2016-04-13](.). Please continue with Tutorial [Part B](partB).
 
 >**NOTE:**
 >

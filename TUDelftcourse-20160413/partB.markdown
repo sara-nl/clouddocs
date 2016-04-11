@@ -61,7 +61,7 @@ In this section you will work with **persistent** images. You will go through th
 
 The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your Virtual Machines (VMs) the form that you need them to have. In this section, you will start a _four-core_ VM, using the exact same image, the _Cursus Image_. To scale-up your VM to use multiple cores you will be:
 
-* Editting your `template`.
+* Editing your `template`.
 * Re-instantiating a VM from the modified `template`.
 
 #### Edit the template
