@@ -27,14 +27,10 @@ The user interface and cloud software relies on [OpenNebula 4](http://opennebula
 This particular course aims to introduce the workshop participants to the HPC Cloud by providing a set of lectures and hands-on examples to run on the real **`Oort`** infrastructure.
 Here is a summary of the course outline:
 
-**Date**: 13th April 2016  
-**Location**: TUDelft  
-
 >**Agenda:**
 >
->When : 13th April 2016
->Where: TUDelft, [Faculty Civil Engineering & Geosciences](http://www.citg.tudelft.nl/en/)
-
+>13th April 2016, TUDelft, [Faculty Civil Engineering & Geosciences](http://www.citg.tudelft.nl/en/)
+>
 > * 09:30 Welcome & coffee  
 > * 09:35 Presentation: HPC Cloud at SURFsara (Nuno Ferreira)
 > * 10:00 Hands-on: Parts A & B
