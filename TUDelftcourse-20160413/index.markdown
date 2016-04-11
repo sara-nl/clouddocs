@@ -30,7 +30,8 @@ Here is a summary of the course outline:
 **Date**: 13th April 2016  
 **Location**: TUDelft  
 
->** Agenda
+>**Agenda:**
+> 
 >* 09:30 Welcome & coffee  
 >* 09:35 Presentation: HPC Cloud at SURFsara (Nuno Ferreira)
 >* 10:00 Hands-on: Parts A & B
