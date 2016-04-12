@@ -38,7 +38,7 @@ To check use `ls`:
 ls -l  ~/.ssh/
 ```
 
-If you see the following files in your output, you already have a key available and can skip to section _"Add the key to the local ssh-agent"_
+If you see the following files in your output, you already have a key available and can skip to section [Add the key to the local ssh-agent](#add-the-key-to-the-local-ssh-agent)
 
 ```
 total 72
@@ -99,7 +99,7 @@ The key s randomart image is:
 
 ## Using `ssh-agent`
 
-SSH-agent is a service on your laptop to remember your ssh passphrase during your local session (thai is, until you log out from your laptop).
+SSH-agent is a service on your laptop to remember your ssh passphrase during your local session (that is, until you log out from your laptop).
 This way, you do not have to type in that loooong passphrase every time you unlock your private key.
 
 ### Add the key to the local ssh-agent
