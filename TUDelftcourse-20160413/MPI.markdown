@@ -32,18 +32,18 @@ We provide you with an implementation of that simulation using `MPI`. You will b
 
 We will be creating a 2-core VM for this exercise.
 
-* On the UI, import an Ubuntu `appliance` from the AppMarket:
-  * On the _appliances_ tab (under _<i class="fa fa-truck"></i> AppMarket_), import another copy of the **Ubuntu Desktop** `appliance`. Give the `image` and `template` the name: **mpi_wave**
+* On the UI, import a new Ubuntu `appliance` from the AppMarket:
+  * On the _appliances_ tab (under _<i class="fa fa-truck"></i> AppMarket_), import another copy of the **Ubuntu Desktop** `appliance`. Make sure you select the proper datastore for your new OS image (**125:local_images_surfcursus**). Give the `image` and `template` the name: **mpi_wave**
 
 * Edit the `image` to make it **persistent**.
 
 * Edit the `template` to make it a 2-core one:
   * On the _Templates_ tab (under _<i class="fa fa-cloud"></i> AppMarket_), locate the **mpi_wave** `template` and click anywhere on its row (except the checkbox) to show its extended information. Then click the _Update_ button.
-  * Edit the _<i class="fa fa-laptop"></i> General_ tab: type in a meaningful Name e.g. **MPI wave**, type in **2 CPUs** and **2 VCPUs**, type in **4GB Memory** 
-  * Edit the _<i class="fa fa-tasks"></i> Storage_ tab: for the _Disk 0_, choose the **mpi_wave** (from the table on the right of the screen) 
+  * Edit the _<i class="fa fa-laptop"></i> General_ tab: type in **2 CPUs** and **2 VCPUs**, type in **4GB Memory** 
+  * Check the _<i class="fa fa-tasks"></i> Storage_ tab: the _Disk 0_, must have the **mpi_wave** (from the table on the right of the screen) selected
   * Edit the _<i class="fa fa-globe"></i> Network_ tab: 
-    * for the _NIC 0_, choose the _Internet network_
-    * add a second `nic`; for this second `nic`, _NIC 1_, choose the _surfcursus.int_ network
+    * for the _NIC 0_, the _Internet network_ is selected
+    * add a second `nic` (*** Add another interface**); for this second `nic`, _NIC 1_, choose the _surfcursus.int_ network (from the table on the right of the screen)
   * Edit the _<i class="fa fa-exchange"></i> Input/Output_ tab: click on the _VNC_ radiobutton
   * Finally, click on the green *Update* button at the top of the screen
 
