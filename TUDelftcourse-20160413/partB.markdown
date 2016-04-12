@@ -25,7 +25,7 @@ This is part B of the Tutorial [TUDelft course 2016-04-13](.).
 
 ### 1. Persistence
 
-`Images` can be **persistent** or **non-persistent**. We say they are **persistent** when the `persistent` box is ticked on the UI and **non-persistent** when the `persistent` box is not ticked.
+`Images` can be **persistent** or **non-persistent** and you can change this mode at will.
 
 * What does **persistent** mean?
   *  Changes by the VM are copied back to the original `image` (upon normal VM shutdown)
