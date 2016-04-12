@@ -172,11 +172,6 @@ sudo chown ubuntu:ubuntu -R /data
 > Try to copy a file from your laptop to `/data`, e.g. with `scp myfile ubuntu@145.100.58.XYZ:/data`. Then log in to the VM and inspect the changes.
 
 
->**Note:**
->
->  Play around, make your checks and shut down all the VMs when you are done. Your running VMs are consuming quota whether they are doing something useful or are idle.
-
-
 ### <a name="Bonus"></a> Bonus food for brain
 
 This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
@@ -185,6 +180,10 @@ This section is meant as extra questions that we thought would be nice for you t
 
   * Can you think of (and sketch) the steps that you would need to follow to create a VM running your favourite operating system?
   * Can you find three articles in the HPC Cloud Documentation that show how to install different operating systems from scratch?
+
+>**Note:**
+>
+>  Play around, make your checks and shut down all the VMs when you are done. Your running VMs are consuming quota whether they are doing something useful or are idle.
 
 
 ### Next: Extras
