@@ -111,7 +111,7 @@ Let's create a new `image`.
   * Check the **Persistent** checkbox.
   * On the _Image location:_ group, choose radio button _Empty datablock_.
   * Give it a _Size_ in MB: **2000** (is 2GB).
-  * Keep _FS Type_: raw.
+  * Leave the _FS Type_ empty.
 * Click the green button *Create* on the form, to submit it.
 
 >**NOTE:**
@@ -138,13 +138,7 @@ Let's start using the new disk.
 sudo fdisk -l
 ```
 
-* You need to format the drive now. To format it with the XFS file system install `xfsprogs`:
-
-```sh
-sudo apt-get install xfsprogs
-```
-
-* Create the directory where you will mount the Ceph datablock:
+* Create the directory where you will mount the Ceph datablock and format the drive (`xfsprogs` is installed on the image):
 
 ```sh
 sudo mkdir /data  
