@@ -154,15 +154,16 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 > **_Food for brain e2:_**
 >
 > Replace your VM with one that has more cores (hint: make a new `template` or update the current). Then run some batches of each of the exercises b), c), d) and e) again. 
->* How do times with more cores compare to those before? 
->* Does the performance scale for all of the implementations? Do you see any number where it ceases to make sense to scale? Can you explain?
+>
+> * How do times with more cores compare to those before? 
+> * Does the performance scale for all of the implementations? Do you see any number where it ceases to make sense to scale? Can you explain?
 
 
 ### <a name="Bonus"></a> Bonus food for brain
 
 This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
 
-**Bonus1:** Make a batch of several runs (e.g.: 100) and calculate the average runtime and standard deviation? What do you observe? <br/> (hint: make a table where each row is each exercise (b), c), d), e)), one column is the average time and one the deviation you measured before and the second column is what you measured now).    
+**Bonus1:** Make a batch of several runs (e.g.: 100) per exercise (b), c), d), e)) and calculate the *average runtime* and *standard deviation*. What do you observe? <br/> (hint: make a table where each row is each exercise, one column is the average time and one is the deviation you measured).    
 **Bonus2:** Play around with the parameters in the source files (e.g. POINTS_ON_AXIS) <br/> (hint: add an extra column to the table for each parameter you change). Any insight?    
 **Bonus3:** Can you draw some curves (graphs) with the measurements you have gathered? How do they compare?  
  
