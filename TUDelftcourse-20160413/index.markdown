@@ -31,8 +31,8 @@ Here is a summary of the course outline:
 >13th April 2016, TUDelft, [Faculty Civil Engineering & Geosciences](http://www.citg.tudelft.nl/en/)
 >
 > * 09:30 Welcome & coffee  
-> * 09:35 Presentation: HPC Cloud at SURFsara (Nuno Ferreira)
-> * 10:00 Hands-on: Parts A & B
+> * 09:35 Presentation and Demo: HPC Cloud at SURFsara (Natalie Danezi)
+> * 10:15 Hands-on: Parts A & B
 > * 12:00 Lunch   
 > * 13:00 Presentation: Cloudifying - parallelism & API (Ander Astudillo)
 > * 13:45 Hands-on: Extras  
