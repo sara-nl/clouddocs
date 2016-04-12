@@ -78,7 +78,7 @@ gcc -std=c99 -Wall -Werror -pedantic gridpi-serial.c -o gridpi-serial
 
 > **_Food for brain b1:_**
 >
-> * Can you make a batch of several runs (e.g.: 100) and calculate the average runtime and standard deviation?
+> * Do you see significant diffirences between *real* and *user* time? Can you explain?
 
 
 ### c) Simple OpenMP version
@@ -99,7 +99,6 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-simple.c -lm -o gridpi-m
 
 > **_Food for brain c1:_**
 >
-> * Can you make a batch of several runs (e.g.: 100) and calculate the average runtime and standard deviation?
 > * How many threads are running?
 > * Can you explain the differences in the code between this file and that of the previous exercise? In particular:
 >   * What runs in parallel? What not?
@@ -123,7 +122,6 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-alt.c -lm -o gridpi-mp-a
 
 > **_Food for brain d1:_**
 >
-> * Can you make a batch of several runs (e.g.: 100) and calculate the average runtime and standard deviation?
 > * How many threads are running?
 > * Can you explain the differences in the code between this file and those of previous exercises b) and c)? In particular:
 >   * What runs in parallel? What not?
@@ -148,7 +146,6 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 
 > **_Food for brain e1:_**
 >
-> * Can you make a batch of several runs (e.g.: 100) and calculate the average runtime and standard deviation?
 > * How many threads are running?
 > * Can you explain the differences in the code between this file and those of previous exercises b) and c)? In particular:
 >   * What runs in parallel? What not?
@@ -165,6 +162,13 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 > * Play around with the parameters in the source files (e.g. POINTS_ON_AXIS) <br/> (hint: add an extra column to the table for each parameter you change)
 > * Does the performance scale for all of the implementations? Do you see any number where it ceases to make sense to scale? Can you explain?
 > * Can you draw some curves (graphs) with the measurements you have gathered? How do they compare?
+
+### <a name="Bonus"></a> Bonus food for brain
+
+This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
+
+**Bonus1:** Can you make a batch of several runs (e.g.: 100) and calculate the average runtime and standard deviation?
+ 
 
 > **NOTE:**
 > Do not forget to shutdown your VM when you are done with your performance tests.
