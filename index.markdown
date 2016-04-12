@@ -75,6 +75,7 @@ layout: default
 * [Getting started with the XML-RPC API](xmlrpc-start)
 
 ## Tutorials
+* [TUDelft workshop 2016-04-13](TUDelftcourse-20160413/index)
 * [HPC Cloud workshop 2016-01-25](UvAworkshop-2016-01-25/UvAworkshop-2016-01-25) (part of the [UvA HPC and Big Data course](http://hpc.uva.nl))
 * [UNESCO-IHE workshop - 11 Dec 2015](wshop-uihe-2015-12-11)
 * [Surfcursus - 15 Oct 2015](surfcursus-2015-Oct-15)
