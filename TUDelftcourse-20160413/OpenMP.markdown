@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is an exercise from the [Extras part](extras) part of the Tutorial [TUDelft course 2016-04-13](.).
+This is an exercise from the [Extras](extras) part of the Tutorial [TUDelft course 2016-04-13](.).
 
 In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **shared-memory** system. For this puspose, we will be running a Monte Carlo simulation to calculate an approximation of the value of _&pi;_. 
 
@@ -42,10 +42,9 @@ This exercise will let you use OpenMP, first with a serial implementation within
 
 ```sh
 sudo apt-get install build-essential 
-# Optionally verify gcc and GNU make installation and version
-gcc -v  
-make -v 
 ```
+
+> Optionally verify gcc and GNU make installation and version with `gcc -v` and  `make -v` respectively 
 
 * Download the [code file](code/gridpi-mp.tar) to your VM and uncompress the file:
 
