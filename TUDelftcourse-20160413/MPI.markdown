@@ -43,11 +43,17 @@ We will be creating a 2-core VM for this exercise.
   * Check the _<i class="fa fa-tasks"></i> Storage_ tab: the _Disk 0_ must have the **mpi_wave** image selected (from the table on the right of the screen) 
   * Edit the _<i class="fa fa-globe"></i> Network_ tab: 
     * for the _NIC 0_, the _Internet network_ is selected
-    * add a second `nic` (**+ Add another interface**); for this second `nic`, _NIC 1_, choose the _surfcursus.int_ network (from the table on the right of the screen)
+    * add a second `nic` (hit **+ Add another interface** button); for this second `nic`, _NIC 1_, choose the _surfcursus.int_ network (from the table on the right of the screen)
   * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: the _VNC_ radiobutton must be selected
   * Finally, click on the green *Update* button at the top of the screen
 
 * Launch a VM from that `template`
+
+* Login to the VM with '-X' parameter to enable visualisation:
+
+```sh
+ssh -X ubuntu@145.100...`
+```
 
 * Install the gcc compiler and gnu make:
 
@@ -105,7 +111,7 @@ We invite you to explore the code to get familiar with it. If you change any of 
 You can run the program in a single process with the following command:
 
 ```sh
-./wave4
+time ./wave4
 ```
 
 You can use the provided program `h5anim` to read from the output file of the `wave4` program (remember, called `wave4.h5`) and create an animated `wave4-anim.gif`. You do it so:
@@ -114,11 +120,11 @@ You can use the provided program `h5anim` to read from the output file of the `w
 ./h5anim wave4.h5 u
 ```
 
-Then you can use any browser to view the animated gif, or install program `gifview` (with `sudo apt-get install gifsicle`) and see it so: `gifview --animate wave4-anim.gif`.
+Then you can use any browser to view the animated gif (e.g. with the command `firefox wave4-anim.gif`), or install the program `gifview` (with `sudo apt-get install gifsicle`) and see it so: `gifview --animate wave4-anim.gif`.
 
 > **_Food for brain c1:_**
 >
-> * Can you make a batch of several runs (e.g.: 20) and calculate the average runtime and standard deviation?
+> * Can you make a batch of several runs and observe the performance?
 
 ### d) Prepare for multi-VM
 
@@ -127,8 +133,9 @@ We will want to show how to **scale out** later, and that will involve multiple 
 * Let's prepare passwordless ssh among these VMs. For that, we will create a new SSH key-pair for user _ubuntu_ in these VMs, and add the public key to the list of authorised keys. Like this:
 
 ```sh
-ssh-keygen -t rsa -f /home/ubuntu/.ssh/id_rsa
-cat .ssh/id_rsa.pub >> .ssh/authorized_keys
+ssh-keygen -t rsa -f /home/ubuntu/.ssh/id_rsa  
+#Enter passphrase (empty for no passphrase): leave this empty (hit enter twice)
+cat /home/ubuntu/.ssh/id_rsa.pub >> /home/ubuntu/.ssh/authorized_keys
 ```
 
 Previously we made the `image` persistent so that when shutting the VM down, changes would be saved and kept for the next run. But changes are only saved when you actually shut the VM down gracefully. 
@@ -136,11 +143,11 @@ Previously we made the `image` persistent so that when shutting the VM down, cha
 * Let's shut down the VM now **from the UI**, just as you learnt on [Part A](partA) (remember, the red dust-bin button).
   * Refesh the list of VMs (remember, the _<i class="fa fa-refresh"></i>_ icon) while you see your VM go through the different states: SHUTDOWN, EPILOG..., until it disappears.
 
+* Go to the _Images_ tab, open the extended information for the **mpi_wave** `image` and switch the value for field _Persistent_ to **no**.
+
 >**IMPORTANT**
 >
 >Now that the `image` is non-persistent, no changes will be saved when you shut down a VM using it. If you require so at some point, you will have to make it persistent first!
-
-* Go to the _Images_ tab, open the extended information for the **mpi_wave** `image` and switch the value for field _Persistent_ to **no**.
 
 ### e) Multicore version
 
@@ -281,15 +288,17 @@ mpirun -np 4 -H <master_INTERNAL_ip>,<worker_INTERNAL_ip> /home/ubuntu/waveeq/wa
 
 This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
 
-**Bonus 1:** What do you need to do to make more workers available? Is our image enough? Go ahead: try to have 2 more workers of 1 core each. Then run the program among them. Does the run time reduce? And if you have 2 workers, 2 cores each? And 3 workers, 2 cores each? And... Is it worth parallelising a lot? Where is the optimum?
+**Bonus 1:** Can you make a batch of several runs (e.g.: 20) and calculate the average runtime and standard deviation?
 
-**Bonus 2:** It can become a problem when you have to copy and install your program and data "everywhere" in the same place. This can be alleviated by sharing your `/home` folder via NFS. Can you set that up?
+**Bonus 2:** What do you need to do to make more workers available? Is our image enough? Go ahead: try to have 2 more workers of 1 core each. Then run the program among them. Does the run time reduce? And if you have 2 workers, 2 cores each? And 3 workers, 2 cores each? And... Is it worth parallelising a lot? Where is the optimum?
 
-**Bonus 3:** Having to dowload, compile yourself the source code of the tool you need, and install it, is a very common workflow. Do you have a tool in this situation? Can it benefit from MPI? Please, let us know. Can you successfully get it running? Can you parallelise it?
+**Bonus 3:** It can become a problem when you have to copy and install your program and data "everywhere" in the same place. This can be alleviated by sharing your `/home` folder via NFS. Can you set that up?
 
-**Bonus 4:** Using SSH might be a way to go along, but when you have multiple things to run at a time, ensuring users' access, passwordless permissions... There exist cluster-building tools based on job queues, like Sun (now Oracle) Grid Engine, Torque, etc. Can you find out more? Can you set it up?
+**Bonus 4:** Having to dowload, compile yourself the source code of the tool you need, and install it, is a very common workflow. Do you have a tool in this situation? Can it benefit from MPI? Please, let us know. Can you successfully get it running? Can you parallelise it?
 
-**Bonus 7:** MPI is an implementation of a technique for parallelising computations. Another common technique is _shared memory_. One implementation for that technique is OpenMP. You can read more about it at their website: http://openmp.org/wp/. 
+**Bonus 5:** Using SSH might be a way to go along, but when you have multiple things to run at a time, ensuring users' access, passwordless permissions... There exist cluster-building tools based on job queues, like Sun (now Oracle) Grid Engine, Torque, etc. Can you find out more? Can you set it up?
+
+**Bonus 6:** MPI is an implementation of a technique for parallelising computations. Another common technique is _shared memory_. One implementation for that technique is OpenMP. You can read more about it at their website: http://openmp.org/wp/. 
   * Our program can also benefit from OpenMP. Does it make any sense to mix MPI and OpenMP? Are OpenMP-enabled MPI processes the same as MPI-enabled OpenMP programs?
   * Can you make the program benefit from OpenMP at the same time as MPI?
 
