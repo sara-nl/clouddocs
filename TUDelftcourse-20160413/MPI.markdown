@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is an exercise from the (extras) part of the Tutorial [TUDelft course 2016-04-13](.).
+This is an exercise from the [Extras](extras) part of the Tutorial [TUDelft course 2016-04-13](.).
 
 In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **message-passing** system. For this puspose, we will be running wave simulations using MPI. We will approximate solutions for the wave differential equation in 2D, by using numerical methods. 
 
@@ -279,7 +279,7 @@ mpirun -np 4 -H <master_INTERNAL_ip>,<worker_INTERNAL_ip> /home/ubuntu/waveeq/wa
 > * How many processes are running? (hint: use the `top` command on different terminals)
 > * Do you see any significant time improvement as compared to the previous runs? Can you explain the improvement (or lack thereof)?
 
-### d) BONUS _food for brain_
+### BONUS _food for brain_
 
 This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
 
