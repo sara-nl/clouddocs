@@ -79,7 +79,7 @@ Let's run your first VM on the HPC Cloud.
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
 * Choose the *<i class="fa fa-truck"></i> AppMarket* tab on the left menu of the screen and then *Appliances*.
-* Select the `appliance` **Ubuntu 14.04 Desktop** by clicking on the tick-box next to it.
+* Select the `appliance` **Ubuntu 14.04 Desktop CI** by clicking on the tick-box next to it.
 * Click on the _Import_ button at the top-right corner of the screen.
 * A dialogue will pop up, asking you for a few details. Edit as follows:
   * Select the Datastore for the images: **104: local_images_ssd**.
@@ -102,12 +102,13 @@ When you imported the `appliance` from the AppMarket, it created an `image` and 
 Edit the imported `template` with these steps:
 
 * Go to the _Templates_ tab under _<i class="fa fa-cloud"></i> Virtual Resources_ on the left menu.
-* Find the `template` you just imported, and click on it (anywhere **except** the tick-box).
+* Find the `template` you just imported (*Course Template*), and click on it (anywhere **except** the tick-box).
 * Click on the _Update_ button on the top-right of the screen to start editing the template.
-* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...). Leave the default values, **except** for the following:  
-  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM. Select the row **Name: internet** (click once on it). You can see the feedback below:  
+* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...) and leave the default values. Check for example if your VM will have internet access: 
+  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM. 
+  * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`.   
 ![youselectednetwork](/images/youselectednetwork.png)
-* Click the green button _Update_ at the top, to save your changes.
+* If you made any changes, click the green button _Update_ at the top, to save your changes.
 
 #### Start the VM
 
@@ -119,7 +120,7 @@ A `template` is just a description of the virtual machine that we want to build.
 ![select_template](/images/select_template2.png)
 * Give your virtual machine a name: **My First VM**. This name is also used as the VM's host name.
 * Number of instances: **1**.
-* Click on the _Create_ button at the top of the screen.
+* Click on the green _Create_ button at the top of the screen.
 * Refresh the VM status by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button.
 
 #### What happened?
