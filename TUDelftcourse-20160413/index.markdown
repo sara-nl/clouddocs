@@ -16,7 +16,6 @@ layout: default
   * [Part A](partA)
   * [Part B](partB)
   * [Extras](extras)
-* [Presentations](#presentations)
 
 ## <a name="general"></a>General Information
 
@@ -61,6 +60,3 @@ The hands-on tutorial has three parts. The exercises in part *A & B* will give y
   * [Part B](partB)
   * [Extras](extras)
 
-## <a name="presentations"></a> Presentations
-
->**Note:** To be added here.
