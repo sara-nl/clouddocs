@@ -222,6 +222,7 @@ cd
 wget https://github.com/sara-nl/clouddocs/raw/gh-pages/TUDelftcourse-20160413/code/makeme_master.sh
 chmod +x makeme_master.sh
 sudo ./makeme_master.sh
+exit
 ```
 
 > **_Food for brain f2:_**
@@ -239,22 +240,23 @@ Let's start by giving `root` a password on the worker node, so that we can use t
 ```sh
 sudo su -
 passwd
+exit
 ```
 
 * Now open the VNC console on the UI for the worker node and log in as root. 
 
 >**IMPORTANT!**
 >
->* Do **not** go any further until you are sure that you can log in as root in the worker node via the VNC console. In the Desktop version select "Other" and enter "root" as username and the password you have just set.
+>* Do **not** go any further until you are sure that you can log in as root in the worker node via the VNC console. In the Desktop version select "Other" and enter "root" as username and the password you have just set. Ignore the error in initial screen (hit OK).
 
-* Back in the SSH terminal you have for the worker, leave the root user shell to become _ubuntu_ again, and then run our configuration script to turn the VM into the worker. To do this, type the commands:
+* Back in the SSH terminal you have for the worker as _ubuntu_ user run our configuration script to turn the VM into our mpi cluster's worker. To do this, type the commands:
 
 ```sh
-exit
 cd
 wget https://github.com/sara-nl/clouddocs/raw/gh-pages/TUDelftcourse-20160413/code/makeme_worker.sh
 chmod +x makeme_worker.sh
 sudo ./makeme_worker.sh 1 XXX.YYY.ZZZ.TTT  #replace XXX.YYY.ZZZ.TTT with the INTERNAL IP address of the master
+# hit ENTER when prompted and wait a bit..
 ```
 
 > **_Food for brain f3:_**
@@ -266,8 +268,8 @@ sudo ./makeme_worker.sh 1 XXX.YYY.ZZZ.TTT  #replace XXX.YYY.ZZZ.TTT with the INT
 
 The `appliances` that we deliver on the AppMarket come with a firewall running on the operating system, called UFW. MPI needs to communicate through the network between master and worker. They are both running a firewall. To avoid problems and because this is just a test scenario, we will trust all traffic coming from our internal interfaces.
 
-* **On the master**, run the following commands: `sudo ufw allow in on eth1 && sudo service ufw restart`
-* **On the worker**, run the same commands: `sudo ufw allow in on eth1 && sudo service ufw restart`
+* **On the master** VM, run the following commands: `sudo ufw allow in on eth1 && sudo service ufw restart`
+* **On the worker** VM, run the same commands in a terminal in your VNC window: `sudo ufw allow in on eth1 && sudo service ufw restart` 
 
 #### Launching a run over multiple VMs
 
@@ -276,13 +278,12 @@ The `appliances` that we deliver on the AppMarket come with a firewall running o
 * **On the master**, make sure you are logged in as user _ubuntu_. Run our program with 4 processors over the 2 nodes (pay attention to the comma separating the master and the worker’s ip addresses):
 
 ```sh
-mpirun -np 4 -H <master_INTERNAL_ip>,<worker_INTERNAL_ip> /home/ubuntu/waveeq/wave4
+time mpirun -np 4 -H <master_INTERNAL_ip>,<worker_INTERNAL_ip> /home/ubuntu/waveeq/wave4
 ```
 
 > **_Food for brain f4:_**
 >
 > * Is the output image from this multi-process the same as that from previous runs?
-> * Can you make a batch of several runs (e.g.: 20) and calculate the average runtime and standard deviation?
 > * How many processes are running? (hint: use the `top` command on different terminals)
 > * Do you see any significant time improvement as compared to the previous runs? Can you explain the improvement (or lack thereof)?
 
@@ -301,8 +302,8 @@ This section is meant as extra questions that we thought would be nice for you t
 **Bonus 5:** Using SSH might be a way to go along, but when you have multiple things to run at a time, ensuring users' access, passwordless permissions... There exist cluster-building tools based on job queues, like Sun (now Oracle) Grid Engine, Torque, etc. Can you find out more? Can you set it up?
 
 **Bonus 6:** MPI is an implementation of a technique for parallelising computations. Another common technique is _shared memory_. One implementation for that technique is OpenMP. You can read more about it at their website: http://openmp.org/wp/. 
-  * Our program can also benefit from OpenMP. Does it make any sense to mix MPI and OpenMP? Are OpenMP-enabled MPI processes the same as MPI-enabled OpenMP programs?
-  * Can you make the program benefit from OpenMP at the same time as MPI?
+ * Our program can also benefit from OpenMP. Does it make any sense to mix MPI and OpenMP? Are OpenMP-enabled MPI processes the same as MPI-enabled OpenMP programs?
+ * Can you make the program benefit from OpenMP at the same time as MPI?
 
 ---
 ---
@@ -313,7 +314,7 @@ This section is meant as extra questions that we thought would be nice for you t
  If you want more of the advanced exercises on the HPC Cloud, see [Extras](extras).
 
 
-### Time measurement
+### Time measurement hints
 
 In order to help measuring times, we can give you the hints in this section.
 
