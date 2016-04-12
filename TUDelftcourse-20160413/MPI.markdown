@@ -134,7 +134,7 @@ We will want to show how to **scale out** later, and that will involve multiple 
 
 ```sh
 ssh-keygen -t rsa -f /home/ubuntu/.ssh/id_rsa  
-#Enter passphrase (empty for no passphrase): leave this empty (hit enter twice)
+#Enter passphrase (empty for no passphrase): <<<<leave this empty (hit enter twice)>>>>
 cat /home/ubuntu/.ssh/id_rsa.pub >> /home/ubuntu/.ssh/authorized_keys
 ```
 
@@ -153,29 +153,28 @@ Previously we made the `image` persistent so that when shutting the VM down, cha
 
 Because the program is ready for MPI, you can use `mpirun` to use multiple cores. 
 
-**Exercse e1:** Try it now with 2 cores, like this:
+**Exercse e1:** Try now the mpi run with 2 cores, like this:
 
-* Start a new VM out of the **mpi_wave** `template`. 
-* SSH into that VM. Remember to use the `-X` parameter for the `ssh` program (and before the `ubuntu` user name) so that you can visualise the .gif. Like: `ssh -X ubuntu@145.100...`. 
+* Start a new VM out of the **mpi_wave** `template` with name e.g.**mpi_wave_master**
+* Login into the "mpi_wave_master" VM. Remember to use the `-X` parameter for the `ssh` command
 * Go to the `waveeq` directory: `cd waveeq`
 
 You can now run the program with 2 processes like:
 
 ```sh
-mpirun -n 2 ./wave4
+time mpirun -n 2 ./wave4
 ```
 
 > **_Food for brain e1:_**
 >
 > * Is the output image from this multi-process the same as the single-core one?
-> * Can you make a batch of several runs (e.g.: 20) and calculate the average runtime and standard deviation?
 > * How many processes are running? (hint: use the `top` command on a different terminal)
 > * Do you see any significant time improvement as compared to running it with one process? Can you explain the improvement (or lack thereof)?
 
 **Exercise e2:** You can try to run now the program with more processes. For example, with 4:
 
 ```sh
-mpirun -n 4 ./wave4
+time mpirun -n 4 ./wave4
 ```
 
 > **_Food for brain e2:_**
@@ -191,7 +190,7 @@ mpirun -n 4 ./wave4
 
 MPI is able to communicate within processes that may physically by running on different (virtual) machines. We are going to make this happen now.
 
-There is a fair amount of configuration that needs to happen among all the machines involved in cooperating for running MPI jobs. We have prepared a couple of scripts that you can use for that
+There is a fair amount of configuration that needs to happen among all the machines involved in cooperating for running MPI jobs. We have prepared a couple of scripts that you can use for that.
 
 #### Master-workers concept
 
@@ -206,17 +205,17 @@ Also, usually the worker nodes are protected (inaccessible) from the outside wor
 #### Launch a 2-core worker VM
 **Exercise f1:** Launch another VM that will become a worker
 
-* On the UI, instantiate the **mpi_wave** template again.
+* On the UI, start another VM again out of the **mpi_wave** `template` with name e.g.**mpi_wave_worker**
 
 #### Configure master and worker VMs
 
 **Exercise f2:** Configure the **master** node
 
-* Make sure you have an SSH connection to the VM we have been playing with so far (so, not the one you just created). This will become the master from now on.
+* Make sure you have an SSH connection to the VM we have been playing with so far (so, not the one you just created). This will become the master of our mpi cluster from now on.
 
 * Write down the **internal** ip address of the master node.
 
-* Run our configuration script to turn the VM into the master:
+* Run our configuration script to turn the "mpi_wave_master" VM into the master:
 
 ```sh
 cd
@@ -233,26 +232,29 @@ sudo ./makeme_master.sh
 
 Let's start by giving `root` a password on the worker node, so that we can use the VNC console. 
 
-* ssh into the worker node and run commands (type the passwords when you are asked to): 
+* Login to the worker node "mpi_wave_worker" VM. Remember to use the `-X` parameter for the `ssh` command
+
+* Run the commands to give a root password (type the passwords when you are asked to): 
+
 ```sh
 sudo su -
 passwd
 ```
 
-* Now open the NoVNC console on the UI for the worker node and log in as root. 
+* Now open the VNC console on the UI for the worker node and log in as root. 
 
 >**IMPORTANT!**
 >
->* Do **not** go any further until you are sure that you can log in as root in the worker node via the NoVNC console.
+>* Do **not** go any further until you are sure that you can log in as root in the worker node via the VNC console. In the Desktop version select "Other" and enter "root" as username and the password you have just set.
 
-* Back in the SSH terminal you have for the worker, leave the root user shell to become _ubuntu_ again, and then run our configuration script to turn the VM into the worker (replacing XXX.YYY.ZZZ.TTT with the INTERNAL IP address of the master):
+* Back in the SSH terminal you have for the worker, leave the root user shell to become _ubuntu_ again, and then run our configuration script to turn the VM into the worker. To do this, type the commands:
 
 ```sh
 exit
 cd
 wget https://github.com/sara-nl/clouddocs/raw/gh-pages/TUDelftcourse-20160413/code/makeme_worker.sh
 chmod +x makeme_worker.sh
-sudo ./makeme_worker.sh 1 XXX.YYY.ZZZ.TTT
+sudo ./makeme_worker.sh 1 XXX.YYY.ZZZ.TTT  #replace XXX.YYY.ZZZ.TTT with the INTERNAL IP address of the master
 ```
 
 > **_Food for brain f3:_**
