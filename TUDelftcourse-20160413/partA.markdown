@@ -142,7 +142,7 @@ Let's summarise what you have seen so far. From the menu on the left side, click
 
 You can interact with your VM in several ways: command-line (e.g.: SSH), VNC (UI in your browser) or a remote desktop. We will use SSH in a terminal for the time being.
 
-The way to log in to your virtual machine is the SSH key pair that you [stored in your profile](#add-your-ssh-key) earlier.
+The way to log in to your virtual machine is the SSH key pair that you [stored in your profile](#add-your-public-ssh-key) earlier.
 
 **Commandline access - SSH**  
 
