@@ -256,7 +256,7 @@ cd
 wget https://github.com/sara-nl/clouddocs/raw/gh-pages/TUDelftcourse-20160413/code/makeme_worker.sh
 chmod +x makeme_worker.sh
 sudo ./makeme_worker.sh 1 XXX.YYY.ZZZ.TTT  #replace XXX.YYY.ZZZ.TTT with the INTERNAL IP address of the master
-# hit ENTER when prompted and wait a bit..
+#hit ENTER when prompted and wait a bit..
 ```
 
 > **_Food for brain f3:_**
@@ -302,8 +302,9 @@ This section is meant as extra questions that we thought would be nice for you t
 **Bonus 5:** Using SSH might be a way to go along, but when you have multiple things to run at a time, ensuring users' access, passwordless permissions... There exist cluster-building tools based on job queues, like Sun (now Oracle) Grid Engine, Torque, etc. Can you find out more? Can you set it up?
 
 **Bonus 6:** MPI is an implementation of a technique for parallelising computations. Another common technique is _shared memory_. One implementation for that technique is OpenMP. You can read more about it at their website: http://openmp.org/wp/. 
- * Our program can also benefit from OpenMP. Does it make any sense to mix MPI and OpenMP? Are OpenMP-enabled MPI processes the same as MPI-enabled OpenMP programs?
- * Can you make the program benefit from OpenMP at the same time as MPI?
+
+* Our program can also benefit from OpenMP. Does it make any sense to mix MPI and OpenMP? Are OpenMP-enabled MPI processes the same as MPI-enabled OpenMP programs?
+* Can you make the program benefit from OpenMP at the same time as MPI?
 
 ---
 ---
