@@ -209,7 +209,7 @@ Let's shut your first VM down. Anytime you expect your VM to be doing nothing us
 >
 > Your running VMs book resources exclusively (and hence, consuming quota from your group even though we haven't explicitly made you aware of it in the course material) whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**.
 
-### <a name="Bonus"></a> Bonus food for brain
+### BONUS _food for brain_
 
 This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
 
