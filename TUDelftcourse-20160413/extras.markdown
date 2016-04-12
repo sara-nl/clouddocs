@@ -14,7 +14,7 @@ These are the extras of the Tutorial [TUDelft course 2016-04-13](.).
 
 **You should have completed (and understood)** [Part A](partA) and [Part B](partB), before trying these extras.
 
-The exercises below can be done in any order and you can do none or more, depending on your enthusiasm and available time.
+The exercises below can be done in any order and you can do as far as you want, depending on your enthusiasm and available time.
 
 You will find several _Food for brain_ questions in each exercise that you might encounter when working with **Parallel programming** techniques. We advice that you perform many tests, observe the results (write down execution times, change parameters, make tables, draw graphs...), and think about your answers.
 
@@ -22,9 +22,10 @@ You will find several _Food for brain_ questions in each exercise that you might
 
 Link: [OpenMP: calculating _&pi;_](OpenMP)
   
-  Using a simple algorithm to calculate _&pi;_ as an example, you see the impact of **parallel programming** with OpenMP taking different approaches.
+  Using a simple algorithm to calculate _&pi;_ as an example, you see the impact of the **scale-up** model and parallel programming with OpenMP.
 
 ## MPI
 
-Link: [MPI: Wave equetion](MPI)
+Link: [MPI: Wave equation](MPI)
 
+  Using a numerical method to calculate wave propagation as an example, you see the impact of both **scale-up** and **scale-out** models and parallel programming with MPI.
