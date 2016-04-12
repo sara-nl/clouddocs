@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is an exercise from the (extras) part of the Tutorial [TUDelft course 2016-04-13](.).
+This is an exercise from the [Extras part](extras) part of the Tutorial [TUDelft course 2016-04-13](.).
 
 In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **shared-memory** system. For this puspose, we will be running a Monte Carlo simulation to calculate an approximation of the value of _&pi;_. 
 
