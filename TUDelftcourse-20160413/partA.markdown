@@ -82,7 +82,7 @@ Let's run your first VM on the HPC Cloud.
 * Select the `appliance` **Ubuntu 14.04 Desktop CI** by clicking on the tick-box next to it.
 * Click on the _Import_ button at the top-right corner of the screen.
 * A dialogue will pop up, asking you for a few details. Edit as follows:
-  * Select the Datastore for the images: **104: local_images_ssd**.
+  * Select the Datastore for the images: **104: local_images_surfcursus**. (drop-down menu)
   * Image Name: **Course Image**.
   * Template Name: **Course Template**.
 * Finally, click the blue *Import* button. This will start importing the `appliance` from the AppMarket. You can close this dialogue.
