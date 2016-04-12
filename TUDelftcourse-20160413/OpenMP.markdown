@@ -159,7 +159,7 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 > * Does the performance scale for all of the implementations? Do you see any number where it ceases to make sense to scale? Can you explain?
 
 
-### <a name="Bonus"></a> Bonus food for brain
+### BONUS _food for brain_
 
 This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
 
