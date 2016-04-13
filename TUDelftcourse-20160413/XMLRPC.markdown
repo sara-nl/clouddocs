@@ -28,7 +28,9 @@ This exercise should make you familiar with our general documentation pages.
 
 * Run the first example from that documentation page. Make sure you are able to see the API version number as a result.
 
-* Run the example from the presentation: see a list of your VMs.
+### c) Run a second example
+
+* Run the example from the presentation that shows a list of your VMs.
 
 > **_Food for brain:_**
 >
