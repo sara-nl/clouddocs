@@ -9,6 +9,7 @@ SURFsara provides pre-made _appliances_ to their HPC Cloud users. These applianc
 We provide a set of basic _appliances_ for CentOS and Ubuntu and here bellow you can find the configuration details. The aim is to provide you with a secure environment at boot time.
 
 1. Root account
+
     The root account is not accessible via SSH.
 
 2. Firewall
