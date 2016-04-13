@@ -51,7 +51,22 @@ For this tutorial you will need:
 * An SSH client.
   * Linux and Mac users: don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
   * Windows users: download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between the `-32-bit.exe` or the `-64-bit.exe`.
+* An X-window client.
+  * Linux and Mac users normally don't need to install anything as X11 is on board. However, the newest Mac OS releases might not have X11.app installed. In that case, install XQuarz from [here](http://xquartz.macosforge.org/landing/).
+  * Windows users: install Xming from [here](http://sourceforge.net/projects/xming/).
 
+> **NOTE: only for Windows users**
+>
+> For the course purposes you will need to start a graphical window in your laptop that is connected to your HPC Cloud machine. To make this work, you need to adjust the following setting:  
+>
+* Open GitBash (or git for windows).
+* In the terminal that appears, copy and paste the following commands: 
+>
+```sh
+# press enter to submit each command
+echo "export DISPLAY=localhost:0.0" >> $HOME/.bashrc` 
+source $HOME/.bashrc
+```
 
 ## <a name="hands-on"></a> Hands-on
 The hands-on tutorial has three parts. The exercises in part *A & B* will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood this, then continue to the *Extras* part with more `advanced` examples on the HPC Cloud.
