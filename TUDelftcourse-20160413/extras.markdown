@@ -29,3 +29,9 @@ Link: [OpenMP: calculating _&pi;_](OpenMP)
 Link: [MPI: Wave equation](MPI)
 
   Using a numerical method to calculate wave propagation as an example, you see the impact of both **scale-up** and **scale-out** models and parallel programming with MPI.
+  
+## XML-RPC
+
+Link: [XML-RPC](XMLRPC)
+  
+  Experiencing the automation API that OpenNebula provides, which can be used to find out a lot of information about your own environment, and to operate with VMs in a non-interactive way.
