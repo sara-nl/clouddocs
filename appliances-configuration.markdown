@@ -8,23 +8,28 @@ SURFsara provides pre-made _appliances_ to their HPC Cloud users. These applianc
 
 We provide a set of basic _appliances_ for CentOS and Ubuntu and here bellow you can find the configuration details. The aim is to provide you with a secure environment at boot time.
 
-1. Root account
+**1. Root account**
 
     The root account is not accessible via SSH.
 
-2. Firewall
+**2. Firewall**
+
     A firewall is active at boot time with all ports closed with exception of one for SSH access.
 
-3. SSH server
+**3. SSH server**
+
     An ssh server is installed and auto-starts upon boot time.
 
-4. Software updates
+**4. Software updates**
+
     The images are configured to auto-update the OS and packages.
 
-5. Intrusion prevention
+**5. Intrusion prevention**
+
     `fail2ban` is installed and will protect the image from brute-force break-in attempts via ssh / http(s) protocols. A jail ban of 15 min. is applied.
 
-6. Image template
+**6. Image template**
+
     The image template has basic settings to instantiate correctly a VM, namely:
 
     * acpi=yes,
