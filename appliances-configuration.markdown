@@ -42,7 +42,7 @@ The _AppMarket_ _appliances_ are endorsed by SURFsara HPC Cloud team and are kep
     - localtime = no
     - internet connection
 
->
+
 8. **Network connectivity**
 
     The images come with a default internet connection, and a static IP will be assigned to your VM. In case you need to have multiple VM's that need to communicate with each other, please update the template and add a second network with your internal range.
