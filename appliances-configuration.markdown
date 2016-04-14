@@ -18,7 +18,7 @@ The _AppMarket_ _appliances_ are endorsed by SURFsara HPC Cloud team and are kep
 
 3. **Firewall**
 
-    A firewall is active at boot time with all ports closed with exception of the port for SSH access. CentOS based images are configured with `iptables`, whereas Ubuntu firewall is configured with `ufw`.
+    A firewall is active at boot time with all ports closed with exception of the port for SSH access. CentOS based images are configured with [`iptables`](https://wiki.centos.org/HowTos/Network/IPTables), whereas Ubuntu firewall is configured with [`ufw`](https://wiki.ubuntu.com/UncomplicatedFirewall).
 
 4. **SSH server**
 
@@ -34,14 +34,13 @@ The _AppMarket_ _appliances_ are endorsed by SURFsara HPC Cloud team and are kep
 
 7. **Image template**
 
-    The image template has basic settings to instantiate correctly a VM, namely:
+    The image template has basic settings to instantiate and operate correctly a VM, namely:
 
     - acpi = yes
     - memory = 1GB
     - (v)CPU = 1
     - localtime = no
     - internet connection
-
 
 8. **Network connectivity**
 
