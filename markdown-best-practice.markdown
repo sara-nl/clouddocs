@@ -85,7 +85,7 @@ rm: .o: No such file or directory
 ---
 
 Have a look at the source and notice the blank line between `Expected output:` and the `>`.
-This seems to be the only way to have different editord and renderers create the same output.
+This seems to be the only way to have different editors and renderers to create the same output.
 
 ### Creating a new page
 You can create a new page, by creating a new markdown file. The file should have .markdown as extension, because else the 'Edit on GitHub' button will not function.
@@ -102,7 +102,7 @@ After these three lines, you can add regular markdown. You can link to the new f
 
 ### Testing the documentation with Jekyll and Docker
 
-Before commiting anything, you can first have a look at your changes using Jekyll. You can install Jekyll normally (see link to Jekyll website at the top of this page), or use docker for this. From the root of this repository, run:
+Before committing anything, you can first have a look at your changes using Jekyll. You can install Jekyll normally (see link to Jekyll website at the top of this page), or use docker for this. From the root of this repository, run:
 
 ```bash
 sudo docker run --detach --name=jekyll --label=jekyll --volume=$(pwd):/srv/jekyll -t jekyll/jekyll:pages jekyll s
