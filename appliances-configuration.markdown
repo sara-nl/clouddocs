@@ -18,7 +18,7 @@ The _AppMarket_ _appliances_ are endorsed by SURFsara HPC Cloud team and are kep
 
 3. **Firewall**
 
-    A firewall is active at boot time with all ports closed with exception of the port for SSH access. CentOS based images are configured with [`iptables`](https://wiki.centos.org/HowTos/Network/IPTables), whereas Ubuntu firewall is configured with [`ufw`](https://wiki.ubuntu.com/UncomplicatedFirewall).
+    A firewall is active at boot time with all ports closed with exception of the port for SSH access. CentOS based images are configured with [iptables](https://wiki.centos.org/HowTos/Network/IPTables), whereas Ubuntu firewall is configured with [ufw](https://wiki.ubuntu.com/UncomplicatedFirewall).
 
 4. **SSH server**
 
@@ -30,7 +30,7 @@ The _AppMarket_ _appliances_ are endorsed by SURFsara HPC Cloud team and are kep
 
 6. **Intrusion prevention**
 
-    `fail2ban` is installed and will protect the image from brute-force break-in attempts via ssh / http(s) protocols. A jail ban of 15 min. is applied.
+    [fail2ban](http://www.fail2ban.org/) is installed and will protect the image from brute-force break-in attempts via ssh / http(s) protocols. A jail ban of 15 min. is applied. 
 
 7. **Image template**
 
