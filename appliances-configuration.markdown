@@ -4,9 +4,9 @@ layout: default
 
 # AppMarket appliances configuration
 
-SURFsara provides pre-made _appliances_ to their HPC Cloud users. These appliances are available to the users via the _AppMarket_ in the HPC Cloud user interface and are meant to help users instantiating secure Vm's quickly. Currently we provide a set of basic _appliances_ for CentOS and Ubuntu.
+SURFsara provides pre-made _appliances_ to their HPC Cloud users. These appliances are available via the _AppMarket_ in the HPC Cloud user interface and are meant to help users instantiating secure Vm's quickly. Currently we provide a set of basic _appliances_ for CentOS and Ubuntu.
 
-The _AppMarket_ _appliances_ are endorsed by SURFsara HPC Cloud team and are kept up to date. In order to provide our customers with a secure working environment at boot time, a set of configurations are applied to the images via `cloud-init` contextualization. Here bellow you can find the configuration details.
+The _AppMarket_ _appliances_ are endorsed by SURFsara HPC Cloud team and are kept up to date. In order to provide our customers with a secure working environment, a set of configurations are applied to the images at boot time via `cloud-init` contextualization. Here bellow you can find the configuration details.
 
 1. **Root account**
 
@@ -36,9 +36,9 @@ The _AppMarket_ _appliances_ are endorsed by SURFsara HPC Cloud team and are kep
 
     The image template has basic settings to instantiate correctly a VM, namely:
 
-    - acpi      = yes 
-    - memory    = 1GB
-    - (v)cpu    = 1 core
+    - acpi = yes
+    - memory = 1GB
+    - (v)CPU = 1
     - localtime = no
     - internet connection
 
