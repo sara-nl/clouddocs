@@ -18,9 +18,15 @@ You will run a simple program that outputs a line each few seconds and experienc
 
 ## Set-up
 
-- Run a VM.
-- Log in using SSH.
-- Create a simple script file `example.sh`, using your favourite editor, with these lines:
+- Create a new VM (you may be able to reuse the existing `images` and `templates` that you have created so far; but you can always import a new appliance from the AppMarket).
+- Log into your VM using SSH.
+- Let us now create a simple script file called `example.sh`. You can use your favourite editor. In our example we use nano, like this: 
+
+```bash
+nano example.sh
+```
+
+- Write (or copy-and-paste) these lines into the file:
 
 ```bash
 #!/bin/bash
@@ -29,6 +35,8 @@ do
   date
 done
 ```
+
+- Save the file and exit the editor. For example, in nano, you press `Ctrl+X` and then you press `Y` to confirm that you want to save your changes. Then you are back in the terminal.
 
 - Make the script executable:
 
@@ -42,7 +50,7 @@ chmod u+x example.sh
 ./example.sh
 ```
 
-- After a while, terminate the script by typing `ctrl-C`
+- After a while, terminate the script by typing `Ctrl+C`
 
 ## First detach
 
@@ -63,7 +71,7 @@ pstree
 #  ... -example.sh---sleep
 ```
 
-- diconnect the terminal with the running example by closing its window
+- disconnect the terminal with the running example by closing its window
 - in the other session, use `ps` or `pstree` again to verify the the execution has stopped.
 
 ## Using `nohup`
