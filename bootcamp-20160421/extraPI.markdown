@@ -110,12 +110,12 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 >   * What runs in parallel? What not?
 >   * Which variables are used where?
 
-### d) Running the OpenMP optimised alternative version
+### d) More cores
 
 * Replace your VM with one that has more cores (hint: make a new `template`). 
-* Run some batches of exercise d) again. 
+* Run some batches of exercise c) again. 
 
-> **_Food for brain d2:_**
+> **_Food for brain d1:_**
 >
 >How do times with more cores compare to those before? <br/> (hint: make a table where each row is each exercise, one column is the average time and deviation you measured before and the second column is what you measured now)
 > * Play around with the parameters in the source files (e.g. POINTS_ON_AXIS) <br/> (hint: add an extra column to the table for each parameter you change)
