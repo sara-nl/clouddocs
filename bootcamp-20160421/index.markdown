@@ -18,7 +18,7 @@ layout: default
   * [Part A](partA)
   * Extras:
     * [Extras - _&pi;_](extraPI)
-    * [Extras - Remote Desktop](extraRemoteDesktop)
+    * [Extras - Detach from Work](extraDetachWork)
 * [Presentations](#presentations)
 
 ## <a name="general"></a>General Information 
