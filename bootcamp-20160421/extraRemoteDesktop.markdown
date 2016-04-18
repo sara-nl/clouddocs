@@ -101,7 +101,58 @@ tail -f out
 killall example.sh
 ```
 
+- check the output file again to verify the script is no longer running
+- remove the output file.
+
 ## Using `screen`
 
 You will use a program called `screen`. Similar programs are:  `tmux`, `dtach`+`dtvm`.
+
+- start screen for the first time
+
+```bash
+screen
+```
+
+- after reading an initial message, you press the key
+- you see the normal shell prompt
+- use `pstree` to see that you are actually in a screen session: look for a line similar to
+
+```
+├─sshd───sshd───sshd───bash───screen───screen───bash───pstree
+
+```
+
+- start your example script
+
+```bash
+./example.sh
+```
+
+- wait a few seconds and observe the output, as expected
+- detach from the screen session by typing `control-a` plus `d`
+- the view is restored to the situarion before you started `screen` and line says something similar to
+ 
+``` 
+[detached from 14691.pts-0.ip-145-100-58-55]
+```
+
+- wait several seconds and reconnect: use the `-r` flag
+
+```
+screen -r
+```
+
+- you see that the output has accumulated while you were detached, the script continued to run. 
+- detach again (`control-a` plus `d`)
+- log out and back in
+- reconnect to the screen session
+- find the script still running
+
+- terminate the script (`control-c`)
+- terminate the shell inside screen (`control-d`)
+- you are back with the extra line `[screen is terminating]`
+- try `screen -r`
+
+## Multiple `screen` sessions
 
