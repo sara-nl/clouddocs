@@ -117,7 +117,7 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 
 > **_Food for brain d1:_**
 >
->How do times with more cores compare to those before? <br/> (hint: make a table where each row is each exercise, one column is the average time and deviation you measured before and the second column is what you measured now)
+> * How do times with more cores compare to those before? <br/> (hint: make a table where each row is each exercise, one column is the average time and deviation you measured before and the second column is what you measured now)
 > * Play around with the parameters in the source files (e.g. POINTS_ON_AXIS) <br/> (hint: add an extra column to the table for each parameter you change)
 > * Does the performance scale for all of the implementations? Do you see any number where it ceases to make sense to scale? Can you explain?
 > * Can you draw some curves (graphs) with the measurements you have gathered? How do they compare?
