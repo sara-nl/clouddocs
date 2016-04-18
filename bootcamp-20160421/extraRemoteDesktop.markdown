@@ -95,7 +95,7 @@ tail -f nohup.out
 tail -f out
 ```
 
-- kill the running script
+- kill the running script (as there is no natural end to it)
 
 ```bash
 killall example.sh
@@ -103,6 +103,12 @@ killall example.sh
 
 - check the output file again to verify the script is no longer running
 - remove the output file.
+
+For more information read the manual, it is small and simple but effective. 
+
+```
+man nohup
+```
 
 ## Using `screen`
 
@@ -156,3 +162,36 @@ screen -r
 
 ## Multiple `screen` sessions
 
+`screen` has a lot of confusing options. Try reading the manual page.
+
+Examples:
+
+### Start additional session
+
+- in screen, type a comand, so that you can recognize the session 
+- type `control-a` `c` (lowercase C)
+- you see a fresh screen with a new shell
+- type a different command in the new shell
+- type `control-a` `control-a` 
+- you see the previous session
+- type `control-a` `1` (digit one)
+- you see the second session 
+- type `control-a` `0` (digit zero)
+- you see the first session again, sessions are numbered from zero
+- add another session (`control-a` `c`, as before)
+
+Play with these switching commands between the three sessions using `control-a` and a digit or the `control-a` `control-a` sequences
+
+- type `control-a` `w` (lowercase W)
+- during several seconds, a black bar at the bottom shows all sessions (windows) with their number.
+
+### split screen
+
+- still in screen, type `control-a` `S` (capital S)
+- the screen is now split into two panes with one the old session and the other blank
+- switching session still works within the one pane, try it
+- type `control-a` TAB
+- the cursor moved to the blank pane
+- switch one of your sessions
+- experiment with switching between panes (`control-a` TAB) and between sessions in that pane
+- combine with detaching from screen and re-attaching
