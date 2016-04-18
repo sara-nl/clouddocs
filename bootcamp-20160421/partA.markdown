@@ -111,6 +111,15 @@ Edit the imported `template` with these steps:
 ![youselectednetwork](/images/youselectednetwork.png)
 * Click the green button _Update_ at the top, to save your changes.
 
+#### Make the image persistent
+
+In order to ensure that when you shut down your VM, changes you make to the `image` are saved, let us make the `image` persistent now.
+
+* Go to the _Images_ tab under _<i class="fa fa-cloud"></i> Virtual Resources_ on the left menu, and click anywhere except the tick-box on the row for the `image` you created before, which you called **Course Image** .
+* On the _<i class="fa fa-info-circle"></i> Info_ tab, under the _Information_ section, find the _Persistent_ attribute. It says _No_, at the moment.
+* Switch the value to _Yes_.
+* Finally click anywhere else so that the change is set.
+
 #### Start the VM
 
 A `template` is just a description of the virtual machine that we want to build. Let's create the actual virtual machine from it.
