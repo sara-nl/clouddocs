@@ -193,13 +193,13 @@ Play with these switching commands between the three sessions using `control-a` 
 - type `control-a` `w` (lowercase W)
 - during several seconds, a black bar at the bottom shows all sessions (windows) with their number.
 
-### split screen
+### Split screen
 
 - still in screen, type `control-a` `S` (capital S)
 - the screen is now split into two panes with one the old session and the other blank
 - switching session still works within the one pane, try it
-- type `control-a` TAB
+- type `control-a` `TAB`
 - the cursor moved to the blank pane
 - switch one of your sessions
-- experiment with switching between panes (`control-a` TAB) and between sessions in that pane
+- experiment with switching between panes (`control-a` `TAB`) and between sessions in that pane
 - combine with detaching from screen and re-attaching
