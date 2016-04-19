@@ -145,7 +145,7 @@ screen
 ```
 
 - wait a few seconds and observe the output, as expected
-- detach from the screen session by typing `control-a` plus `d`
+- detach from the screen session by typing `control-a`, then `d`
 - the view is restored to the situarion before you started `screen` and line says something similar to
  
 ``` 
