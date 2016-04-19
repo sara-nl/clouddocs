@@ -56,6 +56,7 @@ make -v
 * Download the [code file](code/gridpi-mp.tar) to your VM and uncompress the file:
 
 ```sh
+cd
 wget https://doc.hpccloud.surfsara.nl/bootcamp-20160421/code/gridpi-mp.tar 
 tar -xvf gridpi-mp.tar 
 ```
