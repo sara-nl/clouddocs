@@ -101,7 +101,7 @@ tail -f nohup.out
 - look at the output file(s) to see that output is still continuing
 
 ```bash
-tail -f out
+tail -f nohup.out
 ```
 
 - kill the running script (as there is no natural end to it)
