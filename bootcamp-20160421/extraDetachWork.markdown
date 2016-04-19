@@ -129,7 +129,7 @@ You will use a program called `screen`. Similar programs are:  `tmux`, `dtach`+`
 screen
 ```
 
-- after reading an initial message, you press the key
+- after reading an initial message, you press the `Enter` key
 - you see the normal shell prompt
 - use `pstree` to see that you are actually in a screen session: look for a line similar to
 
