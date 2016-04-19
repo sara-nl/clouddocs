@@ -117,7 +117,7 @@ In order to ensure that when you shut down your VM, changes you make to the `ima
 
 * Go to the _Images_ tab under _<i class="fa fa-cloud"></i> Virtual Resources_ on the left menu, and click anywhere except the tick-box on the row for the `image` you created before, which you called **Course Image** .
 * On the _<i class="fa fa-info-circle"></i> Info_ tab, under the _Information_ section, find the _Persistent_ attribute. It says _No_, at the moment.
-* Switch the value to _Yes_, by clicking on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"> and selecting _yes_ from the drop-down list.
+* Switch the value to _Yes_, by clicking on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i> and selecting _yes_ from the drop-down list.
 * Finally click anywhere else so that the change is set.
 
 #### Start the VM
