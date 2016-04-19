@@ -23,6 +23,7 @@ You will run a simple program that outputs a line each few seconds and experienc
 - Let us now create a simple script file called `example.sh`. You can use your favourite editor. In our example we use nano, like this: 
 
 ```bash
+cd
 nano example.sh
 ```
 
