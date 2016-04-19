@@ -81,7 +81,7 @@ pstree
 - use `nohup` to run the example script in the background:
 
 ```bash
-nohup example.sh &
+nohup ./example.sh &
 ```
 
 The output will be:
