@@ -124,3 +124,10 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 
 > **NOTE:**
 > Do not forget to shutdown your VM when you are done with your performance tests.
+
+### Next: Detach from work
+You have completed the part of the tutorial where you experience scaling your compute capacity, of the Tutorial [SURF Research Boot Camp 2016-04-13](.). Please continue with part [Detach from work](extraDetachWork). 
+
+>**NOTE:**
+>
+>Before you move to the next sections, remember to shut your VMs down.
