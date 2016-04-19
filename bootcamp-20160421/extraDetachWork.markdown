@@ -12,7 +12,7 @@ layout: default
 </div>
 </div>
 
-This exercise lets you experience the difference between local and remote computatyion: you can organize your work so that it continues after you close your laptop.
+This exercise lets you experience the difference between local and remote computation: you can organize your work so that it continues after you close your laptop.
 
 You will run a simple program that outputs a line each few seconds and experience what happens when you detach from the program in various ways.
 
