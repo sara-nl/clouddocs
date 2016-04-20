@@ -183,7 +183,7 @@ Examples:
 - type `control-a` `c` (lowercase C)
 - you see a fresh screen with a new shell
 - type a different command in the new shell
-- type `control-a` `control-a` 
+- type `control-a` `control-a` (yes, twice)
 - you see the previous session
 - type `control-a` `1` (digit one)
 - you see the second session 
