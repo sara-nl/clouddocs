@@ -37,7 +37,7 @@ do
 done
 ```
 
-- Save the file and exit the editor. For example, in nano, you press `Ctrl+X` and then you press `Y` to confirm that you want to save your changes. Then you are back in the terminal.
+- Save the file and exit the editor. For example, in nano, you press `control-x` and then you press `Y` to confirm that you want to save your changes. Then you are back in the terminal.
 
 - Make the script executable:
 
@@ -51,7 +51,7 @@ chmod u+x example.sh
 ./example.sh
 ```
 
-- After a while, terminate the script by typing `Ctrl+C`
+- After a while, terminate the script by typing `control-c`
 
 ## First detach
 
