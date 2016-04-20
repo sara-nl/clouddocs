@@ -12,6 +12,8 @@ layout: default
 </div>
 </div>
 
+This is an exercise from the (extras) part of the Tutorial [SURF Research Boot Camp 2016-04-13](.).
+
 This exercise lets you experience the difference between local and remote computation: you can organize your work so that it continues after you close your laptop.
 
 You will run a simple program that outputs a line each few seconds and experience what happens when you detach from the program in various ways.
