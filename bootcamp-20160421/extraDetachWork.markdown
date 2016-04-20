@@ -198,7 +198,7 @@ Play with these switching commands between the three sessions using `control-a` 
 
 ### Split screen
 
-- still in screen, type `control-a` `S` (capital S)
+- still in `screen`, type `control-a` `S` (capital S)
 - the screen is now split into two panes with one the old session and the other blank
 - switching session still works within the one pane, try it
 - type `control-a` `TAB`
