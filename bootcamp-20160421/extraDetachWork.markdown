@@ -179,7 +179,7 @@ Examples:
 
 ### Start additional session
 
-- in screen, type a command, so that you can recognize the session 
+- in `screen`, type a command, so that you can recognize the session 
 - type `control-a` `c` (lowercase C)
 - you see a fresh screen with a new shell
 - type a different command in the new shell
