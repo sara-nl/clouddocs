@@ -19,7 +19,7 @@ layout: default
   * Extras:
     * [Extras - _&pi;_](extraPI)
     * [Extras - Detach from Work](extraDetachWork)
-* [Presentations](#presentations)
+* [Presentation](#presentations)
 
 ## <a name="general"></a>General Information 
 This session is delivered within the Computing Track of the [SURF Research Bootcamp](https://www.surf.nl/academy/surf-research-bootcamp).
@@ -62,6 +62,6 @@ The hands-on tutorial has two parts. The exercises in part *A* will give you a f
     * [Extras - _&pi;_](extraPI)
     * [Extras - Detach from Work](extraDetachWork)
 
-## <a name="presentations"></a> Presentations
+## <a name="presentations"></a> Presentation
 
->**Note:** To be added here.
+* [Introduction to the HPC Cloud](presentations/2016.04.21 - ResearchBootCamp.pdf)
