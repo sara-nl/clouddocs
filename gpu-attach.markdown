@@ -63,23 +63,28 @@ To make full use of the GPU capabilities please install the corresponding driver
 
 ## Example for installing CUDA 7.5 on Ubuntu 14.04
 
-1. Download CUDA installer: wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run
-2. sudo apt-get install gcc make g++
-2. sudo service lightdm stop
-3. sudo sh cuda_7.5.18_linux.run
-4. Space to scroll to the end and type accept
-5. Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 352.39? ((y)es/(n)o/(q)uit): yes
-6. Do you want to install the OpenGL libraries? ((y)es/(n)o/(q)uit) [ default is yes ]: yes
-7. Install the CUDA 7.5 Toolkit? ((y)es/(n)o/(q)uit): yes
-8. Enter Toolkit Location [ default is /usr/local/cuda-7.5 ]: Enter
-9. Do you want to install a symbolic link at /usr/local/cuda? ((y)es/(n)o/(q)uit): yes
-10. Install the CUDA 7.5 Samples? ((y)es/(n)o/(q)uit): yes
-11. Enter CUDA Samples Location [ default is /home/ubuntu ]: Enter
-12. Installing the NVIDIA display driver...Driver:   Reboot required to continue Toolkit:  Installation skipped Samples:  Installation skipped
-13. sudo reboot
-14. ssh to VM
-15. redo steps 2-11
-16. ubuntu@145:~$ nvidia-smi 
+1. Download CUDA installer: ```wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run```
+1. Prepare the environment and run:
+```bash
+sudo apt-get install gcc make g++
+sudo service lightdm stop
+sudo sh cuda_7.5.18_linux.run
+```
+1. Space to scroll to the end and type `accept`
+<pre>
+Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 352.39? ((y)es/(n)o/(q)uit): yes
+Do you want to install the OpenGL libraries? ((y)es/(n)o/(q)uit) [ default is yes ]: yes
+Install the CUDA 7.5 Toolkit? ((y)es/(n)o/(q)uit): yes
+Enter Toolkit Location [ default is /usr/local/cuda-7.5 ]: Enter
+Do you want to install a symbolic link at /usr/local/cuda? ((y)es/(n)o/(q)uit): yes
+Install the CUDA 7.5 Samples? ((y)es/(n)o/(q)uit): yes
+Enter CUDA Samples Location [ default is /home/ubuntu ]: Enter
+Installing the NVIDIA display driver...Driver:   Reboot required to continue Toolkit:  Installation skipped Samples: Installation skipped
+</pre>
+1. Reboot: ```sudo reboot```
+1. ssh to VM
+1. Resume the installation: `sudo sh cuda_7.5.18_linux.run`
+1. Launch: `nvidia-smi`
 
 <pre>
 Mon May  2 09:29:08 2016    
