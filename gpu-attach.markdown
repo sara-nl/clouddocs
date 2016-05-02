@@ -116,3 +116,41 @@ Mon May  2 09:29:08 2016
 +-----------------------------------------------------------------------------+
 
 </pre>
+
+>**NOTE:**
+>
+>Don't forget to add the libaries and binaries paths to your environment, like:
+> - `export PATH=$PATH:/usr/local/cuda-7.5/bin`
+> - `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-7.5/lib64`
+
+
+### Running a Hello World
+
+* Download, uncompress and compile NVidia's Hello World example:
+```bash
+wget http://developer.download.nvidia.com/compute/developertrainingmaterials/samples/cuda_c/HelloWorld.zip
+unzip HelloWorld.zip
+nvcc hello.cu
+```
+
+* Run the compiled program, which if the compilation succeeded will be called `a.out`:
+```bash
+./a.out
+```
+ That yields the output:
+
+ <pre>
+$ ./a.out
+H
+E
+L
+L
+O
+
+W
+O
+R
+L
+D
+!
+ </pre>
