@@ -89,7 +89,7 @@ Installing the NVIDIA display driver...Driver:   Reboot required to continue Too
 
 * Reboot: ```sudo reboot```
 * ssh to VM
-* Resume the installation: `sudo sh cuda_7.5.18_linux.run`
+* Resume the installation: `sudo service lightdm stop && sudo sh cuda_7.5.18_linux.run`
 * Launch: `nvidia-smi`
 
 <pre>
