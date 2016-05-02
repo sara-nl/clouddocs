@@ -63,14 +63,19 @@ To make full use of the GPU capabilities please install the corresponding driver
 
 ## Example for installing CUDA 7.5 on Ubuntu 14.04
 
-1. Download CUDA installer: ```wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run```
-1. Prepare the environment and run:
+* Download CUDA installer: 
+
+```wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run```
+
+* Prepare the environment and run:
+
 ```bash
 sudo apt-get install gcc make g++
 sudo service lightdm stop
 sudo sh cuda_7.5.18_linux.run
 ```
-1. Space to scroll to the end and type `accept`
+
+* Space to scroll to the end and type `accept`
 <pre>
 Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 352.39? ((y)es/(n)o/(q)uit): yes
 Do you want to install the OpenGL libraries? ((y)es/(n)o/(q)uit) [ default is yes ]: yes
@@ -81,10 +86,11 @@ Install the CUDA 7.5 Samples? ((y)es/(n)o/(q)uit): yes
 Enter CUDA Samples Location [ default is /home/ubuntu ]: Enter
 Installing the NVIDIA display driver...Driver:   Reboot required to continue Toolkit:  Installation skipped Samples: Installation skipped
 </pre>
-1. Reboot: ```sudo reboot```
-1. ssh to VM
-1. Resume the installation: `sudo sh cuda_7.5.18_linux.run`
-1. Launch: `nvidia-smi`
+
+* Reboot: ```sudo reboot```
+* ssh to VM
+* Resume the installation: `sudo sh cuda_7.5.18_linux.run`
+* Launch: `nvidia-smi`
 
 <pre>
 Mon May  2 09:29:08 2016    
