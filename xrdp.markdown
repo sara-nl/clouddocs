@@ -30,7 +30,7 @@ The default Unity desktop does not support remote sessions as well as other desk
 * Update software repository and install necessary software
 
 ```bash
-  sudo apt-get install xrdp xubuntu-desktop
+  sudo apt-get install xrdp xubuntu-desktop tightvncserver
   apt-get update
 ```
 * login to a normal user account
