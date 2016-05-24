@@ -55,12 +55,12 @@ layout: default
 
 ### Networks
 * Virtual Network
-* Lightpaths 
+* Lightpaths
 
 ### Security
 > **NOTE:**
 >
-> You are strongly advised to set up your **own firewall** inside your virtual machines. OpenNebula offers now the so-called `Security Groups` instead of the old `Network filters`. However, they do not work in the current implementation, so we are pursuing other ways to provide a form of external firewall. 
+> You are strongly advised to set up your **own firewall** inside your virtual machines. OpenNebula offers now the so-called `Security Groups` instead of the old `Network filters`. However, they do not work in the current implementation, so we are pursuing other ways to provide a form of external firewall.
 
 * [Installing `fail2ban`](fail2ban)
 
@@ -73,6 +73,9 @@ layout: default
 
 ### Automation
 * [Getting started with the XML-RPC API](xmlrpc-start)
+
+### AppMarket
+* [AppMarket Appliances Configuration](appliances-configuration)
 
 ## Tutorials
 * [SURF Research Bootcamp 2016-04-21](bootcamp-20160421/index)
