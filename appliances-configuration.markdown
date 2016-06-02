@@ -26,7 +26,7 @@ The _AppMarket_ _appliances_ are endorsed by SURFsara HPC Cloud team and are kep
 
 5. **Software updates**
 
-    The images are configured to auto-update the OS and packages. It can be disabled by the user afterwords.
+    The images are configured to auto-update the OS and packages. It can be disabled by the user afterwards.
 
 6. **Intrusion prevention**
 
