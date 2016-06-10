@@ -2,15 +2,15 @@
 layout: default
 ---
 
-# TUDelft course 2016-04-13 - part B
+# UvA course 2016-06-15 - part B
 
 <div style="float:right;max-width:205px;" markdown="1">
-![TUDelft logo](/images/TUDelft_logo.png)
+![UvA logo](/images/UvA-logo.png)
 
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is part B of the Tutorial [TUDelft course 2016-04-13](.).
+This is part B of the Tutorial [UvA course 2016-06-15](.).
 
 **If you have not completed (and understood)** [Part A](partA), please do so first.
 
@@ -59,7 +59,7 @@ In this section you will work with **persistent** images. You will go through th
 
 ### 2. Scale up to a multicore VM
 
-The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your Virtual Machines (VMs) the form that you need them to have. In this section, you will start a _four-core_ VM, using the exact same image, the _Cursus Image_. To scale-up your VM to use multiple cores you will be:
+The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your Virtual Machines (VMs) the form that you need them to have. In this section, you will start a _four-core_ VM, using the exact same image, the _Course Image_. To scale-up your VM to use multiple cores you will be:
 
 * Editing your `template`.
 * Re-instantiating a VM from the modified `template`.
@@ -74,7 +74,7 @@ You can customise your VMs by editing the `templates` you instantiate the VMs fr
   * VCPU: **4**
 * When you are done, click on the green _Update_ button so that your changes are actually saved.
 
-That was it. From now on you will get a 4-core VM running using the same *Cursus Image*.
+That was it. From now on you will get a 4-core VM running using the same *Course Image*.
 
 #### Instantiate the four-core VM
 
@@ -91,7 +91,7 @@ That was it. From now on you will get a 4-core VM running using the same *Cursus
 
 The current HPC Cloud offers two storage types: **Ceph** and **SSD**. Data stored on `Ceph` is replicated to protect against data loss in case of hardware failure. The best practice is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock(s)`.
 
-When you create an `image`, you must choose where it is stored, under the heading _Datastore_. You have the choice between `local_images_surfcursus` (SSD) and `ceph`.  The first `appliance` you imported, created the OS image on `local_images_surfcursus` (SSD). In this section you will use the `ceph` `datastore` option, by following these steps:
+When you create an `image`, you must choose where it is stored, under the heading _Datastore_. You have the choice between `local_images_Cursus` (SSD) and `ceph`.  The first `appliance` you imported, created the OS image on `local_images_Cursus` (SSD). In this section you will use the `ceph` `datastore` option, by following these steps:
 
 * Creating a new empty `image` for bulk data
 * Adding the new `image` to the `template`
@@ -187,4 +187,4 @@ This section is meant as extra questions that we thought would be nice for you t
 
 
 ### Next: Extras
-You have completed part B of the Tutorial [TUDelft course 2016-04-13](.). If you want more of the HPC Cloud, see the [Extras part](extras).
+You have completed part B of the Tutorial [UvA course 2016-06-15](.). If you want more of the HPC Cloud, see the [Extras part](extras).
