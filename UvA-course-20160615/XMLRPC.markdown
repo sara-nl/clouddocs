@@ -2,15 +2,15 @@
 layout: default
 ---
 
-# TUDelft course 2016-04-13  <br/> Extras - The XML-RPC API
+# UvA course 2016-06-15  <br/> Extras - The XML-RPC API
 
 <div style="float:right;max-width:205px;" markdown="1">
-![TUDelft logo](/images/TUDelft_logo.png)
+![UvA logo](/images/UvA-logo.png)
 
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is an exercise from the [Extras](extras) part of the Tutorial [TUDelft course 2016-04-13](.).
+This is an exercise from the [Extras](extras) part of the Tutorial [UvA course 2016-06-15](.).
 
 In this advanced part of our HPC Cloud tutorial we ask you to play around with the **XML RPC** API.
 
@@ -20,7 +20,7 @@ You are now in the advanced part; you should be able to do this on your own.
 
 ### b) Run a first example
 
-This exercise should make you familiar with our general documentation pages. 
+This exercise should make you familiar with our general documentation pages.
 
 * On our general documentation, find the _Getting started with the XML-RPC_ page.
 
