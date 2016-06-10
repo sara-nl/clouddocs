@@ -2,15 +2,15 @@
 layout: default
 ---
 
-# TUDelft course 2016-04-13 - Extras
+# UvA course 2016-06-15 - Extras
 
 <div style="float:right;max-width:205px;" markdown="1">
-![TUDelft logo](/images/TUDelft_logo.png)
+![UvA logo](/images/UvA-logo.png)
 
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-These are the extras of the Tutorial [TUDelft course 2016-04-13](.).
+These are the extras of the Tutorial [UvA course 2016-06-15](.).
 
 **You should have completed (and understood)** [Part A](partA) and [Part B](partB), before trying these extras.
 
@@ -21,7 +21,7 @@ You will find several _Food for brain_ questions in each exercise that you might
 ## OpenMP
 
 Link: [OpenMP: calculating _&pi;_](OpenMP)
-  
+
   Using a simple algorithm to calculate _&pi;_ as an example, you see the impact of the **scale-up** model and parallel programming with OpenMP.
 
 ## MPI
@@ -29,9 +29,9 @@ Link: [OpenMP: calculating _&pi;_](OpenMP)
 Link: [MPI: Wave equation](MPI)
 
   Using a numerical method to calculate wave propagation as an example, you see the impact of both **scale-up** and **scale-out** models and parallel programming with MPI.
-  
+
 ## XML-RPC
 
 Link: [XML-RPC](XMLRPC)
-  
+
   Experiencing the automation API that OpenNebula provides, which can be used to find out a lot of information about your own environment, and to operate with VMs in a non-interactive way.
