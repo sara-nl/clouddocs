@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TUDelft course 2016-04-13
+# UvA course 2016-06-15
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![UvA logo](/images/UvA-logo.png)
