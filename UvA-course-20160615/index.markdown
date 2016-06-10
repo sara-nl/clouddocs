@@ -30,7 +30,7 @@ Here is a summary of the course outline:
 >
 >15th June 2016, UvA
 >
-> * 09:30 Welcome & coffee  
+> * 09:30 Welcome
 > * 09:35 Presentation and Demo: HPC Cloud at SURFsara (Nuno Ferreira)
 > * 10:15 Hands-on: Parts A & B
 > * 12:00 Lunch   
