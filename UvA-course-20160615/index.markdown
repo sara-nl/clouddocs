@@ -5,7 +5,7 @@ layout: default
 # TUDelft course 2016-04-13
 
 <div style="float:right;max-width:205px;" markdown="1">
-![TUDelft logo](/images/TUDelft_logo.png)
+![UvA logo](/images/UvA-logo.png)
 
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
@@ -28,10 +28,10 @@ Here is a summary of the course outline:
 
 >**Agenda:**
 >
->13th April 2016, TUDelft, [Faculty Civil Engineering & Geosciences](http://www.citg.tudelft.nl/en/)
+>15th June 2016, UvA
 >
 > * 09:30 Welcome & coffee  
-> * 09:35 Presentation and Demo: HPC Cloud at SURFsara (Natalie Danezi)
+> * 09:35 Presentation and Demo: HPC Cloud at SURFsara (Nuno Ferreira)
 > * 10:15 Hands-on: Parts A & B
 > * 12:00 Lunch   
 > * 13:00 Presentation: Cloudifying - parallelism & API (Ander Astudillo)
@@ -46,7 +46,7 @@ Prior experience in [Linux commands](http://cli.learncodethehardway.org/book/) w
 
 For this tutorial you will need:
 
-* A computer with Internet access (TUDelft provides WiFi).
+* A computer with Internet access (UvA provides WiFi).
 * A browser (Chrome or Firefox will do nicely).
 * An SSH client.
   * Linux and Mac users: don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
@@ -60,11 +60,11 @@ For this tutorial you will need:
 > For the course purposes you will need to start a graphical window in your laptop that is connected to your HPC Cloud machine. To make this work, you need to adjust the following setting:  
 >
 * Open GitBash (or git for windows).
-* In the terminal that appears, copy and paste the following commands: 
+* In the terminal that appears, copy and paste the following commands:
 >
 ```sh
 # press enter to submit each command
-echo "export DISPLAY=localhost:0.0" >> $HOME/.bashrc` 
+echo "export DISPLAY=localhost:0.0" >> $HOME/.bashrc`
 source $HOME/.bashrc
 ```
 
@@ -74,4 +74,3 @@ The hands-on tutorial has three parts. The exercises in part *A & B* will give y
   * [Part A](partA)
   * [Part B](partB)
   * [Extras](extras)
-
