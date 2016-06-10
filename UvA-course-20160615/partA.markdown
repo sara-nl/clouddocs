@@ -2,15 +2,15 @@
 layout: default
 ---
 
-# TUDelft course 2016-04-13 - part A
+# UvA course 2016-06-15 - part A
 
 <div style="float:right;max-width:205px;" markdown="1">
-![TUDelft logo](/images/TUDelft_logo.png)
+![UvA logo](/images/UvA-logo.png)
 
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is part A of the Tutorial [TUDelft course 2016-04-13](.).
+This is part A of the Tutorial [UvA course 2016-06-15](.).
 
 This tutorial will touch the following topics:
 
@@ -25,7 +25,7 @@ The UI (User Interface) is the web site that allows you to manage your _Virtual 
 #### Log in to the UI
 
 * Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/)
-* Your username is **surfcursusXY**, replace `XY` with the number assigned to you.
+* Your username is **surfcourseXY**, replace `XY` with the number assigned to you.
 * You will receive the password from the workshop facilitators.
 * Hit the `Login` button.
 
@@ -82,7 +82,7 @@ Let's run your first VM on the HPC Cloud.
 * Select the `appliance` **Ubuntu 14.04 Desktop CI** by clicking on the tick-box next to it.
 * Click on the _Import_ button at the top-right corner of the screen.
 * A dialogue will pop up, asking you for a few details. Edit as follows:
-  * Select the Datastore for the images: **125: local_images_surfcursus**. (drop-down menu)
+  * Select the Datastore for the images: **123: local_images_Cursus**. (drop-down menu)
   * Image Name: **Course Image**.
   * Template Name: **Course Template**.
 * Finally, click the blue *Import* button. This will start importing the `appliance` from the AppMarket. You can close this dialogue.
@@ -104,8 +104,8 @@ Edit the imported `template` with these steps:
 * Go to the _Templates_ tab under _<i class="fa fa-cloud"></i> Virtual Resources_ on the left menu.
 * Find the `template` you just imported (*Course Template*), and click on it (anywhere **except** the tick-box).
 * Click on the _Update_ button on the top-right of the screen to start editing the template.
-* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...) and leave the default values. Check for example if your VM will have internet access: 
-  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM. 
+* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...) and leave the default values. Check for example if your VM will have internet access:
+  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM.
   * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`.   
 ![youselectednetwork](/images/youselectednetwork.png)
 * If you made any changes, click the green button _Update_ at the top, to save your changes.
@@ -217,7 +217,7 @@ This section is meant as extra questions that we thought would be nice for you t
 
 
 ### Next: part B
-Now that you completed part A of the Tutorial [TUDelft course 2016-04-13](.). Please continue with Tutorial [Part B](partB).
+Now that you completed part A of the Tutorial [UvA course 2016-06-15](.). Please continue with Tutorial [Part B](partB).
 
 >**NOTE:**
 >
