@@ -72,6 +72,8 @@ You can customise your VMs by editing the `templates` you instantiate the VMs fr
 * In the _<i class="fa fa-laptop"></i> General_ tab edit the number of CPU and VCPU as:
   * CPU: **4**
   * VCPU: **4**
+  
+  >**Note:** Because we are doing HPC, always make VCPU match CPU, and always make both integers.
 * When you are done, click on the green _Update_ button so that your changes are actually saved.
 
 That was it. From now on you will get a 4-core VM running using the same *Course Image*.
