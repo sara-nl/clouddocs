@@ -63,7 +63,7 @@ sudo apt-get update
 sudo apt-get install build-essential
 ```
 
-> Optionally verify gcc and GNU make installation and version with `gcc -v` and  `make -v` respectively.
+> Optionally verify `gcc` and GNU `make` installation and version with `gcc -v` and  `make -v` respectively.
 
 * Install other dependencies that our program requires:
 
