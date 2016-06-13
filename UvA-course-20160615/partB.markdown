@@ -45,7 +45,7 @@ In this section you will work with **persistent** images. You will go through th
 * Starting a VM using the persistent image.
 
 #### Make your image persistent
-* Go to `Images` tab under _<i class="fa fa-cloud"></i> Virtual Resources_ on the left menu, and click anywhere except the tick-box on the row for the `image` you created before that you called **Course Image** .
+* Go to the _Images_ tab under _<i class="fa fa-cloud"></i> Virtual Resources_ on the left menu, and click anywhere except the tick-box on the row for the `image` you created before, that you called **Course Image** .
 * On the _<i class="fa fa-info-circle"></i> Info_ tab, under the _Information_ section, find the _Persistent_ attribute. It says _No_, at the moment.
 * Switch the value to _Yes_.
 
