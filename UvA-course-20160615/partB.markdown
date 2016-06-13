@@ -84,7 +84,7 @@ That was it. From now on you will get a 4-core VM running using the same *Course
 * Login to the VM. *Is your data there?*
 * You can verify that you are logged in on a four-core VM with the command: `cat /proc/cpuinfo`
 
-> **Food for brain:
+> **Food for brain:**
 >
 > * How/where do you see, in the output of `cat /proc/cpuinfo`, that your VM actually has 4 cores?
 > * What is the status of your `image` now that it is persistent and your VM is running? Is there any difference in status as compared to when the `image` was not persistent?
