@@ -317,7 +317,7 @@ This section is meant as extra questions that we thought would be nice for you t
 
 ### Time measurement hints
 
-In order to help measuring times, we can give you the hints in this section.
+In order to help measuring times, we can thought of the hints in this section.
 
 * You can use the `time` facility from `bash` to measure the time it takes to run a command, like: `time command`. It will return 3 lines via stderr with: overall time and the subparts for user time and system time.
 
