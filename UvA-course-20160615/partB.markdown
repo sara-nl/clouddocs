@@ -59,7 +59,7 @@ In this section you will work with **persistent** images. You will go through th
 
 ### 2. Scale up to a multicore VM
 
-The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your Virtual Machines (VMs) the form that you need them to have. In this section, you will start a _four-core_ VM, using the exact same image, the _Course Image_. To scale-up your VM to use multiple cores you will be:
+The HPC Cloud is offered in an Infrastructure as a Service (IaaS) model (as listed in section _Service Models_ in the _[The NIST definition of cloud computing](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf)_ paper). That allows you to give your Virtual Machines (VMs) the form that you need them to have. In this section, you will start a _four-core_ VM, using the exact same image, the _Course Image_. To scale-up your VM to use multiple cores you will be:
 
 * Editing your `template`.
 * Re-instantiating a VM from the modified `template`.
