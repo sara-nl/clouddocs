@@ -148,7 +148,7 @@ The way to log in to your virtual machine is the SSH key pair that you [stored i
 
 **Commandline access - SSH**  
 
-* First find the your VM's IP address. Your VM's IP address is shown on in the _IPs_ column from the virtual machines list on the UI.
+* First find the your VM's IP address. Your VM's IP address is shown in the _IPs_ column from the virtual machines list on the UI.
 
 * On your laptop, start a terminal (in Mac/Linux) or GitBash (in Windows).
 
