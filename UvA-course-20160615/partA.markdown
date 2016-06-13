@@ -140,6 +140,10 @@ Let's summarise what you have seen so far. From the menu on the left side, click
 >
 >Finding the right place depends, among others, on: the number of cores, amount of memory, and disk that you asked in the `template`. Keep refreshing the list by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button. When the required capacity becomes available, your VM will show the status **RUNNING**. Only then can you actually use your VM.
 
+> **Food for brain:**
+>
+> When the VM has been instantiated, check and refresh the _Images_ tab. What is the _status_ of your `image`?
+
 #### Log in to the VM
 
 You can interact with your VM in several ways: command-line (e.g.: SSH), VNC (UI in your browser) or a remote desktop. We will use SSH in a terminal for the time being.
