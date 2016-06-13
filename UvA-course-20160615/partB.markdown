@@ -92,7 +92,9 @@ That was it. From now on you will get a 4-core VM running using the same *Course
 
 ### 3. Working with Storage
 
-The current HPC Cloud offers two storage types: **Ceph** and **SSD**. Data stored on `Ceph` is replicated to protect against data loss in case of hardware failure. The best practice is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock(s)`.
+The current HPC Cloud offers two storage types: **Ceph** and **SSD**. [`Ceph`](http://ceph.com/) is a storage system that we have set up as a shared storage place in its own cluster. As opposed to [`SSD`](https://en.wikipedia.org/wiki/Solid-state_drive) disks, which form local storage available locally on the physical server that your VM runs on, `Ceph` is only accessible via the network. The main reason to have `Ceph` along `SSD` is that it is very scalable; it allows both to add a lot of storage to the system when needed, while sustaining a lot of concurrent access to many users at the same time. Further, data stored on `Ceph` is replicated to protect against data loss in case of hardware failure. 
+
+With all of this in mind, we advise that you make use of both storage types. You should run your operating system on a small `SSD image` and store your bulk data on `Ceph`. You can do so by defining the right `datastore` when creating your `images`.
 
 When you create an `image`, you must choose where it is stored, under the heading _Datastore_. You have the choice between `local_images_Cursus` (SSD) and `ceph`.  The first `appliance` you imported, created the OS image on `local_images_Cursus` (SSD). In this section you will use the `ceph` `datastore` option, by following these steps:
 
