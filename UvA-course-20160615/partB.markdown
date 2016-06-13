@@ -143,7 +143,7 @@ Let's start using the new disk.
 sudo fdisk -l
 ```
 
->**Note:** The `sudo` commands will display you the message `sudo: unable to resolve host ip-145-100-...`. Ignore this.
+>**Note:** The `sudo` commands may display the message `sudo: unable to resolve host ip-145-100-...`. Please, ignore this; `sudo ` is still doing what you are asking it to do.
 
 * Create the directory where you will mount the Ceph datablock and format the drive (`xfsprogs` is installed on the image):
 
