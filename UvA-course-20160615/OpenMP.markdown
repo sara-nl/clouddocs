@@ -44,7 +44,7 @@ This exercise will let you use OpenMP, first with a serial implementation within
 sudo apt-get install build-essential
 ```
 
-> Optionally verify gcc and GNU make installation and version with `gcc -v` and  `make -v` respectively.
+> Optionally verify `gcc` and GNU `make` installation and version with `gcc -v` and  `make -v` respectively.
 
 * Download the [code file](code/gridpi-mp.tar) to your VM and uncompress the file:
 
