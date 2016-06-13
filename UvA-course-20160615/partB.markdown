@@ -21,7 +21,7 @@ This is part B of the Tutorial [UvA course 2016-06-15](.).
 
 >**NOTE:**
 >
-> For the rest of the tutorial we will omit the `ubuntu@ip-...:~$` prompt in the instructions, in order to allow you copy-n-paste the commands directly in your terminal.
+> For the rest of the tutorial we will omit the `ubuntu@ip-...:~$` prompt in the instructions, in order to allow you to copy-n-paste the commands directly in your terminal.
 
 ### 1. Persistence
 
