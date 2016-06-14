@@ -78,9 +78,10 @@ layout: default
 * [AppMarket Appliances Configuration](appliances-configuration)
 
 ## Tutorials
+* [HPC Cloud workshop 2016-06-15](UvA-course-20160615/index) (part of the [UvA HPC and Big Data course](http://hpc.uva.nl))
 * [SURF Research Bootcamp 2016-04-21](bootcamp-20160421/index)
 * [TUDelft workshop 2016-04-13](TUDelftcourse-20160413/index)
-* [HPC Cloud workshop 2016-01-25](UvAworkshop-2016-01-25/UvAworkshop-2016-01-25) (part of the [UvA HPC and Big Data course](http://hpc.uva.nl))
+* [HPC Cloud workshop 2016-01-25](UvAworkshop-2016-01-25/UvAworkshop-2016-01-25) (part of the UvA HPC and Big Data course)
 * [UNESCO-IHE workshop - 11 Dec 2015](wshop-uihe-2015-12-11)
 * [Surfcursus - 15 Oct 2015](surfcursus-2015-Oct-15)
 
