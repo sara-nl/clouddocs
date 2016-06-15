@@ -16,11 +16,20 @@ Read carefully the following questions and send your answers to: Nuno Ferreira <
 
 ## Exercise [OpenMP: calculating _&pi;_](OpenMP) 
 
-* **Question 1** (2.5 points):
+### **Question 1** (2.5 points):
 
-Create a VM with 2 CPUs and 4GB memory. Run the exercises b) Serial runs, c) Simple OpenMP version, d) Running the OpenMP optimised version and e) Running the OpenMP optimised alternative version. Do you see significant differences for the *real* and *user* time between the solutions b), c), d) and e)? Which parts of the code runs in parallel for each solution? Can you explain?
+Create a VM with 2 CPUs and 4GB memory. Run the exercises:
+- b) Serial runs,
+- c) Simple OpenMP version,
+- d) Running the OpenMP optimised version and
+- e) Running the OpenMP optimised alternative version. 
 
-* **Question 2** (2.5 points):
+Answer the folowing:
+- Do you see significant differences for the *real* and *user* time between the solutions b), c), d) and e)? 
+- Which parts of the code runs in parallel for each solution?
+- Explain.
+
+### **Question 2** (2.5 points):
 
 Create a VM with 4 CPUs and 4GB memory. Run again the exercises b) Serial runs, c) Simple OpenMP version, d) Running the OpenMP optimised version and e) Running the OpenMP optimised alternative version. Play around with the parameter POINTS_ON_AXIS in the source files. Can you explain your measurements in words or with a graph?
 
