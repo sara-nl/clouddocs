@@ -55,7 +55,7 @@ The following commands will:
 2. download the _conda_ installer
 3. run the _conda_ installer to install _conda_ in the desired directory
 
-Run in a terminal:
+Run in a terminal of an HPC Cloud VM:
 
 ```sh
 mkdir ~/conda && cd ~/conda
