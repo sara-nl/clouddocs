@@ -16,6 +16,7 @@ layout: default
   * [Part A](partA)
   * [Part B](partB)
   * [Extras](extras)
+* [Assignment](#assignment) <br>
 
 ## <a name="general"></a>General Information
 
@@ -74,3 +75,13 @@ The hands-on tutorial has three parts. The exercises in part *A & B* will give y
   * [Part A](partA)
   * [Part B](partB)
   * [Extras](extras)
+   
+> The accounts will remain active until **24th of June 2016**.
+
+## <a name="assignment"></a>Assignment
+
+For those who submit an assignment on the HPC Cloud course, please run both exercises [OpenMP: calculating _&pi;_](OpenMP) and [MPI: Wave equation](MPI) and answer the [assignment questions](assignment). 
+
+Send your answers to: markus.vandijk@surfsara.nl and natalie.danezi@surfsara.nl **by 24th of June 2016**.
+
+
