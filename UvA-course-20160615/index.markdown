@@ -17,6 +17,8 @@ layout: default
   * [Part B](partB)
   * [Extras](extras)
 * [Assignment](#assignment) <br>
+* [Presentation](#presentation) <br>
+
 
 ## <a name="general"></a>General Information
 
@@ -84,7 +86,7 @@ For those who submit an assignment on the HPC Cloud course, please run both exer
 
 Send your answers to: Nuno Ferreira <nuno.ferreira@surfsara.nl> **by 24th of June 2016**.
 
-## Presentations
+## <a name="presentations"></a>Presentations
 
 * Introduction to HPC Cloud
 * [Scaling](2016.06.15 - parallelism.pdf)
