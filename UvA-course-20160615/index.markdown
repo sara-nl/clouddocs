@@ -77,18 +77,16 @@ The hands-on tutorial has three parts. The exercises in part *A & B* will give y
   * [Part A](partA)
   * [Part B](partB)
   * [Extras](extras)
-   
+
 > The accounts will remain active until **24th of June 2016**.
 
 ## <a name="assignment"></a>Assignment
 
-For those who submit an assignment on the HPC Cloud course, please run both exercises [OpenMP: calculating _&pi;_](OpenMP) and [MPI: Wave equation](MPI) and answer the [assignment questions](assignment). 
+For those who submit an assignment on the HPC Cloud course, please run both exercises [OpenMP: calculating _&pi;_](OpenMP) and [MPI: Wave equation](MPI) and answer the [assignment questions](assignment).
 
 Send your answers to: Nuno Ferreira <nuno.ferreira@surfsara.nl> **by 24th of June 2016**.
 
 ## <a name="presentations"></a>Presentations
 
-* Introduction to HPC Cloud
+* [Introduction to HPC Cloud](UvA.HPC.Cloud.Workshop.20160615.pdf)
 * [Scaling](2016.06.15 - parallelism.pdf)
-
-
