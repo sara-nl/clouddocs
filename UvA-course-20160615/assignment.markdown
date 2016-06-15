@@ -19,12 +19,14 @@ Read carefully the following questions and send your answers to: Nuno Ferreira <
 ### **Question 1** (2.5 points):
 
 Create a VM with 2 CPUs and 4GB memory. Run the exercises:
-- b) Serial runs,
-- c) Simple OpenMP version,
+
+* b) Serial runs,
+* c) Simple OpenMP version,
 - d) Running the OpenMP optimised version and
 - e) Running the OpenMP optimised alternative version. 
 
 Answer the folowing:
+
 - Do you see significant differences for the *real* and *user* time between the solutions b), c), d) and e)? 
 - Which parts of the code runs in parallel for each solution?
 - Explain.
