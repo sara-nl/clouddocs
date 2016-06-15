@@ -12,4 +12,24 @@ layout: default
 
 This is the Assignment section of the Tutorial [UvA course 2016-06-15](.). 
 
-Read carefully the following questions and send your answers to: markus.vandijk@surfsara.nl and natalie.danezi@surfsara.nl **by 24th of June 2016**.
+Read carefully the following questions and send your answers to: markus.vandijk@surfsara.nl and natalie.danezi@surfsara.nl **by 24th of June 2016**. The questions are taken from the corresponding *Food for brain* sections.
+
+## Exercise [OpenMP: calculating _&pi;_](OpenMP) 
+
+* **Question 1**:
+
+Create a VM with 2 CPUs and 4GB memory. Run the exercises b) Serial runs, c) Simple OpenMP version, d) Running the OpenMP optimised version and e) Running the OpenMP optimised alternative version. Do you see significant differences between real and user time between the solutions b), c), d) and e)? Which parts of the code runs in parallel for each solution? Can you explain?
+
+* **Question 2**:
+
+Create a VM with 4 CPUs and 4GB memory. Run the exercises b) Serial runs, c) Simple OpenMP version, d) Running the OpenMP optimised version and e) Running the OpenMP optimised alternative version again. Play around with the parameter POINTS_ON_AXIS in the source files. Can you explain your measurements in words or with a graph?
+
+## Exercise [MPI: Wave equation](MPI)
+
+* **Question 3**:
+
+Create a VM with 2 CPUs and 4GB memory. Run the exercises c) Serial runs, e) Multicore version. Do you see any significant improvement in the run time between c) and e)? Can you explain the improvement (or lack thereof)?
+
+* **Question 4**:
+
+Run the exercise f) Scaling out to multiple VMs. In this exercise you run the program over 2 nodes VMs (1 master and 1 worker). Add 2 more workers with 2 CPUs and 4GB memory each. Then run the program among them. What do you need to do to make more workers available? Does the run time reduce and is it worth parallelising a lot? Where do you think is the optimum? 
