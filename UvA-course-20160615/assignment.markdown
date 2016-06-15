@@ -12,7 +12,7 @@ layout: default
 
 This is the Assignment section of the Tutorial [UvA course 2016-06-15](.). 
 
-Read carefully the following questions and send your answers to: markus.vandijk@surfsara.nl and natalie.danezi@surfsara.nl **by 24th of June 2016**. 
+Read carefully the following questions and send your answers to: nuno.ferreira@surfsara.nl **by 24th of June 2016**. 
 
 ## Exercise [OpenMP: calculating _&pi;_](OpenMP) 
 
