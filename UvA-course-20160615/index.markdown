@@ -65,7 +65,7 @@ For this tutorial you will need:
 >
 ```sh
 # press enter to submit each command
-echo "export DISPLAY=localhost:0.0" >> $HOME/.bashrc`
+echo "export DISPLAY=localhost:0.0" >> $HOME/.bashrc
 source $HOME/.bashrc
 ```
 
