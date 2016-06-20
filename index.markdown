@@ -11,7 +11,7 @@ layout: default
 
 
 ## Basics
-- [HPC Cloud Calendar](/assets/HPC Cloud Calendar 2016.pdf)
+- [Calendar maintenance HPC Cloud (PDF)](/assets/HPC Cloud Calendar 2016.pdf)
 - [Introduction to HPC Cloud](introduction-to-hpc-cloud)
 - [Estimate your resources](estimate-your-resources)
 - [User Interface](user-interface)
