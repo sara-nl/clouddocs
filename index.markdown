@@ -11,6 +11,7 @@ layout: default
 
 
 ## Basics
+- [Maintenance](calendar-overview)
 - [Introduction to HPC Cloud](introduction-to-hpc-cloud)
 - [Estimate your resources](estimate-your-resources)
 - [User Interface](user-interface)
