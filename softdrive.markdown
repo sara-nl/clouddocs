@@ -11,8 +11,7 @@ challenging than on the HPC Cloud. SoftDrive uses [CernVM-FS][2] (cvmfs).
 
 ## When to use SoftDrive?
 
-You should probably only consider using SoftDrive on the HPC Cloud if you want
-to make software available to both the Grid and the HPC Cloud.
+You should probably consider using SoftDrive on the HPC Cloud if you want to make your software available on multiple platforms such as grids, classical clusters, and public or private clouds. Softdrive allows you to install and maintain only a single software tree while using it from various locations. 
 
 ## Instructions
 
