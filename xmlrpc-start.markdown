@@ -9,7 +9,7 @@ layout: default
 OpenNebula offers an XML-RPC API, which you can use mainly for automating tasks related to handling VMs and get information out of the HPC Cloud environment. The XML-RPC API is accessible via the following URL: 
 
 ```
-http://ui.hpccloud.surfsara.nl:2633/RPC2
+https://api.hpccloud.surfsara.nl
 ```
 
 > ⚠ **WARNING:** 
@@ -135,7 +135,7 @@ import oca                          # this imports the OpenNebula API bindings
 class VersionCheck():
     """A simple OpenNebula API test class"""
 
-    ONE_ENDPOINT = 'http://ui.hpccloud.surfsara.nl:2633/RPC2'
+    ONE_ENDPOINT = 'https://api.hpccloud.surfsara.nl'
     ONE_USER = 'UI_username'          # replace this with your HPC Cloud UI username
     ONE_PASSWORD = 'UI_password'      # replace this with your HPC Cloud UI password
 
