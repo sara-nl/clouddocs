@@ -14,7 +14,9 @@ layout: default
 | **Planned** | **02-09-2016 / 09-09-2016** |
 {: class="table"}
 
-**Note** On 02-09-2016 we will move our servers to a new datacentre for which a full week is planned, if all goes well we should be back online before 09-09-2016
+> **NOTE:** 
+>
+> On 02-09-2016 we will move our servers to a new datacentre for which a full week is planned, if all goes well we should be back online before 09-09-2016
 
 ### 2017 (tentative)
 
