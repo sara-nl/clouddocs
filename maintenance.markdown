@@ -22,7 +22,6 @@ layout: default
 | Planned   | 19-12-2017 / 20-12-2017   |
 {: class="table"}
 
-### 2017 (tentative)
 | Type | Date (start / end) |
 |:--------|:--------|
 | Planned   | 24-01-2017 / 25-01-2017   |
