@@ -22,13 +22,10 @@ layout: default
 | Planned | 19-12-2017 / 20-12-2017 |
 |------+-------|
 
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|----
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=====
-| Foot1   | Foot2   | Foot3
+| Header1 | Header2 |
+|:--------|:-------:|
+| cell1   | cell2   |
+| cell4   | cell5   |
+| cell7   | cell8   |
+| cell10   | cell11   |
 {: class="table"}
