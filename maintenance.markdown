@@ -9,7 +9,7 @@ layout: default
 | Planned   | 02-02-2016 / 03-02-2016   |
 | Planned   | 05-04-2016 / 06-04-2016   |
 | Planned   | 26-07-2016 / 27-07-2016   |
-| **Planned**   | 02-09-2016 / 09-09-2016   |
+| **Planned**   | **02-09-2016 / 09-09-2016**   |
 {: class="table"}
 
 **Note** On 02-09-2016 we will move our servers to a new datacentre for which a week is planned if all goes well we might be back online before 09-09-2016
