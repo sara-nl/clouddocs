@@ -6,7 +6,7 @@ layout: default
 
 ### 2016
 
-|   Stage      |   Date (start / end)        |
+|   Status      |   Date (start / end)        |
 |:------------|:----------------------------|
 |   Finished   |   02-02-2016 / 03-02-2016   |
 |   Finished   |   05-04-2016 / 06-04-2016   |
@@ -20,7 +20,7 @@ layout: default
 
 ### 2017 (tentative)
 
-|   Stage      |   Date (start / end)        |
+|   Status      |   Date (start / end)        |
 |:------------|:----------------------------|
 |   Planned   |   24-01-2017 / 25-01-2017   |
 |   Planned   |   18-04-2017 / 19-04-2017   |
