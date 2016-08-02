@@ -22,24 +22,13 @@ layout: default
 | Planned | 19-12-2017 / 20-12-2017 |
 |------+-------|
 
-|-----------------+------------|
-| Default aligned | Default aligned |
-|-----------------|------------|
-| First body part | Second cell |
-| Second line     | foo         |
-| Third line      | quux        |
-|-----------------+------------|
-| Second body     |            | 
-| 2 line          |            | 
-|=================+============|
-| Footer row      |            | 
-|-----------------+------------|
-
-<table>
-<tr>
- <td>test</td>
-</tr>
-<tr>
- <td>test1</td>
-</tr>
-</table>
+| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|----
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|=====
+| Foot1   | Foot2   | Foot3
+{: class="table"}
