@@ -24,10 +24,10 @@ layout: default
 
 | Header1 | Header2 |
 |:--------|:--------|
-| cell1   | cell2   |
-| cell4   | cell5   |
-| cell1   | cell2   |
-| cell4   | cell5   |
+| Planned   | 24-01-2017 / 25-01-2017   |
+| Planned   | cell5   |
+| Planned   | cell2   |
+| PLanned   | cell5   |
 |=====
 | Foot1   | Foot2   |
 {: class="table"}
