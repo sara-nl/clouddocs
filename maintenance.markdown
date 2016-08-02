@@ -34,3 +34,12 @@ layout: default
 |=================+============|
 | Footer row      |            | 
 |-----------------+------------|
+
+<table>
+<tr>
+ <td>test</td>
+</tr>
+<tr>
+ <td>test1</td>
+</tr>
+</table>
