@@ -21,7 +21,7 @@ If you feel you really need to keep some VM instances, please contact our adviso
 We are doing everything possible to minimize the risk of data loss. 
 If your VM list is empty, this risk will not be greater than during normal operation. 
 Nevertheless, we always recommend users with valuable datasets to keep a copy elsewhere. 
-See also our backup policy. 
+See also our [backup policy](https://userinfo.surfsara.nl/systems/hpc-cloud/backup-policy). 
 
 ### Questions?  
 
