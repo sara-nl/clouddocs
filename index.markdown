@@ -7,11 +7,11 @@ layout: default
 >
 > This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages here are heavily under construction and you can expect frequent changes.  We welcome your comments or corrections at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments) or see the bottom of this page on how to contribute directly to help us improve the documentation.
 
+## Operational
 
-
+- [Maintenance calendar HPC Cloud](maintenance)
 
 ## Basics
-- [Calendar maintenance HPC Cloud](maintenance)
 - [Introduction to HPC Cloud](introduction-to-hpc-cloud)
 - [Estimate your resources](estimate-your-resources)
 - [User Interface](user-interface)
