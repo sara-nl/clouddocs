@@ -27,7 +27,7 @@ See also our backup policy.
 
 Please call or email your advisor, or contact our helpdesk: helpdesk@surfsara.nl if you have questions about the move.
 
-## Instructions to prepare for thge move
+## Instructions to prepare for the move
 
 > _This part needs to be written._
 
