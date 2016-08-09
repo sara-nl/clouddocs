@@ -4,20 +4,20 @@ layout: default
 
 ## Maintenance windows HPC Cloud
 
-### 2016
-
-|   Status    |   Date (start / end)        |
-|:------------|:----------------------------|
-|   Finished  |   02-02-2016 / 03-02-2016   |
-|   Finished  |   05-04-2016 / 06-04-2016   |
-|   Finished  |   26-07-2016 / 27-07-2016   |
-| **Planned** | **02-09-2016 / 09-09-2016** |
-{: class="table"}
-
 > **NOTE:** 
 >
 > On 02-09-2016 we will move our servers to a new data center for which a full
-> week is planned, if all goes well we should be back online before 09-09-2016.
+> week is planned, if all goes well we should be back online before 12-09-2016.
+
+### 2016
+
+|   Status    |   Date (start / end)        |   |
+|:------------|:----------------------------|:--|
+|   Finished  |   02-02-2016 / 03-02-2016   |   |
+|   Finished  |   05-04-2016 / 06-04-2016   |   |
+|   Finished  |   26-07-2016 / 27-07-2016   |   |
+| **Planned** | **02-09-2016 / 11-09-2016** | **move to new data center** |
+{: class="table"}
 
 ### 2017 (tentative)
 
