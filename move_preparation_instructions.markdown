@@ -51,9 +51,13 @@ For more information on (non-) persistency, see [Image Persistence](http://doc.h
 
 How can you check your disks for persistency?
 
-Log in to the Cloud's user interface, go to the list of VMs and click on the VM's row.
-The details for this VM are now shown. 
-Select the "storage" tab. You should see a display similar to this (look at the "Persistent" column.):
+
+- log in to the Cloud user interface
+- go to the list of VMs
+- click on the row for a running VM
+- you now see the VM's details
+- Select the "storage" tab. 
+- you should see a display similar to this (look at the "Persistent" column.)
 
 ![vm disk tab](images/vm-storage.png)
  
