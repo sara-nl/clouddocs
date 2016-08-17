@@ -68,7 +68,7 @@ This will leave your VM alive in "power down" mode.
 - click on the row for a running VM
 - you now see the VM's details: check that "State" is "ACTIVE" and "LCM State" is "RUNNING"
 - open the drop-down menu of the trashcan (upper right)
-- click on "Shutdown" ![vm shutdown button](images/vm-move.png)
+- click on "Shutdown" ![vm shutdown button](images/vm-shutdown.png)
 
 Check that the VM proceeds with shutdown: use the refresh button (upper left ![chasing arrows](images/reload-symbol.png)).
 The VM should take no more than a few minutes to shut itself down, after which the Cloud will copy your disks back to the disk storage.
