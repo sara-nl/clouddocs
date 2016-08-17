@@ -47,7 +47,7 @@ If your VM changed valuable data on non-persistent disks,
 you should copy that to another location before shutting down: 
 changes to data on non-persistent disks is lost when the VM shuts down.
   
-For more information on (non-) persistency, see **XXXX**.
+For more information on (non-) persistency, see [Image Persistence](http://doc.hpccloud.surfsara.nl/image_persistence).
 
 How can you check your disks for persistency?
 
