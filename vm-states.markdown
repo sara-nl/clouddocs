@@ -225,26 +225,46 @@ The OS will go through a graceful shutdown sequence.
 
 You cannot _resume_ this VM; you can only instantiate its template again.
 
->### VM not reacting to Shutdown 
+### VM not reacting to Shutdown 
 
->**Note:**
->
-> When you issue a shutdown command from the cloud web interface, the cloud interface will send an ACPI shutdown signal to your VM and keep monitoring the process. (This is very similar to the power button on your PC.) If your VM has an acpid daemon running, this daemon will capture this signal and perform the requested shutdown. After a few minutes, the cloud interface will notice that your VM has shut down and the VM will disappear from the list of running VMs. Also, any persistent images that were used by this VM will return to a READY status.
->
-> However, if your VM does not have a running acpid daemon or contextualisation is not working properly in your VM, the signal sent by the cloud interface will be ignored. The cloud interface will notice that the VM is not disappearing and will, after waiting about five minutes, set the VM back to a "RUNNING" state. The only way to perform a successful shutdown is to send the shutdown signal "manually" yourself: 
-> * click on "Shutdown" from the Cloud user interface
-> * issue the shutdown command on the VMs command line directly after: `# shutdown -h now`   
-> The cloud interface will notice an "expected disappearance" of the VM and all will be well.
+How it _should_ work:
+
+When you issue a shutdown command from the cloud web interface, the cloud interface will send an ACPI shutdown signal to your VM and keep monitoring the process.
+(This is very similar to the power button on your PC.) 
+If your VM has an acpid daemon running, this daemon will capture this signal and perform the requested shutdown. 
+After a few minutes, the cloud interface will notice that your VM has shut down and the VM will disappear from the list of running VMs.
+Also, any persistent images that were used by this VM will return to a READY status.
+
+However, if your VM does not have a running acpid daemon, the signal sent by the cloud interface will be ignored.
+Even if the apcid daemon receives the signal, it could choose to ignore the signal for some reason. 
+The cloud interface will notice that the VM is not disappearing and will, after waiting about five minutes, set the VM back to a "RUNNING" state. 
+
+The  way to perform a successful shutdown in this case is to make the VM shutdown manually.
+Try the following:
+
+* prepare a terminal connection to the VM and log in as root (e.g. use `sudo`)
+* click the "Shutdown" button in the Cloud user interface, as before
+* manually shutdown the VMs: in the terminal, as root, issue the command
+```
+shutdown -h now
+```
+
+If the VM shuts down withing five minutes of you pressing the button in the Cloud UI, 
+the cloud interface will notice an "expected disappearance" of the VM and all will be well.
 
 #### Shutdown hard
 
 Can only be triggered when the VM is in state RUNNING.
 
 _Shutdown_ eliminates the VM from the system, first going through the SHUTDOWN state. 
+No check is made if the VM actually reacts and shuts down.
+The OS running on the VM is terminated immediately and does not get a chance to properly shut down. 
+As usual with a shutdown, non-persistent images will lose their changes, but persistent images will keep their changes.
+The state of the disk data may be corrupted, however, due to possible caching by the OS.
+
 
 This state **frees resources** that the VM holds, so your quota does not tick.
 
-The OS running on the VM does **not** notice anything. Non-persistent images will lose their changes, but persistent images will keep their changes.
 
 You cannot _resume_ this VM; you can only instantiate its template again.
 
