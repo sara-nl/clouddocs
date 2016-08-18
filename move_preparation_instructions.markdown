@@ -1,11 +1,17 @@
 ---
 layout: default
 ---
+
+    STILL UNDER CONSTRUCTION
+
 # HPC Cloud moves to a new datacenter
 
 You will find step-by-step instructions to prepare your HPC Cloud project for the datacenter move below the announcement.
 
-    STILL UNDER CONSTRUCTION
+Contents:
+
+- Announcement
+- [Instructions to prepare for the move](#questions)
 
 ## Announcement
 
