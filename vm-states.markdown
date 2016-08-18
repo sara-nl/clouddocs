@@ -225,7 +225,7 @@ The OS will go through a graceful shutdown sequence.
 
 You cannot _resume_ this VM; you can only instantiate its template again.
 
-##### VM not reacting to Shutdown 
+#### VM not reacting to Shutdown 
 
 How it _should_ work:
 
