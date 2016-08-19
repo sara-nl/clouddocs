@@ -227,7 +227,7 @@ You cannot _resume_ this VM; you can only instantiate its template again.
 
 >**Note:**
 >
-> If your VM is not reacting to the shutdown command from the cloud web interface, see [VM not reacting to Shutdown](vm-not-reacting-to-shutdown).
+> If your VM is not reacting to the shutdown command from the cloud web interface, see [VM not reacting to Shutdown](http://doc.hpccloud.surfsara.nl/vm-not-reacting-to-shutdown).
 
 #### Shutdown hard
 
