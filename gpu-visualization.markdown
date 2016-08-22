@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Remote Visualization Guide for HPC Cloud
-In this guide we will describe how to setup and use remote interactive visualization on the HPC Cloud. It allows the user of the HPC cloud to fully use Virtual machines equiped with GPUs for interactive rendering.
+In this guide we will describe how to setup and use remote interactive visualization on the HPC Cloud. It allows the user of the HPC cloud to fully use Virtual machines equiped with GPUs for interactive rendering, with the result being transfered over the internet to their own local laptop or desktop.
 
 ![Remote interactive visualization](images/gpu/rvs_cloud.png)
 
@@ -23,13 +23,16 @@ Normally, an OpenGL-based visualization application running on your local machin
 You can either set up your own image, or use an image provided by SURFsara. In this guide we will use one of the standard images provided by SURFsara. 
 
 1. In the Dashboard on https://ui.hpccloud.surfsara.nl/, under AppMarket--> Appliances, select the Ubuntu 14.04 image with GPU (Ubuntu 14.04 GPU CI) and import it with the import button in the upper right.
-![import AppMarket Appliance] (images/gpu/rvs_image_name.png =50%)
+![import AppMarket Appliance] (images/gpu/rvs_select_iamge.png)
 2. In the next screen, make sure to select “images_ssd_gpu” as your datastore, and give both your images and template a distinctive name.
-3. Under Virtual Resources-> images, select the image you just created, and with the “dots” button in the upepr right corner, set your image to persistent state. After this, refresh the list and make sure the status of your image is “ready”
+![import AppMarket Appliance] (images/gpu/rvs_image_name.png)
+3. Under Virtual Resources-> images, select the image you just created, and with the “dots” button in the upper right corner, set your image to persistent state. After this, refresh the list and make sure the status of your image is “ready”
+![Make image persistant] (images/gpu/rvs_make_persistent.png)
 4. Under Virtual Resources->Templates, select the template you created, and click the “Update” button. This will open the properties of your VM template.  Here you can set memory and cores of your virtual machine. A good default is 16GB memory, and 4 CPU&VCPU.
-Next, under the “other” tab, click “+ Add PCI Device”, and select the Grid K2 GPU.
+![Make image persistant] (images/gpu/rvs_update_vm.png)
+5. Next, under the “other” tab, click “+ Add PCI Device”, and select the Grid K2 GPU.
 Make sure to click the green “update” button to save your changes to the VM
-5.  Under Virtual Resources->Templates, select your  template, and click “instantiate”, followed by the green “instantiate”, to start your VM.
+6. Under Virtual Resources->Templates, select your  template, and click “instantiate”, followed by the green “instantiate”, to start your VM.
 6. Under Virtual Resources->Virtual Machines, wait for your machine to boot. If the status is “running”, you can proceed with the next step. Note the IP address your machine received.
 7. Using SSH, login to your new machine, using ubuntu@<ip address>
 8. You need to configure the VirtualGL context: sudo /opt/VirtualGL/bin/vglserver_config
