@@ -5,7 +5,7 @@ layout: default
 # Remote Visualization Guide for HPC Cloud
 In this guide we will describe how to setup and use remote interactive visualization on the HPC Cloud. It allows the user of the HPC cloud to fully use Virtual machines equiped with GPUs for interactive rendering.
 
-![Remote interactive visualization](images/gpu/HPC_Cloud_rvs.png)
+![Remote interactive visualization](images/gpu/rvs_cloud.png)
 
 ## Getting access
 
@@ -23,6 +23,7 @@ Normally, an OpenGL-based visualization application running on your local machin
 You can either set up your own image, or use an image provided by SURFsara. In this guide we will use one of the standard images provided by SURFsara. 
 
 1. In the Dashboard on https://ui.hpccloud.surfsara.nl/, under AppMarket--> Appliances, select the Ubuntu 14.04 image with GPU (Ubuntu 14.04 GPU CI) and import it with the import button in the upper right.
+![import AppMarket Appliance] (images/gpu/rvs_image_name.png =50%)
 2. In the next screen, make sure to select “images_ssd_gpu” as your datastore, and give both your images and template a distinctive name.
 3. Under Virtual Resources-> images, select the image you just created, and with the “dots” button in the upepr right corner, set your image to persistent state. After this, refresh the list and make sure the status of your image is “ready”
 4. Under Virtual Resources->Templates, select the template you created, and click the “Update” button. This will open the properties of your VM template.  Here you can set memory and cores of your virtual machine. A good default is 16GB memory, and 4 CPU&VCPU.
