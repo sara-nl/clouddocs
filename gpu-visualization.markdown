@@ -39,7 +39,7 @@ Make sure to click the green “Update” button to save your changes to the VM
 6. Under Virtual Resources -> Virtual Machines wait for your machine to boot. If the status is “running”, you can proceed with the next step. Note the IP address your machine received.
 7. Using SSH, login to your new machine, using `ssh ubuntu@<ip address>`
 8. You need to configure the VirtualGL context: `sudo /opt/VirtualGL/bin/vglserver_config`
-Answer in order: 1, n, n y, X.      (PM n y of n,y?)
+Answer in order: 1, n, n, y, X.  
 9. The VM by default runs a firewall. Use the command `sudo ufw allow from <your home IP address> to any`  to allow access from your own client IP address. If you have a dynamic IP address, you can specify a range using the / syntax, e.g. 145.100.1.0/24, which allows all ip addresses starting with 145.100.1.*  
 10. Reboot using the command `sudo reboot` for the changes to come into effect
 11. On your own local machine, you need a VNC client. We advice TurboVNC (https://sourceforge.net/projects/turbovnc/) or TigerVNC (http://tigervnc.org/) but any other VNC client will suffice.
