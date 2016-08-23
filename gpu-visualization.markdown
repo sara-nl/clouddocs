@@ -34,7 +34,7 @@ You can either set up your own cloud image, or use an image provided by SURFsara
 5. Next, under the “Other” tab, click “+ Add PCI Device”, and select the `GK104GL [GRID K2]` GPU.
 Make sure to click the green “Update” button to save your changes to the VM
  ![Add GPU to template](images/gpu/gpu_add_pci.png)
-6. Under Virtual Resources -> Templates, select your template, and click “Instantiate” (PM ???), followed by the green “Instantiate”, to start your VM.
+6. Under Virtual Resources -> Templates, select your template, and click the “Instantiate” button, and in the pop up window click the green “Instantiate”, to start your VM.
 ![Start VM](images/gpu/rvs_instantiate.png)
 6. Under Virtual Resources -> Virtual Machines wait for your machine to boot. If the status is “running”, you can proceed with the next step. Note the IP address your machine received.
 7. Using SSH, login to your new machine, using `ssh ubuntu@<ip address>`
