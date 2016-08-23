@@ -3,9 +3,9 @@ layout: default
 ---
 
 # Remote Visualization Guide for HPC Cloud
-In this guide we will describe how to setup and use remote interactive visualization on the HPC Cloud. It allows the user of the HPC cloud to fully use Virtual machines equiped with GPUs for interactive rendering.
+In this guide we will describe how to setup and use remote interactive visualization on the HPC Cloud. It allows the user of the HPC cloud to fully use Virtual machines equiped with GPUs for interactive rendering, with the result being transfered over the internet to their own local laptop or desktop.
 
-![Remote interactive visualization](images/gpu/HPC_Cloud_rvs.png)
+![Remote interactive visualization](images/gpu/rvs_cloud.png)
 
 ## Getting access
 
@@ -23,12 +23,17 @@ Normally, an OpenGL-based visualization application running on your local machin
 You can either set up your own image, or use an image provided by SURFsara. In this guide we will use one of the standard images provided by SURFsara. 
 
 1. In the Dashboard on https://ui.hpccloud.surfsara.nl/, under AppMarket--> Appliances, select the Ubuntu 14.04 image with GPU (Ubuntu 14.04 GPU CI) and import it with the import button in the upper right.
+![import AppMarket Appliance] (images/gpu/rvs_select_image.png)
 2. In the next screen, make sure to select “images_ssd_gpu” as your datastore, and give both your images and template a distinctive name.
-3. Under Virtual Resources-> images, select the image you just created, and with the “dots” button in the upepr right corner, set your image to persistent state. After this, refresh the list and make sure the status of your image is “ready”
+![import AppMarket Appliance] (images/gpu/rvs_image_name.png)
+3. Under Virtual Resources-> images, select the image you just created, and with the “dots” button in the upper right corner, set your image to persistent state. After this, refresh the list and make sure the status of your image is “ready”
+![Make image persistant] (images/gpu/rvs_make_persistent.png)
 4. Under Virtual Resources->Templates, select the template you created, and click the “Update” button. This will open the properties of your VM template.  Here you can set memory and cores of your virtual machine. A good default is 16GB memory, and 4 CPU&VCPU.
-Next, under the “other” tab, click “+ Add PCI Device”, and select the Grid K2 GPU.
+![Make image persistant] (images/gpu/rvs_update_vm.png)
+5. Next, under the “other” tab, click “+ Add PCI Device”, and select the Grid K2 GPU.
 Make sure to click the green “update” button to save your changes to the VM
-5.  Under Virtual Resources->Templates, select your  template, and click “instantiate”, followed by the green “instantiate”, to start your VM.
+ ![Add GPU to template](images/gpu/gpu_add_pci.png)
+6. Under Virtual Resources->Templates, select your  template, and click “instantiate”, followed by the green “instantiate”, to start your VM.
 6. Under Virtual Resources->Virtual Machines, wait for your machine to boot. If the status is “running”, you can proceed with the next step. Note the IP address your machine received.
 7. Using SSH, login to your new machine, using ubuntu@<ip address>
 8. You need to configure the VirtualGL context: sudo /opt/VirtualGL/bin/vglserver_config
@@ -37,26 +42,16 @@ Answer in order 1, n, n y, X.
 10. Reboot using the command sudo reboot for the changes to come into effect
 11. On your own local machine, you need a VNC client. We advice TurboVNC (https://sourceforge.net/projects/turbovnc/) but any other VNC client will suffice.
 
-Workflow 
+## Workflow 
 You only need to do the previous steps once. For every subsequent worksession, you need only need to reinstate your VM and start your virtual desktop. 
 
 1. Log in onto your VM using SSH. Note that you have a different IP address each time you reinstated your VM
 2. Start your virtual desktop with /opt/TurboVNC/bin/vncserver -geometry 1920x1200. You can vary the resolution as desired.
-3. Start the VNC client on your local machine, and login to your VNCserver: Vncviewer <your ip address>:1
+3. Start the VNC client on your local machine, and login to your VNCserver: Vncviewer <your VM's ip address>:1
 4. You should now have access with your VNC viewer to the remote desktop on the node assigned to you 
 5. (Optional) To test if everything works correctly, you can use the application glxgears located in the mesa-utils package (on Ubuntu).  You run the command “vglrun glxgears”, and if you see three red, green a blue cogs, everything works correctly.
 
 
 
-------------
-To attach a GPU device to your VM, either create a new template or edit an existing template as described [on this page](customize-your-vm). Then:
-
- 1. Go to the 'Other' tab while editing the template. You should see a screen like below:
- ![Add GPU to template](images/gpu/gpu_add_pci.png)
- 2. Click on the '+ Add PCI device' button. This adds a line to the table above it (already visible in the screenshot above).
- 3. In the new line, under 'Device name', choose the GPU in the dropdown list. The 'Vendor', 'Device' and 'Class' will automatically be set.
- 4. If no other changes to the template are needed, click on the green 'Create' or 'Update button (depending on whether you are creating a new template or editing an existing one) will save the template.
-
-You are all set now and can launch the VM.
 
 ## Inside your VM
