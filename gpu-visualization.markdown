@@ -29,27 +29,29 @@ You can either set up your own image, or use an image provided by SURFsara. In t
 3. Under Virtual Resources-> images, select the image you just created, and with the “dots” button in the upper right corner, set your image to persistent state. After this, refresh the list and make sure the status of your image is “ready”
 ![Make image persistant] (images/gpu/rvs_make_persistent.png)
 4. Under Virtual Resources->Templates, select the template you created, and click the “Update” button. This will open the properties of your VM template.  Here you can set memory and cores of your virtual machine. A good default is 16GB memory, and 4 CPU&VCPU.
-![Make image persistant] (images/gpu/rvs_update_vm.png)
+![Update VM] (images/gpu/rvs_update_vm.png)
 5. Next, under the “other” tab, click “+ Add PCI Device”, and select the Grid K2 GPU.
 Make sure to click the green “update” button to save your changes to the VM
  ![Add GPU to template](images/gpu/gpu_add_pci.png)
 6. Under Virtual Resources->Templates, select your  template, and click “instantiate”, followed by the green “instantiate”, to start your VM.
+![Start VM](images/gpu/gpu_instantiate.png)
 6. Under Virtual Resources->Virtual Machines, wait for your machine to boot. If the status is “running”, you can proceed with the next step. Note the IP address your machine received.
 7. Using SSH, login to your new machine, using ubuntu@&ltip address&gt
 8. You need to configure the VirtualGL context: `sudo /opt/VirtualGL/bin/vglserver_config`
 Answer in order 1, n, n y, X.
-9. The VM comes with a default firewall. Use the command sudo ufw allow from &ltyour home IP address&gt  to any  to allow access from your own client IP address. If you have a dynamic IP address, you can specify a range using the / syntax, e.g. 145.100.1.0/24, which allows all ip adresses starting with 145.100.1. 
-10. Reboot using the command sudo reboot for the changes to come into effect
+9. The VM comes with a default firewall. Use the command `sudo ufw allow from &lt;your home IP address&gt;  to any`  to allow access from your own client IP address. If you have a dynamic IP address, you can specify a range using the / syntax, e.g. 145.100.1.0/24, which allows all ip adresses starting with 145.100.1.*  
+10. Reboot using the command `sudo reboot` for the changes to come into effect
 11. On your own local machine, you need a VNC client. We advice TurboVNC (https://sourceforge.net/projects/turbovnc/) but any other VNC client will suffice.
 
 ## Workflow 
 You only need to do the previous steps once. For every subsequent worksession, you need only need to reinstate your VM and start your virtual desktop. 
 
 1. Log in onto your VM using SSH. Note that you have a different IP address each time you reinstated your VM
-2. Start your virtual desktop with /opt/TurboVNC/bin/vncserver -geometry 1920x1200. You can vary the resolution as desired.
-3. Start the VNC client on your local machine, and login to your VNCserver: Vncviewer <your VM's ip address>:1
+2. Start your virtual desktop with `/opt/TurboVNC/bin/vncserver -geometry 1920x1200`. You can vary the resolution as desired.
+3. Start the VNC client on your local machine, and login to your VNCserver: `Vncviewer <your VM's ip address>:1`
 4. You should now have access with your VNC viewer to the remote desktop on the node assigned to you 
-5. (Optional) To test if everything works correctly, you can use the application glxgears located in the mesa-utils package (on Ubuntu).  You run the command “vglrun glxgears”, and if you see three red, green a blue cogs, everything works correctly.
+5. (Optional) To test if everything works correctly, you can use the application glxgears located in the mesa-utils package (on Ubuntu).  You run the command `vglrun glxgears`, and if you see three red, green a blue cogs, everything works correctly.
+6. ![Test with GLXgears](images/gpu/gpu_glxgears.png)
 
 
 
