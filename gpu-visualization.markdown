@@ -35,10 +35,10 @@ Make sure to click the green “update” button to save your changes to the VM
  ![Add GPU to template](images/gpu/gpu_add_pci.png)
 6. Under Virtual Resources->Templates, select your  template, and click “instantiate”, followed by the green “instantiate”, to start your VM.
 6. Under Virtual Resources->Virtual Machines, wait for your machine to boot. If the status is “running”, you can proceed with the next step. Note the IP address your machine received.
-7. Using SSH, login to your new machine, using ubuntu@<ip address>
-8. You need to configure the VirtualGL context: sudo /opt/VirtualGL/bin/vglserver_config
+7. Using SSH, login to your new machine, using ubuntu@&ltip address&gt
+8. You need to configure the VirtualGL context: `sudo /opt/VirtualGL/bin/vglserver_config`
 Answer in order 1, n, n y, X.
-9. The VM comes with a default firewall. Use the command sudo ufw allow from <your home IP address>  to any  to allow access from your own client IP address. If you have a dynamic IP address, you can specify a range using the / syntax, e.g. 145.100.1.0/24, which allows all ip adresses starting with 145.100.1. 
+9. The VM comes with a default firewall. Use the command sudo ufw allow from &ltyour home IP address&gt  to any  to allow access from your own client IP address. If you have a dynamic IP address, you can specify a range using the / syntax, e.g. 145.100.1.0/24, which allows all ip adresses starting with 145.100.1. 
 10. Reboot using the command sudo reboot for the changes to come into effect
 11. On your own local machine, you need a VNC client. We advice TurboVNC (https://sourceforge.net/projects/turbovnc/) but any other VNC client will suffice.
 
