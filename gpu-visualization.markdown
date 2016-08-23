@@ -34,7 +34,7 @@ You can either set up your own image, or use an image provided by SURFsara. In t
 Make sure to click the green “update” button to save your changes to the VM
  ![Add GPU to template](images/gpu/gpu_add_pci.png)
 6. Under Virtual Resources->Templates, select your  template, and click “instantiate”, followed by the green “instantiate”, to start your VM.
-![Start VM](images/gpu/gpu_instantiate.png)
+![Start VM](images/gpu/rvs_instantiate.png)
 6. Under Virtual Resources->Virtual Machines, wait for your machine to boot. If the status is “running”, you can proceed with the next step. Note the IP address your machine received.
 7. Using SSH, login to your new machine, using ubuntu@&ltip address&gt
 8. You need to configure the VirtualGL context: `sudo /opt/VirtualGL/bin/vglserver_config`
@@ -51,7 +51,7 @@ You only need to do the previous steps once. For every subsequent worksession, y
 3. Start the VNC client on your local machine, and login to your VNCserver: `Vncviewer <your VM's ip address>:1`
 4. You should now have access with your VNC viewer to the remote desktop on the node assigned to you 
 5. (Optional) To test if everything works correctly, you can use the application glxgears located in the mesa-utils package (on Ubuntu).  You run the command `vglrun glxgears`, and if you see three red, green a blue cogs, everything works correctly.
-6. ![Test with GLXgears](images/gpu/gpu_glxgears.png)
+6. ![Test with GLXgears](images/gpu/rvs_glxgears.png)
 
 
 
