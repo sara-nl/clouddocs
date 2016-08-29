@@ -6,7 +6,7 @@ layout: default
 
 ### How Shutdown _should_ work
 
-When you issue a shutdown command from the cloud web interface, the cloud interface will send an ACPI shutdown signal to your VM and keeps on monitoring the process. This event is very similar to when you press the power button on your PC. If your VM has an acpid daemon running, then the the daemon will capture the signal and perform the requested shutdown.
+When you issue a shutdown command from the cloud web interface, the cloud interface will send an ACPI shutdown signal to your VM and keeps on monitoring the process. This event is very similar to when you press the power button on your PC. If your VM has an acpid daemon running, then the daemon will capture the signal and perform the requested shutdown.
 After a few minutes, the cloud interface will notice that your VM has shutdown and the VM will disappear from the list of running VMs.
 Also, any persistent images that were used by this VM will return to a READY status.
 
