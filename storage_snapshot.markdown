@@ -17,8 +17,8 @@ In case you have a non-persistent image, but decide you want to store your chang
 
     ![storage_snapshot](images/storage_snapshot_2.png)
 
-4. Fill out a name you want the new image to have. In the screenshot, I named it 'New copy'.
+4. Fill out a name you want the new image to have (e.g. 'New copy').
 
 5. Click on the green button 'Save as'. Note that it can take some time before the copy is saved. It should appear with your other images in the OpenNebula interface. If not, please try again, or contact our helpdesk!
 
-6. Once the disk is saved, you can restart your VM (press the 'play' button) if desired.
+6. Once the disk is saved, you can restart your VM if desired by pressing the 'play' button.
