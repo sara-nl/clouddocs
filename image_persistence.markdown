@@ -18,7 +18,7 @@ If you want to run multiple VMs with a disk from the same image, you need `persi
 You can change the `persistent` property by selecting a disk and using the pencil icon to the right of the property
 or the drop down menu to the right of the `clone` button.
 
-If you have a non-persistent disk, but found that you have made changes you do want to keep. Please refer to the page about [storage snapshots](storage_snapshot).
+If you have a non-persistent disk, but found that you have made changes you do want to keep, please refer to the page about [storage snapshots](storage_snapshot).
 
 ![persistent_no](images/persistent_no.png)
 
@@ -26,7 +26,7 @@ If you have a non-persistent disk, but found that you have made changes you do w
 
 A disk image with `persistent=yes` will keep its changes after shutdown of the VM.
 
-`Persistent=yes` implies that you cannot connect this disk image to more than one VM at the same time. 
+`Persistent=yes` implies that you cannot connect this disk image to more than one VM at the same time.
 Compare this to a real hard drive that can only be connected to one PC at a time.
 It is possible to have the image in more than one template, as long as at most one template is instantiated.
 This can be useful when a template with 32 cores needs a software update: use a similar template with only one core.
