@@ -11,11 +11,11 @@ In case you have a non-persistent image, but decide you want to store your chang
 
 2. Click on the VM and then on the 'Storage' icon. You should now see a page like in this snapshot:
 
-![storage_snapshot](images/storage_snapshot_1.png)
+    ![storage_snapshot](images/storage_snapshot_1.png)
 
 3. Click on the 'save as' link behind the image you want to store. If this link is not here, OpenNebula did probably not see any changes to the image yet. After clicking on the link, you should see a window like this:
 
-![storage_snapshot](images/storage_snapshot_2.png)
+    ![storage_snapshot](images/storage_snapshot_2.png)
 
 4. Fill out a name you want the new image to have. In the screenshot, I named it 'New copy'.
 
