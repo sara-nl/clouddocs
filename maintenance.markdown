@@ -9,12 +9,13 @@ layout: default
 > On 02-09-2016 we will move our servers to a new data center for which a full
 > week is planned, if all goes well we should be back online before 12-09-2016.
 
-### Upcoming
+### Current
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-| **Planned** | **02-09-2016 / 11-09-2016** | **move to new data center** |
+| **Busy** | **02-09-2016 / 11-09-2016** | **move to new data center** |
 {: class="table"}
+
 
 ### Future (tentative)
 
