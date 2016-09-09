@@ -20,7 +20,7 @@ layout: default
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Finished  |   02-09-2016 / 09-09-2016   |   |
+|   Finished  |   02-09-2016 / 09-09-2016   | moved to new data center |
 |   Finished  |   26-07-2016 / 27-07-2016   |   |
 |   Finished  |   05-04-2016 / 06-04-2016   |   |
 |   Finished  |   02-02-2016 / 03-02-2016   |   |
