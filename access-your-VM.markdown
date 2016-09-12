@@ -28,16 +28,19 @@ For every VM that you launch, the HPC Cloud assigns it a public host name. The h
 > 
 >```bash
 >Wed Jun 24 17:54:18 2015 [Z0][HKM][I]: Success executing Hook: SurfSARA_Dns: Added
->DNS record: vmname.projectname-institute.vm.surfsara.nl -> 145.100.68.93. 
+>DNS record: vmname.projectname.surf-hosted.nl -> 145.100.68.93. 
+>
+>**Note:**
+>It used to be vmname.projectname.vm.surfsara.nl, but we will be phasing this out in the near future.
 >```
 >
->In this case the host name of the server is vmname.projectname-institute.vm.surfsara.nl which points to IP address 145.100.68.93.
+>In this case the host name of the server is vmname.projectname.surf-hosted.nl which points to IP address 145.100.68.93.
 
-You can predict the host name: `${vmname}.${projectname}.vm.surfsara.nl`
+You can predict the host name: `${vmname}.${projectname}.surf-hosted.nl`
 
 >For example:
 >
->If you are working on a project called _analysys-acme_ and you want to have a VM reachable at host name _r-studio.analysys-acme.vm.surfsara.nl_, you just need to give your VM the name _r-studio_. And, of course, you need to make that VM have a `nic` connected to the Internet.
+>If you are working on a project called _analysys-acme_ and you want to have a VM reachable at host name _r-studio.analysys-acme.surf-hosted.nl_, you just need to give your VM the name _r-studio_. And, of course, you need to make that VM have a `nic` connected to the Internet.
 
 ## SSH access
 
@@ -52,7 +55,7 @@ You can predict the host name: `${vmname}.${projectname}.vm.surfsara.nl`
 In a terminal type
 
 ```bash
-ssh username@vmname.projectname-institute.vm.surfsara.nl
+ssh username@vmname.projectname.surf-hosted.nl
 ```
 
 to connect to your Virtual Machine. You can replace the hostname with your VM's public IP-address and vice-versa.
@@ -62,7 +65,7 @@ to connect to your Virtual Machine. You can replace the hostname with your VM's 
 If you have a full desktop environment on your VM and would like to run graphical programs there whose windows you want to view on your local computer, add an additional **`-X`** to the command.  
 
 ```bash
-ssh -X username@vmname.projectname-institute.vm.surfsara.nl
+ssh -X username@vmname.projectname.surf-hosted.nl
 ```
 
 >**Note:**
