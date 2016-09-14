@@ -17,9 +17,9 @@ In case you have a non-persistent image, but decide you want to store your chang
 
     ![storage_snapshot](images/storage_snapshot_2.png)
     
->**⚠ IMPORTANT!**
+>**⚠ WARNING:**
 >
->We recommend that you do **NOT** make any image snapshots, but rather, that you follow our guidance and use the _Save as_ option instead. Image snapshots are known to cause issues when shutting down and re-creating your VMs, which may even lead to data loss in the affected images.
+>We recommend that you do **NOT** make any image _snapshots_, but rather, that you **use** the _Save as_ option instead. Image _snapshots_ are known to cause issues when shutting down and re-creating your VMs, which may even lead to data loss from the images.
 
 4. Fill out a name you want the new image to have (e.g. 'New copy').
 
