@@ -4,9 +4,9 @@ layout: default
 
 # HPC Cloud Acceptable Use Policy
 
-You agree to this Acceptable Use Policy applies when you accept credentials for a Project on the SURFFsara infrastructure.
+You agree to this Acceptable Use Policy when you accept credentials for a Project on the SURFsara infrastructure.
 
-You, as a user of the SURFFsara infrastructure:
+You, as a user of the SURFsara infrastructure:
 
 - will only use the infrastructure for the purposes of the Project,
 - will only use systems, software, or data to which you have been granted access,
