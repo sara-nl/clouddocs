@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TUDelft course 2016-04-13  <br/> Extras - Calculating _&pi;_ with OpenMP
+# VU course 2016-10-19  <br/> Extras - Calculating _&pi;_ with OpenMP
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![VU logo](/images/VU_logo.png)
