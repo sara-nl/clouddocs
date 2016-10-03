@@ -24,6 +24,9 @@ We have launched recently a new HPC Cloud with a powerful user interface and a c
 The user interface and cloud software relies on [OpenNebula 4](http://opennebula.org/) and our new cluster is called _Oort_, after the [Oort cloud](https://en.wikipedia.org/wiki/Oort_cloud).
 
 This particular course aims to introduce the workshop participants to the HPC Cloud by providing a set of lectures and hands-on examples to run on the real **`Oort`** infrastructure.
+
+The session today is part of a broader schedule of the VU HPC Course, which you can find [here](http://hpc.labs.vu.nl/program/).
+
 Here is a summary of the course outline:
 
 >**Agenda:**
