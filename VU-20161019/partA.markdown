@@ -221,4 +221,4 @@ Now that you completed part A of the Tutorial [VU course 2016-10-19](.). Please 
 
 >**NOTE:**
 >
->Before you move to the next sections, remember to shut your VMs down.
+>Before you move on to the next sections, remember to shut your VMs down.
