@@ -16,7 +16,7 @@ These are the extras of the Tutorial [VU course 2016-10-19](.).
 
 The exercises below can be done in any order and you can do as far as you want, depending on your enthusiasm and available time.
 
-You will find several _Food for brain_ questions in each exercise that you might encounter when working with **Parallel programming** techniques. We advice that you perform many tests, observe the results (write down execution times, change parameters, make tables, draw graphs...), and think about your answers.
+You will find several _Food for brain_ questions in each exercise about situations that you might encounter when working with **Parallel programming** techniques. We advice that you perform many tests, observe the results (write down execution times, change parameters, make tables, draw graphs...), and think about your answers.
 
 ## OpenMP
 
