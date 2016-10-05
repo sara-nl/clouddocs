@@ -10,6 +10,7 @@ layout: default
 ## Operational
 
 - [Maintenance calendar HPC Cloud](maintenance)
+- [Changelog HPC cloud](changelog)
 
 ## Basics
 - [Introduction to HPC Cloud](introduction-to-hpc-cloud)
