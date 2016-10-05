@@ -13,3 +13,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 * Ubuntu 16.04.1 server image.
 * Ubuntu 16.04.1 [GPU visualization](gpu-visualization) image. 
+
+## 2016-09-12
+
+### Changed
+* Domain from vm.surfsara.nl to surf-hosted.nl for new VM's.
