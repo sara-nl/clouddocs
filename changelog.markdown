@@ -13,4 +13,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 * Added Ubuntu 16.04.1 server image.
-* Added Ubuntu 16.04.1 GPU (CUDA 8) image.[[gpu-visualization]]
+* Added Ubuntu 16.04.1 GPU (CUDA 8) image.[GPU visualization](gpu-visualization)
