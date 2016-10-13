@@ -14,6 +14,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 * Ubuntu 16.04.1 server image.
 * Ubuntu 16.04.1 [GPU visualization](gpu-visualization) image. 
 
+## 2016-10-02
+
+### Updated
+* Centos image from 6.7 to 6.8
+
 ## 2016-09-12
 
 ### Changed
