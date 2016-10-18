@@ -33,7 +33,7 @@ We provide you with an implementation of that simulation using `MPI`. You will b
 We will be creating a 2-core VM for this exercise.
 
 * On the UI, import a new Ubuntu `appliance` from the AppMarket:
-  * On the _appliances_ tab (under _<i class="fa fa-truck"></i> AppMarket_), import another copy of the **Ubuntu Desktop** `appliance`. Make sure you select the proper datastore for your new OS image (**125:local_images_surfcursus**). Give the `image` and `template` the name: **mpi_wave**
+  * On the _appliances_ tab (under _<i class="fa fa-truck"></i> AppMarket_), import another copy of the **Ubuntu Desktop** `appliance`. Make sure you select the proper datastore for your new OS image (**123:local_images_Cursus**). Give the `image` and `template` the name: **mpi_wave**
 
 * Edit the `image` to make it **persistent**.
 
