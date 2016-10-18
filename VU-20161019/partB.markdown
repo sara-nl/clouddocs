@@ -76,6 +76,10 @@ You can customise your VMs by editing the `templates` you instantiate the VMs fr
 
 That was it. From now on you will get a 4-core VM running using the same *Cursus Image*.
 
+> **Food for brain:**
+>
+> After changing this template, how many cores would the vm that you created during step 2 'Scale up to a multicore VM' have? Does changing a template change the currently running VM's that are based on it?
+
 #### Instantiate the four-core VM
 
 * Instantiate a VM from the updated `template`.
