@@ -154,17 +154,17 @@ The way to log in to your virtual machine is the SSH key pair that you [stored i
 
 >**NOTE:**
 >
->Replace 145.100.5X.YZT with your IP address!
+>Replace 145.100.5Q.RST with your IP address!
 
 ```sh
-ssh ubuntu@145.100.5X.YZT
+ssh ubuntu@145.100.5Q.RST
 ```
 
 #### First login
 
 If everything went well, the first time you try to log in, your terminal will ask you to add the VM's IP to the list of known hosts. Type *Yes*, in that case.
 
-You should now see a similar line in your terminal: `ubuntu@ip-145-100-5X-YZT:~$`
+You should now see a similar line in your terminal: `ubuntu@ip-145-100-5Q-RST:~$`
 
 This means that you are logged in successfully to your Virtual Machine!
 
