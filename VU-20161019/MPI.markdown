@@ -43,7 +43,7 @@ We will be creating a 2-core VM for this exercise.
   * Check the _<i class="fa fa-tasks"></i> Storage_ tab: the _Disk 0_ must have the **mpi_wave** image selected (from the table on the right of the screen) 
   * Edit the _<i class="fa fa-globe"></i> Network_ tab: 
     * for the _NIC 0_, the _Internet network_ is selected
-    * add a second `nic` (hit **+ Add another interface** button); for this second `nic`, _NIC 1_, choose the _surfcursus.int_ network (from the table on the right of the screen)
+    * add a second `nic` (hit **+ Add another interface** button); for this second `nic`, _NIC 1_, choose the _workshop-vu.int_ network (from the table on the right of the screen)
   * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: the _VNC_ radiobutton must be selected
   * Finally, click on the green *Update* button at the top of the screen
 
