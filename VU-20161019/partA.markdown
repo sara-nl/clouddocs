@@ -25,7 +25,7 @@ The UI (User Interface) is the web site that allows you to manage your _Virtual 
 #### Log in to the UI
 
 * Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/)
-* Your username is **surfcursusXY**, replace `XY` with the number assigned to you.
+* Your username is **s-landXY**, replace `XY` with the number assigned to you.
 * You will receive the password from the workshop facilitators.
 * Hit the `Login` button.
 
