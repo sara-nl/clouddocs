@@ -16,7 +16,7 @@ In this advanced part of our HPC Cloud tutorial we ask you to play around with t
 
 ### a) Setting up a VM for the exercise
 
-You are now in the advanced part; you should be able to do this on your own.
+Exercise: start a new VM (you are now in the advanced part; you should be able to do this on your own)
 
 ### b) Run a first example
 
