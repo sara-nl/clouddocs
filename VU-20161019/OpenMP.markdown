@@ -78,7 +78,7 @@ gcc -std=c99 -Wall -Werror -pedantic gridpi-serial.c -o gridpi-serial
 
 > **_Food for brain b1:_**
 >
-> * Do you see significant diffirences between *real* and *user* time? Can you explain?
+> * Do you see significant differences between *real* and *user* time? Can you explain?
 
 
 ### c) Simple OpenMP version
