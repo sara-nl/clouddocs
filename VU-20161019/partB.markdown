@@ -169,7 +169,7 @@ sudo chown ubuntu:ubuntu -R /data
 
 >**Food for brain:**
 >
-> Try to copy a file from your laptop to `/data`, e.g. with `scp myfile ubuntu@145.100.58.XYZ:/data`. Then log in to the VM and inspect the changes.
+> Try to copy a file from your laptop to `/data`, e.g. with `scp myfile ubuntu@145.100.5Q.RST:/data`. Then log in to the VM and inspect the changes.
 
 
 ### BONUS _food for brain_
