@@ -77,4 +77,9 @@ The hands-on tutorial has three parts. The exercises in part *A & B* will give y
   * [Part A](partA)
   * [Part B](partB)
   * [Extras](extras)
+  
+## <a name="presentations"></a> Presentations
+ 
+  * [20161019_vu.pdf](Morning presentation: Introduction to the HPC Cloud)
+  * <span style="color:gray;">Afternoon presentation (still to be added)</span>
 
