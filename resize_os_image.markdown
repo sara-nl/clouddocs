@@ -94,4 +94,4 @@ You now need to use the new resized `image` when you create a new VM. You need t
 1. **On the UI:** Click on _Update_ to save the changes to the resized template.
 1. **On the UI:** Click on the _Instantiate_ button to make a new VM out of the resized template (which now is pointing to the resized image).
 
-If everything went well, your VM will boot normally and you will have more space in your OS image.
+If everything went well, your VM will boot normally and you will have more space in your OS partition.
