@@ -55,6 +55,7 @@ layout: default
 * [Download an image](image_download)
 * [Create an Image on your own laptop](image-on-own-laptop)
 * [Create a copy of a disk in a running VM](storage_snapshot)
+* [Resize your OS image](resize_os_image)
 
 ### Networks
 * Virtual Network
