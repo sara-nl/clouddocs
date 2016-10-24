@@ -13,11 +13,9 @@ That description is usually valid for most use cases, but occasionally you may n
 
 The 1-2-3 summary to actually get your image resized is:
 
-<div class="bg-info">
 1. Attach the image you want to expand in another running VM.
 2. In that VM, resize (and, maybe, repartition) the image.
 3. Export (or save) the resized image as a different image.
-</div>
 
 The steps in this page will show in detail how to do it. 
 
