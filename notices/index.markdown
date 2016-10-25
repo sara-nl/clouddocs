@@ -7,5 +7,5 @@ layout: default
 * [Dirty Cow](dirtycow)
 * [Move to new datacenter](move_preparation_instructions)
 * [Replacing VirDir](replacing-virdir)
-* [Calligo to Oort](data-migration)
-* [Calligo to Oort](vm-migration-guide)
+* [Data from Calligo to Oort](data-migration)
+* [Images from Calligo to Oort](vm-migration-guide)
