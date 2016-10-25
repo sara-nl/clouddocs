@@ -4,7 +4,7 @@ layout: default
 
 # Dirty Cow exploit
 
-The Dirty Cow exploit that affects the Linux kernel may affect your VM. If you allow multiple users to log into your VMs and you do not expect them to have root access, they may use thie Dirty Cow exploit to gain root access anyway. You may want to prevent that.
+The [Dirty Cow exploit](https://en.wikipedia.org/wiki/Dirty_COW) that affects the Linux kernel may affect your VM. If you allow multiple users to log into your VMs and you do not expect them to have root access, they may use thie Dirty Cow exploit to gain root access anyway. You may want to prevent that.
 
 Our AppMarket images so far can also be compromised. Here is what you can do to protect your running VMs.
 
