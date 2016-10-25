@@ -2,11 +2,15 @@
 layout: default
 ---
 
-# Dirty Cow exploit, RedHat 7
+> **Note:**
+>
+> Comes from [the general notice](dirtycow) on the Dirty Cow exploit.
 
-The Dirty Cow exploit that affects the Linux kernel may affect your VM. See [Dirty Cow exploit](dirtycow) for general information.
+# Dirty Cow exploit on RedHat 7
 
-RedHat 7 has an update that fizes this bug, which is also applicable for CentOS 7.
+Your VM running CentOS 7 may be affected by the [Dirty Cow exploit](dirtycow).
+
+RedHat 7 have released a patch that fixes this bug, which is applicable for CentOS 7.
 
 ## CentOS 7
 
