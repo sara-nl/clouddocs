@@ -17,6 +17,7 @@ sudo apt-get update && sudo apt-get dist-upgrade
 ```
 
 Details on Ubuntu-related pages: 
+
 * [Question at AskUbuntu.com](http://askubuntu.com/questions/839919/what-is-dirty-cow-bug-that-allows-local-user-to-gain-administrative-access)
 * [Ubuntu Security Notices](https://www.ubuntu.com/usn/)
 
@@ -31,7 +32,7 @@ They have **not** published proper patches yet. The latest news can be seen on [
 > * Red Hat 7 have released a **temporary** patch for Red Hat 7. If you want some simplified instructions on applying it, we have compiled [a page for that](dirtycow_RH7).
 > * Also a **temporary** _workaround_ is described in [RedHat's Bugzilla](https://bugzilla.redhat.com/show_bug.cgi?id=1384344#c13). But keep a weather-eye open for an actual patch.
 
-Once the patch has been released, you will be able to install it with:
+Once the proper patched package has been released, you will be able to install it with:
 
 ```bash
 sudo yum update
