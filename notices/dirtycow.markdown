@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div style="float:right;max-width:50%;" markdown="1">
+<div style="float:right;max-width:300px;" markdown="1">
 ![Dirty Cow logo](https://dirtycow.ninja/cow.svg)
 </div>
 
