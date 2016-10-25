@@ -27,10 +27,9 @@ They have **not** published proper patches yet. The latest news can be seen on [
 > **NOTE:**
 >
 > The following are **temporary** solutions. When the official patched packages are released, you are advised to use those instead of keeping these temporary measures.
-
-Red Hat 7 have released a **temporary** patch for Red Hat 7. If you want some simplified instructions on applying it, we have compiled [a page for that](dirtycow_RH7).
-
-Also a **temporary** _workaround_ is described in [RedHat's Bugzilla](https://bugzilla.redhat.com/show_bug.cgi?id=1384344#c13). But keep a weather-eye open for an actual patch.
+>
+> * Red Hat 7 have released a **temporary** patch for Red Hat 7. If you want some simplified instructions on applying it, we have compiled [a page for that](dirtycow_RH7).
+> * Also a **temporary** _workaround_ is described in [RedHat's Bugzilla](https://bugzilla.redhat.com/show_bug.cgi?id=1384344#c13). But keep a weather-eye open for an actual patch.
 
 Once the patch has been released, you will be able to install it with:
 
