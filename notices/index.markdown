@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 * [Dirty Cow](dirtycow)
 * [Move to new datacenter](move_preparation_instructions)
 * [Replacing VirDir](replacing-virdir)
