@@ -22,9 +22,15 @@ Details on Ubuntu-related pages:
 
 ## CentOS
 
-They have **not** published proper patches yet. Latest news can be seen on [RedHat's vulnerability page](https://access.redhat.com/security/vulnerabilities/2706661).
+They have **not** published proper patches yet. The latest news can be seen on [RedHat's vulnerability page](https://access.redhat.com/security/vulnerabilities/2706661).
 
-There is a **temporary** _workaround_ described in [RedHat's Bugzilla](https://bugzilla.redhat.com/show_bug.cgi?id=1384344#c13). But keep a weather-eye open for an actual patch.
+> **NOTE:**
+>
+> The following are **temporary** solutions. When the official patched packages are released, you are advised to use those instead of keeping these temporary measures.
+
+Red Hat 7 have released a **temporary** patch for Red Hat 7. If you want some simplified instructions on applying it, we have compiled [a page for that](dirtycow_RH7).
+
+Also a **temporary** _workaround_ is described in [RedHat's Bugzilla](https://bugzilla.redhat.com/show_bug.cgi?id=1384344#c13). But keep a weather-eye open for an actual patch.
 
 Once the patch has been released, you will be able to install it with:
 
