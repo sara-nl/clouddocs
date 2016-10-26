@@ -28,9 +28,11 @@ Otherwise, your security update will be lost when you start another VM booting f
   `bash rh-cve-2016-5195_2.sh`
 
 Expected output for CentOS 7:
+
 > Your kernel is 3.10.0-327.el7.x86_64 **which IS vulnerable**.
 
 Expected output for CentOS 6:
+
 >Your kernel is 2.6.32-642.el6.x86_64 **which IS vulnerable**.
 
 ### Prepare for update
@@ -61,9 +63,11 @@ The reboot will (of course) log you out of your SSH session.
 Now run the test again and check that your OS is no longer vulnerable.
 
 Expected output for CentOS 7:
+
 > Your kernel is 3.10.0-327.36.3.el7.x86_64 **which is NOT vulnerable**.
 
 Expected output for CentOS 6:
+
 > Your kernel is 2.6.32-642.6.2.el6.x86_64 **which is NOT vulnerable**.
 
 ### Shutdown
