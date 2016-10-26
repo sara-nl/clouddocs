@@ -8,6 +8,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2016-10-26
+
+### Updated
+* Ubuntu 14.04 (server/desktop) images to mitigate [dirty cow bug](https://www.ubuntu.com/usn/usn-3106-2/)
+* Centos 6.8 images to mitigate [dirty cow bug](https://access.redhat.com/security/vulnerabilities/2706661)
+* Centos 7.2 images to mitigate [dirty cow bug](https://rhn.redhat.com/errata/RHSA-2016-2098.html)
+
 ## 2016-10-05
 
 ### Added
