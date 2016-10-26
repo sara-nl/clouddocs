@@ -38,6 +38,7 @@ name=CentOS-$releasever - Updates
 #mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
 baseurl=http://mirror.centos.org/centos/$releasever/updates/$basearch/
 ```
+
 ### Update and reboot
 
 With these settings, run an update and reboot.
