@@ -14,13 +14,19 @@ Our AppMarket images so far can also be compromised. Here is what you can do to 
 
 ## Ubuntu
 
-As explained in their [security/upgrades pagina](https://wiki.ubuntu.com/Security/Upgrades), you are advised to run:
+As explained in their [security/upgrades pagina](https://wiki.ubuntu.com/Security/Upgrades), you are advised to run at least:
 
 ```bash
 sudo apt-get update && sudo apt-get dist-upgrade
 ```
 
-When the upgrade is finished, you will have to reboot so that you start using the new kernel.
+If you are running a 14.04 version of Ubuntu with a 4.2 kernel (check the output of `uname -rv`) you will also need to upgrade to the xenial kernel stack:
+
+```bash
+sudo apt-get install --install-recommends linux-generic-lts-xenial
+```
+
+When the upgrades are finished, you will have to reboot so that you start using the new kernel.
 
 Details on Ubuntu-related pages: 
 
