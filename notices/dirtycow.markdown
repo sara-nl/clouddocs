@@ -20,6 +20,8 @@ As explained in their [security/upgrades pagina](https://wiki.ubuntu.com/Securit
 sudo apt-get update && sudo apt-get dist-upgrade
 ```
 
+When the upgrade is finished, you will have to reboot so that you start using the new kernel.
+
 Details on Ubuntu-related pages: 
 
 * [Question at AskUbuntu.com](http://askubuntu.com/questions/839919/what-is-dirty-cow-bug-that-allows-local-user-to-gain-administrative-access)
