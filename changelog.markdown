@@ -12,8 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Updated
 * Ubuntu 14.04 (server/desktop) images to mitigate [dirty cow bug](https://www.ubuntu.com/usn/usn-3106-2/)
-* Centos 6.8 images to mitigate [dirty cow bug](https://access.redhat.com/security/vulnerabilities/2706661)
-* Centos 7.2 images to mitigate [dirty cow bug](https://rhn.redhat.com/errata/RHSA-2016-2098.html)
+* Centos 6.8 image to mitigate [dirty cow bug](https://access.redhat.com/security/vulnerabilities/2706661)
+* Centos 7.2 image to mitigate [dirty cow bug](https://rhn.redhat.com/errata/RHSA-2016-2098.html)
 
 ## 2016-10-05
 
