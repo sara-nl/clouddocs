@@ -1,0 +1,7 @@
+find . -iname "*.markdown" -exec sed -i '' -e 's/\[SURF Academy logo\](\/images\/surf_academy_logo.png)/\[TUDelft logo\](\/images\/TUDelft_logo.png)/g' '{}' \;
+
+find . -iname "*.markdown" -exec sed -i '' -e 's/SURF Research Boot Camp 2016\-04\-13/SURF Research Boot Camp 2016\-11\-10/g' '{}' \;
+
+find . -iname "*.markdown" -exec sed -i '' -e 's/SURF Boot Camp 2016\-04\-13/SURF Research Boot Camp 2016\-11\-10/g' '{}' \;
+
+find . -iname "*.markdown" -exec sed -i '' -e 's/125\: local_images_surfcursus/126\: local_images_Cursus/g' '{}' \;
