@@ -3,9 +3,12 @@ layout: default
 ---
 # SURFsara HPC Cloud documentation
 
-> **NOTE:**
->
-> This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages here are heavily under construction and you can expect frequent changes.  We welcome your comments or corrections at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments) or see the bottom of this page on how to contribute directly to help us improve the documentation.
+<div class="alert alert-info" style="float:right;max-width:50%;" markdown="1">
+<i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> 
+This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages here are permanently under construction and you can expect **frequent changes**. 
+
+We **welcome your comments** or corrections at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments). Or see the bottom of this page on how to contribute directly to **help us improve** the documentation.
+</div>
 
 ## Operational
 
@@ -67,6 +70,7 @@ layout: default
 > You are strongly advised to set up your **own firewall** inside your virtual machines. OpenNebula offers now the so-called `Security Groups` instead of the old `Network filters`. However, they do not work in the current implementation, so we are pursuing other ways to provide a form of external firewall.
 
 * [Installing `fail2ban`](fail2ban)
+* [DirtyCOW vulnerability](notices/dirtycow)
 
 ### Inside the VM
 * MySQL server

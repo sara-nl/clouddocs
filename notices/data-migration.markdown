@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Introduction
+# Data migration from Calligo to Oort
 
 In this page we will show you how to transfer your files from the old Cloud to Oort. The data on the old Cloud can be either stored in your OS image or Virdir. You can access your Virdir files through SFTP, scp or rsync. In this guid we use rsync. 
 
