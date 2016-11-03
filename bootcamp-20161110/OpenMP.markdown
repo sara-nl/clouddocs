@@ -2,14 +2,17 @@
 layout: default
 ---
 
-# SURF Bootcamp 2016-04-21  <br/> Extras - Calulating &pi;
+# SURF Research Boot Camp 2016-11-10  <br/> Extras - Calculating &pi;
 
 <div style="float:right;max-width:205px;" markdown="1">
+![TUDelft logo](/images/TUDelft_logo.png)
 
+<div style="max-width:150px;" markdown="1">
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
+</div>
 
-This is an exercise from the (extras) part of the Tutorial [TUDelft course 2016-04-13](.).
+This is an exercise from the (extras) part of the Tutorial [SURF Research Boot Camp 2016-11-10](.).
 
 In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **shared-memory** system. For this puspose, we will be running a Monte Carlo simulation to calculate an approximation of the value of _&pi;_. 
 

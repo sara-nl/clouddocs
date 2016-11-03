@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# SURF Research Boot Camp 2016-04-13  <br/> Extras - Calculating _&pi;_ 
+# SURF Research Boot Camp 2016-11-10  <br/> Extras - Calculating _&pi;_ 
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![TUDelft logo](/images/TUDelft_logo.png)
@@ -12,7 +12,7 @@ layout: default
 </div>
 </div>
 
-This is an exercise from the (extras) part of the Tutorial [SURF Research Boot Camp 2016-04-13](.).
+This is an exercise from the (extras) part of the Tutorial [SURF Research Boot Camp 2016-11-10](.).
 
 In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **shared-memory** system. For this puspose, we will be running a Monte Carlo simulation to calculate an approximation of the value of _&pi;_. 
 
@@ -127,7 +127,7 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 > Do not forget to shutdown your VM when you are done with your performance tests.
 
 ### Next: Detach from work
-You have completed the part of the tutorial where you experience scaling your compute capacity, of the Tutorial [SURF Research Boot Camp 2016-04-13](.). Please continue with part [Detach from work](extraDetachWork). 
+You have completed the part of the tutorial where you experience scaling your compute capacity, of the Tutorial [SURF Research Boot Camp 2016-11-10](.). Please continue with part [Detach from work](extraDetachWork). 
 
 >**NOTE:**
 >

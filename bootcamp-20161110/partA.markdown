@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# SURF Research Boot Camp 2016-04-13 - part A
+# SURF Research Boot Camp 2016-11-10 - part A
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![TUDelft logo](/images/TUDelft_logo.png)
@@ -12,7 +12,7 @@ layout: default
 </div>
 </div>
 
-This is part A of the Tutorial [SURF Research Boot Camp 2016-04-13](.).
+This is part A of the Tutorial [SURF Research Boot Camp 2016-11-10](.).
 
 Here are your first steps:
 
@@ -227,7 +227,7 @@ This section is meant as extra questions that we thought would be nice for you t
 
 
 ### Next: Calculate _&pi;_
-You have completed part A of the Tutorial [SURF Research Boot Camp 2016-04-13](.). Please continue with part [Calculate _&pi;_](extraPI). 
+You have completed part A of the Tutorial [SURF Research Boot Camp 2016-11-10](.). Please continue with part [Calculate _&pi;_](extraPI). 
 
 >**NOTE:**
 >

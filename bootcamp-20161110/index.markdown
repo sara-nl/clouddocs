@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# SURF Research Boot Camp 2016-04-13
+# SURF Research Boot Camp 2016-11-10
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![TUDelft logo](/images/TUDelft_logo.png)
@@ -22,7 +22,7 @@ layout: default
 * [Presentation](#presentations)
 
 ## <a name="general"></a>General Information 
-This session is delivered within the Computing Track of the [SURF Research Bootcamp](https://www.surf.nl/academy/surf-research-bootcamp).
+This session is delivered within the Computing Track of the [SURF Research Bootcamp](https://surfresearchbootcamp.nl/).
 
 SURFsara has been operating the HPC Cloud as `IaaS` (Infrastructure as a Service) for several years. 
 Since recently we have launched a new HPC Cloud with a powerful new user interface and a complete new cluster with fast compute nodes and high-performant big storage volumes. 
@@ -31,13 +31,13 @@ The user interface and cloud software relies on [OpenNebula 4](http://opennebula
 This particular course aims to introduce the workshop participants to the HPC Cloud by providing a set of lectures and hands-on examples to run on the real **`Oort`** infrastructure. 
 Here is a summary of the course outline:
 
-**Date**: 21st April 2016  
-**Location**: Marinus Ruppertgebouw op de Leuvenlaan 21, Utrecht.  
+**Date**: 10th November 2016  
+**Location**: Faculty of Electrical Engineering, Mathematics and Computer Science (EEMCS building), at Mekelweg 4, Delft
 
 ### Agenda
 >12:30 Presentation: HPC Cloud at SURFsara (Ander Astudillo)  
 13:00 Hands-on introduction (Markus van Dijk)  
-13:10 Hands-on
+13:10 Hands-on 
 14:30 End  
 
 ## <a name="preparation"></a>Preparation

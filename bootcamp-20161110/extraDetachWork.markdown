@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# SURF Research Boot Camp 2016-04-13  <br/> Detach from work 
+# SURF Research Boot Camp 2016-11-10  <br/> Detach from work 
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![TUDelft logo](/images/TUDelft_logo.png)
@@ -12,7 +12,7 @@ layout: default
 </div>
 </div>
 
-This is an exercise from the (extras) part of the Tutorial [SURF Research Boot Camp 2016-04-13](.).
+This is an exercise from the (extras) part of the Tutorial [SURF Research Boot Camp 2016-11-10](.).
 
 This exercise lets you experience the difference between local and remote computation: you can organize your work so that it continues after you close your laptop.
 
