@@ -37,7 +37,7 @@ Here is a summary of the course outline:
 ### Agenda
 >12:30 Presentation: HPC Cloud at SURFsara (Ander Astudillo)  
 13:00 Hands-on introduction (Markus van Dijk)  
-13:10 Hands-on 
+13:10 Hands-on  
 14:30 End  
 
 ## <a name="preparation"></a>Preparation

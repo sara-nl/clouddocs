@@ -27,7 +27,7 @@ The UI (short for User Interface) is the web site that allows you to manage your
 #### Log in to the UI
 
 * Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/)
-* Your username is **bootcamp1XY**, replace `XY` with the number assigned to you.
+* Your username is **s-campXY**, replace `XY` with the number assigned to you.
 * You will receive the password from the workshop facilitators.
 * Hit the `Login` button.
 
@@ -84,7 +84,7 @@ Let's run your first VM on the HPC Cloud.
 * Select the `appliance` **Ubuntu 14.04 Desktop** by clicking on the tick-box next to it. 
 * Click on the _Import_ button at the top-right corner of the screen.
 * A dialogue will pop up, asking you for a few details. Edit as follows:
-  * Select the Datastore for the images: **125: local_images_surfcursus**.
+  * Select the Datastore for the images: **126: local_images_Cursus**.
   * Image Name: **Course Image**.
   * Template Name: **Course Template**.
 * Finally, click the blue *Import* button. This will start importing the `appliance` from the AppMarket. You can close this dialogue.
