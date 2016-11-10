@@ -90,7 +90,7 @@ We **welcome your comments** or corrections at [helpdesk@surfsara.nl](mailto:hel
 * [VM not reacting to Shutdown](vm-not-reacting-to-shutdown)
 
 ## Tutorials
-* [SURF Research Bootcamp 2016-11-10](bootcamp-20161110/index) <b style="color:red;"> TODAY!</b>
+* [SURF Research Bootcamp 2016-11-10](bootcamp-20161110/index) <b style="color:red;"> [TODAY!]</b>
 * [VU HPC Cloud workshop 2016-10-19](VU-20161019/index)
 * [UvA HPC Cloud workshop 2016-06-15](UvA-course-20160615/index) (part of the [UvA HPC and Big Data course](http://hpc.uva.nl))
 * [SURF Research Bootcamp 2016-04-21](bootcamp-20160421/index)
