@@ -64,4 +64,4 @@ The hands-on tutorial has two parts. The exercises in part *A* will give you a f
 
 ## <a name="presentations"></a> Presentation
 
-* [Introduction to the HPC Cloud](presentations/2016.04.21 - ResearchBootCamp.pdf)
+* [Introduction to the HPC Cloud](presentations/2016.11.10 - ResearchBootCamp.pdf)
