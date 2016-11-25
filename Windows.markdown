@@ -55,7 +55,7 @@ Analogously to your laptop, your VM needs a hard drive where the operating syste
   * choose _Type_ _CDROM_
   * leave _Datastore_ with _104: local_images_ssd_
   * leave the _Persistent_ checkbox unchecked
-  * on the _Image location:_ group, choose radio button _Upload_; then, underneath, click on _Choose file_ to have a dialogue pop up where you will look for the path on your laptop where you have your Windows .iso file and, finally, choose the .iso file to close the pop-up dialogue to return ton the original form 
+  * on the _Image location:_ group, choose radio button _Upload_; then, underneath, click on _Choose file_ to have a dialogue pop up where you will look for the path on your laptop where you have your Windows .iso file and, finally, choose the .iso file to close the pop-up dialogue to return to the original form 
 1. **On the UI:** Click the green button _Create_ on the form, to submit it. A progress bar will show at the bottom of the screen, which will advance as the upload of your .iso file evolves. When the upload is complete, a new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while it is being created. When it is created it will come to status _READY_.
 
 ### Fetching the Virtio drivers
