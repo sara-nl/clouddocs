@@ -185,7 +185,9 @@ Once your freshly installed Windows starts, we will configure your VM so that it
 1. **On the Windows VM:** On the _Shutdown Properties_ dialogue, click on the _Add_ button. A new _Add a Script_ dialogue will pop up.
 1. **On the Windows VM:** On the _Add a Script_ dialogue, click on the _Browse..._ button, and look there for the C:\shutdown.vbs file. A new entry will appear on the _Shutdown Properties_ dialogue indicating that you have added the new shutdown script. Click *OK* and *Apply*.
 1. **On the Windows VM:** You can reboot your Windows again. Make sure you have internet again.
-1. **On the UI:** You can now shut your VM down. We will remove all the installation media and prepare your VM for production.
+1. **On the UI:** You can now shut your VM down. Notice that OpenNebula will take some minutes to gracefuly shutdown the VM, similar time than when the VM was instantiated.
+
+We will proceed now with the removal of all the installation media and prepare your VM for production.
 
 ## Prepare the VM for production
 
