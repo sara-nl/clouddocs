@@ -151,7 +151,7 @@ We will now create a VM and run the Windows installation on it.
 1. **On the UI:** On the _Create Virtual Machine_ screen:
   * choose the template you defined before (i.e.: windows_setup)
   * type in a meaningful _VM Name_ (e.g.: **windows_first**)
-1. **On the UI:** We are ready defining the VM, so click on the green _Create_ button at the top of the form. A new VM will show on the _Virtual Machines_ list. It will go through several states (e.g.: PENDING, PROLOG...) until it reaches the RUNNING state. Notice that to reach the RUNNING state it can take a few minutes (e.g.: 3 minutes for current setup).
+1. **On the UI:** We are ready defining the VM, so click on the green _Create_ button at the top of the form. A new VM will show on the _Virtual Machines_ list. It will go through several states (e.g.: PENDING, PROLOG...) until it reaches the RUNNING state. Notice that to reach this state it can take a few minutes (circa 3' for current setup).
 1. **On the UI:** You can then start operating within your VM. Click on the _screen_-like button that you can see to the right of your VM on the list. It will pop-up the VNC console, so you should be able to see the welcome screen of your Windows installation.
 
 Now you need to install Windows with **custom** installation, by following the steps you would normally follow. Only, with one caveat: you need to install the Virtio drivers, as pointed out before. 
