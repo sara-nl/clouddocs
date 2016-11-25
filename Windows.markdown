@@ -13,7 +13,6 @@ In order to run Windows on a VM, you will need to proceed with the full installa
 1. Run the Windows installation
 1. Configure contextualization
 1. Prepare your VM for production
-  1. Enable Remote Desktop
 
 Let us look into these steps with more detail.
 
@@ -174,7 +173,7 @@ You can continue with the rest of the Windows installation process normally. The
 
 Once your freshly installed Windows starts, we will configure your VM so that it auto-configures itself on start up (e.g.: at this point, you can see that there is no active network connection, so you cannot even browse the web).
 
-1. **On the Windows VM:** Open a file explorer, and browse the _CONTEXT_ CD-ROM. You should be able to see at least 4 files on that CD-ROM. Three of them should be the ones we manually added to the _Context_ tab of the `template` some steps ago, called: _context.ps1_, _startup.vbs_ and _shutdown.vbs_.
+1. **On the Windows VM:** Open the file explorer, and browse the _CONTEXT_ CD-ROM. You should be able to see at least 4 files on that CD-ROM. Three of them should be the ones we manually added to the _Context_ tab of the `template` some steps ago, called: _context.ps1_, _startup.vbs_ and _shutdown.vbs_.
 1. **On the Windows VM:** From the _CONTEXT_ CD-ROM, copy the 3 files **context.ps1**, **startup.vbs** and **shutdown.vbs** to the `C:\` drive. They will thus become reachable at C:\context.ps1, C:\startup.vbs and C:\shutdown.vbs.
 1. **On the Windows VM:** We must configure the C:\startup.vbs file as a start-up script, so that Windows runs it automatically upon booting. We must also configure the C:\shutdown.vbs file as a _shutdown script_, so that Windows runs it automatically upon shutting down. To do all of this, start by right-clicking on the Windows _Start_ button, and then choose option _Run_. A dialogue will pop up.
 1. **On the Windows VM:** On the dialogue that just popped up, type the following in the _Open:_ field: `gpedit.msc`. A new window titled _Local Group Policy Editor_ will show.
