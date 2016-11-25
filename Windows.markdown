@@ -149,8 +149,8 @@ We will now create a VM and run the Windows installation on it.
 
 1. **On the UI:** Go to the _Virtual Machines_ tab (under _Virtual Resources_). Click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new VM. A form will pop up.
 1. **On the UI:** On the form that popped up:
-  * type in a meaningful _Name_ (e.g.: **windows_first**)
   * choose the template you defined before (i.e.: windows_setup)
+  * type in a meaningful _VM Name_ (e.g.: **windows_first**)
 1. **On the UI:** We are ready defining the VM, so click on the green _Create_ button at the bottom of the form. A new VM will show on the _Virtual Machines_ list. It will go through several states (e.g.: PENDING, PROLOG...) until it reaches the RUNNING state. 
 1. **On the UI:** You can then start operating within your VM. Click on the _screen_-like button that you can see to the right of your VM on the list. It will pop-up the VNC console, so you should be able to see the welcome screen of your Windows installation.
 
