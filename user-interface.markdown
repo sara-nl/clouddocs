@@ -95,7 +95,7 @@ In the user interface, select the _buddy_ icon that represents your user at the 
 ![switch_cloud_to_user_img](images/switch_to_user_view.png)
 
 * Switching from **user** to **cloud** view:  
-In the user interface, click the _buddy_ icon at the top right (next to the Home icon). On the pop-up menu select _Settings_. On the new window that appears, under _settings_ _info_ go to the line _view_. Click the edit button, then unfold _Views_ and switch the option to **cloud**. 
+In the user interface, click the _buddy_ icon at the top right (next to the Home icon). On the pop-up menu select _Settings_. On the new window that appears, under _settings_ _info_ go to the line _view_. Click the <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>, then unfold _Views_ and switch the option to **cloud**. 
 
 ![switch_user_to_cloud_img](images/switch_to_cloud_view_mb.png)  
 
