@@ -82,12 +82,14 @@ We **welcome your comments** or corrections at [helpdesk@surfsara.nl](mailto:hel
 ### Automation
 * [Getting started with the XML-RPC API](xmlrpc-start)
 
+
 ### AppMarket
 * [AppMarket Appliances Configuration](appliances-configuration)
 
 ### Troubleshooting
 
 * [VM not reacting to Shutdown](vm-not-reacting-to-shutdown)
+* [Connection problem resumed ubuntu 14.04 virtual machine](connection_problem_ubuntu1404)
 
 ## Tutorials
 * [SURF Research Bootcamp 2016-11-10](bootcamp-20161110/index)
