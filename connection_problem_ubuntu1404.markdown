@@ -26,7 +26,7 @@ rm -rf "/var/lib/cloud"
 Make the file executable
 
 ```bash
-suduo chmod +x /etc/init.d/clear-cloud-init.sh
+sudo chmod +x /etc/init.d/clear-cloud-init.sh
 ```
 Make the file run in different [runlevels](https://en.wikipedia.org/wiki/Runlevels):
 
