@@ -32,12 +32,20 @@ Then reboot your operating system (e.g.: `sudo reboot now`). You should now have
 > All in one:
 >```bash
 sudo su -
+>
 cat <<EOF > /etc/init.d/clear-cloud-init.sh
+>
 #!/bin/bash
+>
 truncate -s 0 "/etc/udev/rules.d/70-persistent-net.rules"
+>
 rm -rf "/var/lib/cloud"
+>
 EOF
+>
 chmod +x /etc/init.d/clear-cloud-init.sh
+>
 update-rc.d clear-cloud-init.sh defaults
+>
 reboot now
 ```
