@@ -28,24 +28,18 @@ sudo update-rc.d clear-cloud-init.sh defaults
 
 Then reboot your operating system (e.g.: `sudo reboot now`). You should now have connection again.
 
-> **Note:**
-> All in one:
->```bash
+---
+
+All in one go (you can type all of this in one go):
+
+```bash
 sudo su -
->
 cat <<EOF > /etc/init.d/clear-cloud-init.sh
->
 #!/bin/bash
->
 truncate -s 0 "/etc/udev/rules.d/70-persistent-net.rules"
->
 rm -rf "/var/lib/cloud"
->
 EOF
->
 chmod +x /etc/init.d/clear-cloud-init.sh
->
 update-rc.d clear-cloud-init.sh defaults
->
 reboot now
 ```
