@@ -40,7 +40,7 @@ Then reboot your operating system (e.g.: `sudo reboot now`). You should now have
 
 ## In one go
 
-You can type all of this in one go:
+You can type all of this in one go to actually do what is explained in the previous section:
 
 ```bash
 sudo su -
