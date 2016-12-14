@@ -4,6 +4,7 @@ layout: default
 
 # Notices to HPC Cloud users
 
+* [Node failure](node18)
 * [Dirty Cow](dirtycow)
 * [Move to new datacenter](move_preparation_instructions)
 * [Replacing VirDir](replacing-virdir)
