@@ -9,7 +9,7 @@ All user operations can be done from the 'Users' page (see the icons at the top 
 
  * By clicking on the + icon in the large green box, you can add a user by specifying his/her username and password. Here, you can also immediately set quotas, by chosing 'Manual' under 'Define Quotas'.
 
-On the 'Users' page, all users if your project are visible, including you yourself. You can click on the username to edit the user. Now there are three icons on the same line:
+On the 'Users' page, all users in your project are visible, including you yourself. You can click on the username to edit the user. Now there are three icons on the same line:
 
  * One with 4 horizontal lines. Clicking on this icon allows you to change the user quotas
  * One with a lock. Clicking on this will let you change the password
