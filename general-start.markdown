@@ -65,9 +65,9 @@ Import the appliance by following these steps:
    A dialogue will pop up, asking you for a few details.
    ![appmarket step 3](images/appmarket_step_3.png)
 
-4. The first setting is the datastore for images. Make sure that you select _local images ssd_.
+4. The first options are the name of the `template` and the `image`. You can change the names to something more descriptive to you. Once you have many `template`s and `image`s, it will pay off to have good descriptive names of what each of them is.
 
-5. The other options are the name of the `template` and the `image`. You can change the names to something more descriptive to you. Once you have many `template`s and `image`s, it will pay off to have good descriptive names of what each of them is.
+5. The next  setting is the datastore for images. Make sure that you select _local images ssd_. 
 
 6. Finally, click _Download_. This will start importing the appliance from  the AppMarket. When the import is successful, it will create an `image` and a `template`.
 
