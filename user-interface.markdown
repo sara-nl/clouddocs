@@ -74,7 +74,7 @@ A group administrator sees the most functionality (including administering other
   * Manage ACLs (Access Control Lists)
   * All functions available to **basic user**
 
-![user_view_img](images/user_view.png)
+![user_view_img](images/user_view_52.png)
 
 #### Group Administrator user
 * Standard View: **groupadmin** (and **cloud** and **user**)
@@ -86,7 +86,7 @@ A group administrator sees the most functionality (including administering other
   * Display accounting for the whole project
   * All functions available to **advanced user**
 
-![groupadmin_view_img](images/groupadmin_view.png)
+![groupadmin_view_img](images/groupadmin_view_52.png)
 
 ### Switch views
 Users with the **group administrator** and **advanced** roles have access to multiple views, and can switch between these anytime.
@@ -121,14 +121,14 @@ The Dashboard is the page where you can see a summary of the status of your proj
 The _Instances_ menu allows you to manage your created `VM`s. It offers 2 sub-options:
 
 * _VMs_: to manage `VM`s (i.e.: create, start, stop, suspend, delete...)
-* _Services_: *TODO*
+* _Services_:  *new functionality TODO*
 
 ### Templates
 
 The _Templates_ menu allows you to manage your `Templates`s. It offers 2 sub-options:
 
 * _VMs_: to manage `Template`s (i.e.: create, edit, delete)
-* _Services_: *TODO*
+* _Services_: *new functionality TODO*
 
 ### Storage
 
