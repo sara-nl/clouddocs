@@ -56,7 +56,7 @@ Import the appliance by following these steps:
    ![appmarket step 1](images/appmarket_step_1.png)
 
 2. Next, look for the **Ubuntu 14.04 Server** _appliance_ in the list; click on it.
-   This will show details about `image`s, `template`s and other attributes (including a textual description) that conform the _appliance_. Please, read the `Description` now.
+   This will show details about `image`, `template` and other attributes (including a textual description) that conform the _appliance_. Please, read the `Description` now.
    The description mentions that there is no password for the root account and that you need to add an SSH public key to your user profile. We will do this in a later step.
    Read the extended information related to the _appliance_ (especially, the bit about the _contextualization_ and _configuration_ options).
    ![appmarket step 2](images/appmarket_step_2.png)
@@ -65,7 +65,7 @@ Import the appliance by following these steps:
    A dialogue will pop up, asking you for a few details.
    ![appmarket step 3](images/appmarket_step_3.png)
 
-4. The first options are the name of the `template` and the `image`. You can change the names to something more descriptive to you. Once you have many `template`s and `image`s, it will pay off to have good descriptive names of what each of them is.
+4. The first options are the name of the `template` and the `image`. You can change the names to something more descriptive to you. Once you have many `template` and `image` objects, it will pay off to have good descriptive names of what each of them is.
 
 5. The next  setting is the datastore for images. Make sure that you select _local images ssd_. 
 
