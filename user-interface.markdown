@@ -63,7 +63,7 @@ A group administrator sees the most functionality (including administering other
   * Display own quota
   * Display own accounting
 
-![cloud_view_img](images/cloud_view.png)
+![cloud_view_img](images/cloud_view_52.png)
 
 #### Advanced user   
 * Available views: **cloud** (and **user**)
@@ -93,7 +93,7 @@ Users with the **group administrator** and **advanced** roles have access to mul
 
 In the user interface, select the _buddy_ icon that represents your user at the top right (next to the Home icon). Then select the _Change view_ button, unfold the tab and switch the option to the wanted view. 
 
-![switch_cloud_to_user_img](images/switch_to_user_view.png)
+![switch_cloud_to_user_img](images/switch_view_52.png)
 
 
 ## Menu
