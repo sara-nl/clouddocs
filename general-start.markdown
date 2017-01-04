@@ -3,7 +3,7 @@ layout: default
 ---
 # Your first virtual machine
 
-This page teaches how to create a `Virtual Machine` (VM) running Linux, by importing an _appliance_ from the `AppMarket`.
+This page teaches how to create a `Virtual Machine` (VM) running Linux, by importing an _appliance_ from the `Apps` option of the `Storage` menu.
 
 > **NOTE**
 >
@@ -21,7 +21,7 @@ You build them by first describing all their parts. This description is called a
 
 Storage drives (like hard disks) are `images`. They do not physically exist, but rather, they only exist as files in a backing file server.
 
-To make starting a virtual machine easier, we provide the AppMarket, which has _appliances_ readily available for you to pick and use.
+To make starting a virtual machine easier, we provide the Apps option, which has _appliances_ readily available for you to pick and use.
 
 ## Logging into the HPC Cloud User Interface
 
@@ -41,18 +41,18 @@ To start building a virtual machine, go to the UI and log in with the username a
 >
 > ...that the username and password are **not** for the VM you are going to create. You can set users and passwords later on, once you have created a VM.
 
-## Importing an _appliance_ from the AppMarket
+## Importing an _appliance_ from the Apps option of the Storage menu
 
-We are going to work with a pre-made `image` that is available on the AppMarket.
+We are going to work with a pre-made `image` that is available in the `Apps` option.
 
 > **NOTE**
 >
-> The AppMarket is a collection of so-called _appliances_ maintained by the HPC Cloud team. It is a handy way to import, from within the well-known UI, useful images that are ready to use. More information about the [_appliances_ configuration is available](appliances-configuration). There is also an OpenNebula marketplace, publicly available on the OpenNebula website, and anybody can contribute their _appliances_ to it.
+> The `Apps` options contains  a collection of so-called _appliances_ maintained by the HPC Cloud team. It is a handy way to import, from within the well-known UI, useful images that are ready to use. More information about the [_appliances_ configuration is available](appliances-configuration). There is also an OpenNebula marketplace, publicly available on the OpenNebula website, and anybody can contribute their _appliances_ to it.
 
 Import the appliance by following these steps:
 
 1. From the **user** `view`, choose the
-   _AppMarket_ tab on the left menu of the screen and then _Appliances_ (in the screen shot, it has been highlighted in red).
+   _Storage_ tab on the left menu of the screen and then _Apps_ (in the screen shot, it has been highlighted in red).
    ![appmarket step 1](images/appmarket_step_1.png)
 
 2. Next, look for the **Ubuntu 14.04 Server** _appliance_ in the list; click on it.
@@ -61,17 +61,17 @@ Import the appliance by following these steps:
    Read the extended information related to the _appliance_ (especially, the bit about the _contextualization_ and _configuration_ options).
    ![appmarket step 2](images/appmarket_step_2.png)
 
-3. Click on the _Import_ button at the top-right corner of the screen.
+3. Click on the _OpenNebula_ button at the top of the screen.
    A dialogue will pop up, asking you for a few details.
    ![appmarket step 3](images/appmarket_step_3.png)
 
-4. The first setting is the datastore for images. Make sure that you select _104: local images ssd_.
+4. The first setting is the datastore for images. Make sure that you select _local images ssd_.
 
 5. The other options are the name of the `template` and the `image`. You can change the names to something more descriptive to you. Once you have many `template`s and `image`s, it will pay off to have good descriptive names of what each of them is.
 
-6. Finally, click _Import_. This will start importing the appliance from  the AppMarket. When the import is successful, it will create an `image` and a `template`.
+6. Finally, click _Download_. This will start importing the appliance from  the AppMarket. When the import is successful, it will create an `image` and a `template`.
 
-You can verify that the process is complete by inspecting the _Template_ and _Image_ sections in the _Virtual Resources_ tab of the UI. You should see your new `image` and `template` there.
+You can verify that the process is complete by inspecting the _VMs_ sections in the _Templates_ tab and the _Images_ section in the _Storage_ tab of the UI. You should see your new `image` and `template` there.
 
 ## Adding an SSH key to your profile
 
