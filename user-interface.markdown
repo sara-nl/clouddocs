@@ -11,15 +11,17 @@ The UI (short for User Interface) is the web site that allows you to operate the
 >
 >You can find the UI here: [https://ui.hpccloud.surfsara.nl](https://ui.hpccloud.surfsara.nl)
 
+
 ## Change your Password
 > ⚠ **WARNING:**
 >
 >To protect your account, you are advised to change the password that we give you upon your first login.
 
+
 This is how you change your password:
 
 1. Look at the top-right corner of the screen on the UI. There is a _buddy_ icon that represents your user. Click on it.
-2. Click on _Settings_, you will see the option to change or update your password. If you use a `user view` (see section below for OpenNebula views), click on the _Update Password_ button.
+2. Click on _Settings_, you will see the option to change or update your password. If you use a `user view` (see section below for OpenNebula views), click on the _edit_ icon on the right of the _view_ button.
 3. On the new screen, type your new password twice and click the button to submit it.
 
 ## Logging out
@@ -89,26 +91,23 @@ A group administrator sees the most functionality (including administering other
 ### Switch views
 Users with the **group administrator** and **advanced** roles have access to multiple views, and can switch between these anytime.
 
-* Switching from **cloud** to **user** view:  
-In the user interface, select the _buddy_ icon that represents your user at the top right (next to the Home icon). Then select the _Change view_ button, unfold the tab and switch the option to **user**. Finally click on the _Update view_ button as displayed below:
+In the user interface, select the _buddy_ icon that represents your user at the top right (next to the Home icon). Then select the _Change view_ button, unfold the tab and switch the option to the wanted view. 
 
 ![switch_cloud_to_user_img](images/switch_to_user_view.png)
 
-* Switching from **user** to **cloud** view:  
-In the user interface, click the _buddy_ icon at the top right (next to the Home icon). On the pop-up menu select _Settings_. On the new window that appears, under _settings_ _info_ go to the line _view_. Click <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i> then unfold _Views_ and switch the option to **cloud**. 
-
-![switch_user_to_cloud_img](images/switch_to_cloud_view_mb.png)  
 
 ## Menu
 
 There is a menu on the left side within the **user** `view`. The tabs displayed there are:
 
 * Dashboard
-* Virtual Resources
-* Infrastructure
-* AppMarket
+* Instances
+* Templates
+* Storage
+* Network
+* Settings
 
-A description of each of these items follows. A vertical blue bar on the left of the tab tells which one is selected.
+A description of each of these items follows. 
 
 #### Dashboard
 The Dashboard is the page where you can see a summary of the status of your project. Information includes:
@@ -118,22 +117,39 @@ The Dashboard is the page where you can see a summary of the status of your proj
 * network and storage counters
 * quotas
 
-#### Virtual Resources
-The _Virtual Resources_ menu allows you to manage several kinds of objects, with the focus on what allows you to create `VM`s. It offers 4 sub-options:
+#### Instances
+The _Instances_ menu allows you to manage your created `VM`s. It offers 2 sub-options:
 
-* _Virtual Machines_: to manage `VM`s (i.e.: create, start, stop, suspend, delete...)
-* _Templates_: to manage `Template`s (i.e.: create, edit, delete)
+* _VMs_: to manage `VM`s (i.e.: create, start, stop, suspend, delete...)
+* _Services_: *TODO*
+
+### Templates
+
+The _Templates_ menu allows you to manage your `Templates`s. It offers 2 sub-options:
+
+* _VMs_: to manage `Template`s (i.e.: create, edit, delete)
+* _Services_: *TODO*
+
+### Storage
+
+The _Storage_ menu allows the user to see information about all storage related resources. It offers 4 sub-options:
+
+* _Datastores_: to see where you can take storage from and how much you are using of each 
 * _Images_: to manage `Image`s
 * _Files & Kernels_: to manage _kernel_, _ramdisk_ and _context_ files that can be used from `Templates` and on `VM`s
+* _Apps_: Access to the _Appliances_ 
 
-#### Infrastructure
-The _Infrastructure_ menu allows you mainly to see information about the supporting resources available in the HPC Cloud and your usage of them. It offers 2 sub-options:
+_Appliances_ are ready-made `image`s (and, sometimes, `template`s as well), that you can import into your project so that you can instantiate `VM`s out of them. There are pre-made _appliances_ for CentOS and Ubuntu, for example. When you click on one of them, make sure you read the corresponding comments.
 
-* _Datastores_: to see where you can take storage from and how much you are using of each
+
+#### Network
+
+The _Network_ menu allows you mainly to see information about the network resources available in the HPC Cloud and your usage of them. It offers 3 sub-options:
+
+
 * _Virtual Networks_: to see which networks you have available and which your `VM`s are using them
-
-#### AppMarket
-The _AppMarket_ tab makes _Appliances_ available within the HPC Cloud user interface. _Appliances_ are ready-made `image`s (and, sometimes, `template`s as well), that you can import into your project so that you can instantiate `VM`s out of them. There are pre-made _appliances_ for CentOS and Ubuntu, for example. When you click on one of them, make sure you read the corresponding comments.
+* _Network Topology_: *new functionality TODO*
+* _Security Groups_: *new functionality TODO*
 
 >**Note:**
 >
