@@ -21,7 +21,7 @@ The assignment of hostnames and IP addresses to VMs is covered in [Accessing you
 
 ### Edit a `nic` for a `template`
 
-When you click on a `nic` of a `template` (on the left column of the _Network_ tab), or when you click on _+Add another nic_, you will select that `nic` for editing (it will get a blue line on the left of its name and its options will show on the area to the right of it). 
+When you click on a `nic` of a `template` (on the left column of the _Network_ tab), or when you click on _+_, you will select that `nic` for editing (it will get a blue line on the left of its name and its options will show on the area to the right of it). 
 
 The option you can set for a `nic` is just which network of the two that you have available you want to attach your `nic` to.
 
