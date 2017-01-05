@@ -37,9 +37,9 @@ We will be creating a file in the _Utility VM_ containing all the contents of th
 
 > **NOTE:**
 >
-> Because the `image` you want to download is likely larger than the average space available in an _AppMarket_'s _appliance_ sole `image`, we will attach an extra Ceph _Datablock_ to the _Utility VM_ so that we can create the large file with the contents of the `image` in there. This means, in turn, that you must have enough quota available in the Ceph `datastore`. You can view your current quotas on the UI itself. From the [_User_ view](user-interface), click on the _Infrastructure_ tab from the main menu on the left, and then _Datastores_ under it. You should see there a list with all the `datastores` you have access to. If the quota you see there is not enough to fit a whole copy of the `image` you want to download, then please get in contact with us: [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl).
+> Because the `image` you want to download is likely larger than the average space available in an _Apps_ _appliance_ sole `image`, we will attach an extra Ceph _Datablock_ to the _Utility VM_ so that we can create the large file with the contents of the `image` in there. This means, in turn, that you must have enough quota available in the Ceph `datastore`. You can view your current quotas on the UI itself. From the [_User_ view](user-interface), click on the _Storage_ tab from the main menu on the left, and then _Datastores_ under it. You should see there a list with all the `datastores` you have access to. If the quota you see there is not enough to fit a whole copy of the `image` you want to download, then please get in contact with us: [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl).
 
-1. **On the UI:** Go to the _AppMarket_ and import an _appliance_ you feel comfortable with (detailed instructions in [our General Start article](general-start)). We will be using CentOS 7 throughout this guide.
+1. **On the UI:** Go to the _Apps_ option in the _Storage_ section and import an _appliance_ you feel comfortable with (detailed instructions in [our General Start article](general-start)). We will be using CentOS 7 throughout this guide.
 1. **On the UI:** Create a new empty `datablock image` in the Ceph `datastore` that is big enough to fit a copy of your `image` (detailed instructions in [our Datablocks article](create-datablocks)). Let's give this `datablock image` the name **wagon**.
 1. **On the UI:** Make sure that you **edit the `template`** you have just imported from the _appliance_ so that you: 
  * **in the _Storage_ tab:** include a `disk` with the newly created empty `datablock image` (the _wagon_).
@@ -63,7 +63,7 @@ We will now hot-attach the `image` you want to download to the _Utility VM_. But
  * **In the _Utility VM_:** `touch /etc/rc.d/rc.local`
  * **In the _Utility VM_:** `echo "echo 4096 > /sys/block/vdb/queue/read_ahead_kb" > /etc/rc.d/rc.local`
  * **In the _Utility VM_:** `chmod 755 /etc/rc.d/rc.local`
-1. **On the UI:** Go to the _Virtual Machines_ tab of the main menu, and click on the _Utility VM_'s line so that you can see its extended information.
+1. **On the UI:** Go to the _VMs_ option of the  _Instances_ section, and click on the _Utility VM_'s line so that you can see its extended information.
 1. **On the UI:** Click on the _Storage_ tab to see the `disks` currently attached to the VM.
 1. **On the UI:** Click on the _Attach disk_ green button to bring up the _Attach new disk_ dialogue.
 1. **On the UI:** On the _Attach new disk_ dialogue, look for the `image` you want to download. Click on the `image` to select it. Then finally click on the _Attach_ green button at the bottom of the dialogue. The dialogue will disappear and y our _Utility VM_ will come into the HOTPLUG status and it will remain so until the newly attached `disk` is ready for use. Then the _Utility VM_ will come back to status RUNNING.
