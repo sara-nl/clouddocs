@@ -83,8 +83,8 @@ We **welcome your comments** or corrections at [helpdesk@surfsara.nl](mailto:hel
 * [Getting started with the XML-RPC API](xmlrpc-start)
 
 
-### AppMarket
-* [AppMarket Appliances Configuration](appliances-configuration)
+### Apps
+* [Apps Appliances Configuration](appliances-configuration)
 
 ### Troubleshooting
 
