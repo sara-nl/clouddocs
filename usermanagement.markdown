@@ -19,3 +19,5 @@ On the 'Users' page, all users if your project are visible, including you yourse
 To change the group membership of the users the _Groups_ option of the _System_ section is used.
 
 **TODO**
+
+![groups_system_img](images/groups_option.png)
