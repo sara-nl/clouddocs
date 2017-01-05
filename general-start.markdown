@@ -86,25 +86,7 @@ Find the file in your computer containing the public key you created (it is usua
 ![import_ssh_key_img](images/import_ssh_key.png)
 
 You can just close this dialogue now. Your public key is automatically stored in your profile.
-```
-## Finishing the virtual machine configuration by editing the template
 
-When you imported the _appliance_ from the AppMarket, it made a `template` available for you to make a virtual machine. However, the VM would not be connected to the internet yet, so you cannot connect to it remotely.
-
-### Connecting your virtual machine to the internet
-
-Allow your virtual machine to connect to the internet by following these steps:
-
-1. Go to the _Templates_ section. Find the `template` you just created, and click on it. You now see an overview of the `template` settings.
-
-2. Click on _Update_ on the top-right of the screen to start editing the `template`.
-This shows the different configuration options for your `template`. For now, we will leave most settings alone, but you can browse through the different options. Select the _Network_ tab.
-
-3. The _Network_ tab shows which network interfaces (or `nic`s) your VM would have and to which networks they would be connected. To connect the only available `nic` at the moment (called _NIC 0_) to the internet, select the network called "internet", to the right of it, as shown on the screen shot.
-   ![template IP](images/template_IP.png)
-
-4. Click _Update_ to save your changes.
-```
 
 ## Starting your virtual machine
 
