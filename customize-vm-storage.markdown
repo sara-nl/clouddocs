@@ -20,7 +20,7 @@ You can add as many `disk`s as you need to a given `template`, each referring to
 
 ### Edit a `disk` for a `template`
 
-When you click on a `disk` of a `template` (on the left column of the _Storage_ tab), or when you click on _+Add another disk_, you will select that `disk` for editing (it will get a blue line on the left of its name and its options will show on the right column). 
+When you click on a `disk` of a `template` (on the left column of the _Storage_ tab), or when you click on _+_, you will select that `disk` for editing (it will get a blue line on the left of its name and its options will show on the right column). 
 
 The options you have for a `disk` are: 
 
