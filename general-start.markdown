@@ -86,7 +86,7 @@ Find the file in your computer containing the public key you created (it is usua
 ![import_ssh_key_img](images/import_ssh_key.png)
 
 You can just close this dialogue now. Your public key is automatically stored in your profile.
-
+```
 ## Finishing the virtual machine configuration by editing the template
 
 When you imported the _appliance_ from the AppMarket, it made a `template` available for you to make a virtual machine. However, the VM would not be connected to the internet yet, so you cannot connect to it remotely.
@@ -104,19 +104,19 @@ This shows the different configuration options for your `template`. For now, we 
    ![template IP](images/template_IP.png)
 
 4. Click _Update_ to save your changes.
-
+```
 
 ## Starting your virtual machine
 
 >**Note:**
 >
-> When you import an appliance from the AppMarket, the disk image is normally non-persistent.
+> When you import an appliance from the Apps option, the disk image is normally non-persistent.
 > This means, in short, that your changes are lost when you shut your VM down. Before starting your VM, always check
 > whether [Image Persistence](image_persistence) is set to the desired mode (yes or no).
 
 A `template` is a description of a virtual machine. The `template` we have been editing in this guide is now ready to create a virtual machine from it.
 
-Go to the _Virtual Machines_ section of the UI. This displays an overview of all running VMs. If this is your first virtual machine, this list will be empty.
+Go to the _VMs_ option of the _Instances_ section of the UI. This displays an overview of all running VMs. If this is your first virtual machine, this list will be empty.
 
 Start your virtual machine using the following steps:
 
@@ -129,7 +129,7 @@ Start your virtual machine using the following steps:
 
 4. The second step in the dialogue is to select a `template`. Since this is your first `template`, there is only one item in the list. Select this `template` by clicking on it.
 
-5. Click on the _Create_ button at the bottom of the screen.
+5. Click on the _Create_ button at the top of the screen.
 
 Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That state means that the cloud system is looking for a place where your virtual machine can actually run.
 
@@ -180,9 +180,9 @@ If there were no errors, and if your firewalls allow making remote connections, 
 
 ## Shut down and remove your machine
 
-If you want to shutdown your VM and stop consuming your quotas, perform the following steps:
+If you want to terminate your VM and stop consuming your quotas, perform the following steps:
 
-1. Tick the box to the left on the row of your VM and click _Shutdown_ (upper right corner of the screen, under the _dust bin_ drop-down button).
+1. Tick the box to the left on the row of your VM and click _Terminate_ (upper right corner of the screen, under the _dust bin_ drop-down button).
 ![shutdownVM](images/shutdownVM.png)
 
 2. Refresh the Virtual Machines list (by clicking on the two arrows chasing each other next to _+_ button) until your VM is gone.
