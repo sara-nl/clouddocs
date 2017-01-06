@@ -63,7 +63,7 @@ How can you check your disks for persistency?
 - Select the "storage" tab. 
 - you should see a display similar to this (look at the "Persistent" column.)
 
-![vm disk tab](images/vm-storage.png)
+![vm disk tab](../images/vm-storage.png)
  
 
 ### Shut down procedure
@@ -78,9 +78,9 @@ This will leave your VM alive in "power down" mode.
 - open the drop-down menu of the trashcan (upper right)
 - click on "Shutdown" 
 
-![vm shutdown button](images/vm-shutdown.png)
+![vm shutdown button](../images/vm-shutdown.png)
 
-Check that the VM proceeds with shutdown: use the refresh button (upper left ![chasing arrows](images/reload-symbol.png)).
+Check that the VM proceeds with shutdown: use the refresh button (upper left ![chasing arrows](../images/reload-symbol.png)).
 The VM should take no more than a few minutes to shut itself down, after which the Cloud will copy your disks back to the disk storage.
 
 If, after a few minutes, the VM is running again ("State" is "ACTIVE" and "LCM State" is "RUNNING"), 
