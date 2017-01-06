@@ -21,7 +21,7 @@ If you feel you really need to keep some VM instances, you should be aware of th
 If your VM list is empty, the data on your disk images is just as safe as during normal operation.
 See our [backup policy](https://userinfo.surfsara.nl/systems/hpc-cloud/backup-policy).
 
-If you bring a VM in `stopped` state, its disks will have an increased risk of data loss. This risk is small, but not negligible.
+If you bring a VM to `stopped` or `poweroff` state, its disks will have an increased risk of data loss. This risk is small, but not negligible.
 
 If you leave a VM runnng, it will experience a sudden loss of power and its disks will probably be corrupred.
 
