@@ -4,11 +4,6 @@ layout: default
 
 # HPC Cloud maintenance downtime
 
-Contents:
-
-- Introduction
-- [Instructions to prepare for the downtime](#instructions-to-prepare-for-the-downtime)
-
 ## Introduction
 
 During a maintenance downtime we will work on the hardware that powers the HPC Cloud.
