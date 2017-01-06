@@ -27,7 +27,7 @@ If you leave a VM runnng, it will experience a sudden loss of power and its disk
 
 ### Links
 
-- [Maintenance calendar HPC Cloud](maintenance)
+- [Maintenance calendar HPC Cloud](/maintenance)
 - [System status](https://userinfo.surfsara.nl/systems/status)
 
 ### Questions?  
