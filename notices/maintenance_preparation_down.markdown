@@ -7,7 +7,7 @@ layout: default
 Contents:
 
 - Introduction
-- [Instructions to prepare for the downtime](#Instructions-to-prepare-for-the-downtime)
+- [Instructions to prepare for the downtime](#instructions-to-prepare-for-the-downtime)
 
 ## Introduction
 
@@ -17,7 +17,7 @@ VMs cannot run during that time.
 ### What do you need to do?
 
 Make sure that all your VMs are properly shut down: your list of VMs should be empty before the downtime starts.
-See below: [Instructions to prepare for the downtime](#Instructions-to-prepare-for-the-downtime).
+See below: [Instructions to prepare for the downtime](#instructions-to-prepare-for-the-downtime).
 
 If you feel you really need to keep some VM instances, you should be aware of the risk of data loss.
 
