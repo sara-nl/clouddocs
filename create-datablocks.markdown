@@ -63,6 +63,10 @@ In this section we show you how you can start using the new disk.
 3. Run `fdisk -l` and see that your new datablock is there (Disk /dev/vdb: 10.5 GB).
 4. Mount the datadisk in the VM:
 
+>**Warning:**
+>
+>The first two commands only need to be run once (and they do destroy everything on your disk!). The mount command (third one) needs to be run every time you start the image or you can add this line to /etc/fstab to have it done automatically: `/dev/vdb /data xfs defaults 0 0`. 
+
 ```sh
 mkdir /data  
 mkfs -t xfs /dev/vdb  
@@ -71,6 +75,4 @@ touch /etc/rc.d/rc.local
 echo "echo 4096 > /sys/block/vdb/queue/read_ahead_kb" > /etc/rc.d/rc.local
 chmod 755 /etc/rc.d/rc.local
 ```
->**NOTE:**
->
->The first two commands only need to be run once (and destroy everything on your disk!). The mount command (third one) needs to be run every time you start the image or you can add this line to /etc/fstab to be done automatically: `/dev/vdb /data xfs defaults 0 0`. 
+
