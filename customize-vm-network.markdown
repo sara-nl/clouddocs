@@ -41,4 +41,4 @@ Next to the name of each `nic` on the list of `nic`s when editing a `template`, 
 
 >**NOTE on _Advanced options_**:
 >
->The _Advanced options_ that you can see on the screen are very specific ones that we do not use  every day. If you think you need to use them, we recommend you try and learn about them on the official OpenNebula [documentation](http://docs.opennebula.org/) (for example, [here](http://docs.opennebula.org/4.12/user/virtual_resource_management/vm_guide.html)). And if you find benefits in using them, please send us an e-mail to let us know: [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl).
+>The _Advanced options_ that you can see on the screen are very specific ones that we do not use  every day. If you think you need to use them, we recommend you try and learn about them on the official OpenNebula [documentation](http://docs.opennebula.org/) (for example, [here](http://docs.opennebula.org/5.2/operation/vm_management/vm_templates.html)). And if you find benefits in using them, please send us an e-mail to let us know: [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl).
