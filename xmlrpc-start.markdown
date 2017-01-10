@@ -159,7 +159,7 @@ python ~/workspace/my_project/version_check.py
 It should print something like:
 
 >```sh
-4.14.2
+5.2.1
 ```
 
 ## API explanation
