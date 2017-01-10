@@ -88,8 +88,12 @@ For that, you first need to create an (or several) `Init File`(s) on the _Files 
 >
 >OpenNebula only delivers _contextualisation_ upon VM startup (from the external point of view). Therefore, any modification of the `template` or the `file`s that you make while the VM is running, will **not** be visible to that running VM. Further, even when you add `nic`s to a running VM, these will **not** be contextualised.
 
-```TODO MB: not in 5.2 / 5.02 documentation of openNebula
+``` 
 
+TODO MB: cloud-init not in 5.2 / 5.02 documentation of openNebula
+
+cloud-init site has: http://cloudinit.readthedocs.io/en/latest/topics/datasources/opennebula.html
+But links to the openNebula docs go to the archives
 
 #### Scripts caveats; cloud-init
 
