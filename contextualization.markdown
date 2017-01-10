@@ -95,7 +95,7 @@ Aside from OpenNebula's contextualisation scripts, an alternative de-facto stand
 
 > **NOTE:**
 >
-> OpenNebula's notes on cloud-init are available in [their documentation] for an older version of OpenNebula (4.14)(  http://docs.opennebula.org/4.14/user/virtual_machine_setup/cloud-init.html)
+> OpenNebula's notes on cloud-init are available in [their documentation](  http://docs.opennebula.org/4.14/user/virtual_machine_setup/cloud-init.html) for an older version of OpenNebula (4.14)
 
 It looks like cloud-init's scripts may suffer from having Python3 as the default Python interpreter. If you need to install Python3, you are using cloud-init and you notice that your VM suddenly fails to be properly contextualised, you may want to have an alternate Python2 installation and have the init scripts use this instead.
 
