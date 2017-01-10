@@ -11,9 +11,9 @@ In this guide we will describe how to setup and use remote interactive visualiza
 
 By default, you will not have access to the GPU nodes of the HPC Cloud. In order to get this, please send an e-mail to [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl).
 
-If GPU access has been enabled for your account, you will have to use a [datastore](image_storage) that is enabled on the GPU nodes. This datastore is called `images_ssd_gpu` and behaves the same way as the `local_images_ssd` datastore, except that it is accessible on the GPU nodes only. In other words, using this datastore makes sure that your VM is run on the nodes which have GPU's installed on them.
+If GPU access has been enabled for your account, you will have to use a [datastore](image_storage) that is enabled on the GPU nodes. This datastore is called `gpu_images_ssd` and behaves the same way as the `local_images_ssd` datastore, except that it is accessible on the GPU nodes only. In other words, using this datastore makes sure that your VM is run on the nodes which have GPU's installed on them.
 
-Note that the `ceph` datastore is also enabled on the GPU nodes. However, as described [here](image_storage), it is best to put your OS image on either the `local_images_ssd` or the `images_ssd_gpu` datastore. `ceph` can then be used for larger data images and for persistent data.
+Note that the `ceph` datastore is also enabled on the GPU nodes. However, as described [here](image_storage), it is best to put your OS image on either the `gpu_images_ssd` or the `gpu_images_ssd` datastore. `ceph` can then be used for larger data images and for persistent data.
 
 ## OpenGL rendering
 
@@ -25,7 +25,7 @@ You can either set up your own cloud image, or use an image provided by SURFsara
 
 1. In the Dashboard on https://ui.hpccloud.surfsara.nl/, under Storage -> Apps, select the Ubuntu 16.04 image with GPU (`Ubuntu 16.04 GPU VIS`) and import it with the `Import` button in the upper right.
 ![import AppMarket Appliance] (images/gpu/rvs_select_image.png)
-2. In the next screen, make sure to select “images_ssd_gpu” as your datastore, and give both your image and template a distinctive name.
+2. In the next screen, make sure to select “gpu_images_ssd” as your datastore, and give both your image and template a distinctive name.
 ![import AppMarket Appliance] (images/gpu/rvs_image_name.png)
 3. Under Storage-> Images, select the image you just created and, with the “dots” button, set your image to persistent state (`Make persistent`). After this, refresh the list with the button of the two arrows chasing each other and make sure the status of your image is “ready”
 ![Make image persistent] (images/gpu/rvs_make_persistent.png)
