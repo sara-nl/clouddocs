@@ -5,8 +5,8 @@ layout: default
 >
 >This is a distilled summary. For more information, you are advised to have a look at the official OpenNebula documentation pages:
 >
-> * [basic contextualisation](http://docs.opennebula.org/4.14/user/virtual_machine_setup/bcont.html)
-> * [advanced contextualisation](http://docs.opennebula.org/4.14/user/virtual_machine_setup/cong.html)
+> * [KVM Contextualization](http://docs.opennebula.org/5.2/operation/vm_setup/kvm.html)
+> * [advanced contextualisation](http://docs.opennebula.org/5.2/operation/references/template.html#template-context)
 
 ## Contextualization explained
 
@@ -88,6 +88,9 @@ For that, you first need to create an (or several) `Init File`(s) on the _Files 
 >
 >OpenNebula only delivers _contextualisation_ upon VM startup (from the external point of view). Therefore, any modification of the `template` or the `file`s that you make while the VM is running, will **not** be visible to that running VM. Further, even when you add `nic`s to a running VM, these will **not** be contextualised.
 
+```TODO MB: not in 5.2 / 5.02 documentation of openNebula
+
+
 #### Scripts caveats; cloud-init
 
 Aside from OpenNebula's contextualisation scripts, an alternative de-facto standard is emerging called [cloud-init](https://cloudinit.readthedocs.org/en/latest/). 
@@ -103,3 +106,4 @@ As a practical case, in Ubuntu, using all default Python2 and Python3 packages, 
 1. Open the file `/usr/bin/cloud-init` for editing.
 2. Change the [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) line to use the Python2 installation, like: `#!/usr/bin/python2.7`
 3. Reboot the OS so that the changes take effect.
+```
