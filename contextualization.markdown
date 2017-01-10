@@ -88,12 +88,6 @@ For that, you first need to create an (or several) `Init File`(s) on the _Files 
 >
 >OpenNebula only delivers _contextualisation_ upon VM startup (from the external point of view). Therefore, any modification of the `template` or the `file`s that you make while the VM is running, will **not** be visible to that running VM. Further, even when you add `nic`s to a running VM, these will **not** be contextualised.
 
-``` 
-
-TODO MB: cloud-init not in 5.2 / 5.02 documentation of openNebula
-
-cloud-init site has: http://cloudinit.readthedocs.io/en/latest/topics/datasources/opennebula.html
-But links to the openNebula docs go to the archives
 
 #### Scripts caveats; cloud-init
 
@@ -101,7 +95,7 @@ Aside from OpenNebula's contextualisation scripts, an alternative de-facto stand
 
 > **NOTE:**
 >
-> OpenNebula's notes on cloud-init are available in [their documentation](  http://docs.opennebula.org/4.14/user/virtual_machine_setup/cloud-init.html)
+> OpenNebula's notes on cloud-init are available in [their documentation] for an older version of OpenNebula (4.14)(  http://docs.opennebula.org/4.14/user/virtual_machine_setup/cloud-init.html)
 
 It looks like cloud-init's scripts may suffer from having Python3 as the default Python interpreter. If you need to install Python3, you are using cloud-init and you notice that your VM suddenly fails to be properly contextualised, you may want to have an alternate Python2 installation and have the init scripts use this instead.
 
@@ -110,4 +104,4 @@ As a practical case, in Ubuntu, using all default Python2 and Python3 packages, 
 1. Open the file `/usr/bin/cloud-init` for editing.
 2. Change the [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) line to use the Python2 installation, like: `#!/usr/bin/python2.7`
 3. Reboot the OS so that the changes take effect.
-```
+
