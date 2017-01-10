@@ -65,11 +65,12 @@ In this section we show you how you can start using the new disk.
 
 >**Warning:**
 >
->The first two commands only need to be run once (and they do destroy everything on your disk!). The mount command (third one) needs to be run every time you start the image or you can add this line to /etc/fstab to have it done automatically: `/dev/vdb /data xfs defaults 0 0`. 
+>In the following listing, the first `mkdir` and `mkfs` commands only need to be run once (and they do **destroy** everything on the image!). The `mount` command (fourth line) needs to be run every time you start the VM with that image. Alternatively, you can add this line to /etc/fstab to have it done automatically: `/dev/vdb /data xfs defaults 0 0`. 
 >
->The last lines (the one with mkdir -p onwards) ask the operating system to perform some optimisations when using Ceph. Note that the directory /etc/rc.d/ may or may not exist, but the -p will make sure that it just exists after the command is run.
+>The last lines (the one with `mkdir -p` onwards) ask the operating system to perform some optimisations when using Ceph. Note that the directory /etc/rc.d/ may or may not exist, but the -p will make sure that it exists after the command is run.
 
 ```sh
+sudo su -
 mkdir /data  
 mkfs -t xfs /dev/vdb  
 mount /dev/vdb /data
