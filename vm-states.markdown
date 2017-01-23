@@ -15,6 +15,7 @@ You can see most of these on the UI:
 >**Note:**
 >
 > We recommend you **mainly** use the following actions for managing your VMs: 
+> 
 > * **Terminate**: the VM will shut down gracefully. Click the dust bin button and then *Terminate*.
 > * **Stop**: the VM keeps its changes for the next *Resume* action. Click on the pause square button and then *Stop*. A VM in STOPPED state does not consume quota.
 > * **Resume**: resumes a STOPPED VM. Click on the play button. It will bring the STOPPED to RUNNING state.
