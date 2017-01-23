@@ -5,9 +5,7 @@ layout: default
 
 <div class="alert alert-info" style="float:right;max-width:50%;" markdown="1">
 <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> 
-This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages here are permanently under construction and you can expect **frequent changes**. 
-
-We **welcome your comments** or corrections at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments). Or see the bottom of this page on how to contribute directly to **help us improve** the documentation.
+This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**.
 </div>
 
 ## Operational
