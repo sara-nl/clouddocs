@@ -127,7 +127,7 @@ After you have added your public key to your user profile, you should be able to
 
 You will need to find the IP address of your virtual machine, first. The IP address of your virtual machine is shown on in the _IPs_ column from the virtual machines list, under the _Virtual Resources_ tab of the UI.
 
-If you use a Linux or a Mac OSX open a terminal (if you are using Windows then open a GitBash terminal) and type:
+If you use Linux or Mac OSX open a terminal (if you are using Windows then open a GitBash terminal) and type:
 
 ```bash
   ssh ubuntu@145.100.mmm.nnn
@@ -135,6 +135,11 @@ If you use a Linux or a Mac OSX open a terminal (if you are using Windows then o
 
 where you should replace _mmm_ and _nnn_ to match the IP address of your virtual machine.
 
+<!---
+>**Note:**
+>You can find out which username to use (in this case, 'ubuntu', but it could be a different one) by reading the description of the _Appliance_ you imported. Go to the _Apps_ tab on the UI and then click on the _appliance_ you chose. You can then read extended information for that appliance. Among other information, you will find usernames you can use.
+>
+-->
 >**Note:**
 >You may have to specify which of your (multiple) public keys you want to use to connect to your VM. The `ssh` command can take an argument of the following form for that:
  * the flag `-i`
