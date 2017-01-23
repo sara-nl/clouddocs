@@ -5,7 +5,7 @@ layout: default
 
 <div class="alert alert-info" style="float:right;max-width:50%;" markdown="1">
 <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> 
-This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**.
+This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**. You are welcome to contribute to **help us improve** the documentation (see bottom of this page).
 </div>
 
 ## Operational
