@@ -39,7 +39,6 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 * [Virtual Machine states](vm-states)
 * [Sharing OpenNebula Objects](sharing-objects)
 * [Install Windows](Windows)
-* Licences
 * [User management](usermanagement)
 
 ### GPU
@@ -58,10 +57,6 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 * [Create a copy of a disk in a running VM](storage_snapshot)
 * [Resize your OS image](resize_os_image)
 
-### Networks
-* Virtual Network
-* Lightpaths
-
 ### Security
 > **NOTE:**
 >
@@ -71,9 +66,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 * [DirtyCOW vulnerability](notices/dirtycow)
 
 ### Inside the VM
-* MySQL server
 * [Grid Storage](grid-storage)
-* Pilot Jobs
 * [NFS](NFS) &ndash; Share Data between Virtual Machines
 * [SoftDrive](softdrive)
 
@@ -85,7 +78,6 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 * [Apps Appliances Configuration](appliances-configuration)
 
 ### Troubleshooting
-
 * [VM not reacting to Shutdown](vm-not-reacting-to-shutdown)
 * [Connection problem with resumed ubuntu 14.04 virtual machine](connection_problem_ubuntu1404) 
 
@@ -105,6 +97,6 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 ## Contributing to the documentation
 
-If you have any comments, please let us know by sending us an e-mail at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments). Alternatively, you are welcome to contribute to this documentation directly. For this, you can fork our repository on GitHub and submit a pull request to inform us of your changes.
+If you have any comments, please let us know by sending an e-mail to [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments). Alternatively, you are welcome to contribute to this documentation directly. You can fork our repository on GitHub and submit a pull request to inform us of your changes.
 
 Please find our [contribution guidelines](markdown-best-practice) before more information about forking, contributing updates, bug fixes, or other corrections.
