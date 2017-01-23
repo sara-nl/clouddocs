@@ -81,6 +81,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 * [VM not reacting to Shutdown](vm-not-reacting-to-shutdown)
 * [Connection problem with resumed ubuntu 14.04 virtual machine](connection_problem_ubuntu1404) 
 
+<!---
 ## Tutorials
 * [SURF Research Bootcamp 2016-11-10](bootcamp-20161110/index)
 * [VU HPC Cloud workshop 2016-10-19](VU-20161019/index)
@@ -90,6 +91,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 * [HPC Cloud workshop 2016-01-25](UvAworkshop-2016-01-25/UvAworkshop-2016-01-25) (part of the UvA HPC and Big Data course)
 * [UNESCO-IHE workshop - 11 Dec 2015](wshop-uihe-2015-12-11)
 * [Surfcursus - 15 Oct 2015](surfcursus-2015-Oct-15)
+-->
 
 ## Service implementation
 * [Available resources](resources-available)
