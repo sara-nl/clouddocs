@@ -4,11 +4,17 @@ layout: default
 
 ## Maintenance windows HPC Cloud
 
+### Current
+
+|   Status    |   Date (start / end)        |   |
+|:------------|:----------------------------|:--|
+|   Ongoing   |   24-01-2017 / 25-01-2017   | Downtime for VM's required. For instructions, see the page on [maintenance preparation](notices/maintenance_preparation_down)  |
+{: class="table"}
+
 ### Future
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Planned   |   24-01-2017 / 25-01-2017   | Downtime for VM's required. For instructions, see the page on [maintenance preparation](notices/maintenance_preparation_down)  |
 |   Planned   |   18-04-2017 / 19-04-2017   |   |
 |   Planned   |   03-10-2017 / 04-10-2017   |   |
 |   Planned   |   19-12-2017 / 20-12-2017   |   |
