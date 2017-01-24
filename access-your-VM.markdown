@@ -22,7 +22,7 @@ Before accessing your machine you need to find out the address of your VM. There
 
 The IP address can be found under _Instances -> VMs_. The external IP to connect to starts with 145.100.XX.XX. If there is no IP address or only an IP address starting with 10.100.XX.XX (which is an internal IP address you cannot reach through the Internet), please add an external `nic` to the VM.
 
-For every VM that you launch, the HPC Cloud assigns it a public host name. The host name can be found your VM's log on the UI. Go to _Virtual Resources->Virtual Machines_, click on your VM, then on the _Log_ tab and, at the top of the log, you will find the DNS address. 
+For every VM that you launch, the HPC Cloud assigns it a public host name. The host name can be found your VM's log on the UI. Go to _Instances -> VMs_, click on your VM, then on the _Log_ tab and, at the top of the log, you will find the DNS address. 
 
 >For example:
 > 
