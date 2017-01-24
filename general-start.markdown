@@ -39,7 +39,7 @@ To start building a virtual machine, go to the UI and log in with the username a
 
 > **NOTE**
 >
-> ...that the username and password are **not** for the VM you are going to create. You can set users and passwords later on, once you have created a VM.
+> ... that the username and password are **not** for the VM you are going to create. You can set users and passwords later on, once you have created a VM.
 
 ## Importing an _appliance_ from the Apps option of the Storage menu
 
@@ -47,25 +47,28 @@ We are going to work with a pre-made `image` that is available in the `Apps` opt
 
 > **NOTE**
 >
-> The `Apps` options contains  a collection of so-called _appliances_ maintained by the HPC Cloud team. It is a handy way to import, from within the well-known UI, useful images that are ready to use. More information about the [_appliances_ configuration is available](appliances-configuration). There is also an OpenNebula marketplace, publicly available on the OpenNebula website, and anybody can contribute their _appliances_ to it.
+> The `Apps` option contains  a collection of so-called _appliances_ maintained by the HPC Cloud team. It is a handy way to import, from within the UI, useful images that are ready to use. More information about the [_appliances_ configuration is available](appliances-configuration). There is also an OpenNebula marketplace, publicly available on the OpenNebula website, and anybody can contribute their _appliances_ to it.
 
 Import the appliance by following these steps:
 
 1. From the **user** `view`, choose the
    _Storage_ tab on the left menu of the screen and then _Apps_ (in the screen shot, it has been highlighted in red).
+   
    ![appmarket step 1](images/appmarket_step_1.png)
 
-2. Next, look for the **Ubuntu 14.04 Server** _appliance_ in the list; click on it.
+2. Look for the **Ubuntu 14.04 Server** _appliance_ in the list and click on it.
    This will show details about `image`, `template` and other attributes (including a textual description) that conform the _appliance_. Please, read the `Description` now.
    The description mentions that there is no password for the root account and that you need to add an SSH public key to your user profile. We will do this in a later step.
    Read the extended information related to the _appliance_ (especially, the bit about the _contextualization_ and _configuration_ options).
+   
    ![appmarket step 2](images/appmarket_step_2.png)
 
 3. Click on the _OpenNebula_ button at the top of the screen.
    A dialogue will pop up, asking you for a few details.
+   
    ![appmarket step 3](images/appmarket_step_3.png)
 
-4. The first options are the name of the `template` and the `image`. You can change the names to something more descriptive to you. Once you have many `template` and `image` objects, it will pay off to have good descriptive names of what each of them is.
+4. The first options are the name of the `image` and the `template`. You can change the names to something more descriptive to you. Once you have many `image` and `template` objects, it will pay off to have good descriptive names of what each of them is.
 
 5. The next  setting is the datastore for images. Make sure that you select _local images ssd_. 
 
@@ -81,7 +84,7 @@ First, you need to create an SSH key in your own computer. This process is descr
 
 After you have created an SSH key, go to your _user profile_ by selecting the _buddy_ icon on the top-right of the screen, then select _Settings_. A dialogue pops up. In the dialogue, go to the _Info_ page; then locate the section _Public SSH Key_, and click on the blue _edit_ icon. You should now see an empty text area.
 
-Find the file in your computer containing the public key you created (it is usually called ```id_rsa.pub``` and it is usually found in the ```.ssh``` directory in your ```$HOME```directory). Open the file, then copy the contents of the file (those contents are your public key) and paste those contents into the text area of the UI.
+Find the file in your computer containing the public key you created (it is usually called ```id_rsa.pub``` and it is usually found in the ```.ssh``` directory in your ```$HOME```directory). Open the file, then copy the contents of the file (its contents are your public key) and paste it into the text area of the UI.
 
 ![import_ssh_key_img](images/import_ssh_key.png)
 
@@ -102,14 +105,15 @@ Go to the _VMs_ option of the _Instances_ section of the UI. This displays an ov
 
 Start your virtual machine using the following steps:
 
-1. Click on the green plus sign, as shown in the screenshot. This opens a dialogue with options for your virtual machine.
+1. Click on the green plus sign, as shown in the screenshot. 
+
 ![startVM](images/startVM.png)
 
-2. The first box in the dialogue is to give your virtual machine a name. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*.
+2. Select the `template` you created before from the presented list. This opens a dialogue with options where you will define the resources to be allocated to VM.
 
-3. The number of instances is 1, which is fine for now.
+3. The first box in the dialogue is to give your virtual machine a name. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*.
 
-4. The second step in the dialogue is to select a `template`. Since this is your first `template`, there is only one item in the list. Select this `template` by clicking on it.
+4. The number of instances is 1, which is fine for now.
 
 5. Click on the _Create_ button at the top of the screen.
 

@@ -74,7 +74,7 @@ Expected output for CentOS 6:
 
 The security update is complete, you now need to shutdown the VM in order to save the disk image back to the storage.
 
-Log in to the OpenNebua UI, select the running VM and use the red drop-down to "Shutdown" your VM.
+Log in to the OpenNebua UI, select the running VM and use the red drop-down to "Terminate" your VM.
 
 After a successful shutdown you can make the OS disk non-persistent again if needed.
 
