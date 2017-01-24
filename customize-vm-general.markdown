@@ -7,7 +7,7 @@ When editing a template, the _General_ tab allows you to personalise:
 
 > **NOTE:**
 >
-> On each option, if you hover your mouse over the _(?)_ mark, you will get a tooltip box with extra information.
+> Whenever a _(?)_ mark is present, just hover your mouse over it and you will get a tooltip box with extra information.
 
 * _Description_: it is a long text that you can use to write notes about the `template`. It is something for you (i.e.: human-readable).
 * _Logo_: in several `view`s (like the _cloud_ one), in different places this logo is shown to visually help you identify VMs and `template`s. You can choose a meaningful image for each `template` and VM that will help you administer them.
