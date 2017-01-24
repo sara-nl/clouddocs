@@ -28,7 +28,7 @@ For every VM that you launch, the HPC Cloud assigns it a public host name. The h
 > 
 >```bash
 >Wed Jun 24 17:54:18 2015 [Z0][HKM][I]: Success executing Hook: SurfSARA_Dns: Added
->DNS record: vmname.projectname.surf-hosted.nl -> 145.100.68.93. 
+>DNS record: vmname.projectname.surf-hosted.nl -> 145.100.68.93.``` 
 >
 >In this case the host name of the server is vmname.projectname.surf-hosted.nl which points to IP address 145.100.68.93.
 
