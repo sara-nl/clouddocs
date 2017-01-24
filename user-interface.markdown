@@ -109,6 +109,10 @@ There is a menu on the left side within the **user** `view`. The tabs displayed 
 
 A description of each of these items follows. 
 
+> **NOTE**
+>
+> The menu displays different functionalities accordingly to the `view` mode. 
+
 ### Dashboard
 The Dashboard is the page where you can see a summary of the status of your project. Information includes:
 
