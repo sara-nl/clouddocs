@@ -2,11 +2,11 @@
 layout: default
 ---
 
-# AppMarket appliances configuration
+# Apps appliances configuration
 
-SURFsara provides pre-made _appliances_ to their HPC Cloud users. These appliances are available via the _AppMarket_ in the HPC Cloud user interface and are meant to help users instantiating secure Vm's quickly. Currently we provide a set of basic _appliances_ for CentOS and Ubuntu.
+SURFsara provides pre-made _appliances_ to their HPC Cloud users. These appliances are available via the _Apps_ option in the _Storage_ section in the HPC Cloud user interface and are meant to help users instantiating VM's quickly. Currently we provide some basic _Apps_ for CentOS and Ubuntu.
 
-The _AppMarket_ _appliances_ are endorsed by SURFsara HPC Cloud team and are kept up to date. In order to provide our customers with a secure working environment, a set of configurations are applied to the images at boot time via `cloud-init` contextualization. Here bellow you can find the configuration details.
+The _Apps_ are endorsed by the SURFsara HPC Cloud team and are kept up to date. In order to provide our customers with a secure working environment, a set of configurations are applied to the images at boot time via `cloud-init` contextualization. Here you can find some of these configuration details.
 
 1. **Root account**
 
@@ -14,7 +14,7 @@ The _AppMarket_ _appliances_ are endorsed by SURFsara HPC Cloud team and are kep
 
 2. **Access to the VM**
 
-    To access the Virtual Machine, an SSH public key needs to be injected to the VM. The ssh access to the VM is granted via a super user account.
+    To access the Virtual Machine, an SSH public key needs to be injected to the VM. Ssh access to the VM is granted via a  user account which can become root once she's logged in.
 
 3. **Firewall**
 
@@ -48,4 +48,4 @@ The _AppMarket_ _appliances_ are endorsed by SURFsara HPC Cloud team and are kep
 
 > **Note:**
 >
-> More details are described in the appliances themselves at the _AppMarket_.
+> More details are described in the appliances themselves at the _Apps_.

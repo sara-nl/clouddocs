@@ -5,9 +5,7 @@ layout: default
 
 <div class="alert alert-info" style="float:right;max-width:50%;" markdown="1">
 <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> 
-This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages here are permanently under construction and you can expect **frequent changes**. 
-
-We **welcome your comments** or corrections at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments). Or see the bottom of this page on how to contribute directly to **help us improve** the documentation.
+This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**. You are welcome to contribute to **help us improve** the documentation (see bottom of this page).
 </div>
 
 ## Operational
@@ -41,7 +39,6 @@ We **welcome your comments** or corrections at [helpdesk@surfsara.nl](mailto:hel
 * [Virtual Machine states](vm-states)
 * [Sharing OpenNebula Objects](sharing-objects)
 * [Install Windows](Windows)
-* Licences
 * [User management](usermanagement)
 
 ### GPU
@@ -60,10 +57,6 @@ We **welcome your comments** or corrections at [helpdesk@surfsara.nl](mailto:hel
 * [Create a copy of a disk in a running VM](storage_snapshot)
 * [Resize your OS image](resize_os_image)
 
-### Networks
-* Virtual Network
-* Lightpaths
-
 ### Security
 > **NOTE:**
 >
@@ -73,9 +66,7 @@ We **welcome your comments** or corrections at [helpdesk@surfsara.nl](mailto:hel
 * [DirtyCOW vulnerability](notices/dirtycow)
 
 ### Inside the VM
-* MySQL server
 * [Grid Storage](grid-storage)
-* Pilot Jobs
 * [NFS](NFS) &ndash; Share Data between Virtual Machines
 * [SoftDrive](softdrive)
 
@@ -83,14 +74,14 @@ We **welcome your comments** or corrections at [helpdesk@surfsara.nl](mailto:hel
 * [Getting started with the XML-RPC API](xmlrpc-start)
 
 
-### AppMarket
-* [AppMarket Appliances Configuration](appliances-configuration)
+### Apps
+* [Apps Appliances Configuration](appliances-configuration)
 
 ### Troubleshooting
-
 * [VM not reacting to Shutdown](vm-not-reacting-to-shutdown)
 * [Connection problem with resumed ubuntu 14.04 virtual machine](connection_problem_ubuntu1404) 
 
+<!---
 ## Tutorials
 * [SURF Research Bootcamp 2016-11-10](bootcamp-20161110/index)
 * [VU HPC Cloud workshop 2016-10-19](VU-20161019/index)
@@ -100,6 +91,7 @@ We **welcome your comments** or corrections at [helpdesk@surfsara.nl](mailto:hel
 * [HPC Cloud workshop 2016-01-25](UvAworkshop-2016-01-25/UvAworkshop-2016-01-25) (part of the UvA HPC and Big Data course)
 * [UNESCO-IHE workshop - 11 Dec 2015](wshop-uihe-2015-12-11)
 * [Surfcursus - 15 Oct 2015](surfcursus-2015-Oct-15)
+-->
 
 ## Service implementation
 * [Available resources](resources-available)
@@ -107,6 +99,6 @@ We **welcome your comments** or corrections at [helpdesk@surfsara.nl](mailto:hel
 
 ## Contributing to the documentation
 
-If you have any comments, please let us know by sending us an e-mail at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments). Alternatively, you are welcome to contribute to this documentation directly. For this, you can fork our repository on GitHub and submit a pull request to inform us of your changes.
+If you have any comments, please let us know by sending an e-mail to [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments). Alternatively, you are welcome to contribute to this documentation directly. You can fork our repository on GitHub and submit a pull request to inform us of your changes.
 
 Please find our [contribution guidelines](markdown-best-practice) before more information about forking, contributing updates, bug fixes, or other corrections.

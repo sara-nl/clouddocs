@@ -3,7 +3,7 @@ layout: default
 ---
 # Your first virtual machine
 
-This page teaches how to create a `Virtual Machine` (VM) running Linux, by importing an _appliance_ from the `AppMarket`.
+This page teaches how to create a `Virtual Machine` (VM) running Linux, by importing an _appliance_ from the `Apps` option of the `Storage` menu.
 
 > **NOTE**
 >
@@ -21,7 +21,7 @@ You build them by first describing all their parts. This description is called a
 
 Storage drives (like hard disks) are `images`. They do not physically exist, but rather, they only exist as files in a backing file server.
 
-To make starting a virtual machine easier, we provide the AppMarket, which has _appliances_ readily available for you to pick and use.
+To make starting a virtual machine easier, we provide the Apps option, which has _appliances_ readily available for you to pick and use.
 
 ## Logging into the HPC Cloud User Interface
 
@@ -39,39 +39,42 @@ To start building a virtual machine, go to the UI and log in with the username a
 
 > **NOTE**
 >
-> ...that the username and password are **not** for the VM you are going to create. You can set users and passwords later on, once you have created a VM.
+> ... that the username and password are **not** for the VM you are going to create. You can set users and passwords later on, once you have created a VM.
 
-## Importing an _appliance_ from the AppMarket
+## Importing an _appliance_ from the Apps option of the Storage menu
 
-We are going to work with a pre-made `image` that is available on the AppMarket.
+We are going to work with a pre-made `image` that is available in the `Apps` option.
 
 > **NOTE**
 >
-> The AppMarket is a collection of so-called _appliances_ maintained by the HPC Cloud team. It is a handy way to import, from within the well-known UI, useful images that are ready to use. More information about the [_appliances_ configuration is available](appliances-configuration). There is also an OpenNebula marketplace, publicly available on the OpenNebula website, and anybody can contribute their _appliances_ to it.
+> The `Apps` option contains  a collection of so-called _appliances_ maintained by the HPC Cloud team. It is a handy way to import, from within the UI, useful images that are ready to use. More information about the [_appliances_ configuration is available](appliances-configuration). There is also an OpenNebula marketplace, publicly available on the OpenNebula website, and anybody can contribute their _appliances_ to it.
 
 Import the appliance by following these steps:
 
 1. From the **user** `view`, choose the
-   _AppMarket_ tab on the left menu of the screen and then _Appliances_ (in the screen shot, it has been highlighted in red).
+   _Storage_ tab on the left menu of the screen and then _Apps_ (in the screen shot, it has been highlighted in red).
+   
    ![appmarket step 1](images/appmarket_step_1.png)
 
-2. Next, look for the **Ubuntu 14.04 Server** _appliance_ in the list; click on it.
-   This will show details about `image`s, `template`s and other attributes (including a textual description) that conform the _appliance_. Please, read the `Description` now.
+2. Look for the **Ubuntu 14.04 Server** _appliance_ in the list and click on it.
+   This will show details about `image`, `template` and other attributes (including a textual description) that conform the _appliance_. Please, read the `Description` now.
    The description mentions that there is no password for the root account and that you need to add an SSH public key to your user profile. We will do this in a later step.
    Read the extended information related to the _appliance_ (especially, the bit about the _contextualization_ and _configuration_ options).
+   
    ![appmarket step 2](images/appmarket_step_2.png)
 
-3. Click on the _Import_ button at the top-right corner of the screen.
+3. Click on the _OpenNebula_ button at the top of the screen.
    A dialogue will pop up, asking you for a few details.
+   
    ![appmarket step 3](images/appmarket_step_3.png)
 
-4. The first setting is the datastore for images. Make sure that you select _104: local images ssd_.
+4. The first options are the name of the `image` and the `template`. You can change the names to something more descriptive to you. Once you have many `image` and `template` objects, it will pay off to have good descriptive names of what each of them is.
 
-5. The other options are the name of the `template` and the `image`. You can change the names to something more descriptive to you. Once you have many `template`s and `image`s, it will pay off to have good descriptive names of what each of them is.
+5. The next  setting is the datastore for images. Make sure that you select _local images ssd_. 
 
-6. Finally, click _Import_. This will start importing the appliance from  the AppMarket. When the import is successful, it will create an `image` and a `template`.
+6. Finally, click _Download_. This will start importing the appliance from  the AppMarket. When the import is successful, it will create an `image` and a `template`.
 
-You can verify that the process is complete by inspecting the _Template_ and _Image_ sections in the _Virtual Resources_ tab of the UI. You should see your new `image` and `template` there.
+You can verify that the process is complete by inspecting the _VMs_ sections in the _Templates_ tab and the _Images_ section in the _Storage_ tab of the UI. You should see your new `image` and `template` there.
 
 ## Adding an SSH key to your profile
 
@@ -81,55 +84,38 @@ First, you need to create an SSH key in your own computer. This process is descr
 
 After you have created an SSH key, go to your _user profile_ by selecting the _buddy_ icon on the top-right of the screen, then select _Settings_. A dialogue pops up. In the dialogue, go to the _Info_ page; then locate the section _Public SSH Key_, and click on the blue _edit_ icon. You should now see an empty text area.
 
-Find the file in your computer containing the public key you created (it is usually called ```id_rsa.pub``` and it is usually found in the ```.ssh``` directory in your ```$HOME```directory). Open the file, then copy the contents of the file (those contents are your public key) and paste those contents into the text area of the UI.
+Find the file in your computer containing the public key you created (it is usually called ```id_rsa.pub``` and it is usually found in the ```.ssh``` directory in your ```$HOME```directory). Open the file, then copy the contents of the file (its contents are your public key) and paste it into the text area of the UI.
 
 ![import_ssh_key_img](images/import_ssh_key.png)
 
 You can just close this dialogue now. Your public key is automatically stored in your profile.
-
-## Finishing the virtual machine configuration by editing the template
-
-When you imported the _appliance_ from the AppMarket, it made a `template` available for you to make a virtual machine. However, the VM would not be connected to the internet yet, so you cannot connect to it remotely.
-
-### Connecting your virtual machine to the internet
-
-Allow your virtual machine to connect to the internet by following these steps:
-
-1. Go to the _Templates_ section. Find the `template` you just created, and click on it. You now see an overview of the `template` settings.
-
-2. Click on _Update_ on the top-right of the screen to start editing the `template`.
-This shows the different configuration options for your `template`. For now, we will leave most settings alone, but you can browse through the different options. Select the _Network_ tab.
-
-3. The _Network_ tab shows which network interfaces (or `nic`s) your VM would have and to which networks they would be connected. To connect the only available `nic` at the moment (called _NIC 0_) to the internet, select the network called "internet", to the right of it, as shown on the screen shot.
-   ![template IP](images/template_IP.png)
-
-4. Click _Update_ to save your changes.
 
 
 ## Starting your virtual machine
 
 >**Note:**
 >
-> When you import an appliance from the AppMarket, the disk image is normally non-persistent.
+> When you import an appliance from the Apps option, the disk image is normally non-persistent.
 > This means, in short, that your changes are lost when you shut your VM down. Before starting your VM, always check
 > whether [Image Persistence](image_persistence) is set to the desired mode (yes or no).
 
 A `template` is a description of a virtual machine. The `template` we have been editing in this guide is now ready to create a virtual machine from it.
 
-Go to the _Virtual Machines_ section of the UI. This displays an overview of all running VMs. If this is your first virtual machine, this list will be empty.
+Go to the _VMs_ option of the _Instances_ section of the UI. This displays an overview of all running VMs. If this is your first virtual machine, this list will be empty.
 
 Start your virtual machine using the following steps:
 
-1. Click on the green plus sign, as shown in the screenshot. This opens a dialogue with options for your virtual machine.
+1. Click on the green plus sign, as shown in the screenshot. 
+
 ![startVM](images/startVM.png)
 
-2. The first box in the dialogue is to give your virtual machine a name. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*.
+2. Select the `template` you created before from the presented list. This opens a dialogue with options where you will define the resources to be allocated to VM.
 
-3. The number of instances is 1, which is fine for now.
+3. The first box in the dialogue is to give your virtual machine a name. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*.
 
-4. The second step in the dialogue is to select a `template`. Since this is your first `template`, there is only one item in the list. Select this `template` by clicking on it.
+4. The number of instances is 1, which is fine for now.
 
-5. Click on the _Create_ button at the bottom of the screen.
+5. Click on the _Create_ button at the top of the screen.
 
 Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That state means that the cloud system is looking for a place where your virtual machine can actually run.
 
@@ -153,6 +139,11 @@ If you use Linux or Mac OSX open a terminal (if you are using Windows then open 
 
 where you should replace _mmm_ and _nnn_ to match the IP address of your virtual machine.
 
+<!---
+>**Note:**
+>You can find out which username to use (in this case, 'ubuntu', but it could be a different one) by reading the description of the _Appliance_ you imported. Go to the _Apps_ tab on the UI and then click on the _appliance_ you chose. You can then read extended information for that appliance. Among other information, you will find usernames you can use.
+>
+-->
 >**Note:**
 >You can find out which username to use (in this case, 'ubuntu', but it could be a different one) by reading the description of the _Appliance_ you imported. Go to the _AppMarket_ tab on the UI, then _Appliances_ and then click on the _appliance_ you chose. You can then read extended information for that appliance. Among other information, you will find usernames you can use.
 >
@@ -183,9 +174,9 @@ If there were no errors, and if your firewalls allow making remote connections, 
 
 ## Shut down and remove your machine
 
-If you want to shutdown your VM and stop consuming your quotas, perform the following steps:
+If you want to terminate your VM and stop consuming your quotas, perform the following steps:
 
-1. Tick the box to the left on the row of your VM and click _Shutdown_ (upper right corner of the screen, under the _dust bin_ drop-down button).
+1. Tick the box to the left on the row of your VM and click _Terminate_ (upper right corner of the screen, under the _dust bin_ drop-down button).
 ![shutdownVM](images/shutdownVM.png)
 
 2. Refresh the Virtual Machines list (by clicking on the two arrows chasing each other next to _+_ button) until your VM is gone.

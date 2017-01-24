@@ -12,11 +12,8 @@ One piece of software we often see around is VirtualBox. VirtualBox is a virtual
 
 Once you are ready configuring your environment in your VirtualBox VM, shut your VM down. Then you can export it as a VMDK file. 
 
-### Directly using VMDK
-VirtualBox uses its own `image` format, so you will have to tell the HPC Cloud how to use the file you exported from VirtualBox. To do so, when you start creating a new `image` on the HPC Cloud, you will choose to _Upload_ the file you exported from VirtualBox, and on the _Advanced options_ of the _Create Image_ form, on the _Device prefix_ box type `vd` and on the _Driver_ box type `vmdk`. 
-
 ### Converting to QCOW2
-Alternatively, you can convert the VMDK file you exported to the QCOW2 format. 
+You should convert the VMDK file you exported to the QCOW2 format.
 
 >**Note:**
 >
@@ -29,3 +26,7 @@ Once you have qemu-img installed on your laptop, converting your VMDK to QCOW2 i
 ```sh
 qemu-img convert -O qcow2 file.vmdk image.qcow2
 ```
+
+## Uploading your image
+
+To upload your image, create an image as you would normally do (see [Adding a CEPH datablock to your VM](create-datablocks)), but choose for 'image location', choose for 'upload' and select the qcow2 file on your local PC.

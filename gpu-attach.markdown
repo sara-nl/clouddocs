@@ -17,24 +17,24 @@ If GPU access was enabled for your account, you will have to use a [datastore](i
 
 Note that the `ceph` datastore is also enabled on the GPU nodes. However, as described [here](image_storage), it is best to put your OS image on either the `local_images_ssd` or the `images_ssd_gpu` datastore. `ceph` can still be used for larger, data images and for persistent data.
 
-### Import appliances from the AppMarket
+### Import appliances from the Apps option
 
-If you want to import an appliances from the AppMarket for use on the GPU nodes, you can follow the normal instructions as described on [this page](general-start).
+If you want to import an appliances from the Apps option of the Storage section for use on the GPU nodes, you can follow the normal instructions as described on [this page](general-start).
 
-The only exception is that you have to select a different datastore. In the screen shown below, make sure you choose the 'images_ssd_gpu' datastore.
+The only exception is that you have to select a different datastore. In the screen shown below, make sure you choose the 'gpu_images_ssd' datastore.
 
-![GPU import from appmarket](images/gpu/gpu_appliance_import.png)
+![GPU import from apps](images/gpu/rvs_image_name.png)
 
 ### Using an existing image
 
 When you already have an image that you want to use on the GPU nodes, you will have to create a clone in the correct datastore:
 
- 1. Go to 'Virtual Resources' > 'Images' for an overview of your images
+ 1. Go to 'Storage' > 'Images' for an overview of your images
  2. Select the image you want to copy
- 3. Click on 'Clone' at the top right of the table with images.
+ 3. Click on 'Clone' at the top of the table with images.
  4. Click on the 'Advanced options' button. This will show you a screen like this:
  ![Clone image to GPU datastore](images/gpu/gpu_clone_image.png)
- 5. Select the correct datastore 'images_ssd_gpu'
+ 5. Select the correct datastore 'gpu_images_ssd'
  6. Optionally, change the name of the image
  7. Click the 'Clone' button
  8. Optionally, you can now delete the old image. This is not necessary, but note that changes in one image will not affect the other!
@@ -45,7 +45,7 @@ GPU devices are attached to VM using 'pci passthrough'. This means that your VM 
 
 > **NOTE:**
 >
-> Before proceeding, make sure that your OS image is on the `images_ssd_gpu` datastore and possible extra images are on the `ceph` datastore.
+> Before proceeding, make sure that your OS image is on the `gpu_images_ssd` datastore and possible extra images are on the `ceph` datastore.
 
 To attach a GPU device to your VM, either create a new template or edit an existing template as described [on this page](customize-your-vm). Then:
 

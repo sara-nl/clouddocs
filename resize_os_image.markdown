@@ -3,7 +3,7 @@ layout: default
 ---
 # Resizing OS images
 
-Images in the AppMarket are deliberately made rather small. They are usually enough to hold the operating system and allow installing some few extra software packages. And you are advised to store data in a separate Ceph image.
+Images in the Apps are deliberately made rather small. They are usually enough to hold the operating system and allow installing some few extra software packages. And you are advised to store data in a separate Ceph image.
 
 That description is usually valid for most use cases, but occasionally you may need to have so many different programs installed that you may require some extra space in your OS partition.
 
@@ -41,7 +41,7 @@ We will be using an extra VM as the central place of operations for the rest of 
 
 We will be attaching the image you want to resize in that _Utility VM_, then resizing the partitions in that image so that they expand to use the full available size of the image and then saving that resized image as a new image.
 
-1. **On the UI:** Go to the _AppMarket_ and import an _appliance_ you feel comfortable with (detailed instructions in [our General Start article](general-start)). We will be using Ubuntu Desktop throughout this guide, so that you can use `gparted` to resize the partitions.
+1. **On the UI:** Go to the _Apps_ option of the _Storage_ section and import an _appliance_ you feel comfortable with (detailed instructions in [our General Start article](general-start)). We will be using Ubuntu Desktop throughout this guide, so that you can use `gparted` to resize the partitions.
 1. **On the UI:** Make sure that you **edit the `template`** you have just imported from the _appliance_ so that you: 
  * **in the _Storage_ tab:** include a `disk` with the _image_ you want to resize.
  * **in the _Network_ tab:** include a `nic` connected to the Internet
@@ -59,7 +59,7 @@ We will now resize the partition in the `image`.
 
 > **NOTE:**
 >
-> We cannot know in advance which kind of partitioning your _image_ will have, so we cannot describe a step-by-step guide that will always work for you. In this example we will be resizing an Ubuntu image from our AppMarket, because we actually know what the partitioning is there.
+> We cannot know in advance which kind of partitioning your _image_ will have, so we cannot describe a step-by-step guide that will always work for you. In this example we will be resizing an Ubuntu image from our Apps, because we actually know what the partitioning is there.
 
 1. **In your laptop:** Connect via SSH to the _Utility VM_, using the **-X** flag so that you can display graphical windows.
 1. **In the _Utility VM_:** become the _root_ user (`sudo su -`). Run the command to install gparted: `sudo apt-get install gparted`. 
@@ -77,7 +77,7 @@ We will now resize the partition in the `image`.
 
 The image is now ready with the new layout and everything. However, it is non-persistent, so if we shut the VM down we will lose the changes. On the other hand, because a VM is running, you cannot guarantee that all changes have been flushed to the image. We recommend that you use the UI's _Power off_ action to leave the VM in a controlled shutdown (but still living), so that you can save a copy of the attached _image_. 
 
-1. **On the UI:** click on the _Utility VM_ to see its extended information. Click then on the _pause_ drop-down button and choose option _Power off_. After several  states, your VM's status will be POWEROFF.
+1. **On the UI:** click on the _Utility VM_ to see its extended information. Click then on the _power_ drop-down button and choose option _Power off_. After several  states, your VM's status will be POWEROFF.
 1. **On the UI:** in the extended information about the VM, go now to the _Storage_ tab. Next to the `image` you have resized, you should see a link that reads _Save as_. Click on the _Save as_ link for that `image`. Give the `image` you are going to create a new name (e.g.: add the suffix `.resized` to its original name). The state of the VM changes while the image is being copied. It can take a while before the image is copied. When the copy is finished, the VM's status is again POWEROFF. And then you will see a new `image` in the list of images with the resized `image` in status READY.
 1. **On the UI:** Go back to the _Info_ tab of the resized `image`'s extended information. Change now:
   * the _Type_ to _OS_
@@ -88,7 +88,7 @@ The image is now ready with the new layout and everything. However, it is non-pe
 You now need to use the new resized `image` when you create a new VM. You need to change the `template` for that.
 
 1. **On the UI:** In your templates list, locate the original template. Click on it to see the extended information.
-1. **On the UI:** With the extended information of the VM in sight, click on the _Clone_ button on the top-right corner. Give it a new new that describes that is the new one (e.g.: add the _.resized_ suffix to the original name). 
+1. **On the UI:** With the extended information of the VM in sight, click on the _Clone_ button. Give it a new name that describes that is the new one (e.g.: add the _.resized_ suffix to the original name). 
 1. **On the UI:** In your templates list, locate the resized template. Click on it to see the extended information.
  * On the _Storage_ tab, change the original `image` for the **resized** one.
 1. **On the UI:** Click on _Update_ to save the changes to the resized template.

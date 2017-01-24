@@ -20,7 +20,7 @@ You can add as many `disk`s as you need to a given `template`, each referring to
 
 ### Edit a `disk` for a `template`
 
-When you click on a `disk` of a `template` (on the left column of the _Storage_ tab), or when you click on _+Add another disk_, you will select that `disk` for editing (it will get a blue line on the left of its name and its options will show on the right column). 
+When you click on a `disk` of a `template` (on the left column of the _Storage_ tab), or when you click on _+_, you will select that `disk` for editing (it will get a blue line on the left of its name and its options will show on the right column). 
 
 The options you have for a `disk` are: 
 
@@ -58,4 +58,4 @@ Next to the name of each `disk` on the list of `disk`s when editing a `template`
 
 >**NOTE on _Advanced options_**:
 >
->The _Advanced options_ that you can see on the screen are very specific ones that we do not use  every day. If you think you need to use them, we recommend you try and learn about them on the official OpenNebula [documentation](http://docs.opennebula.org/) (for example, [here](http://docs.opennebula.org/4.12/user/virtual_resource_management/vm_guide.html)). And if you find benefits in using them, please send us an e-mail to let us know: [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl).
+>The _Advanced options_ that you can see on the screen are very specific ones that we do not use  every day. If you think you need to use them, we recommend you try and learn about them on the official OpenNebula [documentation](http://docs.opennebula.org/) (for example, [here](http://docs.opennebula.org/5.2/operation/vm_management/vm_templates.html)). And if you find benefits in using them, please send us an e-mail to let us know: [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl).

@@ -12,16 +12,16 @@ The following instructions explain how to use one of their prepared images to (a
 
 ## Importing the Image
 1. **On the Fedora web page:** On the _Cloud_ section of the downloads page, locate the link to their Qcow2 image and copy it to the paperclip (at the time of writing this article, the URL is this one: https://download.fedoraproject.org/pub/fedora/linux/releases/22/Cloud/x86_64/Images/Fedora-Cloud-Base-22-20150521.x86_64.qcow2)
-1. **On the HPC Cloud UI:** On the _Images_ subsection of the _Virtual Resources_ section, click on the green _[+]_ button to start creating a new `image`. The _Create Image_ form pops up.
+1. **On the HPC Cloud UI:** On the _Images_ subsection of the _Storage_ section, click on the green _[+]_ button to start creating a new `image`. The _Create Image_ form pops up.
 1. **On the HPC Cloud UI:** On the _Create Image_ form:
  * fill in a _Name_
- * choose _Type_:OS
- * make sure that, for field _Datastore_, you chose _104: local-images-ssd_
+ * choose _Type_:Operating System image
+ * make sure that, for field _Datastore_, you chose _101: local-images-ssd_
  * choose whether you want the `image` to be _Persistent_
  * in the _Image location:_ area, mark the _Provide a path_ radio button
  * fill in the _Path_ to the `image` file, by pasting the URL you copied in the first step of this recipe
  * Click on the _Advanced options_ dropdown area. There, you must fill in:
-  * In _Device prefix_, type `vd`
+  * In _Target device_, type `vd`
   * In _Driver_, type `qcow2`
 1. **On the HPC Cloud UI:** Click on the green _Create_ button at the bottom of the form, and an `image` with the name you wrote on the form will appear on the images table, in status LOCKED. It will remain in that status until the UI has finished copying the file from Fedora's servers to the HPC Cloud. Then it will change to READY.
 
@@ -29,7 +29,7 @@ The following instructions explain how to use one of their prepared images to (a
 
 You need to put that `image` that you imported into a `template`. We will do that now.
 
-1. **On the HPC Cloud UI:** In the _Templates_ tab, click on the green _[+]_ button to begin making a new `template`.
+1. **On the HPC Cloud UI:** In the _VMs_ tab of the _Templates_ section, click on the green _[+]_ button to begin making a new `template`.
 1. **On the HPC Cloud UI:** In the _General_ tab, give it a _name_, the amount of _Memory_ that you want, the amount of _CPU_ and _VCPU_ you need, etc.
 1. **On the HPC Cloud UI:** In the _Storage_ tab, choose the `image` you created in the previous step for the _Disk 0_ disk.
 1. **On the HPC Cloud UI:** In the _Network_ tab, choose network _internet_ for `nic` _Interface 0_, and add a new `nic`, which will get name _Interface 1_ to assign it to your internal network.

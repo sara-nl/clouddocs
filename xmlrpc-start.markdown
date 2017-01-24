@@ -20,12 +20,12 @@ In principle, you can "talk" directly to the XML-RPC `endpoint` just by sending 
 
 >**NOTE:**
 >
->If you want to look at the plain XML-RPC documentation, it is [available here](http://docs.opennebula.org/4.14/integration/system_interfaces/api.html)
+>If you want to look at the plain XML-RPC documentation, it is [available here](http://docs.opennebula.org/5.2/integration/system_interfaces/api.html)
 
 In order to hide all this XML-processing tediousness from the programmer, OpenNebula provide some bindings for programming languages. They make using the API a more intuitive experience. They offer bindings for the following languages:
 
-* [Ruby](http://docs.opennebula.org/4.14/integration/system_interfaces/ruby.html)
-* [Java](http://docs.opennebula.org/4.14/integration/system_interfaces/java.html)
+* [Ruby](http://docs.opennebula.org/5.2/integration/system_interfaces/ruby.html)
+* [Java](http://docs.opennebula.org/5.2/integration/system_interfaces/java.html)
 
 The community has created bindings for other languages, like:
 
@@ -131,7 +131,7 @@ import oca                          # this imports the OpenNebula API bindings
 class VersionCheck():
     """A simple OpenNebula API test class"""
 
-    ONE_ENDPOINT = 'https://api.hpccloud.surfsara.nl'
+    ONE_ENDPOINT = 'https://api.hpccloud.surfsara.nl/RPC2'
     ONE_USER = 'UI_username'          # replace this with your HPC Cloud UI username
     ONE_PASSWORD = 'UI_password'      # replace this with your HPC Cloud UI password
 
@@ -159,7 +159,7 @@ python ~/workspace/my_project/version_check.py
 It should print something like:
 
 >```sh
-4.14.2
+5.2.1
 ```
 
 ## API explanation
