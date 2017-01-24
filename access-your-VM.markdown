@@ -41,7 +41,7 @@ You can predict the host name: `${vmname}.${projectname}.surf-hosted.nl`
 
 ## SSH access
 
-### From a Linux or MacOS  or Windows (GitBash) client 
+### From a Linux, MacOS or Windows (GitBash) client 
 
 * MacOS and Linux come with built-in SSH clients. To use these, open a terminal.
 * Windows users can download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between `Git-XXX-32-bit.exe` or `Git-XXX-64-bit.exe`. 
