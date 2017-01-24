@@ -121,14 +121,14 @@ The Dashboard is the page where you can see a summary of the status of your proj
 The _Instances_ menu allows you to manage your created `VM`s. It offers 2 sub-options:
 
 * _VMs_: to manage `VM`s (i.e.: create, start, stop, suspend, delete...)
-* _Services_:  *new functionality TODO*
+* _Services_:  *new functionality; documentation to be updated*
 
 ### Templates
 
 The _Templates_ menu allows you to manage your `Templates`s. It offers 2 sub-options:
 
 * _VMs_: to manage `Template`s (i.e.: create, edit, delete)
-* _Services_: *new functionality TODO*
+* _Services_: *new functionality; documentation to be updated*
 
 ### Storage
 
@@ -146,10 +146,12 @@ _Appliances_ are ready-made `image`s (and, sometimes, `template`s as well), that
 
 The _Network_ menu allows you mainly to see information about the network resources available in the HPC Cloud and your usage of them. It offers 3 sub-options:
 
-
 * _Virtual Networks_: to see which networks you have available and which your `VM`s are using them
-* _Network Topology_: *new functionality TODO*
+* _Network Topology_: *new functionality; documentation to be updated*
+<!---
+Not available in the user view!!!!
 * _Security Groups_: *new functionality TODO*
+-->
 
 >**Note:**
 >
