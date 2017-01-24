@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="alert alert-warning" markdown="1">
+<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
 _Warning:_ The instructions in this workshop are meant for a previous version of the UI, which looks very diferent now.
 Instead, please see a more recent workshop (after 2017-01-25).
 </div>
