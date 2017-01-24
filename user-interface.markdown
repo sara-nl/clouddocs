@@ -109,7 +109,7 @@ There is a menu on the left side within the **user** `view`. The tabs displayed 
 
 A description of each of these items follows. 
 
-#### Dashboard
+### Dashboard
 The Dashboard is the page where you can see a summary of the status of your project. Information includes:
 
 * daily graphs of CPU and memory usage
@@ -117,7 +117,7 @@ The Dashboard is the page where you can see a summary of the status of your proj
 * network and storage counters
 * quotas
 
-#### Instances
+### Instances
 The _Instances_ menu allows you to manage your created `VM`s. It offers 2 sub-options:
 
 * _VMs_: to manage `VM`s (i.e.: create, start, stop, suspend, delete...)
@@ -142,7 +142,7 @@ The _Storage_ menu allows the user to see information about all storage related 
 _Appliances_ are ready-made `image`s (and, sometimes, `template`s as well), that you can import into your project so that you can instantiate `VM`s out of them. There are pre-made _appliances_ for CentOS and Ubuntu, for example. When you click on one of them, make sure you read the corresponding comments.
 
 
-#### Network
+### Network
 
 The _Network_ menu allows you mainly to see information about the network resources available in the HPC Cloud and your usage of them. It offers 3 sub-options:
 
