@@ -152,6 +152,7 @@ The _Network_ menu allows you mainly to see information about the network resour
 
 * _Virtual Networks_: to see which networks you have available and which your `VM`s are using them
 * _Network Topology_: *new functionality; documentation to be updated*
+
 <!---
 Not available in the user view!!!!
 * _Security Groups_: *new functionality TODO*
