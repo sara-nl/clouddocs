@@ -105,9 +105,11 @@ Go to the _VMs_ option of the _Instances_ section of the UI. This displays an ov
 
 Start your virtual machine using the following steps:
 
-1. Click on the green plus sign, as shown in the screenshot. Choose the `template` you created before, and This opens a dialogue with options for your virtual machine.
+1. Click on the green plus sign, as shown in the screenshot. 
 
 ![startVM](images/startVM.png)
+
+2. Select the `template` you created before from the presented list. This opens a dialogue with options where you will define the resources to be allocated to VM.
 
 2. The first box in the dialogue is to give your virtual machine a name. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*.
 
