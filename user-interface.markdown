@@ -5,7 +5,7 @@ layout: default
 
 ## Access the user interface
 
-The UI (short for User Interface) is the web site that allows you to operate the HPC Cloud. Put simply: your way to manage (create/destroy) your Virtual Machines (VM).
+The UI (User Interface) is the web site that allows you to operate the HPC Cloud. Put it simply, it is your way to manage (create/destroy) your Virtual Machines (VM).
 
 >**Note:**
 >
