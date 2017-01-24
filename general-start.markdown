@@ -111,11 +111,9 @@ Start your virtual machine using the following steps:
 
 2. Select the `template` you created before from the presented list. This opens a dialogue with options where you will define the resources to be allocated to VM.
 
-2. The first box in the dialogue is to give your virtual machine a name. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*.
+3. The first box in the dialogue is to give your virtual machine a name. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*.
 
-3. The number of instances is 1, which is fine for now.
-
-4. The second step in the dialogue is to select a `template`. Since this is your first `template`, there is only one item in the list. Select this `template` by clicking on it.
+4. The number of instances is 1, which is fine for now.
 
 5. Click on the _Create_ button at the top of the screen.
 
