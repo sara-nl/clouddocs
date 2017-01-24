@@ -47,7 +47,7 @@ We are going to work with a pre-made `image` that is available in the `Apps` opt
 
 > **NOTE**
 >
-> The `Apps` option contains  a collection of so-called _appliances_ maintained by the HPC Cloud team. It is a handy way to import, from within the well-known UI, useful images that are ready to use. More information about the [_appliances_ configuration is available](appliances-configuration). There is also an OpenNebula marketplace, publicly available on the OpenNebula website, and anybody can contribute their _appliances_ to it.
+> The `Apps` option contains  a collection of so-called _appliances_ maintained by the HPC Cloud team. It is a handy way to import, from within the UI, useful images that are ready to use. More information about the [_appliances_ configuration is available](appliances-configuration). There is also an OpenNebula marketplace, publicly available on the OpenNebula website, and anybody can contribute their _appliances_ to it.
 
 Import the appliance by following these steps:
 
