@@ -53,16 +53,19 @@ Import the appliance by following these steps:
 
 1. From the **user** `view`, choose the
    _Storage_ tab on the left menu of the screen and then _Apps_ (in the screen shot, it has been highlighted in red).
+   
    ![appmarket step 1](images/appmarket_step_1.png)
 
 2. Look for the **Ubuntu 14.04 Server** _appliance_ in the list and click on it.
    This will show details about `image`, `template` and other attributes (including a textual description) that conform the _appliance_. Please, read the `Description` now.
    The description mentions that there is no password for the root account and that you need to add an SSH public key to your user profile. We will do this in a later step.
    Read the extended information related to the _appliance_ (especially, the bit about the _contextualization_ and _configuration_ options).
+   
    ![appmarket step 2](images/appmarket_step_2.png)
 
 3. Click on the _OpenNebula_ button at the top of the screen.
    A dialogue will pop up, asking you for a few details.
+   
    ![appmarket step 3](images/appmarket_step_3.png)
 
 4. The first options are the name of the `template` and the `image`. You can change the names to something more descriptive to you. Once you have many `template` and `image` objects, it will pay off to have good descriptive names of what each of them is.
