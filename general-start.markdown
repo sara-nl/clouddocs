@@ -55,7 +55,7 @@ Import the appliance by following these steps:
    _Storage_ tab on the left menu of the screen and then _Apps_ (in the screen shot, it has been highlighted in red).
    ![appmarket step 1](images/appmarket_step_1.png)
 
-2. Next, look for the **Ubuntu 14.04 Server** _appliance_ in the list; click on it.
+2. Look for the **Ubuntu 14.04 Server** _appliance_ in the list and click on it.
    This will show details about `image`, `template` and other attributes (including a textual description) that conform the _appliance_. Please, read the `Description` now.
    The description mentions that there is no password for the root account and that you need to add an SSH public key to your user profile. We will do this in a later step.
    Read the extended information related to the _appliance_ (especially, the bit about the _contextualization_ and _configuration_ options).
