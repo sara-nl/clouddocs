@@ -8,7 +8,7 @@ layout: default
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Ongoing   |   24-01-2017 / 25-01-2017   | Downtime for VM's required. For instructions, see the page on [maintenance preparation](notices/maintenance_preparation_down)  |
+|   &mdash;   |   &mdash;   | &mdash;  |
 {: class="table"}
 
 ### Future
@@ -26,6 +26,7 @@ layout: default
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finished  |   24-01-2017 / 25-01-2017   | Scheduled maintenance  |
 |   Finished  |   02-09-2016 / 09-09-2016   | moved to new data center |
 |   Finished  |   26-07-2016 / 27-07-2016   |   |
 |   Finished  |   05-04-2016 / 06-04-2016   |   |
