@@ -8,7 +8,7 @@ layout: default
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   &mdash;   |   &mdash;   | &mdash;  |
+|   &mdash;   |   &mdash;   |   |
 {: class="table"}
 
 ### Future
