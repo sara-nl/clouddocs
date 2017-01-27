@@ -8,6 +8,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2017-01-24
+
+* Upgraded to OpenNebula 5.2, this includes a new look and feel for the user interface
+
 ## 2016-10-26
 
 ### Updated
