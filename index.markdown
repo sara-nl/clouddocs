@@ -78,6 +78,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 * [Apps Appliances Configuration](appliances-configuration)
 
 ### Troubleshooting
+* [Recovery access](vnc_recovery_access); how to get root access to your VM without a root password
 * [VM not reacting to Shutdown](vm-not-reacting-to-shutdown)
 * [Connection problem with resumed ubuntu 14.04 virtual machine](connection_problem_ubuntu1404) 
 
