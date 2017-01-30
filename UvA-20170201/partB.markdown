@@ -95,13 +95,15 @@ That was it. From now on, whenever you instantiate this `template`, you will get
 
 > **Food for brain:**
 >
-> After changing this template, how many cores would the vm that you created during step 2 'Scale up to a multicore VM' have? Does changing a template change the currently running VM's that are based on it?
+> After changing this `template`, how many cores would the VM that you created during step 2 'Scale up to a multicore VM' have? Does changing a `template` change the currently running VM's that are based on it?
 
 #### Instantiate the four-core VM
 
 * Instantiate a VM from the updated `template`.
 * Login to the VM. *Is your data there?*
-* You can verify that you are logged in on a four-core VM with the command: `cat /proc/cpuinfo`
+* You can verify that you are logged in on a four-core VM with either of the following commands: 
+  * `cat /proc/cpuinfo`
+  * `lscpu`
 
 
 > **NOTE:**
