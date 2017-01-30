@@ -1,6 +1,4 @@
 #!/bin/bash
-sudo su -
-
 cat <<EOF > /etc/init.d/clear-cloud-init.sh
 #!/bin/bash
 truncate -s 0 "/etc/udev/rules.d/70-persistent-net.rules"
