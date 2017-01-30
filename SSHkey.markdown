@@ -2,8 +2,7 @@
 layout: default
 ---
 
-# Use Secure Shell (SSH) private / public keys (Linux/Mac/Windows)
-
+# Use Secure Shell (SSH) private / public keys
 
 ## Summary
 
@@ -17,6 +16,10 @@ This is great for allowing passwordless access to a remote system, and also more
 You need to have a file on your local computer (say, your laptop) with a private key, and you need to install its matching public key on the remote computer(s) you want to access (say, your VM). Then, when you are going to connect to the remote machine from your laptop, the private and public keys will be compared and, if they successfully relate to one-another, your SSH connection will be established.
 
 The mechanism to allow SSH private/public key pairs authentication is already configured (and recommended) on the appliances endorsed by SURFsara and readily available in the _Apps_ menu. Therefore, you need to have a private/public key pair on your laptop in order to be able to connect to a VM created from SURFsara _Apps_.
+
+>**NOTE:**
+>
+> The instructions described cater for the needs of Linux, Mac and Windows users.
 
 ## Preparation
 
