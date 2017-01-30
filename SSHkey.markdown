@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Use Secure Shell (SSH) private / public keys
+# Use Secure Shell private / public keys
 
 ## Summary
 
