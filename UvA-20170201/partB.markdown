@@ -28,11 +28,11 @@ This is part B of the Tutorial [UvA HPC course 2017-02-01](.).
 `Images` can be **persistent** or **non-persistent** and you can change this mode at will.
 
 * What does **persistent** mean?
-  *  Changes by the VM are copied back to the original `image` (upon normal VM shutdown)
-  *  If a VM is running with a **persistent** disk, you cannot launch a second VM using that `image`
+  *  Changes made by the VM are copied back to the original `image` (upon normal VM shutdown)
+  *  If a VM is running with a **persistent** disk, you **cannot** launch a second VM using that `image`
 
 * What does **non-persistent** mean?
-  * Changes by a VM are lost at shutdown and not copied back to the original `image`
+  * Changes made by a VM are lost at shutdown and not copied back to the original `image`
   * It **is** possible to run multiple VMs using the same single **non-persistent** `image`
 
 > **Food for brain:**
