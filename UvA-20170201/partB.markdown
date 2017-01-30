@@ -156,14 +156,19 @@ In order to let you VM know about the new datablock, you need to add it to your 
 
 Let's start using the new disk.
 
-* Create a new `VM` from the `Template` you created in the previous step.
-* Once the `VM` is in RUNNING state, login and check if your new datablock is there:
+* Instantiate a new `VM` from the `Template` you modified in the previous step.
+* Once the `VM` is in RUNNING state, login and check that your new datablock is available there:
 
 ```sh
 sudo fdisk -l
 ```
 
 >**Note:** The `sudo` commands will display you the message `sudo: unable to resolve host ip-145-100-...`. Ignore this.
+
+> **Food for brain:**
+>
+> You should see (probably, as a list line of the output of the previous command) something like: `Disk /dev/vdb doesn't contain a valid partition table`. Do you also see in the output of the previous command, that there is a Disk with approximately the same size as what you typed in the UI in the previous step?
+
 
 * Create the directory where you will mount the Ceph datablock and format the drive (`xfsprogs` is installed on the image):
 
