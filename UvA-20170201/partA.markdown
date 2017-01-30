@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is part A of the tutorial [UvA HPC course 2017-02-01](.) which will touch the following topics:
+This is part A of the tutorial [UvA HPC course 2017-02-01](.) and covers the following topics:
 
 1. [Access the user interface](#access-the-user-interface)
 2. [Add your public SSH key](#add-your-public-ssh-key)
@@ -18,14 +18,14 @@ This is part A of the tutorial [UvA HPC course 2017-02-01](.) which will touch t
 
 ### 1. Access the User Interface
 
-The UI (User Interface) is the web site that allows you to manage your _Virtual Machines_ (or _VM_ s) on the HPC Cloud.
+The User Interface (UI) is the web site that allows you to manage your _Virtual Machines_ (or _VM_ s) on the HPC Cloud.
 
 #### Log in to the UI
 
 * Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/)
-* Your username is **s-uvaXZ**, replace `XZ` with the number assigned to you.
-* You will receive the password from the workshop facilitators.
-* Hit the `Login` button.
+* Your username is **s-uvaXZ**, replace `XZ` with the number assigned to you
+* You will receive the password from the workshop facilitators
+* Hit the `Login` button
 
 #### Change your password
 
@@ -33,7 +33,7 @@ Once you login to the UI, it is a best practice to change the initial password.
 
 * Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen, click it and select *<i class="fa fa-cog"></i> Settings*.
 * In the _Settings_ display, locate the _Password_ field and click the blue *edit* icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
-* On the _Update Password_ pop-up dialog, fill in a new password (twice) and click the *Change* button to submit it.
+* On the _Update Password_ pop-up dialog fill in a new password (twice) and click the *Change* button to submit it.
 
 #### Logout
 
