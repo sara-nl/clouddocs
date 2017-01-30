@@ -213,9 +213,9 @@ A typical way of considering a cluster is to have a **master** node (or host) wh
 
 In our exercises, we will consider one master and one worker node. Both will compute (so the master will not be just a passive node, but it will also contribute to the output). We will not consider any job-submitting queues, but rather, we will let MPI communicate over SSH. For that, both the master and the worker need to be able to SSH to each-other without requiring a password (a.k.a. **passwordless ssh**). We provide you with a script that you can run in each of the machines (in this case just one master an one worker) to do this interactively in a, hopefully, easy way.
 
-To make it easier, all nodes where MPI will run a program must have that program installed the same way in the same path. Because we have been carefully building the `image` so far, that is already done.
+To make it easier, all nodes where MPI will run a program must have that program installed the same way in the same path. Because we (you) have been carefully building the `image` so far, that is already arranged.
 
-Also, usually the worker nodes are protected (inaccessible) from the outside world, so you can only reach them normally from within the internal network. We will simulate this as well. We have provided a script to configure the master and another for the worker node, which will change the hostname and also shutdown the external network interface on the worker node.
+Also, usually the worker nodes are protected (inaccessible) from the outside world, so you can only reach them normally from within the internal network. We will simulate this as well. We have provided a script to configure the master and another for the worker node, which will change the hostname and also bring down the external network interface on the worker node.
 
 #### Launch a 2-core worker VM
 **Exercise f1:** Launch another VM that will become a worker
