@@ -10,13 +10,13 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-These are the extras of the Tutorial [UvA HPC course 2017-02-01](.).
-
-**You should have completed (and understood)** [Part A](partA) and [Part B](partB), before trying these extras.
-
-The exercises below can be done in any order and you can do as far as you want, depending on your enthusiasm and available time.
+This is part Extras of the tutorial [UvA HPC course 2017-02-01](.). The exercises can be done in any order and you can do as far as you want, depending on your enthusiasm and available time.
 
 You will find several _Food for brain_ questions in each exercise about situations that you might encounter when working with **Parallel programming** techniques. We advice that you perform many tests, observe the results (write down execution times, change parameters, make tables, draw graphs...), and think about your answers.
+
+>**NOTE:**
+>
+> You should have completed (and understood) both [Part A](partA) and [Part B](partB), before trying these extras.
 
 ## OpenMP
 
