@@ -167,7 +167,7 @@ sudo fdisk -l
 
 > **Food for brain:**
 >
-> You should see (probably, as a list line of the output of the previous command) something like: `Disk /dev/vdb doesn't contain a valid partition table`. Do you also see in the output of the previous command, that there is a Disk with approximately the same size as what you typed in the UI in the previous step?
+> You should see (probably, as a last line of the output of the previous command) something like: `Disk /dev/vdb doesn't contain a valid partition table`. Do you also see, in the output of the previous command, that there is a Disk with approximately the same size as what you typed in the UI in the previous step? What is that Disk's name?
 
 
 * Create the directory where you will mount the Ceph datablock and format the drive (`xfsprogs` is installed on the image):
