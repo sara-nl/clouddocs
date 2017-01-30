@@ -10,7 +10,7 @@ As an HPC Cloud user, you have full control of your virtual machines (VM). This 
 
 Often authentication to a machine is done with a username/password, but passwords are easy to forget and often not strong enough to withstand cracking. Root access needs good security because it gives full control over the host and is a well known username. 
 
-SSH offers [public key](https://en.wikipedia.org/wiki/Public-key_cryptography) authentication, a method to access a remote machine securely and with not much trouble.
+Secure Shell (SSH) offers [public key](https://en.wikipedia.org/wiki/Public-key_cryptography) authentication, a method to access a remote machine securely and with not much trouble.
 This is great for allowing passwordless access to a remote system, and also more secure than traditional passwords.  You can find abundant information on the Internet about how it all works.
 
 You need to have a file on your local computer (say, your laptop) with a private key, and you need to install its matching public key on the remote computer(s) you want to access (say, your VM). Then, when you are going to connect to the remote machine from your laptop, the private and public keys will be compared and, if they successfully relate to one-another, your SSH connection will be established.
