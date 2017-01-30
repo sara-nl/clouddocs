@@ -28,6 +28,10 @@ This exercise should make you familiar with our general documentation pages.
 
 * Run the first example from that documentation page. Make sure you are able to see the API version number as a result.
 
+> **_Food for brain:_**
+>
+> * What version does the API reply with?
+
 ### c) Run a second example
 
 * Run the example from the presentation that shows a list of your VMs.
@@ -39,4 +43,4 @@ This exercise should make you familiar with our general documentation pages.
 
 ## <a name="xml_print"></a> Helping code
  
-  * [Helper XmlUtil class](xml_util.py)
+  * [Helper XmlUtil class](./code/xml_util.py)
