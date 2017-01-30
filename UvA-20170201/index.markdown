@@ -38,21 +38,20 @@ SURFsara has been operating the HPC Cloud as an `IaaS` (Infrastructure as a Serv
 
 ## <a name="preparation"></a>Preparation
 
-Participants should bring a laptop with Internet connection and a proper browser.
-Prior experience in [Linux commands](http://cli.learncodethehardway.org/book/) will help but is not a prerequisite.
+Participants are expected to bring a laptop with Internet connection and a browser installed. Prior experience with [Linux commands](http://cli.learncodethehardway.org/book/) will help but not a prerequisite.
 
-For this tutorial you will need:
+For this workshop you will need:
 
 * A computer with Internet access (UvA provides WiFi via eduroam)
 * A browser (Chrome or Firefox will do nicely)
 * An SSH client
-  * Linux and Mac users: don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
-  * Windows users: download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between the `-32-bit.exe` or the `-64-bit.exe`.
+  * _Linux and Mac users:_ don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
+  * _Windows users:_ download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between the `-32-bit.exe` or the `-64-bit.exe`.
 * An X-window client
-  * Linux and Mac users normally don't need to install anything as X11 is on board. However, the newest Mac OS releases might not have X11.app installed. In that case, install [XQuartz](http://xquartz.macosforge.org/landing/).
-  * Windows users: install [Xming](http://sourceforge.net/projects/xming/).
+  * _Linux and Mac users:_ usually don't need to install anything as X11 is on board. However, the newest Mac OS releases might not have X11.app installed. In such a case, install [XQuartz](http://xquartz.macosforge.org/landing/).
+  * _Windows users:_ install [Xming](http://sourceforge.net/projects/xming/).
 
-> **NOTE: only for Windows users**
+> **NOTE for Windows users**
 >
 > For the course purposes you will need to start a graphical window in your laptop that is connected to your HPC Cloud machine. To make this work, you need to adjust the following setting:  
 >
