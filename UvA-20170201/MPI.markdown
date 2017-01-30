@@ -73,14 +73,17 @@ sudo apt-get install build-essential
 sudo apt-get install libhdf5-serial-dev libopenmpi-dev openmpi-bin openmpi-common hdf5-tools ImageMagick gnuplot
 ```
 
->**NOTE:**
->
->The Ubuntu Desktop 14.04 _App_ is affected by the problem described in our documentation, [here](/connection_problem_ubuntu1404). To correct it easily, please follow these steps now that you are connected via SSH:
+<div class="alert alert-warning" markdown="1">
+<i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true">Warning</i><br>
+
+The Ubuntu Desktop 14.04 _App_ is affected by the problem described in our documentation, [here](/connection_problem_ubuntu1404). To correct it easily, please follow these steps now that you are connected via SSH:
 
 ```sh
 wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20170201/code/cloudinit_fix.sh
 chmod +x cloudinit_fix.sh
 ```
+
+</div>
 
 
 ### b) Preparing the program
