@@ -51,7 +51,7 @@ This exercise will let you use OpenMP, first with a serial implementation within
 * Install the gcc compiler and gnu make:
 
 ```sh
-sudo apt-get install build-essential 
+sudo apt-get update && sudo apt-get install build-essential 
 ```
 
 > Optionally verify gcc and GNU make installation and version with `gcc -v` and  `make -v` respectively. 
