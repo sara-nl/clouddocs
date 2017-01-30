@@ -44,7 +44,9 @@ We will be creating a 2-core VM for this exercise.
   * Edit the _<i class="fa fa-globe"></i> Network_ tab: 
     * for the _NIC 0_, the _Internet network_ is selected
     * add a second `nic` (hit **+ Add another interface** button); for this second `nic`, _NIC 1_, choose the _uvacourse-surfsara.int_ network (from the table on the right of the screen)
-  * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: the _VNC_ radiobutton must be selected
+  * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: 
+    * the _VNC_ radiobutton must be selected
+    * in the _Inputs_ section, select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that
   * Finally, click on the green *Update* button at the top of the screen
 
 * Launch a VM from that `template`
