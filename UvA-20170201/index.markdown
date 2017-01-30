@@ -51,9 +51,9 @@ For this workshop you will need:
   * _Linux and Mac users:_ usually don't need to install anything as X11 is on board. However, the newest Mac OS releases might not have X11.app installed. In such a case, install [XQuartz](http://xquartz.macosforge.org/landing/).
   * _Windows users:_ install [Xming](http://sourceforge.net/projects/xming/).
 
-> **NOTE for Windows users**
+> **NOTE for Windows users:**
 >
-> For the course purposes you will need to start a graphical window in your laptop that is connected to your HPC Cloud machine. To make this work, you need to adjust the following setting:  
+> For the course purposes you will need to start a graphical window in your laptop that is connected to your HPC Cloud machine. To make this work, you need to adjust the following:  
 >
 * Open GitBash (or git for windows).
 * In the terminal that appears, copy and paste the following commands: 
@@ -65,7 +65,7 @@ source $HOME/.bashrc
 ```
 
 ## <a name="hands-on"></a> Hands-on
-The hands-on tutorial has three parts. The exercises in part *A & B* will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood this, then continue to the *Extras* part with more `advanced` examples on the HPC Cloud.
+The hands-on tutorial has three parts. The exercises in part *A & B* will provide you with a first grasp for the `basic` usage of the HPC Cloud. Once you have completed and understood this, then continue to the *Extras* part with more `advanced` examples on the HPC Cloud.
 
   * [Part A](partA)
   * [Part B](partB)
