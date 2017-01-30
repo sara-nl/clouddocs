@@ -108,6 +108,9 @@ Edit the imported `template` with these steps:
   * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM. 
   * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`.   
 ![youselectednetwork](/images/youselectednetwork.png)
+  * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: 
+    * the _VNC_ radiobutton must be selected
+    * in the _Inputs_ section, select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that
 * If you made any changes, click the green button _Update_ at the top, to save your changes.
 
 #### Start the VM
