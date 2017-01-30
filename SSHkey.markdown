@@ -2,21 +2,21 @@
 layout: default
 ---
 
-# Use Secure Shell (SSH) private/public keys (Linux/Mac/Windows)
+# Use Secure Shell (SSH) private / public keys (Linux/Mac/Windows)
 
 
 ## Summary
 
-As an HPC Cloud user you have full control of your virtual machines (IaaS). This means that you are administrator in your own VMs, in other words `root` user.
+As an HPC Cloud user, you have full control of your virtual machines (VM). This means that you are the system administrator of your own VMs, in other words, the `root` user.
 
-Most authentication is done with a username/password, but passwords are easy to forget and often not strong enough to withstand cracking. Root access needs good security because it gives full control over the host and is a well known username. 
+Often authentication to a machine is done with a username/password, but passwords are easy to forget and often not strong enough to withstand cracking. Root access needs good security because it gives full control over the host and is a well known username. 
 
 SSH offers [public key](https://en.wikipedia.org/wiki/Public-key_cryptography) authentication, a method to access a remote machine securely and with not much trouble.
 This is great for allowing passwordless access to a remote system, and also more secure than traditional passwords.  You can find abundant information on the Internet about how it all works.
 
-You need to have a file on your local computer (say, your laptop) with a private key, and you need to install its matching public key on the remote computers you want to access (say, your VM). Then, when you are going to connect to the remote machine from your laptop, the private and public keys will be compared and, if they successfully relate to one-another, your SSH connection will be established.
+You need to have a file on your local computer (say, your laptop) with a private key, and you need to install its matching public key on the remote computer(s) you want to access (say, your VM). Then, when you are going to connect to the remote machine from your laptop, the private and public keys will be compared and, if they successfully relate to one-another, your SSH connection will be established.
 
-The mechanism to allow connecting with SSH private/public key pairs is already configured (and recommended) on the appliances you can get from the AppMarket. Therefore, you need to have a private/public key pair on your laptop in order to be able to connect to a VM created from the AppMarket.
+The mechanism to allow SSH private/public key pairs authentication is already configured (and recommended) on the appliances endorsed by SURFsara and readily available in the _Apps_ menu. Therefore, you need to have a private/public key pair on your laptop in order to be able to connect to a VM created from SURFsara _Apps_.
 
 ## Preparation
 
