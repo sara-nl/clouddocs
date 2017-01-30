@@ -65,7 +65,7 @@ source $HOME/.bashrc
 ```
 
 ## <a name="hands-on"></a> Hands-on
-The hands-on tutorial has three parts. The exercises in part *A & B* will provide you with a first grasp for the `basic` usage of the HPC Cloud. Once you have completed and understood this, then continue to the *Extras* part with more `advanced` examples on the HPC Cloud.
+The hands-on tutorial consists of three parts. Parts *A & B* provide exercises for you to grasp the `basic` concepts on how to operate in the HPC Cloud environment. The *Extras* part will focus on `advanced` topics, namelly parallel programming and automation, where you will exercise yourself on the HPC Cloud.
 
   * [Part A](partA)
   * [Part B](partB)
