@@ -31,7 +31,7 @@ Here is a summary of the course outline:
 
 >**Agenda:**
 >
->1st February 2017, UvA, [Science Park 904](https://www.uva.nl/en/about-the-uva/the-uva-in-amsterdam/locations/locations/locations/content/folder/sciencepark/science-park.html)
+>1st February 2017, UvA, [Science Park 904](https://www.uva.nl/en/about-the-uva/the-uva-in-amsterdam/locations/locations/locations/content/folder/sciencepark/science-park.html), Room: SP-A1.10
 >
 > * 09:30 Welcome & coffee  
 > * 09:35 Presentation and Demo: HPC Cloud at SURFsara (Markus van Dijk)
