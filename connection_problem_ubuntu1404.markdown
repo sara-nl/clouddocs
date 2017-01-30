@@ -4,7 +4,7 @@ layout: default
 
 # Problem connecting to resumed Ubuntu 14.04 VM
 
-When using the Ubuntu 14.04 images from the AppMarket that we provide, you may run into the problem that, if you shut down your VM and you start it up again at a later point, your VM may not have proper network connectivity any longer. 
+When using the Ubuntu 14.04 _Apps_ that we provide, you may run into the problem that, if you shut down your VM and you start it up again at a later point, your VM may not have proper network connectivity any longer. 
 
 
 ## Step by step explanation
