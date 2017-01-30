@@ -27,20 +27,20 @@ Instead, please see a more recent workshop (after 2017-01-25).
 
 SURFsara has been operating the HPC Cloud as an `IaaS` (Infrastructure as a Service) for several years.
 We have launched recently a new HPC Cloud with a powerful user interface and a complete new cluster with fast compute nodes and high-performant big storage volumes.
-The user interface and cloud software relies on [OpenNebula 4](http://opennebula.org/) and our new cluster is called _Oort_, after the [Oort cloud](https://en.wikipedia.org/wiki/Oort_cloud).
+The user interface and cloud software relies on [OpenNebula 5](http://opennebula.org/) and our new cluster is called _Oort_, after the [Oort cloud](https://en.wikipedia.org/wiki/Oort_cloud).
 
 This particular course aims to introduce the workshop participants to the HPC Cloud by providing a set of lectures and hands-on examples to run on the real **`Oort`** infrastructure.
 
-The session today is part of a broader schedule of the VU HPC Course, which you can find [here](http://hpc.labs.vu.nl/program/).
+The session today is part of a broader schedule of the UvA HPC Course, which you can find [here](http://hpc.uva.nl/Workshops/). The HPC Cloud session is described [here](http://hpc.uva.nl/Workshops/article/110/8-HPC-Cloud).
 
 Here is a summary of the course outline:
 
 >**Agenda:**
 >
->19th October 2016, VU, [Mathematics and Physics building (W&N building)](http://www.few.vu.nl/en/about-faculty/contact/index.aspx)
+>1st February 2017, UvA, [Science Park 904](https://www.uva.nl/en/about-the-uva/the-uva-in-amsterdam/locations/locations/locations/content/folder/sciencepark/science-park.html)
 >
 > * 09:30 Welcome & coffee  
-> * 09:35 Presentation and Demo: HPC Cloud at SURFsara (Niek Bosch)
+> * 09:35 Presentation and Demo: HPC Cloud at SURFsara (Markus van Dijk)
 > * 10:15 Hands-on: Parts A & B
 > * 12:00 Lunch   
 > * 13:00 Presentation: Cloudifying - parallelism & API (Ander Astudillo)
