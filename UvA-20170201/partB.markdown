@@ -85,13 +85,13 @@ The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows y
 
 You can customise your VMs by editing the `templates` you instantiate the VMs from.
 
-* In order to edit your existing `template`, choose the **Course Template** from the _Templates_ list on the left menu, and then click on the _Update_ button on the top right of the screen.
+* In order to edit your existing `template`, from the _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu, choose the **Course Template**. Then click on the _Update_ button on the top left of the screen.
 * In the _<i class="fa fa-laptop"></i> General_ tab edit the number of CPU and VCPU as:
   * CPU: **4**
   * VCPU: **4**
 * When you are done, click on the green _Update_ button so that your changes are actually saved.
 
-That was it. From now on you will get a 4-core VM running using the same *Cursus Image*.
+That was it. From now on, whenever you instantiate this `template`, you will get a 4-core VM running using the same *Cursus Image*.
 
 > **Food for brain:**
 >
