@@ -10,9 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is part A of the Tutorial [UvA HPC course 2017-02-01](.).
-
-This tutorial will touch the following topics:
+This is part A of the tutorial [UvA HPC course 2017-02-01](.) which will touch the following topics:
 
 1. [Access the user interface](#access-the-user-interface)
 2. [Add your public SSH key](#add-your-public-ssh-key)
