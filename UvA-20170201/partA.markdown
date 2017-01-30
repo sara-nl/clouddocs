@@ -33,9 +33,9 @@ The UI (User Interface) is the web site that allows you to manage your _Virtual 
 
 Once you login to the UI, it is a best practice to change the initial password.
 
-* Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen.
-* Click it, select *<i class="fa fa-cog"></i> Settings* and then use the _Update password_ button.
-* On the new screen, fill in a new password (twice) and click the *Change* button to submit it.
+* Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen, click it and select *<i class="fa fa-cog"></i> Settings*.
+* In the _Settings_ display, locate the _Password_ field and click the blue *edit* icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
+* On the _Update Password_ pop-up dialog, fill in a new password (twice) and click the *Change* button to submit it.
 
 #### Logout
 
@@ -50,12 +50,15 @@ From now on you can use your new password to log in to the [UI](https://ui.hpccl
 
 To complete the setup of your HPC Cloud account, you need to **add an SSH public key to your profile**. This is a one-time task.
 
-* First, read about SSH and public keys on the [private/public keys](/SSHkey) page.<br />
+First, you need a private/public key pair.
+
+* Read about SSH and public keys on the [private/public keys](/SSHkey) page.<br />
 If you are already familiar with SSH public keys, you can skip reading this page.
 * You need a private/public key pair in your `~/.ssh/` directory. Create one now if needed.
 * Check with the command `ls ~/.ssh`: you should see files `id_rsa` and `id_rsa.pub`.
 
-Next, you will copy the public SSH key (`id_rsa.pub`) to the UI, but you will keep the matching private key (`id_rsa`) safe in your laptop.
+Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI.
+The matching private key (`id_rsa`) stays safe in your laptop.
 
 * Copy the content of your **public** SSH key to the clipboard (for example, by doing `cat ~/.ssh/id_rsa.pub`, then selecting and copying all of that text).
 * Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *<i class="fa fa-cog"></i> Settings* from the *buddy* icon  <i class="fa fa-user"></i>.
@@ -66,80 +69,87 @@ Next, you will copy the public SSH key (`id_rsa.pub`) to the UI, but you will ke
 
 ### 3. My first VM
 
-Using the HPC Cloud revolves around making Virtual Machines (VM). We provide the HPC Cloud **AppMarket** to facilitate creating simple VMs. The AppMarket contains common ready-made `appliances` for you to pick and use. In this section you will use the AppMarket to build your first VM with the following steps:
+Using the HPC Cloud revolves around making Virtual Machines (VM). We provide several **Apps** in the HPC Cloud to facilitate creating simple VMs. 
+Apps are ready-made `appliances` for you to copy and use. 
 
-* Importing a pre-made `image`, with a Linux operating system installed.
-* Reviewing the shape of the VM (so-called `template`) to match what you want.
-* Instantiating the `template` to run your first VM.
-* Accessing your VM and shutting it down.
+These are steps to build your first VM from one of the Apps, 
+you will see detailled instructions below.
+
+* Import a pre-made `image` with a Linux operating system installed.
+* Review the shape of the VM (so-called `template`).
+* Instantiate the `template` to create your first VM.
+* Access your VM and shut it down.
 
 Let's run your first VM on the HPC Cloud.
 
 #### Import an appliance from the AppMarket
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
-* Choose the *<i class="fa fa-truck"></i> AppMarket* tab on the left menu of the screen and then *Appliances*.
+* Choose the *Storage* tab on the left menu of the screen and then *Apps*.
 * Select the `appliance` **Ubuntu 14.04 Desktop CI** by clicking on the tick-box next to it.
-* Click on the _Import_ button at the top-right corner of the screen.
+* Click on the blue _OpenNebula_ button above the list of apps.
 * A dialogue will pop up, asking you for a few details. Edit as follows:
-  * Select the Datastore for the images: **123: local_images_Cursus**. (drop-down menu)
-  * Image Name: **Course Image**.
-  * Template Name: **Course Template**.
-* Finally, click the blue *Import* button. This will start importing the `appliance` from the AppMarket. You can close this dialogue.
+  * Name: **Course Image**.
+  * VM Template Name: **Course Template**.
+  * Below "Select the Datastore to store the resource", select **123: _local\_images\_Cursus_**.
+    It should now read "You selected the following datastore: local_images_Cursus"
+* Finally, click the green *Download* button. This will copy the `appliance` from Apps and return to the Apps list.
 
 > **Food for brain:**
 >
-> * When you click on an `appliance` (anywhere on the row except for the tick-box), then you can see detailed information about that `appliance`. Can you see this detailed information about the `appliance` we are using in this exercise?
-> * When you import an `appliance`, this will create one `image` and one `template`, as explained during the introductory presentation. In the UI you have an _Images_ tab and another _Templates_ tab under the _<i class="fa fa-cloud"></i> Virtual Resources_ entry on the left menu. You should see your new `image` and `template` there.
-  * Can you see them?
-  * What is the STATUS of the `image` just after it you import it?
-  * Refresh with the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button until it is READY.
+> When you import an `appliance`, this will create one `image` and one `template`, as explained during the introductory presentation. In the UI you have an _Images_ tab under _Storage_ and a _VMs_ tab under _Templates_ in the left menu. You should see your new `image` and `template` there.
+> 
+* Can you see them?
+* What is the STATUS of the `image` just after it you import it?
+* Refresh with the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button until it is READY.
 
 #### Review the Template  
 
-When you imported the `appliance` from the AppMarket, it created an `image` and a `template` for you. In the `template` you can define how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc. Following the instructions of the extended information of the `appliance` that you imported, we will have to adapt the `template` before we can use it to create VMs out of it.
+When you imported the `appliance` from Apps, it created an `image` and a `template` for you. In the `template` you can define how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc. Following the instructions of the extended information of the `appliance` that you imported, we will have to adapt the `template` before we can use it to create VMs out of it.
 
 Edit the imported `template` with these steps:
 
 * Go to the _Templates_ tab under _<i class="fa fa-cloud"></i> Virtual Resources_ on the left menu.
 * Find the `template` you just imported (*Course Template*), and click on it (anywhere **except** the tick-box).
-* Click on the _Update_ button on the top-right of the screen to start editing the template.
-* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...) and leave the default values. Check for example if your VM will have internet access: 
+* Click on the blue _Update_ button above to start editing the template.
+* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...).
+* Check if your VM will have internet access: 
   * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM. 
   * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`.   
 ![youselectednetwork](/images/youselectednetwork.png)
-  * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: 
-    * the _VNC_ radiobutton must be selected
-    * in the _Inputs_ section, select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that
+* Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: 
+    * In the _Graphics_ section, the _VNC_ radiobutton must be selected.
+    * In the _Inputs_ section, make sure an USB tabled is listed. If not: select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that.
 * If you made any changes, click the green button _Update_ at the top, to save your changes.
 
 #### Start the VM
 
 A `template` is just a description of the virtual machine that we want to build. Let's create the actual virtual machine from it.
 
-* Go to the _Virtual Machines_ section on the left menu. This displays an overview of all the existing VMs that you have the right to see. This list is (probably) empty at the moment.
-* Click on the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button to bring up a screen to create a VM.
-* Select the *Course Template* (click once on it). Since this is your first `template`, there is only one item in the list. You can see the feedback below:  
+* Go to the _VMs_ section below _Instances_ on the left menu. 
+  This displays an overview of all the existing VMs that you have the right to see. 
+  This list is (probably) empty at the moment, because you have not yet started any VM.
+* Click on the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;">+</i>_ button to bring up a screen to create a VM.
+* Select the *Course Template* (click once on it). Since this is your first `template`, there is only one item in the list. You can see the feedback:  
 ![select_template](/images/select_template2.png)
-* Give your virtual machine a name: **My First VM**. This name is also used as the VM's host name.
-* Number of instances: **1**.
+* Find the input box for _VM name_ and give your virtual machine a name: **My First VM**. This name is also used as the VM's host name.
+* Number of instances: leave at **1**.
 * Click on the green _Create_ button at the top of the screen.
-* Refresh the VM status by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button.
+* Refresh the VM status by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;">+</i>_ button.
 
 #### What happened?
 
 Congratulations! You have just created a fresh, clean virtual machine!
 
-Let's summarise what you have seen so far. From the menu on the left side, click on each of the tabs to inspect the information. A vertical blue bar to the left of one (and only one) tab tells you which one you are currently seeing.
+Let's summarise what you have seen so far. From the menu on the left side, click on each of the tabs to inspect the information. The **bold** tab tells you which one you are currently seeing.
 
-* _<i class="fa fa-tachometer"></i> Dashboard_: shows an overview of the project status, like the amount of running machines or usage statistics.
-* _<i class="fa fa-cloud"></i> Virtual Resources_:  
-  * _Images_: this is the equivalent of a hard drive. Your OS is stored on this `image`.  
-  * _Templates_:  the `template` gives your VM the shape you want. A `template` is just a recipe; not the machine itself.   
-  * _Virtual Machines_: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box, that is). Inspect the information tables that appear, which show extended details.
+* _Dashboard_: shows an overview of the project status, like the amount of running machines or usage statistics.
+* _Instances / VMs_: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box, that is). Inspect the information tables that appear, which show extended details. 
+* _Templates / VMs_: the `template` gives your VM the shape you want. A `template` is just a recipe; not the machine itself.
+* _Storage / Images_: this is the equivalent of a hard drive. Your OS is stored on this `image`. 
 
 > **NOTE:**  
->Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of cores, memory, and disk that you asked in the `template`. Keep refreshing the list by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button. When the required capacity becomes available, your VM will show the status **RUNNING**. Only then can you actually use your VM.
+>Your VM will appear in the list of virtual machines. At first, it will have the state `PENDING`. That indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of cores, memory, and disk that you asked in the `template`. Keep refreshing the list by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;">+</i>_ button. When the required capacity becomes available, your VM will show the status `RUNNING`. Only then can you actually use your VM.
 
 #### Log in to the VM
 
@@ -149,7 +159,7 @@ The way to log in to your virtual machine is the SSH key pair that you [stored i
 
 **Commandline access - SSH**  
 
-* First find the your VM's IP address. Your VM's IP address is shown on in the _IPs_ column from the virtual machines list on the UI.
+* First find the your VM's IP address. Your VM's IP address is shown on in the _IPs_ column from the virtual machines list on the UI and also in the _Network_ tab of the VM's details page.
 
 * On your laptop, start a terminal (in Mac/Linux) or GitBash (in Windows).
 
@@ -200,23 +210,24 @@ ubuntu@ip-...:~$ logout
 
 Let's shut your first VM down. Anytime you expect your VM to be doing nothing useful, you should shut it down to stop consuming the resources that your VM is holding.
 
-* In the cloud UI, tick the box to the left on the row with your VM.
-* At the upper right corner of the screen, under the red dust bin drop-down button <i class="fa fa-trash-o" style="background-color:#f04124;border-color:#cf2a0e;color:#fff;padding:1px 1ex 1px 1ex;"></i>, click _Shutdown_.
+* Go to the list of running VMs in the Cloud UI (_Instances / VMs_).
+* Tick the box to the left on the row with your VM.
+* At the upper right corner of the screen, under the red dust bin drop-down button <i class="fa fa-trash-o" style="background-color:#f04124;border-color:#cf2a0e;color:#fff;padding:1px 1ex 1px 1ex;"></i>, click _Terminate_. In the pop-up click OK.
 * Refresh (by clicking on the two arrows chasing each other, _<i class="fa fa-refresh"></i>_, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button) until your VM is gone from the list. It will be removed from the display, but you can start it again whenever you need it.
 
 > **Food for brain:**
 >
-> When the VM has been shut down and disappeared from the list, check and refresh the _Images_ and _Templates_ tabs. *Are your `image` and `template` still there?*
+> When the VM has been shut down and disappeared from the list, check and refresh the _Storage / Images_ and _Templates / VMs_ tabs. *Are your `image` and `template` still there?*
 
 > **Note:**
 >
-> Your running VMs book resources exclusively (and hence, consuming quota from your group even though we haven't explicitly made you aware of it in the course material) whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**.
+> Your running VMs get exclusive access to their resources whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**.
 
 ### BONUS _food for brain_
 
 This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
 
-**Bonus:** The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!!!
+**Bonus:** The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!
 
 
 ### Next: part B
