@@ -127,21 +127,21 @@ Let's create a new `image`.
 
 #### Create a new empty `image` for bulk data
 
-* On the [UI](https://ui.hpccloud.surfsara.nl), from the menu on the left, select the _Images_ page under _<i class="fa fa-cloud"></i> Virtual Resources_.
+* On the [UI](https://ui.hpccloud.surfsara.nl), from the menu on the left, under the _Storage_ option, select the _<i class="fa fa-download"></i> Images_ tab.
 * Click on the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button on the top.
-* In the *Create image* window, fill in the form as:  
+* In the *Create image* screen, fill in the form as:  
   * Name: **my data**. You will use this name later in your `template`.
-  * Type: **DATABLOCK**.
+  * Type: **Generic storage datablock**.
   * Datastore: **106: ceph**.
-  * Check the **Persistent** checkbox.
-  * On the _Image location:_ group, choose radio button _Empty datablock_.
-  * Give it a _Size_ in MB: **2000** (is 2GB).
+  * Check the **This image is persistent** checkbox.
+  * On the _Image location:_ group, choose radio button **Empty datablock**.
+  * Give it a _Size_ in MB: **2000** (is 2GB, approximately).
   * Leave the _FS Type_ empty.
 * Click the green button *Create* on the form, to submit it.
 
 >**NOTE:**
 >
->A new `image` will show on the _Images_ list, and it will keep in status LOCKED while it is being created. When it is created it will come to status READY. Then you *still* have to format and mount the disk.
+>A new `image` will show on the _<i class="fa fa-download"></i> Images_ list, and it will keep in status LOCKED while it is being created. When it is created it will come to status READY. Then you *still* have to format and mount the disk; you will be doing that just in a moment.
 
 #### Add the new image to the template
 
