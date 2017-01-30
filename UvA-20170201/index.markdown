@@ -81,5 +81,5 @@ The hands-on tutorial has three parts. The exercises in part *A & B* will give y
 ## <a name="presentations"></a> Presentations
  
   * [Morning presentation: Introduction to the HPC Cloud](20161019_vu.pdf)
-  * [Afternoon presentation: Cloudy systems](20161019_parallelism.pdf)
+  * [Afternoon presentation: Cloudy systems](20170201_parallelism.pdf)
 
