@@ -23,8 +23,6 @@ SURFsara has been operating the HPC Cloud as an `IaaS` (Infrastructure as a Serv
 
 [This workshop](http://hpc.uva.nl/Workshops/article/110/8-HPC-Cloud) aims to introduce the participants to the HPC Cloud, by providing a set of lectures and hands-on examples to be run on the _Oort_ infrastructure. The session is part of the [UvA HPC Course](http://hpc.uva.nl/Workshops/) which covers various topics related to HPC and Big Data.
 
-Here is a summary of the course outline:
-
 >**Agenda:**
 >
 >1st February 2017, UvA, [Science Park 904](https://www.uva.nl/en/about-the-uva/the-uva-in-amsterdam/locations/locations/locations/content/folder/sciencepark/science-park.html), Room: SP-A1.10
@@ -45,14 +43,14 @@ Prior experience in [Linux commands](http://cli.learncodethehardway.org/book/) w
 
 For this tutorial you will need:
 
-* A computer with Internet access (UvA provides WiFi via eduroam).
-* A browser (Chrome or Firefox will do nicely).
-* An SSH client.
+* A computer with Internet access (UvA provides WiFi via eduroam)
+* A browser (Chrome or Firefox will do nicely)
+* An SSH client
   * Linux and Mac users: don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
   * Windows users: download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between the `-32-bit.exe` or the `-64-bit.exe`.
-* An X-window client.
-  * Linux and Mac users normally don't need to install anything as X11 is on board. However, the newest Mac OS releases might not have X11.app installed. In that case, install XQuarz from [here](http://xquartz.macosforge.org/landing/).
-  * Windows users: install Xming from [here](http://sourceforge.net/projects/xming/).
+* An X-window client
+  * Linux and Mac users normally don't need to install anything as X11 is on board. However, the newest Mac OS releases might not have X11.app installed. In that case, install [XQuartz](http://xquartz.macosforge.org/landing/).
+  * Windows users: install [Xming](http://sourceforge.net/projects/xming/).
 
 > **NOTE: only for Windows users**
 >
