@@ -10,18 +10,17 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is part B of the Tutorial [UvA HPC course 2017-02-01](.).
+This is part B of the tutorial [UvA HPC course 2017-02-01](.) and covers the following topics:
 
-**If you have not completed (and understood)** [Part A](partA), please do so first.
+1. [Persistence](#persistence)
+2. [Scale up to a multicore VM](#scale-up-to-a-multicore-vm)
+3. [Working with Storage](#working-with-storage)
 
-* [Hands-on part B](#hands-on) <br>
-1. [Persistence](#persistence) <br>
-2. [Scale up to a multicore VM](#scale-up-to-a-multicore-vm) <br>
-3. [Working with Storage](#working-with-storage) <br>
-
->**NOTE:**
+>**NOTES:**
 >
-> For the rest of the tutorial we will omit the `ubuntu@ip-...:~$` prompt in the instructions, in order to allow you copy-n-paste the commands directly in your terminal.
+> If you have not completed (and understood) [Part A](partA), please do so first.
+>
+> For the rest of the tutorial we will omit the `ubuntu@ip-...:~$` prompt in the instructions, in order to allow you to copy-n-paste the commands directly to your terminal.
 
 ### 1. Persistence
 
