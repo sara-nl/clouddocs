@@ -18,7 +18,7 @@ This is part A of the tutorial [UvA HPC course 2017-02-01](.) and covers the fol
 
 ### 1. Access the User Interface
 
-The User Interface (UI) is the web site that allows you to manage your _Virtual Machines_ (or _VM_ s) on the HPC Cloud.
+The User Interface (UI) is the web site that allows you to manage your _Virtual Machines_ (_VMs_) on the HPC Cloud.
 
 #### Log in to the UI
 
@@ -46,14 +46,14 @@ From now on you can use your new password to log in to the [UI](https://ui.hpccl
 
 ### 2. Add your public SSH key
 
-To complete the setup of your HPC Cloud account, you need to **add an SSH public key to your profile**. This is a one-time task.
+To complete the setup of your HPC Cloud account, you need to **add a Secure Shell (SSH) public key to your profile**. This is a one-time task.
 
-First, you need a private/public key pair.
+First, you need an SSH private / public key pair.
 
-* Read about SSH and public keys on the [private/public keys](/SSHkey) page.<br />
+* Read about SSH and public keys on the [private / public keys](/SSHkey) page.<br />
 If you are already familiar with SSH public keys, you can skip reading this page.
-* You need a private/public key pair in your `~/.ssh/` directory. Create one now if needed.
-* Check with the command `ls ~/.ssh`: you should see files `id_rsa` and `id_rsa.pub`.
+* You need a private / public key pair in your `~/.ssh/` directory. Create one now if needed.
+* Check with the command `ls ~/.ssh`; you should see the files `id_rsa` and `id_rsa.pub`.
 
 Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI.
 The matching private key (`id_rsa`) stays safe in your laptop.
@@ -63,22 +63,20 @@ The matching private key (`id_rsa`) stays safe in your laptop.
 * Locate the section _Public SSH Key_ (if needed, click the *<i class="fa fa-info-circle"></i> Info* icon) and click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
 * Paste the content of your public SSH key file into the text box.
 * There is no _Save_ button; click outside the text box to complete your action (e.g.: on the words "Public SSH Key").
-* Check the contents of box against your public key and verify they match: it should start with `ssh-rsa AAAAB`...
+* Check the contents of the text box against your public key and verify they match: it should start with `ssh-rsa AAAAB`...
 
 ### 3. My first VM
 
-Using the HPC Cloud revolves around making Virtual Machines (VM). We provide several **Apps** in the HPC Cloud to facilitate creating simple VMs. 
-Apps are ready-made `appliances` for you to copy and use. 
+Using the HPC Cloud revolves around building Virtual Machines (VM). SURFsara provides several **Apps** readily available in  the HPC Cloud UI, to facilitate creating simple VMs.  Apps are ready-made `appliances` for you to copy and use. 
 
-These are steps to build your first VM from one of the Apps, 
-you will see detailled instructions below.
+These are the steps to build your first VM from one of the Apps, detailed instructions will follow:
 
 * Import a pre-made `image` with a Linux operating system installed.
 * Review the shape of the VM (so-called `template`).
 * Instantiate the `template` to create your first VM.
 * Access your VM and shut it down.
 
-Let's run your first VM on the HPC Cloud.
+Let's run your first VM on the HPC Cloud!
 
 #### Import an appliance from the AppMarket
 
