@@ -149,7 +149,7 @@ In order to let you VM know about the new datablock, you need to add it to your 
 
 * Open the screen to edit the `template` (or create a new one from scratch).
 * Select the _<i class="fa fa-tasks"></i> Storage_ tab.
-* Click on the _<i class="fa fa-plus-circle" style="background-color:#4DBBDC;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button (that will make a new _Disk 1_), and then choose the **my data** `image` you created, as a second `image`.
+* Click on the _<i class="fa fa-plus-circle" style="background-color:#4DBBDC;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ blue button (that will make a new _Disk 1_), and then choose the **my data** `image` you created, as a second `image`.
 * Finish with the *Update* button on the top, to submit the changes.
 
 #### Mount the image in the VM
