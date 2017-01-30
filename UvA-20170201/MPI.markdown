@@ -81,6 +81,7 @@ The Ubuntu Desktop 14.04 _App_ is affected by the problem described in our docum
 ```sh
 wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20170201/code/cloudinit_fix.sh
 chmod +x cloudinit_fix.sh
+sudo ./cloudinit_fix.sh
 ```
 
 </div>
