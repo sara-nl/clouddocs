@@ -106,8 +106,10 @@ That was it. From now on, whenever you instantiate this `template`, you will get
   * `lscpu`
 
 
-> **NOTE:**
->Your VM's `image` was (and is) persistent.
+#### Shut down the four-core VM
+
+* Choose the VM from your list
+* Click on the red dust bin and, under that, click the option _Terminate_.
 
 
 ### 3. Working with Storage
