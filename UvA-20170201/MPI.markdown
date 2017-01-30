@@ -143,7 +143,7 @@ Previously we made the `image` persistent so that when shutting the VM down, cha
 * Let's shut down the VM now **from the UI**, just as you learnt on [Part A](partA) (remember, the red dust-bin button).
   * Refesh the list of VMs (remember, the _<i class="fa fa-refresh"></i>_ icon) while you see your VM go through the different states: SHUTDOWN, EPILOG...
 * Wait until the VM disappears
-* Go to the _<i class="fa fa-download"></i>Images_ tab (under _Storage_), open the extended information for the **mpi_wave** `image` and switch the value for field _Persistent_ to **no**.
+* Go to the _<i class="fa fa-download"></i> Images_ tab (under _Storage_), open the extended information for the **mpi_wave** `image` and switch the value for field _Persistent_ to **no**.
 
 >**IMPORTANT**
 >
@@ -155,8 +155,8 @@ Because the program is ready for MPI, you can use `mpirun` to use multiple cores
 
 **Exercse e1:** Try now the mpi run with 2 cores, like this:
 
-* Start a new VM out of the **mpi_wave** `template` with name e.g.**mpi_wave_master**
-* Login into the "mpi_wave_master" VM. Remember to use the `-X` parameter for the `ssh` command
+* Start a new VM out of the **mpi_wave** `template`, giving it the name e.g.**mpi_wave_master**
+* Login into the "mpi_wave_master" VM (emember to use the `-X` parameter for the `ssh` command)
 * Go to the `waveeq` directory: `cd waveeq`
 
 You can now run the program with 2 processes like:
