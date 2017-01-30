@@ -2,12 +2,6 @@
 layout: default
 ---
 
-<div class="alert alert-warn" markdown="1">
-<i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true">Warning</i><br>
-The instructions in this workshop are meant for a previous version of the UI, which looks very different now.
-Instead, please see a more recent workshop (after 2017-01-25).
-</div>
-
 # UvA HPC course 2017-02-01
 
 <div style="float:right;max-width:205px;" markdown="1">
