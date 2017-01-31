@@ -101,14 +101,14 @@ Let's run your first VM on the HPC Cloud!
 
 #### Review the Template  
 
-A `template` consists of a set of attributes that defines a Virtual Machine. For example, how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc. We will have to adapt the `template` to meet your requirements before you can use it to create VMs out of it.
+A `template` consists of a set of attributes that defines a Virtual Machine. For example, how many cores you want your VM to have, how much RAM memory, what storage drives to attach, which network connections, etc. We will have to adapt the `template` to meet your requirements before you can use it to create VMs out of it.
 
-Edit the imported `template` with these steps:
+Edit the imported `template` following these steps:
 
-* Go to the _Templates_ tab under _<i class="fa fa-cloud"></i> Virtual Resources_ on the left menu.
+* Go to the _VMs_ tab under _Templates_ on the left menu.
 * Find the `template` you just imported (*Course Template*), and click on it (anywhere **except** the tick-box).
-* Click on the blue _Update_ button above to start editing the template.
-* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...).
+* Click on the blue _Update_ button to start editing the template.
+* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_, ...) to get acquainted their contents.
 * Check if your VM will have internet access: 
   * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM. 
   * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`.   
