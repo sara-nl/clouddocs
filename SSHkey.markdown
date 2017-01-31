@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Use Secure Shell private / public keys
+# Use Secure Shell private/public keys
 
 ## Summary
 
@@ -29,7 +29,7 @@ To apply the following instructions you need a terminal on your local machine (l
 * Windows users can download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between `Git-XXX-32-bit.exe` or `Git-XXX-64-bit.exe`.
   * Windows users who prefer PuttyGen should look at the instructions for [Putty tools](putty-tools#generate-ssh-key-on-windows-with-puttygen).
 
-## Generate an SSH private / public key pair
+## Generate an SSH private/public key pair
 
 ### Check existing SSH keys
 
@@ -51,7 +51,7 @@ total 72
 
 ### Private key passphrase
 
-When you create a private / public key pair, you will need a passphrase to **protect your local private key**. It is never sent to the remote host.
+When you create a private/public key pair, you will need a passphrase to **protect your local private key**. It is never sent to the remote host.
 
 What is a good passphrase? Choose a long sentence, for example a quote that you like, of more than 35 characters. Because of the length, there is no need to substitute letters with symbols or leave out spaces or punctuation.
 
@@ -60,7 +60,7 @@ Neither do I, this has been taken care of. You type the passphrase once after lo
 
 For more information, please see [Working with SSH key passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/)
 
-### Generate a private / public key pair
+### Generate a private/public key pair
 
 Open a terminal and type `ssh-keygen`. An example dialogue is shown below. Some remarks:
 
