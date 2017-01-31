@@ -18,8 +18,8 @@ Master chef Oliver needs to cook a _&pi;_ according to a recipe he has found on 
 
 > ### The traditional way they cook _&pi;_ in Monte Carlo
 >
-> 1. On a plane, prepare a square of side length _SIDE_
-> 1. Prepare a circle centered inside the previous square, whose _RADIUS_ is half the SIDE, and whose center is in (0,0).
+> 1. On a plane, prepare a square of side length _SIDE_ centered in the origin; i.e.: coordinates (0,0)
+> 1. Prepare a circle centered inside the previous square, whose _RADIUS_ is half the SIDE
 > 1. Randomly generate _N_ points inside the square, of the form (_x_, _y_), where _x_ and _y_ are in the range (&minus;_RADIUS_, +_RADIUS_)
 > 1. Check whether the points are inside the circle too (a point is within the circle when: _x_<sup>2</sup> + _y_<sup>2</sup> < _RADIUS_<sup>2</sup>)
 > 1. Count _M_ as the amount of points that are within the circle
