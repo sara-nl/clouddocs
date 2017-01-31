@@ -29,11 +29,11 @@ Oliver has asked you for help. Being a good friend of yours, you are really exci
 
 ## Your assignment:
 
-Cook _&pi;_ fast!
-
 <div style="float:left;max-width:205px;margin:5px;" markdown="1">
 ![Pi pie](https://upload.wikimedia.org/wikipedia/commons/9/9b/Apple_pie_Pi_Day_2011.JPG)
 </div>
+
+Cook _&pi;_ fast!
 
 Imagine that, browsing the Internet, you get your hands on a compiled program called `montecarlo`, which follows exactly Oliver's recipe. In other words: it takes _N_ and _RADIUS_ as inputs, and provides _M_ and its estimation of _&pi;_ as outputs. 
 
