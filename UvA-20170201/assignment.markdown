@@ -92,9 +92,10 @@ Write down the relevant steps that you must follow in the HPC Cloud UI to run th
 Having to create all workers by hand is very tedious. You are so happy that you can show Oliver how to let the master create the workers on demand!!!
 
 Thus, for a solution where the master will create the workers on demand (the master now receives the amount of workers, _W_, as an extra parameter):
-a) What extra components from the HPC Cloud do you need to let the master create the workers?
-b) Do the same as in exercise 3: write pseudocode for what the master looks like. Does the worker change? Think of releasing resources when the computation is finished!
-c) Do the same as in exercise 4: write the relevant steps that you must follow in the UI to run the new version of the master (yes, assume again that you get a program with this version of the master's work) and workers; again, 1 master and 3 workers
+
+* a) What extra components from the HPC Cloud do you need to let the master create the workers?
+* b) Do the same as in exercise 3: write pseudocode for what the master looks like. Does the worker change? Think of releasing resources when the computation is finished!
+* c) Do the same as in exercise 4: write the relevant steps that you must follow in the UI to run the new version of the master (yes, assume again that you get a program with this version of the master's work) and workers; again, 1 master and 3 workers
 
 ## Exercise 6 - Bonus
 
@@ -103,7 +104,7 @@ Implement a solution for the master and the worker according to the original des
 >**Hints:**
 >
 > * You may be able to reuse the code for calculating _&pi;_ for the serial version that you get from the OpenMP exercise and both the configuring scripts for the master-workers configuration from the MPI exercise.
-> * The `montecarlo` program does not actually need to provide _M_ as output, because you can isolate _M_ = _&pi;_ * _N_ / 4
+> * The `montecarlo` program does not actually need to provide _M_ as output, because you can isolate _M_ = _&pi;_ × _N_ / 4
 > * Some useful information: you can run a command on a remote machine using the `ssh` command, as in: `ssh <username>@<remote-IP> '<command>'` (do NOT write the less-than and greater-than signs from that previous line)
 
 ## Exercise 7 - Bonus
