@@ -14,10 +14,6 @@ The following exercises are the assignment to score points on the HPC Cloud sess
 
 ## General description of the exercise
 
-<div style="float:left;max-width:205px;" markdown="1">
-![Pi pie](https://upload.wikimedia.org/wikipedia/commons/9/9b/Apple_pie_Pi_Day_2011.JPG)
-</div>
-
 Master chef Oliver needs to cook a _&pi;_ according to a recipe he has found on the Internet. It is a bit special, because the recipe only says: 
 
 > ### The traditional way they cook _&pi;_ in Monte Carlo
@@ -32,6 +28,12 @@ Master chef Oliver needs to cook a _&pi;_ according to a recipe he has found on 
 Oliver has asked you for help. Being a good friend of yours, you are really excited to help! You have just heard about the scalability options that the HPC Cloud has to offer. That is precisely what Oliver needs. It's great! It's true!
 
 ## Your assignment:
+
+Cook _&pi;_ fast!
+
+<div style="float:left;max-width:205px;" markdown="1">
+![Pi pie](https://upload.wikimedia.org/wikipedia/commons/9/9b/Apple_pie_Pi_Day_2011.JPG)
+</div>
 
 Imagine that, browsing the Internet, you get your hands on a compiled program called `montecarlo`, which follows exactly Oliver's recipe. In other words: it takes _N_ and _RADIUS_ as inputs, and provides _M_ and its estimation of _&pi;_ as outputs. 
 
