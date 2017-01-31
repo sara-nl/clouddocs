@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-The following exercises are the assignment qualify for your evaluation regarding the attendance of the HPC Cloud session. After you have attended the presentations and followed the hands-on tutorial (including the extras), you should have understood all the concepts that will allow you to propose valid solutions to the exercises. You can contact your facilitators if you have any questions.
+The following exercises are the assignment to qualify for your evaluation on the HPC Cloud session. After you have attended the presentations and followed the hands-on tutorial (including the extras), you should have understood all the concepts that will allow you to propose valid solutions to the exercises. You can contact your facilitators if you have any questions.
 
 ## General description of the exercise
 
@@ -38,7 +38,7 @@ Being a good friend of yours, Oliver has asked you for help.
    * generate a given amount of points, N'
    * and deliver the amount of points that it found, M', back to the master
 > * The master retrieves all these M' numbers back from the workers
-> * The master computes M as the sum of all the M' numbers it received
+> * The master computes M as the sum of all the M' numbers it received: M = &sum;M'<sub>i</sub>, i = 1..W
 > * The master computes _&pi;_ as: &pi; &cong; 4 × M / N
 
 We split the assignment in different exercises to guide you through the process.
