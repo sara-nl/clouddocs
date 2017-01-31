@@ -222,10 +222,9 @@ This section is meant to propose extra questions we thought would be nice for yo
 
 **Bonus:** The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!
 
-
-### Next: part B
-You completed part A of the Tutorial [UvA HPC course 2017-02-01](.). Please continue with Tutorial [Part B](partB).
-
 > **NOTE:**
 >
 > Your running VMs get exclusive access to their resources whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**.
+
+### Next: part B
+You completed part A of the Tutorial [UvA HPC course 2017-02-01](.). Please continue with Tutorial [Part B](partB).
