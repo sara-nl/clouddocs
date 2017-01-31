@@ -97,11 +97,11 @@ Let's run your first VM on the HPC Cloud!
 > 
 * Can you see them?
 * What is the STATUS of the `image` just after you import it?
-* Refresh the contents of the _Images_ tab by clicking button <i class="fa fa-refresh"></i>, next to the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ until it is READY.
+* Refresh the contents of the _Images_ tab page by clicking button <i class="fa fa-refresh"></i>, next to the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ until it is READY.
 
 #### Review the Template  
 
-When you imported the `appliance` from Apps, it created an `image` and a `template` for you. In the `template` you can define how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc. Following the instructions of the extended information of the `appliance` that you imported, we will have to adapt the `template` before we can use it to create VMs out of it.
+In the `template` you can define how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc. Following the instructions of the extended information of the `appliance` that you imported, we will have to adapt the `template` before we can use it to create VMs out of it.
 
 Edit the imported `template` with these steps:
 
