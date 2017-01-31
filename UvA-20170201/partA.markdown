@@ -108,15 +108,15 @@ Edit the imported `template` following these steps:
 * Go to the _VMs_ tab under _Templates_ on the left menu.
 * Find the `template` you just imported (*Course Template*), and click on it (anywhere **except** the tick-box).
 * Click on the blue _Update_ button to start editing the template.
-* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_, ...) to get acquainted their contents.
+* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_, ...) to get acquainted with their contents.
 * Check if your VM will have internet access: 
   * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM. 
   * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`.   
 ![youselectednetwork](/images/youselectednetwork.png)
 * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: 
-    * In the _Graphics_ section, the _VNC_ radiobutton must be selected.
-    * In the _Inputs_ section, make sure an USB tabled is listed. If not: select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that.
-* If you made any changes, click the green button _Update_ at the top, to save your changes.
+    * In the _Graphics_ section, the _VNC_ radio button must be selected.
+    * In the _Inputs_ section, make sure an USB tablet is listed. If not: select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that.
+* If you made any changes to the template, click the green button _Update_ at the top, to save your changes.
 
 #### Start the VM
 
