@@ -52,11 +52,10 @@ In this section you will work with **persistent** images. You will go through th
 * Start your virtual machine again.
 * Log in and check the files you created during the previous run [(Part A)](partA).
 
-
 <div class="alert alert-warning" markdown="1">
 <i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true">Warning</i><br>
 
-The Ubuntu Desktop 14.04 _App_ is affected by the problem described in our documentation, [here](/connection_problem_ubuntu1404). To correct it easily, please follow these steps now that you are connected via SSH:
+The Ubuntu Desktop 14.04 _App_ is affected by a [problem described in our documentation](/connection_problem_ubuntu1404). To correct it easily, please follow these steps now that you are connected via SSH:
 
 ```sh
 wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20170201/code/cloudinit_fix.sh
@@ -68,7 +67,7 @@ sudo ./cloudinit_fix.sh
 
 > **Food for brain:**
 > 
->* Are the files there?
+>* Is/are the file(s) you created on your VM (part A) there?
 >* During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written on the backing `image` even if you restart your VM. Try it.
 
 You can now shut your VM down.
