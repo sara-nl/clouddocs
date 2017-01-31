@@ -30,6 +30,7 @@ Being a good friend of yours, Oliver has asked you for help.
 >**Your assignment:**
 >
 >Describe a system, using the HPC Cloud, that will allow you to estimate _&pi;_ using a naïve Monte Carlo approach such that:
+>
 > * A master machine starts the calculation: it must compute _&pi;_ using a given N amount of points
 > * The master is aware of an amount, W, of worker machines
 > * The master splits the N points into W workers; each worker gets its own N' points.
