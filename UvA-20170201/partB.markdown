@@ -20,7 +20,7 @@ This is part B of the tutorial [UvA HPC course 2017-02-01](.) and covers the fol
 >
 > If you have not completed (and understood) [Part A](partA), please do so first.
 >
-> For the rest of the tutorial we will omit the `ubuntu@ip-...:~$` prompt in the instructions, in order to allow you to copy-n-paste the commands directly to your terminal.
+> For the rest of the tutorial we will omit the `ubuntu@145:~$` prompt in the instructions. It allows you to copy-n-paste the commands directly to your terminal.
 
 ### 1. Persistence
 
@@ -28,7 +28,7 @@ This is part B of the tutorial [UvA HPC course 2017-02-01](.) and covers the fol
 
 * What does **persistent** mean?
   *  Changes made by the VM are copied back to the original `image` (upon normal VM shutdown)
-  *  If a VM is running with a **persistent** disk, you **cannot** launch a second VM using that `image`
+  *  If a VM is running with a **persistent** disk, you **cannot** launch a second VM using that same `image`
 
 * What does **non-persistent** mean?
   * Changes made by a VM are lost at shutdown and not copied back to the original `image`
@@ -36,7 +36,7 @@ This is part B of the tutorial [UvA HPC course 2017-02-01](.) and covers the fol
 
 > **Food for brain:**
 >
-> Was the first image that you imported `persistent`? Or wasn't it?
+> Was the first image that you imported `persistent`?
 
 In this section you will work with **persistent** images. You will go through these steps:
 
