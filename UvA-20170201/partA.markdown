@@ -48,11 +48,11 @@ From now on you can use your new password to log in to the [UI](https://ui.hpccl
 
 To complete the setup of your HPC Cloud account, you need to **add a Secure Shell (SSH) public key to your profile**. This is a one-time task.
 
-First, you need an SSH private / public key pair.
+First, you need an SSH private/public key pair.
 
-* Read about SSH and public keys on the [private / public keys](/SSHkey) page.<br />
+* Read about SSH and public keys on the [private/public keys](/SSHkey) page.<br />
 If you are already familiar with SSH public keys, you can skip reading this page.
-* You need a private / public key pair in your `~/.ssh/` directory. Create one now if needed.
+* You need a private/public key pair in your `~/.ssh/` directory. Create one now if needed.
 * Check with the command `ls ~/.ssh`; you should see the files `id_rsa` and `id_rsa.pub`.
 
 Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI.
