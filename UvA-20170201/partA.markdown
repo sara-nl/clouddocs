@@ -137,7 +137,7 @@ A `template` is just a description of the virtual machine that we want to build.
 
 Congratulations! You have just created a fresh, clean virtual machine!
 
-Let's summarise what you have seen so far. Click on each of the tabs on the left side menu and inspect the information provided.
+Let's summarise what you have seen so far. Click on each of the tabs on the left side menu and inspect the information provided. The most important ones at this point in time are described here:
 
 * _Dashboard_: shows an overview of the project status, like the number of running machines or usage statistics.
 * _Instances / VMs_: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box). Inspect the information present in the different tabs providing you extended details.
@@ -152,15 +152,15 @@ Let's summarise what you have seen so far. Click on each of the tabs on the left
 
 You can interact with your VM in several ways: command-line (e.g.: SSH), VNC (UI in your browser) or a remote desktop. We will use SSH in a terminal for the time being.
 
-The way to log in to your virtual machine is the SSH key pair that you [stored in your profile](#add-your-public-ssh-key) earlier.
+The way to log in to your virtual machine is making use of the SSH key pair that you [stored in your profile](#add-your-public-ssh-key) earlier.
 
 **Commandline access - SSH**  
 
-* First find the your VM's IP address. Your VM's IP address is shown on in the _IPs_ column from the virtual machines list on the UI and also in the _Network_ tab of the VM's details page.
+* First find your VM's IP address. It is shown in the _IPs_ column from the virtual machines list on the UI and also in the _Network_ tab of the VM's details page.
 
 * On your laptop, start a terminal (in Mac/Linux) or GitBash (in Windows).
 
-* In your terminal, type the following command to connect to your VM:
+* Type the following command on the terminal to establish a connection with your VM:
 
 >**NOTE:**
 >
@@ -174,28 +174,28 @@ ssh ubuntu@145.100.5Q.RST
 
 If everything went well, the first time you try to log in, your terminal will ask you to add the VM's IP to the list of known hosts. Type *Yes*, in that case.
 
-You should now see a similar line in your terminal: `ubuntu@ip-145-100-5Q-RST:~$`
+You should now see a similar line in your terminal: `ubuntu@145:~$`
 
-This means that you are logged in successfully to your Virtual Machine!
+This means that you have logged in successfully to your Virtual Machine!
 
 * Look around a bit, make yourself familiar with the system:
 
 ```sh
-ubuntu@ip-...:~$ ls /
-ubuntu@ip-...:~$ cd /home/ubuntu/
+ubuntu@145:~$ ls /
+ubuntu@145:~$ whoami
 ```
 
 * Create a file:
 
 ```sh
-ubuntu@ip-...:~$ echo "Some text ..." > myfile
-ubuntu@ip-...:~$ cat myfile
+ubuntu@145:~$ echo "Some text ..." > myfile
+ubuntu@145:~$ cat myfile
 ```
 
 * Logout by typing `logout` or `ctrl-D` in your terminal (do **not** issue any shutdown command):
 
 ```sh
-ubuntu@ip-...:~$ logout
+ubuntu@145:~$ logout
 ```
 
 > **Food for brain:**
@@ -209,8 +209,8 @@ Let's shut your first VM down. Anytime you expect your VM to be doing nothing us
 
 * Go to the list of running VMs in the Cloud UI (_Instances / VMs_).
 * Tick the box to the left on the row with your VM.
-* At the upper right corner of the screen, under the red dust bin drop-down button <i class="fa fa-trash-o" style="background-color:#f04124;border-color:#cf2a0e;color:#fff;padding:1px 1ex 1px 1ex;"></i>, click _Terminate_. In the pop-up click OK.
-* Refresh (by clicking on the two arrows chasing each other, _<i class="fa fa-refresh"></i>_, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button) until your VM is gone from the list. It will be removed from the display, but you can start it again whenever you need it.
+* At the upper right corner of the screen, click the red button <i class="fa fa-trash-o" style="background-color:#f04124;border-color:#cf2a0e;color:#fff;padding:1px 1ex 1px 1ex;"></i> and click _Terminate_. A confirmation action is needed, click OK.
+* Refresh the list of VMs (_<i class="fa fa-refresh"></i>_) until your VM is gone. You can always boot the "same" VM again whenever you need it.
 
 > **Food for brain:**
 >
@@ -222,13 +222,13 @@ Let's shut your first VM down. Anytime you expect your VM to be doing nothing us
 
 ### BONUS _food for brain_
 
-This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
+This section is meant to propose extra questions we thought would be nice for you to investigate. We invite you to do/think about them even after the workshop has finished.
 
 **Bonus:** The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!
 
 
 ### Next: part B
-Now that you completed part A of the Tutorial [UvA HPC course 2017-02-01](.). Please continue with Tutorial [Part B](partB).
+You completed part A of the Tutorial [UvA HPC course 2017-02-01](.). Please continue with Tutorial [Part B](partB).
 
 >**NOTE:**
 >
