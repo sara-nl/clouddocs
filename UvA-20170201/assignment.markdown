@@ -27,7 +27,7 @@ Master chef Oliver needs to cook a _&pi;_ according to a recipe he has found on 
 
 Oliver has asked you for help. Being a good friend of yours, you are really excited to help! You have just heard about the scalability options that the HPC Cloud has to offer. That is precisely what Oliver needs. It's great! It's true!
 
-##Your assignment:
+## Your assignment:
 
 Imagine that, browsing the Internet, you get your hands on a compiled program called `montecarlo`, which follows exactly Oliver's recipe. In other words: it takes _N_ and _RADIUS_ as inputs, and provides _M_ and its estimation of _&pi;_ as outputs. 
 
@@ -38,7 +38,7 @@ Describe a system, using the HPC Cloud, that will allow you to estimate _&pi;_ u
  * The master divides _N_ among _W_ workers; each worker gets its own _N'_ amount of points to generate
  * A worker accepts an order from the master to:
    * run the `montecarlo` program with the amount of points, _N'_, and the _RADIUS_, that it receives from the master
-   * deliver the amount of points that it found, _M'_ (and _&pi;, but you discard it), so that the master can retrieve that number afterwards
+   * deliver the amount of points that it found, _M'_ (and _&pi;_, but you discard it), so that the master can retrieve that number afterwards
  * The master retrieves all these _M'_ numbers back from the workers
  * The master computes _M_ as the sum of all the _M'_ numbers it gathered: _M_ = &sum;_M'_<sub>i</sub>, i = 1.._W_
  * The master computes _&pi;_ as: _&pi;_ &cong; 4 × _M_ / _N_
