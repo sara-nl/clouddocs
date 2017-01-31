@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-The following exercises are the assignment to qualify for your evaluation on the HPC Cloud session. After you have attended the presentations and followed the hands-on tutorial (including the extras), you should have understood all the concepts that will allow you to propose valid solutions to the exercises. You can contact your facilitators if you have any questions.
+The following exercises are the assignment to score points on the HPC Cloud session. After you have attended the presentations and followed the hands-on tutorial (including the extras), you understand all the concepts that will allow you to propose valid solutions to the exercises. You can contact your facilitators if you have any questions.
 
 ## General description of the exercise
 
