@@ -44,9 +44,9 @@ In this section you will work with **persistent** images. You will go through th
 * Starting a VM using the persistent image.
 
 #### Make your image persistent
-* Go to the _<i class="fa fa-download"></i> Images_ tab under _Storage_ on the left menu, and click anywhere except the tick-box on the row for the `image` you created before, that you called **Course Image** .
-* On the _<i class="fa fa-info-circle"></i> Info_ tab, under the _Information_ section, find the _Persistent_ attribute. It says _No_, at the moment.
-* Switch the value to _Yes_, by clicking on the <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i> pencil icon.
+* Go to the _Images_ tab <i class="fa fa-download"></i> under _Storage_ on the left menu. Select the image by clicking anywhere, except the tick-box, on the row for the `image` you created before (**Course Image**).
+* On the _Info_ tab <i class="fa fa-info-circle"></i>, under the _Information_ section, find the _Persistent_ attribute. It says _No_ at the moment.
+* Switch the value to _Yes_ by clicking on the pencil icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
 
 #### Start a persistent VM
 * Start your virtual machine again.
