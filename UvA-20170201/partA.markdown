@@ -78,7 +78,7 @@ These are the steps to build your first VM from one of the Apps, detailed instru
 
 Let's run your first VM on the HPC Cloud!
 
-#### Import an appliance from the AppMarket
+#### Import an appliance from the Apps Market
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
 * Choose the *Storage* tab on the left menu of the screen and then *Apps*.
