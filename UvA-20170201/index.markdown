@@ -19,7 +19,7 @@ layout: default
 
 ## <a name="general"></a>General Information
 
-SURFsara has been operating the HPC Cloud as an `IaaS` (Infrastructure as a Service) for several years. The HPC Cloud service offers its users access to fast computing nodes and high-performant big storage volumes through a powerful graphical user interface. The underlying infrastructure cloud cluster [Oort](https://en.wikipedia.org/wiki/Oort_cloud) is managed by [OpenNebula](http://opennebula.org/) cloud computing platform.
+SURFsara has been operating the HPC Cloud as an Infrastructure as a Service (`IaaS`) for several years. The HPC Cloud service offers its users access to fast computing nodes and high-performant big storage volumes through a powerful graphical user interface. The underlying infrastructure cloud cluster [Oort](https://en.wikipedia.org/wiki/Oort_cloud) is managed by [OpenNebula](http://opennebula.org/) cloud computing platform.
 
 [This workshop](http://hpc.uva.nl/Workshops/article/110/8-HPC-Cloud) aims to introduce the participants to the HPC Cloud, by providing a set of lectures and hands-on examples to be run on the _Oort_ infrastructure. The session is part of the [UvA HPC Course](http://hpc.uva.nl/Workshops/) which covers various topics related to HPC and Big Data.
 
