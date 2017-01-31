@@ -14,6 +14,10 @@ The following exercises are the assignment to score points on the HPC Cloud sess
 
 ## General description of the exercise
 
+<div style="float:left;max-width:205px;" markdown="1">
+![Pi pie](https://upload.wikimedia.org/wikipedia/commons/9/9b/Apple_pie_Pi_Day_2011.JPG)
+</div>
+
 Master chef Oliver needs to cook a _&pi;_ according to a recipe he has found on the Internet. It is a bit special, because the recipe only says: 
 
 > ### The traditional way they cook _&pi;_ in Monte Carlo
