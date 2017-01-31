@@ -137,15 +137,16 @@ A `template` is just a description of the virtual machine that we want to build.
 
 Congratulations! You have just created a fresh, clean virtual machine!
 
-Let's summarise what you have seen so far. From the menu on the left side, click on each of the tabs to inspect the information. The **bold** tab tells you which one you are currently seeing.
+Let's summarise what you have seen so far. Click on each of the tabs on the left side menu and inspect the information provided.
 
-* _Dashboard_: shows an overview of the project status, like the amount of running machines or usage statistics.
-* _Instances / VMs_: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box, that is). Inspect the information tables that appear, which show extended details. 
+* _Dashboard_: shows an overview of the project status, like the number of running machines or usage statistics.
+* _Instances / VMs_: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box). Inspect the information present in the different tabs providing you extended details.
 * _Templates / VMs_: the `template` gives your VM the shape you want. A `template` is just a recipe; not the machine itself.
-* _Storage / Images_: this is the equivalent of a hard drive. Your OS is stored on this `image`. 
+* _Storage / Images_: this is the equivalent of a hard drive. Your OS is stored on this `image`.
+* _Storage / Apps_: a list of `appliances` endorsed by SURFsara HPC Cloud team that you can use.
 
 > **NOTE:**  
->Your VM will appear in the list of virtual machines. At first, it will have the state `PENDING`. That indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of cores, memory, and disk that you asked in the `template`. Keep refreshing the list by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;">+</i>_ button. When the required capacity becomes available, your VM will show the status `RUNNING`. Only then can you actually use your VM.
+>Your VM will appear in the list of virtual machines. At first, it will have the state `PENDING`. This indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of resources (cores, memory, and disk) you requested in the associated `template`. Keep refreshing the list by clicking button <i class="fa fa-refresh"></i>. When the required capacity becomes available, your VM will show the status `RUNNING`. Only then can you actually use your VM.
 
 #### Log in to the VM
 
