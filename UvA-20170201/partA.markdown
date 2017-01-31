@@ -101,7 +101,7 @@ Let's run your first VM on the HPC Cloud!
 
 #### Review the Template  
 
-In the `template` you can define how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc. Following the instructions of the extended information of the `appliance` that you imported, we will have to adapt the `template` before we can use it to create VMs out of it.
+A `template` consists of a set of attributes that defines a Virtual Machine. For example, how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc. We will have to adapt the `template` to meet your requirements before you can use it to create VMs out of it.
 
 Edit the imported `template` with these steps:
 
