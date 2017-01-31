@@ -125,13 +125,13 @@ A `template` is just a description of the virtual machine that we want to build.
 * Go to the _VMs_ section below _Instances_ on the left menu. 
   An overview of all existing VMs, that you have the priviledges to see, are displayed.
   This list is (probably) empty at the moment, because you have not yet started any VM.
-* Click on the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button to bring up a "Create Virtual Machine" screen.
-* Select the *Course Template* (click once on it). Since this is your first `template`, there is only one item in the list. You can see the feedback:  
+* Click the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ to bring up a "Create Virtual Machine" screen.
+* Select the *Course Template* by clicking once at it. Since this is your first `template`, there is only one item in the list. You can see the feedback:  
 ![select_template](/images/select_template2.png)
 * Find the input box for _VM name_ and give your virtual machine a name: **My First VM**. This name is also used as the VM's host name.
 * Number of instances: leave at **1**.
 * Click on the green _Create_ button at the top of the screen.
-* Refresh the VM status by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;">+</i>_ button.
+* Refresh the VM status by clicking button <i class="fa fa-refresh"></i> at the top.
 
 #### What happened?
 
