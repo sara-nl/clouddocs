@@ -22,10 +22,10 @@ The User Interface (UI) is the web site that allows you to manage your _Virtual 
 
 #### Log in to the UI
 
-* Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/)
-* Your username is **s-uvaXZ**, replace `XZ` with the number assigned to you
-* You will receive the password from the workshop facilitators
-* Hit the `Login` button
+* Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/).
+* Your username is **s-uvaXZ**, replace `XZ` with the number assigned to you.
+* You will receive the password from the workshop facilitators.
+* Hit the `Login` button.
 
 #### Change your password
 
@@ -84,20 +84,20 @@ Let's run your first VM on the HPC Cloud!
 * Choose the *Storage* tab on the left menu of the screen and then *Apps*.
 * Select the `appliance` **Ubuntu 14.04 Desktop CI** by clicking on the tick-box next to it.
 * Click on the blue _OpenNebula_ button above the list of apps.
-* A dialogue will pop up, asking you for a few details. Edit as follows:
+* A dialogue will pop up asking you for a few details. Edit as follows:
   * Name: **Course Image**.
   * VM Template Name: **Course Template**.
   * Below "Select the Datastore to store the resource", select **123: _local\_images\_Cursus_**.
     It should now read "You selected the following datastore: local_images_Cursus"
-* Finally, click the green *Download* button. This will copy the `appliance` from Apps and return to the Apps list.
+* Click the green *Download* button. This will copy the `appliance` from the Apps to your work environment, and return to the Apps list.
 
 > **Food for brain:**
 >
-> When you import an `appliance`, this will create one `image` and one `template`, as explained during the introductory presentation. In the UI you have an _Images_ tab under _Storage_ and a _VMs_ tab under _Templates_ in the left menu. You should see your new `image` and `template` there.
+> When you import an `appliance`, an `image` and a `template` will be created, as explained during the introductory presentation. In the UI you have an _Images_ tab under _Storage_ and a _VMs_ tab under _Templates_ in the left menu. You should see your new `image` and `template` there.
 > 
 * Can you see them?
-* What is the STATUS of the `image` just after it you import it?
-* Refresh with the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button until it is READY.
+* What is the STATUS of the `image` just after you import it?
+* Refresh the contents of the _Images_ tab, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button until it is READY.
 
 #### Review the Template  
 
