@@ -97,7 +97,7 @@ Let's run your first VM on the HPC Cloud!
 > 
 * Can you see them?
 * What is the STATUS of the `image` just after you import it?
-* Refresh the contents of the _Images_ tab, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button until it is READY.
+* Refresh the contents of the _Images_ tab by clicking button <i class="fa fa-refresh"></i>, next to the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ until it is READY.
 
 #### Review the Template  
 
