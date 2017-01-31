@@ -31,7 +31,7 @@ Oliver has asked you for help. Being a good friend of yours, you are really exci
 
 Cook _&pi;_ fast!
 
-<div style="float:left;max-width:205px;" markdown="1">
+<div style="float:left;max-width:205px;margin:5px;" markdown="1">
 ![Pi pie](https://upload.wikimedia.org/wikipedia/commons/9/9b/Apple_pie_Pi_Day_2011.JPG)
 </div>
 
