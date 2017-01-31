@@ -216,10 +216,6 @@ Let's shut your first VM down. Anytime you expect your VM to be doing nothing us
 >
 > When the VM has been shut down and disappeared from the list, check and refresh the _Storage / Images_ and _Templates / VMs_ tabs. *Are your `image` and `template` still there?*
 
-> **Note:**
->
-> Your running VMs get exclusive access to their resources whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**.
-
 ### BONUS _food for brain_
 
 This section is meant to propose extra questions we thought would be nice for you to investigate. We invite you to do/think about them even after the workshop has finished.
@@ -230,6 +226,6 @@ This section is meant to propose extra questions we thought would be nice for yo
 ### Next: part B
 You completed part A of the Tutorial [UvA HPC course 2017-02-01](.). Please continue with Tutorial [Part B](partB).
 
->**NOTE:**
+> **NOTE:**
 >
->Before you move on to the next sections, remember to shut your VMs down.
+> Your running VMs get exclusive access to their resources whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**.
