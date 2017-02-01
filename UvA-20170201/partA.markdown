@@ -207,14 +207,14 @@ ubuntu@145:~$ logout
 
 Let's shut your first VM down. Anytime you expect your VM to be doing nothing useful, you should shut it down to stop consuming the resources that your VM is holding.
 
-* Go to the list of running VMs in the Cloud UI (_Instances / VMs_).
+* Go to the list of running VMs in the Cloud UI (_Instances_ &gt; _<i class="fa fa-th"></i> VMs_).
 * Tick the box to the left on the row with your VM.
 * At the upper right corner of the screen, click the red button <i class="fa fa-trash-o" style="background-color:#f04124;border-color:#cf2a0e;color:#fff;padding:1px 1ex 1px 1ex;"></i> and click _Terminate_. A confirmation action is needed, click OK.
 * Refresh the list of VMs (_<i class="fa fa-refresh"></i>_) until your VM is gone. You can always boot the "same" VM again whenever you need it.
 
 > **Food for brain:**
 >
-> When the VM has been shut down and disappeared from the list, check and refresh the _Storage / Images_ and _Templates / VMs_ tabs. *Are your `image` and `template` still there?*
+> When the VM has been shut down and disappeared from the list, check and refresh the _Storage_ &gt; _<i class="fa fa-download"></i> Images_ and _Templates_ &gt; _<i class="fa fa-file-o"></i> VMs_ tabs. *Are your `image` and `template` still there?*
 
 ### BONUS _food for brain_
 
