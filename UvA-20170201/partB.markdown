@@ -161,11 +161,11 @@ Let's start using the new disk.
 sudo fdisk -l
 ```
 
->**Note:** The `sudo` commands will display you the message `sudo: unable to resolve host ip-145-100-...`. Ignore this.
+>**Note:** If above `sudo` command displays the message `sudo: unable to resolve host ip-145-100-...` just ignore it.
 
 > **Food for brain:**
 >
-> You should see (probably, as a last line of the output of the previous command) something like: `Disk /dev/vdb doesn't contain a valid partition table`. Do you also see, in the output of the previous command, that there is a Disk with approximately the same size as what you typed in the UI in the previous step? What is that Disk's name?
+> You should see (probably, as a last line of the output of the previous command) something like: `Disk /dev/vdb doesn't contain a valid partition table`. The output should also inform that there is a Disk with approximately of the size you typed in the UI in the previous step. What is that Disk's name?
 
 
 * Create the directory where you will mount the Ceph datablock and format the drive (`xfsprogs` is installed on the image):
@@ -197,22 +197,22 @@ sudo chown ubuntu:ubuntu -R /data
 
 >**Food for brain:**
 >
-> Try to copy a file from your laptop to `/data`, e.g. with `scp myfile ubuntu@145.100.5Q.RST:/data`. Then log in to the VM and inspect the changes.
+> Try to copy a file from your laptop to `/data`, e.g. with `scp myfile ubuntu@145.100.5Q.RST:/data`. Log in to the VM and inspect the changes.
 
 
 ### BONUS _food for brain_
 
-This section is meant as extra questions that we thought would be nice for you to investigate, and we invite you to do/think about them even after the workshop is finished.
+This section is meant to propose extra questions we thought would be nice for you to investigate. We invite you to do/think about them even after the workshop has finished.
 
-**Bonus:** In Parts A & B of the workshop you have explored the UI and learnt how to import an _appliance_ from the AppMarket. However, many people come to the HPC Cloud because they can install and run their own operating system. In particular, Windows is very popular among our users.
+**Bonus:** In Parts A & B of the workshop you have explored the UI and learnt how to import an _appliance_ from the Apps Market. However, many people come to the HPC Cloud because they can install and run their own operating system. In particular, Windows is very popular among our users.
 
   * Can you think of (and sketch) the steps that you would need to follow to create a VM running your favourite operating system?
   * Can you find three articles in the HPC Cloud Documentation that show how to install different operating systems from scratch?
 
->**Note:**
+>**NOTE:**
 >
->  Play around, make your checks and shut down all the VMs when you are done. Your running VMs are consuming quota whether they are doing something useful or are idle.
+>  Play around, make your checks and **shut down all the VMs when you are done**. Your running VMs are consuming quota whether they are doing something useful or are idle.
 
 
 ### Next: Extras
-You have completed part B of the Tutorial [UvA HPC course 2017-02-01](.). If you want more of the HPC Cloud, see the [Extras part](extras).
+You have completed part B of the Tutorial [UvA HPC course 2017-02-01](.). If you want more of the HPC Cloud proceed to the [Extras part](extras).
