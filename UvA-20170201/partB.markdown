@@ -139,16 +139,16 @@ Let's create a new `image`.
 
 >**NOTE:**
 >
->A new `image` will show on the _Images_ list <i class="fa fa-download"></i>, and it will keep in status LOCKED while it is being created. Once it is created it will display status READY. Then you *still* have to format and mount the disk; you will be doing that just in a moment.
+>A new `image` will show on the _Images_ list <i class="fa fa-download"></i> and it will keep in status LOCKED while it is being created. Once it is created it will display status READY. Then you *still* have to format and mount the disk; you will be doing that just in a moment.
 
 #### Add the new image to the template
 
-In order to let you VM know about the new datablock, you need to add it to your VM's `template`:
+In order to let your VM know about the new datablock, you need to add it to your VM's `template`:
 
 * Open the screen to edit the `template` (or create a new one from scratch).
-* Select the _<i class="fa fa-tasks"></i> Storage_ tab.
-* Click on the _<i class="fa fa-plus-circle" style="background-color:#4DBBDC;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ blue button (that will make a new _Disk 1_), and then choose the **my data** `image` you created, as a second `image`.
-* Finish with the *Update* button on the top, to submit the changes.
+* Select the _Storage_ tab <i class="fa fa-tasks"></i>.
+* Click on the blue button _<i class="fa fa-plus-circle" style="background-color:#4DBBDC;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_, that will make a new _Disk 1_, and then choose the **my data** `image` you created as a second `image`.
+* Finish with the *Update* button on the top to submit the changes.
 
 #### Mount the image in the VM
 
