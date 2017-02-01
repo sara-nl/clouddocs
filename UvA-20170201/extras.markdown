@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Extras - UvA HPC course 2017-02-01
+# UvA HPC course 2017-02-01 <br/> Extras
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![UvA logo](/images/UvA-logo.png)
