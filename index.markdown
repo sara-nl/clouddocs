@@ -84,6 +84,10 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 <!---
 ## Tutorials
+[UvA HPC Cloud workshop 2017-02-01](UvA-20170201/index) (part of the [UvA HPC and Big Data course](http://hpc.uva.nl))
+-->
+
+<!---
 * [SURF Research Bootcamp 2016-11-10](bootcamp-20161110/index)
 * [VU HPC Cloud workshop 2016-10-19](VU-20161019/index)
 * [UvA HPC Cloud workshop 2016-06-15](UvA-course-20160615/index) (part of the [UvA HPC and Big Data course](http://hpc.uva.nl))
