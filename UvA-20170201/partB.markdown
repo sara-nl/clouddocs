@@ -49,7 +49,7 @@ In this section you will work with **persistent** images. You will go through th
 * Switch the value to _Yes_ by clicking on the pencil icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
 
 #### Start a persistent VM
-* Start your virtual machine again.
+* Start your virtual machine (VM) again.
 * Log in and check the files you created during the previous run [(Part A)](partA).
 
 <div class="alert alert-warning" markdown="1">
@@ -68,13 +68,13 @@ sudo ./cloudinit_fix.sh
 > **Food for brain:**
 > 
 >* Is/are the file(s) you created on your VM (part A) there?
->* During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written on the backing `image` even if you restart your VM. Try it.
+>* During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written to the `image` even if you restart your VM. Try it.
 
 You can now shut your VM down.
 
 ### 2. Scale up to a multicore VM
 
-The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your Virtual Machines (VMs) the form that you need them to have. In this section, you will start a _four-core_ VM, using the exact same image, the _Cursus Image_. To scale-up your VM to use multiple cores you will be:
+The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your VMs the form that you need them to have. In this section, you will start a _four-core_ VM, using the exact same image, the _Course Image_. To scale-up your VM to use multiple cores you will be:
 
 * Editing your `template`.
 * Re-instantiating a VM from the modified `template`.
@@ -83,13 +83,13 @@ The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows y
 
 You can customise your VMs by editing the `templates` you instantiate the VMs from.
 
-* In order to edit your existing `template`, from the _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu, choose the **Course Template**. Then click on the _Update_ button on the top left of the screen.
-* In the _<i class="fa fa-laptop"></i> General_ tab edit the number of CPU and VCPU as:
+* In order to edit your existing `template`, from the _VMs_ tab <i class="fa fa-file-o"></i> under _Templates_ on the left menu, choose the **Course Template**. Then click on the _Update_ button on the top left of the screen.
+* In the _General_ tab <i class="fa fa-laptop"></i> edit the number of CPU and VCPU as:
   * CPU: **4**
   * VCPU: **4**
 * When you are done, click on the green _Update_ button so that your changes are actually saved.
 
-That was it. From now on, whenever you instantiate this `template`, you will get a 4-core VM running using the same *Cursus Image*.
+From now on, whenever you instantiate this `template`, you will get a 4-core VM running using the same *Course Image*.
 
 > **Food for brain:**
 >
