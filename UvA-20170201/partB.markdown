@@ -20,7 +20,7 @@ This is part B of the tutorial [UvA HPC course 2017-02-01](.) and covers the fol
 >
 > If you have not completed (and understood) [Part A](partA), please do so first.
 >
-> For the rest of the tutorial we will omit the `ubuntu@145:~$` prompt in the instructions. It allows you to copy-n-paste the commands directly to your terminal.
+> For the rest of the tutorial we will omit the `ubuntu@ip-145...:~$` prompt in the instructions. It allows you to copy-n-paste the commands directly to your terminal.
 
 ### 1. Persistence
 
