@@ -114,32 +114,32 @@ From now on, whenever you instantiate this `template`, you will get a 4-core VM 
 
 The current HPC Cloud offers two storage types: **Ceph** and **SSD**. Data stored on `Ceph` is replicated to protect against data loss in case of hardware failure. Our recommended best practice is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock(s)`.
 
-When you create an `image`, you must choose where it is stored, under the heading _Datastore_. You have the choice between `local_images_Cursus` (SSD) and `ceph`.  When you imported your first _App_, you created its OS image on `local_images_Cursus` (SSD). In this section we're introducing to you the `ceph` `datastore` option. You can make an `image` live in `ceph` by following these steps:
+When you create an `image`, you must choose where it is stored, under the heading _Datastore_. You have the choice between `local_images_Cursus` (SSD) and `ceph`.  When you imported your first _App_ in tutorial Part A, you created an image containing an Ubuntu 14.04 OS on `local_images_Cursus` (SSD). In this section we're introducing to you the `ceph` `datastore` option. You can create an `image` in `ceph` datastore by following these steps:
 
 * Creating a new empty `image` for bulk data
 * Adding the new `image` to the `template`
 * Mounting the `image` in the VM
 
 At this point you should **not** have any running VMs. If you do, shut them down.
-Let's create a new `image`.
 
 #### Create a new empty `image` for bulk data
 
-* On the [UI](https://ui.hpccloud.surfsara.nl), from the menu on the left, under the _Storage_ option, select the _<i class="fa fa-download"></i> Images_ tab.
-* Click on the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button on the top.
-* In the *Create image* screen, fill in the form as:  
+Let's create a new `image`.
+
+* On the [UI](https://ui.hpccloud.surfsara.nl), from the menu on the left, under the _Storage_ option, select the _Images_ tab <i class="fa fa-download"></i>.
+* Click the green button on the top _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_.
+* In the *Create image* screen fill in the form as:  
   * Name: **my data**. You will use this name later in your `template`.
   * Type: **Generic storage datablock**.
   * Datastore: **106: ceph**.
   * Check the **This image is persistent** checkbox.
-  * On the _Image location:_ group, choose radio button **Empty datablock**.
+  * On the _Image location:_ group choose radio button **Empty datablock**.
   * Give it a _Size_ in MB: **2000** (is 2GB, approximately).
-  * Leave the _FS Type_ empty.
-* Click the green button *Create* on the form, to submit it.
+* Click the green button *Create* at the top to create it.
 
 >**NOTE:**
 >
->A new `image` will show on the _<i class="fa fa-download"></i> Images_ list, and it will keep in status LOCKED while it is being created. When it is created it will come to status READY. Then you *still* have to format and mount the disk; you will be doing that just in a moment.
+>A new `image` will show on the _Images_ list <i class="fa fa-download"></i>, and it will keep in status LOCKED while it is being created. Once it is created it will display status READY. Then you *still* have to format and mount the disk; you will be doing that just in a moment.
 
 #### Add the new image to the template
 
