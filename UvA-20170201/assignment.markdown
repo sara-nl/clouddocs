@@ -12,6 +12,9 @@ layout: default
 
 The following exercises are the assignment to score points on the HPC Cloud session. After you have attended the presentations and followed the hands-on tutorial (including the extras), you understand all the concepts that will allow you to propose valid solutions to the exercises. You can contact your facilitators if you have any questions.
 
+> **NOTE:**  
+> The assignment needs to be deleivered by the **10th Feb. 2017** via email to the facilitators: helpdesk@surfsara.nl (cc to ander.astudillo@surfsara.nl).
+
 ## General description of the exercise
 
 Master chef Oliver needs to cook a _&pi;_ according to a recipe he has found on the Internet. It is a bit special, because the recipe only says: 
