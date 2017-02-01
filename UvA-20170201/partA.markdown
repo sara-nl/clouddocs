@@ -78,22 +78,22 @@ These are the steps to build your first VM from one of the Apps, detailed instru
 
 Let's run your first VM on the HPC Cloud!
 
-#### Import an appliance from the Apps Market
+#### Import an app
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
-* Choose the *Storage* tab on the left menu of the screen and then *Apps*.
-* Select the `appliance` **Ubuntu 14.04 Desktop CI** by clicking on the tick-box next to it.
+* Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_.
+* Select the `app` **Ubuntu 14.04 Desktop CI** by clicking on the tick-box next to it.
 * Click on the blue _OpenNebula_ button above the list of apps.
 * A dialogue will pop up asking you for a few details. Edit as follows:
   * Name: **Course Image**.
   * VM Template Name: **Course Template**.
   * Below "Select the Datastore to store the resource", select **123: _local\_images\_Cursus_**.
     It should now read "You selected the following datastore: local_images_Cursus"
-* Click the green *Download* button. This will copy the `appliance` from the Apps to your work environment, and return to the Apps list.
+* Click the green *Download* button. This will copy the _app_ to your work environment, and return to the Apps list.
 
 > **Food for brain:**
 >
-> When you import an `appliance`, an `image` and a `template` will be created, as explained during the introductory presentation. In the UI you have an _Images_ tab under _Storage_ and a _VMs_ tab under _Templates_ in the left menu. You should see your new `image` and `template` there.
+> When you import an `app`, an `image` and a `template` will be created, as explained during the introductory presentation. In the UI you have an _<i class="fa fa-download"></i> Images_ tab under _Storage_ and a _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu. You should see your new `image` and `template` there.
 > 
 * Can you see them?
 * What is the STATUS of the `image` just after you import it?
@@ -105,11 +105,11 @@ A `template` consists of a set of attributes that defines a Virtual Machine. For
 
 Edit the imported `template` following these steps:
 
-* Go to the _VMs_ tab under _Templates_ on the left menu.
+* Go to the _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu.
 * Find the `template` you just imported (*Course Template*), and click on it (anywhere **except** the tick-box).
 * Click on the blue _Update_ button to start editing the template.
 * Browse through the different tabs there (i.e. _General_, _Storage_, _Network_, ...) to get acquainted with their contents.
-* Check if your VM will have internet access: 
+* Verify that your VM will have internet access: 
   * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM. 
   * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`.   
 ![youselectednetwork](/images/youselectednetwork.png)
