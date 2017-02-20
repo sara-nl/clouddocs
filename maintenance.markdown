@@ -8,7 +8,7 @@ layout: default
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Unplanned   |   20-02-2017 / ongoing   | unscheduled maintenance webpage, running VM's not affected. |
+|    &mdash;   |   &mdash;   |      |
 {: class="table"}
 
 ### Future
@@ -26,6 +26,7 @@ layout: default
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finished  |   20-02-2017 : 14:35 / 20-02-2017 : 15:30   | Unscheduled maintenance. At 14:35 we received alerts that one of our backends was failing due to memory errors. To reduce load on our environment we temporarily closed all logins. These services were moved to the other node at 15:00, after this was completed we checked the environment. We opened our HPC Cloud again for logins at 15:30. Running VM's are not affected. |
 |   Finished  |   24-01-2017 / 25-01-2017   | Scheduled maintenance  |
 |   Finished  |   02-09-2016 / 09-09-2016   | moved to new data center |
 |   Finished  |   26-07-2016 / 27-07-2016   |   |
