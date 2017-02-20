@@ -8,7 +8,7 @@ layout: default
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   &mdash;   |   &mdash;   |   |
+|   Unplanned   |   20-02-2017 / ongoing   | unscheduled maintenance webpage, running VM's not affected. |
 {: class="table"}
 
 ### Future
