@@ -8,19 +8,19 @@ SURFsara strives to be transparent about incidents on the HPC Cloud infrastructu
 
 ## The story
 
-The storage cluster is built on Ceph (Software Defined Storage) and consists of 48 nodes with a current storage capacity of 2 PB (Petabyte). We use the standard replication factor, which means that all files/objects are replicated 3 times throughout the cluster.
+* The storage cluster is built on Ceph (Software Defined Storage) and consists of 48 nodes with a current storage capacity of 2 PB (Petabyte). We use the standard replication factor, which means that all files/objects are replicated 3 times throughout the cluster.
 
-Sunday 19th at 19:25 the logs started to record problems on the storage nodes. Parts of the cluster were not able to reach each other and started to ask the Ceph monitor to remove them from the cluster. The monitor does not comply immediately but needs confirmation from different nodes that a certain disk is no longer behaving correctly.
+* Sunday 19th at 19:25 the logs started to record problems on the storage nodes. Parts of the cluster were not able to reach each other and started to ask the Ceph monitor to remove them from the cluster. The monitor does not comply immediately but needs confirmation from different nodes that a certain disk is no longer behaving correctly.
 
-Sunday 19th at 19:27 the first disk (OSD in Ceph lingo) was removed from the cluster. The whole cluster started to behave erratically removing and adding OSD's the whole time.
+* Sunday 19th at 19:27 the first disk (OSD in Ceph lingo) was removed from the cluster. The whole cluster started to behave erratically removing and adding OSD's the whole time.
 
-30 Minutes later we only had 308 (out of 450) OSD's left in the cluster and this progressed until we only had 214 OSD's. The cluster went to shutdown mode and no more client requests were processed.
+* 30 Minutes later, 308 (out of 450) OSD's were left in the cluster and progressed until until 214 OSD's were operational. The cluster went to shutdown mode and no more client requests were processed.
 
-Monday 20th at 05:30 our engineers noticed the problem by logging in to the utility node. They immediately started all the missing OSD's manually. 
+* Monday 20th at 05:30 our engineers noticed the problem by logging in to the utility node. They immediately started all the missing OSD's manually.
 
-Monday 20th at 11:00 the cluster was back to a state (still in warning) where we could restart all services and VM's affected by this problem.
+* Monday 20th at 11:00 the cluster was back to a state (still in warning) where we could restart all services and VM's affected by this problem.
 
-The Ceph cluster was in a Healthy state at 13:36.
+* The Ceph cluster was in a Healthy state at 13:36.
 
 
 ## Issues identified
