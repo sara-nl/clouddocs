@@ -21,7 +21,7 @@ Virtual Machines mounting Ceph datablocks may have been affected.
 
 * Sunday 19th at 19:27 the Ceph monitor removed the first disk (OSD in Ceph lingo) from the cluster. The whole cluster started to behave erratically removing and adding OSD's the whole time.
 
-* 30 Minutes later, 308 (out of 450) OSD's were left in the cluster and this progressed until until only 214 OSD's were operational. This triggered a failsafe procedure and the cluster went into shutdown mode to protect the data. No more client requests were processed.
+* 30 Minutes later, 308 (out of 450) OSD's were left in the cluster and this progressed until only 214 OSD's were operational. This triggered a failsafe procedure and the cluster went into shutdown mode to protect the data. No more client requests were processed.
 
 * Monday 20th at 05:30 our engineers noticed the problem.
   Seeing that the OSDs were not really broken, they immediately started to reconnect the missing OSD's manually.
@@ -49,7 +49,7 @@ Virtual Machines mounting Ceph datablocks may have been affected.
 ## What to do (as a user)
 
 * If you have mount points backed by Ceph, you may want to reboot your VM to ensure your images are mounted again.
-* Or, you can just re-mount your partitions backed by Ceph images yourself and run a health-checking tool like `fsck`.
+* Or, you can just re-mount your partitions backed by Ceph images yourself and run an health-checking tool like `fsck`.
 * If you have trouble or questions, contact us at: helpdesk@surfsara.nl
 
 ## Timeline
@@ -57,7 +57,7 @@ Virtual Machines mounting Ceph datablocks may have been affected.
 * 2017-02-19 19:25 first OSD fails
 * 2017-02-19 19:45 crash of utility node (DIMM error)
 * 2017-02-19 20:47 last OSD fails (214 OSD's left)
-* 2017-02-19 21:04 Cluster enters shutdown state (no more client connections)
+* 2017-02-19 21:04 cluster enters shutdown state (no more client connections)
 * 2017-02-20 01:31 crash of utility node (another DIMM error)
 * 2017-02-20 05:31 manual start of missing OSD's
-* 2017-02-20 13:36 Cluster enters healthy state
+* 2017-02-20 13:36 cluster enters healthy state
