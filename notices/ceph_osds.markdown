@@ -41,7 +41,7 @@ Virtual Machines mounting Ceph datablocks may have been affected.
 * More monitor nodes (currently being worked on)
 * Ceph OSD's will always be started again after being removed from the cluster; this is considered a workaround until we find the root cause of the failing OSD's
 
-# Impact
+## Impact
 
 * During Sunday and Monday, VM's running with images backed by Ceph may have felt slow read/write operations.
 * Mount points backed by Ceph images may have turned into read-only mode.
