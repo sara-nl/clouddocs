@@ -6,6 +6,13 @@ layout: default
 
 SURFsara strives to be transparent about incidents on the HPC Cloud infrastructure. This report discloses an issue that affected operations on the storage cluster on Sunday 19th through Monday 20th of February 2017.
 
+## Summary
+
+The HPC Cloud Ceph storage cluster experienced a major incident.
+We have returned to normal production and no data was lost.
+
+Virtual Machines mounting Ceph datablocks may have been affected.
+
 ## The story
 
 * The storage cluster is built on Ceph (Software Defined Storage) and consists of 48 nodes with a current storage capacity of 2 PB (Petabyte). We use the standard replication factor, which means that all files/objects are replicated 3 times throughout the cluster.
