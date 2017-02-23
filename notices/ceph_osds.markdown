@@ -4,7 +4,7 @@ layout: default
 
 # Storage Cluster problems
 
-SURFsara strives to be transparent about incidents on the HPC Cloud infrastructure. This report discloses an issue that affected operations on the storage cluster on Sunday 19th through Monday 20th of February 2017.
+SURFsara strives to be transparent about incidents on the HPC Cloud infrastructure. This report explailns an issue that affected operations on the storage cluster on Sunday 19th through Monday 20th of February 2017.
 
 ## Summary
 
