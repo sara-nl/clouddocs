@@ -71,6 +71,7 @@ To make full use of the GPU capabilities please install the corresponding driver
 
 ```bash
 sudo apt-get install gcc make g++
+sudo apt-get install build-essential linux-headers-`uname -r` dkms
 sudo service lightdm stop
 sudo sh cuda_7.5.18_linux.run
 ```
