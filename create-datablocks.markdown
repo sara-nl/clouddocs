@@ -25,7 +25,7 @@ In this section we will be setting up an empty disk on [ceph Datastore](image_st
 	* Name: give a name meaningful for your datablock, e.g. **output data**. You will use this name later in your `Template`.
 	* Description (optional): give information about the datablock
     * Type: set to *Generic storage datablock*
-    * Datastore: choose `111: ceph`
+    * Datastore: choose `106: ceph`
     * Check *This image is persistent* checkbox. If you omit this, your data will not be saved on the disk once you shutdown the VM. You can also change this flag later from the [image persistence](image_persistence) properties.
     * On the _Image location:_ group, choose radio button _Empty disk image_
     * Give it a _Size_ in MB that is meaningful to you (e.g. insert 10000 to create a 10GB disk)
@@ -42,7 +42,7 @@ In this section we will be setting up an empty disk on [ceph Datastore](image_st
 In order to let you VM know about the new datablock, you need to add it to your VM's `template` by [editing storage options](customize-vm-storage).
 
 1. On the UI, from the menu at the left pane select the *VMs* page under *Templates*. 
-2. Click on your template and then click on the green *Update* button.
+2. Click on your template and then click on the blue *Update* button.
 3. Select the *Storage* tab from the menu bar.
 4. Click on the _+_ button under `Disk 0` (that will make a new _Disk 1_), and then choose the **output data** `image` you created as a second `image`.
 ![template_add_datablock](images/template_add_datablock.png)
