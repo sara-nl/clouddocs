@@ -66,7 +66,7 @@ To make full use of the GPU capabilities please install the corresponding driver
 * Prepare the drivers:
 
 ```bash
-apt-remove --purge nvidia-375 nvidia-375-dev nvidia-opencl-icd-375 libcuda1-375
+apt-get remove --purge nvidia-375 nvidia-375-dev nvidia-opencl-icd-375 libcuda1-375
 apt install libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
 apt install nvidia-367 nvidia-367-dev nvidia-opencl-icd-367 libcuda1-367 -y
 apt-mark hold nvidia-367
@@ -77,7 +77,7 @@ apt-mark hold libcuda1-367
 reboot
 ```
 
-* Check witn `nvidia-msi` that the card is detected. Should show something like this:
+* Check witn `nvidia-smi` that the card is detected. Should show something like this:
 
 ```bash
 +-----------------------------------------------------------------------------+
@@ -136,6 +136,7 @@ Enter CUDA Samples Location
 * Reorganise the execution environment
 
 ```bash
+sudo su -
 echo "export PATH=/usr/local/cuda-8.0/bin:$PATH" >> /etc/profile.d/nvidia.sh
 echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH" >> /etc/profile.d/nvidia.sh
 chmod 755 /etc/profile.d/nvidia.sh
@@ -148,8 +149,8 @@ chmod 755 /etc/profile.d/nvidia.sh
 >**NOTE:**
 >
 >Don't forget to add the libaries and binaries paths to your environment, like:
-> - `export PATH=$PATH:/usr/local/cuda-7.5/bin`
-> - `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-7.5/lib64`
+> - `export PATH=$PATH:/usr/local/cuda-8.0/bin`
+> - `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64`
 
 
 ### Running a Hello World
