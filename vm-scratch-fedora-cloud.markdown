@@ -18,7 +18,7 @@ The following instructions explain how to use one of their prepared images to (a
  * choose _Type_:Operating System image
  * make sure that, for field _Datastore_, you chose _101: local-images-ssd_
  * choose whether you want the `image` to be _Persistent_
- * in the _Image location:_ area, mark the _Provide a path_ radio button
+ * in the _Image location:_ area, mark the _Path in OpenNebula server_ radio button
  * fill in the _Path_ to the `image` file, by pasting the URL you copied in the first step of this recipe
  * Click on the _Advanced options_ dropdown area. There, you must fill in:
   * In _Target device_, type `vd`
