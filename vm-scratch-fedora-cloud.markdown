@@ -34,7 +34,7 @@ You need to put that `image` that you imported into a `template`. We will do tha
 1. **On the HPC Cloud UI:** In the _Storage_ tab, choose the `image` you created in the previous step for the _Disk 0_ disk.
 1. **On the HPC Cloud UI:** In the _Network_ tab, choose network _internet_ for `nic` _Interface 0_, and add a new `nic`, which will get name _Interface 1_ to assign it to your internal network.
 1. **On the HPC Cloud UI:** In the _Input/Output_ tab, make sure the _VNC_ radio button is checked.
-1. **On the HPC Cloud UI:** In the _Features_ tab, choose:
+1. **On the HPC Cloud UI:** In the _OS Booting_ tab, choose _Features_ on the left side and set:
   * _ACPI_ as _Yes_
   * _Localtime_ as _No_
 1. **On the HPC Cloud UI:** We are done preparing the `template`. Click on the green _Create_ button on the top-left of the screen.
