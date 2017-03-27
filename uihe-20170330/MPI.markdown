@@ -33,7 +33,7 @@ We provide you with an implementation of that simulation using `MPI`. You will b
 We will be creating a 2-core VM for this exercise.
 
 * On the UI, import a new Ubuntu `App`:
-  * On the _<i class="fa fa-cloud-download"></i> Apps_ tab (under _Storage_), import another copy of the **Ubuntu Desktop** `app`. Make sure you select the proper datastore for your new OS image (**123:local_images_Cursus**). Give the `image` and `template` the name: **mpi_wave**
+  * On the _<i class="fa fa-cloud-download"></i> Apps_ tab (under _Storage_), import another copy of the **Ubuntu Desktop** `app`. Make sure you select the proper datastore for your new OS image (**147: _wshop\-uihe\_img_**). Give the `image` and `template` the name: **mpi_wave**
 
 * Edit the `image` to make it **persistent**.
 
