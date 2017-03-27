@@ -88,7 +88,7 @@ Let's run your first VM on the HPC Cloud!
   * Name: **Course Image**.
   * VM Template Name: **Course Template**.
   * Below "Select the Datastore to store the resource", select **147: _wshop\-uihe\_img_**.
-    It should now read "You selected the following datastore: local_images_Cursus"
+    It should now read "You selected the following datastore: wshop-uihe_img"
 * Click the green *Download* button. This will copy the _app_ to your work environment, and return to the Apps list.
 
 > **Food for brain:**
