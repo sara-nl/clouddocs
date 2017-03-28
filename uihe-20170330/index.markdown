@@ -31,6 +31,7 @@ This workshop aims to introduce the participants to the HPC Cloud, by providing 
 > * 14:30 Presentation and Demo: Introduction to the HPC Cloud (Ander Astudillo)
 > * 15:00 Hands-on: Parts A & B (Ander Astudillo & Natalie Danezi)
 > * 17:30 End
+>
 > **Friday, 31st**
 > * 10:00 Presentation: Cloudifying - parallelism & API (Ander Astudillo)
 > * 10:30 Hands-on: Extras (Ander Astudillo & Natalie Danezi)
