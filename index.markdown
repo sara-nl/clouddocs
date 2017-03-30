@@ -3,14 +3,16 @@ layout: default
 ---
 # SURFsara HPC Cloud documentation
 
-<div class="alert alert-info" style="float:right;max-width:50%;" markdown="1">
+<div style="float:right;max-width:50%;" markdown="1">
+<div class="alert alert-info" markdown="1">
 <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> 
 This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**. You are welcome to contribute to **help us improve** the documentation (see bottom of this page).
 </div>
 
-<div class="alert alert-success" style="float:right;max-width:50%;" markdown="1">
+<div class="alert alert-success" markdown="1">
 <i class="fa fa-tint fa-2x" aria-hidden="true"></i> 
 <span style="color:red;">TODAY!</span> [2017-03-30 & 31 UNESCO-IHE symposium](uihe-20170330/index)
+</div>
 </div>
 
 ## Operational
