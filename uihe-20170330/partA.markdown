@@ -58,7 +58,7 @@ If you are already familiar with SSH public keys, you can skip reading this page
 Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI.
 The matching private key (`id_rsa`) stays safe in your laptop.
 
-* Copy the content of your **public** SSH key to the clipboard (for example, by doing `cat ~/.ssh/id_rsa.pub`, then selecting and copying all of that text).
+* Copy the content of your **public** SSH key to the clipboard (for example, by doing `less ~/.ssh/id_rsa.pub`, then selecting and copying all of that text).
 * Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *<i class="fa fa-cog"></i> Settings* from the *buddy* icon  <i class="fa fa-user"></i>.
 * Locate the section _Public SSH Key_ (if needed, click the *<i class="fa fa-info-circle"></i> Info* icon) and click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
 * Paste the content of your public SSH key file into the text box.
