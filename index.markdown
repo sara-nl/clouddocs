@@ -8,6 +8,11 @@ layout: default
 This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**. You are welcome to contribute to **help us improve** the documentation (see bottom of this page).
 </div>
 
+<div class="alert alert-success" style="float:right;max-width:50%;" markdown="1">
+<i class="fa fa-tint fa-2x" aria-hidden="true"></i> 
+<span style="color:red;">TODAY!</span> [2017-03-30 & 31 UNESCO-IHE symposium](uihe-20170330/index)
+</div>
+
 ## Operational
 
 - [Maintenance calendar HPC Cloud](maintenance)
@@ -84,6 +89,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 
 ## Tutorials
+* [UNESCO-IHE symposium 2017-03-30 & 31](uihe-20170330/index)
 * [UvA HPC Cloud workshop 2017-02-01](UvA-20170201/index) (part of the [UvA HPC and Big Data course](http://hpc.uva.nl))
 
 <!---
