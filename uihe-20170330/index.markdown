@@ -75,7 +75,7 @@ The hands-on tutorial consists of three parts. Parts *A & B* provide exercises f
   
 ## <a name="presentations"></a> Presentations
  
-  * Morning presentation: [Introduction to the HPC Cloud](20170330_cloud.pdf)
+  * Morning presentation: [Introduction to the HPC Cloud](https://doc.hpccloud.surfsara.nl/uihe-20170330/20170330_cloud.pdf)
   * Afternoon presentation: Cloudy systems
 
 
