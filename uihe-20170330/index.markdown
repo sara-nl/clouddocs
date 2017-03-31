@@ -75,7 +75,8 @@ The hands-on tutorial consists of three parts. Parts *A & B* provide exercises f
   
 ## <a name="presentations"></a> Presentations
  
-  * Thursday presentation: [Introduction to the HPC Cloud](https://doc.hpccloud.surfsara.nl/uihe-20170330/20170330_cloud.pdf) 
-  * Friday presentation: [Parallelism](https://doc.hpccloud.surfsara.nl/uihe-20170330/20170331_parallelism.pdf)
+  * Thursday - [SURFsara introduction](https://doc.hpccloud.surfsara.nl/uihe-20170330/20170331_parallelism.pdf)
+  * Thursday - Hands-on presentation: [Introduction to the HPC Cloud](https://doc.hpccloud.surfsara.nl/uihe-20170330/20170330_cloud.pdf) 
+  * Friday - Hands-on presentation: [Parallelism](https://doc.hpccloud.surfsara.nl/uihe-20170330/20170331_parallelism.pdf)
 
 
