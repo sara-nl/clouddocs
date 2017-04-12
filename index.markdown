@@ -22,8 +22,7 @@ The HPC Cloud documentation images are not being rendered correctly. The service
 
 <div class="alert alert-success" markdown="1">
 <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
-<span style="color:red;">Images not rendered!</span> 
-The HPC Cloud documentation images are not being rendered correctly. The service team is fixing the issue.
+The HPC Cloud documentation **images are not being rendered correctly**. The service team is fixing the issue.
 </div>
 </div>
 
