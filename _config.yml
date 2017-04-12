@@ -1,4 +1,4 @@
 markdown: kramdown
 kramdown:
   input: GFM
-baseurl: /
+baseurl:
