@@ -26,16 +26,16 @@ You can either set up your own cloud image, or use an image provided by SURFsara
 1. In the Dashboard on https://ui.hpccloud.surfsara.nl/, under Storage -> Apps, select the Ubuntu 16.04 image with GPU (`Ubuntu 16.04 GPU VIS`) and import it with the `Import` button in the upper right.
 ![import AppMarket Appliance](images/gpu/rvs_select_image.png)
 2. In the next screen, make sure to select “gpu_images_ssd” as your datastore, and give both your image and template a distinctive name.
-![import AppMarket Appliance](images/gpu/rvs_image_name.png)
+![import AppMarket Appliance](../images/gpu/rvs_image_name.png)
 3. Under Storage-> Images, select the image you just created and, with the “dots” button, set your image to persistent state (`Make persistent`). After this, refresh the list with the button of the two arrows chasing each other and make sure the status of your image is “ready”
-![Make image persistent](images/gpu/rvs_make_persistent.png)
+![Make image persistent](../images/gpu/rvs_make_persistent.png)
 4. Under Templates-> VMs, select the template you created, and click the “Update” button. This will open the properties of your VM template.  Here you can set memory and cores of your virtual machine. A good default is 16GB memory and 4 CPU&VCPU.
-![Update VM](images/gpu/rvs_update_vm.png)
+![Update VM](../images/gpu/rvs_update_vm.png)
 5. Next, under the “Other” tab, click “+ Add PCI Device”, and select the `GK104GL [GRID K2]` GPU.
 Make sure to click the green “Update” button to save your changes to the VM
- ![Add GPU to template](images/gpu/gpu_add_pci.png)
+ ![Add GPU to template](../images/gpu/gpu_add_pci.png)
 6. Under Templates -> VMs, select your template, and click the “Instantiate” button, and in the pop up window click the green “Instantiate”, to start your VM.
-![Start VM](images/gpu/rvs_instantiate.png)
+![Start VM](../images/gpu/rvs_instantiate.png)
 6. Under Instances -> VMs wait for your machine to boot. If the status is “running”, you can proceed with the next step. Note the IP address your machine received.
 7. Using SSH, login to your new machine, using `ssh ubuntu@<ip address>`
 8. You need to configure the VirtualGL context: `sudo /opt/VirtualGL/bin/vglserver_config`
@@ -53,5 +53,5 @@ You only need to do the previous steps once. For every subsequent work session, 
 3. Start the VNC client on your local machine, and login to your VNCserver: `vncviewer <your VM's ip address>:1`
 4. You should now have access with your VNC viewer to the remote desktop on the cloud node 
 5. (Optional) To test if everything works correctly, you can use the application glxgears located in the `mesa-utils` package (on Ubuntu).  You run the command `vglrun glxgears`, and if you see three red, green a blue cogs, everything works correctly.
-![Test with GLXgears](images/gpu/rvs_glxgears.png)
+![Test with GLXgears](../images/gpu/rvs_glxgears.png)
 
