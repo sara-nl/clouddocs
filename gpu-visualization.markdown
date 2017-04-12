@@ -5,7 +5,7 @@ layout: default
 # Remote Visualization Guide for HPC Cloud
 In this guide we will describe how to setup and use remote interactive visualization on the HPC Cloud. It allows the user of the HPC cloud to fully use virtual machines equipped with GPUs for interactive rendering, with the result being transferred over the internet to their own local laptop or desktop.
 
-![Remote interactive visualization](./images/gpu/rvs_cloud.png)
+![Remote interactive visualization](/images/gpu/rvs_cloud.png)
 
 ## Getting access
 
