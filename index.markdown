@@ -13,6 +13,11 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i> 
 <span style="color:red;">TODAY!</span> [2017-03-30 & 31 UNESCO-IHE symposium](uihe-20170330/index)
 </div>
+
+<div class="alert alert-success" markdown="1">
+<i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i> 
+<span style="color:red;">Images not rendered!</span> The HPC Cloud documentation images are not being rendered correctly. The service team is fixing the issue.
+</div>
 </div>
 
 ## Operational
