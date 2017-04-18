@@ -8,7 +8,6 @@ layout: default
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Ongoing   |   18-04-2017 / 19-04-2017   | Scheduled maintenance. Short interruptions in the web UI and the API are expected. |
 {: class="table"}
 
 ### Future
@@ -25,6 +24,7 @@ layout: default
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finished  |   18-04-2017 / 19-04-2017   | Scheduled maintenance |
 |   Finished  |   20-02-2017 : 14:35 / 20-02-2017 : 15:30   | Unscheduled maintenance. At 14:35 we received alerts that one of our backends was failing due to memory errors. To reduce load on our environment we temporarily closed all logins. These services were moved to the other node at 15:00, after this was completed we checked the environment. We opened our HPC Cloud again for logins at 15:30. Running VM's are not affected. |
 |   Finished  |   24-01-2017 / 25-01-2017   | Scheduled maintenance  |
 |   Finished  |   02-09-2016 / 09-09-2016   | moved to new data center |
