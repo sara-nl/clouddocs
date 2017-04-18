@@ -6,9 +6,7 @@ layout: default
 
 ### Current
 
-|   Status    |   Date (start / end)        |   |
-|:------------|:----------------------------|:--|
-{: class="table"}
+None
 
 ### Future
 
