@@ -8,14 +8,13 @@ layout: default
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|    &mdash;   |   &mdash;   |      |
+|   Ongoing   |   18-04-2017 / 19-04-2017   | Scheduled maintenance. Short interruptions in the web UI and the API are expected. |
 {: class="table"}
 
 ### Future
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Planned   |   18-04-2017 / 19-04-2017   |   |
 |   Planned   |   03-10-2017 / 04-10-2017   |   |
 |   Planned   |   19-12-2017 / 20-12-2017   |   |
 {: class="table"}
