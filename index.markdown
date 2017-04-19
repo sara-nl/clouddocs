@@ -56,7 +56,6 @@ The HPC Cloud documentation **images are not being rendered correctly**. The ser
 ### GPU
 
 * [Attaching a GPU to a VM](gpu-attach)
-* [Deep learning use case](gpu-deep-learn)
 * [Remote GPU visualization](gpu-visualization)
 
 ### Disk Images
