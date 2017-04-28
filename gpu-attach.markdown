@@ -66,13 +66,10 @@ To make full use of the GPU capabilities please install the corresponding driver
 * Prepare the drivers:
 
 ```bash
-apt-get remove --purge nvidia-375 nvidia-375-dev nvidia-opencl-icd-375 libcuda1-375
-apt install libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
-apt install nvidia-367 nvidia-367-dev nvidia-opencl-icd-367 libcuda1-367 -y
-apt-mark hold nvidia-367
-apt-mark hold nvidia-367-dev
-apt-mark hold nvidia-opencl-icd-367
-apt-mark hold libcuda1-367
+sudo apt purge nvidia-* libcuda1-*
+sudo apt install libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
+wget http://us.download.nvidia.com/XFree86/Linux-x86_64/367.35/NVIDIA-Linux-x86_64-367.35.run
+sudo sh NVIDIA-Linux-x86_64-367.35.run
 
 reboot
 ```
@@ -81,7 +78,7 @@ reboot
 
 ```bash
 +-----------------------------------------------------------------------------+
-| NVIDIA-SMI 367.57                 Driver Version: 367.57                    |
+| NVIDIA-SMI 367.35                 Driver Version: 367.35                    |
 |-------------------------------+----------------------+----------------------+
 | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
