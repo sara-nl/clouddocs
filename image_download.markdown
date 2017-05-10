@@ -60,6 +60,7 @@ We will now hot-attach the `image` you want to download to the _Utility VM_. But
  * **In the _Utility VM_:** `mkdir /wagon`
  * **In the _Utility VM_:** `mkfs -t xfs /dev/vdb`
  * **In the _Utility VM_:** `mount /dev/vdb /wagon`
+ * **In the _Utility VM_:** `mkdir /etc/rc.d`
  * **In the _Utility VM_:** `touch /etc/rc.d/rc.local`
  * **In the _Utility VM_:** `echo "echo 4096 > /sys/block/vdb/queue/read_ahead_kb" > /etc/rc.d/rc.local`
  * **In the _Utility VM_:** `chmod 755 /etc/rc.d/rc.local`
