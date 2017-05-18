@@ -14,10 +14,10 @@ The steps you require to create a VM from scratch are:
 
 1. Prepare the installation
 2. Run the installation
-3. Configure contextualization
-4. Prepare the VM for production
+3. Prepare the VM for production
+4. Configure contextualization
 
-We will be developing these topics in the following subsections
+We will be developing these topics in the following subsections.
 
 ## Prepare the installation
 
@@ -36,8 +36,8 @@ Analogously to your laptop, your VM needs a hard drive where the operating syste
   * type in a meaningful _Name_ (e.g.: **centos_drive**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _Generic storage datablock_
-  * leave _Datastore_ with _101: local_images_ssd_
-  * check the _Persistent_ checkbox
+  * leave _Datastore_ with _104: local_images_ssd_
+  * check the checkbox: _This image is persistent _ 
   * on the _Image location:_ group, choose radio button _Empty disk image_
   * and give it a _Size_ that is meaningful to you (e.g.: in our test we used 10GB)
 3. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while it is being created. When it is created it will come to status _READY_.
@@ -50,8 +50,8 @@ Analogously to your laptop, your VM needs a hard drive where the operating syste
   * type in a meaningful _Name_ (e.g.: **centos_iso**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _Readonly CD-ROM_
-  * leave _Datastore_ with _101: local_images_ssd_
-  * leave the _Persistent_ checkbox unchecked
+  * leave _Datastore_ with _104: local_images_ssd_
+  * leave the checkbox _This image is persistent _ unchecked
   * on the _Image location:_ group, choose radio button _Path in OpenNebula server_; then, underneath, paste the URL of the ISO in the _Path_ text box (e.g.: in our case, we used the most recent one from: http://ftp.nluug.nl/ftp/pub/os/Linux/distr/CentOS/7/isos/x86_64/)
 3. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while it is being created. When it is created it will come to status _READY_.
 
@@ -72,15 +72,16 @@ Now that we have all components ready in the UI, we are ready to bring them toge
 4. **On the UI:** On the same _Create VM Template_ screen, on the _Network_ tab:
   * for the _Interface 0_ (on the left column of the screen), choose the **internet** `network` (from the table on the right of the screen)
   * click on the _+_ button (that will make a new _Interface 1_), and then choose your internal `network` (it will be the only other `network ` that you can see on the right that is not called **internet**)
-5.  **On the UI:** On the same _Create VM Template_ screen, on the _OS Booting_ tab (note! use the following boot order, otherwise, changes are not saved due to a bug in opennebula):
-  * for the _1st Boot_ field, **choose _HD_**
-  * for the _2nd Boot_ field, **choose _CDROM_** 
-6.  **On the UI:** On the same _Create VM Template_ screen, on the _Input/Output_ tab:
+5.  **On the UI:** On the same _Create VM Template_ screen, on the _OS Booting_ tab select the boot order as displayed in the picture: 
+  * Tick the box under _Boot order_ and **choose _CDROM_** (e.g. centos_iso)
+  * Tick the box under _Boot order_ and **choose _HD_** (e.g. centos_drive) 
+  ![centos_boot_order](images/centos_boot_order.png)
+6.  **On the UI:** On the same _Create VM Template_ screen, on the _OS Booting_ tab, set some _Features_ (click on _Features_ on the left column):
+  * set in _ACPI_: _yes_
+  * set in _Localtime_: _no_
+7.  **On the UI:** On the same _Create VM Template_ screen, on the _Input/Output_ tab:
   * click on the _VNC_ radio button
   * on the _Inputs group_, choose _Tablet_ on the first dropdown menu, then _USB_ on the second dropdown menu and finally click on the _Add_ button. A new entry will appear below those dropdowns with what you just selected.
-7.  **On the UI:** On the same _Create VM Template_ screen, on the _Context_ tab:
-  * click on _Files_ on the left column of the screen
-  * make sure you check the check box for the `file` **one-context_4.14.1.rpm**
 8. **On the UI:** We are ready defining the `template`, so click on the green _Create_ button at the top of the screen. A new `template` will show on the _Templates_ list.
 
 ## Run the CentOS installation
@@ -89,18 +90,48 @@ We will now create a VM and run the CentOS installation on it.
 
 1. **On the UI:** Go to the _VMs_ tab (under _Instances_). Click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new VM. A form will pop up.
 2. **On the UI:** On the form that popped up:
-  * type in a meaningful _Name_ (e.g.: **centos_first**)
   * choose the template you defined before (i.e.: centos_setup)
+  * type in a meaningful _VM name_ (e.g.: **centos_first**)
 3. **On the UI:** We are ready defining the VM, so click on the green _Create_ button at the bottom of the form. A new VM will show on the _Virtual Machines_ list. It will go through several states (e.g.: PENDING, PROLOG...) until it reaches the RUNNING state. 
 4. **On the UI:** You can then start operating within your VM. Click on the _screen_-like button that you can see to the right of your VM on the list. It will pop-up the VNC console, so you should be able to see the welcome screen of your CentOS installation.
+  * Now you need to install CentOS, by following the steps you would normally follow (note, however, that at this point you have no network connection unless you define it manually).
+  * Create a root and (optionally) a user account in order to login to the VM for the first time. This would allow setting up conextualisation in a later step.
+5. **On the UI:** Once the installation is complete and you are prompted to reboot the machine, go back to the UI and shut down the VM. For this, ticke the box next to your freshly installed Centos VM and select from the drop down red icon "Terminate". We will remove all the installation media and prepare your VM for production.
 
-Now you need to install CentOS, by following the steps you would normally follow (note, however, that at this point you have no network connection unless you define it manually).
+
+## Prepare the VM for production
+
+Once you have installed and configured your CentOS, you do not need the installation media any more. We will make a new `template` to use only the disk that we need.
+
+1. **On the UI:** First change the image where you installed the OS (centos_drive) from `datablock` to `OS`. From the `images` tab, click on the **centos_drive** row and then switch *Type: `OS`*.
+2. **On the UI:** Begin creating a new `template` the usual way.
+3. **On the UI:** On the _Create VM Template_ screen, on the _General_ tab:
+  * type in a meaningful _Name_ (e.g.: **my_research_run**)
+  * give it as much memory and as many CPU's as you need
+4. **On the UI:** On the same _Create VM Template_ screen, on the _Storage_ tab:
+  * for the _Disk 0_ (on the left column of the screen), choose the **centos_drive** `image` (from the table on the right of the screen) that you created as the first `image` of this guide, and where you have installed CentOS
+5. **On the UI:** On the same _Create VM Template_ screen, on the _Network_ tab:
+  * for the _Interface 0_ (on the left column of the screen), choose the **internet** `network` (from the table on the right of the screen)
+  * click on the _+ Add another nic_ button (that will make a new _Interface 1_), and then choose your internal `network` (it will be the only other `network ` that you can see on the right that is not called **internet**)
+6.  **On the UI:** On the same _Create VM Template_ screen, on the _OS Booting_ tab, you want to set some _Features_ (click on _Features_ on the left column):
+  * set in _ACPI_: _yes_
+  * set in _Localtime_: _no_
+7.  **On the UI:** On the same _Create VM Template_ screen, on the _Input/Output_ tab:
+  * click on the _VNC_ radio button
+  * on the _Inputs_ group, choose _Tablet_ on the first dropdown menu, then _USB_ on the second dropdown menu and finally click on the _Add_ button. A new entry will appear below those dropdowns with what you just selected.
+8.  **On the UI:** On the same _Create VM Template_ screen, on the _Context_ tab:
+  * click on _Files_ on the left column of the screen
+  * make sure you check the check box for the `file` **one-context_4.14.1.rpm**
+9. **On the UI:** We are ready defining the `template`, so click on the green _Create_ button at the top of the screen. A new `template` will show on the _Templates_ list.
+
+From now on, you will use this `template` to run your VM.
+
 
 ## Configure contextualization
 
 Once your freshly installed CentOS starts, we will configure your VM so that it auto-configures itself on start up (e.g.: at this point, you can see that there is no active network connection, so you cannot even browse the web). OpenNebula deliver their own .rpm to allow contextualization, and you are able to read that .rpm from the _CONTEXT_ CD-ROM because you added that file to the template in the previous section.
 
-1. **On the VM:** Open a file explorer, and browse the _CONTEXT_ CD-ROM. You should be able to see at least 2 files on that CD-ROM. One of them should be the one we manually added to the _Context_ tab of the `template` some steps ago, called: _one-context-4.14.1.rpm_.
+1. **On the VM:** Start a VM from the template you created in the pervious step. In a Desktop environment you may open a file explorer, and browse the _CONTEXT_ CD-ROM. You should be able to see at least 2 files on that CD-ROM. One of them should be the one we manually added to the _Context_ tab of the `template` some steps ago, called: _one-context-4.14.1.rpm_.
 2. **On the VM:** Open a terminal and mount the _CONTEXT_ CD-ROM: 
 
 ```sh
@@ -114,34 +145,10 @@ yum install /mnt/*.rpm
 ```
 
 4. **On the VM:** You can reboot your CentOS now. When it boots up, you should be able to browse the Internet now. You can also test SSH-ing into your VM with your private key.
-5. **On the UI:** You can now shut your VM down. We will remove all the installation media and prepare your VM for production.
+
 
 >**NOTE:**
 >
 >Alternatively, you can use [cloud-init](http://cloudinit.readthedocs.org/en/latest/index.html) as a contextualization configurer. CentOS has support for it via the standard yum repos, so you can install it via `yum install cloud-init`. Our tests indicate that network works, but there does not seem to be a default user configured to use public/private keys to SSH to the VM.
 >
 >A possible way to do it: you can first use the one-context-XXX.rpm package, reboot to let the network be contextualised, then install cloud-init and after that uninstall the one-context-XXX.rpm package.
-
-## Prepare the VM for production
-
-Once you have installed and configured your CentOS, you do not need the installation media or `file`s around any more. We will make a new `template` to use only the disk that we need.
-
-1. **On the UI:** First change the image where you installed the OS from `datablock` to `OS`. From the `images` tab, click on the **centos_drive** row and then switch *Type: `OS`*.
-2. **On the UI:** Begin creating a new `template` the usual way.
-3. **On the UI:** On the _Create VM Template_ screen, on the _General_ tab:
-  * type in a meaningful _Name_ (e.g.: **my_research_run**)
-  * give it as much memory and as many CPU's as you need
-4. **On the UI:** On the same _Create VM Template_ screen, on the _Storage_ tab:
-  * for the _Disk 0_ (on the left column of the screen), choose the **centos_drive** `image` (from the table on the right of the screen) that you created as the first `image` of this guide, and where you have installed CentOS
-5. **On the UI:** On the same _Create VM Template_ screen, on the _Network_ tab:
-  * for the _Interface 0_ (on the left column of the screen), choose the **internet** `network` (from the table on the right of the screen)
-  * click on the _+ Add another nic_ button (that will make a new _Interface 1_), and then choose your internal `network` (it will be the only other `network ` that you can see on the right that is not called **internet**)
-6.  **On the UI:** On the same _Create VM Template_ screen, on the _Input/Output_ tab:
-  * click on the _VNC_ radio button
-  * on the _Inputs_ group, choose _Tablet_ on the first dropdown menu, then _USB_ on the second dropdown menu and finally click on the _Add_ button. A new entry will appear below those dropdowns with what you just selected.
-7.  **On the UI:** On the same _Create VM Template_ screen, on the _OS Booting_ tab, you want to set some _Features_ (click on _Features_ on the left column):
-  * set in _ACPI_: _yes_
-  * set in _Localtime_: _no_
-8. **On the UI:** We are ready defining the `template`, so click on the green _Create_ button at the top of the screen. A new `template` will show on the _Templates_ list.
-
-From now on, you will use this `template` to run your VM.
