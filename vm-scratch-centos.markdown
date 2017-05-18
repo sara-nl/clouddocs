@@ -5,7 +5,7 @@ layout: default
 
 Although a number of useable _appliances_ are available in the _Apps_ option of the _Storage_ section to allow easily creating VMs from the UI, sometimes you may need a specific distribution or a different version that you can find on the AppMarket. In that case, you can resort to installing the operating system from scratch, as you would install it on your own laptop.
 
-The following instructions explain how to make a VM installing the operating system from scratch, and we will be using CentOS 7 as an example.
+The following instructions explain how to make a VM installing the operating system from scratch, and we will be using CentOS 7 (Minimal Install) as an example.
 
 >**NOTE:**
 >The VM that you will be making following this guide will be using contextualization. Make sure you have your public ssh-key configured either in your user profile or in the template, before you create your VM. That way you will be able to log into your VM with your private key.
@@ -37,7 +37,7 @@ Analogously to your laptop, your VM needs a hard drive where the operating syste
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _Generic storage datablock_
   * leave _Datastore_ with _104: local_images_ssd_
-  * check the checkbox: _This image is persistent _ 
+  * check the checkbox: _This image is persistent_ 
   * on the _Image location:_ group, choose radio button _Empty disk image_
   * and give it a _Size_ that is meaningful to you (e.g.: in our test we used 10GB)
 3. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while it is being created. When it is created it will come to status _READY_.
@@ -51,7 +51,7 @@ Analogously to your laptop, your VM needs a hard drive where the operating syste
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _Readonly CD-ROM_
   * leave _Datastore_ with _104: local_images_ssd_
-  * leave the checkbox _This image is persistent _ unchecked
+  * leave the checkbox _This image is persistent_ unchecked
   * on the _Image location:_ group, choose radio button _Path in OpenNebula server_; then, underneath, paste the URL of the ISO in the _Path_ text box (e.g.: in our case, we used the most recent one from: http://ftp.nluug.nl/ftp/pub/os/Linux/distr/CentOS/7/isos/x86_64/)
 3. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while it is being created. When it is created it will come to status _READY_.
 
@@ -96,7 +96,7 @@ We will now create a VM and run the CentOS installation on it.
 4. **On the UI:** You can then start operating within your VM. Click on the _screen_-like button that you can see to the right of your VM on the list. It will pop-up the VNC console, so you should be able to see the welcome screen of your CentOS installation.
   * Now you need to install CentOS, by following the steps you would normally follow (note, however, that at this point you have no network connection unless you define it manually).
   * Create a root and (optionally) a user account in order to login to the VM for the first time. This would allow setting up conextualisation in a later step.
-5. **On the UI:** Once the installation is complete and you are prompted to reboot the machine, go back to the UI dashboard and shut down the VM from the UI. For this, tick the box next to your freshly installed Centos VM and select from the drop down red icon _Terminate_. Next we will remove all the installation media and prepare your VM for production.
+5. **On the UI:** Once the installation is complete and you are prompted to reboot the machine, go back to the UI dashboard and shut down the VM from the UI. For this, tick the box next to your freshly installed Centos VM and select from the drop down red icon _Terminate_. Wait until it disappears from the VM list. Next we will remove all the installation media and prepare your VM for production.
 
 
 ## Prepare the VM for production
@@ -129,10 +129,10 @@ From now on, you will use this `template` to run your VM.
 
 ## Configure contextualization
 
-Once your freshly installed CentOS starts, we will configure your VM so that it auto-configures itself on start up (e.g.: at this point, you can see that there is no active network connection, so you cannot even browse the web). OpenNebula deliver their own .rpm to allow contextualization, and you are able to read that .rpm from the _CONTEXT_ CD-ROM because you added that file to the template in the previous section.
+Start your freshly installed CentOS from the new template you created in the previous step. The last step is to configure your VM so that it auto-configures itself on start up (e.g.: at this point, you can see that there is no active network connection, so you cannot even browse the web). OpenNebula deliver their own .rpm to allow contextualization, and you are able to read that .rpm from the _CONTEXT_ CD-ROM because you added that file to the template in the previous section.
 
 1. **On the VM:** Start a VM from the template you created in the pervious step. In a Desktop environment you may open a file explorer, and browse the _CONTEXT_ CD-ROM. You should be able to see at least 2 files on that CD-ROM. One of them should be the one we manually added to the _Context_ tab of the `template` some steps ago, called: _one-context-4.14.1.rpm_.
-2. **On the VM:** Open a terminal and mount the _CONTEXT_ CD-ROM: 
+2. **On the VM:** Open a terminal and mount the _CONTEXT_ CD-ROM (the action has to be performed as root): 
 
 ```sh
 mount -t iso9660 -L CONTEXT -o ro /mnt
@@ -144,8 +144,10 @@ mount -t iso9660 -L CONTEXT -o ro /mnt
 yum install /mnt/*.rpm
 ```
 
-4. **On the VM:** You can reboot your CentOS now. When it boots up, you should be able to browse the Internet now. You can also test SSH-ing into your VM with your private key.
+Once the rpm is installed you may optionally remove the _CONTEXT_ file from your template (_Context_ tab and then _Files_).
 
+4. **On the VM:** You can reboot your CentOS now within the VM. When it boots up, you should be able to browse the Internet now. You can also test SSH-ing into your VM with your private key (`ssh root@145.100.mmm.nnn`, where you should replace _mmm_ and _nnn_ to match the IP address of your VM).
+  * In case that your freshly installed VM does not react to the _Terminate_ button from the UI, check whether `acpid` is installed and enabled (see also [troubleshooting](https://doc.hpccloud.surfsara.nl/vm-not-reacting-to-shutdown)).
 
 >**NOTE:**
 >
