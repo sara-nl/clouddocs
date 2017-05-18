@@ -96,7 +96,7 @@ We will now create a VM and run the CentOS installation on it.
 4. **On the UI:** You can then start operating within your VM. Click on the _screen_-like button that you can see to the right of your VM on the list. It will pop-up the VNC console, so you should be able to see the welcome screen of your CentOS installation.
   * Now you need to install CentOS, by following the steps you would normally follow (note, however, that at this point you have no network connection unless you define it manually).
   * Create a root and (optionally) a user account in order to login to the VM for the first time. This would allow setting up conextualisation in a later step.
-5. **On the UI:** Once the installation is complete and you are prompted to reboot the machine, go back to the UI and shut down the VM. For this, ticke the box next to your freshly installed Centos VM and select from the drop down red icon "Terminate". We will remove all the installation media and prepare your VM for production.
+5. **On the UI:** Once the installation is complete and you are prompted to reboot the machine, go back to the UI dashboard and shut down the VM from the UI. For this, tick the box next to your freshly installed Centos VM and select from the drop down red icon _Terminate_. Next we will remove all the installation media and prepare your VM for production.
 
 
 ## Prepare the VM for production
