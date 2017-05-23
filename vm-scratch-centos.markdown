@@ -5,10 +5,11 @@ layout: default
 
 Although a number of useable _appliances_ are available in the _Apps_ option of the _Storage_ section to allow easily creating VMs from the UI, sometimes you may need a specific distribution or a different version that you can find on the AppMarket. In that case, you can resort to installing the operating system from scratch, as you would install it on your own laptop.
 
-The following instructions explain how to make a VM installing the operating system from scratch, and we will be using CentOS 7 (Minimal Install) as an example.
+The following instructions explain how to make a VM installing the operating system from scratch, and we will be using CentOS 7 (Minimal Install) as an example. 
 
->**NOTE:**
->The VM that you will be making following this guide will be using contextualization. Make sure you have your public ssh-key configured either in your user profile or in the template, before you create your VM. That way you will be able to log into your VM with your private key.
+>**NOTE:**  
+>**For Ubuntu:** You may also follow the same instructions to install Ubuntu from scratch. In steps where the commands may differ, we have added *Note* sections specifically for Ubuntu.
+
 
 The steps you require to create a VM from scratch are:
 
@@ -18,6 +19,9 @@ The steps you require to create a VM from scratch are:
 4. Configure contextualization
 
 We will be developing these topics in the following subsections.
+
+>**NOTE:**
+>The VM that you will be making following this guide will be using contextualization. Make sure you have your public ssh-key configured either in your user profile or in the template, before you create your VM. That way you will be able to log into your VM with your private key.
 
 ## Prepare the installation
 
@@ -54,6 +58,9 @@ Analogously to your laptop, your VM needs a hard drive where the operating syste
   * leave the checkbox _This image is persistent_ unchecked
   * on the _Image location:_ group, choose radio button _Path in OpenNebula server_; then, underneath, paste the URL of the ISO in the _Path_ text box (e.g.: in our case, we used the most recent one from: http://ftp.nluug.nl/ftp/pub/os/Linux/distr/CentOS/7/isos/x86_64/)
 3. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while it is being created. When it is created it will come to status _READY_.
+
+>**NOTE:**  
+>**For Ubuntu:** At the _Image location_ step above replace with the URL of the ISO of your prefferable Ubuntu distribution (e.g.: in our case, we used the most recent one from: http://ftp.nluug.nl/ftp/pub/os/Linux/distr/ubuntu-releases/17.04/)
 
 ### Create a template
 
@@ -95,7 +102,7 @@ We will now create a VM and run the CentOS installation on it.
 3. **On the UI:** We are ready defining the VM, so click on the green _Create_ button at the bottom of the form. A new VM will show on the _Virtual Machines_ list. It will go through several states (e.g.: PENDING, PROLOG...) until it reaches the RUNNING state. 
 4. **On the UI:** You can then start operating within your VM. Click on the _screen_-like button that you can see to the right of your VM on the list. It will pop-up the VNC console, so you should be able to see the welcome screen of your CentOS installation.
   * Now you need to install CentOS, by following the steps you would normally follow (note, however, that at this point you have no network connection unless you define it manually).
-  * Create a root and (optionally) a user account in order to login to the VM for the first time. This would allow setting up conextualisation in a later step.
+  * Create a root and (optionally) a user account in order to login to the VM for the first time. This would allow setting up contextualisation in a later step.
 5. **On the UI:** Once the installation is complete and you are prompted to reboot the machine, go back to the UI dashboard and shut down the VM from the UI. For this, tick the box next to your freshly installed Centos VM and select from the drop down red icon _Terminate_. Wait until it disappears from the VM list. Next we will remove all the installation media and prepare your VM for production.
 
 
@@ -126,6 +133,8 @@ Once you have installed and configured your CentOS, you do not need the installa
 
 From now on, you will use this `template` to run your VM.
 
+>**NOTE:**  
+>**For Ubuntu:** On *step 8* above where you select the contextualisation package make sure you check the box for debian which is the `file` **one-context_4.14.1.deb**
 
 ## Configure contextualization
 
@@ -144,6 +153,9 @@ mount -t iso9660 -L CONTEXT -o ro /mnt
 yum install /mnt/*.rpm
 ```
 
+>**NOTE:**  
+>**For Ubuntu:** Install the .deb file as: `sudo dpkg -i /mnt/*.deb`
+
 Once the rpm is installed you may optionally remove the _CONTEXT_ file from your template (_Context_ tab and then _Files_).
 
 4. **On the VM:** You can reboot your CentOS now within the VM. When it boots up, you should be able to browse the Internet now. You can also test SSH-ing into your VM with your private key (`ssh root@145.100.mmm.nnn`, where you should replace _mmm_ and _nnn_ to match the IP address of your VM).
@@ -154,3 +166,10 @@ Once the rpm is installed you may optionally remove the _CONTEXT_ file from your
 >Alternatively, you can use [cloud-init](http://cloudinit.readthedocs.org/en/latest/index.html) as a contextualization configurer. CentOS has support for it via the standard yum repos, so you can install it via `yum install cloud-init`. Our tests indicate that network works, but there does not seem to be a default user configured to use public/private keys to SSH to the VM.
 >
 >A possible way to do it: you can first use the one-context-XXX.rpm package, reboot to let the network be contextualised, then install cloud-init and after that uninstall the one-context-XXX.rpm package.
+
+
+>**NOTE:**  
+>**For Ubuntu:**
+> * In case that you encounter the problem not having internet access to your VM, [here](https://doc.hpccloud.surfsara.nl/connection_problem_ubuntu1404) a is a quick fix.
+> * In case that you cannot connect to your VM via `ssh`, then check whether `openssh-server` is installed. If not, install with `apt-get install openssh-server`.
+> * When you attempt to terminate your VM from the UI with the `Terminate` button in Ubuntu Desktop environment, a shutdown prompt window pops up. To disable this option, open a terminal and insert this command: `gsettings set com.canonical.indicator.session suppress-logout-restart-shutdown true`
