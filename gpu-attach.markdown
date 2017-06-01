@@ -70,30 +70,39 @@ sudo apt purge nvidia-* libcuda1-*
 sudo apt install build-essential libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
 wget http://us.download.nvidia.com/XFree86/Linux-x86_64/367.35/NVIDIA-Linux-x86_64-367.35.run
 sudo sh NVIDIA-Linux-x86_64-367.35.run
-
-reboot
 ```
 
 * Check witn `nvidia-smi` that the card is detected. Should show something like this:
 
-```bash
+>
+```
+Thu Jun  1 10:33:21 2017
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 367.35                 Driver Version: 367.35                    |
 |-------------------------------+----------------------+----------------------+
 | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
 |===============================+======================+======================|
-|   0  GRID K2             Off  | 0000:01:01.0      On |                  Off |
-| N/A   30C    P8    27W / 117W |     16MiB /  4036MiB |      0%      Default |
+|   0  GRID K2             Off  | 0000:01:01.0     Off |                  Off |
+| N/A   37C    P0     1W / 117W |      0MiB /  4036MiB |      0%      Default |
 +-------------------------------+----------------------+----------------------+
-                                                                               
+
 +-----------------------------------------------------------------------------+
 | Processes:                                                       GPU Memory |
 |  GPU       PID  Type  Process name                               Usage      |
 |=============================================================================|
-|    No running processes found                                               |
+|  No running processes found                                                 |
 +-----------------------------------------------------------------------------+
 ```
+
+* Now, reboot the OS and try `nvidia-smi` again:
+
+```
+reboot
+nvidia-smi
+```
+
+> You should get the same 
 
 * Download CUDA installer: 
 
