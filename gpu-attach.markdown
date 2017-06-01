@@ -74,7 +74,7 @@ sudo sh NVIDIA-Linux-x86_64-367.35.run
 
 * Check witn `nvidia-smi` that the card is detected. Should show something like this:
 
->
+
 ```
 Thu Jun  1 10:33:21 2017
 +-----------------------------------------------------------------------------+
