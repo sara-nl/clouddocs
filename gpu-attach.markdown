@@ -67,7 +67,7 @@ To make full use of the GPU capabilities please install the corresponding driver
 
 ```bash
 sudo apt purge nvidia-* libcuda1-*
-sudo apt install libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
+sudo apt install build-essential libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
 wget http://us.download.nvidia.com/XFree86/Linux-x86_64/367.35/NVIDIA-Linux-x86_64-367.35.run
 sudo sh NVIDIA-Linux-x86_64-367.35.run
 
