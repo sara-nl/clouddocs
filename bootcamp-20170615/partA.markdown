@@ -19,7 +19,7 @@ This is part A of the HPC Cloud session of [SURF Research Boot Camp](.). Here ar
 2. [Add your public SSH key](#add-your-public-ssh-key)
 3. [My first VM](#my-first-vm)
 
-### 1. Access the User Interface
+### <a name="access-the-user-interface"></a> 1. Access the User Interface
 
 The User Interface (UI) is the web site that allows you to manage your _Virtual Machines_ (VMs) on the HPC Cloud.
 
@@ -50,16 +50,20 @@ Let's check whether changing the password worked.
 
 From now on, you can use your new password to log in to the [UI](https://ui.hpccloud.surfsara.nl/). Please login again.
 
-### 2. Add your public SSH key
+### <a name="add-your-public-ssh-key"></a> 2. Add your public SSH key
 
 To complete the setup for your HPC Cloud account, you need to **add an SSH public key to your profile**. This is a one-time task.
+
+<i class="fa fa-apple" aria-hidden="true"></i>
+<i class="fa fa-linux" aria-hidden="true"></i>
+<i class="fa fa-windows" aria-hidden="true"></i>
 
 * First, read about SSH and public keys on the [private/public keys](/SSHkey) page.<br />
 If you are already familiar with SSH public keys, you can skip reading this page.
 * You need a private/public key pair, usually stored in your `~/.ssh/` directory. Create one now if needed.
 * Check with the command `ls ~/.ssh`: you should see files `id_rsa` and `id_rsa.pub`.
 
-Next, you will copy the public SSH key (`id_rsa.pub`) to the UI, but you will keep the matching private key (`id_rsa`) safe in your laptop.
+Next, you will copy the public SSH key (`id_rsa.pub`) to the UI while keeping the matching private key (`id_rsa`) safe in your laptop.
 
 * Copy the content of your **public** SSH key to the clipboard (for example, by doing `cat ~/.ssh/id_rsa.pub`, then selecting and copying all the text).
 * Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *<i class="fa fa-cog"></i> Settings* from the *buddy* icon  <i class="fa fa-user"></i>.
@@ -68,9 +72,9 @@ Next, you will copy the public SSH key (`id_rsa.pub`) to the UI, but you will ke
 * There is no _Save_ button; click outside the text box to complete your action.
 * Briefly check the contents of the Public SSH Key box against your public key and verify they match: it should start with `ssh-rsa AAAAB`...
 
-### 3. My first VM
+### <a name="my-first-vm"></a>3. My first VM
 
-Using the HPC Cloud mostly revolves around making and destroying VMs. This section will teach how to build a VM running Linux with the following steps:
+Working with the HPC Cloud service mostly revolves around building and destroying VMs. This section will teach how to build a VM running Linux with the following steps:
 
 * Import a SURFsara pre-made `image` with a Linux operating system installed.
 * Review the shape of the VM (so-called `template`) to match the resources needed.
@@ -83,25 +87,23 @@ SURFsara HPC Cloud provides ready-made `appliances` to their users. These applia
 
 Let's create your first VM to run on the HPC Cloud 'Oort'!
 
--->
-
 * (if needed) Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
-* Choose the *<i class="fa fa-truck"></i> AppMarket* tab on the left menu of the screen and then *Appliances*.
-* Select the `appliance` **Ubuntu 14.04 Desktop** by clicking on the tick-box next to it.
-* Click on the _Import_ button at the top-right corner of the screen.
-* A dialogue will pop up, asking you for a few details. Edit as follows:
-  * Select the Datastore for the images: **147: Courses_img**.
-  * Image Name: **Course Image**.
-  * Template Name: **Course Template**.
-* Finally, click the blue *Import* button. This will start importing the `appliance` from the AppMarket. You can close this dialogue.
+* Choose the Storage tab on the left menu of the screen and then Apps option <i class="fa fa-cloud-download" aria-hidden="true"></i>.
+* Select the `appliance` **Ubuntu 14.04 Desktop CI** by clicking on the tick-box next to it.
+* Click on the OpenNebula button at the top of the screen. 
+* A dialogue box will pop up asking you for a few details. Edit as follows:
+  * Name: **Course Image**.
+  * VM Template Name: **Course Template**.
+  * Select the Datastore to store the resource: **147: Courses_img**.
+* Finally, click the blue *Download* button. This step will import the appliance from the AppMarket to your work environment.
 
 > **Food for brain:**
 >
-> * When you click on an `appliance` (anywhere on the row except for the tick-box), then you can see detailed information about that `appliance`. Can you see this detailed information about the `appliance` we are using in this exercise?
-> * When you import an `appliance`, this will create one `image` and one `template`, as explained during the introductory presentation. In the UI you have an _Images_ tab and another _Templates_ tab under the _<i class="fa fa-cloud"></i> Virtual Resources_ entry on the left menu. You should see your new `image` and `template` there.
+> * When you click on an `appliance` (anywhere on the row except for the tick-box), you can see detailed information about the `appliance`. Can you see the information about the `appliance` we are using in this exercise?
+> * When you import an `appliance`, an `image` and a `template` are created as explained during the introductory presentation. You can verify that the process is complete by inspecting the Images section <i class="fa fa-download" aria-hidden="true"></i> in the Storage tab, and the VMs section <i class="fa fa-file-o" aria-hidden="true"></i> in the Templates tab. You should see your new image and template there.
   * Can you see them?
-  * What is the STATUS of the `image` just after it you import it?
-  * Refresh with the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button until it is READY.
+  * What is the Status of the `image` just after you import it?
+  * Refresh the images list <i class="fa fa-refresh"></i>  until the Status is READY.
 
 #### Review the Template  
 
