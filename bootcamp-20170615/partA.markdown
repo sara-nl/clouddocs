@@ -12,7 +12,7 @@ layout: default
 </div>
 </div>
 
-This is part A of the Tutorial [SURF Research Boot Camp 2017-06-15](.).
+This is part A of the HPC Cloud session of [SURF Research Boot Camp](.).
 
 Here are your first steps:
 
@@ -22,7 +22,7 @@ Here are your first steps:
 
 ### 1. Access the User Interface
 
-The UI (short for User Interface) is the web site that allows you to manage your _Virtual Machines_ (or VMs) on the HPC Cloud. Let's log in.
+The User Interface (UI) is the web site that allows you to manage your _Virtual Machines_ (VMs) on the HPC Cloud.
 
 #### Log in to the UI
 
