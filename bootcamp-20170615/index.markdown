@@ -29,7 +29,7 @@ This session is part of the Compute Track programme of the third [SURF Research 
 
 > * 10:15 - 11:30 Introduction to UNIX
 > * **12:30 - 14:30 HPC Cloud** 
->     * 12:30 Presentation: SURFsara HPC Cloud (Nuno Ferreira)   
+>     * 12:30 Presentation: Introduction to SURFsara HPC Cloud (Nuno Ferreira)   
 >     * 13:00 Hands-on (Ander Astudillo, Maithili Maithili Kalamkar, Nuno Ferreira) 
 >     * 14:30 End 
 > * 15:00 - 17:00 Introduction to cluster computing
@@ -53,13 +53,13 @@ Participants should bring a laptop with Internet connection with a browser. A se
 
 
 ## <a name="hands-on"></a> Hands-on
-The hands-on tutorial has two parts. The exercises in part *A* will give you a first grasp for the `basic` usage of HPC Cloud. Once you have completed and understood this, then continue to the *Extras* part with more `advanced` examples on the HPC Cloud.
+The hands-on tutorial has two parts. The exercises in *part A* will give you a first grasp for the `basic` usage of the HPC Cloud environment. Once you feel confortable continue to the *Extras* part with more `advanced` examples.
 
   * [Part A](partA)
   * Extras:
-    * [Extras - _&pi;_](extraPI)
-    * [Extras - Detach from Work](extraDetachWork)
+    * [&pi;_](extraPI)
+    * [Detach from Work](extraDetachWork)
 
 ## <a name="presentations"></a> Presentation
 
-* [Introduction to the HPC Cloud](presentations/2016.11.10 - ResearchBootCamp.pdf)
+* [Introduction to SURFsara HPC Cloud](presentations/intro-hpc-cloud-20170615.pdf)
