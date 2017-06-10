@@ -2,7 +2,8 @@
 layout: default
 ---
 
-# SURF Research Boot Camp 2017-06-15 - part A
+# SURF Research Boot Camp 2017-06-15
+## Part A
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![TUEindhoven logo](/images/TUEindhoven_logo.png)
@@ -31,15 +32,16 @@ The User Interface (UI) is the web site that allows you to manage your _Virtual 
 * You will receive the password from the workshop facilitators.
 * Hit the `Login` button.
 
-The first time you login, you are presented with a simple dashboard showing the resources your are currently consuming.
+Once you login, feel free to explore the menu's and tabs offered by the OpenNebula UI. These will offer most of the functionatilities a user needs to manage and operate VM's.
 
 #### Change your password
 
 It is a good practice to change the initial password provided, to ensure the work environment is yours.
 
 * Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen.
-* Click it, select *<i class="fa fa-cog"></i> Settings* and then use the _Change Password_ button.
-* On the new screen, fill in a new password (twice) and click the *Update Password* button to submit it.
+* Click it and select *<i class="fa fa-cog"></i> Settings* 
+* Click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i> to the right on the *Password* field
+* On the new screen, fill in a new password (twice) and click the *Change* button.
 
 #### Logout
 
@@ -48,7 +50,7 @@ Let's check whether changing the password worked.
 * Click your *buddy* icon  <i class="fa fa-user"></i>.
 * Choose *<i class="fa fa-power-off"></i> Sign Out*.
 
-From now on you can use your new password to log in to the [UI](https://ui.hpccloud.surfsara.nl/). Please login again.
+From now on, you can use your new password to log in to the [UI](https://ui.hpccloud.surfsara.nl/). Please login again.
 
 ### 2. Add your public SSH key
 
@@ -56,17 +58,17 @@ To complete the setup for your HPC Cloud account, you need to **add an SSH publi
 
 * First, read about SSH and public keys on the [private/public keys](/SSHkey) page.<br />
 If you are already familiar with SSH public keys, you can skip reading this page.
-* You need a private/public key pair in your `~/.ssh/` directory. Create one now if needed.
+* You need a private/public key pair, usually stored in your `~/.ssh/` directory. Create one now if needed.
 * Check with the command `ls ~/.ssh`: you should see files `id_rsa` and `id_rsa.pub`.
 
 Next, you will copy the public SSH key (`id_rsa.pub`) to the UI, but you will keep the matching private key (`id_rsa`) safe in your laptop.
 
-* Copy the content of your **public** SSH key to the clipboard (for example, by doing `cat ~/.ssh/id_rsa.pub`, then selecting and copying all of that text).
+* Copy the content of your **public** SSH key to the clipboard (for example, by doing `cat ~/.ssh/id_rsa.pub`, then selecting and copying all the text).
 * Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *<i class="fa fa-cog"></i> Settings* from the *buddy* icon  <i class="fa fa-user"></i>.
-* Locate the section _Public SSH Key_ (if needed, click the *<i class="fa fa-info-circle"></i> Info* icon) and click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
+* Locate the section _Public SSH Key_ and click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
 * Paste the content of your public SSH key file into the text box.
-* There is no _Save_ button; click outside the text box to complete your action (e.g.: on the words "Public SSH Key").
-* Check the contents of box against your public key and verify they match: it should start with `ssh-rsa AAAAB`...
+* There is no _Save_ button; click outside the text box to complete your action.
+* Briefly check the contents of the Public SSH Key box against your public key and verify they match: it should start with `ssh-rsa AAAAB`...
 
 ### 3. My first VM
 
