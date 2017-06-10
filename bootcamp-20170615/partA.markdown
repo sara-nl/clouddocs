@@ -77,8 +77,8 @@ Next, you will copy the public SSH key (`id_rsa.pub`) to the UI while keeping th
 Working with the HPC Cloud service mostly revolves around building and destroying VMs. This section will teach how to build a VM running Linux with the following steps:
 
 * Import a SURFsara pre-made `image` with a Linux operating system installed.
-* Review the shape of the VM (so-called `template`) to match the resources needed.
-* Instante the `template` to run your first VM.
+* Review the VM attributes defined in the `template`.
+* Instantiate the `template` to run your first VM.
 * Access your VM and gracefully shut it down.
 
 #### Import an appliance from the AppMarket
@@ -101,23 +101,19 @@ Let's create your first VM to run on the HPC Cloud 'Oort'!
 >
 > * When you click on an `appliance` (anywhere on the row except for the tick-box), you can see detailed information about the `appliance`. Can you see the information about the `appliance` we are using in this exercise?
 > * When you import an `appliance`, an `image` and a `template` are created as explained during the introductory presentation. You can verify that the process is complete by inspecting the Images section <i class="fa fa-download" aria-hidden="true"></i> in the Storage tab, and the VMs section <i class="fa fa-file-o" aria-hidden="true"></i> in the Templates tab. You should see your new image and template there.
-  * Can you see them?
-  * What is the Status of the `image` just after you import it?
-  * Refresh the images list <i class="fa fa-refresh"></i>  until the Status is READY.
+>  * Can you see them?  
+>   * What is the Status of the `image` just after you import it?   
+>   * Refresh the images list <i class="fa fa-refresh"></i> until the Status is READY.
 
-#### Review the Template  
+#### Review the Template
 
-When you imported the `appliance` from the AppMarket, it created an `image` and a `template` for you. In the `template` you can define how many cores you want your VM to have, how much RAM memory, what storage drives, which network connections, etc. Following the instructions of the extended information of the `appliance` that you imported, we will have to adapt the `template` before we can use it to create VMs out of it.
+A `template` file consists of a set of attributes that define a Virtual Machine. For example, you can define how many cores you want your VM to have, how much RAM memory, what storage drives to attach, which network connections, etc. To get a general overview of the attributes that define a VM, proceed as follows:
 
-Edit the imported `template` with these steps:
-
-* Go to the _Templates_ tab under _<i class="fa fa-cloud"></i> Virtual Resources_ on the left menu.
-* Find the `template` you just imported, and click on it (anywhere **except** the tick-box).
-* Click on the _Update_ button on the top-right of the screen to start editing the template.
-* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...). Leave the default values, **except** for the following:  
-  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or nics) for your VM. Select the row **Name: internet** (click once on it). You can see the feedback below:  
-![youselectednetwork](/images/youselectednetwork.png)
-* Click the green button _Update_ at the top, to save your changes.
+* Go to the VMs section <i class="fa fa-file-o" aria-hidden="true"></i> under the _Templates_ tab on the left menu.
+* Find the `template` created previously and check the tick-box.
+* Click on the _Update_ button on the top of the screen to start editing the template.
+* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_...) to get a general overview of the attributes that define a VM. Leave all default values unchanged.
+* No changes were made, you can click on the VMs section <i class="fa fa-file-o" aria-hidden="true"></i> to leave the `template` inspection mode. For your reference, if any changes are made to the `template` (e.g. increasing the amount of CPUs), you would click on the green button _Update_ instead.
 
 #### Make the image persistent
 
