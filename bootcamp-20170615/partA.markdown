@@ -13,9 +13,7 @@ layout: default
 </div>
 </div>
 
-This is part A of the HPC Cloud session of [SURF Research Boot Camp](.).
-
-Here are your first steps:
+This is part A of the HPC Cloud session of [SURF Research Boot Camp](.). Here are the topics to be covered:
 
 1. [Access the user interface](#access-the-user-interface)
 2. [Add your public SSH key](#add-your-public-ssh-key)
