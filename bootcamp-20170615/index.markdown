@@ -38,7 +38,7 @@ SURFsara has been operating the HPC Cloud as an Infrastructure as a Service (`Ia
 The HPC Cloud has a powerful user interface which grants access to high-performant compute and storage nodes.
 The user interface and cloud software relies on [OpenNebula](http://opennebula.org/) and the cluster of resources available is called _Oort_, after the [Oort cloud](https://en.wikipedia.org/wiki/Oort_cloud).
 
-This particular course aims to introduce the workshop participants to the HPC Cloud by providing an introductory lecture to the service and a set hands-on exercises to be run on the _Oort_ production infrastructure.
+This particular course aims to introduce the participants to the HPC Cloud by providing an introductory lecture to the service and a set hands-on exercises to be run on the _Oort_ production infrastructure.
 
 
 ## <a name="preparation"></a>Preparation
