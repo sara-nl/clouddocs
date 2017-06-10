@@ -32,7 +32,7 @@ The User Interface (UI) is the web site that allows you to manage your _Virtual 
 * You will receive the password from the workshop facilitators.
 * Hit the `Login` button.
 
-Once you login, feel free to explore the menu's and tabs offered by the OpenNebula UI. These will offer most of the functionatilities a user needs to manage and operate VM's.
+Once you login, feel free to explore the menus and tabs offered by the OpenNebula UI. These will offer most of the functionatilities a user needs to manage and operate VM's.
 
 #### Change your password
 
@@ -72,18 +72,22 @@ Next, you will copy the public SSH key (`id_rsa.pub`) to the UI, but you will ke
 
 ### 3. My first VM
 
-Using the HPC Cloud revolves around making Virtual Machines (VM). We provide the HPC Cloud **AppMarket** to facilitate creating simple VMs. The AppMarket contains common ready-made `appliances` for you to pick and use. In this section you will use the AppMarket to build your first VM with the following steps:
+Using the HPC Cloud mostly revolves around making and destroying VMs. This section will teach how to build a VM running Linux with the following steps:
 
-* Importing a pre-made `image`, with a Linux operating system installed.
-* Reviewing the shape of the VM (so-called `template`) to match what you want.
-* Instantiating the `template` to run your first VM.
-* Accessing your VM and shutting it down.
-
-Let's run your first VM on the HPC Cloud.
+* Import a SURFsara pre-made `image` with a Linux operating system installed.
+* Review the shape of the VM (so-called `template`) to match the resources needed.
+* Instante the `template` to run your first VM.
+* Access your VM and gracefully shut it down.
 
 #### Import an appliance from the AppMarket
 
-* Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
+SURFsara HPC Cloud provides ready-made `appliances` to their users. These appliances are available in the 'Apps' option of the Storage menu in the HPC Cloud UI. This is meant to help users instantiating secure VM’s quickly.
+
+Let's create your first VM to run on the HPC Cloud 'Oort'!
+
+-->
+
+* (if needed) Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
 * Choose the *<i class="fa fa-truck"></i> AppMarket* tab on the left menu of the screen and then *Appliances*.
 * Select the `appliance` **Ubuntu 14.04 Desktop** by clicking on the tick-box next to it.
 * Click on the _Import_ button at the top-right corner of the screen.
