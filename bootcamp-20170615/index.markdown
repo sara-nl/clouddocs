@@ -43,7 +43,7 @@ This particular course aims to introduce the workshop participants to the HPC Cl
 
 ## <a name="preparation"></a>Preparation
 
-This workshop assumes some familiarity with the [Unix command line](http://cli.learncodethehardway.org/book/) and SSH, but is not a prerequisite.
+This workshop assumes some familiarity with [Unix](https://learncodethehardway.org/unix/) and SSH, but is not a prerequisite.
 
 Participants should bring a laptop with Internet connection with a browser. A set of non-default tools, which depend on your machine operating system, should be installed: 
 
