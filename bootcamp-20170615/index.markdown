@@ -24,14 +24,14 @@ layout: default
 ## <a name="general"></a>General Information
 This session is part of the Compute Track programme of the third [SURF Research Bootcamp](https://surfresearchbootcamp.nl/). Here is the agenda for the session:
 
-> Date: 15-06-2017
-Location: Eindhoven University of Technology
+> Date: 15-06-2017     
+> Location: Eindhoven University of Technology
 
 > * 10:15 - 11:30 Introduction to UNIX
-> * **12:30 - 14:30 HPC Cloud**
-     * 12:30 Presentation: HPC Cloud at SURFsara (Nuno Ferreira)  
-     * 13:00 Hands-on (Ander Astudillo, Maithili Maithili Kalamkar, Nuno Ferreira)
-     * 14:30 End**
+> * **12:30 - 14:30 HPC Cloud** 
+>     * 12:30 Presentation: HPC Cloud at SURFsara (Nuno Ferreira)   
+>     * 13:00 Hands-on (Ander Astudillo, Maithili Maithili Kalamkar, Nuno Ferreira) 
+>     * 14:30 End 
 > * 15:00 - 17:00 Introduction to cluster computing
 
 SURFsara has been operating the HPC Cloud as an Infrastructure as a Service (`IaaS`) since 2013.
