@@ -29,7 +29,7 @@ This session is part of the Compute Track programme of the third [SURF Research 
 
 > * 10:15 - 11:30 Introduction to UNIX
 > * **12:30 - 14:30 HPC Cloud** 
->     * 12:30 Presentation: HPC Cloud at SURFsara (Nuno Ferreira)   
+>     * 12:30 Presentation: SURFsara HPC Cloud (Nuno Ferreira)   
 >     * 13:00 Hands-on (Ander Astudillo, Maithili Maithili Kalamkar, Nuno Ferreira) 
 >     * 14:30 End 
 > * 15:00 - 17:00 Introduction to cluster computing
@@ -43,16 +43,13 @@ This particular course aims to introduce the workshop participants to the HPC Cl
 
 ## <a name="preparation"></a>Preparation
 
-Participants should bring a laptop with Internet connection and a proper browser.
-Prior experience in [Linux commands](http://cli.learncodethehardway.org/book/) will help but is not a prerequisite.
+This workshop assumes some familiarity with the [Unix command line](http://cli.learncodethehardway.org/book/) and SSH, but is not a prerequisite.
 
-So what you need for this tutorial:
+Participants should bring a laptop with Internet connection with a browser. A set of non-default tools, which depend on your machine operating system, should be installed: 
 
-* A computer with full Internet access. The room provides WiFi.
-* A browser (Chrome or Firefox will do nicely).
-* An SSH client.
-  * Linux and Mac users: don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
-  * Windows users: download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between the `-32-bit.exe` or the `-64-bit.exe`.
+* Linux – nothing to be installed
+* Mac OSX – install [XQuartz](https://www.xquartz.org)
+* Windows – install [MobaXterm](http://mobaxterm.mobatek.net)
 
 
 ## <a name="hands-on"></a> Hands-on
