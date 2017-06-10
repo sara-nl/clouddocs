@@ -31,22 +31,24 @@ The User Interface (UI) is the web site that allows you to manage your _Virtual 
 * You will receive the password from the workshop facilitators.
 * Hit the `Login` button.
 
+The first time you login, you are presented with a simple dashboard showing the resources your are currently consuming.
+
 #### Change your password
 
-Let's change the initial password now.
+It is a good practice to change the initial password provided, to ensure the work environment is yours.
 
 * Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen.
-* Click it, select *<i class="fa fa-cog"></i> Settings* and then use the _Update password_ button.
-* On the new screen, fill in a new password (twice) and click the *Change* button to submit it.
+* Click it, select *<i class="fa fa-cog"></i> Settings* and then use the _Change Password_ button.
+* On the new screen, fill in a new password (twice) and click the *Update Password* button to submit it.
 
 #### Logout
 
-Let's check whether it worked.
+Let's check whether changing the password worked.
 
 * Click your *buddy* icon  <i class="fa fa-user"></i>.
 * Choose *<i class="fa fa-power-off"></i> Sign Out*.
 
-From now on you can use your new password to log in to the [UI](https://ui.hpccloud.surfsara.nl/). Do so now.
+From now on you can use your new password to log in to the [UI](https://ui.hpccloud.surfsara.nl/). Please login again.
 
 ### 2. Add your public SSH key
 
