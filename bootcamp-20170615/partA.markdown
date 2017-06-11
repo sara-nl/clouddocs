@@ -54,7 +54,7 @@ From now on, you can use your new password to log in to the [UI](https://ui.hpcc
 
 To complete the setup of your HPC Cloud account, you need to **add a Secure Shell (SSH) public key to your profile**. This is a one-time task. 
 
-* An SSH public/private key pair must be created in your local computer. In the previous session "Introduction to UNIX" of this Compute Track, you created such a key pair. If you are not familiar with the process of creating the key pair, you can read about it in the [public/private keys](/SSHkey) documenatation page.
+* An SSH public/private key pair must be created in your local computer. In the previous session "Introduction to UNIX" of this Compute Track, you created such a key pair. If you are not familiar with the process of creating the key pair, you can read about it in the [public/private keys](/SSHkey) documentation page.
 * The public/private key pair is usually stored in your `~/.ssh/` directory. Check with the command `ls ~/.ssh`; you should see the files `id_rsa` and `id_rsa.pub`.
 
 Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI. The matching private key (`id_rsa`) remains safe in your laptop.
