@@ -77,9 +77,9 @@ Working with the HPC Cloud service mostly revolves around building and destroyin
 
 #### Import an appliance from the AppMarket
 
-SURFsara HPC Cloud provides ready-made `appliances` to their users. These appliances are available in the 'Apps' option of the Storage menu in the HPC Cloud UI. This is meant to help users instantiating secure VM’s quickly.
+SURFsara HPC Cloud provides ready-made `appliances` to their users. These appliances are available in the `Apps` option of the Storage menu in the HPC Cloud UI. This is meant to help users instantiating secure VM’s quickly.
 
-Let's create your first VM to run on the HPC Cloud 'Oort'!
+Let's create your first VM to be run on the HPC Cloud Oort!
 
 * Choose the Storage tab on the left menu of the screen and then _Apps_ option <i class="fa fa-cloud-download" aria-hidden="true"></i>.
 * Select the `appliance` **Ubuntu 14.04 Desktop CI** by clicking on the tick-box next to it.
