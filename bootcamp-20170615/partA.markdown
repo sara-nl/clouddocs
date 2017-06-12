@@ -2,8 +2,7 @@
 layout: default
 ---
 
-# SURF Research Boot Camp 2017-06-15
-## Part A
+# SURF Research Boot Camp 2017-06-15 <br/> Part A
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![TUEindhoven logo](/images/TUEindhoven_logo.png)
