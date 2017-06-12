@@ -171,28 +171,28 @@ ssh ubuntu@145.100.5X.YZT
 
 If everything went well, the first time you try to log in, your terminal will ask you to add the VM's IP to the list of known hosts. Type *Yes*, in that case.
 
-You should now see a similar line in your terminal: `ubuntu@ip-145...:~$`
+You should now see a similar line in your terminal: `ubuntu@145...:~$`
 
 This means that you have logged in successfully to your Virtual Machine!
 
 * Look around a bit, make yourself familiar with the system:
 
 ```sh
-ubuntu@ip-145...:~$ ls ~
-ubuntu@ip-145...:~$ whoami
+ubuntu@145...:~$ ls ~
+ubuntu@145...:~$ whoami
 ```
 
 * Create a file:
 
 ```sh
-ubuntu@ip-...:~$ echo "Some text ..." > myfile
-ubuntu@ip-...:~$ cat myfile
+ubuntu@145...:~$ echo "Some text ..." > myfile
+ubuntu@145...:~$ cat myfile
 ```
 
 * Logout by typing `logout` or `ctrl-D` in your terminal (do **not** issue any shutdown command):
 
 ```sh
-ubuntu@ip-...:~$ logout
+ubuntu@145...:~$ logout
 ```
 
 > **Food for brain:**
