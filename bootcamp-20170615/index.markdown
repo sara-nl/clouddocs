@@ -17,8 +17,8 @@ layout: default
 * [Hands-on](#hands-on) <br>
   * [Part A](partA)
   * Extras:
-    * [Extras - _&pi;_](extraPI)
-    * [Extras - Detach from Work](extraDetachWork)
+    * [Calculate _&pi;_](extraPI)
+    * [Detach from Work](extraDetachWork)
 * [Presentation](#presentations)
 
 ## <a name="general"></a>General Information
