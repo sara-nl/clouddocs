@@ -57,7 +57,7 @@ chmod u+x example.sh
 
 ## First detach
 
-- Log in to you VM,
+- Log in to your VM,
 - run the example script:
 
 ```bash
@@ -79,7 +79,7 @@ pstree
 
 ## Using `nohup`
 
-- Log in to you VM,
+- Log in to your VM,
 - use `nohup` to run the example script in the background:
 
 ```bash
