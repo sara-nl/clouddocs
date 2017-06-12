@@ -57,6 +57,7 @@ The hands-on tutorial has two parts. The exercises in *part A* will give you a f
 
   * [Part A](partA)
   * Extras:
+    * [Calculate _&pi;_](extraPI)
     * [&pi;_](extraPI)
     * [Detach from Work](extraDetachWork)
 
