@@ -12,7 +12,7 @@ layout: default
 </div>
 </div>
 
-This is an exercise from the (extras) part of the Tutorial [SURF Research Boot Camp 2017-06-15](.).
+This is an exercise from the Extras part of the Tutorial [SURF Research Boot Camp 2017-06-15](.).
 
 This exercise lets you experience the difference between local and remote computation: you can organize your work so that it continues after you close your laptop.
 
@@ -151,7 +151,7 @@ screen
 - the view is restored to the situarion before you started `screen` and line says something similar to
  
 ``` 
-[detached from 14691.pts-0.ip-145-100-58-55]
+[detached from 14691.pts-0.145]
 ```
 
 - wait several seconds and reconnect: use the `-r` flag
