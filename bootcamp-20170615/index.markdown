@@ -22,7 +22,7 @@ layout: default
 * [Presentation](#presentations)
 
 ## <a name="general"></a>General Information
-This session is part of the Compute Track programme of the third [SURF Research Bootcamp](https://surfresearchbootcamp.nl/). Here is the agenda for the session:
+This session is part of the Compute Track programme of the third [SURF Research Bootcamp](https://surfresearchbootcamp.nl/). Here is the agenda for the HPC Cloud session:
 
 > Date: 15-06-2017     
 > Location: Eindhoven University of Technology
