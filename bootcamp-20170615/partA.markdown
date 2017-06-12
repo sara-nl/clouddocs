@@ -39,7 +39,7 @@ It is a good practice to change the initial password provided, to ensure the wor
 * Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen.
 * Click it and select *<i class="fa fa-cog"></i> Settings* 
 * Click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i> to the right on the *Password* field
-* On the new screen, fill in a new password (twice) and click the *Change* button.
+* On the pop-up dialog displayed fill in a new password (twice) and click the *Change* button.
 
 #### Logout
 
@@ -118,47 +118,47 @@ When an appliance is imported from the _Apps_ <i class="fa fa-cloud-download" ar
 * Switch the value to _Yes_ by clicking on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i> by selecting from the drop-down list.
 * Finally, click anywhere else so that the change is set.
 
--->
+As mentioned earlier, a `template` is just a description of the virtual machine that we want to build. Let's create the actual virtual machine from it.
 
-A `template` is just a description of the virtual machine that we want to build. Let's create the actual virtual machine from it.
-
-* Go to the _Virtual Machines_ section on the left menu. This displays an overview of all the existing VMs that you have the right to see. This list is (probably) empty at the moment.
-* Click on the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button to bring up a screen to create a VM.
-* Select the *Course Template* (click once on it). Since this is your first `template`, there is only one item in the list. You can see the feedback below:  
+* Go to the _VMs_ section below _Instances_ on the left menu. 
+  An overview of all existing VMs that you have the priviledges to see, are displayed.
+  This list is (probably) empty at the moment, because you have not yet started any VM.
+* Click the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ to bring up a "Create Virtual Machine" screen.
+* Select the *Course Template* by clicking once at it. Since this is your first `template`, there is only one item in the list. You can see the feedback:  
 ![select_template](/images/select_template2.png)
-* Give your virtual machine a name: **My First VM**. This name is also used as the VM's host name.
-* Number of instances: **1**.
-* Click on the _Create_ button at the top of the screen.
-* Refresh the VM status by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button.
+* Find the input box for _VM name_ and give your virtual machine a name: **My First VM**. This name is also used as the VM's host name.
+* Inspect the remaining `template` attributes, for the time being do not change them **(leave "Number of instances" at 1)**.
+* Click on the green _Create_ button at the top of the screen.
+* Refresh the VM status by clicking button <i class="fa fa-refresh"></i> at the top.
 
 #### What happened?
 
 Congratulations! You have just created a fresh, clean virtual machine!
 
-Let's summarise what you have seen so far. From the menu on the left side, click on each of the tabs to inspect the information. A vertical blue bar to the left of one (and only one) tab tells you which one you are currently seeing.
+Let's summarise what you have seen so far. Click on each of the tabs on the left side menu and inspect the information provided. The most important ones at this point in time are described here:
 
-* _<i class="fa fa-tachometer"></i> Dashboard_: shows an overview of the project status, like the amount of running machines or usage statistics.
-* _<i class="fa fa-cloud"></i> Virtual Resources_:  
-  * _Images_: this is the equivalent of a hard drive. Your OS is stored on this `image`.  
-  * _Templates_:  the `template` gives your VM the shape you want. A `template` is just a recipe; not the machine itself.   
-  * _Virtual Machines_: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box, that is). Inspect the information tables that appear, which show extended details.
+* _Dashboard_ <i class="fa fa-tachometer"></i>: shows an overview of the project status, like the number of running machines or usage statistics.
+* _Instances_ &gt; _<i class="fa fa-th"></i> VMs_: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box). Inspect the information present in the different tabs providing you extended details.
+* _Templates_ &gt; _<i class="fa fa-file-o"></i> VMs_: the `template` gives your VM the shape you want. A `template` is just a recipe; not the machine itself.
+* _Storage_ &gt; _<i class="fa fa-download"></i> Images_: this is the equivalent of a hard drive. Your OS is stored on this `image`.
+* _Storage_ &gt; _<i class="fa fa-cloud-download"></i> Apps_: a list of `appliances` endorsed by SURFsara HPC Cloud team that you can use.
 
 > **NOTE:**  
->Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of cores, memory, and disk that you asked in the `template`. Keep refreshing the list by clicking on the symbol of the two arrows chasing each other, <i class="fa fa-refresh"></i>, next to green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button. When the required capacity becomes available, your VM will show the status **RUNNING**. Only then can you actually use your VM.
+>Your VM will appear in the list of virtual machines. At first, it will have the state `PENDING`. This indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of resources (cores, memory, and disk) you requested in the associated `template`. Keep refreshing the list by clicking button <i class="fa fa-refresh"></i>. When the required capacity becomes available, your VM will show the status `RUNNING`. Only then you actually use your VM.
 
 #### Log in to the VM
 
 You can interact with your VM in several ways: command-line (e.g.: SSH), VNC (UI in your browser) or a remote desktop. We will use SSH in a terminal for the time being.
 
-The way to log in to your virtual machine is the SSH key pair that you [stored in your profile](#add-your-ssh-key) earlier.
+The way to log in to your virtual machine is making use of the SSH key pair that you [stored in your profile](#add-your-public-ssh-key) earlier.
 
 **Commandline access - SSH**  
 
-* First find the your VM's IP address. Your VM's IP address is shown on in the _IPs_ column from the virtual machines list on the UI.
+* First find your VM's IP address. It is shown in the _IPs_ column from the virtual machines list on the UI and also in the _Network_ tab of the VM's details page.
 
-* On your laptop, start a terminal (in Mac/Linux) or GitBash (in Windows).
+* On your laptop, start a terminal (in Mac/Linux). For windows users, a terminal can be started from the MobaXterm toolbox.
 
-* In your terminal, type the following command to connect to your VM:
+* Type the following command on the terminal to establish a connection with your VM:
 
 >**NOTE:**
 >
@@ -172,15 +172,15 @@ ssh ubuntu@145.100.5X.YZT
 
 If everything went well, the first time you try to log in, your terminal will ask you to add the VM's IP to the list of known hosts. Type *Yes*, in that case.
 
-You should now see a similar line in your terminal: `ubuntu@ip-145-100-5X-YZT:~$`
+You should now see a similar line in your terminal: `ubuntu@ip-145...:~$`
 
-This means that you are logged in successfully to your Virtual Machine!
+This means that you have logged in successfully to your Virtual Machine!
 
 * Look around a bit, make yourself familiar with the system:
 
 ```sh
-ubuntu@ip-...:~$ ls /
-ubuntu@ip-...:~$ cd /home/ubuntu/
+ubuntu@ip-145...:~$ ls ~
+ubuntu@ip-145...:~$ whoami
 ```
 
 * Create a file:
@@ -203,19 +203,20 @@ ubuntu@ip-...:~$ logout
 
 #### First shutdown
 
-Let's shut your first VM down. Anytime you expect your VM to be doing nothing useful, you should shut it down to stop consuming the resources that your VM is holding.
+Let's shutdown your VM. Whenever you do not need your VM running, you should shut it down to stop consuming the resources that your VM is holding.
 
-* In the cloud UI, tick the box to the left on the row with your VM.
-* At the upper right corner of the screen, under the red dust bin drop-down button <i class="fa fa-trash-o" style="background-color:#f04124;border-color:#cf2a0e;color:#fff;padding:1px 1ex 1px 1ex;"></i>, click _Shutdown_.
-* Refresh (by clicking on the two arrows chasing each other, _<i class="fa fa-refresh"></i>_, next to the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button) until your VM is gone from the list. It will be removed from the display, but you can start it again whenever you need it.
+* Go to the list of running VMs in the Cloud UI (_Instances_ &gt; _<i class="fa fa-th"></i> VMs_).
+* Tick the box to the left on the row with your VM.
+* At the upper right corner of the screen, click the red button <i class="fa fa-trash-o" style="background-color:#f04124;border-color:#cf2a0e;color:#fff;padding:1px 1ex 1px 1ex;"></i> and click _Terminate_. A confirmation action is needed, click OK.
+* Refresh the list of VMs (_<i class="fa fa-refresh"></i>_) until your VM is gone. You can always boot the "same" VM again whenever you need it.
 
 > **Food for brain:**
 >
-> When the VM has been shut down and disappeared from the list, check and refresh the _Images_ and _Templates_ tabs. *Are your `image` and `template` still there?*
+> When the VM has been shut down and disappeared from the list, check and refresh the _Storage_ &gt; _<i class="fa fa-download"></i> Images_ and _Templates_ &gt; _<i class="fa fa-file-o"></i> VMs_ tabs. *Are your `image` and `template` still there?*
 
 > **Note:**
 >
-> Your running VMs book resources exclusively (and hence, consuming quota from your group even though we haven't explicitly made you aware of it in the course material) whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**.
+> Your running VMs get exclusive access to their resources whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**.
 
 ### <a name="Bonus"></a> Bonus food for brain
 
