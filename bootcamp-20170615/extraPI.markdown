@@ -14,7 +14,7 @@ layout: default
 
 This is an exercise from the (extras) part of the Tutorial [SURF Research Boot Camp 2017-06-15](.).
 
-In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **shared-memory** system. For this puspose, we will be running a Monte Carlo simulation to calculate an approximation of the value of _&pi;_. 
+In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **shared-memory** system. For this purpose, we will be running a Monte Carlo simulation to calculate an approximation of the value of _&pi;_. 
 
 >**NOTE:**
 >
