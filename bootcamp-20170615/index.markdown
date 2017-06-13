@@ -31,7 +31,7 @@ This session is part of the Compute Track programme of the third [SURF Research 
 > * **12:30 - 14:30 HPC Cloud** 
 >     * 12:30 Presentation: Introduction to SURFsara HPC Cloud (Nuno Ferreira)  
 >     * 12:55 Demo: HPC Cloud User Interface (Ander Astudillo) 
->     * 13:00 Hands-on (Ander Astudillo, Maithili Maithili Kalamkar, Nuno Ferreira) 
+>     * 13:00 Hands-on (Ander Astudillo, Maithili Kalamkar, Nuno Ferreira) 
 >     * 14:30 End 
 > * 15:00 - 17:00 Introduction to cluster computing
 
