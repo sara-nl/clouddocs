@@ -49,9 +49,8 @@ This workshop assumes some familiarity with [Unix](https://learncodethehardway.o
 Participants should bring a laptop with Internet connection with a browser. A set of non-default tools, which depend on your machine operating system, should be installed: 
 
 * Linux – nothing to be installed
-<!--* Mac OSX – install [XQuartz](https://www.xquartz.org)-->
 * Windows – install [MobaXterm](http://mobaxterm.mobatek.net)
-
+<!--* Mac OSX – install [XQuartz](https://www.xquartz.org)-->
 
 ## <a name="hands-on"></a> Hands-on
 The hands-on tutorial has two parts. The exercises in *part A* will give you a first grasp for the `basic` usage of the HPC Cloud environment. Once you feel confortable continue to the *Extras* part with more `advanced` examples.
