@@ -77,7 +77,8 @@ pstree
 > **Food for brain:**
 >
 > Is `pstree` command installed? If not, are you able to figure out how to install it? After all, you are the sysadmin!
-> Suggestion:
+>
+> Suggestion just in case:
 > * Find the [Linux distribution you are running](https://www.cyberciti.biz/faq/find-linux-distribution-name-version-number/).
 > * [Find the package](https://packages.ubuntu.com/) for the distro you are running that provides `pstree`.
 
