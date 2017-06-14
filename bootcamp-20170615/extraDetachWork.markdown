@@ -79,7 +79,7 @@ pstree
 > Is `pstree` command installed? If not, are you able to figure out how to install it? After all, you are the sysadmin!
 > Suggestion:
 > * Find the [Linux distribution you are running](https://www.cyberciti.biz/faq/find-linux-distribution-name-version-number/).
-> * Find the package for the distro you are running that provides `pstree`.
+> * [Find the package](https://packages.ubuntu.com/) for the distro you are running that provides `pstree`.
 
 - disconnect the terminal with the running example by closing its window
 - in the other session, use `ps` or `pstree` again to verify the the execution has stopped.
