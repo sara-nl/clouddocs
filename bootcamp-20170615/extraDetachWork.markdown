@@ -79,8 +79,10 @@ pstree
 > **Is `pstree` command installed?** If not, are you able to figure out how to install it? After all, you are the sysadmin!
 >
 > Suggestion just in case:
-> * Find the [Linux distribution you are running](https://www.cyberciti.biz/faq/find-linux-distribution-name-version-number/).
+> * Find the [Linux distribution (aka distro) name and version you are running](https://www.cyberciti.biz/faq/find-linux-distribution-name-version-number/).
 > * [Find the package](https://packages.ubuntu.com/) for the distro you are running that provides `pstree`.
+> * Install the package using the [package manager](https://help.ubuntu.com/lts/serverguide/package-management.html) for your linux distro. Tip, try the `apt` command-line tool.
+<!--Answer: psmisc-->
 
 - disconnect the terminal with the running example by closing its window
 - in the other session, use `ps` or `pstree` again to verify the the execution has stopped.
@@ -156,13 +158,13 @@ screen
 
 - wait a few seconds and observe the output, as expected
 - detach from the screen session by typing `control-a`, then `d`
-- the view is restored to the situarion before you started `screen` and line says something similar to
+- the view is restored to the situation before you started `screen` and line says something similar to:
  
 ``` 
 [detached from 14691.pts-0.145]
 ```
 
-- wait several seconds and reconnect: use the `-r` flag
+- wait several seconds and reconnect using the `-r` flag:
 
 ```
 screen -r
@@ -181,7 +183,7 @@ screen -r
 
 ## Multiple `screen` sessions
 
-`screen` has a lot of confusing options. Try reading the manual page.
+`screen` command has a lot of options. Reading the manual page will provide you with a wealth of information.
 
 Examples:
 
