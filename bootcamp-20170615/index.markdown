@@ -49,7 +49,7 @@ This workshop assumes some familiarity with [Unix](https://learncodethehardway.o
 Participants should bring a laptop with Internet connection with a browser. A set of non-default tools, which depend on your machine operating system, should be installed: 
 
 * Linux – nothing to be installed
-* Mac OSX – install [XQuartz](https://www.xquartz.org)
+<!--* Mac OSX – install [XQuartz](https://www.xquartz.org)-->
 * Windows – install [MobaXterm](http://mobaxterm.mobatek.net)
 
 
