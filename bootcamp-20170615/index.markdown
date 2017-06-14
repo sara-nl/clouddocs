@@ -35,7 +35,7 @@ This session is part of the Compute Track programme of the third [SURF Research 
 >     * 14:30 End 
 > * 15:00 - 17:00 Introduction to cluster computing
 
-SURFsara has been operating the HPC Cloud as an Infrastructure as a Service (`IaaS`) since 2013.
+SURFsara has been operating the HPC Cloud as an Infrastructure as a Service (`IaaS`).
 The HPC Cloud has a powerful user interface which grants access to high-performant compute and storage nodes.
 The user interface and cloud software relies on [OpenNebula](http://opennebula.org/) and the cluster of resources available is called _Oort_, after the [Oort cloud](https://en.wikipedia.org/wiki/Oort_cloud).
 
