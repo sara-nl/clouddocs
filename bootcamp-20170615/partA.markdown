@@ -111,7 +111,7 @@ A `template` file consists of a set of attributes that define a Virtual Machine.
 
 When an appliance is imported from the _Apps_ <i class="fa fa-cloud-download" aria-hidden="true"></i>, the disk image is normally non-persistent (`persistency=no`). In simple words, image persistency is a property that controlls whether changes to the image are kept (`persistency = yes`) or not (`persistency = no`) when you shutdown the VM. Follow the next steps to make your `image` persistent:
 
-* Go to the _Storage_ tab on the UI left menu and then _Apps_ option <i class="fa fa-cloud-download" aria-hidden="true"></i>.
+* Go to the _Storage_ tab on the UI left menu and then _Images_ option <i class="fa fa-download" aria-hidden="true"></i>.
 * Click anywhere on the row for the `image` you created before **Course Image** (with exception of the tick-box).
 * On the _<i class="fa fa-info-circle"></i> Info_ tab, under the _Information_ section find the _Persistent_ attribute. It says _No_, at the moment.
 * Switch the value to _Yes_ by clicking on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i> by selecting from the drop-down list.
