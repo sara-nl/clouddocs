@@ -10,7 +10,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 </div>
 
 <div class="alert alert-success" markdown="1">
-<div style="float:right;max-width:60px;" markdown="1">
+<div style="float:right;max-width:60px;margin-top:-10px;" markdown="1">
 ![TUEindhoven logo](/images/TUEindhoven_logo.png)
 
 <div style="max-width:60px;" markdown="1">
@@ -19,7 +19,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 </div>
 
 <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i> 
-<span style="color:red;">TODAY!</span> - 2017-06-15 <br/> [Research Bootcamp at TU Eindhoven](bootcamp-20170615/index)
+<span style="color:red;">TODAY!</span> - 2017-06-15 <br/> [SURF Research Bootcamp at TU Eindhoven](bootcamp-20170615/index)
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
