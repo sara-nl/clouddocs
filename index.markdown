@@ -18,11 +18,9 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 </div>
 </div>
 
-<!--
-<i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i> 
-<span style="color:red;">TODAY!</span> - 2017-06-15 <br/> [SURF Research Bootcamp at TU Eindhoven](bootcamp-20170615/index)
-</div>
--->
+<!-- <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i> -->
+<!-- <span style="color:red;">TODAY!</span> - 2017-06-15 <br/> [SURF Research Bootcamp at TU Eindhoven](bootcamp-20170615/index) -->
+<!-- </div> -->
 
 <div style="display:none;" class="alert alert-success" markdown="1">
 <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
