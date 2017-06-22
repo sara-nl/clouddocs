@@ -62,7 +62,7 @@ We will now resize the partition in the `image`.
 > We cannot know in advance which kind of partitioning your _image_ will have, so we cannot describe a step-by-step guide that will always work for you. In this example we will be resizing an Ubuntu image from our Apps, because we actually know what the partitioning is there.
 
 1. **In your laptop:** Connect via SSH to the _Utility VM_, using the **-X** flag so that you can display graphical windows.
-1. **In the _Utility VM_:** become the _root_ user (`sudo su -`). Run the command to install gparted: `sudo apt-get install gparted`. 
+1. **In the _Utility VM_:** Run the command to install gparted: `sudo apt-get install gparted`. 
 1. **In the _Utility VM_:** launch the GParted program by running: `sudo gparted`. This will open a new graphical window for GParted.
 1. **In _Gparted_:** On the top-right corner, next to a hard drive icon, you probably have selected, by default, the `/dev/vda` drive. That is **NOT** the one you want to resize. Look for the right one by click on the arrow to the right of that, and click then on the right one to start operating on it (as help to identify the right one, you can already see on the drop-down list of hard drives the size you typed on the UI).
 1. **In _Gparted_:** Under the drop-down list where you have selected the right hard drive you now see a bar depicting the partitions that are available on that hard drive. You will probably see a dark-gray _unallocated_ area at the right of some other partitions (each partition shown as a different colour). Under that bar, you have the same partitions in a tree (or list) with some extra information like the size, etc. Assuming the latest Ubuntu _image_, you should see a big ext4 partition with a dark-blue border and a second smaller extended partition with a light-blue border. Within this extended partition you have another linux-swap partition with a red border. Finally you will see the unallocated space. We will have to:
@@ -71,7 +71,7 @@ We will now resize the partition in the `image`.
  * **In _Gparted_:** Expand the ext4 partition (right-click on it, then choose _Resize/Move_). In the dialog that appears, type in the _Free space **following**_ field the size you want to leave for the swap-partition (i.e.: 512). That should automatically fill in the _New size_ field to fill in the rest of the unallocated space. Click on the _Resize/Move_ button.
  * **In _Gparted_:** Create a new extended partition (right-click on the unallocated space, then choose _New_). In the dialog that appears, for the the _Create as:_ field choose _Extended partition_. Click the _Add_ button.
  * **In _Gparted_:** Create a new linux-swap partition (right-click on the unallocated space, then choose _New_). In the dialog that appears, for the _File system:_ field choose _linux-swap_. Click the _Add_ button.
- * **In _Gparted_:** We have now the new layout in the main window of GParted. Click on the _Apply_ button to save the changes (and confirm if prompted, to actually make the changes). You can then quite GParted.
+ * **In _Gparted_:** We have now the new layout in the main window of GParted. Click on the _Apply_ button to save the changes (and confirm if prompted, to actually make the changes). You can then quit GParted.
 
 ## Saving the resized image
 
