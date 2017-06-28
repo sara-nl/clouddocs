@@ -72,12 +72,20 @@ The hands-on tutorial consists of three parts. Parts *A & B* provide exercises f
   * [Extras](extras)
   
 ## <a name="presentations"></a> Presentations
- 
+
+>Note:
+>
+>We will make them available during the workshop day.
+
+<span style="display:none;">
   * Morning presentation: [Introduction to the HPC Cloud](20170201_cloud.pdf)
   * Afternoon presentation: [Cloudy systems](20170201_parallelism.pdf)
+</span>
 
+<span style="display:none;">
 ## Assignment
 
 [Master students eligible to earn 6 ECTS](http://hpc.uva.nl/Roadmaps/article/122/Distributed-systems-and-BigData-(6-ECTS)) must follow all the lectures and participate to all workshops associated to [UvA HPC Course](http://hpc.uva.nl/Workshops/). 
-Access to the HPC Cloud service will remain available to the participants until the **10th Feb. 2017**. The [HPC Cloud course assignment](assignment) needs to be deleivered by then via email to the facilitators: helpdesk@surfsara.nl (cc to ander.astudillo@surfsara.nl). 
+Access to the HPC Cloud service will remain available to the participants until the **10th Feb. 2017**. The [HPC Cloud course assignment](assignment) needs to be deleivered by then via email to the facilitators: helpdesk@surfsara.nl (cc to markus.vandijk@surfsara.nl). 
+</span>
 
