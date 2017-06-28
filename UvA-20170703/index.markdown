@@ -25,7 +25,7 @@ SURFsara has been operating the HPC Cloud as an Infrastructure as a Service (`Ia
 
 >**Agenda:**
 >
->1st February 2017, UvA, [Science Park 904](https://www.uva.nl/en/about-the-uva/the-uva-in-amsterdam/locations/locations/locations/content/folder/sciencepark/science-park.html), Room: SP-A1.10
+>3rd July 2017, UvA, [Science Park 904](https://www.uva.nl/en/about-the-uva/the-uva-in-amsterdam/locations/locations/locations/content/folder/sciencepark/science-park.html), Room: C1.112
 >
 > * 09:30 Welcome & coffee  
 > * 09:35 Presentation and Demo: HPC Cloud at SURFsara (Markus van Dijk)
