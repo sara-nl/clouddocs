@@ -43,12 +43,12 @@ In this section you will work with **persistent** images. You will go through th
 * Making your image persistent.
 * Starting a VM using the persistent image.
 
-#### Make your image persistent
+#### Making your image persistent
 * Go to the _Images_ tab <i class="fa fa-download"></i> under _Storage_ on the left menu. Select the image by clicking anywhere, except the tick-box, on the row for the `image` you created before (**Course Image**).
 * On the _Info_ tab <i class="fa fa-info-circle"></i>, under the _Information_ section, find the _Persistent_ attribute. It says _No_ at the moment.
 * Switch the value to _Yes_ by clicking on the pencil icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
 
-#### Start a persistent VM
+#### Starting a persistent VM
 * Start your virtual machine (VM) again.
 * Log in and check the files you created during the previous run [(Part A)](partA).
 
@@ -122,7 +122,7 @@ When you create an `image`, you must choose where it is stored, under the headin
 
 At this point you should **not** have any running VMs. If you do, shut them down.
 
-#### Create a new empty `image` for bulk data
+#### Creating a new empty `image` for bulk data
 
 Let's create a new `image`.
 
@@ -141,7 +141,7 @@ Let's create a new `image`.
 >
 >A new `image` will show on the _Images_ list <i class="fa fa-download"></i> and it will keep in status LOCKED while it is being created. Once it is created it will display status READY. Then you *still* have to format and mount the disk; you will be doing that just in a moment.
 
-#### Add the new image to the template
+#### Adding the new image to the template
 
 In order to let your VM know about the new datablock, you need to add it to your VM's `template`:
 
@@ -150,7 +150,7 @@ In order to let your VM know about the new datablock, you need to add it to your
 * Click on the blue button _<i class="fa fa-plus-circle" style="background-color:#4DBBDC;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_, that will make a new _Disk 1_, and then choose the **my data** `image` you created as a second `image`.
 * Finish with the *Update* button on the top to submit the changes.
 
-#### Mount the image in the VM
+#### Mounting the image in the VM
 
 Let's start using the new disk.
 
