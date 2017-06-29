@@ -27,6 +27,13 @@ The User Interface (UI) is the web site that allows you to manage your _Virtual 
 * You will receive the password from the workshop facilitators.
 * Hit the `Login` button.
 
+#### Switch to "user view"
+
+The interface supports several views and for this course, you shgould use the "user view".
+
+* Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen and click it.
+* In the drop-down menu, move to *Views* and in that sub-menu select *user*.
+
 #### Change your password
 
 Once you login to the UI, it is a best practice to change the initial password.
