@@ -69,16 +69,16 @@ The matching private key (`id_rsa`) stays safe in your laptop.
 
 Using the HPC Cloud revolves around building Virtual Machines (VM). SURFsara provides several **Apps** readily available in  the HPC Cloud UI, to facilitate creating simple VMs.  Apps are ready-made `appliances` for you to copy and use. 
 
-These are the steps to build your first VM from one of the Apps, detailed instructions will follow:
+These are the steps to build your first VM from one of the Apps; detailed instructions follow:
 
-* Import a pre-made `image` with a Linux operating system installed.
-* Review the shape of the VM (so-called `template`).
-* Instantiate the `template` to create your first VM.
-* Access your VM and shut it down.
+* Importing a pre-made `image` with a Linux operating system installed.
+* Reviewing the shape of the VM (so-called `template`).
+* Instantiating the `template` to create your first VM.
+* Accessing your VM and shutting it down.
 
 Let's run your first VM on the HPC Cloud!
 
-#### Import an app
+#### Importing an app
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
 * Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_.
@@ -99,7 +99,7 @@ Let's run your first VM on the HPC Cloud!
 * What is the STATUS of the `image` just after you import it?
 * Refresh the contents of the _Images_ tab page by clicking button <i class="fa fa-refresh"></i>, next to the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ until it is READY.
 
-#### Review the Template  
+#### Reviewing the Template  
 
 A `template` consists of a set of attributes that defines a Virtual Machine. For example, how many cores you want your VM to have, how much RAM memory, what storage drives to attach, which network connections, etc. We will have to adapt the `template` to meet your requirements before you can use it to create VMs out of it.
 
@@ -118,7 +118,7 @@ Edit the imported `template` following these steps:
     * In the _Inputs_ section, make sure an USB tablet is listed. If not: select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that.
 * If you made any changes to the `template`, click the green button _Update_ at the top, to save your changes.
 
-#### Start the VM
+#### Starting the VM
 
 A `template` is just a description of the virtual machine that we want to build. Let's create the actual virtual machine from it.
 
@@ -148,7 +148,7 @@ Let's summarise what you have seen so far. Click on each of the tabs on the left
 > **NOTE:**  
 >Your VM will appear in the list of virtual machines. At first, it will have the state `PENDING`. This indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of resources (cores, memory, and disk) you requested in the associated `template`. Keep refreshing the list by clicking button <i class="fa fa-refresh"></i>. When the required capacity becomes available, your VM will show the status `RUNNING`. Only then can you actually use your VM.
 
-#### Log in to the VM
+#### Logging in to the VM
 
 You can interact with your VM in several ways: command-line (e.g.: SSH), VNC (UI in your browser) or a remote desktop. We will use SSH in a terminal for the time being.
 
