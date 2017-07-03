@@ -12,7 +12,9 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 <div style="" class="alert alert-success" markdown="1">
 <div style="float:right;max-width:60px;margin-top:-10px;" markdown="1">
+<div style="max-width:20px;" markdown="1">
 ![UvA logo](/images/UvA-logo.png)
+</div>
 
 <div style="max-width:60px;" markdown="1">
 ![SURFsara logo](/images/SURFsara_logo.png)
