@@ -25,6 +25,10 @@ The only exception is that you have to select a different datastore. In the scre
 
 ![GPU import from apps](images/gpu/rvs_image_name.png)
 
+>**Note:**
+>
+>Considering how support on NVidia's side has been evolving lately for our GPU's drivers, and how complex it has become to install the drivers successfully, we suggest that you remove the otherwise recommended automatic apt-get upgrades upon VM start while you are installing the drivers. You can do so by editing the template, then in the _Context_ tab you can empty the field _Start script_. And save the changes.
+
 ### Using an existing image
 
 When you already have an image that you want to use on the GPU nodes, you will have to create a clone in the correct datastore:
