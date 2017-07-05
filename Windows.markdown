@@ -211,6 +211,14 @@ Once you have installed and configured your Windows, you do not need the install
 
 From now on, you will use this `template` to run your VM.
 
+<div class="alert alert-warning" markdown="1">
+<i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true">Warning</i><br>
+
+In the _RAW data_ group, you must make sure that the `<topology>` that you set up there matches the _cpu_ value that you set in the template. Otherwise, your VM will fail to launch! 
+
+Thus, **make sure that: sockets &#215; cores &#215; threads = _cpu_ **
+</div>
+
 ### Enable Remote Desktop
 
 Having to connect to the VM via the VNC console on the web UI is somewhat tedious and rather limited, so you probably want to access your VM via Remote Desktop. Here is how you can do that:
