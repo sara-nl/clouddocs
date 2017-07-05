@@ -77,9 +77,9 @@ The hands-on tutorial consists of three parts. Parts *A & B* provide exercises f
 >
 >We will make them available during the workshop day.
 
-<div style="display:none;" markdown="1">
+<div markdown="1">
 
-  * Morning presentation: [Introduction to the HPC Cloud](20170201_cloud.pdf)
+  * Morning presentation: [Introduction to the HPC Cloud](2017-07-03-Introduction.pdf)
   * Afternoon presentation: [Cloudy systems](20170703_parallelism.pdf)
 
 </div>
