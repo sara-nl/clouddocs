@@ -216,7 +216,7 @@ From now on, you will use this `template` to run your VM.
 
 In the _RAW data_ group, you must make sure that the `<topology>` that you set up there matches the _cpu_ value that you set in the template. Otherwise, your VM will fail to launch! 
 
-Thus, **make sure that: sockets &#215; cores &#215; threads = _cpu_ **
+Thus, <b>make sure that: sockets &#215; cores &#215; threads = _cpu_ </b>
 </div>
 
 ### Enable Remote Desktop
