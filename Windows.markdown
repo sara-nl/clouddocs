@@ -87,18 +87,18 @@ On the HPC Cloud, VMs use the [contextualization](contextualization) mechanism t
   * type in _Name_: **context.ps1** (we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _CONTEXT_
-  * leave _Datastore_ with _102: local_files_ssd_
+  * leave _Datastore_ with _105: local_files_ssd_
   * on the _Image location:_ group, choose radio button _Path in OpenNebula server_; then, underneath, type the following URL in the _Path_ field: https://raw.githubusercontent.com/OpenNebula/addon-context-windows/master/context.ps1
 1. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `file` will show on the _Files_ list, and it will keep in status _LOCKED_ while data is being downloaded from the URL you wrote. When it is created it will come to status _READY_. 
 
-Now, the other `file:
+Now, the other `file`:
 
 1. **On the UI:** On the _Files_ tab (under _Storage_), click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `file`. A form will pop up.
 1. **On the UI:** On the form that popped up:
   * type in a meaningful _Name_ (e.g.: **startup.vbs**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _CONTEXT_
-  * leave _Datastore_ with _102: local_files_ssd_
+  * leave _Datastore_ with _105: local_files_ssd_
   * on the _Image location:_ group, choose radio button _Path in OpenNebula server_; then, underneath, type the following URL in the _Path_ field: https://raw.githubusercontent.com/OpenNebula/addon-context-windows/master/startup.vbs
 1. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `file` will show on the _Files_ list, and it will keep in status _LOCKED_ while data is being downloaded from the URL you wrote. When it is created it will come to status _READY_. 
 
@@ -109,7 +109,7 @@ If we leave it here, then you VM will be configured only once ever. If you want 
   * type in a meaningful _Name_ (e.g.: **shutdown.vbs**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _CONTEXT_
-  * leave _Datastore_ with _102: local_files_ssd_
+  * leave _Datastore_ with _105: local_files_ssd_
   * on the _Image location:_ group, choose radio button _Path in OpenNebula server_; then, underneath, type the following URL in the _Path_ field: https://raw.githubusercontent.com/sara-nl/clouddocs/gh-pages/assets/shutdown.vbs
 1. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `file` will show on the _Files_ list, and it will keep in status _LOCKED_ while data is being downloaded from the URL you wrote. When it is created it will come to status _READY_. 
 
