@@ -39,7 +39,7 @@ Analogously to your laptop, your VM needs a hard drive where the operating syste
   * type in a meaningful _Name_ (e.g.: **windows_drive**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _DATABLOCK_
-  * leave _Datastore_ with _101: local_images_ssd_
+  * leave _Datastore_ with _104: local_images_ssd_
   * check the _This image is persistent_ checkbox
   * on the _Image location:_ group, choose radio button _Empty disk image_
   * and give it a _Size_ that is meaningful to you (e.g.: our test with installing Windows 8.1 required already 10GB for Windows alone, so we filled in 20GB)
@@ -52,7 +52,7 @@ Analogously to your laptop, your VM needs a hard drive where the operating syste
   * type in a meaningful _Name_ (e.g.: **windows_iso**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _Readonly CD-ROM_
-  * leave _Datastore_ with _101: local_images_ssd_
+  * leave _Datastore_ with _104: local_images_ssd_
   * leave the _Persistent_ checkbox unchecked
   * on the _Image location:_ group, choose radio button _Upload_; then, underneath, click on _Choose file_ to have a dialogue pop up where you will look for the path on your laptop where you have your Windows .iso file and, finally, choose the .iso file to close the pop-up dialogue to return to the original form 
 1. **On the UI:** Click the green button _Create_ on the form, to submit it. A progress bar will show at the bottom of the screen, which will advance as the upload of your .iso file evolves. When the upload is complete, a new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while it is being created. When it is created it will come to status _READY_.
@@ -66,7 +66,7 @@ The best way to make physical hardware (namely: hard drives and network adapters
   * type in a meaningful _Name_ (e.g.: **virtio_drivers_iso**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _Readonly CD-ROM_
-  * leave _Datastore_ with _101: local_images_ssd_
+  * leave _Datastore_ with _104: local_images_ssd_
   * leave the _Persistent_ checkbox unchecked
   * on the _Image location:_ group, choose radio button _Path in OpenNebula server_; then, underneath, type the following URL in the _Path_ field: https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
 1. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while data is being downloaded from the URL you wrote. When it is created it will come to status _READY_.
