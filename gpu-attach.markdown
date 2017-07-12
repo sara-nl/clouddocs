@@ -148,7 +148,8 @@ make
 ```
 
 * If everything is running as intended the result will look similar to this:
-```
+
+<pre>
 ./deviceQuery Starting...
 
  CUDA Device Query (Runtime API) version (CUDART static linking)
@@ -190,7 +191,7 @@ Device 0: "Tesla P100-PCIE-12GB"
 
 deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 8.0, CUDA Runtime Version = 8.0, NumDevs = 1, Device0 = Tesla P100-PCIE-12GB
 Result = PASS
-```
+</pre>
 
 ### Running a Hello World
 
