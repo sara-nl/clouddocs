@@ -3,7 +3,7 @@ layout: default
 ---
 # Attaching a GPU to a VM
 
-Using GPU devices to do (part of) your computation on, enables a form of parallisation that could be much faster than multiple CPU core usage. However, the software you are using must be enabled to use GPU's and programming for GPU's is difficult and often not ideal for novice programmers. If you are not sure whether or not you could profit from using GPU's, please feel free to contact us at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl).
+Using GPU devices to do (part of) your computation on, enables a form of parallelization that could be much faster than multiple CPU core usage. However, the software you are using must be enabled to use GPU's and programming for GPU's is difficult and often not ideal for novice programmers. If you are not sure whether or not you could profit from using GPU's, please feel free to contact us at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl).
 
 This page teaches how to attach a GPU device to a VM. It does not show you how to get or write software that uses GPU's.
 
@@ -45,7 +45,7 @@ When you already have an image that you want to use on the GPU nodes, you will h
 
 ## Adding a GPU device to your VM
 
-GPU devices are attached to VM using 'pci passthrough'. This means that your VM will have direct access to the hardware, instead of through a virtualisation layer. This should give an optimal performance.
+GPU devices are attached to VM using 'pci passthrough'. This means that your VM will have direct access to the hardware, instead of through a virtualisation layer. This should give an optimal performance. You have the option of attaching a Nvidia GRID K2 (1536 CUDA cores, 4GB) or Tesla P100 GPU (3584 CUDA cores, 12GB).
 
 > **NOTE:**
 >
@@ -56,117 +56,145 @@ To attach a GPU device to your VM, either create a new template or edit an exist
  1. Go to the 'Other' tab while editing the template. You should see a screen like below:
  ![Add GPU to template](images/gpu/gpu_add_pci.png)
  2. Click on the '+ Add PCI device' button. This adds a line to the table above it (already visible in the screenshot above).
- 3. In the new line, under 'Device name', choose the GPU in the dropdown list. The 'Vendor', 'Device' and 'Class' will automatically be set.
+ 3. In the new line, under 'Device name', choose the GPU in the dropdown list. The 'Vendor', 'Device' and 'Class' will automatically be set. Please note the chosen GPU type as the driver installation instructions differ for both types.
  4. If no other changes to the template are needed, click on the green 'Create' or 'Update button (depending on whether you are creating a new template or editing an existing one) will save the template.
 
 You are all set now and can launch the VM.
 
 ## Inside your VM
 
-To make full use of the GPU capabilities please install the corresponding drivers and toolkit for you distro from the official Nvidia repositories which can be found [here](https://developer.nvidia.com/cuda-downloads). From there please follow the post installation [instructions](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#package-manager-installation) 
+To make full use of the GPU capabilities please install the corresponding drivers and toolkit for you distro from the official Nvidia repositories which can be found [here](https://developer.nvidia.com/cuda-downloads). From there please follow the post installation [instructions](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#package-manager-installation)
 
 ## Example for installing CUDA 8.0 on Ubuntu 16.04
+* If you did not remove the automatic updates from the _Start script_ field in your template or intend to upgrade your kernel version, make sure you run `sudo apt-get update && sudo apt-get dist-upgrade` to make sure the system is in a successful update state and has been rebooted before installing the drivers.
 
-* Prepare the drivers:
+### Grid K2
+
+* Remove any old drivers, install prerequisites, then download and install the drivers:
+
+```bash
+sudo apt-get purge nvidia-* libcuda-*
+sudo apt-get update && sudo apt-get install -y gcc make g++ libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
+wget http://us.download.nvidia.com/XFree86/Linux-x86_64/367.57/NVIDIA-Linux-x86_64-367.57.run
+sudo sh NVIDIA-Linux-x86_64-367.57.run -s
+sudo reboot
+```
+
+### Tesla P100
+
+* Remove any old drivers, add the Nvidia repository and install the drivers:
 
 ```bash
 sudo apt purge nvidia-* libcuda1-*
-sudo apt install build-essential libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
-wget http://us.download.nvidia.com/XFree86/Linux-x86_64/367.35/NVIDIA-Linux-x86_64-367.35.run
-sudo sh NVIDIA-Linux-x86_64-367.35.run
+wget http://us.download.nvidia.com/tesla/375.66/nvidia-diag-driver-local-repo-ubuntu1604_375.66-1_amd64.deb
+sudo dkpg -i nvidia-diag-driver-local-repo-ubuntu1604_375.66-1_amd64.deb
+sudo apt-get update && sudo apt-get install -y cuda-drivers
 ```
 
-* Check witn `nvidia-smi` that the card is detected. Should show something like this:
+### All GPU types
+
+* Check with `nvidia-smi` that the card is detected. Should show something like this:
 
 
 ```
-Thu Jun  1 10:33:21 2017
+Wed Jul 12 16:36:24 2017       
 +-----------------------------------------------------------------------------+
-| NVIDIA-SMI 367.35                 Driver Version: 367.35                    |
+| NVIDIA-SMI 367.57                 Driver Version: 367.57                    |
 |-------------------------------+----------------------+----------------------+
 | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
 |===============================+======================+======================|
-|   0  GRID K2             Off  | 0000:01:01.0     Off |                  Off |
-| N/A   37C    P0     1W / 117W |      0MiB /  4036MiB |      0%      Default |
+|   0  GRID K2             Off  | 0000:01:01.0      On |                  Off |
+| N/A   29C    P8    18W / 117W |     17MiB /  4036MiB |      0%      Default |
 +-------------------------------+----------------------+----------------------+
 
 +-----------------------------------------------------------------------------+
 | Processes:                                                       GPU Memory |
 |  GPU       PID  Type  Process name                               Usage      |
 |=============================================================================|
-|  No running processes found                                                 |
+|    0       802    G   /usr/lib/xorg/Xorg                              16MiB |
 +-----------------------------------------------------------------------------+
 ```
 
-* Now, reboot the OS and try `nvidia-smi` again:
+* Now, reboot the OS and run `nvidia-smi` again and check for a similar output:
 
-```
-reboot
+```bash
+sudo reboot
 nvidia-smi
 ```
 
-> You should get the same 
-
-* Download CUDA installer: 
+* Install CUDA prerequisites, download and install CUDA 8:
 
 ```bash
+sudo apt-get install -y gcc make g++ build-essential dkms linux-headers-$(uname -r)
 wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
-```
-
-* Prepare the environment and run:
-
-```bash
-sudo apt-get install gcc make g++
-sudo apt-get install build-essential linux-headers-`uname -r` dkms
 sudo service lightdm stop
-sudo sh cuda_8.0.61_375.26_linux-run
+sudo sh cuda_8.0.61_375.26_linux-run --silent --samples --toolkit
 ```
 
-* Space to scroll to the end and type `accept`
-
-* Give the **right** answers (notably, **NO** to the driver)
-
-<pre>
-Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 375.26?
-(y)es/(n)o/(q)uit: n
-Install the CUDA 8.0 Toolkit?
-(y)es/(n)o/(q)uit: y
-Enter Toolkit Location
- [ default is /usr/local/cuda-8.0 ]: press enter
-Do you want to install a symbolic link at /usr/local/cuda?
-(y)es/(n)o/(q)uit: y
-(Optional)
-Install the CUDA 8.0 Samples?
-(y)es/(n)o/(q)uit: y
-(Optional)
-Enter CUDA Samples Location
- [ default is /root ]: /usr/local/cuda-samples
-</pre>
-
-* Reorganise the execution environment
-
-```bash
-sudo su -
-echo "export PATH=/usr/local/cuda-8.0/bin:$PATH" >> /etc/profile.d/nvidia.sh
-echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH" >> /etc/profile.d/nvidia.sh
-chmod 755 /etc/profile.d/nvidia.sh
-```
-
-* Reboot: ```sudo reboot```
-* ssh to VM
-* Launch again `nvidia-smi`
+* Reboot your VM once more: `sudo reboot`
 
 >**NOTE:**
 >
->Don't forget to add the libaries and binaries paths to your environment, like:
+>Make sure the libraries and binaries paths are part of your environment (these are added as part of the installation), if they are not they can be added with:
 > - `export PATH=$PATH:/usr/local/cuda-8.0/bin`
 > - `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64`
 
+* CUDA should be ready to use, as a test we will compile and run one of the sample utilities:
+```bash
+cd NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery
+make
+./deviceQuery
+```
+
+* If everything is running as intended the result will look similar to this:
+```
+./deviceQuery Starting...
+
+ CUDA Device Query (Runtime API) version (CUDART static linking)
+
+Detected 1 CUDA Capable device(s)
+
+Device 0: "Tesla P100-PCIE-12GB"
+  CUDA Driver Version / Runtime Version          8.0 / 8.0
+  CUDA Capability Major/Minor version number:    6.0
+  Total amount of global memory:                 12194 MBytes (12786073600 bytes)
+  (56) Multiprocessors, ( 64) CUDA Cores/MP:     3584 CUDA Cores
+  GPU Max Clock rate:                            1329 MHz (1.33 GHz)
+  Memory Clock rate:                             715 Mhz
+  Memory Bus Width:                              3072-bit
+  L2 Cache Size:                                 3145728 bytes
+  Maximum Texture Dimension Size (x,y,z)         1D=(131072), 2D=(131072, 65536), 3D=(16384, 16384, 16384)
+  Maximum Layered 1D Texture Size, (num) layers  1D=(32768), 2048 layers
+  Maximum Layered 2D Texture Size, (num) layers  2D=(32768, 32768), 2048 layers
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per multiprocessor:  2048
+  Maximum number of threads per block:           1024
+  Max dimension size of a thread block (x,y,z): (1024, 1024, 64)
+  Max dimension size of a grid size    (x,y,z): (2147483647, 65535, 65535)
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and kernel execution:          Yes with 2 copy engine(s)
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support:                        Enabled
+  Device supports Unified Addressing (UVA):      Yes
+  Device PCI Domain ID / Bus ID / location ID:   0 / 1 / 1
+  Compute Mode:
+     < Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) >
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 8.0, CUDA Runtime Version = 8.0, NumDevs = 1, Device0 = Tesla P100-PCIE-12GB
+Result = PASS
+```
 
 ### Running a Hello World
 
-* Download, uncompress and compile NVidia's Hello World example:
+* Download, uncompress and compile Nvidia's Hello World example:
 ```bash
 wget http://developer.download.nvidia.com/compute/developertrainingmaterials/samples/cuda_c/HelloWorld.zip
 unzip HelloWorld.zip
