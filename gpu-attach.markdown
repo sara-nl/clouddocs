@@ -87,7 +87,7 @@ sudo reboot
 ```bash
 sudo apt purge nvidia-* libcuda1-*
 wget http://us.download.nvidia.com/tesla/375.66/nvidia-diag-driver-local-repo-ubuntu1604_375.66-1_amd64.deb
-sudo dkpg -i nvidia-diag-driver-local-repo-ubuntu1604_375.66-1_amd64.deb
+sudo dpkg -i nvidia-diag-driver-local-repo-ubuntu1604_375.66-1_amd64.deb
 sudo apt-get update && sudo apt-get install -y cuda-drivers
 ```
 
