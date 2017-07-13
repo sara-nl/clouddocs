@@ -66,7 +66,7 @@ You are all set now and can launch the VM.
 To make full use of the GPU capabilities please install the corresponding drivers and toolkit for you distro from the official Nvidia repositories which can be found [here](https://developer.nvidia.com/cuda-downloads). From there please follow the post installation [instructions](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#package-manager-installation)
 
 ## Example for installing CUDA 8.0 on Ubuntu 16.04
-* If you did not remove the automatic updates from the _Start script_ field in your template or intend to upgrade your kernel version, make sure you run `sudo apt-get update && sudo apt-get dist-upgrade` to make sure the system is in a successful update state and has been rebooted before installing the drivers.
+* If you did not remove the automatic updates from the _Start script_ field in your template or intend to upgrade your kernel version, make sure you run `sudo apt-get update && sudo apt-get dist-upgrade` to make sure the system is in a successful update state and reboot the system before installing the drivers.
 
 ### Grid K2
 
@@ -77,7 +77,6 @@ sudo apt-get purge nvidia-* libcuda-*
 sudo apt-get update && sudo apt-get install -y gcc make g++ libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
 wget http://us.download.nvidia.com/XFree86/Linux-x86_64/367.57/NVIDIA-Linux-x86_64-367.57.run
 sudo sh NVIDIA-Linux-x86_64-367.57.run -s
-sudo reboot
 ```
 
 ### Tesla P100
