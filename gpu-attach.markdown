@@ -59,14 +59,24 @@ To attach a GPU device to your VM, either create a new template or edit an exist
  3. In the new line, under 'Device name', choose the GPU in the dropdown list. The 'Vendor', 'Device' and 'Class' will automatically be set. Please note the chosen GPU type as the driver installation instructions differ for both types.
  4. If no other changes to the template are needed, click on the green 'Create' or 'Update button (depending on whether you are creating a new template or editing an existing one) will save the template.
 
-You are all set now and can launch the VM.
-
 ## Inside your VM
 
 To make full use of the GPU capabilities please install the corresponding drivers and toolkit for you distro from the official Nvidia repositories which can be found [here](https://developer.nvidia.com/cuda-downloads). From there please follow the post installation [instructions](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#package-manager-installation)
 
 ## Example for installing CUDA 8.0 on Ubuntu 16.04
-* If you did not remove the automatic updates from the _Start script_ field in your template or intend to upgrade your kernel version, make sure you run `sudo apt-get update && sudo apt-get dist-upgrade` to make sure the system is in a successful update state and reboot the system before installing the drivers.
+* Remove the automatic installation of updates during startup from your _Template_ by opening the _Context_ tab and emptying the _Start script_ field.
+
+* Launch your VM and force an installation of any security updates, reboot the VM afterwards:
+
+```bash
+sudo systemctl start apt-daily.service && sleep 60 && sudo reboot
+```
+
+* Check the version of your kernel headers with `uname -r`. If you have a version newer than 4.4.0-64, continue installing the GPU drivers for the chosen GPU type, otherwise repeat the previous step.
+
+```bash
+4.4.0-83-generic
+```
 
 ### Grid K2
 
@@ -92,7 +102,7 @@ sudo apt-get update && sudo apt-get install -y cuda-drivers
 
 ### All GPU types
 
-* Check with `nvidia-smi` that the card is detected. Should show something like this:
+* Check with `nvidia-smi` that the card is detected. It should show something like this:
 
 
 ```
@@ -191,6 +201,10 @@ Device 0: "Tesla P100-PCIE-12GB"
 deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 8.0, CUDA Runtime Version = 8.0, NumDevs = 1, Device0 = Tesla P100-PCIE-12GB
 Result = PASS
 </pre>
+
+> **NOTE:**
+>
+> During the installation the Nvidia drivers have been compiled for the current kernel version. The apt-daily service may upgrade your kernel if it's marked as a security update requiring you to reinstall the driver after a reboot. To prevent any (automatic) kernel upgrades, run `sudo apt-mark hold linux-image-generic linux-headers-generic`.
 
 ### Running a Hello World
 
