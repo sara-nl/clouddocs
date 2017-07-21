@@ -67,13 +67,11 @@ To make full use of the GPU capabilities please install the corresponding driver
 * Remove the automatic installation of updates during startup from your _Template_ by opening the _Context_ tab and emptying the _Start script_ field.
 
 * Launch your VM and force an installation of any security updates, reboot the VM afterwards:
-
 ```bash
 sudo systemctl start apt-daily.service && sleep 60 && sudo reboot
 ```
 
 * Check the version of your kernel headers with `uname -r`. If you have a version newer than 4.4.0-64, continue installing the GPU drivers for the chosen GPU type, otherwise repeat the previous step.
-
 ```bash
 4.4.0-83-generic
 ```
@@ -81,7 +79,6 @@ sudo systemctl start apt-daily.service && sleep 60 && sudo reboot
 ### Grid K2
 
 * Remove any old drivers, install prerequisites, then download and install the drivers:
-
 ```bash
 sudo apt-get purge nvidia-* libcuda-*
 sudo apt-get update && sudo apt-get install -y gcc make g++ libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
@@ -92,7 +89,6 @@ sudo sh NVIDIA-Linux-x86_64-367.57.run -s
 ### Tesla P100
 
 * Remove any old drivers, add the Nvidia repository and install the drivers:
-
 ```bash
 sudo apt purge nvidia-* libcuda1-*
 wget http://us.download.nvidia.com/tesla/375.66/nvidia-diag-driver-local-repo-ubuntu1604_375.66-1_amd64.deb
@@ -103,8 +99,6 @@ sudo apt-get update && sudo apt-get install -y cuda-drivers
 ### All GPU types
 
 * Check with `nvidia-smi` that the card is detected. It should show something like this:
-
-
 ```
 Wed Jul 12 16:36:24 2017       
 +-----------------------------------------------------------------------------+
@@ -126,14 +120,12 @@ Wed Jul 12 16:36:24 2017
 ```
 
 * Now, reboot the OS and run `nvidia-smi` again and check for a similar output:
-
 ```bash
 sudo reboot
 nvidia-smi
 ```
 
 * Install CUDA prerequisites, download and install CUDA 8:
-
 ```bash
 sudo apt-get install -y gcc make g++ build-essential dkms linux-headers-$(uname -r)
 wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
