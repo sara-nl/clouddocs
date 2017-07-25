@@ -71,7 +71,7 @@ To make full use of the GPU capabilities please install the corresponding driver
 sudo systemctl start apt-daily.service && sleep 60 && sudo reboot
 ```
 
-* Check the version of your kernel headers with `uname -r`. If you have a version newer than 4.4.0-64, continue installing the GPU drivers for the chosen GPU type, otherwise repeat the previous step.
+* Check the version of your kernel with `uname -r`. If you have a version newer than 4.4.0-64, continue installing the GPU drivers for the chosen GPU type, otherwise repeat the previous step.
 ```bash
 4.4.0-83-generic
 ```
