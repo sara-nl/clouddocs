@@ -101,6 +101,7 @@ The HPC Cloud documentation **images are not being rendered correctly**. The ser
 * [Apps Appliances Configuration](appliances-configuration)
 
 ### Troubleshooting
+* [Recover VM in 'FAILURE' state](troubleshooting/recover_failure)
 * [Recovery access](vnc_recovery_access); how to get root access to your VM without a root password
 * [VM not reacting to Shutdown](vm-not-reacting-to-shutdown)
 * [Connection problem with resumed ubuntu 14.04 virtual machine](connection_problem_ubuntu1404) 
