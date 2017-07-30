@@ -22,7 +22,7 @@ None
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Finished  |   26-07-2017 : 16:45 / 26-06-2017 : 21:15  | Unscheduled maintenance. Due to unexpected problems with one of our switches, the UI and part of the VMs on the HPC Cloud were disconnected from the internet. No network traffic in or out was possible. Internal network traffic, between VM's appear to have been unaffected. At 21.15 the problems were solved. |
+|   Finished  |   26-07-2017 : 16:45 / 26-07-2017 : 21:15  | Unscheduled maintenance. Due to unexpected problems with one of our switches, the UI and part of the VMs on the HPC Cloud were disconnected from the internet. No network traffic in or out was possible. Internal network traffic, between VM's appear to have been unaffected. At 21.15 the problems were solved. |
 |   Planned   |   27-06-2017 / 27-06-2017   | Scheduled maintenance; there were a few short interruptions of the UI. No influence on running VMs  |
 |   Finished  |   21-06-2017 : 15:35 / 21-06-2017 : 16:49  | Unscheduled maintenance. During this period we experienced several disk issues causing requests being blocked in our storage systems. At 16:45 we removed the disks causing this issue, the storage systems became stable at 16:49. Running VMs were not affected.   |
 |   Finished  |   18-04-2017 / 19-04-2017   | Scheduled maintenance |
