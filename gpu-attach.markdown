@@ -99,7 +99,7 @@ sudo apt-get update && sudo apt-get install -y cuda-drivers
 ### All GPU types
 
 * Check with `nvidia-smi` that the card is detected. It should show something like this:
-```
+<pre>
 Wed Jul 12 16:36:24 2017       
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 367.57                 Driver Version: 367.57                    |
@@ -117,7 +117,7 @@ Wed Jul 12 16:36:24 2017
 |=============================================================================|
 |    0       802    G   /usr/lib/xorg/Xorg                              16MiB |
 +-----------------------------------------------------------------------------+
-```
+</pre>
 
 * Now, reboot the OS and run `nvidia-smi` again and check for a similar output:
 ```bash
