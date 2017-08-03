@@ -4,7 +4,14 @@ layout: default
 
 # Recover VM in 'FAILURE' state
 
-Please note that in case of doubt, e-mail the helpdesk to ask for help. They can figure out why the VM was in failure mode and help you with the recovery. If you know what you are doing or have no valuable data on the VM, proceed as described below.
+<div class="alert alert-info" markdown="1">
+<i class="fa fa-info-circle fa-2x" aria-hidden="true">Note</i><br>
+
+Not every user is able to access the _Recover_ menu at this stage. We are working on allowing all users who have the _group admin_ role to access this menu. 
+
+In case of doubt, you can always e-mail the helpdesk to ask for help. They can figure out why the VM was in failure mode and help you with the recovery. If you know what you are doing or have no valuable data on the VM, proceed as described below.
+
+</div>
 
 When a VM is in 'FAILURE' state, most regular actions are no longer available. This includes shutting down and terminating (deleting) the VM. Group admins either already have, or can request, the possibility to 'recover' such VM's with the method described here:
 
