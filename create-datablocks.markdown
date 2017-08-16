@@ -64,7 +64,7 @@ In this section we show you how you can start using the new disk.
 
 >**Warning:**
 >
->In the following listing, the first `mkdir` and `mkfs` commands only need to be run once (and they do **destroy** everything on the image!). The `mount` command (fourth line) needs to be run every time you start the VM with that image. Alternatively, you can add this line to /etc/fstab to have it done automatically: `/dev/vdb /data xfs defaults 0 0`. 
+>In the following listing, the first `mkdir` and `mkfs` commands only need to be run once (and they do **destroy** everything on the image!). The `mount` command (fourth line) needs to be run every time you start the VM with that image. Alternatively, you can add this line to /etc/fstab to have it done automatically: `/dev/vdb /data xfs defaults 0 0`. For more information on fstab you can consult the [Ubuntu Community Wiki](https://help.ubuntu.com/community/Fstab). 
 
 ```sh
 sudo su -
