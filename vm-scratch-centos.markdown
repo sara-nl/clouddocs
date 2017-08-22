@@ -35,28 +35,27 @@ In this section we will be setting up the environment within your project (or _G
 
 Analogously to your laptop, your VM needs a hard drive where the operating system can be installed and where it will live. We will create one here.
 
-1. **On the UI:** Go to the _Images_ tab (under _Storage_), and click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `image`. A form will pop up.
-2. **On the UI:** On the form that popped up:
+1. **On the UI:** Go to the _Images_ tab (under _Storage_) and locate the green _[+]_ button on the top-left corner of the screen. Click it and you see a blank _Create Image_ form.
+2. **On the UI:** In the _Create Image_ form:
   * type in a meaningful _Name_ (e.g.: **centos_drive**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _Generic storage datablock_
   * leave _Datastore_ with _104: local_images_ssd_
   * check the checkbox: _This image is persistent_ 
-  * on the _Image location:_ group, choose radio button _Empty disk image_
-  * and give it a _Size_ that is meaningful to you (e.g.: in our test we used 10GB)
+  * below _Image location_ choose radio button _Empty disk image_
+  * and give it a _Size in MB_ that is meaningful to you (e.g.: in our test we used 10GiB, which is approximately 10000 MB)
 3. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while it is being created. When it is created it will come to status _READY_.
 
 ### Fetching the CentOS ISO
 
-1. **On the UI:** On the _Images_ tab (under _Storage_), click on the green _[+]_ button (on the top-left corner of the screen) to start creating a new `image`. A form will pop up.
-2. **On the UI:** On the form that popped up:
-  * click on the gray _Reset_ button at the bottom of it
+1. **On the UI:** Go to the _Images_ tab (under _Storage_) and locate the green _[+]_ button on the top-left corner of the screen. Click it and you see a blank _Create Image_ form.
+2. **On the UI:** In the _Create Image_ form:
   * type in a meaningful _Name_ (e.g.: **centos_iso**, we will use this name later)
   * type in a meaningful _Description_ (optional)
   * choose _Type_ _Readonly CD-ROM_
   * leave _Datastore_ with _104: local_images_ssd_
   * leave the checkbox _This image is persistent_ unchecked
-  * on the _Image location:_ group, choose radio button _Path in OpenNebula server_; then, underneath, paste the URL of the ISO in the _Path_ text box (e.g.: in our case, we used the most recent one from: http://ftp.nluug.nl/ftp/pub/os/Linux/distr/CentOS/7/isos/x86_64/)
+  * on the _Image location:_ group, choose radio button _Path in OpenNebula server_; then, underneath, paste the URL of the ISO in the _Path_ text box (e.g.: in our case, we used the most recent "minimal" one from: http://ftp.nluug.nl/ftp/pub/os/Linux/distr/CentOS/7/isos/x86_64/)
 3. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while it is being created. When it is created it will come to status _READY_.
 
 >**NOTE:**  
