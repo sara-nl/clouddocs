@@ -7,27 +7,26 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>HPC Cloud documentation</title>
 
-    {% include paths %}
     <!-- Code highlighting -->
-    <link rel="stylesheet" href="{{relative}}css/highlight.min.css">
+    <link rel="stylesheet" href="css/highlight.min.css">
 
     <!-- Bootstrap core CSS -->
-    <link href="{{relative}}css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{{relative}}css/starter-template.css" rel="stylesheet">
+    <link href="css/starter-template.css" rel="stylesheet">
     
     <!-- FontAwesome font so that we can reproduce OpenNebula's icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://ui.hpccloud.surfsara.nl/css/app.min.css?v=4.14.2"> -->
 
     <!-- Opensearch info so browsers can automatically search this documentation -->
-    <link href="{{relative}}opensearch.xml" rel="search" title="HPC Cloud docs" type="application/opensearchdescription+xml">
+    <link href="opensearch.xml" rel="search" title="HPC Cloud docs" type="application/opensearchdescription+xml">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="{{relative}}js/html5shiv.min.js"></script>
-      <script src="{{relative}}js/respond.min.js"></script>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
@@ -44,9 +43,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="{{relative}}./"><i class="fa fa-life-ring" aria-hidden="true"></i> Documentation</a></li>
-            <li><a href="{{relative}}./notices/"><i class="fa fa-bullhorn" aria-hidden="true"></i> Notices</a></li>
-            <li><a href="{{relative}}./helpdesk-form.html"><i class="fa fa-comments-o" aria-hidden="true"></i> Contact</a></li>
+            <li><a href="./"><i class="fa fa-life-ring" aria-hidden="true"></i> Documentation</a></li>
+            <li><a href="./notices/"><i class="fa fa-bullhorn" aria-hidden="true"></i> Notices</a></li>
+            <li class="active"><a href="./helpdesk-form.html"><i class="fa fa-comments-o" aria-hidden="true"></i> Contact</a></li>
           </ul>
           <div class="searchbox"><input type="text" class="searchfield" /> <input type="button" value="Search" class="searchbutton" /></div>
         </div><!--/.nav-collapse -->
@@ -60,7 +59,35 @@
           <a class="btn btn-default edit" href="#" style="display: none">Edit on GitHub</a>
           <a class="btn btn-default comments" href="mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments">E-mail comments</a>
         </div>
-        {{content}}
+<h1>Contact helpdesk </h1>
+<p>Please fill in the details to contact SURFsara helpdesk</p>
+<hr>
+<form action="mailto:helpdesk@surfsara.nl" method="post" enctype="text/plain">
+<div>Full Name:</div>
+<input type="text" name="Name" size ="70" required><br />
+<br />
+<div>What is the name of your project?</div>
+<input type="text" name="Project-name" required><br />
+<br />
+<div>What is your username?</div>
+<input type="text" name="username" required><br />
+<br />
+<div>Which infrastructure do you need help for?</div>
+<p>
+<input type="radio" name="Infrastructure type" value="Cartesius" id="cartesius" /><label for="cartesius">Cartesius</label><br />
+<input type="radio" name="Infrastructure type" value="Grid" id="grid" /><label for="grid"> Grid</label><br />
+<input type="radio" name="Infrastructure type" value="Hadoop Cluster" id="hadoop" /><label for="hadoop"> Hadoop Cluster</label><br />
+<input type="radio" name="Infrastructure type" value="HPC CLoud" id="cloud" checked="checked" /><label for="cloud"> HPC Cloud</label><br />
+<input type="radio" name="Infrastructure type" value="Lisa" id="lisa" /><label for="lisa"> Lisa</label><br />
+</p>
+<div>Please enter your question here</div>
+<textarea rows="10" cols="80" name="question" required="required">
+</textarea>
+
+<p>You will be redirected to your mail client, where you may add attachments (e.g., screenshots, etc.) before sending the email to helpdesk.</p>
+<input type="submit" value="Submit question">
+<input type="reset" value="Reset">
+</form>
       </div>
 
     </div><!-- /.container -->
@@ -68,15 +95,15 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{{relative}}js/jquery.min.js"></script>
-    <script src="{{relative}}js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{{relative}}js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
 
     <!-- Code highlighting -->
-    <script src="{{relative}}js/highlight.min.js"></script>
+    <script src="js/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
-    <script src="{{relative}}js/general.js" type="text/javascript"></script>
+    <script src="js/general.js" type="text/javascript"></script>
   </body>
 </html>
