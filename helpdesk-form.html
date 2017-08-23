@@ -15,7 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/starter-template.css" rel="stylesheet">
-    
+
     <!-- FontAwesome font so that we can reproduce OpenNebula's icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://ui.hpccloud.surfsara.nl/css/app.min.css?v=4.14.2"> -->
@@ -28,6 +28,12 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+    <style>
+      td {
+        vertical-align: top;
+        padding-left: 1em;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -59,35 +65,77 @@
           <a class="btn btn-default edit" href="#" style="display: none">Edit on GitHub</a>
           <a class="btn btn-default comments" href="mailto:helpdesk@surfsara.nl?subject=HPC%20Cloud%20documentation%20comments">E-mail comments</a>
         </div>
-<h1>Contact helpdesk </h1>
-<p>Please fill in the details to contact SURFsara helpdesk</p>
-<hr>
-<form action="mailto:helpdesk@surfsara.nl" method="post" enctype="text/plain">
-<div>Full Name:</div>
-<input type="text" name="Name" size ="70" required><br />
-<br />
-<div>What is the name of your project?</div>
-<input type="text" name="Project-name" required><br />
-<br />
-<div>What is your username?</div>
-<input type="text" name="username" required><br />
-<br />
-<div>Which infrastructure do you need help for?</div>
-<p>
-<input type="radio" name="Infrastructure type" value="Cartesius" id="cartesius" /><label for="cartesius">Cartesius</label><br />
-<input type="radio" name="Infrastructure type" value="Grid" id="grid" /><label for="grid"> Grid</label><br />
-<input type="radio" name="Infrastructure type" value="Hadoop Cluster" id="hadoop" /><label for="hadoop"> Hadoop Cluster</label><br />
-<input type="radio" name="Infrastructure type" value="HPC CLoud" id="cloud" checked="checked" /><label for="cloud"> HPC Cloud</label><br />
-<input type="radio" name="Infrastructure type" value="Lisa" id="lisa" /><label for="lisa"> Lisa</label><br />
-</p>
-<div>Please enter your question here</div>
-<textarea rows="10" cols="80" name="question" required="required">
-</textarea>
+ <h1>Contact SURFsara helpdesk </h1>
+ <hr>
 
-<p>You will be redirected to your mail client, where you may add attachments (e.g., screenshots, etc.) before sending the email to helpdesk.</p>
-<input type="submit" value="Submit question">
-<input type="reset" value="Reset">
-</form>
+<form action="mailto:helpdesk@surfsara.nl?subject=helpdesk request" method="post" enctype="text/plain" id="helpform">
+  <div>Full Name:</div>
+  <input type="text" name="Name" size ="70" required><br>
+   <br>
+   <div>Which infrastructure do you need help for?</div>
+  </h3>
+  <table>
+    <tbody>
+      <tr>
+        <td><input type="radio" name="Infrastructure type" value="Beehub" onclick="shownone();" id="beehub"></td>
+        <td><label for="beehub"> Beehub</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="Infrastructure type" value="Cartesius" onclick="shownone();" id="cartesius"></td>
+        <td><label for="cartesius"> Cartesius</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="Infrastructure type" value="Data Ingest Service" onclick="shownone();" id="dis"></td>
+        <td><label for="dis"> Data Ingest Service</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="Infrastructure type" value="Grid" onclick="shownone();" id="grid"></td>
+        <td><label for="grid"> Grid</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="Infrastructure type" value="Hadoop Cluster" onclick="shownone();" id="hadoop"></td>
+        <td><label for="hadoop"> Hadoop Cluster</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="Infrastructure type" value="HPC Cloud" onchange="hpcshow();" id="cloud" checked="checked"></td>
+        <td>
+          <label for="cloud"> HPC Cloud</label>
+          <div id="hpc">
+            Project Name
+            <input type="text" name="Project Name" /> <br>
+            VM ID (if applicable)
+            <input type="text" name="VM ID" /> <br>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="Infrastructure type" value="Lisa" onclick="shownone();" id="lisa"></td>
+        <td><label for="lisa"> Lisa</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="Infrastructure type" value="Visualization" onclick="shownone();" id="visualisation"></td>
+        <td><label for="visualisation"> Visualization</label></td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="Infrastructure type" value="Other" onclick="shownone();" id="other"></td>
+        <td><label for="other"> Other</label></td>
+      </tr>
+    </tbody>
+  </table>
+  <div>What is your login name on this infrastructure?</div>
+  <input type="text" name="username" required><br>
+  <br>
+ <div>Please enter your question here</div>
+  To help us troubleshoot your problem, please also paste any error messages you received.<br>
+  <textarea input type="text" name="Question" rows="10" cols="100" required></textarea> <br>
+<br>
+  You will be redirected to your mail client, where you may add attachments (e.g., screenshots, etc.) before sending the email to helpdesk. <br>
+  If your email client is not compatible, you can send an email with the above information to helpdesk@surfsara.nl
+  <br>
+
+ <input type="submit" value="Submit question">
+ <input type="reset" value="Reset">
+
       </div>
 
     </div><!-- /.container -->
@@ -105,5 +153,13 @@
     <script>hljs.initHighlightingOnLoad();</script>
 
     <script src="js/general.js" type="text/javascript"></script>
+ <script>
+    function hpcshow() {
+    document.getElementById('hpc').style.display="block";
+     }
+    function shownone() {
+    document.getElementById('hpc').style.display="none";
+     }
+   </script>
   </body>
 </html>
