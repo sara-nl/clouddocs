@@ -12,8 +12,8 @@ None
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Planned   |   03-10-2017 / 04-10-2017   |   |
-|   Planned   |   19-12-2017 / 20-12-2017   |   |
+|   Planned   |   02-10-2017 / 06-10-2017   | Major overhaul of the underlying network infrastructure required  |
+|   Planned   |   16-01-2018 / 17-01-2018   |   |
 {: class="table"}
 
 ### Past
