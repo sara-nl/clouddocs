@@ -79,7 +79,7 @@ Check that the VM proceeds with the termination: use the refresh button (upper l
 Inside the VM, the OS should take no more than a few minutes to perform a proper shutdown, after which the Cloud will copy your disks back to the disk storage.
 
 If you see, after a few minutes, that the VM is running again ("State" is "ACTIVE" and "LCM State" is "RUNNING"), 
-then your VM did not react correctly on the BIOS signal to shut down. See [VM not reacting to Shutdown](http://doc.hpccloud.surfsara.nl/vm-not-reacting-to-shutdown) for a solution. 
+then your VM did not react correctly on the BIOS signal to shut down. See [VM not reacting to Shutdown](../troubleshooting/vm-not-reacting-to-shutdown) for a solution. 
 
 Repeat this for the other running VMs.
 VMs that are suspended, stopped or otherwise alive but not running (or shutting down) need to be made running and then shut down as described above.
