@@ -12,7 +12,7 @@ None
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Planned   |   02-10-2017 / 06-10-2017   | Major overhaul of the underlying network infrastructure required  |
+|   Planned   |   02-10-2017 / 06-10-2017   | Major overhaul of the underlying network infrastructure. Total power down of infrastructure, all VMs must be terminated.  |
 |   Planned   |   16-01-2018 / 17-01-2018   |   |
 {: class="table"}
 
