@@ -23,6 +23,18 @@ You can see most of these on the UI:
 >
 > If you ever find a VM in a status that these actions cannot trigger any further changes, you may want to contact us at helpdesk@surfsara.nl. 
 
+Overview:
+
+| OpenNebula <br> Command   | OS action | non-persistent <br> disks | resources | resume <br> OS action |
+|-----------|-----------|-------|-----------|------------------|
+| Terminate | shutdown  | lost  | all free  | _n.a._ |
+| Undeploy  | shutdown  | saved to redundant storage | free except IP address | boot |
+| Stop      | _none_    | saved to redundant storage | free except IP address | _none_ |
+| Suspend   | _none_    | stay on host | **stay in use** | _none_ |
+| Poweroff  | shutdown  | stay on host | **stay in use** | boot |
+
+
+
 ## The play button
 
 The play button can only be clicked when the VM is in state SUSPENDED or STOPPED. It _resumes_ the VM to bring it to RUNNING.
