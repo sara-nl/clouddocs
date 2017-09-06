@@ -17,8 +17,9 @@ You can see most of these on the UI:
 > We recommend you **mainly** use the following actions for managing your VMs: 
 > 
 > * **Terminate**: the VM will shut down gracefully. Click the dust bin button and then *Terminate*.
+> * **Undeploy**: the VM's OS will perform a shutdown, the VM keeps its changes for the next **Resume** action. A VM in UNDEPLOYED state does not consume quota.
 > * **Stop**: the VM keeps its changes for the next *Resume* action. Click on the pause square button and then *Stop*. A VM in STOPPED state does not consume quota.
-> * **Resume**: resumes a STOPPED VM. Click on the play button. It will bring the STOPPED to RUNNING state.
+> * **Resume**: resumes a STOPPED VM. Click on the play button. It will bring a VM from STOPPED or UNDEPLOYED to RUNNING state.
 >
 > If you ever find a VM in a status that these actions cannot trigger any further changes, you may want to contact us at helpdesk@surfsara.nl. 
 
