@@ -25,13 +25,13 @@ You can see most of these on the UI:
 
 Overview:
 
-| OpenNebula <br> Command   | OS action | non-persistent <br> disks | resources | resume <br> OS action |
-|-----------|-----------|-------|-----------|------------------|
-| Terminate | shutdown  | lost  | all free  | _n.a._ |
-| Undeploy  | shutdown  | saved to redundant storage | free except IP address | boot |
+| Command   | OS action | non-persistent disks       | resources              | resume OS action |
+|-----------|-----------|----------------------------|------------------------|------------------|
+| Terminate | shutdown  | lost                       | all free               | _n.a._ |
+| Undeploy  | shutdown  | saved to redundant storage | free except IP address | boot   |
 | Stop      | _none_    | saved to redundant storage | free except IP address | _none_ |
-| Suspend   | _none_    | stay on host | **stay in use** | _none_ |
-| Poweroff  | shutdown  | stay on host | **stay in use** | boot |
+| Suspend   | _none_    | stay on host               | **stay in use**        | _none_ |
+| Poweroff  | shutdown  | stay on host               | **stay in use**        | boot   |
 
 
 
