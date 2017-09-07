@@ -34,7 +34,7 @@ table {
     collapse; border-spacing: 0; 
 }
 
-td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
+td, th { border: 1px solid #CCC; height: 1.5em; padding: 1ex;} /* Make cells a bit taller */
 
 th {  
     background: #F3F3F3; /* Light grey background */
