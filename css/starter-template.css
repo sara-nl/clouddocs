@@ -26,3 +26,25 @@ code {
 .searchbox {
   display: none;
 }
+
+/* Table styles based on http://cssmenumaker.com/blog/stylish-css-tables-tutorial/ */
+table {  
+    color: #333; /* Lighten up font color */
+    border-collapse: 
+    collapse; border-spacing: 0; 
+}
+
+td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
+
+th {  
+    background: #F3F3F3; /* Light grey background */
+    font-weight: bold; /* Make sure they're bold */
+}
+
+td {  
+    background: #FAFAFA; /* Lighter grey background */
+}
+
+tr:nth-child(even) td { background: #FEFEFE; }  
+
+tr td:hover { background: #666; color: #FFF; } 
