@@ -9,7 +9,7 @@ When using the Ubuntu 14.04 _Apps_ that we provide, you may run into the problem
 
 ## Step by step explanation
 
-These steps cannot be carried out through ssh precisely because you do not have a network connection available; you must use the HPC Cloud UI browser embedded VNC client. 
+These steps cannot be carried out through ssh because you do not have a network connection available. You must use the HPC Cloud UI browser embedded VNC client. You might also profit from reading our [VNC recovery access](vnc_recovery_access) page as well, which explains how to get root access to your VM without a root password.
 
 > **Note:**
 >
