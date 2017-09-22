@@ -15,4 +15,5 @@ For Linux VM's, if you cannot log in to your VM through SSH, you will have to de
 5. Add " 1" to the end of the line (note the space; it should not be attached to the previous argument). In the screenshot above, there is a yellow marking around the '1'.
 6. Press ctrl-x to boot the OS
 
-Once booting is complete, you should now see a shell prompt as the root user.
+Once booting is complete, you should now see a shell prompt as the root user:
+![rescue mode](images/rescue_mode.png)
