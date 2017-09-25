@@ -30,7 +30,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Updated
 * Centos image from 6.7 to 6.8
 
-## 2016-09-12
+## <a name="cl-20160912"></a>2016-09-12
 
 ### Changed
 * Domain from vm.surfsara.nl to surf-hosted.nl for new VM's.
