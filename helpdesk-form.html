@@ -69,82 +69,26 @@
  <hr>
 
 <form action="mailto:helpdesk@surfsara.nl?subject=HPC Cloud: helpdesk request" method="post" enctype="text/plain" id="helpform">
-  <div>Full Name:</div>
+  <div>Full Name</div>
   <input type="text" name="Name" size ="70" required><br>
-   <br>
-  <!--
-   <div>Which infrastructure do you need help for?</div>
-  </h3>
-  -->
-  <!--<table>
-    <tbody>  -->
-      <!--
-      <tr>
-        <td><input type="radio" name="Infrastructure type" value="Beehub" onclick="shownone();" id="beehub"></td>
-        <td><label for="beehub"> Beehub</label></td>
-      </tr>
-      <tr>
-        <td><input type="radio" name="Infrastructure type" value="Cartesius" onclick="shownone();" id="cartesius"></td>
-        <td><label for="cartesius"> Cartesius</label></td>
-      </tr>
-      <tr>
-        <td><input type="radio" name="Infrastructure type" value="Data Ingest Service" onclick="shownone();" id="dis"></td>
-        <td><label for="dis"> Data Ingest Service</label></td>
-      </tr>
-      <tr>
-        <td><input type="radio" name="Infrastructure type" value="Grid" onclick="shownone();" id="grid"></td>
-        <td><label for="grid"> Grid</label></td>
-      </tr>
-      <tr>
-        <td><input type="radio" name="Infrastructure type" value="Hadoop Cluster" onclick="shownone();" id="hadoop"></td>
-        <td><label for="hadoop"> Hadoop Cluster</label></td>
-      </tr>
-      <tr>
-        <td><input type="radio" name="Infrastructure type" value="Lisa" onclick="shownone();" id="lisa"></td>
-        <td><label for="lisa"> Lisa</label></td>
-      </tr>
-      <tr>
-        <td><input type="radio" name="Infrastructure type" value="Visualization" onclick="shownone();" id="visualisation"></td>
-        <td><label for="visualisation"> Visualization</label></td>
-      </tr>
-      <tr>
-        <td><input type="radio" name="Infrastructure type" value="Other" onclick="shownone();" id="other"></td>
-        <td><label for="other"> Other</label></td>
-      </tr>
-      -->    
-      <!--<tr>-->
-        <!-- <td><input type="radio" name="Infrastructure type" value="HPC Cloud" onchange="hpcshow();" id="cloud" checked="checked"></td> -->
-       <!-- <td>
-          <label for="cloud"> HPC Cloud</label>
-          <div id="hpc">
-            Project Name
-            <input type="text" name="Project Name" /> <br>
-            VM ID (if applicable)
-            <input type="text" name="VM ID" /> <br>
-          </div>-->
-        <!--</td>
-      </tr>      
-    </tbody>
-  </table>-->
- 
- <div>Project Name:</div>
- <input type="text" size ="35" name="Project Name"><br>
- <br>
- <div>Login Name:</div>
- <input type="text" size ="35" name="Login Name" required><br>
- <br>
- <div>VM ID (if applicable):</div>
- <input type="text" size ="35" name="VM ID"><br>
- <br>
- 
-<div>Please enter your question here</div>
-To help us troubleshoot your problem paste any error messages you received.<br>
-<textarea input type="text" name="Question" rows="10" cols="100" required></textarea><br>
-<br>
-You will be redirected to your mail client. You can add attachments (e.g., screenshots, etc.) before sending the email to helpdesk.
-<br>
-If your email client is not compatible, you can send an email with the above information to helpdesk@surfsara.nl
-<br>
+  <br> 
+  <div>Project Name</div>
+  <input type="text" size ="35" name="Project Name"><br>
+  <br>
+  <div>Login Name</div>
+  <input type="text" size ="35" name="Login Name"><br>
+  <br>
+  <div>VM ID (if applicable)</div>
+  <input type="text" size ="35" name="VM ID"><br>
+  <br>
+  <div>Please enter your question here.</div>
+  To help us troubleshoot your problem paste any error messages you received.<br>
+  <textarea input type="text" name="Question" rows="10" cols="100" required></textarea><br>
+  <br>
+  You will be redirected to your mail client and will be able to add attachments (e.g., screenshots, etc.) before sending the email to the Helpdesk.
+  <br>
+  If your email client is not compatible, you can send an email with the above information to helpdesk@surfsara.nl
+  <br>
 
  <input type="submit" value="Submit question">
  <input type="reset" value="Reset">
