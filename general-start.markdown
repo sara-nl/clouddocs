@@ -145,7 +145,7 @@ where you should replace _mmm_ and _nnn_ to match the IP address of your virtual
 >
 -->
 >**Note:**
->You can find out which username to use (in this case, 'ubuntu', but it could be a different one) by reading the description of the _Appliance_ you imported. Go to the _AppMarket_ tab on the UI, then _Appliances_ and then click on the _appliance_ you chose. You can then read extended information for that appliance. Among other information, you will find usernames you can use.
+> In this case 'ubuntu' is the username but it could be a different one, e.g. 'admincentos' for VMs created from Centos Apps images.
 >
 >**Note:**
 >You may have to specify which of your (multiple) public keys you want to use to connect to your VM. The `ssh` command can take an argument of the following form for that:
