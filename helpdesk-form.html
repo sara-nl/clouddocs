@@ -115,27 +115,36 @@
       <!--<tr>-->
         <!-- <td><input type="radio" name="Infrastructure type" value="HPC Cloud" onchange="hpcshow();" id="cloud" checked="checked"></td> -->
        <!-- <td>
-          <label for="cloud"> HPC Cloud</label>-->
+          <label for="cloud"> HPC Cloud</label>
           <div id="hpc">
             Project Name
             <input type="text" name="Project Name" /> <br>
             VM ID (if applicable)
             <input type="text" name="VM ID" /> <br>
-          </div>
+          </div>-->
         <!--</td>
       </tr>      
     </tbody>
   </table>-->
-  <div>What is your login name on this infrastructure?</div>
-  <input type="text" name="username" required><br>
-  <br>
- <div>Please enter your question here</div>
-  To help us troubleshoot your problem, please also paste any error messages you received.<br>
-  <textarea input type="text" name="Question" rows="10" cols="100" required></textarea> <br>
+ 
+ <div>Project Name</div>
+ <input type="text" name="Project Name"><br>
+ <br>
+ <div>Login Name</div>
+ <input type="text" name="Login Name" required><br>
+ <br>
+ <div>VM ID (if applicable)</div>
+ <input type="text" name="VM ID"><br>
+ <br>
+ 
+<div>Please enter your question here</div>
+To help us troubleshoot your problem paste any error messages you received.<br>
+<textarea input type="text" name="Question" rows="10" cols="100" required></textarea><br>
 <br>
-  You will be redirected to your mail client, where you may add attachments (e.g., screenshots, etc.) before sending the email to helpdesk. <br>
-  If your email client is not compatible, you can send an email with the above information to helpdesk@surfsara.nl
-  <br>
+You will be redirected to your mail client. You can add attachments (e.g., screenshots, etc.) before sending the email to helpdesk.
+<br>
+If your email client is not compatible, you can send an email with the above information to helpdesk@surfsara.nl
+<br>
 
  <input type="submit" value="Submit question">
  <input type="reset" value="Reset">
