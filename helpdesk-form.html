@@ -72,10 +72,14 @@
   <div>Full Name:</div>
   <input type="text" name="Name" size ="70" required><br>
    <br>
+  <!--
    <div>Which infrastructure do you need help for?</div>
   </h3>
+  -->
   <table>
     <tbody>
+      
+      <!--
       <tr>
         <td><input type="radio" name="Infrastructure type" value="Beehub" onclick="shownone();" id="beehub"></td>
         <td><label for="beehub"> Beehub</label></td>
@@ -97,18 +101,6 @@
         <td><label for="hadoop"> Hadoop Cluster</label></td>
       </tr>
       <tr>
-        <td><input type="radio" name="Infrastructure type" value="HPC Cloud" onchange="hpcshow();" id="cloud" checked="checked"></td>
-        <td>
-          <label for="cloud"> HPC Cloud</label>
-          <div id="hpc">
-            Project Name
-            <input type="text" name="Project Name" /> <br>
-            VM ID (if applicable)
-            <input type="text" name="VM ID" /> <br>
-          </div>
-        </td>
-      </tr>
-      <tr>
         <td><input type="radio" name="Infrastructure type" value="Lisa" onclick="shownone();" id="lisa"></td>
         <td><label for="lisa"> Lisa</label></td>
       </tr>
@@ -120,6 +112,20 @@
         <td><input type="radio" name="Infrastructure type" value="Other" onclick="shownone();" id="other"></td>
         <td><label for="other"> Other</label></td>
       </tr>
+      -->
+      
+      <tr>
+        <td><input type="radio" name="Infrastructure type" value="HPC Cloud" onchange="hpcshow();" id="cloud" checked="checked"></td>
+        <td>
+          <label for="cloud"> HPC Cloud</label>
+          <div id="hpc">
+            Project Name
+            <input type="text" name="Project Name" /> <br>
+            VM ID (if applicable)
+            <input type="text" name="VM ID" /> <br>
+          </div>
+        </td>
+      </tr>      
     </tbody>
   </table>
   <div>What is your login name on this infrastructure?</div>
