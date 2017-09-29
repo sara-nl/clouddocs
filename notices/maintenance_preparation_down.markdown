@@ -23,7 +23,7 @@ See our [backup policy](https://userinfo.surfsara.nl/systems/hpc-cloud/backup-po
 
 If you bring a VM to `undeployed`, `stopped` or even `poweroff` state, its disks will remain on the host, non-redundant, and have an increased risk of data loss. This risk is small, but not negligible.
 
-If you leave a VM runnng, it will experience a sudden loss of power and its disks will probably be corrupred.
+If you leave a VM runnng, it will experience a sudden loss of power and its disks will probably be corrupted.
 
 ### Links
 
@@ -36,7 +36,7 @@ If you have questions or need assistance, please contact our helpdesk: [helpdesk
 
 ## Instructions to prepare for the downtime
 
-The safe way to prepare for the move is to terminate your VMs in time.
+The safe way to prepare for the downtime is to terminate your VMs in time.
 "Terminate" means using the button from the Cloud's user interface and check that the VM is gone.
 As part of the termination procedure, the persistent disks of the VM will be copied back to our Ceph cluster.
 
@@ -49,7 +49,6 @@ changes to data on non-persistent disks is lost when the VM terminates.
 For more information on (non-) persistency, see [Image Persistence](http://doc.hpccloud.surfsara.nl/image_persistence).
 
 How can you check your disks for persistency?
-
 
 - log in to the Cloud user interface
 - go to the list of VMs
