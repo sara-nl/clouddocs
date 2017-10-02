@@ -12,9 +12,9 @@ layout: default
 
 ### Future
 
-|   Status    |   Date (start / end)        |   |
-|:------------|:----------------------------|:--|
-|   Planned   |   16-01-2018 / 17-01-2018   |   |
+|   Status    |   Date (start / end)       
+|:------------|:----------------------------
+|   Planned   |   16-01-2018 / 17-01-2018 
 {: class="table"}
 
 ### Past
