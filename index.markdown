@@ -12,6 +12,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 <div style="display:none;" class="alert alert-success" markdown="1">
 <div style="float:right;max-width:60px;margin-top:-10px;" markdown="1">
+
 <div style="max-width:30px;" markdown="1">
 ![UvA logo](/images/UvA-logo.png)
 </div>
@@ -19,15 +20,16 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 <div style="max-width:60px;" markdown="1">
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
+
 </div>
 
 <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i> 
 <span style="color:red;">TODAY!</span> - 2017-07-03 <br/> [UvA HPC course](UvA-20170703/index)
 </div>
 
-<div style="display:none;" class="alert alert-success" markdown="1">
-<i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
-The HPC Cloud documentation **images are not being rendered correctly**. The service team is fixing the issue.
+<div class="alert alert-success" markdown="1">
+<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"</i>
+The HPC Cloud service is under [maintenance](maintenance). 
 </div>
 
 </div>
