@@ -21,7 +21,7 @@ Note that the `ceph` datastore is also enabled on the GPU nodes. However, as des
 
 If you want to import an appliances from the Apps option of the Storage section for use on the GPU nodes, you can follow the normal instructions as described on [this page](general-start).
 
-The only exception is that you have to select a different datastore. In the screen shown below, make sure you choose the 'gpu_images_ssd' datastore.
+The only exception is that you have to select a different datastore. In the screen shown below, make sure you choose the 'images_ssd_gpu' datastore.
 
 ![GPU import from apps](images/gpu/rvs_image_name.png)
 
@@ -49,7 +49,7 @@ GPU devices are attached to VM using 'pci passthrough'. This means that your VM 
 
 > **NOTE:**
 >
-> Before proceeding, make sure that your OS image is on the `gpu_images_ssd` datastore and possible extra images are on the `ceph` datastore.
+> Before proceeding, make sure that your OS image is on the `images_ssd_gpu` datastore and possible extra images are on the `ceph` datastore.
 
 To attach a GPU device to your VM, either create a new template or edit an existing template as described [on this page](customize-your-vm). Then:
 
