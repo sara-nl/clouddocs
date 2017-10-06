@@ -38,7 +38,7 @@ When you already have an image that you want to use on the GPU nodes, you will h
  3. Click on 'Clone' at the top of the table with images.
  4. Click on the 'Advanced options' button. This will show you a screen like this:
  ![Clone image to GPU datastore](images/gpu/gpu_clone_image.png)
- 5. Select the correct datastore 'gpu_images_ssd'
+ 5. Select the correct datastore 'images_ssd_gpu'
  6. Optionally, change the name of the image
  7. Click the 'Clone' button
  8. Optionally, you can now delete the old image. This is not necessary, but note that changes in one image will not affect the other!
