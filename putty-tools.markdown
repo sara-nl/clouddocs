@@ -38,7 +38,7 @@ A well known SSH client for Windows is PuTTY.
 
 To login to your VM:
 1. start Putty  
-2. Fill in the Host Name (or IP address) the Host Name (or IP address) e.g. vmname.projectname-institute.vm.surfsara.nl or 145.100.XX.XX  
+2. Fill in the Host Name (or IP address) the Host Name (or IP address) e.g. vmname.projectname-institute.surf-hosted.nl or 145.100.XX.YY  
 3. Select _Connection ->Data_ on the left hand panel  
 4. Fill in your user name at _Auto-login username_ (for the first time you start a VM this should be _root_ )  
 5. Select _Connection->SSH->Auth_ on the left-hand panel  
