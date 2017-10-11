@@ -6,9 +6,8 @@ layout: default
 
 ### Current
 
-|   Status    |   Date (start / end)        |   |
-|:------------|:----------------------------|:--|
-|   Current  |   11-10-2017 10:30 | Working on the problem: the UI does not allow logins. |
+No ongoing maintenance.
+
 ### Future
 
 |   Status    |   Date (start / end)       
@@ -22,6 +21,7 @@ layout: default
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finished  |   11-10-2017 10:30-10:45 | The UI does not allow logins. |
 |   Finished  |   02-10-2017 / 06-10-2017   | Scheduled maintenance. Major overhaul of the underlying network infrastructure. |
 |   Finished  |   14-08-2017  | Solved: Outgoing SSH traffic was blocked since 26-07-2017.  |
 |   Finished  |   26-07-2017 : 16:45 / 26-07-2017 : 21:15  | Unscheduled maintenance. Due to unexpected problems with one of our switches, the UI and part of the VMs on the HPC Cloud were disconnected from the internet. No network traffic in or out was possible. Internal network traffic, between VM's appear to have been unaffected. At 21.15 the problems were solved. |
