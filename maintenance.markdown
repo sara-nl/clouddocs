@@ -6,8 +6,9 @@ layout: default
 
 ### Current
 
-No maintenance.
-
+|   Status    |   Date (start / end)        |   |
+|:------------|:----------------------------|:--|
+|   Current  |   11-10-2017 10:30 | Working on the problem: the UI does not allow logins. |
 ### Future
 
 |   Status    |   Date (start / end)       
