@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 2017-02-06
 
+### Removed
 * Old DNS domain name discontinued (vm.surfsara.nl) 
 
 ## 2017-01-24
