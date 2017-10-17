@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## 2017-02-06
+## 2017-10-06
 
 ### Removed
 * Old DNS domain name discontinued (vm.surfsara.nl) 
