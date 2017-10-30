@@ -52,13 +52,13 @@ For this workshop you will need:
 * A browser (Chrome or Firefox will do nicely)
 * An SSH client
   * _Linux and Mac users:_ don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
-  * _Windows users:_ download and install [git for windows](https://git-for-windows.github.io/). Depending on your OS installation, choose between the `-32-bit.exe` or the `-64-bit.exe`.
+  * _Windows users:_ if you attended previous sessions, then you probably installed and configured [MobaXterm](https://mobaxterm.mobatek.net/). You should be able to use that. Alternatively, you can download and install [git for windows](https://git-for-windows.github.io/). 
 * An X-window client
   * _Linux and Mac users:_ usually don't need to install anything as X11 is on board. However, the newest Mac OS releases might not have X11.app installed. In such a case, install [XQuartz](http://xquartz.macosforge.org/landing/).
-  * _Windows users:_ install [Xming](http://sourceforge.net/projects/xming/).
+  * _Windows users:_ if you attended previous sessions, then you probably installed and configured [MobaXterm](https://mobaxterm.mobatek.net/). You should be able to use that. Alternatively, install [Xming](http://sourceforge.net/projects/xming/).
 
-> **NOTE for Windows users:**
->
+> **NOTE for Windows using GitBash:**
+> 
 > For the course purposes you will need to start a graphical window in your laptop that is connected to your HPC Cloud machine. To make this work, you need to adjust the following:  
 >
 * Open GitBash (or git for windows).
