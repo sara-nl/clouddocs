@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# VU HPC Cloud course 2017-10-13 <br/> Extras
+# VU HPC course 2017-11-13 <br/> Extras
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![VU logo](/images/VU_logo.png)
@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is part Extras of the tutorial [VU HPC Cloud course 2017-10-13](.). These exercises can be done in any order and you are to do as many as you want, depending on your enthusiasm and available time.
+This is part Extras of the tutorial [VU HPC course 2017-11-13](.). These exercises can be done in any order and you are to do as many as you want, depending on your enthusiasm and available time.
 
 You will find several _Food for brain_ questions in each exercise about situations that you might encounter when working with **Parallel programming** techniques. Our advice is that you perform many tests, observe the results (write down execution times, change parameters, make tables, draw graphs...) and think about your answers.
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# VU HPC Cloud course 2017-10-13 <br/> Part A
+# VU HPC course 2017-11-13 <br/> Part A
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![VU logo](/images/VU_logo.png)
@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is part A of the tutorial [VU HPC Cloud course 2017-10-13](.) and covers the following topics:
+This is part A of the tutorial [VU HPC course 2017-11-13](.) and covers the following topics:
 
 1. [Access the user interface](#access-the-user-interface)
 2. [Add your public SSH key](#add-your-public-ssh-key)
@@ -234,4 +234,4 @@ This section is meant to propose extra questions we thought would be nice for yo
 > Your running VMs get exclusive access to their resources whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**.
 
 ### Next: part B
-You completed part A of the Tutorial [VU HPC Cloud course 2017-10-13](.). Please continue with Tutorial [Part B](partB).
+You completed part A of the Tutorial [VU HPC course 2017-11-13](.). Please continue with Tutorial [Part B](partB).

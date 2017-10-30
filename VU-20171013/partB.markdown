@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# VU HPC Cloud course 2017-10-13 <br/> Part B
+# VU HPC course 2017-11-13 <br/> Part B
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![VU logo](/images/VU_logo.png)
@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is part B of the tutorial [VU HPC Cloud course 2017-10-13](.) and covers the following topics:
+This is part B of the tutorial [VU HPC course 2017-11-13](.) and covers the following topics:
 
 1. [Persistence](#persistence)
 2. [Scale up to a multicore VM](#scale-up-to-a-multicore-vm)
@@ -215,4 +215,4 @@ This section is meant to propose extra questions we thought would be nice for yo
 
 
 ### Next: Extras
-You have completed part B of the Tutorial [VU HPC Cloud course 2017-10-13](.). If you want more of the HPC Cloud proceed to the [Extras part](extras).
+You have completed part B of the Tutorial [VU HPC course 2017-11-13](.). If you want more of the HPC Cloud proceed to the [Extras part](extras).

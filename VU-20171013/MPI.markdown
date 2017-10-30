@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# VU HPC Cloud course 2017-10-13  <br/> Extras - Wave simulation with MPI
+# VU HPC course 2017-11-13  <br/> Extras - Wave simulation with MPI
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![VU logo](/images/VU_logo.png)
@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is an exercise from the [Extras](extras) part of the Tutorial [VU HPC Cloud course 2017-10-13](.).
+This is an exercise from the [Extras](extras) part of the Tutorial [VU HPC course 2017-11-13](.).
 
 In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **message-passing** system. For this puspose, we will be running wave simulations using MPI. We will approximate solutions for the wave differential equation in 2D, by using numerical methods. 
 

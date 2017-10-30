@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# VU HPC Cloud course 2017-10-13
+# VU HPC course 2017-11-13
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![VU logo](/images/VU_logo.png)
