@@ -34,7 +34,7 @@ Here is a summary of the course outline:
 >13th November 2017, VU, [Mathematics and Physics building (W&N building)](https://science.vu.nl/en/about-the-faculty/contact-route/index.aspx)
 >
 > * 10:00 Welcome & coffee  
-> * 10:05 Presentation and Demo: HPC Cloud at SURFsara (Markus van Dijk)
+> * 10:05 Presentation and Demo: HPC Cloud at SURFsara (Nuno Ferreira)
 > * 10:25 Hands-on: Parts A & B
 > * 12:00 Lunch   
 > * 13:00 Presentation: Cloudifying - parallelism & API (Ander Astudillo)
