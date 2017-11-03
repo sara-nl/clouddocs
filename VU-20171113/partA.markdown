@@ -95,7 +95,7 @@ Let's run your first VM on the HPC Cloud!
 * A dialogue will pop up asking you for a few details. Edit as follows:
   * Name: **First Image**
   * VM Template Name: **First Template**
-  * Under section _Select the Datastore to store the resource_, choose the entry displaying **147: _Courses\_img_** by clicking anywhere within that entry. It should now read `You selected the following datastore: Courses_img`
+  * Under section _Select the Datastore to store the resource_, choose the entry displaying **147: _Courses\_img_** by clicking anywhere within that entry. It should now read, right above the entry you just clicked: `You selected the following datastore: Courses_img`
 * Click the green *Download* button. This will copy the _app_ to your workspace, and return to the Apps list.
 
 > **Food for brain:**
