@@ -105,15 +105,17 @@ From now on, whenever you instantiate this `template`, you will get a 4-core VM 
 
 ### 3. Working with storage types
 
-The current HPC Cloud offers two storage types: **Ceph** and **SSD**. Data stored on `Ceph` is replicated to protect against data loss in case of hardware failure. Our recommended best practice is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock(s)`.
+The current HPC Cloud offers two storage types: **Ceph** and **SSD**. SSD storage is available as SSD disks in the local compute nodes where VMs run. It is meant to be small. On the other hand, Ceph is a storage system in its own cluster. Ceph images can be rather big, and data placed in them is replicated throughout the storage cluster to protect against data loss in case of hardware failure. As a guiding note, our recommended best practice is to run your operating system on a small `SSD image`, while you store your bulk data on `Ceph datablock(s)`.
 
-When you create an `image`, you must choose where it is stored, under the heading _Datastore_. You have the choice between `Courses_img` (SSD) and `ceph`.  When you imported your first _App_ in tutorial Part A, you created an image containing an Ubuntu 14.04 OS on `Courses_img` (SSD). In this section we're introducing to you the `ceph` `datastore` option. You can create an `image` in `ceph` datastore by following these steps:
+You choose storage types by means of `images`. For each `image`, you choose which storage type you want to use by placing the `image` on either of the two `datastores` you have available: you have the choice between `Courses_img` (which provides the SSD storage type) and `ceph`.  When you imported your first `app` in Part A of this tutorial, you created an `image` which you assigned to the *Courses_img* datastore. You know that this `image` has Ubuntu 14.04 installed, so you can now see that you are running the operating system from SSD. 
+
+In this section you will be exploring the `ceph` `datastore`. You can create an `image` in the `ceph` datastore by following these steps:
 
 * Creating a new empty `image` for bulk data
 * Adding the new `image` to the `template`
 * Mounting the `image` in the VM
 
-At this point you should **not** have any running VMs. If you do, shut them down.
+At this point you should **not** have any running VMs. If you do, shut them down (remember, the _Terminate_ button).
 
 #### Creating a new empty `image` for bulk data
 
