@@ -24,10 +24,10 @@ This is part B of the tutorial [VU HPC course 2017-11-13](.) and covers the foll
 
 ### 1. Persistence
 
-`Images` can be **persistent** or **non-persistent** and you can change this mode at will.
+`Images` can be either **persistent** or **non-persistent** and you can change this mode at will.
 
 * What does **persistent** mean?
-  *  Changes made by the VM are copied back to the original `image` (upon normal VM shutdown)
+  *  Changes made by the VM are copied back to the original `image` upon normal VM shutdown
   *  If a VM is running with a **persistent** disk, you **cannot** launch a second VM using that same `image`
 
 * What does **non-persistent** mean?
@@ -49,68 +49,61 @@ In this section you will work with **persistent** images. You will go through th
 * Switch the value to _Yes_ by clicking on the pencil icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
 
 #### Starting a persistent VM
-* Start your virtual machine (VM) again.
+* Start your virtual machine (VM) again. Call it **Second**
 * Log in and check the files you created during the previous run [(Part A)](partA).
-
-<div class="alert alert-warning" markdown="1">
-<i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true">Warning</i><br>
-
-The Ubuntu Desktop 14.04 _App_ is affected by a [problem described in our documentation](/connection_problem_ubuntu1404). To correct it easily, please follow these steps now that you are connected via SSH:
-
-```sh
-wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20171013/code/cloudinit_fix.sh
-chmod +x cloudinit_fix.sh
-sudo ./cloudinit_fix.sh
-```
-
-</div>
+* Create another file now.
 
 > **Food for brain:**
 > 
->* Is/are the file(s) you created on your VM (part A) there?
+>* Is/are the file(s) you created in your VM (in part A) still there?
 >* During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written to the `image` even if you restart your VM. Try it.
 
-You can now shut your VM down.
+You can now shut your VM down (remember, the _Terminate_ button on the UI).
 
 ### 2. Scale up to a multicore VM
 
-The HPC Cloud is offered as an Infrastructure as a Service (IaaS). That allows you to give your VMs the form that you need them to have. In this section, you will start a _four-core_ VM, using the exact same image, the _Course Image_. To scale-up your VM to use multiple cores you will be:
+The HPC Cloud offers Infrastructure as a Service (IaaS). That allows you to give your VMs the form that you need them to have. In this section, you will start a **4-core** VM, using the exact same `image` as before. 
+
+To scale-up your VM to use multiple cores you will be:
 
 * Editing your `template`.
 * Re-instantiating a VM from the modified `template`.
 
 #### Edit the template
 
-You can customise your VMs by editing the `templates` you instantiate the VMs from.
+You can customise your VMs by editing the `templates` you instantiate VMs from.
 
-* In order to edit your existing `template`, from the _VMs_ tab <i class="fa fa-file-o"></i> under _Templates_ on the left menu, choose the **Course Template**. Then click on the _Update_ button on the top left of the screen.
+* In order to edit your existing `template`, from the _VMs_ tab <i class="fa fa-file-o"></i> under _Templates_ on the left menu, choose the **First Template**. Then click on the _Update_ button on the top left of the screen.
 * In the _General_ tab <i class="fa fa-laptop"></i> edit the number of CPU and VCPU as:
   * CPU: **4**
   * VCPU: **4**
 * When you are done, click on the green _Update_ button so that your changes are actually saved.
 
-From now on, whenever you instantiate this `template`, you will get a 4-core VM running using the same *Course Image*.
+From now on, whenever you instantiate this `template`, you will get a 4-core VM running using the same *First Image* you have been using so far.
 
 > **Food for brain:**
 >
-> After changing the `template` as described above, how many cores do you expected your VM to have? Does changing a `template` affects the currently running VM's that are based on it?
+> After changing the `template` as described above, how many cores do you expecte your VM to have? Does changing a `template` affect the currently running VM's that are based on it?
 
 #### Instantiate the four-core VM
 
-* Instantiate a VM from the updated `template`.
-* Login to the VM. *Is your data there?*
+* Instantiate a VM from the updated `template`. Call it **third**.
+* Login to the VM. 
 * You can verify that you are logged in on a four-core VM with either of the following commands: 
   * `cat /proc/cpuinfo | grep processor`
   * `lscpu`
 
+> **Food for brain:**
+>
+> Since we are in the VM again... are your files there now? All? None? Can you explain?
 
 #### Shut down the four-core VM
 
 * Choose the VM from your list
-* Click on the red dust bin and, under that, click the option _Terminate_.
+* Click on the red _Terminate_ button.
 
 
-### 3. Working with Storage
+### 3. Working with storage types
 
 The current HPC Cloud offers two storage types: **Ceph** and **SSD**. Data stored on `Ceph` is replicated to protect against data loss in case of hardware failure. Our recommended best practice is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock(s)`.
 
