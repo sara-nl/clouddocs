@@ -29,17 +29,17 @@ The User Interface (UI) is the web site that allows you to manage your _Virtual 
 
 #### Switch to "user view"
 
-The interface supports several views and for this course, you should use the "user view".
+The interface supports several so-called views, which are a way to arrange information on the screen. For this course you should use the _user view_. 
 
 * Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen and click it.
 * In the drop-down menu, move to *<i class="fa fa-eye"></i> Views* and in that sub-menu select *user*.
 
 #### Change your password
 
-Once you login to the UI, it is a best practice to change the initial password.
+Once you login to the UI for the first time, it is best practice to change the initial password.
 
 * Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen, click it and select *<i class="fa fa-cog"></i> Settings*.
-* In the _Settings_ display, locate the _Password_ field and click the blue *edit* icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
+* In the _Settings_ screen, locate the _Password_ row in the _Authentication_ section. Click the blue pencil *edit* icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
 * On the _Update Password_ pop-up dialog fill in a new password (twice) and click the *Change* button to submit it.
 
 #### Logout
