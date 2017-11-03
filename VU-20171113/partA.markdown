@@ -144,16 +144,15 @@ A `template` is just a description of the virtual machine that we want to build.
 
 Congratulations! You have just created a fresh, clean virtual machine!
 
-Let's summarise what you have seen so far. Click on each of the tabs on the left side menu and inspect the information provided. The most important ones at this point in time are described here:
-
-* _Dashboard_: shows an overview of the project status, like the number of running machines or usage statistics.
-* _Instances_ &gt; _<i class="fa fa-th"></i> VMs_: here you can manage your VMs (i.e.: create, start, shutdown). Click anywhere on a running VM's row (except the tick-box). Inspect the information present in the different tabs providing you extended details.
-* _Templates_ &gt; _<i class="fa fa-file-o"></i> VMs_: the `template` gives your VM the shape you want. A `template` is just a recipe; not the machine itself.
-* _Storage_ &gt; _<i class="fa fa-download"></i> Images_: this is the equivalent of a hard drive. Your OS is stored on this `image`.
-* _Storage_ &gt; _<i class="fa fa-cloud-download"></i> Apps_: a list of `appliances` endorsed by SURFsara HPC Cloud team that you can use.
-
 > **NOTE:**  
->Your VM will appear in the list of virtual machines. At first, it will have the state `PENDING`. This indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount of resources (cores, memory, and disk) you requested in the associated `template`. Keep refreshing the list by clicking button <i class="fa fa-refresh"></i>. When the required capacity becomes available, your VM will show the status `RUNNING`. Only then can you actually use your VM.
+>Your VM will appear in the list of virtual machines. At first, it will have the state `PENDING`. This indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount and types of resources (cores, memory, disk...) you requested in the `template`. Keep refreshing the list by clicking the _refresh_ button <i class="fa fa-refresh"></i>. When the required resources become available, your VM will show the status `RUNNING`. Only then can you actually use your VM.
+
+Let's summarise what you have seen so far. Click on each of the tabs on the left menu and inspect the information provided. The most important ones at this point are:
+
+* _Instances_ &gt; _<i class="fa fa-th"></i> VMs_: here you can manage your VMs (e.g.: create, shutdown...). When you click anywhere on a running VM's row (except the tick-box) you can inspect the extended information for that VM in the different tabs. You can even change a VM a little from these extended information tabs.
+* _Templates_ &gt; _<i class="fa fa-file-o"></i> VMs_: here you can manage your templates. A `template` allows to define how VMs created out of it should look like. A `template` is just a recipe; not the VM itself.
+* _Storage_ &gt; _<i class="fa fa-download"></i> Images_: here you can manage storage places. You can look at `images` as hard drives. 
+* _Storage_ &gt; _<i class="fa fa-cloud-download"></i> Apps_: here you can see the list of `apps` that SURFsara maintains. One `app` of ourse is a bundle of an `image` and a `template`, which provide a basic working set of installed software and configured properties that allow you to easily create and use a VM.
 
 #### Logging in to the VM
 
