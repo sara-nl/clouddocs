@@ -115,7 +115,7 @@ In this section you will be exploring the `ceph` `datastore`. You can create an 
 * Adding the new `image` to the `template`
 * Mounting the `image` in the VM
 
-At this point you should **not** have any running VMs. If you do, shut them down (remember, the _Terminate_ button).
+At this point you should **not** have any running VMs. If you have, shut them down now (remember, the _Terminate_ button).
 
 #### Creating a new empty `image` for bulk data
 
@@ -128,7 +128,7 @@ Let's create a new `image`.
   * Type: **Generic storage datablock**.
   * Datastore: **106: ceph**.
   * Check the **This image is persistent** checkbox.
-  * On the _Image location:_ group choose radio button **Empty datablock**.
+  * On the _Image location:_ group choose radio button **Empty disk image**.
   * Give it a _Size_ in MB: **2000** (is 2GB, approximately).
 * Click the green button *Create* at the top to create it.
 
@@ -142,21 +142,23 @@ In order to let your VM know about the new datablock, you need to add it to your
 
 * Open the screen to edit the `template` (or create a new one from scratch).
 * Select the _Storage_ tab <i class="fa fa-tasks"></i>.
-* Click on the blue button _<i class="fa fa-plus-circle" style="background-color:#4DBBDC;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_, that will make a new _Disk 1_, and then choose the **my data** `image` you created as a second `image`.
+* Click on the blue button _<i class="fa fa-plus-circle" style="background-color:#4DBBDC;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_, that will make a new _Disk 1_, and then choose the **my data** `image` that you have just created. This way you have added a second `image` to the `template`.
 * Finish with the *Update* button on the top to submit the changes.
 
 #### Mounting the image in the VM
 
 Let's start using the new disk.
 
-* Instantiate a new `VM` from the `Template` you modified in the previous step.
-* Once the `VM` is in RUNNING state, login and check that your new datablock is available there:
+* Instantiate a new `VM` from the `template` that you modified in the previous step. Call it **fourth**
+* Once the `VM` is in RUNNING state, log in and check that your new datablock is available there:
+
+>**Note:**
+>
+>The following `sudo` command(s) may displays the message `sudo: unable to resolve host ip-145-100-...`. You can safely disregard that error message.
 
 ```sh
 sudo fdisk -l
 ```
-
->**Note:** If above `sudo` command displays the message `sudo: unable to resolve host ip-145-100-...` just ignore it.
 
 > **Food for brain:**
 >
