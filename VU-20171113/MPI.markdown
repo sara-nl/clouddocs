@@ -221,7 +221,7 @@ Also, usually the worker nodes are protected (inaccessible) from the outside wor
 
 ```sh
 cd
-wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20171013/code/makeme_master.sh
+wget https://github.com/sara-nl/clouddocs/raw/gh-pages/VU-20171113/code/makeme_master.sh
 chmod +x makeme_master.sh
 sudo ./makeme_master.sh
 exit
@@ -255,7 +255,7 @@ exit
 
 ```sh
 cd
-wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20171013/code/makeme_worker.sh
+wget https://github.com/sara-nl/clouddocs/raw/gh-pages/VU-20171113/code/makeme_worker.sh
 chmod +x makeme_worker.sh
 sudo ./makeme_worker.sh 1 XXX.YYY.ZZZ.TTT  #replace XXX.YYY.ZZZ.TTT with the INTERNAL IP address of the master
 #hit ENTER when prompted and wait a bit..
