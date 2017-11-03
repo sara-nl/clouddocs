@@ -43,7 +43,7 @@ We will be creating a 2-core VM for this exercise.
   * Check the _<i class="fa fa-tasks"></i> Storage_ tab: the _Disk 0_ must have the **mpi_wave** image selected (from the table on the right of the screen) 
   * Edit the _<i class="fa fa-globe"></i> Network_ tab: 
     * for the _NIC 0_, the _Internet network_ is selected
-    * add a second `nic` (hit **+ Add another interface** button); for this second `nic`, _NIC 1_, choose the _uvacourse-surfsara.int_ network (from the table on the right of the screen)
+    * add a second `nic` (hit **+ Add another interface** button); for this second `nic`, _NIC 1_, choose the _wolk-surfsara.int_ network (from the table on the right of the screen)
   * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: 
     * the _VNC_ radiobutton must be selected
     * in the _Inputs_ section, select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that
@@ -73,26 +73,12 @@ sudo apt-get install build-essential
 sudo apt-get install libhdf5-serial-dev libopenmpi-dev openmpi-bin openmpi-common hdf5-tools ImageMagick gnuplot
 ```
 
-<div class="alert alert-warning" markdown="1">
-<i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true">Warning</i><br>
-
-The Ubuntu Desktop 14.04 _App_ is affected by the problem described in our documentation, [here](/connection_problem_ubuntu1404). To correct it easily, please follow these steps now that you are connected via SSH:
-
-```sh
-wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20171013/code/cloudinit_fix.sh
-chmod +x cloudinit_fix.sh
-sudo ./cloudinit_fix.sh
-```
-
-</div>
-
-
 ### b) Preparing the program
 
 * Download the [code file](code/waveeq.tar.gz) to your VM and uncompress the file:
 
 ```sh
-wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20171013/code/waveeq.tar.gz 
+wget https://github.com/sara-nl/clouddocs/raw/gh-pages/VU-20171113/code/waveeq.tar.gz 
 tar -zxf waveeq.tar.gz 
 ```
 
