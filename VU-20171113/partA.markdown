@@ -60,13 +60,11 @@ To complete the setup of your HPC Cloud account, you need to **add a Secure Shel
 
 First, you need an SSH private/public key pair.
 
-* Read about SSH and public keys on the [private/public keys](/SSHkey) page.<br />
-If you are already familiar with SSH public keys, you can skip reading this page.
+* We have information about SSH and public keys on the [private/public keys](/SSHkey) page within our general HPC Cloud documentation. Make sure you understand. If you are already familiar with SSH public keys, you may skip reading this page.
 * You need a private/public key pair in your `~/.ssh/` directory. Create one now if needed.
-* Check with the command `ls ~/.ssh`; you should see the files `id_rsa` and `id_rsa.pub`.
+* Check with the command `ls ~/.ssh`; you should see the files `id_rsa` and `id_rsa.pub` (or any others you may have also created, possibly, in earlier sessions within the HPC course).
 
-Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI.
-The matching private key (`id_rsa`) stays safe in your laptop.
+Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI. The matching private key (`id_rsa`) must stay safe in your laptop.
 
 * Copy the content of your **public** SSH key to the clipboard (for example, by doing `cat ~/.ssh/id_rsa.pub`, then selecting and copying all of that text).
 * Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *<i class="fa fa-cog"></i> Settings* from the *buddy* icon  <i class="fa fa-user"></i>.
