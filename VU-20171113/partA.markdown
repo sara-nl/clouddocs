@@ -75,7 +75,7 @@ Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI. The matching
 
 ### 3. My first VM
 
-Using the HPC Cloud revolves around building Virtual Machines (VM). SURFsara provides several **Apps** readily available in  the HPC Cloud UI, to facilitate creating simple VMs.  Apps are ready-made `appliances` for you to copy and use. 
+Using the HPC Cloud revolves around building Virtual Machines (VM, for short). SURFsara provides several **Apps** readily available in  the HPC Cloud UI, to facilitate creating simple VMs. Apps are ready-made `appliances` for you to copy into your workspace and use. 
 
 These are the steps to build your first VM from one of the Apps; detailed instructions follow:
 
@@ -89,23 +89,22 @@ Let's run your first VM on the HPC Cloud!
 #### Importing an app
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
-* Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_.
-* Select the `app` **Ubuntu 14.04 Desktop CI** by clicking on the tick-box next to it.
+* Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_. This shows the list (actually, a table) with all the apps that we have available. We will focus on the apps which reside in the **courses** _Marketplace_ for this course (i.e.: look for the text _courses_ within the column called _Marketplace_, to make sure you are using the right _apps_ in this course).
+* On the list of apps, look for the `app` with a name starting with **ubuntu-14.04.5-desktop**. Select it by clicking on the tick-box to the left of it. 
 * Click on the blue _OpenNebula_ button above the list of apps.
 * A dialogue will pop up asking you for a few details. Edit as follows:
-  * Name: **Course Image**.
-  * VM Template Name: **Course Template**.
-  * Below "Select the Datastore to store the resource", select **147: _Courses\_img_**.
-    It should now read "You selected the following datastore: Courses_img"
-* Click the green *Download* button. This will copy the _app_ to your work environment, and return to the Apps list.
+  * Name: **First Image**.
+  * VM Template Name: **First Template**.
+  * Under section _Select the Datastore to store the resource_, choose the entry displaying **147: _Courses\_img_** by clicking anywhere within that entry. It should now read `You selected the following datastore: Courses_img`
+* Click the green *Download* button. This will copy the _app_ to your workspace, and return to the Apps list.
 
 > **Food for brain:**
 >
-> When you import an `app`, an `image` and a `template` will be created, as explained during the introductory presentation. In the UI you have an _<i class="fa fa-download"></i> Images_ tab under _Storage_ and a _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu. You should see your new `image` and `template` there.
+> When you import an `app`, an `image` and a `template` are created, as explained during the introductory presentation. In the UI you have an _<i class="fa fa-download"></i> Images_ tab under _Storage_ and a _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu. Since you have just imported an `app`, you should now see your new `image` and `template` there.
 > 
 * Can you see them?
-* What is the STATUS of the `image` just after you import it?
-* Refresh the contents of the _Images_ tab page by clicking button <i class="fa fa-refresh"></i>, next to the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ until it is READY.
+* What is the STATUS of the `image` just after you start importing it?
+* Refresh the contents of the _Images_ tab by clicking button <i class="fa fa-refresh"></i>, next to the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ until you see that the `image` is in status READY.
 
 #### Reviewing the Template  
 
