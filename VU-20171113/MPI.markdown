@@ -268,7 +268,7 @@ sudo ./makeme_worker.sh 1 XXX.YYY.ZZZ.TTT  #replace XXX.YYY.ZZZ.TTT with the INT
 
 #### Configuring the firewall
 
-The _Apps_ that we deliverA come with a firewall running on the operating system, called UFW. MPI needs to communicate through the network between master and worker. They are both running a firewall. To avoid problems and because this is just a test scenario, we will trust all traffic coming from our internal interfaces.
+The _Apps_ that we deliver come with a firewall running on the operating system, called Uncomplicated Firewall (or ufw, in short). MPI needs to communicate through the network between master and worker. They are both running a firewall. To avoid problems and because this is just a test scenario, we will trust all traffic coming from our internal interfaces.
 
 * **On the master** VM, run the following commands: `sudo ufw allow in on eth1 && sudo service ufw restart`
 * **On the worker** VM, run the same commands in a terminal in your VNC window: `sudo ufw allow in on eth1 && sudo service ufw restart` 
