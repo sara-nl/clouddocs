@@ -138,7 +138,7 @@ A `template` is just a description of the virtual machine that we want to build.
 * Find the input box for _VM name_ and give your virtual machine a name: **My First VM**. 
 * Inspect the remaining `template` attributes, for the time being do not change them (in particular, leave _Number of instances_ at 1).
 * Click on the green _Create_ button at the top of the screen.
-* Refresh the VM status by clicking button <i class="fa fa-refresh"></i> at the top.
+* Refresh the list of VMs by clicking button <i class="fa fa-refresh"></i> at the top. You will see the _status_ of the VM change.
 
 #### What happened?
 
