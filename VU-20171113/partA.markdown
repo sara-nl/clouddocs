@@ -113,7 +113,7 @@ A `template` consists of a set of attributes that define how a Virtual Machine s
 For this part of the course, we would like you to edit the imported `template` following these steps:
 
 * Go to the _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu.
-* Find the `template` you just imported (*Course Template*), and click on it (anywhere **except** the tick-box).
+* Find the `template` you just imported (i.e.: the one called _Course Template_), and click on it (anywhere **except** the tick-box).
 * Click on the blue _Update_ button to start editing the template.
 * Browse through the different tabs there (i.e. _General_, _Storage_, _Network_, ...) to get acquainted with their contents.
 * Verify that your VM will have internet access: 
@@ -122,7 +122,7 @@ For this part of the course, we would like you to edit the imported `template` f
 ![youselectednetwork](/images/youselectednetwork.png)
 * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: 
     * In the _Graphics_ section, the _VNC_ radio button must be selected.
-    * In the _Inputs_ section, make sure an USB tablet is listed. If not: select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that.
+    * In the _Inputs_ section, make sure an entry _table USB_ is listed. If this is not the case, then, under the _Inputs_ section: select _Type_ **Tablet** and _Bus_ **USB** from the drop-down lists, and finally click the _Add_ button next to those drop-down lists.
 * If you made any changes to the `template`, click the green button _Update_ at the top, to save your changes.
 
 #### Starting the VM
@@ -133,10 +133,10 @@ A `template` is just a description of the virtual machine that we want to build.
   An overview of all existing VMs, that you have the priviledges to see, are displayed.
   This list is (probably) empty at the moment, because you have not yet started any VM.
 * Click the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ to bring up a "Create Virtual Machine" screen.
-* Select the *Course Template* by clicking once at it. Since this is your first `template`, there is only one item in the list. You can see the feedback:  
+* Select the *First Template* by clicking once on it. Since this is your first `template`, there is only one item in the list. You can see the feedback:  
 ![select_template](/images/select_template2.png)
-* Find the input box for _VM name_ and give your virtual machine a name: **My First VM**. This name is also used as the VM's host name.
-* Inspect the remaining `template` attributes, for the time being do not change them **(leave "Number of instances" at 1)**.
+* Find the input box for _VM name_ and give your virtual machine a name: **My First VM**. 
+* Inspect the remaining `template` attributes, for the time being do not change them (in particular, leave _Number of instances_ at 1).
 * Click on the green _Create_ button at the top of the screen.
 * Refresh the VM status by clicking button <i class="fa fa-refresh"></i> at the top.
 
