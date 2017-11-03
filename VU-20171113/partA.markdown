@@ -108,9 +108,9 @@ Let's run your first VM on the HPC Cloud!
 
 #### Reviewing the Template  
 
-A `template` consists of a set of attributes that defines a Virtual Machine. For example, how many cores you want your VM to have, how much RAM memory, what storage drives to attach, which network connections, etc. We will have to adapt the `template` to meet your requirements before you can use it to create VMs out of it.
+A `template` consists of a set of attributes that define how a Virtual Machine should look like. For example: how many cores you want your VM to have, how much RAM memory, what storage drives to attach, which network connections, etc. You will have to adapt the `template` you imported from the _Apps_ list, so that the VMs you create out of it meet the requirements you may have. 
 
-Edit the imported `template` following these steps:
+For this part of the course, we would like you to edit the imported `template` following these steps:
 
 * Go to the _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu.
 * Find the `template` you just imported (*Course Template*), and click on it (anywhere **except** the tick-box).
