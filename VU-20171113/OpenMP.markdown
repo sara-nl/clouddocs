@@ -24,7 +24,7 @@ In this advanced part of our HPC Cloud tutorial we ask you to play around with a
 
 We provide you with an implementation of that simulation using `OpenMP`. You will be asked to perform multiple runs of each program, so that fluctuations caused by e.g. network can be middled out. The output of each program includes results for run time in _wall-clock_, _user_ and _system_ time.
 
-This exercise will let you use OpenMP, first with a serial implementation within a single multicore VM and then with diffrent parallel implementations. Please observe if the differences are significant or not for the scenarios below.
+This exercise will let you use OpenMP, first with a serial implementation within a single multicore VM and then with diffrent parallel implementations. Please pay attention to whether the differences are significant for the different scenarios below.
 
 ### a) Setting up a VM for the exercise
 
