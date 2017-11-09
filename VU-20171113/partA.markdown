@@ -26,16 +26,18 @@ The User Interface (UI) is the web site that allows you to manage your _Virtual 
 >
 >You will receive your password from the workshop facilitators.
 
-* Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/).
-* Your username is **wolk-0**__*XY*__, replace **_XY_** with the two-digit number assigned to you.
-* Hit the `Login` button.
+* Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/)
+* Your username is **wolk-0**__*XY*__, replace **_XY_** with the two-digit number assigned to you
+* Hit the `Login` button
 
+<!---
 #### Switch to "user view"
 
-The interface supports several so-called views, which are a way to arrange information on the screen. For this course you should use the _user view_. 
+The interface supports several so-called views, which are a way to arrange information on the screen. For this course you should use the _user view_.
 
 * Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen and click it.
 * In the drop-down menu, move to *<i class="fa fa-eye"></i> Views* and in that sub-menu select *user*.
+-->
 
 #### Change your password
 
@@ -75,7 +77,7 @@ Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI. The matching
 
 ### 3. My first VM
 
-Using the HPC Cloud revolves around building Virtual Machines (VM, for short). SURFsara provides several **Apps** readily available in  the HPC Cloud UI, to facilitate creating simple VMs. Apps are ready-made `appliances` for you to copy into your workspace and use. 
+Using the HPC Cloud revolves around building Virtual Machines (VM, for short). SURFsara provides several **Apps** readily available in  the HPC Cloud UI, to facilitate creating simple VMs. Apps are ready-made `appliances` for you to copy into your workspace and use.
 
 These are the steps to build your first VM from one of the Apps; detailed instructions follow:
 
@@ -90,7 +92,7 @@ Let's run your first VM on the HPC Cloud!
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
 * Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_. This shows the list (actually, a table) with all the apps that we have available. We will focus on the apps which reside in the **courses** _Marketplace_ for this course (i.e.: look for the text _courses_ within the column called _Marketplace_, to make sure you are using the right _apps_ in this course).
-* On the list of apps, look for the `app` with a name starting with **ubuntu-14.04.5-desktop**. Select it by clicking on the tick-box to the left of it. 
+* On the list of apps, look for the `app` with a name starting with **ubuntu-14.04.5-desktop**. Select it by clicking on the tick-box to the left of it.
 * Click on the blue _OpenNebula_ button above the list of apps.
 * A dialogue will pop up asking you for a few details. Edit as follows:
   * Name: **First Image**
@@ -101,14 +103,14 @@ Let's run your first VM on the HPC Cloud!
 > **Food for brain:**
 >
 > When you import an `app`, an `image` and a `template` are created, as explained during the introductory presentation. In the UI you have an _<i class="fa fa-download"></i> Images_ tab under _Storage_ and a _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu. Since you have just imported an `app`, you should now see your new `image` and `template` there.
-> 
+>
 * Can you see them?
 * What is the STATUS of the `image` just after you start importing it?
 * Refresh the contents of the _Images_ tab by clicking button <i class="fa fa-refresh"></i>, next to the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ until you see that the `image` is in status READY.
 
 #### Reviewing the Template  
 
-A `template` consists of a set of attributes that define how a Virtual Machine should look like. For example: how many cores you want your VM to have, how much RAM memory, what storage drives to attach, which network connections, etc. You will have to adapt the `template` you imported from the _Apps_ list, so that the VMs you create out of it meet the requirements you may have. 
+A `template` consists of a set of attributes that define how a Virtual Machine should look like. For example: how many cores you want your VM to have, how much RAM memory, what storage drives to attach, which network connections, etc. You will have to adapt the `template` you imported from the _Apps_ list, so that the VMs you create out of it meet the requirements you may have.
 
 For this part of the course, we would like you to edit the imported `template` following these steps:
 
@@ -116,11 +118,11 @@ For this part of the course, we would like you to edit the imported `template` f
 * Find the `template` you just imported (i.e.: the one called _Course Template_), and click on it (anywhere **except** the tick-box).
 * Click on the blue _Update_ button to start editing the template.
 * Browse through the different tabs there (i.e. _General_, _Storage_, _Network_, ...) to get acquainted with their contents.
-* Verify that your VM will have internet access: 
-  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM. 
+* Verify that your VM will have internet access:
+  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM.
   * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`.   
 ![youselectednetwork](/images/youselectednetwork.png)
-* Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: 
+* Check the _<i class="fa fa-exchange"></i> Input/Output_ tab:
     * In the _Graphics_ section, the _VNC_ radio button must be selected.
     * In the _Inputs_ section, make sure an entry _table USB_ is listed. If this is not the case, then, under the _Inputs_ section: select _Type_ **Tablet** and _Bus_ **USB** from the drop-down lists, and finally click the _Add_ button next to those drop-down lists.
 * If you made any changes to the `template`, click the green button _Update_ at the top, to save your changes.
@@ -129,13 +131,13 @@ For this part of the course, we would like you to edit the imported `template` f
 
 A `template` is just a description of the virtual machine that we want to build. Let's create the actual virtual machine from it.
 
-* Go to the _VMs_ section below _Instances_ on the left menu. 
+* Go to the _VMs_ section below _Instances_ on the left menu.
   An overview of all existing VMs, that you have the priviledges to see, are displayed.
   This list is (probably) empty at the moment, because you have not yet started any VM.
 * Click the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ to bring up a "Create Virtual Machine" screen.
 * Select the *First Template* by clicking once on it. Since this is your first `template`, there is only one item in the list. You can see the feedback:  
 ![select_template](/images/select_template2.png)
-* Find the input box for _VM name_ and give your virtual machine a name: **My First VM**. 
+* Find the input box for _VM name_ and give your virtual machine a name: **My First VM**.
 * Inspect the remaining `template` attributes, for the time being do not change them (in particular, leave _Number of instances_ at 1).
 * Click on the green _Create_ button at the top of the screen.
 * Refresh the list of VMs by clicking button <i class="fa fa-refresh"></i> at the top. You will see the _status_ of the VM change.
@@ -151,7 +153,7 @@ Let's summarise what you have seen so far. Click on each of the tabs on the left
 
 * _Instances_ &gt; _<i class="fa fa-th"></i> VMs_: here you can manage your VMs (e.g.: create, shutdown...). When you click anywhere on a running VM's row (except the tick-box) you can inspect the extended information for that VM in the different tabs. You can even change a VM a little from these extended information tabs.
 * _Templates_ &gt; _<i class="fa fa-file-o"></i> VMs_: here you can manage your templates. A `template` allows to define how VMs created out of it should look like. A `template` is just a recipe; not the VM itself.
-* _Storage_ &gt; _<i class="fa fa-download"></i> Images_: here you can manage storage places. You can look at `images` as hard drives. 
+* _Storage_ &gt; _<i class="fa fa-download"></i> Images_: here you can manage storage places. You can look at `images` as hard drives.
 * _Storage_ &gt; _<i class="fa fa-cloud-download"></i> Apps_: here you can see the list of `apps` that SURFsara maintains. One `app` of ourse is a bundle of an `image` and a `template`, which provide a basic working set of installed software and configured properties that allow you to easily create and use a VM.
 
 #### Logging in to the VM
