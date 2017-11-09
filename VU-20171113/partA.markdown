@@ -41,20 +41,21 @@ The interface supports several so-called views, which are a way to arrange infor
 
 #### Change your password
 
-Once you login to the UI for the first time, it is best practice to change the initial password.
+Once you login to the UI for the first time, it is a good practice to change the initial password.
 
-* Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen, click it and select *<i class="fa fa-cog"></i> Settings*.
-* In the _Settings_ screen, locate the _Password_ row in the _Authentication_ section. Click the blue pencil *edit* icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
-* On the _Update Password_ pop-up dialog fill in a new password (twice) and click the *Change* button to submit it.
+* Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen.
+* Click it and select *<i class="fa fa-cog"></i> Settings*
+* Click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i> to the right on the *Password* field
+* On the pop-up dialog displayed fill in a new password (twice) and click the *Change* button
 
 #### Logout
 
-Let's check whether it worked.
+Let's check whether changing the password worked.
 
 * Click your *buddy* icon  <i class="fa fa-user"></i>.
 * Choose *<i class="fa fa-power-off"></i> Sign Out*.
 
-From now on you can use your new password to log in to the [UI](https://ui.hpccloud.surfsara.nl/). Do so now.
+From now on, you can use your new password to log in to the [UI](https://ui.hpccloud.surfsara.nl/). Please login again.
 
 ### 2. Add your public SSH key
 
