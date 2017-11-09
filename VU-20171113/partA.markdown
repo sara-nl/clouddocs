@@ -16,7 +16,7 @@ This is part A of the tutorial [VU HPC course 2017-11-13](.) and covers the foll
 2. [Add your public SSH key](#add-your-public-ssh-key)
 3. [My first VM](#my-first-vm)
 
-### 1. Access the User Interface
+### <a name="access-the-user-interface"></a> 1. Access the User Interface
 
 The User Interface (UI) is the web site that allows you to manage your _Virtual Machines_ (_VMs_) on the HPC Cloud.
 
@@ -57,7 +57,7 @@ Let's check whether changing the password worked.
 
 From now on, you can use your new password to log in to the [UI](https://ui.hpccloud.surfsara.nl/). Please login again.
 
-### 2. Add your public SSH key
+### <a name="add-your-public-ssh-key"></a> 2. Add your public SSH key
 
 To complete the setup of your HPC Cloud account, you need to **add a Secure Shell (SSH) public key to your profile**. This is a one-time task.
 
@@ -76,7 +76,7 @@ Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI. The matching
 * There is no _Save_ button; click outside the text box to complete your action (e.g.: on the words "Public SSH Key").
 * Check the contents of the text box against your public key and verify they match: it should start with `ssh-rsa AAAAB`...
 
-### 3. My first VM
+### <a name="my-first-vm"></a> 3. My first VM
 
 Using the HPC Cloud revolves around building Virtual Machines (VM, for short). SURFsara provides several **Apps** readily available in  the HPC Cloud UI, to facilitate creating simple VMs. Apps are ready-made `appliances` for you to copy into your workspace and use.
 
