@@ -63,18 +63,19 @@ To complete the setup of your HPC Cloud account, you need to **add a Secure Shel
 
 First, you need an SSH private/public key pair.
 
-* We have information about SSH and public keys on the [private/public keys](/SSHkey) page within our general HPC Cloud documentation. Make sure you understand. If you are already familiar with SSH public keys, you may skip reading this page.
-* You need a private/public key pair in your `~/.ssh/` directory. Create one now if needed.
-* Check with the command `ls ~/.ssh`; you should see the files `id_rsa` and `id_rsa.pub` (or any others you may have also created, possibly, in earlier sessions within the HPC course).
+* An SSH public/private key pair must be created in your local computer. If you are not familiar with the process of creating the key pair, you can read about it in our [public/private keys](/SSHkey) documentation page.
+* You need a private/public key pair usually stored in your `~/.ssh/` directory. Create one now if needed.
+* Check with the command `ls ~/.ssh`; you should see the files `id_rsa` and `id_rsa.pub`.
 
-Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI. The matching private key (`id_rsa`) must stay safe in your laptop.
+Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI. The matching private key (`id_rsa`) remains safe in your laptop.
 
-* Copy the content of your **public** SSH key to the clipboard (for example, by doing `cat ~/.ssh/id_rsa.pub`, then selecting and copying all of that text).
+* Copy the content of your **public** SSH key to the clipboard (for example, by doing `cat ~/.ssh/id_rsa.pub`, then selecting and copying all the text).
 * Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *<i class="fa fa-cog"></i> Settings* from the *buddy* icon  <i class="fa fa-user"></i>.
 * Locate the section _Public SSH Key_ and click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
 * Paste the content of your public SSH key file into the text box.
-* There is no _Save_ button; click outside the text box to complete your action (e.g.: on the words "Public SSH Key").
-* Check the contents of the text box against your public key and verify they match: it should start with `ssh-rsa AAAAB`...
+* There is no _Save_ button; click outside the text box to complete your action.
+* Briefly check the contents of the text box against your public key and verify they match: it should start with `ssh-rsa AAAAB`...
+
 
 ### <a name="my-first-vm"></a> 3. My first VM
 
