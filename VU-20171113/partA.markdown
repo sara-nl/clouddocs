@@ -65,7 +65,7 @@ To complete the setup of your HPC Cloud account, you need to **add a Secure Shel
 >
 >If you are not familiar with the SSH authentication method, please read about it on our [documentation page](/SSHkey).
 
-First, you need an SSH private/public key pair.
+First, you need to own an SSH private/public key pair.
 
 * An SSH public/private key pair must be created in your local computer and is usually stored in your `~/.ssh/` directory
 * Check with the command `ls ~/.ssh`; you should see the files `id_rsa` and `id_rsa.pub`
@@ -83,36 +83,36 @@ Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI. The matching
 
 ### <a name="my-first-vm"></a> 3. My first VM
 
-Using the HPC Cloud revolves around building Virtual Machines (VM, for short). SURFsara provides several **Apps** readily available in  the HPC Cloud UI, to facilitate creating simple VMs. Apps are ready-made `appliances` for you to copy into your workspace and use.
+Working with the HPC Cloud service mostly revolves around building and destroying Virtual Machines. This section will teach how to build a VM running Linux with the following steps:
 
-These are the steps to build your first VM from one of the Apps; detailed instructions follow:
+* Import a SURFsara pre-made `image` with a Linux operating system installed
+* Review the VM attributes defined in the `template`
+* Instantiate the `template` to run your first VM
+* Access your VM and gracefully shut it down
 
-* Importing a pre-made `image` with a Linux operating system installed.
-* Reviewing the shape of the VM (so-called `template`).
-* Instantiating the `template` to create your first VM.
-* Accessing your VM and shutting it down.
+Let's create your first VM to be run on the HPC Cloud Oort!
 
-Let's run your first VM on the HPC Cloud!
+#### Import an appliance from the AppMarket
 
-#### Importing an app
+SURFsara HPC Cloud provides ready-made `appliances` to their users. These appliances are available in the `Apps` option of the Storage menu in the HPC Cloud UI. This is meant to help users instantiating secure VM’s quickly. Proceed as follows:
 
-* Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
+* Log in to the [UI](https://ui.hpccloud.surfsara.nl/)
 * Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_. This shows the list (actually, a table) with all the apps that we have available. We will focus on the apps which reside in the **courses** _Marketplace_ for this course (i.e.: look for the text _courses_ within the column called _Marketplace_, to make sure you are using the right _apps_ in this course).
-* On the list of apps, look for the `app` with a name starting with **ubuntu-14.04.5-desktop**. Select it by clicking on the tick-box to the left of it.
-* Click on the blue _OpenNebula_ button above the list of apps.
+* Select the `appliance` with a name starting with **ubuntu-14.04.5-desktop** (ID 100) by clicking on the tick-box next to it
+* Click on the OpenNebula button at the top of the screen
 * A dialogue will pop up asking you for a few details. Edit as follows:
   * Name: **First Image**
   * VM Template Name: **First Template**
   * Under section _Select the Datastore to store the resource_, choose the entry displaying **147: _Courses\_img_** by clicking anywhere within that entry. It should now read, right above the entry you just clicked: `You selected the following datastore: Courses_img`
-* Click the green *Download* button. This will copy the _app_ to your workspace, and return to the Apps list.
+* Finally, click the blue *Download* button. This step will import the appliance from the Marketplace to your work environment
 
 > **Food for brain:**
 >
-> When you import an `app`, an `image` and a `template` are created, as explained during the introductory presentation. In the UI you have an _<i class="fa fa-download"></i> Images_ tab under _Storage_ and a _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu. Since you have just imported an `app`, you should now see your new `image` and `template` there.
+> When you import an `app`, an `image` and a `template` are created, as explained during the introductory presentation. In the UI you have an _<i class="fa fa-download"></i> Images_ tab under _Storage_ and a _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu. You have just imported an `app`, you should now see your new `image` and `template` there.
 >
 * Can you see them?
 * What is the STATUS of the `image` just after you start importing it?
-* Refresh the contents of the _Images_ tab by clicking button <i class="fa fa-refresh"></i>, next to the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ until you see that the `image` is in status READY.
+* Refresh the images list <i class="fa fa-refresh"></i> until the Status is READY.
 
 #### Reviewing the Template  
 
