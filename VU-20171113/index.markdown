@@ -26,13 +26,14 @@ The UI and cloud software relies on [OpenNebula](http://opennebula.org/) and the
 This course is part of the [VU HPC Course 2017](http://hpc.labs.vu.nl/program/) program.
 It aims to introduce the participants to the HPC Cloud, by providing an introductory lecture to the service and a set of hands-on exercises to be run on the _Oort_ production infrastructure.
 
-Here is a summary of the today's course outline:
+Here is a summary of the course outline:
 
 >**Agenda:**
 >
->13th November 2017, VU, [Mathematics and Physics building (W&N building)](https://science.vu.nl/en/about-the-faculty/contact-route/index.aspx), Room WN-C203
+> Date: 13th Nov. 2017    
+> Location: Vrije Universiteit Amsterdam, [Mathematics and Physics building (W&N building)](https://science.vu.nl/en/about-the-faculty/contact-route/index.aspx), Room WN-C203
 >
-> * 09:30 Welcome & coffee  
+> * 09:30 Welcome
 > * 09:40 Presentation & Demo: Introduction to SURFsara HPC Cloud (Nuno Ferreira)
 > * 10:10 Hands-on: Parts A & B
 > * 12:00 Lunch   
