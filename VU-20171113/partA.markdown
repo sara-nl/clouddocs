@@ -99,7 +99,7 @@ SURFsara HPC Cloud provides ready-made `appliances` (aka `app`) to their users. 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/)
 * Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_
 
-You will see a list of all the `apps` we have available. For the purposes of this course, we will make use of an Ubuntu 14.04.5 `app`.
+You will see a list of 'all' the `apps` we have available. For the purposes of this course, we will make use of an Ubuntu desktop 14.04.5 `app`.
 
 * Select the `appliance` with the name **ubuntu-14.04.5-desktop-20171102** (ID 99) by clicking on the tick-box next to it
 * Click on the OpenNebula button at the top of the screen
@@ -107,14 +107,14 @@ You will see a list of all the `apps` we have available. For the purposes of thi
   * Name: **First Image**
   * VM Template Name: **First Template**
   * Under section _Select the Datastore to store the resource_, choose the entry displaying **147: _Courses\_img_** by clicking anywhere within that entry. It should now read, right above the entry you just clicked: `You selected the following datastore: Courses_img`
-* Finally, click the blue *Download* button. This step will import the appliance from the Marketplace to your work environment
+* Finally, click the blue *Download* button. This step will import the `appliance` from the Marketplace to your work environment
 
 > **Food for brain:**
 >
-> When you import an `app`, an `image` and a `template` are created, as explained during the introductory presentation. In the UI you have an _<i class="fa fa-download"></i> Images_ tab under _Storage_ and a _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu. You have just imported an `app`, you should now see your new `image` and `template` there.
+> When you import an `app`, an `image` and a `template` are created as explained during the introductory presentation. In the UI you have an _<i class="fa fa-download"></i> Images_ tab under _Storage_ and a _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu. You have just imported an `app`, you should now see your new `image` and `template` there.
 >
 * Can you see them?
-* What is the STATUS of the `image` just after you start importing it?
+* What is the STATUS of the `image` just after you started importing it?
 * Refresh the images list <i class="fa fa-refresh"></i> until the Status is READY.
 
 #### Reviewing the Template  

@@ -81,6 +81,8 @@ The hands-on tutorial consists of three parts. Parts *A & B* provide exercises f
   * [Part B](partB)
   * [Extras](extras)
 
+You will find several **Food for brain** questions scattered in the hands-on exercises. They are meant for you to self-assess your progress acquiring the knowledge and trigger your curiosity.
+
 ## <a name="presentations"></a> Presentations
 
 <div markdown="1">
