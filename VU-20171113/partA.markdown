@@ -77,13 +77,13 @@ Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI. The matching
 * Go to the [UI](https://ui.hpccloud.surfsara.nl/) and select *<i class="fa fa-cog"></i> Settings* from the *buddy* icon  <i class="fa fa-user"></i>
 * Locate the section _Public SSH Key_ and click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>
 * Paste the content of your public SSH key file into the text box
-* There is no _Save_ button. Click outside the text box to complete your action.
+* There is no _Save_ button. Click outside the text box to complete your action
 * Briefly check the contents of the text box against your public key and verify they match: it should start with `ssh-rsa AAAAB`...
 
 
 ### <a name="my-first-vm"></a> 3. My first VM
 
-Working with the HPC Cloud service mostly revolves around building and destroying Virtual Machines. This section will teach how to build a VM running Linux with the following steps:
+Working with the HPC Cloud service mostly revolves around building and destroying Virtual Machines. This section will guide you through the process of building a VM running Linux. Here's an overview of the main steps:
 
 * Import a SURFsara pre-made `image` with a Linux operating system installed
 * Review the VM attributes defined in the `template`
