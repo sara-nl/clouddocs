@@ -6,30 +6,26 @@ layout: default
 <div style="float:right;max-width:50%;" markdown="1">
 
 <div class="alert alert-info" markdown="1">
-<i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> 
+<i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
 This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**. You are welcome to contribute to **help us improve** the documentation (see bottom of this page).
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
 <div style="float:right;max-width:60px;margin-top:-10px;" markdown="1">
-
 <div style="max-width:30px;" markdown="1">
-![UvA logo](/images/UvA-logo.png)
+![VU logo](/images/VU_logo.png)
 </div>
-
 <div style="max-width:60px;" markdown="1">
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
-
 </div>
-
-<i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i> 
-<span style="color:red;">TODAY!</span> - 2017-07-03 <br/> [UvA HPC course](UvA-20170703/index)
+<i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
+<span style="color:red;">TODAY!</span> - 2017-07-03 <br/> [VU HPC course](VU-20171113/index)
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
 <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"</i>
-The HPC Cloud service is under [maintenance](maintenance). 
+The HPC Cloud service is under [maintenance](maintenance).
 </div>
 
 </div>
@@ -105,7 +101,7 @@ The HPC Cloud service is under [maintenance](maintenance).
 * [Recover VM in 'FAILURE' state](troubleshooting/recover_failure)
 * [Recovery access](troubleshooting/vnc_recovery_access); how to get root access to your VM without a root password
 * [VM not reacting to Shutdown](troubleshooting/vm-not-reacting-to-shutdown)
-* [Connection problem with resumed ubuntu 14.04 virtual machine](troubleshooting/connection_problem_ubuntu1404) 
+* [Connection problem with resumed ubuntu 14.04 virtual machine](troubleshooting/connection_problem_ubuntu1404)
 
 
 ## Tutorials
