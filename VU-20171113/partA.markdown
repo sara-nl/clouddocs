@@ -94,11 +94,14 @@ Let's create your first VM to be run on the HPC Cloud Oort!
 
 #### Import an appliance from the AppMarket
 
-SURFsara HPC Cloud provides ready-made `appliances` to their users. These appliances are available in the `Apps` option of the Storage menu in the HPC Cloud UI. This is meant to help users instantiating secure VM’s quickly. Proceed as follows:
+SURFsara HPC Cloud provides ready-made `appliances` (aka `app`) to their users. These appliances are available in the `Apps` option of the *Storage* menu in the HPC Cloud UI. This is meant to help users instantiating secure VM’s quickly. Proceed as follows:
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/)
-* Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_. This shows the list (actually, a table) with all the apps that we have available. We will focus on the apps which reside in the **courses** _Marketplace_ for this course (i.e.: look for the text _courses_ within the column called _Marketplace_, to make sure you are using the right _apps_ in this course).
-* Select the `appliance` with a name starting with **ubuntu-14.04.5-desktop** (ID 99) by clicking on the tick-box next to it
+* Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_
+
+You will see a list of all the `apps` we have available. For the purposes of this course, we will make use of an Ubuntu 14.04.5 `app`.
+
+* Select the `appliance` with the name **ubuntu-14.04.5-desktop-20171102** (ID 99) by clicking on the tick-box next to it
 * Click on the OpenNebula button at the top of the screen
 * A dialogue will pop up asking you for a few details. Edit as follows:
   * Name: **First Image**
