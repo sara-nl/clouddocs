@@ -43,23 +43,23 @@ The interface supports several so-called views, which are a way to arrange infor
 
 Once you login to the UI for the first time, it is a good practice to change the initial password.
 
-* Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen.
+* Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen
 * Click it and select *<i class="fa fa-cog"></i> Settings*
 * Click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i> to the right on the *Password* field
 * On the pop-up dialog displayed fill in a new password (twice) and click the *Change* button
 
 #### Logout
 
-Let's check whether changing the password worked.
+Let's check whether your new set of access credentials work. Sign-out from the UI:
 
-* Click your *buddy* icon  <i class="fa fa-user"></i>.
-* Choose *<i class="fa fa-power-off"></i> Sign Out*.
+* Click your *buddy* icon  <i class="fa fa-user"></i>
+* Choose *<i class="fa fa-power-off"></i> Sign Out*
 
 From now on, you can use your new password to log in to the [UI](https://ui.hpccloud.surfsara.nl/). Please login again.
 
 ### <a name="add-your-public-ssh-key"></a> 2. Add your public SSH key
 
-To complete the setup of your HPC Cloud account, you need to **add a Secure Shell (SSH) public key to your profile**. This is a one-time task.
+To complete the setup of your HPC Cloud account, you need to **add a Secure Shell (SSH) public key to your UI account**. This is a one-time task!
 
 >**Note:**
 >
@@ -68,7 +68,7 @@ To complete the setup of your HPC Cloud account, you need to **add a Secure Shel
 First, you need to own an SSH private/public key pair.
 
 * An SSH public/private key pair must be created in your local computer and is usually stored in your `~/.ssh/` directory
-* Check with the command `ls ~/.ssh`; you should see the files `id_rsa` and `id_rsa.pub`
+* Check with the command `ls ~/.ssh`; you should see the files `id_rsa` and `id_rsa.pub` (default names)
 * Create an SSH key pair now if needed
 
 Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI. The matching private key (`id_rsa`) remains safe in your laptop.
