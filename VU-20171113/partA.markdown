@@ -98,7 +98,7 @@ SURFsara HPC Cloud provides ready-made `appliances` to their users. These applia
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/)
 * Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_. This shows the list (actually, a table) with all the apps that we have available. We will focus on the apps which reside in the **courses** _Marketplace_ for this course (i.e.: look for the text _courses_ within the column called _Marketplace_, to make sure you are using the right _apps_ in this course).
-* Select the `appliance` with a name starting with **ubuntu-14.04.5-desktop** (ID 100) by clicking on the tick-box next to it
+* Select the `appliance` with a name starting with **ubuntu-14.04.5-desktop** (ID 99) by clicking on the tick-box next to it
 * Click on the OpenNebula button at the top of the screen
 * A dialogue will pop up asking you for a few details. Edit as follows:
   * Name: **First Image**
@@ -160,7 +160,7 @@ Let's summarise what you have seen so far. Click on each of the tabs on the left
 * _Instances_ &gt; _<i class="fa fa-th"></i> VMs_: here you can manage your VMs (e.g.: create, shutdown...). When you click anywhere on a running VM's row (except the tick-box) you can inspect the extended information for that VM in the different tabs. You can even change a VM a little from these extended information tabs.
 * _Templates_ &gt; _<i class="fa fa-file-o"></i> VMs_: here you can manage your templates. A `template` allows to define how VMs created out of it should look like. A `template` is just a recipe; not the VM itself.
 * _Storage_ &gt; _<i class="fa fa-download"></i> Images_: here you can manage storage places. You can look at `images` as hard drives.
-* _Storage_ &gt; _<i class="fa fa-cloud-download"></i> Apps_: here you can see the list of `apps` that SURFsara maintains. One `app` of ourse is a bundle of an `image` and a `template`, which provide a basic working set of installed software and configured properties that allow you to easily create and use a VM.
+* _Storage_ &gt; _<i class="fa fa-cloud-download"></i> Apps_: here you can see the list of `apps` that SURFsara maintains. One `app` of course is a bundle of an `image` and a `template`, which provide a basic working set of installed software and configured properties that allow you to easily create and use a VM.
 
 #### Logging in to the VM
 
