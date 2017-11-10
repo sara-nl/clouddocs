@@ -138,7 +138,7 @@ The output will be one line for each key stored in the ssh-agent, similar to:
 2048 SHA256:ajAxT3T3ZKl2rALBGGmMqufU0n6XAU15lj+fObZEvrI ~/.ssh/id_rsa (RSA)
 ```
 
-## Copy your Public SSH key
+## <a name="copy-your-public-ssh-key"></a> Copy your Public SSH key
 
 You can copy / paste your public key after displaying with the `cat` command:
 
