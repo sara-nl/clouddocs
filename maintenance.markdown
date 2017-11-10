@@ -6,7 +6,7 @@ layout: default
 
 ### Current
 
-No ongoing maintenance.
+Currently we are having issues with the scheduler, running vm's are not affected. Interface can experience interrupts. We apologize for the inconvenience. 
 
 ### Future
 
