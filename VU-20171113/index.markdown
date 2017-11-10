@@ -44,7 +44,7 @@ Here is a summary of the course outline:
 
 ## <a name="preparation"></a>Preparation
 
-Participants are expected to bring a laptop with Internet connection and a browser installed. Prior experience with [Linux commands](https://learncodethehardway.org/unix/) will help but not a prerequisite.
+Participants are expected to bring a laptop with Internet connection and a browser installed. Prior experience with [Linux commands](https://learncodethehardway.org/unix/) will help but is not a prerequisite.
 
 For this workshop you will need:
 
@@ -52,10 +52,14 @@ For this workshop you will need:
 * A browser (Chrome or Firefox will do nicely)
 * An SSH client
   * _Linux and Mac users:_ don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
-  * _Windows users:_ if you attended previous sessions, then you probably installed and configured [MobaXterm](https://mobaxterm.mobatek.net/). You should be able to use that. Alternatively, you can download and install [git for windows](https://git-for-windows.github.io/).
+  * _Windows users:_ install [MobaXterm](https://mobaxterm.mobatek.net/). Alternatively, you can install [git for windows](https://git-for-windows.github.io/).
 * An X-window client
   * _Linux and Mac users:_ usually don't need to install anything as X11 is on board. However, the newest Mac OS releases might not have X11.app installed. In such a case, install [XQuartz](http://xquartz.macosforge.org/landing/).
-  * _Windows users:_ if you attended previous sessions, then you probably installed and configured [MobaXterm](https://mobaxterm.mobatek.net/). You should be able to use that. Alternatively, install [Xming](http://sourceforge.net/projects/xming/).
+  * _Windows users:_ install [MobaXterm](https://mobaxterm.mobatek.net/). Alternatively, install [Xming](http://sourceforge.net/projects/xming/).
+
+> **NOTE for Windows using MobaXterm:**
+>
+> If you attended previous sessions, then you probably have already installed and configured this tool.
 
 > **NOTE for Windows using GitBash:**
 >
