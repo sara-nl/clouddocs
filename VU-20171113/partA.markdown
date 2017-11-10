@@ -132,7 +132,7 @@ For this part of the course, we would like you to edit the imported `template` f
 * Browse through the different tabs there (i.e. _General_, _Storage_, _Network_, ...) to get acquainted with their contents
 * Verify that your VM will have internet access:
   * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM
-  * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`
+  * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`  
 ![youselectednetwork](/images/youselectednetwork.png)
 * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab:
     * In the _Graphics_ section, the _VNC_ radio button must be selected
