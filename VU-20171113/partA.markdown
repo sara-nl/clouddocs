@@ -92,7 +92,7 @@ Working with the HPC Cloud service mostly revolves around building and destroyin
 
 Let's create your first VM to be run on the HPC Cloud Oort!
 
-#### Import an appliance from the AppMarket
+#### Import an appliance from the Marketplace
 
 SURFsara HPC Cloud provides ready-made `appliances` (aka `app`) to their users. These appliances are available in the `Apps` option of the *Storage* menu in the HPC Cloud UI. This is meant to help users instantiating secure VM’s quickly. Proceed as follows:
 
@@ -106,7 +106,10 @@ You will see a list of 'all' the `apps` we have available. For the purposes of t
 * A dialogue will pop up asking you for a few details. Edit as follows:
   * Name: **First Image**
   * VM Template Name: **First Template**
-  * Under section _Select the Datastore to store the resource_, choose the entry displaying **147: _Courses\_img_** by clicking anywhere within that entry. It should now read, right above the entry you just clicked: `You selected the following datastore: Courses_img`
+  * Select the Datastore to store the resource: **147: Courses_img**
+
+Under section _Select the Datastore to store the resource_, choose the entry displaying **147: _Courses\_img_** by clicking anywhere in the entry row. It should now read, right above the entry you just clicked: `You selected the following datastore: Courses_img`.
+
 * Finally, click the blue *Download* button. This step will import the `appliance` from the Marketplace to your work environment
 
 > **Food for brain:**
@@ -119,21 +122,24 @@ You will see a list of 'all' the `apps` we have available. For the purposes of t
 
 #### Reviewing the Template  
 
-A `template` consists of a set of attributes that define how a Virtual Machine should look like. For example: how many cores you want your VM to have, how much RAM memory, what storage drives to attach, which network connections, etc. You will have to adapt the `template` you imported from the _Apps_ list, so that the VMs you create out of it meet the requirements you may have.
+A `template` consists of a set of attributes that define how a Virtual Machine should look like. For example, how many cores do you want your VM to have? How much RAM memory? What storage drives to attach? Which network connections, etc. ? You will have to adapt the `template` you imported from the _Apps_ list, so that the VM(s) you create out of it meet the requirements you have.
 
 For this part of the course, we would like you to edit the imported `template` following these steps:
 
-* Go to the _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu.
-* Find the `template` you just imported (i.e.: the one called _Course Template_), and click on it (anywhere **except** the tick-box).
-* Click on the blue _Update_ button to start editing the template.
-* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_, ...) to get acquainted with their contents.
+* Go to the _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu
+* Find the `template` created previously and check the tick-box
+* Click on the blue _Update_ button to start editing the template
+* Browse through the different tabs there (i.e. _General_, _Storage_, _Network_, ...) to get acquainted with their contents
 * Verify that your VM will have internet access:
-  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM.
-  * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`.   
+  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM
+  * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`
 ![youselectednetwork](/images/youselectednetwork.png)
 * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab:
-    * In the _Graphics_ section, the _VNC_ radio button must be selected.
-    * In the _Inputs_ section, make sure an entry _table USB_ is listed. If this is not the case, then, under the _Inputs_ section: select _Type_ **Tablet** and _Bus_ **USB** from the drop-down lists, and finally click the _Add_ button next to those drop-down lists.
+    * In the _Graphics_ section, the _VNC_ radio button must be selected
+    * In the _Inputs_ section, make sure an entry _table USB_ is listed
+
+If this is not the case, then under the _Inputs_ section select _Type_ **Tablet** and _Bus_ **USB** from the drop-down lists, and finally click the _Add_ button next to those drop-down lists.
+
 * If you made any changes to the `template`, click the green button _Update_ at the top, to save your changes.
 
 #### Starting the VM
