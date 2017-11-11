@@ -36,14 +36,16 @@ This is part B of the tutorial [VU HPC course 2017-11-13](.) and covers the foll
   * Changes made by a VM are lost at shutdown and not copied back to the original `image`
   * It is possible to run multiple VMs using the same single **non-persistent** `image`
 
-> **Food for brain:**
->
-> Was the first image that you imported `persistent`?
+Take a couple of minutes to read again above statements and fully understand its implications. The persistency concept is crucial at early stages, when you are starting to build a VM that meets your needs, by installing software, pushing data, etc. At this stage, your aim might well be to preserve all your changes! At later stages of your work, you might want to profit from the capability of instantiating multiple Virtual Machines from the same 'pristine' image you have prepared so diligently.
 
-In this section you will work with **persistent** images. You will go through these steps:
+In this section you will work with **persistent** images. We will guide through the following steps:
 
 * Making your image persistent
 * Starting a VM using the persistent image
+
+> **Food for brain:**
+>
+> Was the first image that you imported `persistent`?
 
 #### Making your image persistent
 
