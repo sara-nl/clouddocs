@@ -45,7 +45,7 @@ In this section you will work with **persistent** images. We will guide through 
 
 > **Food for brain:**
 >
-> Was the first image that you imported `persistent`?
+> Was the first image that you imported in [PartA](partA#import_appliance_from_Marketplace) `persistent`?
 
 #### Making your image persistent
 
