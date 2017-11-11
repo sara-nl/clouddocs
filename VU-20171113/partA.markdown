@@ -131,7 +131,7 @@ For this part of the course, we would like you to edit the imported `template` f
 * Click on the blue _Update_ button to start editing the template
 * Browse through the different tabs there (i.e. _General_, _Storage_, _Network_, ...) to get acquainted with their contents
 * Verify that your VM will have internet access:
-  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM
+  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (`NIC`) for your VM
   * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`  
 
 ![youselectednetwork](/images/youselectednetwork.png)
@@ -145,32 +145,35 @@ If this is not the case, then under the _Inputs_ section select _Type_ **Tablet*
 
 #### Starting the VM
 
-A `template` is just a description of the virtual machine that we want to build. Let's create the actual virtual machine from it.
+As mentioned earlier, a `template` is just a description of the Virtual Machine that we want to build. Let's create the actual VM from it.
 
-* Go to the _VMs_ section below _Instances_ on the left menu.
-  An overview of all existing VMs, that you have the priviledges to see, are displayed.
-  This list is (probably) empty at the moment, because you have not yet started any VM.
-* Click the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ to bring up a "Create Virtual Machine" screen.
-* Select the *First Template* by clicking once on it. Since this is your first `template`, there is only one item in the list. You can see the feedback:  
-![select_template](/images/select_template2.png)
-* Find the input box for _VM name_ and give your virtual machine a name: **My First VM**.
-* Inspect the remaining `template` attributes, for the time being do not change them (in particular, leave _Number of instances_ at 1).
-* Click on the green _Create_ button at the top of the screen.
-* Refresh the list of VMs by clicking button <i class="fa fa-refresh"></i> at the top. You will see the _status_ of the VM change.
+* Go to the _VMs_ section below _Instances_ on the left menu
+
+An overview of all existing VMs, that you have the priviledges to see, are displayed.
+This list is (probably) empty at the moment, because you have not yet started any VM.
+
+* Click the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ to bring up a "Create Virtual Machine" screen
+* Select the *First Template* by clicking once on it
+* Find the input box for _VM name_ and give your virtual machine a name: **My First VM**
+* Inspect the remaining `template` attributes, for the time being do not change them (in particular, leave _Number of instances_ at 1)
+* Click on the green _Create_ button at the top of the screen
+* Refresh the list of VMs by clicking button <i class="fa fa-refresh"></i> at the top. You will see the _status_ of the VM change
+
 
 #### What happened?
 
-Congratulations! You have just created a fresh, clean virtual machine!
+Congratulations! You have just created a fresh, clean Virtual Machine!
 
 > **NOTE:**  
->Your VM will appear in the list of virtual machines. At first, it will have the state `PENDING`. This indicates that the HPC Cloud is looking for a place where your virtual machine can actually run. Finding the right place depends on the amount and types of resources (cores, memory, disk...) you requested in the `template`. Keep refreshing the list by clicking the _refresh_ button <i class="fa fa-refresh"></i>. When the required resources become available, your VM will show the status `RUNNING`. Only then can you actually use your VM.
+>Your VM will appear in the list of Virtual Machines. At first, it will have the state `PENDING`. This indicates that the HPC Cloud is looking for a place where your VM can actually run. Finding the right place depends on the amount and types of resources (cores, memory, disk...) you requested in the `template`. Keep refreshing the list by clicking the _refresh_ button <i class="fa fa-refresh"></i>. When the required resources become available, your VM will show the status `RUNNING`. Only then you will be able to make use of it.
 
 Let's summarise what you have seen so far. Click on each of the tabs on the left menu and inspect the information provided. The most important ones at this point are:
 
-* _Instances_ &gt; _<i class="fa fa-th"></i> VMs_: here you can manage your VMs (e.g.: create, shutdown...). When you click anywhere on a running VM's row (except the tick-box) you can inspect the extended information for that VM in the different tabs. You can even change a VM a little from these extended information tabs.
-* _Templates_ &gt; _<i class="fa fa-file-o"></i> VMs_: here you can manage your templates. A `template` allows to define how VMs created out of it should look like. A `template` is just a recipe; not the VM itself.
+* _Instances_ &gt; _<i class="fa fa-th"></i> VMs_: here you can manage your VM(s) (e.g.: create, terminate, ...). When you click anywhere on a running VM row (except the tick-box) you can inspect the extended information for that VM in the different tabs. You can even change some VM features from these tabs.
+* _Templates_ &gt; _<i class="fa fa-file-o"></i> VMs_: here you can manage your templates. The `template` gives your VM the shape you want. It is just a recipe, and not the machine itself.
 * _Storage_ &gt; _<i class="fa fa-download"></i> Images_: here you can manage storage places. You can look at `images` as hard drives.
-* _Storage_ &gt; _<i class="fa fa-cloud-download"></i> Apps_: here you can see the list of `apps` that SURFsara maintains. One `app` of course is a bundle of an `image` and a `template`, which provide a basic working set of installed software and configured properties that allow you to easily create and use a VM.
+* _Storage_ &gt; _<i class="fa fa-cloud-download"></i> Apps_: here you can see the list of `appliances` endorsed by SURFsara HPC Cloud team. One `app` of course is a bundle of an `image` and a `template`, which provide a basic working set of installed software and configured properties that allow you to easily create and use a VM.
+
 
 #### Logging in to the VM
 
