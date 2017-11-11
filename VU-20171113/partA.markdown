@@ -227,7 +227,7 @@ ubuntu@packer-ubuntu-14:~$ logout
 > Log in to your VM again. *Is your file still there?*
 
 
-#### [First shutdown](#first_shutdown)
+#### <a name="first_shutdown"></a> First shutdown
 
 Let's shutdown your VM. Whenever you do not need your VM running, you should shut it down to stop consuming the resources allocated.
 
