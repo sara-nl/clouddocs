@@ -242,8 +242,8 @@ You can always boot the "same" VM again whenever you need it, from the correspon
 > **Food for brain:**
 >
 > When the VM has been shut down and disappeared from the list, check and refresh the _Storage_ &gt; _<i class="fa fa-download"></i> Images_ and _Templates_ &gt; _<i class="fa fa-file-o"></i> VMs_ tabs. *Are your `image` and `template` still there?*
-
-> The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!
+>
+> The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation, we call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!
 
 ### Next: part B
 You completed part A of the Tutorial [VU HPC course 2017-11-13](.). Awesome! Before proceeding with [Part B](partB), please carefully read the following:
