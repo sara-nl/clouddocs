@@ -18,9 +18,11 @@ This is part B of the tutorial [VU HPC course 2017-11-13](.) and covers the foll
 
 >**NOTES:**
 >
-> If you have not completed (and understood) [Part A](partA), please do so first.
+> If you have not completed and understood [Part A](partA), please take your time before moving forwards.
 >
-> For the rest of the tutorial we will omit the `ubuntu@ip-145...:~$` prompt in the instructions. It allows you to copy-n-paste the commands directly to your terminal.
+> Do you have any Virtual Machine(s) running? [Terminate](partA#first_shutdown) them now.
+>
+> For the rest of the tutorial we will omit the terminal prompt `ubuntu@packer-ubuntu-14:~$` in the instructions. It allows you to copy-n-paste the commands directly to your terminal.
 
 ### 1. Persistence
 
@@ -54,7 +56,7 @@ In this section you will work with **persistent** images. You will go through th
 * Create another file now.
 
 > **Food for brain:**
-> 
+>
 >* Is/are the file(s) you created in your VM (in part A) still there?
 >* During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written to the `image` even if you restart your VM. Try it.
 
@@ -62,7 +64,7 @@ You can now shut your VM down (remember, the _Terminate_ button on the UI).
 
 ### 2. Scale up to a multicore VM
 
-The HPC Cloud offers Infrastructure as a Service (IaaS). That allows you to give your VMs the form that you need them to have. In this section, you will start a **4-core** VM, using the exact same `image` as before. 
+The HPC Cloud offers Infrastructure as a Service (IaaS). That allows you to give your VMs the form that you need them to have. In this section, you will start a **4-core** VM, using the exact same `image` as before.
 
 To scale-up your VM to use multiple cores you will be:
 
@@ -88,8 +90,8 @@ From now on, whenever you instantiate this `template`, you will get a 4-core VM 
 #### Instantiate the four-core VM
 
 * Instantiate a VM from the updated `template`. Call it **third**.
-* Login to the VM. 
-* You can verify that you are logged in on a four-core VM with either of the following commands: 
+* Login to the VM.
+* You can verify that you are logged in on a four-core VM with either of the following commands:
   * `cat /proc/cpuinfo | grep processor`
   * `lscpu`
 
@@ -107,7 +109,7 @@ From now on, whenever you instantiate this `template`, you will get a 4-core VM 
 
 The current HPC Cloud offers two storage types: **Ceph** and **SSD**. SSD storage is available as SSD disks in the local compute nodes where VMs run. It is meant to be small. On the other hand, Ceph is a storage system in its own cluster. Ceph images can be rather big, and data placed in them is replicated throughout the storage cluster to protect against data loss in case of hardware failure. As a guiding note, our recommended best practice is to run your operating system on a small `SSD image`, while you store your bulk data on `Ceph datablock(s)`.
 
-You choose storage types by means of `images`. For each `image`, you choose which storage type you want to use by placing the `image` on either of the two `datastores` you have available: you have the choice between `Courses_img` (which provides the SSD storage type) and `ceph`.  When you imported your first `app` in Part A of this tutorial, you created an `image` which you assigned to the *Courses_img* datastore. You know that this `image` has Ubuntu 14.04 installed, so you can now see that you are running the operating system from SSD. 
+You choose storage types by means of `images`. For each `image`, you choose which storage type you want to use by placing the `image` on either of the two `datastores` you have available: you have the choice between `Courses_img` (which provides the SSD storage type) and `ceph`.  When you imported your first `app` in Part A of this tutorial, you created an `image` which you assigned to the *Courses_img* datastore. You know that this `image` has Ubuntu 14.04 installed, so you can now see that you are running the operating system from SSD.
 
 In this section you will be exploring the `ceph` `datastore`. You can create an `image` in the `ceph` datastore by following these steps:
 
