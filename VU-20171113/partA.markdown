@@ -199,27 +199,27 @@ ssh ubuntu@145.100.5Q.RST
 
 If everything went well, the first time you try to log in your terminal will ask you to add the VM IP to the list of known hosts. Type *Yes*, in that case.
 
-You should now see a similar line in your terminal: `ubuntu@ip-145...:~$`.
+You should now see a similar line in your terminal: `ubuntu@packer-ubuntu-14:~$`.
 This means that you have logged in successfully to your Virtual Machine!
 
 * Look around a bit, make yourself familiar with the system:
 
 ```sh
-ubuntu@ip-145...:~$ ls /
-ubuntu@ip-145...:~$ whoami
+ubuntu@packer-ubuntu-14:~$ ls /
+ubuntu@packer-ubuntu-14:~$ whoami
 ```
 
 * Create a file:
 
 ```sh
-ubuntu@ip-145...:~$ echo "Hello HPC Cloud!" > myfile
-ubuntu@ip-145...:~$ cat myfile
+ubuntu@packer-ubuntu-14:~$ echo "Hello HPC Cloud!" > myfile
+ubuntu@packer-ubuntu-14:~$ cat myfile
 ```
 
 * Logout by typing `logout` or `ctrl-D` in your terminal (do **not** issue any shutdown command):
 
 ```sh
-ubuntu@ip-145...:~$ logout
+ubuntu@packer-ubuntu-14:~$ logout
 ```
 
 > **Food for brain:**
