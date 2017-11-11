@@ -175,19 +175,19 @@ Let's summarise what you have seen so far. Click on each of the tabs on the left
 * _Storage_ &gt; _<i class="fa fa-cloud-download"></i> Apps_: here you can see the list of `appliances` endorsed by SURFsara HPC Cloud team. One `app` of course is a bundle of an `image` and a `template`, which provide a basic working set of installed software and configured properties that allow you to easily create and use a VM.
 
 
-#### Logging in to the VM
+#### Logging in to the Virtual Machine
 
 You can interact with your VM in several ways: command-line (e.g.: SSH), VNC (UI in your browser) or a remote desktop. We will use SSH in a terminal for the time being.
 
-The way to log in to your virtual machine is making use of the SSH key pair that you [stored in your profile](#add-your-public-ssh-key) earlier.
+In order to log in to your VM, you will make use of the SSH public key [stored in your profile](#add-your-public-ssh-key) earlier. Proceed as follows:
 
-**Commandline access - SSH**  
+* **On the UI:** find the VM IP address
 
-* First find your VM's IP address. It is shown in the _IPs_ column from the virtual machines list on the UI and also in the _Network_ tab of the VM's details page.
+The IP address of a VM is shown in the _IPs_ column on the VM list, and in the _Network_ tab of the VM details page.
 
-* On your laptop, start a terminal (in Mac/Linux) or GitBash (in Windows).
+* **On your laptop:** start a terminal
 
-* Type the following command on the terminal to establish a connection with your VM:
+* **On your laptop:** type the following command on the terminal to establish a connection with your VM
 
 >**NOTE:**
 >
@@ -197,12 +197,9 @@ The way to log in to your virtual machine is making use of the SSH key pair that
 ssh ubuntu@145.100.5Q.RST
 ```
 
-#### First login
+If everything went well, the first time you try to log in your terminal will ask you to add the VM IP to the list of known hosts. Type *Yes*, in that case.
 
-If everything went well, the first time you try to log in, your terminal will ask you to add the VM's IP to the list of known hosts. Type *Yes*, in that case.
-
-You should now see a similar line in your terminal: `ubuntu@ip-145...:~$`
-
+You should now see a similar line in your terminal: `ubuntu@ip-145...:~$`.
 This means that you have logged in successfully to your Virtual Machine!
 
 * Look around a bit, make yourself familiar with the system:
@@ -215,7 +212,7 @@ ubuntu@ip-145...:~$ whoami
 * Create a file:
 
 ```sh
-ubuntu@ip-145...:~$ echo "Some text ..." > myfile
+ubuntu@ip-145...:~$ echo "Hello HPC Cloud!" > myfile
 ubuntu@ip-145...:~$ cat myfile
 ```
 
@@ -232,26 +229,25 @@ ubuntu@ip-145...:~$ logout
 
 #### First shutdown
 
-Let's shut your first VM down. Anytime you expect your VM to be doing nothing useful, you should shut it down to stop consuming the resources that your VM is holding.
+Let's shutdown your VM. Whenever you do not need your VM running, you should shut it down to stop consuming the resources allocated.
 
-* Go to the list of running VMs in the Cloud UI (_Instances_ &gt; _<i class="fa fa-th"></i> VMs_).
-* Tick the box to the left on the row with your VM.
-* At the upper right corner of the screen, click the red button <i class="fa fa-trash-o" style="background-color:#f04124;border-color:#cf2a0e;color:#fff;padding:1px 1ex 1px 1ex;"></i> and click _Terminate_. A confirmation action is needed, click OK.
-* Refresh the list of VMs (_<i class="fa fa-refresh"></i>_) until your VM is gone. You can always boot the "same" VM again whenever you need it.
+* Go to the list of running VMs in the Cloud UI (_Instances_ &gt; _<i class="fa fa-th"></i> VMs_)
+* Tick the box to the left on the row with your VM
+* At the upper right corner of the screen, click the red button <i class="fa fa-trash-o" style="background-color:#f04124;border-color:#cf2a0e;color:#fff;padding:1px 1ex 1px 1ex;"></i> and click _Terminate_
+* A confirmation action is needed, click OK
+* Refresh the list of VMs (_<i class="fa fa-refresh"></i>_) until your VM is gone
+
+You can always boot the "same" VM again whenever you need it, from the corresponding `template`.
 
 > **Food for brain:**
 >
 > When the VM has been shut down and disappeared from the list, check and refresh the _Storage_ &gt; _<i class="fa fa-download"></i> Images_ and _Templates_ &gt; _<i class="fa fa-file-o"></i> VMs_ tabs. *Are your `image` and `template` still there?*
 
-### BONUS _food for brain_
+> The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!
 
-This section is meant to propose extra questions we thought would be nice for you to investigate. We invite you to do/think about them even after the workshop has finished.
-
-**Bonus:** The HPC Cloud has hundreds of users. Many of them have common questions. In order to address these we have put together a web site with some documentation for users. We call it the HPC Cloud Documentation. Do you know the URL of this web site? Make sure you find out!
+### Next: part B
+You completed part A of the Tutorial [VU HPC course 2017-11-13](.). Awesome! Before proceeding with [Part B](partB), please carefully read the following:
 
 > **NOTE:**
 >
-> Your running VMs get exclusive access to their resources whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**.
-
-### Next: part B
-You completed part A of the Tutorial [VU HPC course 2017-11-13](.). Please continue with Tutorial [Part B](partB).
+> Your running VMs get exclusive access to their resources, whether they are doing something useful or not. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, please **remember to terminate all your VMs** before you move to the next part of this workshop.
