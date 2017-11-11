@@ -200,7 +200,8 @@ ssh ubuntu@145.100.5Q.RST
 If everything went well, the first time you try to log in your terminal will ask you to add the VM IP to the list of known hosts. Type *Yes*, in that case.
 
 You should now see a similar line in your terminal: `ubuntu@packer-ubuntu-14:~$`.
-This means that you have logged in successfully to your Virtual Machine!
+This is the prompt of your VM and is waiting for your input.
+You have logged in successfully!
 
 * Look around a bit, make yourself familiar with the system:
 
