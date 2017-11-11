@@ -34,7 +34,7 @@ This is part B of the tutorial [VU HPC course 2017-11-13](.) and covers the foll
 
 * What does **non-persistent** mean?
   * Changes made by a VM are lost at shutdown and not copied back to the original `image`
-  * It **is** possible to run multiple VMs using the same single **non-persistent** `image`
+  * It is possible to run multiple VMs using the same single **non-persistent** `image`
 
 > **Food for brain:**
 >
@@ -42,10 +42,11 @@ This is part B of the tutorial [VU HPC course 2017-11-13](.) and covers the foll
 
 In this section you will work with **persistent** images. You will go through these steps:
 
-* Making your image persistent.
-* Starting a VM using the persistent image.
+* Making your image persistent
+* Starting a VM using the persistent image
 
 #### Making your image persistent
+
 * Go to the _Images_ tab <i class="fa fa-download"></i> under _Storage_ on the left menu. Select the image by clicking anywhere, except the tick-box, on the row for the `image` you created before (**Course Image**).
 * On the _Info_ tab <i class="fa fa-info-circle"></i>, under the _Information_ section, find the _Persistent_ attribute. It says _No_ at the moment.
 * Switch the value to _Yes_ by clicking on the pencil icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
