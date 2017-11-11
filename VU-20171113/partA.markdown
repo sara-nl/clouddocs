@@ -248,6 +248,6 @@ You can always boot the "same" VM again whenever you need it, from the correspon
 ### Next: part B
 You completed part A of the Tutorial [VU HPC course 2017-11-13](.). Awesome! Before proceeding with [Part B](partB), please carefully read the following:
 
-> **NOTE:**
+> **IMPORTANT:**
 >
 > Your running VMs get exclusive access to their resources, whether they are doing something useful or not. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, please **remember to terminate all your VMs** before you move to the next part of this workshop.
