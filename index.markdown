@@ -12,10 +12,10 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 <div class="alert alert-success" markdown="1">
 <div style="float:right;max-width:100px;margin-top:-10px;" markdown="1">
-<div style="max-width:100px;" markdown="1">
+<div style="max-width:80px;" markdown="1">
 ![VU logo](/images/VU_logo.png)
 </div>
-<div style="max-width:100px;margin-bottom:10px;" markdown="1">
+<div style="max-width:80px;margin-bottom:10px;" markdown="1">
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 </div>
