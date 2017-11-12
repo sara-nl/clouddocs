@@ -16,13 +16,13 @@ This is part B of the tutorial [VU HPC course 2017-11-13](.) and covers the foll
 2. [Scale up to a multicore VM](#scale-up-to-a-multicore-vm)
 3. [Working with Storage](#working-with-storage)
 
->**NOTES:**
+>**Notes**
 >
-> If you have not completed and understood [Part A](partA), please take your time before moving forwards.
+>If you have not completed and understood [Part A](partA), please take your time before moving forwards.
 >
-> Do you have any Virtual Machine(s) running? [Terminate](partA#first_shutdown) them now.
+>Do you have any Virtual Machine(s) running? [Terminate](partA#first_shutdown) them now.
 >
-> For the rest of the tutorial we will omit the terminal prompt `ubuntu@packer-ubuntu-14:~$` in the instructions. It allows you to copy-n-paste the commands directly to your terminal.
+>For the rest of the tutorial we will omit the terminal prompt `ubuntu@packer-ubuntu-14:~$` in the instructions. It allows you to copy-n-paste the commands directly to your terminal.
 
 ### 1. Persistence
 
@@ -43,7 +43,7 @@ In this section you will work with **persistent** images. We will guide through 
 * Making your image persistent
 * Starting a VM using the persistent image
 
-> **Food for brain:**
+> **Food for brain**
 >
 > Was the first image that you imported in [Part A](partA#import_appliance_from_Marketplace) `persistent`?
 
@@ -64,7 +64,7 @@ You already have the knowledge on how to start a VM. Make use of the `template` 
 * Log in and check the files you created during the previous run [(Part A)](partA#logging_in_to_the_virtual_machine)
 * Create another file now (just because)
 
-> **Food for brain:**
+> **Food for brain**
 >
 >* Why there was no need to edit the `template` before instantiating the VM?
 >* Is/are the file(s) you created in your VM (in part A) still there?
@@ -94,9 +94,9 @@ You can customise your VM(s) by editing the `template` you instantiate the VM(s)
 
 From now on, whenever you instantiate this `template`, you will get a 4-core VM running using the same *First Image* you have been using so far.
 
-> **Food for brain:**
+> **Food for brain**
 >
-> * Imagine that a VM is already running instantiated from the **First Template**. What will happen with that VM if you edit the same `template`?
+> Imagine that a VM is already running instantiated from the **First Template**. What will happen with that VM if you edit the same `template`?
 
 #### Instantiate the four-core VM
 
@@ -106,7 +106,7 @@ From now on, whenever you instantiate this `template`, you will get a 4-core VM 
   * `cat /proc/cpuinfo | grep processor`
   * `lscpu`
 
-> **Food for brain:**
+> **Food for brain**
 >
 > Since we are in the VM again ... are your files there now? All? None? Can you explain?
 
@@ -145,7 +145,7 @@ Let's create a new `image` via the HPC Cloud [UI](https://ui.hpccloud.surfsara.n
   * Give it a _Size_ in MB: **2048** (i.e. 2 GB)
 * Click the green button *Create* at the top to create it
 
->**NOTE:**
+>**Note**
 >
 >A new `image` will show on the _Images_ list <i class="fa fa-download"></i> and it will keep in status LOCKED while it is being created. Once it is created it will display status READY.
 
@@ -176,7 +176,7 @@ sudo fdisk -l
 >The following `sudo` command(s) may displays the message `sudo: unable to resolve host ip-145-100-...`. You can safely disregard that error message.
 -->
 
-> **Food for brain:**
+> **Food for brain**
 >
 >From the output of the previous command:
 >   * can you identify the two disks attached to your VM?
@@ -184,7 +184,7 @@ sudo fdisk -l
 
 * Create the directory where you will mount the Ceph datablock and format the drive:
 
->**WARNING:**
+> _<i class="fa fa-exclamation-triangle" aria-hidden="true"></i> **WARNING**_
 >
 > Creating a file system in a disk (to format) is a dangerous operation. Make sure you format the correct disk device!
 
@@ -207,16 +207,14 @@ sudo chown ubuntu:ubuntu -R /data
 
 >**Food for brain:**
 >
-> 1. Create new files or folders in your `/data` directory. Logout and login again. *Are your changes still there?* Check with `ls /data/`.
-> 2. Shut down the VM and start it again. *Do you see the files on the Ceph datablock?*
-> Hint: when you start the VM the datablock is not automatically mounted. You should issue the mount command once again.
-> 3. Copy a file from your laptop to `/data`, e.g. with `scp filename ubuntu@145.100.5Q.RST:/data`. Log in to the VM and inspect the changes.
+>1. Create new files or folders in your `/data` directory. Logout and login again. Are your changes still there?.
+>2. Shut down the VM and start it again. Do you see the files on the Ceph datablock?
+> Hint: when you start the VM the datablock is not automatically mounted.
+>3. Copy a file from your laptop to `/data`, e.g. with `scp filename ubuntu@145.100.5Q.RST:/data`. Log in to the VM and inspect the changes.
 
 ### BONUS _food for brain_
 
-In [Parts A](partA) & [B](.) of the workshop you have explored the UI and learnt how to import an _appliance_ from the Apps Marketplace. You also played with different storage solutions to hold data.  
-
-Many users come to the HPC Cloud because they can install and run their favorite operating system. For example, Windows is very popular for some of our users.
+In [Parts A](partA) & [B](.) of the workshop you have explored the UI and learnt how to import an _appliance_ from the Apps Marketplace. You also played with different storage solutions to hold data. Many users come to the HPC Cloud because they can install and run their favorite operating system. For example, Windows is very popular for some of our users.
 
 * Can you think of (and sketch) the steps that you would need to follow to create a VM running your favourite operating system?
 * Can you find three articles in the HPC Cloud Documentation that show how to install different operating systems from scratch?
@@ -225,6 +223,6 @@ Many users come to the HPC Cloud because they can install and run their favorite
 ### Next: Extras
 You have completed part B of the Tutorial [VU HPC course 2017-11-13](.). If you want more of the HPC Cloud proceed to the [Extras part](extras).
 
-> **IMPORTANT:**
+> _<i class="fa fa-info-circle" aria-hidden="true"></i> **IMPORTANT**_
 >
 > Your running VMs get exclusive access to their resources, whether they are doing something useful or not. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, please **remember to terminate all your VMs** before you move to the next part of this workshop.

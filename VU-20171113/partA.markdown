@@ -22,7 +22,7 @@ The User Interface (UI) is the web site that allows you to manage your _Virtual 
 
 #### Log in to the UI
 
->**Note:**
+>**Note**
 >
 >You will receive your access credentials from the workshop facilitators.
 
@@ -61,7 +61,7 @@ From now on, you can use your new password to log in to the [UI](https://ui.hpcc
 
 To complete the setup of your HPC Cloud account, you need to **add a Secure Shell (SSH) public key to your UI account**. This is a one-time task!
 
->**Note:**
+>**Note**
 >
 >If you are not familiar with the SSH authentication method, please read about it on our [documentation page](/SSHkey).
 
@@ -112,7 +112,7 @@ Under section _Select the Datastore to store the resource_, choose the entry dis
 
 * Finally, click the blue *Download* button. This step will import the `appliance` from the Marketplace to your work environment
 
-> **Food for brain:**
+> **Food for brain**
 >
 > When you import an `app`, an `image` and a `template` are created as explained during the introductory presentation. In the UI you have an _<i class="fa fa-download"></i> Images_ tab under _Storage_ and a _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu. You have just imported an `app`, you should now see your new `image` and `template` there.
 >
@@ -164,7 +164,7 @@ This list is (probably) empty at the moment, because you have not yet started an
 
 Congratulations! You have just created a fresh, clean Virtual Machine!
 
-> **NOTE:**  
+> **Note**  
 >Your VM will appear in the list of Virtual Machines. At first, it will have the state `PENDING`. This indicates that the HPC Cloud is looking for a place where your VM can actually run. Finding the right place depends on the amount and types of resources (cores, memory, disk...) you requested in the `template`. Keep refreshing the list by clicking the _refresh_ button <i class="fa fa-refresh"></i>. When the required resources become available, your VM will show the status `RUNNING`. Only then you will be able to make use of it.
 
 Let's summarise what you have seen so far. Click on each of the tabs on the left menu and inspect the information provided. The most important ones at this point are:
@@ -189,7 +189,7 @@ The IP address of a VM is shown in the _IPs_ column on the VM list, and in the _
 
 * **On your laptop:** type the following command on the terminal to establish a connection with your VM
 
->**NOTE:**
+>**Note**
 >
 >Replace 145.100.5Q.RST with your IP address!
 
@@ -223,7 +223,7 @@ ubuntu@packer-ubuntu-14:~$ cat myfile
 ubuntu@packer-ubuntu-14:~$ logout
 ```
 
-> **Food for brain:**
+> **Food for brain**
 >
 > Log in to your VM again. *Is your file still there?*
 
@@ -240,7 +240,7 @@ Let's shutdown your VM. Whenever you do not need your VM running, you should shu
 
 You can always boot the "same" VM again whenever you need it, from the corresponding `template`.
 
-> **Food for brain:**
+> **Food for brain**
 >
 > When the VM has been shut down and disappeared from the list, check and refresh the _Storage_ &gt; _<i class="fa fa-download"></i> Images_ and _Templates_ &gt; _<i class="fa fa-file-o"></i> VMs_ tabs. *Are your `image` and `template` still there?*
 >
@@ -249,6 +249,6 @@ You can always boot the "same" VM again whenever you need it, from the correspon
 ### Next: part B
 You completed part A of the Tutorial [VU HPC course 2017-11-13](.). Awesome! Before proceeding with [Part B](partB), please carefully read the following:
 
-> **IMPORTANT:**
+> _<i class="fa fa-info-circle" aria-hidden="true"></i> **IMPORTANT**_
 >
 > Your running VMs get exclusive access to their resources, whether they are doing something useful or not. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, please **remember to terminate all your VMs** before you move to the next part of this workshop.
