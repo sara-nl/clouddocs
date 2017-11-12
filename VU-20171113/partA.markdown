@@ -175,7 +175,7 @@ Let's summarise what you have seen so far. Click on each of the tabs on the left
 * _Storage_ &gt; _<i class="fa fa-cloud-download"></i> Apps_: here you can see the list of `appliances` endorsed by SURFsara HPC Cloud team. One `app` of course is a bundle of an `image` and a `template`, which provide a basic working set of installed software and configured properties that allow you to easily create and use a VM.
 
 
-#### Logging in to the Virtual Machine
+#### <a name="logging_in_to_the_virtual_machine"></a> Logging in to the Virtual Machine
 
 You can interact with your VM in several ways: command-line (e.g.: SSH), VNC (UI in your browser) or a remote desktop. We will use SSH in a terminal for the time being.
 

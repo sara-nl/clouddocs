@@ -45,136 +45,152 @@ In this section you will work with **persistent** images. We will guide through 
 
 > **Food for brain:**
 >
-> Was the first image that you imported in [PartA](partA#import_appliance_from_Marketplace) `persistent`?
+> Was the first image that you imported in [Part A](partA#import_appliance_from_Marketplace) `persistent`?
 
 #### Making your image persistent
 
-* Go to the _Images_ tab <i class="fa fa-download"></i> under _Storage_ on the left menu. Select the image by clicking anywhere, except the tick-box, on the row for the `image` you created before (**Course Image**).
-* On the _Info_ tab <i class="fa fa-info-circle"></i>, under the _Information_ section, find the _Persistent_ attribute. It says _No_ at the moment.
-* Switch the value to _Yes_ by clicking on the pencil icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>.
+No Virtual Machine should be running at this point and making use of the `image` we want to change the _Persistent_ attribute. Otherwise, the following procedure will not work.
+
+* Go to the _Images_ tab <i class="fa fa-download"></i> under _Storage_ on the left menu
+* Select the image by clicking anywhere on the row, except the tick-box, for the `image` you created before (**First Image**)
+* On the _Info_ tab <i class="fa fa-info-circle"></i> under the _Information_ section, find the _Persistent_ attribute
+* Change the value of the _Persistent_ attribute from _No_ to _Yes_ by clicking on the pencil icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i>
 
 #### Starting a persistent VM
-* Start your virtual machine (VM) again. Call it **Second**
-* Log in and check the files you created during the previous run [(Part A)](partA).
-* Create another file now.
+
+You already have the knowledge on how to start a VM. Make use of the `template` you created before (**First Template**).
+
+* Start a new VM and call it **My Second VM**
+* Log in and check the files you created during the previous run [(Part A)](partA#logging_in_to_the_virtual_machine)
+* Create another file now (just because)
 
 > **Food for brain:**
 >
+>* Why there was no need to edit the `template` before instantiating the VM?
 >* Is/are the file(s) you created in your VM (in part A) still there?
->* During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written to the `image` even if you restart your VM. Try it.
+>* In the previous VM run the disk (`image`) attached was *non-persistent*. From now on, you can safely store data in your VM! It will be written to the `image` attached to the VM, even if you restart it. Try it.
 
-You can now shut your VM down (remember, the _Terminate_ button on the UI).
+You can now shutdown the VM. Remember, use the _Terminate_ button on the UI.
 
 ### 2. Scale up to a multicore VM
 
-The HPC Cloud offers Infrastructure as a Service (IaaS). That allows you to give your VMs the form that you need them to have. In this section, you will start a **4-core** VM, using the exact same `image` as before.
+From the course introduction presentation, you gained the insight that SURFsara HPC Cloud operates as an Infrastructure as a Service (IaaS). This cloud computing model brings flexibility to our users, such as the ability to scale-up. In this section, you will start a **4-core** VM using the exact same `image` as before.
 
-To scale-up your VM to use multiple cores you will be:
+To scale-up your VM to use multiple cores you will:
 
-* Editing your `template`.
-* Re-instantiating a VM from the modified `template`.
+* Edit your `template`
+* Re-instantiate a VM from the modified `template`
 
 #### Edit the template
 
-You can customise your VMs by editing the `templates` you instantiate VMs from.
+You can customise your VM(s) by editing the `template` you instantiate the VM(s) from. Proceed as follows:
 
-* In order to edit your existing `template`, from the _VMs_ tab <i class="fa fa-file-o"></i> under _Templates_ on the left menu, choose the **First Template**. Then click on the _Update_ button on the top left of the screen.
+* From the _VMs_ tab <i class="fa fa-file-o"></i> under _Templates_ on the left menu, choose the **First Template** (tick box)
+* Click on the _Update_ button on the top left of the screen
 * In the _General_ tab <i class="fa fa-laptop"></i> edit the number of CPU and VCPU as:
   * CPU: **4**
   * VCPU: **4**
-* When you are done, click on the green _Update_ button so that your changes are actually saved.
+* Click on the green _Update_ button so that your changes are saved
 
 From now on, whenever you instantiate this `template`, you will get a 4-core VM running using the same *First Image* you have been using so far.
 
 > **Food for brain:**
 >
-> After changing the `template` as described above, how many cores do you expecte your VM to have? Does changing a `template` affect the currently running VM's that are based on it?
+> * Imagine that a VM is already running instantiated from the **First Template**. What will happen with that VM if you edit the same `template`?
 
 #### Instantiate the four-core VM
 
-* Instantiate a VM from the updated `template`. Call it **third**.
-* Login to the VM.
-* You can verify that you are logged in on a four-core VM with either of the following commands:
+* Instantiate a VM from the updated `template` and call it **My Third VM**
+* Login to the VM
+* Confirm that your VM has four-cores available, e.g. by suing either of the following commands:
   * `cat /proc/cpuinfo | grep processor`
   * `lscpu`
 
 > **Food for brain:**
 >
-> Since we are in the VM again... are your files there now? All? None? Can you explain?
+> Since we are in the VM again ... are your files there now? All? None? Can you explain?
 
 #### Shut down the four-core VM
 
-* Choose the VM from your list
-* Click on the red _Terminate_ button.
-
+Before moving forward, please **remember to terminate all your VMs**. Again, use the _Terminate_ button on the UI.
 
 ### 3. Working with storage types
 
-The current HPC Cloud offers two storage types: **Ceph** and **SSD**. SSD storage is available as SSD disks in the local compute nodes where VMs run. It is meant to be small. On the other hand, Ceph is a storage system in its own cluster. Ceph images can be rather big, and data placed in them is replicated throughout the storage cluster to protect against data loss in case of hardware failure. As a guiding note, our recommended best practice is to run your operating system on a small `SSD image`, while you store your bulk data on `Ceph datablock(s)`.
+The current HPC Cloud setup offers two storage types: **SSD** and **Ceph**. SSD storage is available as Solid State Drive (SSD) disks in the compute nodes where the VMs run. The available SSD storage per node is limited. On the other hand, [Ceph](http://ceph.com/) is a robust and flexible storage system that aims for high performance. Ceph can store rather big files, and data placed in our Ceph storage cluster is replicated throughout the cluster to protect against data loss in case of hardware failure. As a guiding note, we advise our users to run the operating system in a small `SSD image`, while bulk data should be stored in `Ceph datablock(s)`.
 
-You choose storage types by means of `images`. For each `image`, you choose which storage type you want to use by placing the `image` on either of the two `datastores` you have available: you have the choice between `Courses_img` (which provides the SSD storage type) and `ceph`.  When you imported your first `app` in Part A of this tutorial, you created an `image` which you assigned to the *Courses_img* datastore. You know that this `image` has Ubuntu 14.04 installed, so you can now see that you are running the operating system from SSD.
+For each `image` in your Cloud environment, you need to choose which storage type you want to use. This is achieved by placing the `image` on either of the two `datastores` you have available: `Courses_img` (which provides the SSD storage type) and `ceph`.
 
-In this section you will be exploring the `ceph` `datastore`. You can create an `image` in the `ceph` datastore by following these steps:
+When you imported your first `app` in [Part A](partA#import_appliance_from_Marketplace) of this tutorial, you created an `image` which you assigned to the *Courses_img* datastore. The `image` has Ubuntu desktop 14.04.5 installed and will be running on the SSD storage of the computing nodes.
 
-* Creating a new empty `image` for bulk data
-* Adding the new `image` to the `template`
-* Mounting the `image` in the VM
+In this section you will be exploring the `ceph` `datastore`. You can create and make use of an `image` stored in the `ceph` datastore, by following these steps:
 
-At this point you should **not** have any running VMs. If you have, shut them down now (remember, the _Terminate_ button).
+* Create a new `image` for bulk data
+* Add the new `image` to the `template`
+* Mount the `image` in the VM
+
+At this point you should **not** have any running VMs. If you have, shut them down now.
 
 #### Creating a new empty `image` for bulk data
 
-Let's create a new `image`.
+Let's create a new `image` via the HPC Cloud [UI](https://ui.hpccloud.surfsara.nl).
 
-* On the [UI](https://ui.hpccloud.surfsara.nl), from the menu on the left, under the _Storage_ option, select the _Images_ tab <i class="fa fa-download"></i>.
-* Click the green button on the top _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_.
+* From the menu on the left under the _Storage_ option, select the _Images_ tab <i class="fa fa-download"></i>
+* Click the green button on the top _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_
 * In the *Create image* screen fill in the form as:  
-  * Name: **my data**. You will use this name later in your `template`.
-  * Type: **Generic storage datablock**.
-  * Datastore: **106: ceph**.
-  * Check the **This image is persistent** checkbox.
-  * On the _Image location:_ group choose radio button **Empty disk image**.
-  * Give it a _Size_ in MB: **2000** (is 2GB, approximately).
-* Click the green button *Create* at the top to create it.
+  * Name: **my data** (you will use this name later in your `template`)
+  * Type: **Generic storage datablock**
+  * Datastore: **106: ceph**
+  * Check the **This image is persistent** checkbox
+  * On the _Image location_ group choose the radio button **Empty disk image**
+  * Give it a _Size_ in MB: **2048** (i.e. 2 GB)
+* Click the green button *Create* at the top to create it
 
 >**NOTE:**
 >
->A new `image` will show on the _Images_ list <i class="fa fa-download"></i> and it will keep in status LOCKED while it is being created. Once it is created it will display status READY. Then you *still* have to format and mount the disk; you will be doing that just in a moment.
+>A new `image` will show on the _Images_ list <i class="fa fa-download"></i> and it will keep in status LOCKED while it is being created. Once it is created it will display status READY.
 
 #### Adding the new image to the template
 
 In order to let your VM know about the new datablock, you need to add it to your VM's `template`:
 
-* Open the screen to edit the `template` (or create a new one from scratch).
-* Select the _Storage_ tab <i class="fa fa-tasks"></i>.
-* Click on the blue button _<i class="fa fa-plus-circle" style="background-color:#4DBBDC;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_, that will make a new _Disk 1_, and then choose the **my data** `image` that you have just created. This way you have added a second `image` to the `template`.
-* Finish with the *Update* button on the top to submit the changes.
+* Open the screen to edit the `template` (or create a new one from scratch)
+* Select the _Storage_ tab <i class="fa fa-tasks"></i>
+* Click on the blue button _<i class="fa fa-plus-circle" style="background-color:#4DBBDC;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_, that will make a new _Disk 1_
+* Choose the **My Data** `image` that you have just created
+* Finish with the *Update* button on the top to submit the changes
 
 #### Mounting the image in the VM
 
 Let's start using the new disk.
 
-* Instantiate a new `VM` from the `template` that you modified in the previous step. Call it **fourth**
-* Once the `VM` is in RUNNING state, log in and check that your new datablock is available there:
-
->**Note:**
->
->The following `sudo` command(s) may displays the message `sudo: unable to resolve host ip-145-100-...`. You can safely disregard that error message.
+* Instantiate a new VM from the `template` you modified in the previous step, and call it **My Fourth VM**
+* Log in and check that your new datablock is available:
 
 ```sh
 sudo fdisk -l
 ```
 
+<!---
+>**NOTE:**
+>
+>The following `sudo` command(s) may displays the message `sudo: unable to resolve host ip-145-100-...`. You can safely disregard that error message.
+-->
+
 > **Food for brain:**
 >
-> You should see (probably, as a last line of the output of the previous command) something like: `Disk /dev/vdb doesn't contain a valid partition table`. The output should also inform that there is a Disk with approximately of the size you typed in the UI in the previous step. What is that Disk's name?
+>From the output of the previous command:
+>   * can you identify the two disks attached to your VM?
+>   * can you explain the `Disk /dev/vdb doesn't contain a valid partition table` statement?
 
+* Create the directory where you will mount the Ceph datablock and format the drive:
 
-* Create the directory where you will mount the Ceph datablock and format the drive (`xfsprogs` is installed on the image):
+>**WARNING:**
+>
+> Creating a file system in a disk (to format) is a dangerous operation. Make sure you format the correct disk device!
 
 ```sh
 sudo mkdir /data  
-sudo mkfs -t xfs /dev/vdb  
+sudo mkfs -t xfs /dev/vdb
 ```
 
 * Mount the datadisk in the VM:
@@ -191,30 +207,24 @@ sudo chown ubuntu:ubuntu -R /data
 
 >**Food for brain:**
 >
-> Create new files or folders in your in `/data` directory. Logout and login again. *Are your changes still there?* Check with `ls /data/`.
-> Shut the VM down and start it again. *Do you see the files on the datablock?*
+> 1. Create new files or folders in your `/data` directory. Logout and login again. *Are your changes still there?* Check with `ls /data/`.
+> 2. Shut down the VM and start it again. *Do you see the files on the Ceph datablock?*
 > Hint: when you start the VM the datablock is not automatically mounted. You should issue the mount command once again.
-
-* From now on, you can transfer files from your laptop on the newly created disk.
-
->**Food for brain:**
->
-> Try to copy a file from your laptop to `/data`, e.g. with `scp myfile ubuntu@145.100.5Q.RST:/data`. Log in to the VM and inspect the changes.
-
+> 3. Copy a file from your laptop to `/data`, e.g. with `scp filename ubuntu@145.100.5Q.RST:/data`. Log in to the VM and inspect the changes.
 
 ### BONUS _food for brain_
 
-This section is meant to propose extra questions we thought would be nice for you to investigate. We invite you to do/think about them even after the workshop has finished.
+In [Parts A](partA) & [B](.) of the workshop you have explored the UI and learnt how to import an _appliance_ from the Apps Marketplace. You also played with different storage solutions to hold data.  
 
-**Bonus:** In Parts A & B of the workshop you have explored the UI and learnt how to import an _appliance_ from the Apps Market. However, many people come to the HPC Cloud because they can install and run their own operating system. In particular, Windows is very popular among our users.
+Many users come to the HPC Cloud because they can install and run their favorite operating system. For example, Windows is very popular for some of our users.
 
-  * Can you think of (and sketch) the steps that you would need to follow to create a VM running your favourite operating system?
-  * Can you find three articles in the HPC Cloud Documentation that show how to install different operating systems from scratch?
-
->**NOTE:**
->
->  Play around, make your checks and **shut down all the VMs when you are done**. Your running VMs are consuming quota whether they are doing something useful or are idle.
-
+* Can you think of (and sketch) the steps that you would need to follow to create a VM running your favourite operating system?
+* Can you find three articles in the HPC Cloud Documentation that show how to install different operating systems from scratch?
+* Can you sketch the steps required if you would like to have a datablock sharing data with multiple Virtual Machines?
 
 ### Next: Extras
 You have completed part B of the Tutorial [VU HPC course 2017-11-13](.). If you want more of the HPC Cloud proceed to the [Extras part](extras).
+
+> **IMPORTANT:**
+>
+> Your running VMs get exclusive access to their resources, whether they are doing something useful or not. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, please **remember to terminate all your VMs** before you move to the next part of this workshop.
