@@ -43,7 +43,7 @@ In this section you will work with **persistent** images. We will guide through 
 * Making your image persistent
 * Starting a VM using the persistent image
 
-> **Food for brain**
+> <i class="fa fa-question-circle" aria-hidden="true"></i>**Food for brain**
 >
 > Was the first image that you imported in [Part A](partA#import_appliance_from_Marketplace) `persistent`?
 
@@ -64,7 +64,7 @@ You already have the knowledge on how to start a VM. Make use of the `template` 
 * Log in and check the files you created during the previous run [(Part A)](partA#logging_in_to_the_virtual_machine)
 * Create another file now (just because)
 
-> **Food for brain**
+> <i class="fa fa-question-circle" aria-hidden="true"></i>**Food for brain**
 >
 >* Why there was no need to edit the `template` before instantiating the VM?
 >* Is/are the file(s) you created in your VM (in part A) still there?
@@ -94,7 +94,7 @@ You can customise your VM(s) by editing the `template` you instantiate the VM(s)
 
 From now on, whenever you instantiate this `template`, you will get a 4-core VM running using the same *First Image* you have been using so far.
 
-> **Food for brain**
+> <i class="fa fa-question-circle" aria-hidden="true"></i>**Food for brain**
 >
 > Imagine that a VM is already running instantiated from the **First Template**. What will happen with that VM if you edit the same `template`?
 
@@ -106,7 +106,7 @@ From now on, whenever you instantiate this `template`, you will get a 4-core VM 
   * `cat /proc/cpuinfo | grep processor`
   * `lscpu`
 
-> **Food for brain**
+> <i class="fa fa-question-circle" aria-hidden="true"></i>**Food for brain**
 >
 > Since we are in the VM again ... are your files there now? All? None? Can you explain?
 
@@ -176,7 +176,7 @@ sudo fdisk -l
 >The following `sudo` command(s) may displays the message `sudo: unable to resolve host ip-145-100-...`. You can safely disregard that error message.
 -->
 
-> **Food for brain**
+> <i class="fa fa-question-circle" aria-hidden="true"></i>**Food for brain**
 >
 >From the output of the previous command:
 >   * can you identify the two disks attached to your VM?
@@ -205,14 +205,14 @@ sudo mount /dev/vdb /data
 sudo chown ubuntu:ubuntu -R /data
 ```
 
->**Food for brain:**
+><i class="fa fa-question-circle" aria-hidden="true"></i>**Food for brain:**
 >
 >1. Create new files or folders in your `/data` directory. Logout and login again. Are your changes still there?.
 >2. Shut down the VM and start it again. Do you see the files on the Ceph datablock?
 > Hint: when you start the VM the datablock is not automatically mounted.
 >3. Copy a file from your laptop to `/data`, e.g. with `scp filename ubuntu@145.100.5Q.RST:/data`. Log in to the VM and inspect the changes.
 
-### BONUS _food for brain_
+### <i class="fa fa-question-circle" aria-hidden="true"></i>BONUS _food for brain_
 
 In [Parts A](partA) & [B](.) of the workshop you have explored the UI and learnt how to import an _appliance_ from the Apps Marketplace. You also played with different storage solutions to hold data. Many users come to the HPC Cloud because they can install and run their favorite operating system. For example, Windows is very popular for some of our users.
 
