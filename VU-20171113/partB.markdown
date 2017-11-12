@@ -223,6 +223,6 @@ In [Parts A](partA) & [B](.) of the workshop you have explored the UI and learnt
 ### Next: Extras
 You have completed part B of the Tutorial [VU HPC course 2017-11-13](.). If you want more of the HPC Cloud proceed to the [Extras part](extras).
 
-> <i class="fa fa-info-circle" aria-hidden="true"></i> **Important**
+> <i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i> **Important**
 >
 > Your running VMs get exclusive access to their resources, whether they are doing something useful or not. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, please **remember to terminate all your VMs** before you move to the next part of this workshop.
