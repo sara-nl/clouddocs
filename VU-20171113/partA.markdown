@@ -112,7 +112,7 @@ Under section _Select the Datastore to store the resource_, choose the entry dis
 
 * Finally, click the blue *Download* button. This step will import the `appliance` from the Marketplace to your work environment
 
-> <i class="fa fa-question-circle" aria-hidden="true"></i>**Food for brain**
+> <i class="fa fa-question-circle" aria-hidden="true"></i> **Food for brain**
 >
 > When you import an `app`, an `image` and a `template` are created as explained during the introductory presentation. In the UI you have an _<i class="fa fa-download"></i> Images_ tab under _Storage_ and a _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu. You have just imported an `app`, you should now see your new `image` and `template` there.
 >* Can you see them?
@@ -222,7 +222,7 @@ ubuntu@packer-ubuntu-14:~$ cat myfile
 ubuntu@packer-ubuntu-14:~$ logout
 ```
 
-> <i class="fa fa-question-circle" aria-hidden="true"></i>**Food for brain**
+> <i class="fa fa-question-circle" aria-hidden="true"></i> **Food for brain**
 >
 > Log in to your VM again. *Is your file still there?*
 
@@ -239,7 +239,7 @@ Let's shutdown your VM. Whenever you do not need your VM running, you should shu
 
 You can always boot the "same" VM again whenever you need it, from the corresponding `template`.
 
-> <i class="fa fa-question-circle" aria-hidden="true"></i>**Food for brain**
+> <i class="fa fa-question-circle" aria-hidden="true"></i> **Food for brain**
 >
 > When the VM has been shut down and disappeared from the list, check and refresh the _Storage_ &gt; _<i class="fa fa-download"></i> Images_ and _Templates_ &gt; _<i class="fa fa-file-o"></i> VMs_ tabs. *Are your `image` and `template` still there?*
 >
