@@ -184,7 +184,7 @@ sudo fdisk -l
 
 * Create the directory where you will mount the Ceph datablock and format the drive:
 
-> _<i class="fa fa-exclamation-triangle" aria-hidden="true"></i> **WARNING**_
+> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> **Warning**
 >
 > Creating a file system in a disk (to format) is a dangerous operation. Make sure you format the correct disk device!
 
@@ -223,6 +223,6 @@ In [Parts A](partA) & [B](.) of the workshop you have explored the UI and learnt
 ### Next: Extras
 You have completed part B of the Tutorial [VU HPC course 2017-11-13](.). If you want more of the HPC Cloud proceed to the [Extras part](extras).
 
-> _<i class="fa fa-info-circle" aria-hidden="true"></i> **IMPORTANT**_
+> <i class="fa fa-info-circle" aria-hidden="true"></i> **Important**
 >
 > Your running VMs get exclusive access to their resources, whether they are doing something useful or not. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, please **remember to terminate all your VMs** before you move to the next part of this workshop.
