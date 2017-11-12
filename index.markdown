@@ -12,7 +12,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 <div class="alert alert-success" markdown="1">
 <div style="float:right;max-width:60px;margin-top:-10px;" markdown="1">
-<div style="max-width:30px;" markdown="1">
+<div style="max-width:60px;" markdown="1">
 ![VU logo](/images/VU_logo.png)
 </div>
 <div style="max-width:60px;" markdown="1">
@@ -20,7 +20,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 </div>
 </div>
 <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
-<span style="color:red;">TODAY!</span> - 2017-07-03 <br/> [VU HPC course](VU-20171113/index)
+<span style="color:red;">TODAY!</span>  <br/> [HPC Cloud @ VU HPC course](VU-20171113/index)
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
