@@ -89,6 +89,5 @@ You will find several **Food for brain** questions scattered in the hands-on exe
 <div markdown="1">
 
   * Morning presentation: [Introduction to the HPC Cloud](20171113_introduction.pdf)
-  * Afternoon presentation: [Cloudy systems](20171113_parallelism.pdf)
 
 </div>
