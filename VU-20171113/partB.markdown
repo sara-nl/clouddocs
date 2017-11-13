@@ -76,12 +76,12 @@ You can now shutdown the VM. Remember, use the _Terminate_ button on the UI.
 
 From the course introduction presentation, you gained the insight that SURFsara HPC Cloud operates as an Infrastructure as a Service (IaaS). This cloud computing model brings flexibility to our users, such as the ability to scale-up. In this section, you will start a **4-core** VM using the exact same `image` as before.
 
-To scale-up your VM to use multiple cores you will:
+To scale-up your VM to use multiple cores you will be:
 
-* Edit your `template`
-* Re-instantiate a VM from the modified `template`
+* Editing your `template`
+* Re-instantiating a VM from the modified `template`
 
-#### Edit the template
+#### Editing the template
 
 You can customise your VM(s) by editing the `template` you instantiate the VM(s) from. Proceed as follows:
 
@@ -98,7 +98,7 @@ From now on, whenever you instantiate this `template`, you will get a 4-core VM 
 >
 > Imagine that a VM is already running instantiated from the **First Template**. What will happen with that VM if you edit the same `template`?
 
-#### Instantiate the four-core VM
+#### Instantiating the four-core VM
 
 * Instantiate a VM from the updated `template` and call it **My Third VM**
 * Login to the VM
@@ -124,9 +124,9 @@ When you imported your first `app` in [Part A](partA#import_appliance_from_Marke
 
 In this section you will be exploring the `ceph` `datastore`. You can create and make use of an `image` stored in the `ceph` datastore, by following these steps:
 
-* Create a new `image` for bulk data
-* Add the new `image` to the `template`
-* Mount the `image` in the VM
+* Creating a new `image` for bulk data
+* Adding the new `image` to the `template`
+* Mounting the `image` in the VM
 
 At this point you should **not** have any running VMs. If you have, shut them down now.
 
