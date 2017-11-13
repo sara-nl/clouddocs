@@ -38,6 +38,6 @@ Link: [XML-RPC](XMLRPC)
 
 ## Extra assignment
 
-Link: [Extra exercise][assignment]
+Link: [Extra exercise](assignment)
 
 This is a very open exercise for you to think about how to adapt the resources that you have learnt about from the HPC Cloud, to a generic description of a problem. You can talk to your facilitators (e.g.: via e-mail) for assistance.
