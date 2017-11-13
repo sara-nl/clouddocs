@@ -83,16 +83,16 @@ Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI. The matching
 
 ### <a name="my-first-vm"></a> 3. My first VM
 
-Working with the HPC Cloud service mostly revolves around building and destroying Virtual Machines. This section will guide you through the process of building a VM running Linux. Here's an overview of the main steps:
+Working with the HPC Cloud service mostly revolves around building and destroying Virtual Machines. This section will guide you through the process of building a VM running Linux. Here's an overview of the main steps you will be taking:
 
-* Import a SURFsara pre-made `image` with a Linux operating system installed
-* Review the VM attributes defined in the `template`
-* Instantiate the `template` to run your first VM
-* Access your VM and gracefully shut it down
+* Importing a SURFsara pre-made `image` with a Linux operating system installed
+* Reviewing the VM attributes defined in the `template`
+* Instantiating the `template` to run your first VM
+* Accessing your VM and gracefully shut it down
 
 Let's create your first VM to be run on the HPC Cloud Oort!
 
-#### <a name="import_appliance_from_Marketplace"></a> Import an appliance from the Marketplace
+#### <a name="import_appliance_from_Marketplace"></a> Importing an appliance from the Marketplace
 
 SURFsara HPC Cloud provides ready-made `appliances` (aka `app`) to their users. These appliances are available in the `Apps` option of the *Storage* menu in the HPC Cloud UI. This is meant to help users instantiating secure VM’s quickly. Proceed as follows:
 
