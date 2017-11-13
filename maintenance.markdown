@@ -6,7 +6,6 @@ layout: default
 
 ### Current
 
-Currently we are having issues with the scheduler, running vm's are not affected. Interface can experience interrupts. We apologize for the inconvenience. 
 
 ### Future
 
@@ -21,6 +20,7 @@ Currently we are having issues with the scheduler, running vm's are not affected
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finished  |   10-11-2017 12:36-12:56 | Scheduler did not place virtual machines, running virtual machines not affected. |
 |   Finished  |   11-10-2017 10:30-10:45 | The UI does not allow logins. |
 |   Finished  |   02-10-2017 / 06-10-2017   | Scheduled maintenance. Major overhaul of the underlying network infrastructure. |
 |   Finished  |   14-08-2017  | Solved: Outgoing SSH traffic was blocked since 26-07-2017.  |
