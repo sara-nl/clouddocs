@@ -104,7 +104,7 @@ The HPC Cloud service is under [maintenance](maintenance).
 * [Connection problem with resumed ubuntu 14.04 virtual machine](troubleshooting/connection_problem_ubuntu1404)
 
 
-## Tutorials
+## <a name="tutorials"></a> Tutorials
 * [VU HPC course, HPC Cloud session, 2017-11-13](VU-20171113/index)
 * [UvA HPC course, HPC Cloud session, 2017-07-03](UvA-20170703/index)
 * [SURF Research Bootcamp at TU Eindhoven, 2017-06-15](bootcamp-20170615/index)
