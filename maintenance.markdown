@@ -6,13 +6,49 @@ layout: default
 
 ### Current
 
+### Future maintenace windows
 
-### Future
+Note that not every maintenance window will actually include that we will do maintenance. Please see the policy below for more information.
 
 |   Status    |   Date (start / end)       
 |:------------|:----------------------------
-|   Planned   |   16-01-2018 / 17-01-2018 
+|   No maintenance planned   |   16-01-2018 / 17-01-2018 
+|   Scheduled   |   13-02-2018 / 14-02-2018 
+|   Scheduled   |   13-03-2018 / 14-03-2018 
+|   Scheduled   |   10-04-2018 / 11-04-2018 
+|   Scheduled   |   08-05-2018 / 09-05-2018 
+|   Scheduled   |   12-06-2018 / 13-06-2018 
+|   Scheduled   |   10-07-2018 / 11-07-2018 
+|   Scheduled   |   14-08-2018 / 15-08-2018 
+|   Scheduled   |   11-09-2018 / 12-09-2018 
+|   Scheduled   |   09-10-2018 / 10-10-2018 
+|   Scheduled   |   13-11-2018 / 14-11-2018 
+|   Scheduled   |   11-12-2018 / 12-12-2018 
+|   Scheduled   |   08-01-2019 / 09-01-2019 
 {: class="table"}
+
+### Policy
+
+Maintenance and changes can only be done during on of to the maintenance windows. This means that (part of) the service can be unavailable, for example the web UI.
+
+All HPC Cloud users are notified at least one month in advance if:
+
+ * more than short interruptions (> 5 minutes) are expected
+ * if all user VMs have to be shutdown
+
+If no changes are planned or only changes with some short interruptions expected (< 5 minutes), no notification will be send.
+
+#### Exceptions
+
+Exceptions to this policy are made in the following cases:
+
+ * Urgent changes are needed for the continuity of the service
+ * Patches for high-risk security issues
+
+In these cases, the changes will be applied as soon as needed, even outside maintenance windows.
+
+ * In case this results in an average to long interruption (> 15 minutes), users will be informed afterwards
+ * In case VMs of users need to be shutdown or rebooted, affected users will be informed as soon as possible, preferrably before shutdown/reboot.
 
 ### Past
 
