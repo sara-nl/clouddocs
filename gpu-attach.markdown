@@ -19,29 +19,27 @@ Note that the `ceph` datastore is also enabled on the GPU nodes. However, as des
 
 ### Import appliances from the Apps option
 
-If you want to import an appliances from the Apps option of the Storage section for use on the GPU nodes, you can follow the normal instructions as described on [this page](general-start).
+If you want to import an appliance from the Apps option of the Storage section for use on the GPU nodes, you can follow the normal instructions as described on [this page](general-start).
 
 The only exception is that you have to select a different datastore. In the screen shown below, make sure you choose the 'images_ssd_gpu' datastore.
 
 ![GPU import from apps](images/gpu/rvs_image_name.png)
-
->**Note:**
->
->Considering how support on NVidia's side has been evolving lately for our GPU's drivers, and how complex it has become to install the drivers successfully, we suggest that you remove the otherwise recommended automatic apt-get upgrades upon VM start while you are installing the drivers. You can do so by editing the template, then in the _Context_ tab you can empty the field _Start script_. And save the changes.
 
 ### Using an existing image
 
 When you already have an image that you want to use on the GPU nodes, you will have to create a clone in the correct datastore:
 
  1. Go to 'Storage' > 'Images' for an overview of your images
- 2. Select the image you want to copy
- 3. Click on 'Clone' at the top of the table with images.
- 4. Click on the 'Advanced options' button. This will show you a screen like this:
- ![Clone image to GPU datastore](images/gpu/gpu_clone_image.png)
- 5. Select the correct datastore 'images_ssd_gpu'
- 6. Optionally, change the name of the image
- 7. Click the 'Clone' button
- 8. Optionally, you can now delete the old image. This is not necessary, but note that changes in one image will not affect the other!
+ 1. Select the image you want to copy
+ 1. Click on 'Clone' at the top of the table with images.
+ 1. Click on the 'Advanced options' button. This will show you a screen like this:
+
+    ![Clone image to GPU datastore](images/gpu/gpu_clone_image.png)
+
+ 1. Select the correct datastore 'images_ssd_gpu'
+ 1. Optionally, change the name of the image
+ 1. Click the 'Clone' button
+ 1. Optionally, you can now delete the old image. This is not necessary, but note that changes in one image will not affect the other!
 
 ## Adding a GPU device to your VM
 
@@ -54,31 +52,37 @@ GPU devices are attached to VM using 'pci passthrough'. This means that your VM 
 To attach a GPU device to your VM, either create a new template or edit an existing template as described [on this page](customize-your-vm). Then:
 
  1. Go to the 'Other' tab while editing the template. You should see a screen like below:
- ![Add GPU to template](images/gpu/gpu_add_pci.png)
- 2. Click on the '+ Add PCI device' button. This adds a line to the table above it (already visible in the screenshot above).
- 3. In the new line, under 'Device name', choose the GPU in the dropdown list. The 'Vendor', 'Device' and 'Class' will automatically be set. Please note the chosen GPU type as the driver installation instructions differ for both types.
- 4. If no other changes to the template are needed, click on the green 'Create' or 'Update button (depending on whether you are creating a new template or editing an existing one) will save the template.
+
+    ![Add GPU to template](images/gpu/gpu_add_pci.png)
+
+ 1. Click on the '+ Add PCI device' button. This adds a line to the table above it (already visible in the screenshot above).
+ 1. In the new line, under 'Device name', choose the GPU in the dropdown list. The 'Vendor', 'Device' and 'Class' will automatically be set. Please note the chosen GPU type as the driver installation instructions differ for both types.
+ 1. If no other changes to the template are needed, click on the green 'Create' or 'Update button (depending on whether you are creating a new template or editing an existing one) will save the template.
 
 ## Inside your VM
 
-To make full use of the GPU capabilities please install the corresponding drivers and toolkit for you distro from the official Nvidia repositories which can be found [here](https://developer.nvidia.com/cuda-downloads). From there please follow the post installation [instructions](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#package-manager-installation)
+To make full use of the GPU capabilities please install the corresponding drivers and toolkit for your distribution from the official Nvidia repositories which can be found [here](https://developer.nvidia.com/cuda-downloads). From there please follow the post installation [instructions](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#package-manager-installation)
 
 ## Example for installing CUDA 8.0 on Ubuntu 16.04
-* Remove the automatic installation of updates during startup from your _Template_ by opening the _Context_ tab and emptying the _Start script_ field.
 
 * Launch your VM and force an installation of any security updates, reboot the VM afterwards:
+
 ```bash
 sudo systemctl start apt-daily.service && sleep 60 && sudo reboot
 ```
 
-* Check the version of your kernel with `uname -r`. If you have a version newer than 4.4.0-64, continue installing the GPU drivers for the chosen GPU type, otherwise repeat the previous step.
-```bash
-4.4.0-83-generic
-```
+> **NOTE:**
+> When installing the drivers they are compiled for the current kernel version. You will need to reinstalling them if/when you update the kernel.
+>
 
-### Grid K2
+* Now follow the instructions for the type of GPU you attached to your VM.
+
+### GPU Specific
+
+#### Grid K2
 
 * Remove any old drivers, install prerequisites, then download and install the drivers:
+
 ```bash
 sudo apt-get purge nvidia-* libcuda-*
 sudo apt-get update && sudo apt-get install -y gcc make g++ libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
@@ -86,9 +90,10 @@ wget http://us.download.nvidia.com/XFree86/Linux-x86_64/367.57/NVIDIA-Linux-x86_
 sudo sh NVIDIA-Linux-x86_64-367.57.run -s
 ```
 
-### Tesla P100
+#### Tesla P100
 
 * Remove any old drivers, add the Nvidia repository and install the drivers:
+
 ```bash
 sudo apt purge nvidia-* libcuda1-*
 wget http://us.download.nvidia.com/tesla/375.66/nvidia-diag-driver-local-repo-ubuntu1604_375.66-1_amd64.deb
@@ -99,8 +104,9 @@ sudo apt-get update && sudo apt-get install -y cuda-drivers
 ### All GPU types
 
 * Check with `nvidia-smi` that the card is detected. It should show something like this:
-<pre>
-Wed Jul 12 16:36:24 2017       
+
+```bash
+Wed Jul 12 16:36:24 2017
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 367.57                 Driver Version: 367.57                    |
 |-------------------------------+----------------------+----------------------+
@@ -117,15 +123,17 @@ Wed Jul 12 16:36:24 2017
 |=============================================================================|
 |    0       802    G   /usr/lib/xorg/Xorg                              16MiB |
 +-----------------------------------------------------------------------------+
-</pre>
+```
 
 * Now, reboot the OS and run `nvidia-smi` again and check for a similar output:
+
 ```bash
 sudo reboot
 nvidia-smi
 ```
 
 * Install CUDA prerequisites, download and install CUDA 8:
+
 ```bash
 sudo apt-get install -y gcc make g++ build-essential dkms linux-headers-$(uname -r)
 wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
@@ -137,11 +145,13 @@ sudo sh cuda_8.0.61_375.26_linux-run --silent --samples --toolkit
 
 >**NOTE:**
 >
->Make sure the libraries and binaries paths are part of your environment (these are added as part of the installation), if they are not they can be added with:
+>Make sure the libraries and binaries paths are part of your environment (these should be added as part of the installation), if they are not they can be added with:
+>
 > - `export PATH=$PATH:/usr/local/cuda-8.0/bin`
 > - `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64`
 
 * CUDA should be ready to use, as a test we will compile and run one of the sample utilities:
+
 ```bash
 cd NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery
 make
@@ -150,7 +160,7 @@ make
 
 * If everything is running as intended the result will look similar to this:
 
-<pre>
+```bash
 ./deviceQuery Starting...
 
  CUDA Device Query (Runtime API) version (CUDART static linking)
@@ -192,7 +202,7 @@ Device 0: "Tesla P100-PCIE-12GB"
 
 deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 8.0, CUDA Runtime Version = 8.0, NumDevs = 1, Device0 = Tesla P100-PCIE-12GB
 Result = PASS
-</pre>
+```
 
 > **NOTE:**
 >
@@ -201,6 +211,7 @@ Result = PASS
 ### Running a Hello World
 
 * Download, uncompress and compile Nvidia's Hello World example:
+
 ```bash
 wget http://developer.download.nvidia.com/compute/developertrainingmaterials/samples/cuda_c/HelloWorld.zip
 unzip HelloWorld.zip
@@ -208,12 +219,14 @@ nvcc hello.cu
 ```
 
 * Run the compiled program, which if the compilation succeeded will be called `a.out`:
+
 ```bash
 ./a.out
 ```
- That yields the output:
 
- <pre>
+That yields the output:
+
+```bash
 $ ./a.out
 H
 E
@@ -227,4 +240,4 @@ R
 L
 D
 !
- </pre>
+```

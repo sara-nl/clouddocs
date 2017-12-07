@@ -53,26 +53,26 @@ Import the appliance by following these steps:
 
 1. From the **user** `view`, choose the
    _Storage_ tab on the left menu of the screen and then _Apps_ (in the screen shot, it has been highlighted in red).
-   
+
    ![appmarket step 1](images/appmarket_step_1.png)
 
-2. Look for the **Ubuntu 14.04 Server** _appliance_ in the list and click on it.
+1. Look for the **Ubuntu 16.04 Server** _appliance_ in the list and click on it.
    This will show details about `image`, `template` and other attributes (including a textual description) that conform the _appliance_. Please, read the `Description` now.
-   The description mentions that there is no password for the root account and that you need to add an SSH public key to your user profile. We will do this in a later step.
-   Read the extended information related to the _appliance_ (especially, the bit about the _contextualization_ and _configuration_ options).
-   
+   The description mentions the user account you will need to use when logging in (through ssh). We will do this in a later step.
+   Read the extended information related to the _partition size_. You will have the option to resize the OS image when instantiating the template, **do not pick a size smaller than the mentioned _partition size_** (though leaving it at the default setting works).
+
    ![appmarket step 2](images/appmarket_step_2.png)
 
-3. Click on the _OpenNebula_ button at the top of the screen.
+1. Click on the _OpenNebula_ button at the top of the screen.
    A dialogue will pop up, asking you for a few details.
-   
+
    ![appmarket step 3](images/appmarket_step_3.png)
 
-4. The first options are the name of the `image` and the `template`. You can change the names to something more descriptive to you. Once you have many `image` and `template` objects, it will pay off to have good descriptive names of what each of them is.
+1. The first options are the name of the `image` and the `template`. You can change the names to something more descriptive to you. Once you have many `image` and `template` objects, it will pay off to have good descriptive names of what each of them is.
 
-5. The next  setting is the datastore for images. Make sure that you select _local images ssd_. 
+1. The next setting is the datastore for images. Make sure that you select _local images ssd_.
 
-6. Finally, click _Download_. This will start importing the appliance from  the AppMarket. When the import is successful, it will create an `image` and a `template`.
+1. Finally, click _Download_. This will start importing the appliance from  the AppMarket. When the import is successful, it will create an `image` and a `template`.
 
 You can verify that the process is complete by inspecting the _VMs_ sections in the _Templates_ tab and the _Images_ section in the _Storage_ tab of the UI. You should see your new `image` and `template` there.
 
@@ -80,16 +80,15 @@ You can verify that the process is complete by inspecting the _VMs_ sections in 
 
 If you remember from the description of the virtual machine, there is no password for the _root_ user. You have to add an SSH key to your user profile in order to be able to log in as root in your VM.
 
-First, you need to create an SSH key in your own computer. This process is described in [a different article](SSHkey). This SSH key enables you to log in to your virtual machine with ```ssh```.
+First, you need to create an SSH key in your own computer. This process is described in [a different article](SSHkey). This SSH key enables you to log in to your virtual machine with `ssh`.
 
 After you have created an SSH key, go to your _user profile_ by selecting the _buddy_ icon on the top-right of the screen, then select _Settings_. A dialogue pops up. In the dialogue, go to the _Info_ page; then locate the section _Public SSH Key_, and click on the blue _edit_ icon. You should now see an empty text area.
 
-Find the file in your computer containing the public key you created (it is usually called ```id_rsa.pub``` and it is usually found in the ```.ssh``` directory in your ```$HOME```directory). Open the file, then copy the contents of the file (its contents are your public key) and paste it into the text area of the UI.
+Find the file in your computer containing the public key you created (it is usually called `id_rsa.pub` and it is usually found in the `.ssh` directory in your `$HOME`directory). Open the file, then copy the contents of the file (its contents are your public key) and paste it into the text area of the UI.
 
 ![import_ssh_key_img](images/import_ssh_key.png)
 
 You can just close this dialogue now. Your public key is automatically stored in your profile.
-
 
 ## Starting your virtual machine
 
@@ -105,17 +104,17 @@ Go to the _VMs_ option of the _Instances_ section of the UI. This displays an ov
 
 Start your virtual machine using the following steps:
 
-1. Click on the green plus sign, as shown in the screenshot. 
+1. Click on the green plus sign, as shown in the screenshot.
 
 ![startVM](images/startVM.png)
 
-2. Select the `template` you created before from the presented list. This opens a dialogue with options where you will define the resources to be allocated to VM.
+1. Select the `template` you created before from the presented list. This opens a dialogue with options where you will define the resources to be allocated to VM.
 
-3. The first box in the dialogue is to give your virtual machine a name. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*.
+1. The first box in the dialogue is to give your virtual machine a name. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*.
 
-4. The number of instances is 1, which is fine for now.
+1. The number of instances is 1, which is fine for now.
 
-5. Click on the _Create_ button at the top of the screen.
+1. Click on the _Create_ button at the top of the screen.
 
 Your VM will appear in the list of virtual machines. At first, it will have the state PENDING. That state means that the cloud system is looking for a place where your virtual machine can actually run.
 
@@ -145,13 +144,14 @@ where you should replace _mmm_ and _nnn_ to match the IP address of your virtual
 >
 -->
 >**Note:**
-> In this case 'ubuntu' is the username but it could be a different one, e.g. 'admincentos' for VMs created from Centos Apps images.
+> In this case 'ubuntu' is the username but it could be a different one, e.g. 'admincentos' for VMs created from Centos Apps images. This is mentioned in the App description.
 >
 >**Note:**
 >You may have to specify which of your (multiple) public keys you want to use to connect to your VM. The `ssh` command can take an argument of the following form for that:
- * the flag `-i`
- * a space
- * and the path to the public key file
+
+* the flag `-i`
+* a space
+* and the path to the public key file
 >
 >**Example:**
 >
@@ -160,6 +160,7 @@ where you should replace _mmm_ and _nnn_ to match the IP address of your virtual
 ```bash
   ssh -i ~/.ssh/id_rsa ubuntu@145.100.59.30
 ```
+
 >**Note for Windows:**
 >
 >If you are using _Putty_, then use the IP of your virtual machine as _host_, _ubuntu_ as _username_, and click _Connect_ (see instructions [here](putty-tools#ssh-access-from-a-windows-putty-client)).
@@ -177,8 +178,9 @@ If there were no errors, and if your firewalls allow making remote connections, 
 If you want to terminate your VM and stop consuming your quotas, perform the following steps:
 
 1. Tick the box to the left on the row of your VM and click _Terminate_ (upper right corner of the screen, under the _dust bin_ drop-down button).
-![shutdownVM](images/shutdownVM.png)
 
-2. Refresh the Virtual Machines list (by clicking on the two arrows chasing each other next to _+_ button) until your VM is gone.
+   ![shutdownVM](images/shutdownVM.png)
+
+1. Refresh the Virtual Machines list (by clicking on the two arrows chasing each other next to _+_ button) until your VM is gone.
 
 That was the shutdown. Once the operation is finished, your VM will be removed from the display and its resources freed. You can start a new VM from your existing `template` and `image` any time.
