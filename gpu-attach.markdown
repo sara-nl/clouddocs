@@ -72,7 +72,7 @@ sudo systemctl start apt-daily.service && sleep 60 && sudo reboot
 ```
 
 > **NOTE:**
-> When installing the drivers they are compiled for the current kernel version. You will need to reinstalling them if/when you update the kernel.
+> When installing the drivers they are compiled for the current kernel version. You will need to reinstall them if/when you update the kernel.
 >
 
 * Now follow the instructions for the type of GPU you attached to your VM.
