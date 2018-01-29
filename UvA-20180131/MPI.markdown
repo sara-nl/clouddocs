@@ -280,7 +280,7 @@ The _Apps_ that we deliverA come with a firewall running on the operating system
 * **On the master**, make sure you are logged in as user _ubuntu_. Run our program with 4 processors over the 2 nodes (pay attention to the comma separating the master and the worker’s ip addresses):
 
 ```sh
-time mpirun -np 4 -H <master_INTERNAL_ip>,<worker_INTERNAL_ip> /home/ubuntu/waveeq/wave4
+time mpirun -np 4 -H <master_INTERNAL_ip>,<worker_INTERNAL_ip> /home/adminubuntu/waveeq/wave4
 ```
 
 > **_Food for brain f4:_**
