@@ -135,9 +135,9 @@ We will want to show how to **scale out** later, and that will involve multiple 
 * Let's prepare passwordless ssh among these VMs. For that, we will create a new SSH key-pair for user _ubuntu_ in these VMs, and add the public key to the list of authorised keys. Like this:
 
 ```sh
-ssh-keygen -t rsa -f /home/ubuntu/.ssh/id_rsa  
+ssh-keygen -t rsa -f /home/adminubuntu/.ssh/id_rsa  
 #Enter passphrase (empty for no passphrase): <<<<leave this empty (hit enter twice)>>>>
-cat /home/ubuntu/.ssh/id_rsa.pub >> /home/ubuntu/.ssh/authorized_keys
+cat /home/adminubuntu/.ssh/id_rsa.pub >> /home/adminubuntu/.ssh/authorized_keys
 ```
 
 Previously we made the `image` persistent so that when shutting the VM down, changes would be saved and kept for the next run. But changes are only saved when you actually shut the VM down gracefully. 
