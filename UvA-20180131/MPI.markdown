@@ -33,7 +33,7 @@ We provide you with an implementation of that simulation using `MPI`. You will b
 We will be creating a 2-core VM for this exercise.
 
 * On the UI, import a new Ubuntu `App`:
-  * On the _<i class="fa fa-cloud-download"></i> Apps_ tab (under _Storage_), import another copy of the **Ubuntu Desktop** `app`. Make sure you select the proper datastore for your new OS image (**147:Courses_img**). Give the `image` and `template` the name: **mpi_wave**
+  * On the _<i class="fa fa-cloud-download"></i> Apps_ tab (under _Storage_), import another copy of the **Ubuntu-14.04.5-Desktop ** `app`. Make sure you select the proper datastore for your new OS image (**147:Courses_img**). Give the `image` and `template` the name: **mpi_wave**
 
 * Edit the `image` to make it **persistent**.
 
@@ -72,20 +72,6 @@ sudo apt-get install build-essential
 ```sh
 sudo apt-get install libhdf5-serial-dev libopenmpi-dev openmpi-bin openmpi-common hdf5-tools ImageMagick gnuplot
 ```
-
-<div class="alert alert-warning" markdown="1">
-<i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true">Warning</i><br>
-
-The Ubuntu Desktop 14.04 _App_ is affected by the problem described in our documentation, [here](/connection_problem_ubuntu1404). To correct it easily, please follow these steps now that you are connected via SSH:
-
-```sh
-wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20180131/code/cloudinit_fix.sh
-chmod +x cloudinit_fix.sh
-sudo ./cloudinit_fix.sh
-```
-
-</div>
-
 
 ### b) Preparing the program
 
