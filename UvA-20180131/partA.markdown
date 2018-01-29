@@ -23,7 +23,7 @@ The User Interface (UI) is the web site that allows you to manage your _Virtual 
 #### Log in to the UI
 
 * Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/).
-* Your username is **uvaws2017-**__*NN*__, replace **_NN_** with the two digit number assigned to you.
+* Your username is **wolk-**__*NNN*__, replace **_NNN_** with the three-digit number assigned to you.
 * You will receive the password from the workshop facilitators.
 * Hit the `Login` button.
 
@@ -89,8 +89,9 @@ Let's run your first VM on the HPC Cloud!
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
 * Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_.
-* Select the `app` **Ubuntu 14.04 Desktop CI** by clicking on the tick-box next to it.
-* Click on the blue _OpenNebula_ button above the list of apps.
+* View the extended the `app` **Ubuntu-14.04.5-Desktop** by clicking anywhere on that line except the tick-box to the left of it.
+* Carefully read the _DESCRIPTION_ attribute (located towards the bottom of the page). In particular, pay attention to the **default username** mentioned there, since that is the username you will need to use to log in to your VM.
+* Click on the blue _<i class="fa fa-share"></i> OpenNebula_ button above the list of apps.
 * A dialogue will pop up asking you for a few details. Edit as follows:
   * Name: **Course Image**.
   * VM Template Name: **Course Template**.
