@@ -120,7 +120,7 @@ Let's create a new `image`.
   * Type: **Generic storage datablock**.
   * Datastore: **106: ceph**.
   * Check the **This image is persistent** checkbox.
-  * On the _Image location:_ group choose radio button **Empty datablock**.
+  * On the _Image location:_ group choose radio button **Empty disk image**.
   * Give it a _Size_ in MB: **2000** (is 2GB, approximately).
 * Click the green button *Create* at the top to create it.
 
