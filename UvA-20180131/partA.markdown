@@ -172,38 +172,42 @@ The way to log in to your virtual machine is making use of the SSH key pair that
 
 >**NOTE:**
 >
->Replace 145.100.5Q.RST with your IP address!
+>Replace 145.100.5Q.RST with your IP address! And remember that we know which username to use because we read that on the Description attribute of the _app_ when we were importing it.
 
 ```sh
-ssh ubuntu@145.100.5Q.RST
+ssh adminubuntu@145.100.5Q.RST
 ```
 
 #### First login
 
-If everything went well, the first time you try to log in, your terminal will ask you to add the VM's IP to the list of known hosts. Type *Yes*, in that case.
+If everything went well, the first time you try to log in, your terminal will ask you to add the VM's IP to the list of known hosts in your laptop. Type *Yes*, in that case.
 
-You should now see a similar line in your terminal: `ubuntu@ip-145...:~$`
+>**NOTE:**
+>
+>You may see a prompt asking you to change the default password for user adminubuntu. Please, do so by typing first the current password 'adminubuntu'. You can then type the password you want. But note that this password is NOT 
+
+You should now see a similar line in your terminal: `adminubuntu@ip-145...:~$`
 
 This means that you have logged in successfully to your Virtual Machine!
 
 * Look around a bit, make yourself familiar with the system:
 
 ```sh
-ubuntu@ip-145...:~$ ls /
-ubuntu@ip-145...:~$ whoami
+adminubuntu@ip-145...:~$ ls /
+adminubuntu@ip-145...:~$ whoami
 ```
 
 * Create a file:
 
 ```sh
-ubuntu@ip-145...:~$ echo "Some text ..." > myfile
-ubuntu@ip-145...:~$ cat myfile
+adminubuntu@ip-145...:~$ echo "Some text ..." > myfile
+adminubuntu@ip-145...:~$ cat myfile
 ```
 
 * Logout by typing `logout` or `ctrl-D` in your terminal (do **not** issue any shutdown command):
 
 ```sh
-ubuntu@ip-145...:~$ logout
+adminubuntu@ip-145...:~$ logout
 ```
 
 > **Food for brain:**
