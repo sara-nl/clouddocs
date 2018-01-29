@@ -184,7 +184,7 @@ If everything went well, the first time you try to log in, your terminal will as
 
 >**NOTE:**
 >
->You may see a prompt asking you to change the default password for user adminubuntu. Please, do so by typing first the current password 'adminubuntu'. You can then type the password you want. But note that this password is NOT 
+>Right after you reach the newly created VM via SSH for the first time, you may see a prompt asking you to change the default password for user adminubuntu. Please, do so by typing first the current password, which is the same as the username. You can then type the password you want. When this password-changing process is finished (even successfully), you may be logged out of the VM. You will then have to submit the SSH command again, and then everything should work as expected: you are connected to a shell in the VM.
 
 You should now see a similar line in your terminal: `adminubuntu@ip-145...:~$`
 
