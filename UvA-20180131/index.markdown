@@ -19,13 +19,13 @@ layout: default
 
 ## <a name="general"></a>General Information
 
-SURFsara has been operating the HPC Cloud as an Infrastructure as a Service (`IaaS`) for several years. The HPC Cloud service offers its users access to fast computing nodes and high-performant big storage volumes through a powerful graphical user interface. The underlying infrastructure cloud cluster [Oort](https://en.wikipedia.org/wiki/Oort_cloud) is managed by [OpenNebula](http://opennebula.org/) cloud computing platform.
+SURFsara has been operating the HPC Cloud as an Infrastructure as a Service (`IaaS`) for several years. The HPC Cloud service offers users access to fast computing nodes and high-performant big storage volumes through a powerful graphical user interface. The underlying cluster [Oort](https://en.wikipedia.org/wiki/Oort_cloud) is managed by the [OpenNebula](http://opennebula.org/) cloud management software.
 
 [This workshop](http://hpc.uva.nl/Workshops/article/110/8-HPC-Cloud) aims to introduce the participants to the HPC Cloud, by providing a set of lectures and hands-on examples to be run on the _Oort_ infrastructure. The session is part of the [UvA HPC Course](http://hpc.uva.nl/Workshops/) which covers various topics related to HPC and Big Data.
 
 >**Agenda:**
 >
->3rd July 2017, UvA, [Science Park 904](https://www.uva.nl/en/about-the-uva/the-uva-in-amsterdam/locations/locations/locations/content/folder/sciencepark/science-park.html), Room: C1.112
+>3rd July 2017, UvA, [Science Park 904](https://www.uva.nl/en/about-the-uva/the-uva-in-amsterdam/locations/locations/locations/content/folder/sciencepark/science-park.html), Room: G3.02
 >
 > * 10:00 Welcome & coffee  
 > * 10:05 Presentation and Demo: HPC Cloud at SURFsara (Markus van Dijk)
@@ -73,7 +73,7 @@ The hands-on tutorial consists of three parts. Parts *A & B* provide exercises f
   
 ## <a name="presentations"></a> Presentations
 
-<div markdown="1">
+<div markdown="1" style="display:none;">
 
   * Morning presentation: [Introduction to the HPC Cloud](2017-07-03-Introduction.pdf)
   * Afternoon presentation: [Cloudy systems](20170703_parallelism.pdf)
@@ -85,7 +85,7 @@ The hands-on tutorial consists of three parts. Parts *A & B* provide exercises f
 ## Assignment
 
 [Master students eligible to earn 6 ECTS](http://hpc.uva.nl/Roadmaps/article/122/Distributed-systems-and-BigData-(6-ECTS)) must follow all the lectures and participate to all workshops associated to [UvA HPC Course](http://hpc.uva.nl/Workshops/). 
-Access to the HPC Cloud service will remain available to the participants until the **10th Feb. 2017**. The [HPC Cloud course assignment](assignment) needs to be deleivered by then via email to the facilitators: helpdesk@surfsara.nl (cc to markus.vandijk@surfsara.nl). 
+Access to the HPC Cloud service will remain available to the participants for **1 week** after the course. The [HPC Cloud course assignment](assignment) needs to be deleivered by then via email to the facilitators: helpdesk@surfsara.nl (cc to markus.vandijk@surfsara.nl). 
 
 </div>
 
