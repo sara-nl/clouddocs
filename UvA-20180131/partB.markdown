@@ -80,7 +80,7 @@ From now on, whenever you instantiate this `template`, you will get a 4-core VM 
 
 > **Food for brain:**
 >
-> After changing the `template` as described above, how many cores do you expected your VM to have? Does changing a `template` affects the currently running VM's that are based on it?
+> After changing the `template` as described above, how many cores do you expected your VM to have? Does changing a `template` affect the currently running VM's that are based on it?
 
 #### Instantiate the four-core VM
 
