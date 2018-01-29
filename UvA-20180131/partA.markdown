@@ -131,7 +131,7 @@ Edit the imported `template` following these steps:
 A `template` is just a description of the virtual machine that we want to build. Let's create the actual virtual machine from it.
 
 * Go to the _VMs_ section below _Instances_ on the left menu. 
-  An overview of all existing VMs, that you have the priviledges to see, are displayed.
+  An overview of all existing VMs that you have the right to see, are displayed.
   This list is (probably) empty at the moment, because you have not yet started any VM.
 * Click the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ to bring up a "Create Virtual Machine" screen.
 * Select the *Course Template* by clicking once at it. Since this is your first `template`, there is only one item in the list. You can see the feedback:  
