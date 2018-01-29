@@ -52,19 +52,6 @@ In this section you will work with **persistent** images. You will go through th
 * Start your virtual machine (VM) again.
 * Log in and check the files you created during the previous run [(Part A)](partA).
 
-<div class="alert alert-warning" markdown="1">
-<i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true">Warning</i><br>
-
-The Ubuntu Desktop 14.04 _App_ is affected by a [problem described in our documentation](/connection_problem_ubuntu1404). To correct it easily, please follow these steps now that you are connected via SSH:
-
-```sh
-wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20180131/code/cloudinit_fix.sh
-chmod +x cloudinit_fix.sh
-sudo ./cloudinit_fix.sh
-```
-
-</div>
-
 > **Food for brain:**
 > 
 >* Is/are the file(s) you created on your VM (part A) there?
