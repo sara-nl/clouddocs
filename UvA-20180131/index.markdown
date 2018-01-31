@@ -78,9 +78,10 @@ We will add the presentations during the day of the course.
 <div markdown="1" style="display:none;">
 
   * Morning presentation: [Introduction to the HPC Cloud](2017-07-03-Introduction.pdf)
-  * Afternoon presentation: [Cloudy systems](20170703_parallelism.pdf)
 
 </div>
+
+  * Afternoon presentation: [Cloudy systems](20180131_parallelism.pdf)
 
 
 ## Assignment
