@@ -12,12 +12,12 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 <div class="alert alert-success" markdown="1">
 <div style="float:right;max-width:100px;margin-top:-10px;" markdown="1">
-<div style="max-width:80px;" markdown="1">
+<span style="max-width:80px;" markdown="1">
 ![logo](/images/UvA-logo.png)
-</div>
-<div style="max-width:80px;margin-bottom:10px;" markdown="1">
+</span>
+<span style="max-width:80px;margin-left:10px; margin-bottom:10px;" markdown="1">
 ![SURFsara logo](/images/SURFsara_logo.png)
-</div>
+</span>
 </div>
 <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
 <span style="color:red;">TODAY!</span>  <br/> [HPC Cloud @ UvA HPC course](UvA-20180131/index)
