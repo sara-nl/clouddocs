@@ -88,7 +88,7 @@ Sketch in [pseudocode](https://en.wikipedia.org/wiki/Pseudocode) what you think 
 
 ## Exercise 4
 
-Imagine that you are given a program that does the master's work, and the `montecarlo` program for the worker. Also, imagine that you have access to the same scripts `makeme_master.sh` and `makeme_worker.sh` that you used in the MPI example.
+Imagine that you are given a program that does the master's work, and the `montecarlo` program for the worker. Also, imagine that you have access to the same scripts `makeme_master.sh` and `makeme_worker.sh` that you used in one of the Extras exercises.
 
 Write down the relevant steps that you must follow in the HPC Cloud UI to run those programs with 1 master and 3 workers. 
 
