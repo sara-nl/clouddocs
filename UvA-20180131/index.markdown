@@ -87,6 +87,6 @@ We will add the presentations during the day of the course.
 ## Assignment
 
 [Master students eligible to earn ECTS](http://hpc.uva.nl/Roadmaps/article/122/Distributed-systems-and-BigData-(6-ECTS)) must follow all the lectures and participate on all workshops associated to [UvA HPC Course](http://hpc.uva.nl/Workshops/). 
-Access to the HPC Cloud service will remain available to the participants for **1 week** after the course. The [HPC Cloud course assignment](assignment) needs to be deleivered by then via the UvA's Blackboard interface. Adam Beloum will then collect all assignments and make them available to the HPC Cloud team for evaluation. 
+Access to the HPC Cloud service will remain available to the participants for **1 week** after the course. The [HPC Cloud course assignment](assignment) needs to be deleivered by then via the UvA's Blackboard interface. Adam Belloum will then collect all assignments and make them available to the HPC Cloud team for evaluation. 
 
 Thus, make sure you have submitted your assignment by 00:00h next Thursday, 8th February.
