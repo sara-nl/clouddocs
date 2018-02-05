@@ -31,9 +31,9 @@ There three separate vulnerabilities involved:
 
 Additional resources:
 
-- https://spectreattack.com/
-- http://www.kb.cert.org/vuls/id/584653
-- https://security.web.cern.ch/security/advisories/spectre-meltdown/spectre-meltdown.shtml
+- [spectreattack.com](https://spectreattack.com/)
+- [CERT](http://www.kb.cert.org/vuls/id/584653)
+- [CERN security advisories](https://security.web.cern.ch/security/advisories/spectre-meltdown/spectre-meltdown.shtml)
 
 ### Is your VM at risk?
 
