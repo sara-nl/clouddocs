@@ -69,7 +69,7 @@ The bonus exercises allow you to score additional points, to complement the rest
 
 ## Exercise 1
 
-Explain Oliver what your idea is: tell him which features of the HPC Cloud you are going to use to tackle his problem. Tell him how beautiful your answer is because... do you need to change the `montecarlo` program?
+Explain to Oliver what your idea is: tell him which features of the HPC Cloud you are going to use to tackle his problem. Tell him how beautiful your answer is because... do you need to change the `montecarlo` program?
 
 ## Exercise 2
 
