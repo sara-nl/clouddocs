@@ -11,18 +11,18 @@ VMs cannot run during that time.
 
 ### What do you need to do?
 
-Make sure that all your VMs are properly terminated or undeployed.
+Make sure that all your VMs are properly terminated.
 
-> **Any VM left in the `Instances` &rarr; `VMs` list must have status "UNDEPLOYED".**
+> **Your list of `instances` &rarr; `VMs` must be empty before maintenance starts.**
 
 See below: [Instructions to prepare for the downtime](#instructions-to-prepare-for-the-downtime).
 
 ### Will my data be safe?
  
-If your VM list is empty or any remaining VM is `undeployed`, the data on your disk images is just as safe as during normal operation.
+If your VM list is empty the data on your disk images is just as safe as during normal operation.
 See our [backup policy](https://userinfo.surfsara.nl/systems/hpc-cloud/backup-policy).
 
-> **A VM in any other state, will be removed by us and this will probably result in data loss or data corruption.**
+> **Any VMs remaining in the `instances` &rarr; `VMs` list, will be removed by us and this will probably result in data loss or data corruption.**
 
 ### Links
 
@@ -35,20 +35,14 @@ If you have questions or need assistance, please contact our helpdesk: [helpdesk
 
 ## Instructions to prepare for the downtime
 
-The safest way to prepare for the downtime is to `terminate` your VMs in time.
-The alternative to termination is `undeploy`.
-If you do neither, your VM will probably be lost or damaged during the maintenance.
-
-Your choice is dependent on what you want to do with data on non-persistent disks.
-Read the following section and decide on `terminate` or `undeploy`.
+You need to prepare for the downtime by `terminate`-ing your VMs in time.
+If not, your VM will probably be lost or damaged during the maintenance.
 
 ### Non-persistent disks
 
 Changes to data on non-persistent disks are lost when the VM terminates.
-If this is undesirable, you have a choice:
 
-- copy valuable data to another location, then terminate the VM
-- undeploy the VM (this copies the disks to redundant temporary storage)
+> Make sure you copy valuable data on non-persistent disks to another location before you terminate the VM.
 
 For more information on (non-) persistency, see [Image Persistence](http://doc.hpccloud.surfsara.nl/image_persistence).
 
@@ -66,7 +60,7 @@ How can you check your disks for persistency?
 
 ### Terminate procedure
 
-"Terminate" will end your VM and write the persistent disks back to storage.
+`Terminate` will end your VM and write the persistent disks back to storage.
 Changes to non-persistent disks are lost, so you need to download anything you want to keep before terminating.
 
 _Important: do not 'shut down' using a command or button inside your VM._
@@ -77,7 +71,7 @@ This will leave your VM alive in "power down" mode.
 - click on the row of a running VM
 - you now see the VM's details: check that "State" is "ACTIVE" and "LCM State" is "RUNNING"
 - open the drop-down menu of the trashcan (upper right)
-- click on "Terminate"
+- click on `Terminate`
 - terminate is complete when the VM is no longer in the list
 
 ![vm terminate button](../images/vm-terminate.png)
@@ -91,16 +85,3 @@ then your VM did not react correctly on the BIOS signal to shut down. See [VM no
 
 Repeat this for the other running VMs.
 VMs that are suspended, stopped or otherwise alive but not running (or shutting down) need to be made running and then shut down as described above.
-
-### Undeploy procedure
-
-"Undeploy" will shut down your VM and save all disks, both persistent and non-persistent, to redundant storage.
-When you resume the VM, it will boot with the disks in the same state as during shut down.
-
-The "undeploy" is very similar to "terminate", but does not remove the VM from the list.
-
-- follow the steps in the "terminate" procedure above, **but**
-- instead of the "Terminate" button, click on "Undeploy"
-- the undeploy is complete when the VM's status becomes "UNDEPLOYED"
-
-![vm undeploy button](../images/vm-undeploy.png)
