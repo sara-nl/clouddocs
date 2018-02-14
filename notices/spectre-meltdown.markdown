@@ -63,4 +63,4 @@ The HPC Cloud and all its VMs will have to go down to install the expected secur
 ## Security maintenance downtime
 
 We will have to bring all VMs in the HPC Cloud down to install the security updates on our hosts. Because this is a big inconvenience to you, our users, we will wait until pending solutions have been tested and released.
-We expect the downtime to be a few days in the middle of February, outside our regular maintenance windows.
+We expect the downtime to be a few days early March, outside our regular maintenance windows.
