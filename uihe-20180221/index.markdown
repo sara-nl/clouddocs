@@ -21,24 +21,26 @@ layout: default
 
 SURFsara has been operating the HPC Cloud as an Infrastructure as a Service (`IaaS`) for several years. The HPC Cloud service offers users access to fast computing nodes and high-performant big storage volumes through a powerful graphical user interface. The underlying cluster [Oort](https://en.wikipedia.org/wiki/Oort_cloud) is managed by the [OpenNebula](http://opennebula.org/) cloud management software.
 
-[This workshop](http://hpc.uva.nl/Workshops/article/110/8-HPC-Cloud) aims to introduce the participants to the HPC Cloud, by providing a set of lectures and hands-on examples to be run on the _Oort_ infrastructure. The session is part of the [UvA HPC Course](http://hpc.uva.nl/Workshops/) which covers various topics related to HPC and Big Data.
+This workshop aims to introduce the participants to the HPC Cloud, by providing a set of lectures and hands-on examples to be run on the _Oort_ cluster. 
 
 >**Agenda:**
 >
->3rd July 2017, UvA, [Science Park 904](https://www.uva.nl/en/about-the-uva/the-uva-in-amsterdam/locations/locations/locations/content/folder/sciencepark/science-park.html), Room: G3.02
+>2nd February 2018, IHE Delft, [Westvest 7, 2611 AX Delft](https://www.un-ihe.org/contact), Room: A1a
 >
-> * 10:00 Welcome & coffee  
-> * 10:05 Presentation and Demo: HPC Cloud at SURFsara (Niek Bosch)
-> * 10:25 Hands-on: Parts A & B
-> * 12:00 Lunch   
-> * 13:00 Presentation: Cloudifying - parallelism & API (Ander Astudillo)
-> * 13:45 Hands-on: Extras  
-> * 18:00 End  
+> * 10:45 Welcome
+> * 10:50 Experiences: actual water management research projects on HPC Cloud
+> * 11:30 Coffee break
+> * 11:45 Presentation & demo: HPC Cloud at SURFsara (Ander Astudillo)
+> * 12:00 Hands-on: Part A
+> * 12:30 Lunch
+> * 13:45 Checkpoint
+> * 13:55 Hands-on: Part B  
+> * 15:30 End  
 
 
 ## <a name="preparation"></a>Preparation
 
-Participants are expected to bring a laptop with Internet connection and a browser installed. Prior experience with [Linux commands](http://cli.learncodethehardway.org/book/) will help but not a prerequisite.
+Participants are expected to bring a laptop with Internet connection and a browser installed. Prior experience with [Linux commands](http://cli.learncodethehardway.org/book/) will help but is not a prerequisite.
 
 For this workshop you will need:
 
