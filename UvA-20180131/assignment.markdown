@@ -13,7 +13,7 @@ layout: default
 The following exercises are the assignment to score points on the HPC Cloud session. After you have attended the presentations and followed the hands-on tutorial (including the extras), you understand all the concepts that will allow you to propose valid solutions to the exercises. You can contact your facilitators if you have any questions.
 
 > **NOTE:**  
-> Access to the HPC Cloud User Interface will remain available until the **10th Feb. 2017**.  The assignment needs to be deleivered by then via email to the facilitators: helpdesk@surfsara.nl (cc to ander.astudillo@surfsara.nl).
+> Access to the HPC Cloud User Interface will remain available until the **7th Feb. 2018**.  The assignment needs to be deleivered by then via Blackboard.
 
 ## General description of the exercise
 
@@ -69,7 +69,7 @@ The bonus exercises allow you to score additional points, to complement the rest
 
 ## Exercise 1
 
-Explain Oliver what your idea is: tell him which features of the HPC Cloud you are going to use to tackle his problem. Tell him how beautiful your answer is because... do you need to change the `montecarlo` program?
+Explain to Oliver what your idea is: tell him which features of the HPC Cloud you are going to use to tackle his problem. Tell him how beautiful your answer is because... do you need to change the `montecarlo` program?
 
 ## Exercise 2
 
@@ -88,7 +88,7 @@ Sketch in [pseudocode](https://en.wikipedia.org/wiki/Pseudocode) what you think 
 
 ## Exercise 4
 
-Imagine that you are given a program that does the master's work, and the `montecarlo` program for the worker. Also, imagine that you have access to the same scripts `makeme_master.sh` and `makeme_worker.sh` that you used in the MPI example.
+Imagine that you are given a program that does the master's work, and the `montecarlo` program for the worker. Also, imagine that you have access to the same scripts `makeme_master.sh` and `makeme_worker.sh` that you used in one of the Extras exercises.
 
 Write down the relevant steps that you must follow in the HPC Cloud UI to run those programs with 1 master and 3 workers. 
 

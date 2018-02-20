@@ -11,6 +11,12 @@ First, you need to set up your Linux VM, using the following steps.
 
 The default Unity desktop does not support remote sessions as well as other desktop environments do. To create a virtual machine with a GUI, create a plain server VM and install the desktop environment of your choice, for example KDE or Xfce (which is used in the example below). This following example works under Ubuntu 14.04 server.
 
+* Become root:
+
+```bash
+sudo su -
+```
+
 * Configure firewall to allow RDP and SSH to connect to your machine and enable the firewall
 
 ```bash

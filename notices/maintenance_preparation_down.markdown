@@ -11,19 +11,18 @@ VMs cannot run during that time.
 
 ### What do you need to do?
 
-Make sure that all your VMs are properly terminated: your list of VMs should be empty before the downtime starts.
-See below: [Instructions to prepare for the downtime](#instructions-to-prepare-for-the-downtime).
+Make sure that all your VMs are properly terminated.
 
-If you feel you really need to keep some VM instances, you should be aware of the risk of data loss.
+> **Your list of `instances` &rarr; `VMs` must be empty before maintenance starts.**
+
+See below: [Instructions to prepare for the downtime](#instructions-to-prepare-for-the-downtime).
 
 ### Will my data be safe?
  
-If your VM list is empty, the data on your disk images is just as safe as during normal operation.
+If your VM list is empty the data on your disk images is just as safe as during normal operation.
 See our [backup policy](https://userinfo.surfsara.nl/systems/hpc-cloud/backup-policy).
 
-If you bring a VM to `undeployed`, `stopped` or even `poweroff` state, its disks will remain on the host, non-redundant, and have an increased risk of data loss. This risk is small, but not negligible.
-
-If you leave a VM runnng, it will experience a sudden loss of power and its disks will probably be corrupted.
+> **Any VMs remaining in the `instances` &rarr; `VMs` list, will be removed by us and this will probably result in data loss or data corruption.**
 
 ### Links
 
@@ -36,16 +35,15 @@ If you have questions or need assistance, please contact our helpdesk: [helpdesk
 
 ## Instructions to prepare for the downtime
 
-The safe way to prepare for the downtime is to terminate your VMs in time.
-"Terminate" means using the button from the Cloud's user interface and check that the VM is gone.
-As part of the termination procedure, the persistent disks of the VM will be copied back to our Ceph cluster.
+You need to prepare for the downtime by `terminate`-ing your VMs in time.
+If not, your VM will probably be lost or damaged during the maintenance.
 
 ### Non-persistent disks
 
-If your VM changed valuable data on non-persistent disks,
-you should copy that to another location before terminating: 
-changes to data on non-persistent disks is lost when the VM terminates.
-  
+Changes to data on non-persistent disks are lost when the VM terminates.
+
+> Make sure you copy valuable data on non-persistent disks to another location before you terminate the VM.
+
 For more information on (non-) persistency, see [Image Persistence](http://doc.hpccloud.surfsara.nl/image_persistence).
 
 How can you check your disks for persistency?
@@ -60,7 +58,10 @@ How can you check your disks for persistency?
 ![vm disk tab](../images/vm-storage.png)
  
 
-### Termination procedure
+### Terminate procedure
+
+`Terminate` will end your VM and write the persistent disks back to storage.
+Changes to non-persistent disks are lost, so you need to download anything you want to keep before terminating.
 
 _Important: do not 'shut down' using a command or button inside your VM._
 This will leave your VM alive in "power down" mode.
@@ -70,7 +71,8 @@ This will leave your VM alive in "power down" mode.
 - click on the row of a running VM
 - you now see the VM's details: check that "State" is "ACTIVE" and "LCM State" is "RUNNING"
 - open the drop-down menu of the trashcan (upper right)
-- click on "Terminate" 
+- click on `Terminate`
+- terminate is complete when the VM is no longer in the list
 
 ![vm terminate button](../images/vm-terminate.png)
 

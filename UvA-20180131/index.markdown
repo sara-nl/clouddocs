@@ -75,19 +75,18 @@ The hands-on tutorial consists of three parts. Parts *A & B* provide exercises f
 
 We will add the presentations during the day of the course.
 
-<div markdown="1" style="display:none;">
+<div markdown="1">
 
-  * Morning presentation: [Introduction to the HPC Cloud](2017-07-03-Introduction.pdf)
-  * Afternoon presentation: [Cloudy systems](20170703_parallelism.pdf)
+  * Morning presentation: [Introduction to the HPC Cloud](20180131_cloud.pdf)
+  * Afternoon presentation: [Cloudy systems](20180131_parallelism.pdf)
 
 </div>
 
-<div style="display:none;" markdown="1">
+
 
 ## Assignment
 
-[Master students eligible to earn 6 ECTS](http://hpc.uva.nl/Roadmaps/article/122/Distributed-systems-and-BigData-(6-ECTS)) must follow all the lectures and participate to all workshops associated to [UvA HPC Course](http://hpc.uva.nl/Workshops/). 
-Access to the HPC Cloud service will remain available to the participants for **1 week** after the course. The [HPC Cloud course assignment](assignment) needs to be deleivered by then via email to the facilitators: helpdesk@surfsara.nl (cc to markus.vandijk@surfsara.nl). 
+[Master students eligible to earn ECTS](http://hpc.uva.nl/Roadmaps/article/122/Distributed-systems-and-BigData-(6-ECTS)) must follow all the lectures and participate on all workshops associated to [UvA HPC Course](http://hpc.uva.nl/Workshops/). 
+Access to the HPC Cloud service will remain available to the participants for **1 week** after the course. The [HPC Cloud course assignment](assignment) needs to be deleivered by then via the UvA's Blackboard interface. Adam Belloum will then collect all assignments and make them available to the HPC Cloud team for evaluation. 
 
-</div>
-
+Thus, make sure you have submitted your assignment by 00:00h next Thursday, 8th February.

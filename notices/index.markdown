@@ -4,6 +4,7 @@ layout: default
 
 # Notices to HPC Cloud users
 
+* [Spectre/Meltdown](spectre-meltdown) (February 2018)
 * [2017-02 Ceph issues](ceph_osds)
 * [Resuming STOPPED VMs from OpenNebula 4 in OpenNebula 5](stopped_one4_to_5)
 * [Dirty Cow](dirtycow)
