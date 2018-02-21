@@ -10,17 +10,17 @@ layout: default
 This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**. You are welcome to contribute to **help us improve** the documentation (see bottom of this page).
 </div>
 
-<div class="alert alert-success" markdown="1" style="display:none;">
+<div class="alert alert-success" markdown="1">
 <div style="float:right;max-width:100px;margin-top:-10px;" markdown="1">
 <div style="max-width:40px;" markdown="1">
-![logo](/images/UvA-logo.png)
+![IHE Delft logo](/images/ihedelft_logo.png)
 </div>
 <div style="max-width:80px;margin-left:10px; margin-bottom:10px;" markdown="1">
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 </div>
 <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
-<span style="color:red;">TODAY!</span>  <br/> [HPC Cloud @ UvA HPC course](UvA-20180131/index)
+<span style="color:red;">TODAY!</span>  <br/> [IHE Delft symposium, 2018-02-21](uihe-20180221/index)
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
