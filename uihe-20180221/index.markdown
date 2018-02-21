@@ -25,7 +25,7 @@ This workshop aims to introduce the participants to the HPC Cloud, by providing 
 
 >**Agenda:**
 >
->2nd February 2018, IHE Delft, [Westvest 7, 2611 AX Delft](https://www.un-ihe.org/contact), Room: A1a
+>21nd February 2018, IHE Delft, [Westvest 7, 2611 AX Delft](https://www.un-ihe.org/contact), Room: A1a
 >
 > * 10:45 Welcome
 > * 10:50 Experiences: actual water management research projects on HPC Cloud
