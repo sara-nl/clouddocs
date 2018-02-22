@@ -75,8 +75,6 @@ The hands-on tutorial consists of three parts. Parts *A & B* provide exercises f
   
 ## <a name="presentations"></a> Presentations
 
-We will add the presentations during the day of the course.
-
 <div markdown="1">
 
   * Presentation: [Introduction to the HPC Cloud](20180221_cloud.pdf)
