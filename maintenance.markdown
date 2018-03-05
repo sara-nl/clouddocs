@@ -6,13 +6,17 @@ layout: default
 
 ### Current
 
+|   Status    |   Date (start / end)       | comment
+|:------------|:----------------------------|:----
+| busy | 02-03-2018 / 05-03-2018 | down for Security maintenance
+{: class="table"}
+
 ### Future maintenace windows
 
 Note that not every maintenance window will actually include that we will do maintenance. Please see the policy below for more information.
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-| planned | 02-03-2018 / 05-03-2018 | down for Security maintenance
 |   Scheduled   |   13-03-2018 / 14-03-2018 
 |   Scheduled   |   10-04-2018 / 11-04-2018 
 |   Scheduled   |   08-05-2018 / 09-05-2018 
