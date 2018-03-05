@@ -6,10 +6,6 @@ layout: default
 
 ### Current
 
-|   Status    |   Date (start / end)       | comment
-|:------------|:----------------------------|:----
-| busy | 02-03-2018 / 05-03-2018 | down for Security maintenance
-{: class="table"}
 
 ### Future maintenace windows
 
@@ -59,6 +55,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+| Finished | 02-03-2018 / 05-03-2018 | down for Security maintenance (Spectre/Meltdown) |
 |   Finished  |   10-11-2017 12:36-12:56 | Scheduler did not place virtual machines, running virtual machines not affected. |
 |   Finished  |   11-10-2017 10:30-10:45 | The UI does not allow logins. |
 |   Finished  |   02-10-2017 / 06-10-2017   | Scheduled maintenance. Major overhaul of the underlying network infrastructure. |
