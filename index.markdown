@@ -61,6 +61,7 @@ The HPC Cloud service is under [maintenance](maintenance).
 * [Sharing OpenNebula Objects](sharing-objects)
 * [Install Windows](Windows)
 * [User management](usermanagement)
+* [Remote Desktop via XRDP](xrdp)
 
 ### GPU
 
