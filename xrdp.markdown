@@ -30,7 +30,8 @@ sudo su -
 ```bash
   USERNAME=maarten
   adduser $USERNAME
-  adduser $USERNAME  sudo
+  adduser $USERNAME sudo
+  sudo usermod -aG sudo,adm $USERNAME
 ```
 
 * Update software repository and install necessary software
@@ -39,6 +40,7 @@ sudo su -
   sudo apt-get install xrdp xubuntu-desktop tightvncserver
   apt-get update
 ```
+
 * login to a normal user account
 
 ```bash
@@ -46,7 +48,6 @@ sudo su -
 ```
 
 * Add settings to use right desktop environment
-
 
 ```bash
   echo xfce4-session >~/.xsession
@@ -57,9 +58,13 @@ sudo su -
   sudo service xrdp restart
 ```
 
-Now you connect to your machine. However, Ubuntu default settings are to create new session each time you log in and do not continue with your old session.
+Now you can connect to your machine. However, Ubuntu's default settings are to create a new session each time you log in instead of resuming your old session. Let us fix this. 
 
-* Edit the file /etc/xrdp/xrdp.ini  and change the items under the xrdp1 header to:
+>**Note:**
+>
+>In the next step you will have to edit a file by using a text editor. For example, you can use `sudo nano /etc/xrdp/xrdp.ini` to edit the file we will tell you in a moment. To save the changes you can then press the key combination `Ctrl + X` (see then that at the bottom of the screen you get a question like _Save modified buffer [...]?_. Press then the `y` key, and finally hit `Enter`.
+
+* Edit the file `/etc/xrdp/xrdp.ini` and change the items under the `[xrdp1]` header to:
 
 ```bash
 [xrdp1]
@@ -71,10 +76,9 @@ Now you connect to your machine. However, Ubuntu default settings are to create 
   port=ask5910
 ```
 
-* Log into your VM with RDP and use port "-1" for the first session and start your virtual desktop.
+* Log into your VM with RDP and use port `-1` for the first session and start your virtual desktop.
 * Exit the RDP client (the VM keeps running and keeps resuming resources)
-* Log in again and use port 5910 (default value) and you will continue the previous session.
-
+* Log in again and use port `5910` (default value) and you will continue the previous session.
 
 
 
@@ -126,3 +130,6 @@ You can now log in on the virtual machine using RDP. From Windows or Mac OSX, us
 >Make sure to set the display to _millions of colors_ (Mac OsX) or _high color (16-bits)_ (Windows), because _thousands of colors_ (Mac OsX) or _high color (15-bits)_ (Windows) will give you a non-descriptive error.
 
 
+## Windows
+
+We have a [full page on installing Windows](Windows), where we explain how serve access to Remote Desktop from it.
