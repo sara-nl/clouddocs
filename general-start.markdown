@@ -110,7 +110,7 @@ Start your virtual machine using the following steps:
 
 1. Select the `template` you created before from the presented list. This opens a dialogue with options where you will define the resources to be allocated to VM.
 
-1. The first box in the dialogue is to give your virtual machine a name. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*.
+1. The first box in the dialogue is to give your virtual machine a name. Ideally, give your VM a name consisting *only* of lowercase letters, hyphens ('-') and digits, but *no other characters or spaces*. **Virtual machine names will be truncated in DNS to 32 characters. So use names no longer than 32 characters.**
 
 1. The number of instances is 1, which is fine for now.
 
