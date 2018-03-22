@@ -7,7 +7,7 @@ layout: default
 
 The compute nodes are the physical machines where you can run Virtual Machines (VMs).
 
-* 32 HPC compute nodes, each node having:
+* 21 HPC compute nodes, each node having:
   * 64 CPU cores (hyperthreading enabled)
   * 256 GB RAM
   * 3.2 TB local SSD disk
