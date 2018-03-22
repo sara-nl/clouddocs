@@ -19,6 +19,12 @@ The compute nodes are the physical machines where you can run Virtual Machines (
   * 3.5 TB local SSD disk
   * 2x 10Gbit network connection per compute node
 
+* 7 HPC compute nodes, each node having:
+  * 80 CPU cores (hyperthreading enabled)
+  * 576 GB RAM
+  * 3.0 TB local SSD disk
+  * 2x 10Gbit network connection per compute node
+
 * 12 GPU compute nodes, each node having:
   * 32 CPU cores (hyperthreading enabled)
   * 2 GPU's of type NVidia K2 GRID, accessible through PCI passthrough, enabling applications to get the performance boost of the direct access to a GPU card
