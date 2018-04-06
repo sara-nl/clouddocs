@@ -2,13 +2,17 @@
 layout: default
 ---
 
-# SURF Research Boot Camp 2018-04-10  <br/> Detach from work 
+# SURF Research Boot Camp 2018-04-10  <br/> Detach from work
 
-<div style="float:right;max-width:205px;" markdown="1">
+<div style="max-width:150px;" markdown="1">
 ![HvA logo](/images/HvA_logo.png)
 
 <div style="max-width:150px;" markdown="1">
-![SURFsara logo](/images/SURFsara_logo.png)
+![UvA logo](/images/UvA-logo.png)
+
+<div style="max-width:150px;" markdown="1">
+![SURF logo](/images/surf_logo.png)
+</div>
 </div>
 </div>
 
@@ -22,7 +26,7 @@ You will run a simple program that outputs a line each few seconds and experienc
 
 - Create a new VM (you may be able to reuse the existing `images` and `templates` that you have created so far; but you can always import a new appliance from the AppMarket).
 - Log into your VM using SSH.
-- Let us now create a simple script file called `example.sh`. You can use your favourite editor. In our example we use nano, like this: 
+- Let us now create a simple script file called `example.sh`. You can use your favourite editor. In our example we use nano, like this:
 
 ```bash
 cd
@@ -125,7 +129,7 @@ killall example.sh
 - check the output file again to verify the script is no longer running
 - remove the output file.
 
-For more information read the manual, it is small and simple but effective. 
+For more information read the manual, it is small and simple but effective.
 
 ```
 man nohup
@@ -159,8 +163,8 @@ screen
 - wait a few seconds and observe the output, as expected
 - detach from the screen session by typing `control-a`, then `d`
 - the view is restored to the situation before you started `screen` and line says something similar to:
- 
-``` 
+
+```
 [detached from 14691.pts-0.145]
 ```
 
@@ -170,7 +174,7 @@ screen
 screen -r
 ```
 
-- you see that the output has accumulated while you were detached, the script continued to run. 
+- you see that the output has accumulated while you were detached, the script continued to run.
 - detach again (`control-a` plus `d`)
 - log out and back in
 - reconnect to the screen session
@@ -189,14 +193,14 @@ Examples:
 
 ### Start additional session
 
-- in `screen`, type a command, so that you can recognize the session 
+- in `screen`, type a command, so that you can recognize the session
 - type `control-a` `c` (lowercase C)
 - you see a fresh screen with a new shell
 - type a different command in the new shell
 - type `control-a` `control-a` (yes, twice)
 - you see the previous session
 - type `control-a` `1` (digit one)
-- you see the second session 
+- you see the second session
 - type `control-a` `0` (digit zero)
 - you see the first session again, sessions are numbered from zero
 - add another session (`control-a` `c`, as before)

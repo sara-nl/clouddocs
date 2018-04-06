@@ -2,23 +2,27 @@
 layout: default
 ---
 
-# SURF Research Boot Camp 2018-04-10  <br/> Extras - Calculating _&pi;_ 
+# SURF Research Boot Camp 2018-04-10  <br/> Extras - Calculating _&pi;_
 
-<div style="float:right;max-width:205px;" markdown="1">
+<div style="max-width:150px;" markdown="1">
 ![HvA logo](/images/HvA_logo.png)
 
 <div style="max-width:150px;" markdown="1">
-![SURFsara logo](/images/SURFsara_logo.png)
+![UvA logo](/images/UvA-logo.png)
+
+<div style="max-width:150px;" markdown="1">
+![SURF logo](/images/surf_logo.png)
+</div>
 </div>
 </div>
 
-This is an exercise from the (extras) part of the Tutorial [SURF Research Boot Camp 2018-04-10](.).
+This is an exercise from the Extras part of the Tutorial [SURF Research Boot Camp 2018-04-10](.).
 
-In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **shared-memory** system. For this purpose, we will be running a Monte Carlo simulation to calculate an approximation of the value of _&pi;_. 
+In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **shared-memory** system. For this purpose, we will be running a Monte Carlo simulation to calculate an approximation of the value of _&pi;_.
 
 >**NOTE:**
 >
->You are now in the advanced section of the workshop. You have your laptop and an Internet connection. We expect you will be able to find out more on your own about things that we hardly/don't explain but which you think you need. For example, if we were you, at this point we would've already googled for several things: 
+>You are now in the advanced section of the workshop. You have your laptop and an Internet connection. We expect you will be able to find out more on your own about things that we hardly/don't explain but which you think you need. For example, if we were you, at this point we would've already googled for several things:
 >
 >1. Monte Carlo simulation
 >1. Monte Carlo pi
@@ -36,8 +40,8 @@ We now propose 2 exercises so that you can see this effect. In the first exercis
 
 * On the UI, create a 2-core `template` that will use your existing **Course Image**:
   * On the _Templates_ tab (under _<i class="fa fa-cloud"></i> Virtual Resources_), click on the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button to create a new `template`
-  * Edit the _<i class="fa fa-laptop"></i> General_ tab: type in a meaningful Name e.g. **OpenMP setup**, type in **2 CPUs** and **2 VCPUs**, type in **4GB Memory** 
-  * Edit the _<i class="fa fa-tasks"></i> Storage_ tab: for the _Disk 0_, choose the **Course Image** (from the table on the right of the screen) 
+  * Edit the _<i class="fa fa-laptop"></i> General_ tab: type in a meaningful Name e.g. **OpenMP setup**, type in **2 CPUs** and **2 VCPUs**, type in **4GB Memory**
+  * Edit the _<i class="fa fa-tasks"></i> Storage_ tab: for the _Disk 0_, choose the **Course Image** (from the table on the right of the screen)
   * Edit the _<i class="fa fa-globe"></i> Network_ tab: for the _Interface 0_, choose the _Internet network_.  
   * Edit the _<i class="fa fa-exchange"></i> Input/Output_ tab: click on the _VNC_ radiobutton
   * Finally, click on the green *Create* button at the top of the screen
@@ -47,25 +51,25 @@ We now propose 2 exercises so that you can see this effect. In the first exercis
 * Install the gcc compiler and gnu make:
 
 ```sh
-sudo apt-get install build-essential 
+sudo apt-get install build-essential
 # Optionally verify gcc and GNU make installation and version
 gcc -v  
-make -v 
+make -v
 ```
 
 * Download the [code file](code/gridpi-mp.tar) to your VM and uncompress the file:
 
 ```sh
 cd
-wget https://doc.hpccloud.surfsara.nl/bootcamp-20170615/code/gridpi-mp.tar 
-tar -xvf gridpi-mp.tar 
+wget https://doc.hpccloud.surfsara.nl/bootcamp-20170615/code/gridpi-mp.tar
+tar -xvf gridpi-mp.tar
 ```
 
 * Inspect what files are in the example directory:
 
 ```sh
 cd gridpi-mp/
-ls -l 
+ls -l
 ```
 
 ### b) Serial runs
@@ -113,8 +117,8 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 
 ### d) More cores
 
-* Replace your VM with one that has more cores (hint: make a new `template`). 
-* Run some batches of exercise c) again. 
+* Replace your VM with one that has more cores (hint: make a new `template`).
+* Run some batches of exercise c) again.
 
 > **_Food for brain d1:_**
 >
@@ -127,7 +131,7 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 > Do not forget to shutdown your VM when you are done with your performance tests.
 
 ### Next: Detach from work
-You have completed the part of the tutorial where you experience scaling your compute capacity, of the Tutorial [SURF Research Boot Camp 2018-04-10](.). Please continue with part [Detach from work](extraDetachWork). 
+You have completed the part of the tutorial where you experience scaling your compute capacity, of the Tutorial [SURF Research Boot Camp 2018-04-10](.). Please continue with part [Detach from work](extraDetachWork).
 
 >**NOTE:**
 >

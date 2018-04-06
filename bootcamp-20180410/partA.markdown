@@ -4,11 +4,15 @@ layout: default
 
 # SURF Research Boot Camp 2018-04-10 <br/> Part A
 
-<div style="float:right;max-width:205px;" markdown="1">
+<div style="max-width:150px;" markdown="1">
 ![HvA logo](/images/HvA_logo.png)
 
 <div style="max-width:150px;" markdown="1">
-![SURFsara logo](/images/SURFsara_logo.png)
+![UvA logo](/images/UvA-logo.png)
+
+<div style="max-width:150px;" markdown="1">
+![SURF logo](/images/surf_logo.png)
+</div>
 </div>
 </div>
 
@@ -25,18 +29,18 @@ The User Interface (UI) is the web site that allows you to manage your _Virtual 
 #### Log in to the UI
 
 * Open the UI page in your browser: [https://ui.hpccloud.surfsara.nl/](https://ui.hpccloud.surfsara.nl/)
-* Your username is **s-campXY**, replace `XY` with the number assigned to you.
+* Your username is **wolk-XYZ**, replace `XYZ` with the number assigned to you.
 * You will receive the password from the workshop facilitators.
 * Hit the `Login` button.
 
-Once you login, feel free to explore the menus and tabs offered by the OpenNebula UI. These will offer most of the functionatilities a user needs to manage and operate VM's.
+Once you login, feel free to explore the menus and tabs offered by the OpenNebula UI. These will offer most of the functionalities a user needs to manage and operate VMs.
 
 #### Change your password
 
 It is a good practice to change the initial password provided, to ensure the work environment is yours.
 
 * Locate the *buddy* icon <i class="fa fa-user"></i> with your user name at the top-right corner of the screen.
-* Click it and select *<i class="fa fa-cog"></i> Settings* 
+* Click it and select *<i class="fa fa-cog"></i> Settings*
 * Click on the blue edit icon <i class="fa fa-pencil-square-o" style="color:#0098c3;"></i> to the right on the *Password* field
 * On the pop-up dialog displayed fill in a new password (twice) and click the *Change* button.
 
@@ -51,9 +55,9 @@ From now on, you can use your new password to log in to the [UI](https://ui.hpcc
 
 ### <a name="add-your-public-ssh-key"></a> 2. Add your public SSH key
 
-To complete the setup of your HPC Cloud account, you need to **add a Secure Shell (SSH) public key to your profile**. This is a one-time task. 
+To complete the setup of your HPC Cloud account, you need to **add a Secure Shell (SSH) public key to your profile**. This is a one-time task.
 
-* An SSH public/private key pair must be created in your local computer. In the previous session "Introduction to UNIX" of this Compute Track, you created such a key pair. If you are not familiar with the process of creating the key pair, you can read about it in the [public/private keys](/SSHkey) documentation page.
+* An SSH public/private key pair must be created in your local computer. In the session "Introduction to UNIX" of this Compute Track, you created such a key pair. If you are not familiar with the process of creating the key pair, you can read about it in the [public/private keys](/SSHkey) documentation page.
 * The public/private key pair is usually stored in your `~/.ssh/` directory. Check with the command `ls ~/.ssh`; you should see the files `id_rsa` and `id_rsa.pub`.
 
 Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI. The matching private key (`id_rsa`) remains safe in your laptop.
@@ -78,11 +82,11 @@ Let's create your first VM to be run on the HPC Cloud Oort!
 
 #### Import an appliance from the AppMarket
 
-SURFsara HPC Cloud provides ready-made `appliances` to their users. These appliances are available in the `Apps` option of the Storage menu in the HPC Cloud UI. This is meant to help users instantiating secure VM’s quickly. Proceed as follows:
+SURFsara HPC Cloud provides ready-made `appliances` to their users. These appliances are available in the `Apps` option of the Storage menu in the HPC Cloud UI. This is meant to help users instantiating secure VMs quickly. Proceed as follows:
 
 * Choose the Storage tab on the left menu of the screen and then _Apps_ option <i class="fa fa-cloud-download" aria-hidden="true"></i>.
 * Select the `appliance` **Ubuntu-16.04.4-Server (2018-04-01)** by clicking on the tick-box next to it.
-* Click on the OpenNebula button at the top of the screen. 
+* Click on the OpenNebula button at the top of the screen.
 * A dialogue box will pop up asking you for a few details. Edit as follows:
   * Name: **Course Image**.
   * VM Template Name: **Course Template**.
@@ -119,7 +123,7 @@ When an appliance is imported from the _Apps_ <i class="fa fa-cloud-download" ar
 
 As mentioned earlier, a `template` is just a description of the virtual machine that we want to build. Let's create the actual virtual machine from it.
 
-* Go to the _VMs_ section below _Instances_ on the left menu. 
+* Go to the _VMs_ section below _Instances_ on the left menu.
   An overview of all existing VMs that you have the priviledges to see, are displayed.
   This list is (probably) empty at the moment, because you have not yet started any VM.
 * Click the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ to bring up a "Create Virtual Machine" screen.

@@ -4,7 +4,7 @@ layout: default
 
 # SURF Research Boot Camp 2018-04-10
 
-<div style="float:right;max-width:150px;" markdown="1">
+<div style="max-width:150px;" markdown="1">
 ![HvA logo](/images/HvA_logo.png)
 
 <div style="max-width:150px;" markdown="1">
@@ -29,7 +29,7 @@ layout: default
 This session is part of the _Compute: Introduction to UNIX, Cluster computing, HPC Cloud_ Track of [SURF Research Bootcamp](https://surfresearchbootcamp.nl/). Here is the agenda for the HPC Cloud session:
 
 > Date: 2018-04-10     
-> Location:
+> Location: Wibauthuis, Wibautstraat 3b, 1091 GH Amsterdam
 
 > * 10:15 - 11:30 Introduction to UNIX
 > * 12:30 - 14:30 Introduction to cluster computing
