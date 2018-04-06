@@ -8,7 +8,7 @@ layout: default
 ![HvA logo](/images/HvA_logo.png)
 
 <div style="max-width:150px;" markdown="1">
-![SURFsara logo](/images/UvA_logo.png)
+![UvA logo](/images/UvA-logo.png)
 
 <div style="max-width:150px;" markdown="1">
 ![SURF logo](/images/surf_logo.png)
