@@ -10,7 +10,7 @@ layout: default
 ![HvA logo](/images/HvA_logo.png)
 </div>
 
-<div style="max-width:150px;" markdown="1">
+<div style="max-width:150px;margin-left:auto; margin-right:auto;" markdown="1">
 ![UvA logo](/images/UvA-logo.png)
 </div>
 
