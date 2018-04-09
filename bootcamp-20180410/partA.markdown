@@ -95,7 +95,7 @@ SURFsara HPC Cloud provides ready-made `appliances` to their users. These applia
   * Name: **Course Image**.
   * VM Template Name: **Course Template**.
   * Select the Datastore to store the resource: **147: Courses_img**.
-* Finally, click the blue *Download* button. This step will import the appliance from the AppMarket to your work environment.
+* Finally, click the green *Download* button. This step will import the appliance from the AppMarket to your work environment.
 
 > **Food for brain:**
 >
