@@ -88,7 +88,7 @@ Let's create your first VM to be run on the HPC Cloud Oort!
 
 SURFsara HPC Cloud provides ready-made `appliances` to their users. These appliances are available in the `Apps` option of the Storage menu in the HPC Cloud UI. This is meant to help users instantiating secure VMs quickly. Proceed as follows:
 
-* Choose the Storage tab on the left menu of the screen and then _Apps_ option <i class="fa fa-cloud-download" aria-hidden="true"></i>.
+* Choose the _Storage_ tab on the left menu of the screen and then _Apps_ option <i class="fa fa-cloud-download" aria-hidden="true"></i>.
 * Select the `appliance` **Ubuntu-16.04.4-Server (2018-04-01)** by clicking on the tick-box next to it.
 * Click on the OpenNebula button at the top of the screen.
 * A dialogue box will pop up asking you for a few details. Edit as follows:
@@ -100,7 +100,7 @@ SURFsara HPC Cloud provides ready-made `appliances` to their users. These applia
 > **Food for brain:**
 >
 > * When you click on an `appliance` (anywhere on the row except for the tick-box), you can see detailed information about the `appliance`. Can you see the information about the `appliance` we are using in this exercise?
-> * When you import an `appliance`, an `image` and a `template` are created as explained during the introductory presentation. You can verify that the process is complete by inspecting the Images section <i class="fa fa-download" aria-hidden="true"></i> in the Storage tab, and the VMs section <i class="fa fa-file-o" aria-hidden="true"></i> in the Templates tab. You should see your new image and template there.
+> * When you import an `appliance`, an `image` and a `template` are created as explained during the introductory presentation. You can verify that the process is complete by inspecting the Images section <i class="fa fa-download" aria-hidden="true"></i> in the _Storage_ tab, and the VMs section <i class="fa fa-file-o" aria-hidden="true"></i> in the Templates tab. You should see your new image and template there.
 >  * Can you see them?  
 >   * What is the Status of the `image` just after you import it?   
 >   * Refresh the images list <i class="fa fa-refresh"></i> until the Status is READY.
