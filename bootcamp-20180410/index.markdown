@@ -4,13 +4,13 @@ layout: default
 
 # SURF Research Boot Camp 2018-04-10
 
-<div style="float:right;max-width:205px;" markdown="1">
+<div style="float:right;max-width:150px;" markdown="1">
 
 <div style="max-width:150px;" markdown="1">
 ![HvA logo](/images/HvA_logo.png)
 </div>
 
-<div style="max-width:150px;margin-left:auto; margin-right:auto;" markdown="1">
+<div style="width:100%; margin-left:auto; margin-right:auto; text-align: center;" markdown="1">
 ![UvA logo](/images/UvA-logo.png)
 </div>
 
