@@ -65,7 +65,7 @@ make -v
 
 ```sh
 cd
-wget https://doc.hpccloud.surfsara.nl/bootcamp-20170615/code/gridpi-mp.tar
+wget https://doc.hpccloud.surfsara.nl/bootcamp-20180410/code/gridpi-mp.tar
 tar -xvf gridpi-mp.tar
 ```
 
