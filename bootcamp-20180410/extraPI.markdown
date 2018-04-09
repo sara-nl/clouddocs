@@ -4,15 +4,19 @@ layout: default
 
 # SURF Research Boot Camp 2018-04-10  <br/> Extras - Calculating _&pi;_
 
-<div style="max-width:150px;" markdown="1">
-![HvA logo](/images/HvA_logo.png)
+
+<div style="float:right;max-width:150px;" markdown="1">
 
 <div style="max-width:150px;" markdown="1">
+![HvA logo](/images/HvA_logo.png)
+</div>
+
+<div style="width:100%; margin-left:auto; margin-right:auto; text-align: center;" markdown="1">
 ![UvA logo](/images/UvA-logo.png)
+</div>
 
 <div style="max-width:150px;" markdown="1">
 ![SURF logo](/images/surf_logo.png)
-</div>
 </div>
 </div>
 
