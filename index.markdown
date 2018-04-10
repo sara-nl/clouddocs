@@ -106,15 +106,15 @@ The HPC Cloud service is under [maintenance](maintenance).
 
 
 ## <a name="tutorials"></a> Tutorials
-* [SURF Research Bootcamp at HvA, 2018-04-10](bootcamp-20180410/index)
+* [SURF Research Bootcamp, HvA/UvA, 2018-04-10](bootcamp-20180410/index)
 * [IHE Delft symposium, 2018-02-21](uihe-20180221/index)
 * [UvA HPC course, HPC Cloud session, 2018-01-31](UvA-20180131/index)
 * [VU HPC course, HPC Cloud session, 2017-11-13](VU-20171113/index)
 * [UvA HPC course, HPC Cloud session, 2017-07-03](UvA-20170703/index)
-* [SURF Research Bootcamp at TU Eindhoven, 2017-06-15](bootcamp-20170615/index)
 
 
 <!---
+* [SURF Research Bootcamp at TU Eindhoven, 2017-06-15](bootcamp-20170615/index)
 * [UNESCO-IHE symposium, 2017-03-30 & 31](uihe-20170330/index)
 * [UvA HPC course, HPC Cloud session, 2017-02-01](UvA-20170201/index)
 * [SURF Research Bootcamp 2016-11-10](bootcamp-20161110/index)
