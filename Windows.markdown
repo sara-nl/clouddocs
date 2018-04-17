@@ -132,8 +132,8 @@ Now that we have all components ready in the UI, we are ready to bring them toge
   * for the _Interface 0_ (on the left column of the screen), choose the **internet** `network` (from the table on the right of the screen)
   * click on the _+ Add another nic_ button (that will make a new _Interface 1_), and then choose your internal `network` (it will be the only other `network ` that you can see on the right that is not called **internet**)
 1.  **On the UI:** On the same _Create VM Template_ screen, on the _OS Booting_ tab:
-  * for the _1st Boot_ field, choose _CDROM_
-  * for the _2nd Boot_ field, choose _HD_
+  * bring the **windows_iso** disk to the top of the list, by clicking the arrow-up button to the right of it
+  * make the **windows_drive** disk the second on the list
 1.  **On the UI:** On the same _Create Template_ screen, on the _Input/Output_ tab:
   * click on the _VNC_ radio button
   * on the _Inputs group_, choose _Tablet_ on the first dropdown menu, then _USB_ on the second dropdown menu and finally click on the _Add_ button. A new entry will appear below those dropdowns with what you just selected.
