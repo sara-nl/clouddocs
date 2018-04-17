@@ -13,8 +13,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   13-03-2018 / 14-03-2018 | _No interruptions planed_
-|   Scheduled   |   10-04-2018 / 11-04-2018 
 |   Scheduled   |   08-05-2018 / 09-05-2018 
 |   Scheduled   |   12-06-2018 / 13-06-2018 
 |   Scheduled   |   10-07-2018 / 11-07-2018 
