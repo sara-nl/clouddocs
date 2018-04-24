@@ -9,7 +9,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 2018-04-23
-* Restored the template and log tabs on the VM's tab for the user view (UI).
+
+### Changed
+* Restored the template and log tabs on the VM's tab for the user view (UI)
 
 ## 2017-10-06
 
