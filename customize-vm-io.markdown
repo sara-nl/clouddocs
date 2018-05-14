@@ -9,6 +9,8 @@ layout: default
 
 ### VNC
 
+**spice is not supported at this time**
+
 A basic I/O set including a «screen», a «keyboard» and a «mouse» is available as if you were using directly-attached peripherals to your VM, by means of a VNC connection. You can operate on VNC sessions via your browser. You do **not** need any specific software on your VM to enable this. 
 
 You can configure the VNC connections that de HPC Cloud will serve for VMs instantiated out of the `template` you are editing. Relevant options are:
