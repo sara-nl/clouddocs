@@ -34,6 +34,7 @@ The HPC Cloud service is under [maintenance](maintenance).
 
 - [Maintenance calendar HPC Cloud](maintenance)
 - [Changelog HPC cloud](changelog)
+- [Security policy](security_policy)
 
 ## Basics
 - [Introduction to HPC Cloud](introduction-to-hpc-cloud)
