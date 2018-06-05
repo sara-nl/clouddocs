@@ -11,7 +11,7 @@ VMs cannot run during that time.
 
 ### What do you need to do?
 
-Make sure that all your VMs are properly terminated.
+Make sure that none of your VMs is running.
 
 > **Your list of `instances` &rarr; `VMs` must show no `RUNNING` VMs.**
 
@@ -36,14 +36,14 @@ If you have questions or need assistance, please contact our helpdesk: [helpdesk
 ## Instructions to prepare for the downtime
 
 You need to prepare for the downtime by stopping your running VMs in time.
-This can be done by the UI menu items `Terminate`, `Undeploy`, `Power Off`, `Stop` or `Suspend`.
+This can be done by the UI menu items `Terminate`, `Undeploy`, or `Power Off`.
 VMs that are left `RUNNING` may be lost or damaged during the maintenance.
 
 For more information on machine states and the effect on non-persistent disks, see [Virtual Machine states](../vm-states).  
 
 ### Non-persistent disks
 
-Changes to data on non-persistent disks are lost when you `terminate` the VM.
+Changes to data on non-persistent disks are lost when you `Terminate` the VM.
 Otherwise, the disk is stored on the host or on external storage.
 
 For more information on (non-) persistency, see [Image Persistence](http://doc.hpccloud.surfsara.nl/image_persistence).
