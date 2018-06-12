@@ -13,7 +13,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   12-06-2018 / 13-06-2018 | Will pass unnoticed
 |   Scheduled   |   10-07-2018 / 11-07-2018 | down for Security maintenance (Spectre/Meltdown) -- information emailed to users
 |   Scheduled   |   14-08-2018 / 15-08-2018 
 |   Scheduled   |   11-09-2018 / 12-09-2018 
