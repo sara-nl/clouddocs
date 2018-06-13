@@ -13,7 +13,7 @@ layout: default
 The following exercises are the assignment to score points on the HPC Cloud session. After you have attended the presentations and followed the hands-on tutorial (including the extras), you understand all the concepts that will allow you to propose valid solutions to the exercises. You can contact your facilitators if you have any questions.
 
 > **NOTE:**  
-> Access to the HPC Cloud User Interface will remain available until the **7th Feb. 2018**.  The assignment needs to be deleivered by then via Blackboard.
+> Access to the HPC Cloud User Interface will remain available until the **21th June 2018**.  The assignment needs to be delivered by then via Blackboard.
 
 ## General description of the exercise
 
