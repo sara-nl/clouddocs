@@ -82,6 +82,7 @@ We will add the presentations during the day of the course.
   * First day presentation: [Introduction to the HPC Cloud](20180613_cloud.pdf)
 <!--  * Second day presentation: [Cloudy systems](20180131_parallelism.pdf) -->
 
+<div style="display:none;">
 ## Assignment
 
 [Download the assignment](assignment)
@@ -90,3 +91,4 @@ We will add the presentations during the day of the course.
 Access to the HPC Cloud service will remain available to the participants for **1 week** after the course. The [HPC Cloud course assignment](assignment) needs to be delivered by then via the UvA's Blackboard interface. Adam Belloum will then collect all assignments and make them available to the HPC Cloud team for evaluation.
 
 Thus, make sure you have submitted your assignment by 00:00h next Friday, 22th February.
+</div>
