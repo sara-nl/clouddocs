@@ -7,7 +7,7 @@ layout: default
 ### Current
 
 
-### Future maintenace windows
+### Future maintenance windows
 
 Note that not every maintenance window will actually include that we will do maintenance. Please see the policy below for more information.
 
