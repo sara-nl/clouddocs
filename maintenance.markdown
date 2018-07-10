@@ -6,6 +6,11 @@ layout: default
 
 ### Current
 
+|   Status    |   Date (start / end)       | comment
+|:------------|:----------------------------|:----
+|   In progress   |   10-07-2018 / 11-07-2018 | down for Security maintenance (Spectre/Meltdown) -- information emailed to users
+{: class="table"}
+
 
 ### Future maintenance windows
 
@@ -13,7 +18,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   10-07-2018 / 11-07-2018 | down for Security maintenance (Spectre/Meltdown) -- information emailed to users
 |   Scheduled   |   14-08-2018 / 15-08-2018 
 |   Scheduled   |   11-09-2018 / 12-09-2018 
 |   Scheduled   |   09-10-2018 / 10-10-2018 
