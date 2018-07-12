@@ -6,10 +6,7 @@ layout: default
 
 ### Current
 
-|   Status    |   Date (start / end)       | comment
-|:------------|:----------------------------|:----
-{: class="table"}
-
+Up and running.
 
 ### Future maintenance windows
 
