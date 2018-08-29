@@ -14,7 +14,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Unused   |   11-09-2018 / 12-09-2018 | No maintenance planned
 |   Scheduled   |   09-10-2018 / 10-10-2018 | 
 |   Scheduled   |   13-11-2018 / 14-11-2018 
 |   Scheduled   |   11-12-2018 / 12-12-2018 
