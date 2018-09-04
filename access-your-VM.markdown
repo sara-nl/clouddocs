@@ -25,7 +25,7 @@ The IP address can be found under _Instances -> VMs_. The external IP to connect
 For every VM that you launch, the HPC Cloud assigns it a public host name. The hostname points to the external IP address.
 
 You can predict the host name: `${vmname}.${projectname}.surf-hosted.nl`  
-This is the DNS address that you can use to access (ssh) your VM instead of the IP. Please note that invalid characters may be converted in the host name. The DNS is fixed for a VM with a fixed name, while the IP is changing every time on boot.
+This is the DNS address that you can use to access (ssh) your VM instead of the IP. Please note that special characters may be converted in the host name. The DNS is fixed for a VM with a fixed name, while the IP is changing every time on boot.
 
 You can also find both instances in the Log of your VM.
 
