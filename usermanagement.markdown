@@ -74,8 +74,9 @@ No quota can be set on Core Hours consumed.
 
 You can give a user the same rights as you (as a group admin) have, this is done through the _System/Groups_ section.
 
-> _Note:_ Additional steps must be taken by SURFsara after you promoted a user to group admin.  
->  Email helpdesk@surfsara.nl that "the group admin rights for _myproject-name_ need to be updated".
+> _Note:_ The promotion to groupadmin is implemented in a few stages that may take few hours.  
+>  During that instable period the new groupadmin may experience some errors.  
+>  If you are in a hurry, email helpdesk@surfsara.nl that "the group admin rights for _myproject-name_ need to be updated".
 
 - make sure you use the `groupadmin` view
 - go to the  _System/Groups_ section
@@ -85,9 +86,7 @@ You can give a user the same rights as you (as a group admin) have, this is done
 - use the `Edit administrators` button to update administrator rights
   ![user selection](images/group-admins.png)
 - click on a user to toggle administrator rights, use `Apply` when done
-- _remember:_ additional step needed by SURFsara, see [above](#make-user-group-admin)
-
-
+- _remember:_ it may take a few hours to complete all changes, see [above](#make-user-group-admin)
 
 ## Delete user
 
@@ -97,4 +96,3 @@ You can give a user the same rights as you (as a group admin) have, this is done
 - select the user (see [above](#select-user))
 - use the red trash can symbol to delete the user permanently
   ![delete user](images/user-delete.png)
-
