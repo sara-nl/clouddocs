@@ -39,9 +39,7 @@ The HPC Cloud and all its VMs will have to go down to install the expected secur
 
 ## Security maintenance downtime
 
-We will have to bring all VMs in the HPC Cloud down to install the security updates on our hosts. 
-Because this is a big inconvenience to you, our users, we will wait until pending solutions have been tested and released.
-We expect the downtime to be a day, during our regular maintenance window, on 9 October.
+We will have to bring all VMs in the HPC Cloud down to install the security updates on our hosts. A downtime has been planned on 11 and 12 December 2018. You shall receive notifications regarding this.
 
 ## Background
 
