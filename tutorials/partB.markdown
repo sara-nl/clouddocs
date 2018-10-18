@@ -169,7 +169,7 @@ sudo mount /dev/vdb /data
 * Arrange the permissions to allow non-root access to the /data directory:
 
 ```sh
-sudo chown adminubuntu:adminubuntu -R /data
+sudo chown ubuntu:ubuntu -R /data
 ```
 
 >**Food for brain:**
