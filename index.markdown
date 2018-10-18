@@ -108,6 +108,7 @@ The HPC Cloud service is under [maintenance](maintenance).
 
 
 ## <a name="tutorials"></a> Tutorials
+* [HPC Cloud tutorials](tutorials/)
 * [UvA HPC course, HPC Cloud session, 2018-06-13](UvA-20180613/index)
 * [SURF Research Bootcamp, HvA/UvA, 2018-04-10](bootcamp-20180410/index)
 * [IHE Delft symposium, 2018-02-21](uihe-20180221/index)
