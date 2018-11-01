@@ -60,6 +60,8 @@ The hands-on tutorial has two parts. The exercises in *part A* will give you a f
     * [Calculate _&pi;_](extraPI)
     * [Detach from Work](extraDetachWork)
 
+<div style="display:none;" markdown="1">
 ## <a name="presentations"></a> Presentation
 
-* [Introduction to SURFsara HPC Cloud](presentations/intro-hpc-cloud-20180410.pdf)
+* [Introduction to SURFsara HPC Cloud](presentations/hpccloud.pdf)
+</div>
