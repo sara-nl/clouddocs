@@ -52,7 +52,7 @@ Participants should bring a laptop with Internet connection with a browser. A se
 * Mac, Linux – nothing to be installed
 * Windows – install [MobaXterm](http://mobaxterm.mobatek.net)
 
-## <a name="hands-on"></a> Hands-on
+## <a name="hands-on"></a>Hands-on
 The hands-on tutorial has two parts. The exercises in *part A* will give you a first grasp for the `basic` usage of the HPC Cloud environment. Once you feel comfortable continue to the *Extras* part with more `advanced` examples.
 
   * [Part A](partA)
