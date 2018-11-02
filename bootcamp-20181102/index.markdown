@@ -10,7 +10,7 @@ layout: default
 ![HU logo](/images/hu-logo.svg)
 </div>
 
-<div style="max-width:150px;margin-left:100px;" markdown="1">
+<div style="max-width:150px" markdown="1">
 ![SURF logo](/images/surf_logo.png)
 </div>
 </div>
