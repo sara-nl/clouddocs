@@ -4,14 +4,13 @@ layout: default
 
 # SURF Research Boot Camp 2018-11-02  <br/> Detach from work
 
+<div style="float:right;max-width:150px;" markdown="1">
 
-<div style="float:right;max-width:300px;" markdown="1">
-
-<div style="max-width:300px;" markdown="1">
-![UU logo](/images/UU_logo_NL_CMYK.png)
+<div style="max-width:150px;" markdown="1">
+![HU logo](/images/hu-logo.svg)
 </div>
 
-<div style="max-width:150px;margin-left:100px;" markdown="1">
+<div style="max-width:150px" markdown="1">
 ![SURF logo](/images/surf_logo.png)
 </div>
 </div>
