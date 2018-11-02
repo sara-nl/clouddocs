@@ -21,7 +21,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
   </div>
  </div>
  <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
- <span style="color:red;">TODAY!</span>  <br/> [SURF Research Bootcamp](UvA-20181102/index)
+ <span style="color:red;">TODAY!</span>  <br/> [SURF Research Bootcamp](bootcamp-20181102)
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
