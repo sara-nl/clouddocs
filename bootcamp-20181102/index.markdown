@@ -4,9 +4,9 @@ layout: default
 
 # SURF Research Boot Camp 2018-11-02
 
-<div style="float:right;max-width:300px;" markdown="1">
+<div style="float:right;max-width:150px;" markdown="1">
 
-<div style="max-width:300px;" markdown="1">
+<div style="max-width:150px;" markdown="1">
 ![HU logo](/images/hu-logo.svg)
 </div>
 
