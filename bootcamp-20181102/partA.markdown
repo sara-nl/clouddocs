@@ -84,7 +84,7 @@ Let's create your first VM to be run on the HPC Cloud Oort!
 SURFsara HPC Cloud provides ready-made `appliances` to their users. These appliances are available in the `Apps` option of the Storage menu in the HPC Cloud UI. This is meant to help users instantiating secure VMs quickly. Proceed as follows:
 
 * Choose the _Storage_ tab on the left menu of the screen and then _Apps_ option <i class="fa fa-cloud-download" aria-hidden="true"></i>.
-* Select the `appliance` **Ubuntu-16.04.5-Server (2018-10-02)** by clicking on the tick-box next to it.
+* Select the `appliance` **Ubuntu-16.04.5-Server (2018-11-01)** by clicking on the tick-box next to it.
 * Click on the blue _<i class="fa fa-share"></i> OpenNebula_ button at the top of the screen.
 * A dialogue box will pop up asking you for a few details. Edit as follows:
   * Name: **Course Image**.
