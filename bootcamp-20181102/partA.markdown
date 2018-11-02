@@ -72,7 +72,7 @@ Next, you need to copy the public SSH key (`id_rsa.pub`) to the UI. The matching
 
 Working with the HPC Cloud service mostly revolves around building and destroying VMs. This section will teach how to build a VM running Linux with the following steps:
 
-* Import a SURFsara pre-made `image` with a Linux operating system installed.
+* Import a SURFsara pre-made `appliance` with a Linux operating system installed.
 * Review the VM attributes defined in the `template`.
 * Instantiate the `template` to run your first VM.
 * Access your VM and gracefully shut it down.
