@@ -4,13 +4,13 @@ layout: default
 
 # SURF Research Boot Camp 2018-11-02
 
-<div style="float:right;max-width:300px;" markdown="1">
+<div style="float:right;max-width:150px;" markdown="1">
 
-<div style="max-width:300px;" markdown="1">
+<div style="max-width:150px;" markdown="1">
 ![HU logo](/images/hu-logo.svg)
 </div>
 
-<div style="max-width:150px;margin-left:100px;" markdown="1">
+<div style="max-width:150px" markdown="1">
 ![SURF logo](/images/surf_logo.png)
 </div>
 </div>
@@ -52,7 +52,7 @@ Participants should bring a laptop with Internet connection with a browser. A se
 * Mac, Linux – nothing to be installed
 * Windows – install [MobaXterm](http://mobaxterm.mobatek.net)
 
-## <a name="hands-on"></a> Hands-on
+## <a name="hands-on"></a>Hands-on
 The hands-on tutorial has two parts. The exercises in *part A* will give you a first grasp for the `basic` usage of the HPC Cloud environment. Once you feel comfortable continue to the *Extras* part with more `advanced` examples.
 
   * [Part A](partA)
@@ -60,8 +60,6 @@ The hands-on tutorial has two parts. The exercises in *part A* will give you a f
     * [Calculate _&pi;_](extraPI)
     * [Detach from Work](extraDetachWork)
 
-<div style="display:none;" markdown="1">
 ## <a name="presentations"></a> Presentation
 
 * [Introduction to SURFsara HPC Cloud](presentations/hpccloud.pdf)
-</div>
