@@ -14,7 +14,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Unused   |   13-11-2018 / 14-11-2018 | This maintenance slot will not be used.
 |   Scheduled   |   11-12-2018 / 12-12-2018 | Planned: security maintenance. Expect VMs down.
 |   Scheduled   |   08-01-2019 / 09-01-2019 
 {: class="table"}
