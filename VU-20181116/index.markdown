@@ -23,19 +23,19 @@ SURFsara is operating an HPC Cloud computing service using the model 'Infrastruc
 The HPC Cloud has a powerful user interface (UI) which grants access to high-performant compute and storage nodes.
 The UI and cloud software relies on [OpenNebula](http://opennebula.org/) and the cluster of resources available is called _Oort_, after the [Oort cloud](https://en.wikipedia.org/wiki/Oort_cloud).
 
-This course is part of the [VU HPC Course 2017](http://hpc.labs.vu.nl/program/) program.
+This course is part of the [VU HPC Course](http://hpc.labs.vu.nl/) program.
 It aims to introduce the participants to the HPC Cloud, by providing an introductory lecture to the service and a set of hands-on exercises to be run on the _Oort_ production infrastructure.
 
 Here is a summary of the course outline:
 
 >**Agenda:**
 >
-> Date: 13th Nov. 2017    
-> Location: Vrije Universiteit Amsterdam, [Mathematics and Physics building (W&N building)](https://science.vu.nl/en/about-the-faculty/contact-route/index.aspx), Room WN-C203
+> Date: 16th Nov. 2018    
+> Location: Vrije Universiteit Amsterdam, [Mathematics and Physics building (W&N building)](https://science.vu.nl/en/about-the-faculty/contact-route/index.aspx), Room WN-F201
 >
-> * 09:30 Welcome
-> * 09:40 Presentation & Demo: Introduction to SURFsara HPC Cloud (Nuno Ferreira)
-> * 10:10 Hands-on: Parts A & B
+> * 09:00 Welcome
+> * 09:10 Presentation & Demo: Introduction to SURFsara HPC Cloud (Lykle Voort)
+> * 09:45 Hands-on: Parts A & B
 > * 12:00 Lunch   
 > * 13:00 Presentation: Cloudifying - parallelism & API (Ander Astudillo)
 > * 13:45 Hands-on: Extras  
@@ -74,19 +74,24 @@ echo "export DISPLAY=localhost:0.0" >> $HOME/.bashrc
 source $HOME/.bashrc
 ```
 
+## Food for brain
+You will find several **Food for brain** questions scattered in the hands-on exercises. They are meant for you to self-assess your progress acquiring the knowledge and trigger your curiosity.
+
+<div style="display:none;" markdown="1">
+
 ## <a name="hands-on"></a> Hands-on
+
 The hands-on tutorial consists of three parts. Parts *A & B* provide exercises for you to grasp the `basic` concepts on how to operate in the HPC Cloud environment. The *Extras* part will focus on `advanced` topics, namely parallel programming and automation.
 
   * [Part A](partA)
   * [Part B](partB)
   * [Extras](extras)
 
-## Food for brain
-You will find several **Food for brain** questions scattered in the hands-on exercises. They are meant for you to self-assess your progress acquiring the knowledge and trigger your curiosity.
+</div>
+
+<div style="display:none;" markdown="1">
 
 ## <a name="presentations"></a> Presentations
-
-<div markdown="1">
 
   * Morning presentation: [Introduction to the HPC Cloud](20171113_introduction.pdf)
   * Afternoon presentation: [Cloudy apps in the HPC Cloud](20171113-parallelism.pdf)
