@@ -169,6 +169,6 @@ Once the rpm is installed you may optionally remove the _CONTEXT_ file from your
 
 >**NOTE:**  
 >**For Ubuntu:**
-> * In case that you encounter the problem not having internet access to your VM, [here](https://doc.hpccloud.surfsara.nl/connection_problem_ubuntu1404) a is a quick fix.
+> * In case that you encounter the problem not having internet access to your VM, [here](https://doc.hpccloud.surfsara.nl/troubleshooting/connection_problem_ubuntu1404) a is a quick fix.
 > * In case that you cannot connect to your VM via `ssh`, then check whether `openssh-server` is installed. If not, install with `apt-get install openssh-server`.
 > * When you attempt to terminate your VM from the UI with the `Terminate` button in Ubuntu Desktop environment, a shutdown prompt window pops up. To disable this option, open a terminal and insert this command: `gsettings set com.canonical.indicator.session suppress-logout-restart-shutdown true`
