@@ -102,7 +102,7 @@ SURFsara HPC Cloud provides ready-made `appliances` (aka `app`) to their users. 
 You will see a list of 'all' the `apps` we have available. For the purposes of this course, we will make use of an Ubuntu `app`.
 
 * Select the `appliance` with the name **Ubuntu-18.04.1-Desktop (2018-11-01)** by clicking on the tick-box next to it
-* Click on the OpenNebula button at the top of the screen
+* Click on the _<i class="fa fa-share"></i> OpenNebula_ button at the top of the screen
 * A dialogue will pop up asking you for a few details. Edit as follows:
   * Name: **First Image**
   * VM Template Name: **First Template**
