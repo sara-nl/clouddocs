@@ -211,7 +211,9 @@ Changing password for ubuntu.
 (current) UNIX password:
 ```
 
-In that case, you will have to type in the old password. You will not see any characters being typed, but that is as expected. Just type the password `ubuntu` (without the quote marks), then hit Enter. After that, type in a new password that you will know, followed by the Enter key. And type it again.
+In that case, you will have to "change" the password for user `ubuntu`. Type in the old password (you will not see any characters being typed, but that is expected), which is: `ubuntu` (without the quote marks). Then hit Enter. After that, type in a new password that you will know, followed by the Enter key. And type that new password again. 
+
+You may be logged out after a successful password change. Type the `ssh` command again that you typed before you were prompted to change the password.
 </div>
 
 
