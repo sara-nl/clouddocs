@@ -198,6 +198,23 @@ ssh ubuntu@145.100.5Q.RST
 
 If everything went well, the first time you try to log in your terminal will ask you to add the VM IP to the list of known hosts. Type *Yes*, in that case.
 
+<div class="alert alert-info" markdown="1">
+<i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
+
+You may receive a message like the following:
+
+```bash
+WARNING: Your password has expired.
+You must change your password now and login again!
+Changing password for ubuntu.
+(current) UNIX password:
+```
+
+In that case, you will have to type in the old password. You will not see any characters being typed, but that is as expected. Just type the password `ubuntu` (without the quote marks), then hit Enter. After that, type in a new password that you will know, followed by the Enter key. And type it again.
+</div>
+
+If everything went well, the first time you try to log in your terminal will ask you to add the VM IP to the list of known hosts. Type *Yes*, in that case.
+
 You should now see a similar line in your terminal: `ubuntu@packer-ubuntu-14:~$`.
 This is the prompt of your VM and is waiting for your input.
 You have logged in successfully!
