@@ -146,7 +146,7 @@ If this is not the case, then under the _Inputs_ section select _Type_ **Tablet*
 
 As mentioned earlier, a `template` is just a description of the Virtual Machine that we want to build. Let's create the actual VM from it.
 
-* Go to the _VMs_ section below _Instances_ on the left menu
+* Go to the _<i class="fa fa-th"></i> VMs_ section below _Instances_ on the left menu
 
 An overview of all existing VMs, that you have the priviledges to see, are displayed.
 This list is (probably) empty at the moment, because you have not yet started any VM.
