@@ -196,9 +196,6 @@ The IP address of a VM is shown in the _IPs_ column on the VM list, and in the _
 ssh ubuntu@145.100.5Q.RST
 ```
 
-If everything went well, the first time you try to log in your terminal will ask you to add the VM IP to the list of known hosts. Type *Yes*, in that case.
-
-
 <div style="width:90%; margin-left:auto; margin-right:auto; margin-top:1ex; margin-bottom:1ex;" class="alert alert-info" markdown="1">
 <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
 
