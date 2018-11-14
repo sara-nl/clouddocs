@@ -110,7 +110,7 @@ You will see a list of 'all' the `apps` we have available. For the purposes of t
 
 Under section _Select the Datastore to store the resource_, choose the entry displaying **147: _Courses\_img_** by clicking anywhere in the entry row. It should now read, right above the entry you just clicked: `You selected the following datastore: Courses_img`.
 
-* Finally, click the blue *Download* button. This step will import the `appliance` from the Marketplace to your work environment
+* Finally, click the green *Download* button. This step will import the `appliance` from the Marketplace to your work environment
 
 > <i class="fa fa-question-circle" aria-hidden="true"></i> **Food for brain**
 >
