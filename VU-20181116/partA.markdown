@@ -198,7 +198,8 @@ ssh ubuntu@145.100.5Q.RST
 
 If everything went well, the first time you try to log in your terminal will ask you to add the VM IP to the list of known hosts. Type *Yes*, in that case.
 
-<div class="alert alert-info" markdown="1">
+
+<div style="width:90%; margin-left:auto; margin-right:auto; margin-top:1ex; margin-bottom:1ex;" class="alert alert-info" markdown="1">
 <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
 
 You may receive a message like the following:
@@ -212,6 +213,7 @@ Changing password for ubuntu.
 
 In that case, you will have to type in the old password. You will not see any characters being typed, but that is as expected. Just type the password `ubuntu` (without the quote marks), then hit Enter. After that, type in a new password that you will know, followed by the Enter key. And type it again.
 </div>
+
 
 If everything went well, the first time you try to log in your terminal will ask you to add the VM IP to the list of known hosts. Type *Yes*, in that case.
 
