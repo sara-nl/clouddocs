@@ -36,8 +36,11 @@ Link: [XML-RPC](XMLRPC)
   
   Experience the automation API that OpenNebula provides, which can be used to find out a lot of information about your own environment, and to operate with VMs in a non-interactive way.
 
+<div style="display:none;" markdown="1">
 ## Extra assignment
 
 Link: [Extra exercise](assignment)
 
 This is a very open exercise for you to think about how to adapt the resources that you have learnt about from the HPC Cloud, to a generic description of a problem. You can talk to your facilitators (e.g.: via e-mail) for assistance.
+</div>
+
