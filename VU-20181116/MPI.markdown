@@ -70,7 +70,7 @@ sudo apt-get install build-essential
 * Install other dependencies that our program requires:
 
 ```sh
-sudo apt-get install libhdf5-serial-dev libopenmpi-dev openmpi-bin openmpi-common hdf5-tools ImageMagick gnuplot
+sudo apt-get install libhdf5-serial-dev libopenmpi-dev openmpi-bin openmpi-common hdf5-tools imagemagick gnuplot
 ```
 
 ### b) Preparing the program
@@ -78,8 +78,8 @@ sudo apt-get install libhdf5-serial-dev libopenmpi-dev openmpi-bin openmpi-commo
 * Download the [code file](code/waveeq.tar.gz) to your VM and uncompress the file:
 
 ```sh
-wget https://github.com/sara-nl/clouddocs/raw/gh-pages/VU-20181116/code/waveeq.tar.gz 
-tar -zxf waveeq.tar.gz 
+wget https://github.com/sara-nl/clouddocs/raw/gh-pages/VU-20181116/code/waveeq2.tar.gz 
+tar -zxf waveeq2.tar.gz 
 ```
 
 * Inspect what files are in the example directory:
