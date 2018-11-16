@@ -77,8 +77,6 @@ source $HOME/.bashrc
 ## Food for brain
 You will find several **Food for brain** questions scattered in the hands-on exercises. They are meant for you to self-assess your progress acquiring the knowledge and trigger your curiosity.
 
-<div style="display:none;" markdown="1">
-
 ## <a name="hands-on"></a> Hands-on
 
 The hands-on tutorial consists of three parts. Parts *A & B* provide exercises for you to grasp the `basic` concepts on how to operate in the HPC Cloud environment. The *Extras* part will focus on `advanced` topics, namely parallel programming and automation.
@@ -86,8 +84,6 @@ The hands-on tutorial consists of three parts. Parts *A & B* provide exercises f
   * [Part A](partA)
   * [Part B](partB)
   * [Extras](extras)
-
-</div>
 
 ## <a name="presentations"></a> Presentations
 
