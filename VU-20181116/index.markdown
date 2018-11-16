@@ -89,11 +89,7 @@ The hands-on tutorial consists of three parts. Parts *A & B* provide exercises f
 
 </div>
 
-<div style="display:none;" markdown="1">
-
 ## <a name="presentations"></a> Presentations
 
-  * Morning presentation: [Introduction to the HPC Cloud](20171113_introduction.pdf)
-  * Afternoon presentation: [Cloudy apps in the HPC Cloud](20171113-parallelism.pdf)
+  * Afternoon presentation: [Cloudy apps in the HPC Cloud](20181116-parallelism.pdf)
 
-</div>
