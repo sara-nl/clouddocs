@@ -10,18 +10,18 @@ layout: default
 This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**. You are welcome to contribute to **help us improve** the documentation (see bottom of this page).
 </div>
 
-<div style="display:none;" class="alert alert-success" markdown="1">
+<div style="display:block;" class="alert alert-success" markdown="1">
 
  <div style="float:right;max-width:100px;margin-top:-10px;" markdown="1">
   <div style="max-width:80px;" markdown="1">
-![UvA logo](/images/hu-logo.svg)
+![VU logo](/images/VU_logo.png)
   </div>
   <div style="max-width:80px;margin-left:10px; margin-bottom:10px;" markdown="1">
 ![SURFsara logo](/images/SURFsara_logo.png)
   </div>
  </div>
  <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
- <span style="color:red;">TODAY!</span>  <br/> [SURF Research Bootcamp](bootcamp-20181102)
+ <span style="color:red;">TODAY!</span>  <br/> [VU HPC course](VU-20181116)
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
