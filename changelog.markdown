@@ -8,6 +8,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2018-12-11
+
+### Security
+* [Mitigation of L1TF](./notices/L1TF)
+
+
 ## 2018-04-23
 
 ### Changed
