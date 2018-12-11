@@ -14,7 +14,7 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   11-12-2018 / 12-12-2018 | Security maintenance. UI & API not available. VMs are down with exception for the dedicated clusters.
+|   Running   |   11-12-2018 / 12-12-2018 | Security maintenance. UI & API not available. VMs are down with exception for the dedicated clusters.
 |   Scheduled   |   08-01-2019 / 09-01-2019 
 {: class="table"}
 
