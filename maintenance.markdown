@@ -46,7 +46,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Finished  |   11-12-2018  | Scheduled downtime for security maintenance (L1TF)        |
+|   Finished  |   11-12-2018 / 11-12-2018 | Scheduled downtime for security maintenance (L1TF)        |
 | Finished | 10-07-2018 / 11-07-2018 | Scheduled downtime for security maintenance (Spectre/Meltdown) |
 | Finished | 02-03-2018 / 05-03-2018 | Scheduled downtime for security maintenance (Spectre/Meltdown) |
 |   Finished  |   10-11-2017 12:36-12:56 | Scheduler did not place virtual machines, running virtual machines not affected. |
