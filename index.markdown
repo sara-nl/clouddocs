@@ -23,7 +23,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
  <span style="color:red;">TODAY!</span>  <br/> [VU HPC course](VU-20181116)
 </div>
 
-<div style="display:none;" class="alert alert-success" markdown="1">
+<div class="alert alert-success" markdown="1">
 <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"</i>
 The HPC Cloud service is under [maintenance](maintenance).
 </div>
