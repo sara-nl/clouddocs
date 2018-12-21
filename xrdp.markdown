@@ -7,7 +7,46 @@ With Xrdp you can remotely log in on a virtual machine, giving you a full virtua
 
 First, you need to set up your Linux VM, using the following steps.
 
-#  Ubuntu
+# Ubuntu 18
+
+Simplified procedure:
+
+* Create a VM out of our Ubuntu 18 Desktop App. Then, log in via SSH into that VM:
+
+```bash
+ssh -X ubuntu@145.100...
+```
+
+You will have to type in the user's password (by default, the same as the user name). Then type in a new password, repeat that when asked, and you are in a terminal on the remote VM.
+
+* We will install a few packages now:
+
+```bash
+sudo apt update && sudo apt install -y xorgxrdp xrdp xfce4 tango-icon-theme
+```
+
+* Let's set the default manager:
+
+```bash
+sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n xfce-session \n' /etc/xrdp/startwm.sh
+```
+
+* Finally, let's open the firewall:
+
+```bash
+sudo ufw allow 3389/tcp
+```
+
+* To make sure there are no astray sessions which may interfere, let's reboot our Ubuntu now:
+
+```bash
+sudo reboot now
+```
+
+After these steps, you should now be able to use your Remote Desktop client from your laptop to connect to the graphical environment. If, after logging in through the Remote Desktop client you are asked to choose a session type, the default "Xorg" should be fine.
+
+
+#  Ubuntu 14.04, 16.04
 
 The default Unity desktop does not support remote sessions as well as other desktop environments do. To create a virtual machine with a GUI, create a plain server VM and install the desktop environment of your choice, for example KDE or Xfce (which is used in the example below). This following example works under Ubuntu 14.04 server.
 
