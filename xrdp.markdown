@@ -13,11 +13,13 @@ Simplified procedure:
 
 * Create a VM out of our Ubuntu 18 Desktop App. Then, log in via SSH into that VM:
 
+>**Note:**
+>
+>You will have to type in the user's password (by default, the same as the user name). Then type in a new password, repeat that when asked, and you are in a terminal on the remote VM.
+
 ```bash
 ssh -X ubuntu@145.100...
 ```
-
-You will have to type in the user's password (by default, the same as the user name). Then type in a new password, repeat that when asked, and you are in a terminal on the remote VM.
 
 * We will install a few packages now:
 
