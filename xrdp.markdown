@@ -18,7 +18,7 @@ Simplified procedure:
 >You will have to type in the user's password (by default, the same as the user name). Then type in a new password, repeat that when asked, and you are in a terminal on the remote VM.
 
 ```bash
-ssh -X ubuntu@145.100...
+ssh ubuntu@145.100...
 ```
 
 * We will install a few packages now:
