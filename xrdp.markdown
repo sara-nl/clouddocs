@@ -7,7 +7,7 @@ With Xrdp you can remotely log in on a virtual machine, giving you a full virtua
 
 First, you need to set up your Linux VM, using the following steps.
 
-# Ubuntu 18
+## Ubuntu 18
 
 Simplified procedure:
 
@@ -48,7 +48,7 @@ sudo reboot now
 After these steps, you should now be able to use your Remote Desktop client from your laptop to connect to the graphical environment. If, after logging in through the Remote Desktop client you are asked to choose a session type, the default "Xorg" should be fine.
 
 
-#  Ubuntu 14.04, 16.04
+##  Ubuntu 14.04, 16.04
 
 The default Unity desktop does not support remote sessions as well as other desktop environments do. To create a virtual machine with a GUI, create a plain server VM and install the desktop environment of your choice, for example KDE or Xfce (which is used in the example below). This following example works under Ubuntu 14.04 server.
 
