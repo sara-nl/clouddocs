@@ -174,3 +174,9 @@ You can now log in on the virtual machine using RDP. From Windows or Mac OSX, us
 ## Windows
 
 We have a [full page on installing Windows](Windows), where we explain how serve access to Remote Desktop from it.
+
+
+## Credits:
+
+* https://medium.com/@vivekteega/how-to-setup-an-xrdp-server-on-ubuntu-18-04-89f7e205bd4e
+* https://askubuntu.com/a/1032963
