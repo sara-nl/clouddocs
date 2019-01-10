@@ -4,6 +4,8 @@ layout: default
 >**NOTE:**
 >
 >We do **not** have any Windows licence or Windows distribution available for you. You will need to have these yourself.
+>
+>Users report these instructions work as well with Windows 10
 
 # Create a VM with Microsoft Windows
 
