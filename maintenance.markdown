@@ -14,7 +14,7 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   12-02-2019 / 13-02-2019 | UI downtime for 1h at 08:00. VMs are not affected.
+|   Scheduled   |   12-02-2019 / 13-02-2019 | UI downtime for 1h at 08:00 on the 12 Feb. VMs are not affected.
 |   Scheduled   |   12-03-2019 / 13-03-2019
 |   Scheduled   |   09-04-2019 / 10-04-2019
 |   Scheduled   |   14-05-2019 / 15-05-2019
