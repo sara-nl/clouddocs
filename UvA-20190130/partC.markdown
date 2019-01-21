@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# UvA HPC course 2019-01-30 <br/> Part B
+# UvA HPC course 2019-01-30 <br/> Part C
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![UvA logo](/images/UvA-logo.png)
