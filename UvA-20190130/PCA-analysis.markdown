@@ -61,9 +61,5 @@ tar -xvf airplane-delay.tar
 
 > **_Food for brain:_**
 >
-> * Can you now modify the VM list to show **only** the running VMs?
-> * Can you make a program that will shutdown all your VMs but leaving intact the one you are running the program from?
+> * 
 
-## <a name="xml_print"></a> Helping code
- 
-  * [Helper XmlUtil class](./code/xml_util.py)
