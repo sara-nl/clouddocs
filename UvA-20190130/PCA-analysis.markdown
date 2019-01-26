@@ -53,11 +53,17 @@ tar -xvf airplane-delay.tar
 > **_Food for brain:_**
 >
 > * What version or R do you have?
-> * How can you inspect the data without opening the files?
+> * How can you inspect the files without opening them?
 
-### c) Run a second example
+### c) Run the Principal Component Analysis
 
-* Run the example from the presentation that shows a list of your VMs.
+* The data represents airplane delays across US airports in the year 2018. In the first iteration, you will perform PCA on a single data set (data for January) on all variables that may have contributed to the flight delays.
+
+$ Rscript airplane-delay-all-comp.r
+
+You just ran an R script and saw the output. What do these numbers mean? Which variables (columns) were used to perform the PCA?
+
+* Should all parameters be used for this? You can explore your dataset by looking for correlations in the dataset. 
 
 > **_Food for brain:_**
 >
