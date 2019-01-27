@@ -24,7 +24,7 @@ You will be using principal component analysis to study flight delays where data
 
 ### a) Setting up a VM for the exercise
 
-Start a new VM (you are now in the advanced part; you should be able to do this on your own). The steps in this exercise assume that you are using an Ubuntu image.
+Start a new single core VM with 1 GB memory (you are now in the advanced part; you should be able to do this on your own). The steps in this exercise assume that you are using an Ubuntu image.
 
 ### b) Prepare the VM for data analysis
 
@@ -81,3 +81,13 @@ For simplicity we only plot a part of the data. You may use all the datapoints t
 Rscript airplane-delay-some-comp.r
 ```
 How do these numbers compare to the previous analysis with the full dataset? A similar example can be found [here](https://gmaclenn.github.io/articles/airport-pca-analysis/) that can help you in the interpretation and further analysis of the results.
+
+### Bonus food for brain: Scaling up or scaling out?
+
+So far you worked on a single dataset on a single core VM with 1 GB memory. There are several datasets provided to you in the airplane-delay.tar file where data for a few months is available. How would you run the analysis for the whole year? 
+
+* You can scale up your VM and run the analysis serially over multiple datasets and combine the results in the end. How big the VM should be to optimize the analysis?
+
+* You may choose to scale out and run separate VMs for each datasets and combine the results in the end. How would you go around doing this?
+
+* The data was downloaded from [here](https://www.transtats.bts.gov/DL_SelectFields.asp?DB_Short_Name=On-Time&Table_ID=236) taking only a few columns into account. You can use one of the above methods/both to run the same analysis for several years.
