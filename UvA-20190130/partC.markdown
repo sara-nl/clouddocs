@@ -75,4 +75,4 @@ We have a documentation page in our general documentation site describing how to
 > Follow the steps and exercises from the [page on our documentation about using Remote Desktop](../xrdp).
 
 ### Next: Extras
-You have completed part B of the Tutorial [UvA HPC course 2019-01-30](.). If you want more of the HPC Cloud proceed to the [Extras part](extras).
+You have completed part C of the Tutorial [UvA HPC course 2019-01-30](.). If you want more of the HPC Cloud proceed to the [Extras part](extras).
