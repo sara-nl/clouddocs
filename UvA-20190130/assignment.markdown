@@ -25,7 +25,9 @@ Keeping himself busy in the cockpit, he has called you for help on the ground to
 
 > ### Telegram:
 >
-> Use data from [here](https://www.transtats.bts.gov/DL_SelectFields.asp?DB_Short_Name=On-Time&Table_ID=236). Run PCA. Provide recommendation.
+> Use data from [here](https://www.transtats.bts.gov/DL_SelectFields.asp?DB_Short_Name=On-Time&Table_ID=236) STOP
+> Run PCA STOP 
+> Provide recommendation STOP
 
 ## Your assignment:
 
