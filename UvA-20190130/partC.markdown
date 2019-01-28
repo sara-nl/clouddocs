@@ -62,7 +62,7 @@ We have a documentation page in our general documentation site where you can exp
 
 > **Food for brain:**
 >
-> Follow the steps and exercises from the [page on our documentation about using `screen`](detachFromWork).
+> Follow the steps and exercises from the [page on our documentation about using `screen`](../detachFromWork).
 
 ### 3. Remote Desktop
 
@@ -72,7 +72,7 @@ We have a documentation page in our general documentation site describing how to
 
 > **Food for brain:**
 >
-> Follow the steps and exercises from the [page on our documentation about using Remote Desktop](xrdp).
+> Follow the steps and exercises from the [page on our documentation about using Remote Desktop](../xrdp).
 
 ### Next: Extras
 You have completed part B of the Tutorial [UvA HPC course 2019-01-30](.). If you want more of the HPC Cloud proceed to the [Extras part](extras).
