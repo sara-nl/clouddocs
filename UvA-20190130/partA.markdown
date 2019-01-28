@@ -89,7 +89,7 @@ Let's run your first VM on the HPC Cloud!
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
 * Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_.
-* View the extended the `app` **Ubuntu-14.04.5-Desktop** by clicking anywhere on that line except the tick-box to the left of it.
+* View the extended the `app` **Ubuntu-18.04.1-Desktop** by clicking anywhere on that line except the tick-box to the left of it.
 * Carefully read the _DESCRIPTION_ attribute (located towards the bottom of the page). In particular, pay attention to the **default username** mentioned there, since that is the username you will need to use to log in to your VM.
 * Click on the blue _<i class="fa fa-share"></i> OpenNebula_ button above the list of apps.
 * A dialogue will pop up asking you for a few details. Edit as follows:
@@ -175,7 +175,7 @@ The way to log in to your virtual machine is making use of the SSH key pair that
 >Replace 145.100.5Q.RST with your IP address! And remember that we know which username to use because we read that on the Description attribute of the _app_ when we were importing it.
 
 ```sh
-ssh adminubuntu@145.100.5Q.RST
+ssh ubuntu@145.100.5Q.RST
 ```
 
 #### First login
@@ -184,30 +184,30 @@ If everything went well, the first time you try to log in, your terminal will as
 
 >**NOTE:**
 >
->Right after you reach the newly created VM via SSH for the first time, you may see a prompt asking you to change the default password for user adminubuntu. Please, do so by typing first the current password, which is the same as the username. You can then type the password you want. When this password-changing process is finished (even successfully), you may be logged out of the VM. You will then have to submit the SSH command again, and then everything should work as expected: you are connected to a shell in the VM.
+>Right after you reach the newly created VM via SSH for the first time, you may see a prompt asking you to change the default password for user ubuntu. Please, do so by typing first the current password, which is the same as the username. You can then type the password you want. When this password-changing process is finished (even successfully), you may be logged out of the VM. You will then have to submit the SSH command again, and then everything should work as expected: you are connected to a shell in the VM.
 
-You should now see a similar line in your terminal: `adminubuntu@ip-145...:~$`
+You should now see a similar line in your terminal: `ubuntu@ip-145...:~$`
 
 This means that you have logged in successfully to your Virtual Machine!
 
 * Look around a bit, make yourself familiar with the system:
 
 ```sh
-adminubuntu@ip-145...:~$ ls /
-adminubuntu@ip-145...:~$ whoami
+ubuntu@ip-145...:~$ ls /
+ubuntu@ip-145...:~$ whoami
 ```
 
 * Create a file:
 
 ```sh
-adminubuntu@ip-145...:~$ echo "Some text ..." > myfile
-adminubuntu@ip-145...:~$ cat myfile
+ubuntu@ip-145...:~$ echo "Some text ..." > myfile
+ubuntu@ip-145...:~$ cat myfile
 ```
 
 * Logout by typing `logout` or `ctrl-D` in your terminal (do **not** issue any shutdown command):
 
 ```sh
-adminubuntu@ip-145...:~$ logout
+ubuntu@ip-145...:~$ logout
 ```
 
 > **Food for brain:**
