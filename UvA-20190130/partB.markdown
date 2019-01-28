@@ -101,7 +101,7 @@ From now on, whenever you instantiate this `template`, you will get a 4-core VM 
 
 The current HPC Cloud offers two storage types: **Ceph** and **SSD**. Data stored on `Ceph` is replicated to protect against data loss in case of hardware failure. Our recommended best practice is to run your operating system on a small `SSD image` and store your bulk data on `Ceph datablock(s)`.
 
-When you create an `image`, you must choose where it is stored, under the heading _Datastore_. You have the choice between `Courses_img` (SSD) and `ceph`.  When you imported your first _App_ in tutorial Part A, you created an image containing an Ubuntu 14.04 OS on `Courses_img` (SSD). In this section we're introducing to you the `ceph` `datastore` option. You can create an `image` in `ceph` datastore by following these steps:
+When you create an `image`, you must choose where it is stored, under the heading _Datastore_. You have the choice between `Courses_img` (SSD) and `ceph`.  When you imported your first _App_ in tutorial Part A, you created an image containing an Ubuntu 18.04 OS on `Courses_img` (SSD). In this section we're introducing to you the `ceph` `datastore` option. You can create an `image` in `ceph` datastore by following these steps:
 
 * Creating a new empty `image` for bulk data
 * Adding the new `image` to the `template`
@@ -171,7 +171,7 @@ sudo mount /dev/vdb /data
 * Arrange the permissions to allow non-root access to the /data directory:
 
 ```sh
-sudo chown adminubuntu:adminubuntu -R /data
+sudo chown ubuntu:ubuntu -R /data
 ```
 
 >**Food for brain:**
