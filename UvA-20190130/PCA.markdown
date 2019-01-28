@@ -12,8 +12,10 @@ layout: default
 
 This is an exercise from the [Extras](extras) part of the Tutorial [UvA HPC course 2019-01-30](.).
 
-In this advanced part of our HPC Cloud tutorial we ask you to run an exercise to study scale-out and scale-up scenario. 
-You will be using principal component analysis to study flight delays where data can be analyzed by scaling-up a VM or across multiple VMs.
+In this advanced part of our HPC Cloud tutorial we ask you to run an exercise to look at the scale-out and scale-up scenarios. 
+You will be using Principal Component Analysis to study flight delays where data can be analysed by scaling up one VM or scaling out across multiple VMs.
+
+The original dataset is coming from [here](https://www.transtats.bts.gov/DL_SelectFields.asp?DB_Short_Name=On-Time&Table_ID=236), but we have already prepared some files. Among other preparation steps, we focused on a selection of dates and some variables, along with some cleaning steps to get more useful data. 
 
 >**NOTE:**
 >
@@ -85,10 +87,10 @@ How do these numbers compare to the previous analysis with the full dataset? A s
 
 ### Bonus food for brain: Scaling up or scaling out?
 
-So far you worked on a single dataset on a single core VM with 1 GB memory. There are several datasets provided to you in the airplane-delay.tar file where data for a few months is available. How would you run the analysis for the whole year? 
+So far you worked on a single dataset on a single core VM with 1 GB memory. There are several datasets provided to you in the `airplane-delay.tar` file where data for a few months is available. How would you run the analysis for the whole year as a whole? 
 
-* You can scale up your VM and run the analysis serially over multiple datasets and combine the results in the end. How big the VM should be to optimize the analysis?
+* You can scale up your VM and run the analysis serially over multiple datasets and combine the results in the end. How big should the VM be to optimize the analysis?
 
-* You may choose to scale out and run separate VMs for each datasets and combine the results in the end. How would you go around doing this?
+* You may choose to scale out and run separate VMs for each dataset and combine the results in the end. How would you go about doing this?
 
 * The data was downloaded from [here](https://www.transtats.bts.gov/DL_SelectFields.asp?DB_Short_Name=On-Time&Table_ID=236) taking only a few columns into account. You can use one of the above methods/both to run the same analysis for several years.
