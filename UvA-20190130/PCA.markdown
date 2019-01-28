@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# UvA HPC course 2019-01-30  <br/> Extras - PCA Analysis
+# UvA HPC course 2019-01-30  <br/> Extras - Principal component analysis
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![UvA logo](/images/UvA-logo.png)
