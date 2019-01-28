@@ -20,7 +20,7 @@ You will find several _Food for brain_ questions in each exercise about situatio
 
 ## Simple scalability
 
-Link: [Simple Scalability: Principal Component Analysis (PCA)_](PCA)
+Link: [Simple Scalability: Principal Component Analysis (PCA)](PCA)
   
   Working with a real dataset on a real problem to look into the possibilities of easily scaling up and/or out.
 
