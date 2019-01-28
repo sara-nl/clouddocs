@@ -23,7 +23,7 @@ He is now convinced that Principal Component Analysis is the key to his new ente
 
 Keeping himself busy in the cockpit, he has called you for help on the ground to crunch some data and provide some recommendations. Here is the telegram he wrote to you:
 
-> ### Principal Component Analysis on plane delays
+> ### Telegram:
 >
 > Use data from [here](https://www.transtats.bts.gov/DL_SelectFields.asp?DB_Short_Name=On-Time&Table_ID=236). Run PCA. Provide recommendation.
 
