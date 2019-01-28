@@ -27,7 +27,7 @@ Keeping himself busy in the cockpit, he has called you for help on the ground to
 >
 > Use data from [here](https://www.transtats.bts.gov/DL_SelectFields.asp?DB_Short_Name=On-Time&Table_ID=236) STOP
 > Run PCA STOP 
-> Provide recommendation STOP
+> Recommend STOP
 
 ## Your assignment:
 
