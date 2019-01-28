@@ -22,7 +22,8 @@ The original dataset is coming from [here](https://www.transtats.bts.gov/DL_Sele
 >You are now in the advanced section of the workshop. You have your laptop and an Internet connection. We expect you will be able to find out more on your own about things that we hardly/don't explain but which you think you need. For example, if we were you, at this point we would've already googled for several things: 
 >
 >1. Principal Component Analysis
->1. R software package
+>1. R language
+>1. R modules
 
 ### a) Setting up a VM for the exercise
 
