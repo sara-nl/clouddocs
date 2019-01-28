@@ -39,7 +39,7 @@ sudo apt-get install r-base
 * Test if the installation was successful. The following command should tell you which version of R has been installed
 
 ```sh
-r --version
+R --version
 ```
 
 * Download the [data](code/airplane-delay.tar) to your VM and uncompress the file:
