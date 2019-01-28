@@ -59,6 +59,7 @@ tar -xvf airplane-delay.tar
 * The data represents airplane delays across US airports in the year 2018. In the first iteration, you will perform PCA on a single data set (data for January) on all variables that may have contributed to the flight delays.
 
 ```sh
+cd ~/airplane-delay
 Rscript airplane-delay-all-comp.r
 ```
 
