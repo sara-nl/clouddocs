@@ -78,8 +78,8 @@ sudo apt-get install libhdf5-serial-dev libopenmpi-dev openmpi-bin openmpi-commo
 * Download the [code file](code/waveeq.tar.gz) to your VM and uncompress the file:
 
 ```sh
-wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20190130/code/waveeq2.tar.gz 
-tar -zxf waveeq2.tar.gz 
+wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20190130/code/waveeq.tar.gz 
+tar -zxf waveeq.tar.gz 
 ```
 
 * Inspect what files are in the example directory:
