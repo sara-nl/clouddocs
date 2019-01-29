@@ -51,10 +51,10 @@ We will be creating a 2-core VM for this exercise.
 
 * Launch a VM from that `template`
 
-* Login to the VM with '-X' parameter to enable visualisation:
+* Login to the VM with '-Y' parameter to enable visualisation:
 
 ```sh
-ssh -X ubuntu@145.100...`
+ssh -Y ubuntu@145.100...`
 ```
 
 * Install the gcc compiler and gnu make:
