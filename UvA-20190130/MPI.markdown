@@ -78,7 +78,7 @@ sudo apt-get install libhdf5-serial-dev libopenmpi-dev openmpi-bin openmpi-commo
 ```sh
 echo 'export CPATH=/usr/include/hdf5/serial/' >> ~/.bashrc 
 source ~/.bashrc
-wget https://raw.githubusercontent.com/sara-nl/clouddocs/raw/gh-pages/UvA-20190130/code/policy.xml
+wget https://raw.githubusercontent.com/sara-nl/clouddocs/gh-pages/UvA-20190130/code/policy.xml
 sudo mv policy.xml /etc/ImageMagick-6/policy.xml
 ```
 
