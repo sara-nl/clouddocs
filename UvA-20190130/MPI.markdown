@@ -73,6 +73,16 @@ sudo apt-get install build-essential
 sudo apt-get install libhdf5-serial-dev libopenmpi-dev openmpi-bin openmpi-common hdf5-tools imagemagick gnuplot
 ```
 
+* Setting up additional environmental variables:
+
+```sh
+echo 'export CPATH=/usr/include/hdf5/serial/' >> ~/.bashrc 
+source ~/.bashrc
+wget https://raw.githubusercontent.com/sara-nl/clouddocs/raw/gh-pages/UvA-20190130/code/policy.xml
+sudo mv policy.xml /etc/ImageMagick-6/policy.xml
+```
+
+
 ### b) Preparing the program
 
 * Download the [code file](code/waveeq.tar.gz) to your VM and uncompress the file:
