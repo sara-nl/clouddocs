@@ -158,7 +158,7 @@ Because the program is ready for MPI, you can use `mpirun` to use multiple cores
 **Exercse e1:** Try now the mpi run with 2 cores, like this:
 
 * Start a new VM out of the **mpi_wave** `template`, giving it the name e.g.**mpi_wave_master**
-* Login into the "mpi_wave_master" VM (emember to use the `-X` parameter for the `ssh` command)
+* Login into the "mpi_wave_master" VM (remember to use the `-X` parameter for the `ssh` command)
 * Go to the `waveeq` directory: `cd waveeq`
 
 You can now run the program with 2 processes like:
