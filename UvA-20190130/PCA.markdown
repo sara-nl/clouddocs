@@ -88,7 +88,7 @@ How do these numbers compare to the previous analysis with the full dataset? A s
 
 ### Bonus food for brain: Scaling up or scaling out?
 
-So far you worked on a single dataset on a single core VM with 1 GB memory. There are several datasets provided to you in the `airplane-delay.tar` file where data for a few months is available. How would you run the analysis for the whole year as a whole? 
+So far you worked on a single dataset on a single core VM with 1 GB memory. There are two datasets provided to you in the `airplane-delay.tar` file and data files ("delay-2018-*".csv) for another few months is available [here](https://github.com/sara-nl/clouddocs/tree/gh-pages/UvA-20190130/code) . How would you run the analysis for the whole year as a whole? 
 
 * You can scale up your VM and run the analysis serially over multiple datasets and combine the results in the end. How big should the VM be to optimize the analysis?
 
