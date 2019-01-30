@@ -28,8 +28,8 @@ SURFsara has been operating the HPC Cloud as an Infrastructure as a Service (`Ia
 >
 >30th January 2019, UvA, Science Park SP G0.23-G0.25
 >
-> * 09:00 Welcome & coffee  
-> * 09:05 Presentation and Demo: HPC Cloud at SURFsara (Maithili Kalamkar)
+> * 09:00 Welcome
+> * 09:05 Presentation and Demo: HPC Cloud at SURFsara (Markus van Dijk)
 > * 09:45 Hands-on: Parts A & B (at your discression, also C)
 > * 12:00 Lunch break  
 > * 13:00 Morning recap  

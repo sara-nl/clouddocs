@@ -10,17 +10,19 @@ layout: default
 This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**. You are welcome to contribute to **help us improve** the documentation (see bottom of this page).
 </div>
 
-<div style="display:none;" class="alert alert-success" markdown="1">
+<div style="display:block;" class="alert alert-success" markdown="1">
  <div style="float:right;max-width:100px;margin-top:-10px;" markdown="1">
-  <div style="max-width:80px;" markdown="1">
-![VU logo](/images/VU_logo.png)
+  <div style="max-width:40px;margin-left:30px;" markdown="1">
+![UvA logo](/images/UvA-logo.png)
   </div>
   <div style="max-width:80px;margin-left:10px; margin-bottom:10px;" markdown="1">
 ![SURFsara logo](/images/SURFsara_logo.png)
   </div>
  </div>
  <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
- <span style="color:red;">TODAY!</span>  <br/> [VU HPC course](VU-20181116)
+ <br/>
+ <span style="color:red;">TODAY!</span>  <br/>[UvA HPC course](UvA-20190130)
+ <br/>
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
@@ -108,6 +110,7 @@ The HPC Cloud service is in [maintenance](maintenance).
 
 ## <a name="tutorials"></a> Tutorials
 * [HPC Cloud tutorials](tutorials/)
+* [UvA HPC course, HPC Cloud session, 2019-01-30](UvA-20190130/index)
 * [VU HPC course, 2018-11-16](VU-20181116)
 * [SURF Research Bootcamp, HU, 2018-11-02](bootcamp-20181102/index)
 * [UvA HPC course, HPC Cloud session, 2018-06-13](UvA-20180613/index)

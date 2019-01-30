@@ -33,7 +33,7 @@ We provide you with an implementation of that simulation using `MPI`. You will b
 We will be creating a 2-core VM for this exercise.
 
 * On the UI, import a new Ubuntu `App`:
-  * On the _<i class="fa fa-cloud-download"></i> Apps_ tab (under _Storage_), import another copy of the **Ubuntu-14.04.5-Desktop ** `app`. Make sure you select the proper datastore for your new OS image (**147:Courses_img**). Give the `image` and `template` the name: **mpi_wave**
+  * On the _<i class="fa fa-cloud-download"></i> Apps_ tab (under _Storage_), import another copy of the **Ubuntu Desktop** `app`. Make sure you select the proper datastore for your new OS image (**147:Courses_img**). Give the `image` and `template` the name: **mpi_wave**
 
 * Edit the `image` to make it **persistent**.
 
@@ -43,7 +43,7 @@ We will be creating a 2-core VM for this exercise.
   * Check the _<i class="fa fa-tasks"></i> Storage_ tab: the _Disk 0_ must have the **mpi_wave** image selected (from the table on the right of the screen) 
   * Edit the _<i class="fa fa-globe"></i> Network_ tab: 
     * for the _NIC 0_, the _Internet network_ is selected
-    * add a second `nic` (hit **+ Add another interface** button); for this second `nic`, _NIC 1_, choose the _uvacourse-surfsara.int_ network (from the table on the right of the screen)
+    * add a second `nic` (hit **+ Add another interface** button); for this second `nic`, _NIC 1_, choose the _wolk-surfsara.int_ network (from the table on the right of the screen)
   * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: 
     * the _VNC_ radiobutton must be selected
     * in the _Inputs_ section, select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that
@@ -51,7 +51,7 @@ We will be creating a 2-core VM for this exercise.
 
 * Launch a VM from that `template`
 
-* Login to the VM with '-Y' flag on your SSH command to enable visualisation:
+* Login to the VM with '-Y' parameter to enable visualisation:
 
 ```sh
 ssh -Y ubuntu@145.100...`
@@ -70,16 +70,26 @@ sudo apt-get install build-essential
 * Install other dependencies that our program requires:
 
 ```sh
-sudo apt-get install libhdf5-serial-dev libopenmpi-dev openmpi-bin openmpi-common hdf5-tools ImageMagick gnuplot
+sudo apt-get install libhdf5-serial-dev libopenmpi-dev openmpi-bin openmpi-common hdf5-tools imagemagick gnuplot
 ```
+
+* Setting up additional environmental variables:
+
+```sh
+echo 'export CPATH=/usr/include/hdf5/serial/' >> ~/.bashrc 
+source ~/.bashrc
+wget https://raw.githubusercontent.com/sara-nl/clouddocs/gh-pages/UvA-20190130/code/policy.xml
+sudo mv policy.xml /etc/ImageMagick-6/policy.xml
+```
+
 
 ### b) Preparing the program
 
 * Download the [code file](code/waveeq.tar.gz) to your VM and uncompress the file:
 
 ```sh
-wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20180131/code/waveeq.tar.gz 
-tar -zxf waveeq.tar.gz 
+wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20190130/code/waveeq2.tar.gz 
+tar -zxf waveeq2.tar.gz 
 ```
 
 * Inspect what files are in the example directory:
@@ -135,9 +145,9 @@ We will want to show how to **scale out** later, and that will involve multiple 
 * Let's prepare passwordless ssh among these VMs. For that, we will create a new SSH key-pair for user _ubuntu_ in these VMs, and add the public key to the list of authorised keys. Like this:
 
 ```sh
-ssh-keygen -t rsa -f /home/adminubuntu/.ssh/id_rsa  
+ssh-keygen -t rsa -f /home/ubuntu/.ssh/id_rsa  
 #Enter passphrase (empty for no passphrase): <<<<leave this empty (hit enter twice)>>>>
-cat /home/adminubuntu/.ssh/id_rsa.pub >> /home/adminubuntu/.ssh/authorized_keys
+cat /home/ubuntu/.ssh/id_rsa.pub >> /home/ubuntu/.ssh/authorized_keys
 ```
 
 Previously we made the `image` persistent so that when shutting the VM down, changes would be saved and kept for the next run. But changes are only saved when you actually shut the VM down gracefully. 
@@ -158,7 +168,7 @@ Because the program is ready for MPI, you can use `mpirun` to use multiple cores
 **Exercse e1:** Try now the mpi run with 2 cores, like this:
 
 * Start a new VM out of the **mpi_wave** `template`, giving it the name e.g.**mpi_wave_master**
-* Login into the "mpi_wave_master" VM (emember to use the `-X` parameter for the `ssh` command)
+* Login into the "mpi_wave_master" VM (remember to use the `-X` parameter for the `ssh` command)
 * Go to the `waveeq` directory: `cd waveeq`
 
 You can now run the program with 2 processes like:
@@ -221,7 +231,7 @@ Also, usually the worker nodes are protected (inaccessible) from the outside wor
 
 ```sh
 cd
-wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20180131/code/makeme_master.sh
+wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20190130/code/makeme_master.sh
 chmod +x makeme_master.sh
 sudo ./makeme_master.sh
 exit
@@ -255,7 +265,7 @@ exit
 
 ```sh
 cd
-wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20180131/code/makeme_worker.sh
+wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20190130/code/makeme_worker.sh
 chmod +x makeme_worker.sh
 sudo ./makeme_worker.sh 1 XXX.YYY.ZZZ.TTT  #replace XXX.YYY.ZZZ.TTT with the INTERNAL IP address of the master
 #hit ENTER when prompted and wait a bit..
@@ -268,7 +278,7 @@ sudo ./makeme_worker.sh 1 XXX.YYY.ZZZ.TTT  #replace XXX.YYY.ZZZ.TTT with the INT
 
 #### Configuring the firewall
 
-The _Apps_ that we deliverA come with a firewall running on the operating system, called UFW. MPI needs to communicate through the network between master and worker. They are both running a firewall. To avoid problems and because this is just a test scenario, we will trust all traffic coming from our internal interfaces.
+The _Apps_ that we deliver come with a firewall running on the operating system, called Uncomplicated Firewall (or ufw, in short). MPI needs to communicate through the network between master and worker. They are both running a firewall. To avoid problems and because this is just a test scenario, we will trust all traffic coming from our internal interfaces.
 
 * **On the master** VM, run the following commands: `sudo ufw allow in on eth1 && sudo service ufw restart`
 * **On the worker** VM, run the same commands in a terminal in your VNC window: `sudo ufw allow in on eth1 && sudo service ufw restart` 
@@ -280,7 +290,7 @@ The _Apps_ that we deliverA come with a firewall running on the operating system
 * **On the master**, make sure you are logged in as user _ubuntu_. Run our program with 4 processors over the 2 nodes (pay attention to the comma separating the master and the worker’s ip addresses):
 
 ```sh
-time mpirun -np 4 -H <master_INTERNAL_ip>,<worker_INTERNAL_ip> /home/adminubuntu/waveeq/wave4
+time mpirun -np 4 -H <master_INTERNAL_ip>,<worker_INTERNAL_ip> /home/ubuntu/waveeq/wave4
 ```
 
 > **_Food for brain f4:_**
