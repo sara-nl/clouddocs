@@ -83,8 +83,6 @@ The hands-on tutorial consists of three parts:
   * Morning presentation: <span style="display:inline;" markdown="1">[Introduction to the HPC Cloud](20190130_cloud.pdf)</span>
   * Afternoon presentation: <span style="display:none;" markdown="1">[Cloudy systems](20180614_parallelism.pdf)</span>
 
-<div style="display:block;" markdown="1">
-
 ## Assignment
 
 [Download the assignment](assignment)
@@ -93,5 +91,3 @@ The hands-on tutorial consists of three parts:
 Access to the HPC Cloud service will remain available to the participants for **1 week** after the course. The [HPC Cloud course assignment](assignment) must be done in pairs, and it needs to be delivered by the end of the 1-week period to Adam Bellowum. Adam Belloum will then collect all assignments and make them available to the HPC Cloud team for evaluation.
 
 Thus, make sure you have submitted your assignment before 23:59h on Wednesday one week from today!
-
-</div>
