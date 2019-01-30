@@ -90,8 +90,8 @@ The hands-on tutorial consists of three parts:
 [Download the assignment](assignment)
 
 [Master students eligible to earn ECTS](http://hpc.uva.nl/Roadmaps/article/122/Distributed-systems-and-BigData-(6-ECTS)) must follow all the lectures and participate on all workshops associated to [UvA HPC Course](http://hpc.uva.nl/Workshops/). 
-Access to the HPC Cloud service will remain available to the participants for **1 week** after the course. The [HPC Cloud course assignment](assignment) needs to be delivered by then via the UvA's Blackboard interface. Adam Belloum will then collect all assignments and make them available to the HPC Cloud team for evaluation.
+Access to the HPC Cloud service will remain available to the participants for **1 week** after the course. The [HPC Cloud course assignment](assignment) must be done in pairs, and it needs to be delivered by the end of the 1-week period to Adam Bellowum. Adam Belloum will then collect all assignments and make them available to the HPC Cloud team for evaluation.
 
-Thus, make sure you have submitted your assignment before 23:59h next Thursday, 21st June.
+Thus, make sure you have submitted your assignment before 23:59h on Wednesday one week from today!
 
 </div>
