@@ -55,7 +55,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Finished  |   12-02-2019 08:20-08:40 | UI/API downtime. VMs not affected.
+|   Finished  |   12-02-2019 08:20-08:40 | UI/API downtime for maintenance. VMs not affected.         |
 |   Finished  |   11-12-2018 / 11-12-2018 | Scheduled downtime for security maintenance (L1TF)        |
 | Finished | 10-07-2018 / 11-07-2018 | Scheduled downtime for security maintenance (Spectre/Meltdown) |
 | Finished | 02-03-2018 / 05-03-2018 | Scheduled downtime for security maintenance (Spectre/Meltdown) |
