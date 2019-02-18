@@ -99,6 +99,17 @@ The key s randomart image is:
 +----[SHA256]-----+
 ```
 
+>**NOTE 1:**
+>
+> You can have many SSH keys, each in a separate file. 
+> (Actually, in file pairs: `name` and `name.pub`).
+
+>**NOTE 2:**
+>
+> Please use a long passphrase to protect your private key.
+> The ssh-agent (see below) will assist you so that only need to type the password once per session.
+
+
 ## Using `ssh-agent`
 
 SSH-agent is a service on your computer to remember your ssh passphrase during your local session (that is, until you log out). This way, you do not have to type in that loooong passphrase every time you need to unlock your private key.
