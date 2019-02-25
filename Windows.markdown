@@ -159,7 +159,11 @@ Now you need to install Windows with **custom** installation, by following the s
 
 ### Installing the Virtio drivers
 
-While running the Windows installer, you will reach a step in which you have to choose which disk (or drive) to install Windows on. It will be empty, because the disks are made available to your VM via Virtio, but you have not installed the Virtio drivers yet so your Windows installation cannot see the disk. This is how you do it:
+While running the Windows installer, you will reach a step in which you have to choose which disk (or drive) to install Windows on. It will be empty, because the disks are made available to your VM via Virtio, but you have not installed the Virtio drivers yet, so your Windows installation cannot see the disk. This is how you do it:
+
+>**Note:**
+>
+>Since we will be installing Virtio drivers, we will be installing them for disks and for network cards. Therefore, even if after step 4 you see no actual change in the screen, that is fine. Please continue to step 5.
 
 1. **On the Windows VM:** At the step where you need to choose a disk on which to install Windows, click on the _Load driver_ button (under the big white empty area). A dialogue pops up.
 1. **On the Windows VM:** On the pop-up dialogue, click on the _Browse..._ button. A _Browse for folder_ tree will pop-up now.
