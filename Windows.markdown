@@ -229,6 +229,10 @@ Thus, <b>make sure that: sockets &#215; cores &#215; threads = _cpu_ </b>
 
 Having to connect to the VM via the VNC console on the web UI is somewhat tedious and rather limited, so you probably want to access your VM via Remote Desktop. Here is how you can do that:
 
+>**Note:**
+>
+>For Windows 10 you may need to enable Remote Desktop first, by going to the Start Menu, then _Preferences_ > _Remote Desktop_ and flicking the swith to _Active_.
+
 1. **In your local network:** Make sure your firewall (maybe in your home router) has port 3389 open for your laptop.
 1. **On the Windows VM:** Right-click on the Windows _Start_ button, and then choose option _Run_. A dialogue will pop up.
 1. **On the Windows VM:** On the dialogue that just popped up, type the following in the _Open:_ field: `gpedit.msc`. A new window titled _Local Group Policy Editor_ will show.
