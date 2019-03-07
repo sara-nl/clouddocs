@@ -14,7 +14,7 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   UnScheduled   |   07-03-2019 12:00 - 13:00 | Unscheduled maintenance. Degradation performance of the hardware hosting UI and 2FA service components, requires reboot and consequent unavailability of these services. No impact for running VMs.
+|   UnScheduled   |   08-03-2019 12:00 - 13:00 | Unscheduled maintenance. Degradation performance of the hardware hosting UI and 2FA service components, requires reboot and consequent unavailability of these services. No impact for running VMs.
 |   Scheduled   |   12-03-2019 / 13-03-2019
 |   Scheduled   |   09-04-2019 / 10-04-2019
 |   Scheduled   |   14-05-2019 / 15-05-2019
