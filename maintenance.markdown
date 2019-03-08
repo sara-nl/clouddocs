@@ -6,7 +6,7 @@ layout: default
 
 ### Current
 
-|   Downtime |   08-03-2019 12:00 - 13:00 | Unscheduled maintenance. Performance degradation of the hardware hosting UI and 2FA service components. Requires a reboot and consequent unavailability of these services. No impact for running VMs.
+Up and running!
 
 ### Future maintenance windows
 
@@ -55,6 +55,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finished |   08-03-2019 12:00 - 13:00 | Unscheduled maintenance. Performance degradation of the hardware hosting UI and 2FA service components. Requires a reboot and consequent unavailability of these services. No impact for running VMs.
 |   Finished  |   12-02-2019 08:20-08:40 | UI/API downtime for maintenance. VMs not affected.         |
 |   Finished  |   11-12-2018 / 11-12-2018 | Scheduled downtime for security maintenance (L1TF)        |
 | Finished | 10-07-2018 / 11-07-2018 | Scheduled downtime for security maintenance (Spectre/Meltdown) |
