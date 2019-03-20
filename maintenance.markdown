@@ -14,6 +14,7 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
+|   Scheduled   |   02-04-2019 07:00-12:00  | Redundancy & system maintenances of SURFsara network components. Network glitches can happen. No impact for running VMs.
 |   Scheduled   |   09-04-2019 / 10-04-2019
 |   Scheduled   |   14-05-2019 / 15-05-2019
 |   Scheduled   |   11-06-2019 / 12-06-2019
