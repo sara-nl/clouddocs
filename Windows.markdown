@@ -193,24 +193,11 @@ In short, <b>make sure that: sockets &#215; cores &#215; threads = _cpu_ </b>
 
 From now on, you will use this `template` to run your VM.
 
-### Enable Remote Desktop
+<div class="alert alert-info" markdown="1">
+<i class="fa fa-info-circle fa-2x" aria-hidden="true">Note:</i><br>
 
-Having to connect to the VM via the VNC console on the web UI is somewhat tedious and rather limited, so you probably want to access your VM via Remote Desktop. Here is how you can do that:
-
->**Note:**
->
->For Windows 10 you may need to enable Remote Desktop first, by going to the Start Menu, then _Preferences_ > _Remote Desktop_ and flicking the swith to _Active_.
-
-1. **In your local network:** Make sure your firewall (maybe in your home router) has port 3389 open for your laptop.
-1. **On the Windows VM:** Right-click on the Windows _Start_ button, and then choose option _Run_. A dialogue will pop up.
-1. **On the Windows VM:** On the dialogue that just popped up, type the following in the _Open:_ field: `gpedit.msc`. A new window titled _Local Group Policy Editor_ will show.
-1. **On the Windows VM:** On the _Local Group Policy Editor_, navigate to _Computer Configuration_ > _Administrative Templates_ > _Windows Components_ > _Remote Desktop Services_ > _Remote Desktop Session Host_ > _Security_. 
-1. **On the Windows VM:** Change the following two settings (doubleclick on each of them):
-  * _Require use of specific security layer for remote (RDP) connections_ from _Not configured_ to _Enabled_, and then choose on the dropdown _Security Layer_, the value _RDP_.
-  * _Require user authentication for remote connections by using Network Level Authentications_ from _Not configured_ to _Disabled_.
-1. **On the Windows VM:** Restart your Windows.
-
-You should now be able to connect to your VM using a Remote Desktop client.
+Previously you would have to configure this by hand (see appendix further down). But running the contextualisation `.msi` seems to be configuring Remote Desktop as well. So you should be able to work with Remote Desktop.
+</div>
 
 ---
 
@@ -234,6 +221,27 @@ In the _Prepare your VM for production_ section, we wrote a way to configure you
 >**NOTE:**
 >
 >Some users report suffering from very unstable (to the point of unuseable) systems with Windows **7** running on more than 16 cores.
+
+## Appendix: Enabling Remote Desktop by hand
+
+Having to connect to the VM via the VNC console on the web UI is somewhat tedious and rather limited, so you probably want to access your VM via Remote Desktop. Running the contextualisation .msi should have enabled Remote Desktop for you already, but if you ever need to do it bay hand, here is how you can do that:
+
+>**Note:**
+>
+>For Windows 10 you may need to enable Remote Desktop first, by going to the Start Menu, then _Preferences_ > _Remote Desktop_ and flicking the swith to _Active_.
+
+1. **In your local network:** Make sure your firewall (maybe in your home router) has port 3389 open for your laptop.
+1. **On the Windows VM:** Right-click on the Windows _Start_ button, and then choose option _Run_. A dialogue will pop up.
+1. **On the Windows VM:** On the dialogue that just popped up, type the following in the _Open:_ field: `gpedit.msc`. A new window titled _Local Group Policy Editor_ will show.
+1. **On the Windows VM:** On the _Local Group Policy Editor_, navigate to _Computer Configuration_ > _Administrative Templates_ > _Windows Components_ > _Remote Desktop Services_ > _Remote Desktop Session Host_ > _Security_. 
+1. **On the Windows VM:** Change the following two settings (doubleclick on each of them):
+  * _Require use of specific security layer for remote (RDP) connections_ from _Not configured_ to _Enabled_, and then choose on the dropdown _Security Layer_, the value _RDP_.
+  * _Require user authentication for remote connections by using Network Level Authentications_ from _Not configured_ to _Disabled_.
+1. **On the Windows VM:** Restart your Windows.
+
+You should now be able to connect to your VM using a Remote Desktop client.
+
+
 
 ## Appendix: Some Windows installation screenshots
 
