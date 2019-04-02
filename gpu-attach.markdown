@@ -79,6 +79,25 @@ sudo systemctl start apt-daily.service && sleep 60 && sudo reboot
 
 ### GPU Specific
 
+<div class="alert alert-warning" markdown="1">
+<i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true">Warning</i><br>
+
+Linux kernel 4.4.0-143 seems to be backward-incompatible for compiling the NVidia drivers! Therefore, please do the following to stick to 4.4.0-142 (note that the operating system will reboot):
+
+```bash
+wget https://raw.githubusercontent.com/sara-nl/clouddocs/gh-pages/assets/ubuntu16gpukernelpin.sh
+chmod +x ubuntu16gpukernelpin.sh
+sudo ./ubuntu16gpukernelpin.sh
+```
+
+The previous lines make sure you have the proper kernel version installed. The following lines make sure your configuration stays as it should:
+
+```bash
+sudo apt-mark hold linux-image-4.4.0-142-generic linux-headers-4.4.0-142 linux-image-extra-4.4.0-142-generic
+```
+
+</div>
+
 #### Grid K2
 
 * Remove any old drivers, install prerequisites, then download and install the drivers:
