@@ -2,7 +2,7 @@
 
 # from: https://gist.github.com/ITJesse/380489a742c92261a1e02935dafec240
 
-KERNEL_VERSION="4.4.0-142-generic"
+KERNEL_VERSION="4.4.0-142"
 
 sudo apt-get update
 sudo apt install -y linux-image-${KERNEL_VERSION}-generic \
