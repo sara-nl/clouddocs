@@ -14,7 +14,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   02-04-2019 07:00-12:00  | System maintenances & redundancy tests of SURFsara network components. Network glitches can happen. No impact for running VMs.
 |   Scheduled   |   09-04-2019 / 10-04-2019
 |   Scheduled   |   14-05-2019 / 15-05-2019
 |   Scheduled   |   11-06-2019 / 12-06-2019
@@ -55,6 +54,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finished   |   02-04-2019 07:00-12:00  | System maintenances & redundancy tests of SURFsara network components. No impact for running VMs.
 |   Finished |   08-03-2019 12:00 - 13:00 | Unscheduled maintenance. Performance degradation of the hardware hosting UI and 2FA service components. Requires a reboot and consequent unavailability of these services. No impact for running VMs.
 |   Finished  |   12-02-2019 08:20-08:40 | UI/API downtime for maintenance. VMs not affected.         |
 |   Finished  |   11-12-2018 / 11-12-2018 | Scheduled downtime for security maintenance (L1TF)        |
