@@ -102,7 +102,6 @@ The HPC Cloud service is in [maintenance](maintenance).
 * [Apps Appliances Configuration](appliances-configuration)
 
 ### Troubleshooting
-* [Recover VM in 'FAILURE' state](troubleshooting/recover_failure)
 * [Recovery access](troubleshooting/vnc_recovery_access); how to get root access to your VM without a root password
 * [VM not reacting to Shutdown](troubleshooting/vm-not-reacting-to-shutdown)
 * [Connection problem with resumed ubuntu 14.04 virtual machine](troubleshooting/connection_problem_ubuntu1404)
