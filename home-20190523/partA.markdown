@@ -89,7 +89,7 @@ Let's run your first VM on the HPC Cloud!
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
 * Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_.
-* View the extended the `app` **Ubuntu-18.04.1-Desktop** by clicking anywhere on that line except the tick-box to the left of it.
+* View the extended the `app` **Ubuntu-18.04.2-Desktop** by clicking anywhere on that line except the tick-box to the left of it.
 * Carefully read the _DESCRIPTION_ attribute (located towards the bottom of the page). In particular, pay attention to the **default username** mentioned there, since that is the username you will need to use to log in to your VM.
 * Click on the blue _<i class="fa fa-share"></i> OpenNebula_ button above the list of apps.
 * A dialogue will pop up asking you for a few details. Edit as follows:
@@ -123,7 +123,7 @@ Edit the imported `template` following these steps:
 ![youselectednetwork](/images/youselectednetwork.png)
 * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: 
     * In the _Graphics_ section, the _VNC_ radio button must be selected.
-    * In the _Inputs_ section, make sure an USB tablet is listed. If not: select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that.
+    * In the _Inputs_ section, make sure a USB tablet is listed. If not: select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that.
 * If you made any changes to the `template`, click the green button _Update_ at the top, to save your changes.
 
 #### Starting the VM
