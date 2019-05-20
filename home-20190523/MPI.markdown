@@ -78,7 +78,7 @@ sudo apt-get install libhdf5-serial-dev libopenmpi-dev openmpi-bin openmpi-commo
 ```sh
 echo 'export CPATH=/usr/include/hdf5/serial/' >> ~/.bashrc 
 source ~/.bashrc
-wget https://raw.githubusercontent.com/sara-nl/clouddocs/gh-pages/UvA-20190523/code/policy.xml
+wget https://raw.githubusercontent.com/sara-nl/clouddocs/gh-pages/home-20190523/code/policy.xml
 sudo mv policy.xml /etc/ImageMagick-6/policy.xml
 ```
 
@@ -88,7 +88,7 @@ sudo mv policy.xml /etc/ImageMagick-6/policy.xml
 * Download the [code file](code/waveeq.tar.gz) to your VM and uncompress the file:
 
 ```sh
-wget https://github.com/sara-nl/clouddocs/raw/gh-pages/UvA-20190523/code/waveeq2.tar.gz 
+wget https://github.com/sara-nl/clouddocs/raw/gh-pages/home-20190523/code/waveeq2.tar.gz 
 tar -zxf waveeq2.tar.gz 
 ```
 

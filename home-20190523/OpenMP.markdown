@@ -59,7 +59,7 @@ sudo apt-get update && sudo apt-get install build-essential
 * Download the [code file](code/gridpi-mp.tar) to your VM and uncompress the file:
 
 ```sh
-wget http://doc.hpccloud.surfsara.nl/UvA-20180131/code/gridpi-mp.tar 
+wget http://doc.hpccloud.surfsara.nl/home-20190523/code/gridpi-mp.tar 
 tar -xvf gridpi-mp.tar 
 ```
 
