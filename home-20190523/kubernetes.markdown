@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-<div class="alert alert-warn" markdown="1">
+<div class="alert alert-danger" markdown="1">
 <i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i>
 This is a section we are preparing and is **NOT** part of the course yet. In fact, our preliminary tests show that the steps described here do **NOT** work.
 
