@@ -10,6 +10,14 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
+<div class="alert alert-warn" markdown="1">
+<i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i>
+This is a section we are preparing and is **NOT** part of the course yet. In fact, our preliminary tests show that the steps described here do **NOT** work.
+
+Project _Baklava_ from the [Netherlands e-Science Center](https://www.esciencecenter.nl/) may help. In GitHub: https://github.com/NLeSC/baklava
+</div>
+
+
 This is an exercise from the [Extras](extras) part of the Tutorial [Good practices for HPC and Cloud 2019-05-23](.).
 
 In this advanced part of our HPC Cloud tutorial we ask you to play around with [Kubernetes](https://kubernetes.io/).
