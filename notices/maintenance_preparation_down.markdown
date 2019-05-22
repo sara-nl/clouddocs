@@ -23,8 +23,7 @@ See below: [Instructions to prepare for the downtime](#instructions-to-prepare-f
 If your VM is not running the data on your disk images is just as safe as during normal operation.
 See our [backup policy](https://userinfo.surfsara.nl/systems/hpc-cloud/backup-policy).
 
-> **Any VMs`RUNNING` in the `instances` &rarr; `VMs` list, will be stopped by us and this may result in data loss or data corruption.**
-VMs XXXXXXX will end abruptly during the maintenance and will probably lose data. 
+> **Look at VMs in the `instances` &rarr; `VMs` list. VMs in a state other than `UNDEPLOYED` will end abruptly during the maintenance and will probably lose data.**
 
 
 ### Links
