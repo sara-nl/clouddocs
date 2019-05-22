@@ -13,7 +13,8 @@ VMs cannot run during that time.
 
 Make sure that none of your VMs is running.
 
-> **Your list of `instances` &rarr; `VMs` must show no `RUNNING` VMs.**
+> **Your list of `instances` &rarr; `VMs` can only contain VMs in `UNDEPLOYED`state.**
+
 
 See below: [Instructions to prepare for the downtime](#instructions-to-prepare-for-the-downtime).
 
@@ -23,6 +24,8 @@ If your VM is not running the data on your disk images is just as safe as during
 See our [backup policy](https://userinfo.surfsara.nl/systems/hpc-cloud/backup-policy).
 
 > **Any VMs`RUNNING` in the `instances` &rarr; `VMs` list, will be stopped by us and this may result in data loss or data corruption.**
+VMs XXXXXXX will end abruptly during the maintenance and will probably lose data. 
+
 
 ### Links
 
@@ -36,8 +39,8 @@ If you have questions or need assistance, please contact our helpdesk: [helpdesk
 ## Instructions to prepare for the downtime
 
 You need to prepare for the downtime by stopping your running VMs in time.
-This can be done by the UI menu items `Terminate`, `Undeploy`, or `Power Off`.
-VMs that are left `RUNNING` may be lost or damaged during the maintenance.
+This can be done by the UI menu items `Terminate` or `Undeploy`.
+VMs in a state other than `UNDEPLOYED` may be lost or damaged during the maintenance.
 
 For more information on machine states and the effect on non-persistent disks, see [Virtual Machine states](../vm-states).  
 
