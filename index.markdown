@@ -21,7 +21,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
  </div>
  <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
  <br/>
- <span style="color:red;">TODAY!</span>  <br/>[UvA HPC course](UvA-20190130)
+ <span style="color:red;">TODAY!</span>  <br/>[Course: Good practices for High Performance Computing and Cloud](home-20190523)
  <br/>
 </div>
 
@@ -109,6 +109,7 @@ The HPC Cloud service is in [maintenance](maintenance).
 
 ## <a name="tutorials"></a> Tutorials
 * [HPC Cloud tutorials](tutorials/)
+* [HPC Cloud workshop at _Good practices for High Performance Computing and Cloud_, 2019-05-23](home-20190523)
 * [UvA HPC course, HPC Cloud session, 2019-01-30](UvA-20190130/index)
 * [VU HPC course, 2018-11-16](VU-20181116)
 * [SURF Research Bootcamp, HU, 2018-11-02](bootcamp-20181102/index)
