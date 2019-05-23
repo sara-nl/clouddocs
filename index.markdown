@@ -10,7 +10,7 @@ layout: default
 This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**. You are welcome to contribute to **help us improve** the documentation (see bottom of this page).
 </div>
 
-<div style="display:none;" class="alert alert-success" markdown="1">
+<div style="display:block;" class="alert alert-success" markdown="1">
  <div style="float:right;max-width:100px;margin-top:-10px;" markdown="1">
   <div style="max-width:40px;margin-left:30px;" markdown="1">
 ![UvA logo](/images/UvA-logo.png)
