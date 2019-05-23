@@ -14,7 +14,7 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   04-06-2019 / 05-06-2019 |  Scheduled downtime for security maintenance (MDS vulnerabilities). Service unavailable from 4 June 00:00 to 5 June 17:00. All VMs 
+|   Scheduled   |   04-06-2019 / 05-06-2019 |  Scheduled downtime for security maintenance (MDS vulnerabilities). Service unavailable from 4 June 00:00 to 5 June 17:00. All VMs required to be "terminated" / "undeployed".
 |   Scheduled   |   09-07-2019 / 10-07-2019
 |   Scheduled   |   13-08-2019 / 14-08-2019
 |   Scheduled   |   10-09-2019 / 11-09-2019
