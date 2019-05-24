@@ -105,8 +105,8 @@ sudo apt-mark hold linux-image-4.4.0-142-generic linux-headers-4.4.0-142 linux-i
 ```bash
 sudo apt-get purge nvidia-* libcuda-*
 sudo apt-get update && sudo apt-get install -y gcc make g++ libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
-wget http://us.download.nvidia.com/XFree86/Linux-x86_64/367.57/NVIDIA-Linux-x86_64-367.57.run
-sudo sh NVIDIA-Linux-x86_64-367.57.run -s
+wget http://us.download.nvidia.com/XFree86/Linux-x86_64/367.130/NVIDIA-Linux-x86_64-367.130.run
+sudo sh NVIDIA-Linux-x86_64-367.130.run -s
 ```
 
 #### Tesla P100
@@ -127,7 +127,7 @@ sudo apt-get update && sudo apt-get install -y cuda-drivers
 ```bash
 Wed Jul 12 16:36:24 2017
 +-----------------------------------------------------------------------------+
-| NVIDIA-SMI 367.57                 Driver Version: 367.57                    |
+| NVIDIA-SMI 367.130                Driver Version: 367.130                   |
 |-------------------------------+----------------------+----------------------+
 | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
 | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
