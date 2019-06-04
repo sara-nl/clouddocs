@@ -25,8 +25,8 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
  <br/>
 </div>
 
-<div style="display:none;" class="alert alert-success" markdown="1">
-<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"</i>
+<div class="alert alert-success" markdown="1">
+<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
 The HPC Cloud service is in [maintenance](maintenance).
 </div>
 
