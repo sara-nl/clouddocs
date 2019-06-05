@@ -4,6 +4,7 @@ layout: default
 
 # Notices to HPC Cloud users
 
+* [Microarchitectural Data Sampling (MDS)](mds) (June 2019)
 * [L1 Terminal Fault (L1TF), a.k.a. Foreshadow](L1TF) (Augustus 2018)
 * [Preparations for the maintenance 10 and 11 July 2018](maintenance_preparation_down)
 * [Spectre/Meltdown](spectre-meltdown) (February 2018)
