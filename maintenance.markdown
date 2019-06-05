@@ -6,7 +6,7 @@ layout: default
 
 ### Current
 
-|   Ongoing   |   04-06-2019 / 05-06-2019 |  Scheduled security maintenance downtime (MDS vulnerabilities). Service unavailable from 4 June 00:00 to 5 June 17:00. All VMs required to be "terminated" / "undeployed".
+Up & running.
 
 ### Future maintenance windows
 
@@ -51,6 +51,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finish   |   04-06-2019 / 05-06-2019 |  Scheduled security maintenance downtime (MDS vulnerabilities) |
 |   Finished   |   02-04-2019 07:00-12:00  | System maintenances & redundancy tests of SURFsara network components. No impact for running VMs.
 |   Finished |   08-03-2019 12:00 - 13:00 | Unscheduled maintenance. Performance degradation of the hardware hosting UI and 2FA service components. Requires a reboot and consequent unavailability of these services. No impact for running VMs.
 |   Finished  |   12-02-2019 08:20-08:40 | UI/API downtime for maintenance. VMs not affected.         |
