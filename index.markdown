@@ -86,6 +86,7 @@ The HPC Cloud service is in [maintenance](maintenance).
 >
 > You are strongly advised to set up your **own firewall** inside your virtual machines. OpenNebula offers now the so-called `Security Groups` instead of the old `Network filters`. However, they do not work in the current implementation, so we are pursuing other ways to provide a form of external firewall.
 
+* [Microarchitectural Data Sampling (MDS)](notices/mds)
 * [L1 Terminal Fault (L1TF), a.k.a. Foreshadow](notices/L1TF)
 * [Installing `fail2ban`](fail2ban)
 
