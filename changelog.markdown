@@ -8,6 +8,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2019-06-5
+
+### Security
+* [Mitigation of MDS](./notices/mds)
+
+### Changed
+* HyperThreading on all compute hosts disabled
+* CPU overcommiting enabled on all CPU compute hosts allocated to the coomon pool of resources
+
 ## 2018-12-11
 
 ### Security
