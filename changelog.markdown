@@ -17,6 +17,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 * HyperThreading on all compute hosts disabled
 * CPU overcommiting enabled on all CPU compute hosts allocated to the coomon pool of resources
 
+### Updated
+* All images in the Marketplace to mitigate [MDS](./notices/mds)
+
 ## 2018-12-11
 
 ### Security
