@@ -14,7 +14,7 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   18-07-2019 08:00 - 12:00 | To improve the service backend resilience, the UI/API service components will not be available. VMs are not affected.
+|   Scheduled   |   18-07-2019 08:00 - 12:00 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
 |   Scheduled   |   09-07-2019 / 10-07-2019
 |   Scheduled   |   13-08-2019 / 14-08-2019
 |   Scheduled   |   10-09-2019 / 11-09-2019
