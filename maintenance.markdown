@@ -6,7 +6,7 @@ layout: default
 
 ### Current
 
-|   Onhoing   |   18-06-2019 17:00 - 21:00 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
+|   Ongoing   |   18-06-2019 17:00 - 21:00 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
 
 ### Future maintenance windows
 
