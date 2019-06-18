@@ -6,7 +6,7 @@ layout: default
 
 ### Current
 
-|   Ongoing   |   18-06-2019 17:00 - 21:00 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
+Up & Running.
 
 ### Future maintenance windows
 
@@ -51,6 +51,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finished  |   18-06-2019 17:00 - 18:13 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
 |   Finished   |   04-06-2019 / 05-06-2019 |  Scheduled security maintenance downtime (MDS vulnerabilities) |
 |   Finished   |   02-04-2019 07:00-12:00  | System maintenances & redundancy tests of SURFsara network components. No impact for running VMs.
 |   Finished |   08-03-2019 12:00 - 13:00 | Unscheduled maintenance. Performance degradation of the hardware hosting UI and 2FA service components. Requires a reboot and consequent unavailability of these services. No impact for running VMs.
