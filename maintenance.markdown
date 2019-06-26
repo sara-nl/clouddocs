@@ -15,7 +15,7 @@ Note that not every maintenance window will actually include that we will do mai
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
 |   Scheduled   |   27-06-2019 | Security maintenance (kernel vulnerability TCP Sack Panic). User's impact: none.
-|   Scheduled   |   09-07-2019 / 10-07-2019 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
+|   Scheduled   |   09-07-2019 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
 |   Scheduled   |   13-08-2019 / 14-08-2019
 |   Scheduled   |   10-09-2019 / 11-09-2019 | Upgrade OpenNebula to 5.8
 |   Scheduled   |   08-10-2019 / 09-10-2019
