@@ -14,7 +14,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   27-06-2019 | Security maintenance (kernel vulnerability TCP Sack Panic). User's impact: none.
 |   Scheduled   |   09-07-2019 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
 |   Scheduled   |   13-08-2019 / 14-08-2019
 |   Scheduled   |   10-09-2019 / 11-09-2019 | Upgrade OpenNebula to 5.8
@@ -52,6 +51,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finished   |   27-06-2019 20:02 - 20:11 | Security maintenance (kernel vulnerability TCP Sack Panic). User's impact: none.
 |   Finished  |   18-06-2019 17:00 - 18:13 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
 |   Finished   |   04-06-2019 / 05-06-2019 |  Scheduled security maintenance downtime (MDS vulnerabilities) |
 |   Finished   |   02-04-2019 07:00-12:00  | System maintenances & redundancy tests of SURFsara network components. No impact for running VMs.
