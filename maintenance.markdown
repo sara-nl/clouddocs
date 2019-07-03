@@ -16,7 +16,7 @@ Note that not every maintenance window will actually include that we will do mai
 |:------------|:----------------------------|:----
 |   Scheduled   |   09-07-2019 13:00 - 17:00 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
 |   Scheduled   |   13-08-2019 / 14-08-2019
-|   Scheduled   |   10-09-2019 / 11-09-2019 | Upgrade OpenNebula to 5.8
+|   Scheduled   |   10-09-2019 / 11-09-2019 | Upgrade OpenNebula to 5.8 & substitute network components . Impact: all VMs will need to be undeployed/terminated.
 |   Scheduled   |   08-10-2019 / 09-10-2019
 |   Scheduled   |   12-11-2019 / 13-11-2019
 |   Scheduled   |   10-12-2019 / 11-12-2019
