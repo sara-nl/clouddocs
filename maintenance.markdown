@@ -14,7 +14,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   09-07-2019 13:00 - 17:00 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
 |   Scheduled   |   13-08-2019 / 14-08-2019
 |   Scheduled   |   10-09-2019 / 11-09-2019 | Upgrade OpenNebula to 5.8 & update network infrastructure components. Impact: all VMs will need to be undeployed/terminated.
 |   Scheduled   |   08-10-2019 / 09-10-2019
@@ -51,6 +50,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finished   |   09-07-2019 13:00 - 15:24 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
 |   Finished   |   27-06-2019 20:03 - 20:10 | Security maintenance (kernel vulnerability TCP Sack Panic). User's impact: none.
 |   Finished  |   18-06-2019 17:00 - 18:13 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
 |   Finished   |   04-06-2019 / 05-06-2019 |  Scheduled security maintenance downtime (MDS vulnerabilities) |
