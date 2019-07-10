@@ -49,7 +49,7 @@ The compute nodes are the physical machines where you can run Virtual Machines (
 
 ## Storage resources
 
-* 675 TB Ceph distributed object storage with SSD caching
+* 510 TB Ceph distributed object storage with SSD caching
   * used in x3 redundancy
   * 10 Gbit network connection per storage node
   * Ceph storage is accessible as a block device within a VM
