@@ -54,4 +54,4 @@ If you do, this is a way to try and make the VM work while keeping the VNC conso
 3. Add a VNC port to the VM (as above, but select "VNC" again instead of "None", and check that you have a tablet as input)
 4. "Release" the hold from step 1
 
-This will assign a different VMC port to the VM and, with some luck, this new port does not have the problem.
+This will assign a different VNC port to the VM and, with some luck, this new port does not have the problem.
