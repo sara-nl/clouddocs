@@ -14,7 +14,7 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   31-07-2019 07:00 - 09:00 | Update network infrastructure components. Impact: none.
+|   Scheduled   |   31-07-2019 07:00 - 09:00 | Update network infrastructure components. Impact: short interruptions (+/- 1 min) for traffic can be expected; 'lightpath' link unavailable.
 |   Scheduled   |   13-08-2019 / 14-08-2019
 |   Scheduled   |   10-09-2019 / 11-09-2019 | Upgrade OpenNebula to 5.8 & update network infrastructure components. Impact: all VMs will need to be undeployed/terminated.
 |   Scheduled   |   08-10-2019 / 09-10-2019
