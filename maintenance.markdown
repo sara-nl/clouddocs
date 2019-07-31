@@ -4,16 +4,10 @@ layout: default
 
 ## Maintenance windows HPC Cloud
 
-> Due to unexpected problems, we are extending the maintenance till further notice. Impact:
-> - the User Interface is unreachable
-> - some computing hosts are not responsive, and hosted VMs are unreachable
-
-
 ### Current
 
-|   Status    |   Date (start / end)       | comment
-|:------------|:----------------------------|:----
-|   Ongoing   |   31-07-2019 07:00 - 12:00 | Update network infrastructure components. Impact: short interruptions (+/- 1 min) for traffic can be expected; 'lightpath' link unavailable.
+Up & Running.
+
 
 ### Future maintenance windows
 
@@ -57,6 +51,8 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finished   |   31-07-2019 09:00 - 16:20 | Unscheduled maintenance. Impact: UI/API unreachable; major network outage affecting many VMs; Ceph backend unreachable.
+|   Finished   |   31-07-2019 07:00 - 09:00 | Update network infrastructure components. Impact: short interruptions (+/- 1 min) for traffic can be expected; 'lightpath' link unavailable.
 |   Finished   |   09-07-2019 13:00 - 15:24 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
 |   Finished   |   27-06-2019 20:03 - 20:10 | Security maintenance (kernel vulnerability TCP Sack Panic). User's impact: none.
 |   Finished  |   18-06-2019 17:00 - 18:13 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
