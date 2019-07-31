@@ -4,6 +4,13 @@ layout: default
 
 ## Maintenance windows HPC Cloud
 
+>>>
+Due to unexpected problems, we are extending the maintenance till further notice. Impact:
+- the User Interface is unreachable
+- some computing hosts are not responsive, and hosted VMs are unreachable
+>>>
+
+
 ### Current
 
 |   Ongoing   |   31-07-2019 07:00 - 12:00 | Update network infrastructure components. Impact: short interruptions (+/- 1 min) for traffic can be expected; 'lightpath' link unavailable.
