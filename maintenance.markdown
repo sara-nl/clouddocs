@@ -11,6 +11,8 @@ layout: default
 
 ### Current
 
+|   Status    |   Date (start / end)       | comment
+|:------------|:----------------------------|:----
 |   Ongoing   |   31-07-2019 07:00 - 12:00 | Update network infrastructure components. Impact: short interruptions (+/- 1 min) for traffic can be expected; 'lightpath' link unavailable.
 
 ### Future maintenance windows
