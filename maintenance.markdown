@@ -4,11 +4,9 @@ layout: default
 
 ## Maintenance windows HPC Cloud
 
->>>
-Due to unexpected problems, we are extending the maintenance till further notice. Impact:
-- the User Interface is unreachable
-- some computing hosts are not responsive, and hosted VMs are unreachable
->>>
+> Due to unexpected problems, we are extending the maintenance till further notice. Impact:
+- > the User Interface is unreachable
+- > some computing hosts are not responsive, and hosted VMs are unreachable
 
 
 ### Current
