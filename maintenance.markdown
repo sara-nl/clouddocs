@@ -15,8 +15,7 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   13-08-2019 / 14-08-2019
-|   Scheduled   |   10-09-2019 / 11-09-2019 | Upgrade OpenNebula to 5.8 & update network infrastructure components. Impact: all VMs will need to be undeployed/terminated.
+|   Scheduled   |   10-09-2019 / 11-09-2019
 |   Scheduled   |   08-10-2019 / 09-10-2019
 |   Scheduled   |   12-11-2019 / 13-11-2019
 |   Scheduled   |   10-12-2019 / 11-12-2019
