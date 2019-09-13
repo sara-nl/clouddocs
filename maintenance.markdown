@@ -15,7 +15,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   10-09-2019 / 11-09-2019
 |   Scheduled   |   08-10-2019 / 09-10-2019
 |   Scheduled   |   12-11-2019 / 13-11-2019
 |   Scheduled   |   10-12-2019 / 11-12-2019
@@ -50,6 +49,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Cancelled  |   10-09-2019 / 11-09-2019 | Upgrade ONe to 5.8 and replace network components. Impact: service unavailable; all VMs need to go down.
 |   Finished   |   31-07-2019 09:00 - 16:20 | Unscheduled maintenance. Impact: UI/API unreachable; major network outage affecting many VMs; Ceph backend unreachable.
 |   Finished   |   31-07-2019 07:00 - 09:00 | Update network infrastructure components. Impact: short interruptions (+/- 1 min) for traffic can be expected; 'lightpath' link unavailable.
 |   Finished   |   09-07-2019 13:00 - 15:24 | Maintenance scheduled to improve service backend resilience. Impact: UI/API will not be available. VMs are not affected.
