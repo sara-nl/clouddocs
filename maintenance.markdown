@@ -4,12 +4,12 @@ layout: default
 
 ## Maintenance windows HPC Cloud
 
-### Current
+### <a name="current"></a> Current
 
 Up & Running.
 
 
-### Future maintenance windows
+### <a name="future"></a> Future maintenance windows
 
 Note that not every maintenance window will actually include that we will do maintenance. Please see the policy below for more information.
 
@@ -20,7 +20,7 @@ Note that not every maintenance window will actually include that we will do mai
 |   Scheduled   |   10-12-2019 / 11-12-2019
 {: class="table"}
 
-### Policy
+### <a name="policy"></a> Policy
 
 Maintenance and changes can only be done during on of to the maintenance windows. This means that (part of) the service can be unavailable, for example the web UI.
 
@@ -43,7 +43,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
  * In case this results in an average to long interruption (> 15 minutes), users will be informed afterwards
  * In case VMs of users need to be shutdown or rebooted, affected users will be informed as soon as possible, preferrably before shutdown/reboot.
 
-### Past
+### <a name="past"></a> Past
 
 (most recent first)
 
