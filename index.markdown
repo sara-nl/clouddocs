@@ -114,14 +114,15 @@ The HPC Cloud service is in [maintenance](maintenance).
 * [HPC Cloud tutorials](tutorials/)
 * [HPC Cloud workshop at _Good practices for High Performance Computing and Cloud_, 2019-05-23](home-20190523)
 * [UvA HPC course, HPC Cloud session, 2019-01-30](UvA-20190130/index)
+
+
+
+<!---
 * [VU HPC course, 2018-11-16](VU-20181116)
 * [SURF Research Bootcamp, HU, 2018-11-02](bootcamp-20181102/index)
 * [UvA HPC course, HPC Cloud session, 2018-06-13](UvA-20180613/index)
 * [SURF Research Bootcamp, HvA/UvA, 2018-04-10](bootcamp-20180410/index)
 * [IHE Delft symposium, 2018-02-21](uihe-20180221/index)
-
-
-<!---
 * [UvA HPC course, HPC Cloud session, 2018-01-31](UvA-20180131/index)
 * [VU HPC course, HPC Cloud session, 2017-11-13](VU-20171113/index)
 * [UvA HPC course, HPC Cloud session, 2017-07-03](UvA-20170703/index)
