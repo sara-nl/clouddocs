@@ -93,6 +93,11 @@ On the HPC Cloud, VMs use the [contextualization](contextualization) mechanism t
   * on the _Image location:_ group, choose radio button _Path in OpenNebula server_; then, underneath, type the following URL in the _Path_ field: https://github.com/OpenNebula/addon-context-windows/releases/download/v5.8.0/one-context-5.8.0.iso
 1. **On the UI:** Click the green button _Create_ on the form, to submit it. A new `image` will show on the _Images_ list, and it will keep in status _LOCKED_ while data is being downloaded from the URL you wrote. When it is created it will come to status _READY_.
 
+>**Extra note:**
+>
+>If you experience a problem in the last step (creating the image), proceed as follows:
+> * [Download the contextualization file](https://github.com/OpenNebula/addon-context-windows/releases/download/v5.8.0/one-context-5.8.0.iso) to your computer
+> * Upload the contextualization file (on the _Image location:_ group, choose radio button _Upload_ instead of _Path in OpenNebula server_)
 
 ### Create a template
 
