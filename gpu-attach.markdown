@@ -101,7 +101,6 @@ sudo apt-get update && sudo apt-get install -y cuda-drivers
 
 * Check with `nvidia-smi` that the card is detected. It should show something like this:
 
->>>
 ```bash
 $ nvidia-smi
 Fri Nov  8 16:32:22 2019
@@ -122,7 +121,6 @@ Fri Nov  8 16:32:22 2019
 |  No running processes found                                                 |
 +-----------------------------------------------------------------------------+
 ```
->>>
 
 * Now, reboot the OS and run `nvidia-smi` again and check for a similar output:
 
@@ -133,11 +131,9 @@ nvidia-smi
 
 ## Example for installing NVIDIA drivers on Ubuntu 16.04
 
->>>
-Note:
-
-We now recommend that you use Ubuntu 18.04
->>>
+>**Note:**
+>
+>We now recommend that you use Ubuntu 18.04
 
 
 * Launch your VM and force an installation of any security updates, reboot the VM afterwards:
@@ -307,16 +303,14 @@ Result = PASS
 
 ### Running a Hello World
 
->>>
-**Note:**
-For Ubuntu 18.04 you must install an earlier version of `g` and `g++`, so:
-
+>**Note:**
+>For Ubuntu 18.04 you must install an earlier version of `g` and `g++`, so:
+>
 ```bash
 sudo apt install gcc-5 g++-5
 sudo ln -s /usr/bin/gcc-5 /usr/local/cuda/bin/gcc
 sudo ln -s /usr/bin/g++-5 /usr/local/cuda/bin/g++
 ```
->>>
 
 * Download, uncompress and compile Nvidia's Hello World example:
 
