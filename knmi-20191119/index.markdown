@@ -42,7 +42,7 @@ Participants are expected to bring a laptop with Internet connection and a brows
 
 For this workshop you will need:
 
-* A computer with Internet access (SURFsara provides WiFi via eduroam)
+* A computer with Internet access
 * A browser (Chrome or Firefox will do nicely)
 * An SSH client
   * _Linux and Mac users:_ don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
