@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# An introduction to SURF HPC Cloud 2019-11-19 <br/> Part C
+# An introduction to SURF HPC Cloud <br/> Part C
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![KNMI logo](/images/knmi_logo.png)
@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is part C of the tutorial [An introduction to SURF HPC Cloud 2019-11-19](.) and covers the following topics:
+This is part C of the tutorial [An introduction to SURF HPC Cloud](.) and covers the following topics:
 
 1. [Basic security](#security)
 2. [Detaching from work](#detaching-from-work)
@@ -75,4 +75,4 @@ We have a documentation page in our general documentation site describing how to
 > Follow the steps and exercises from the [page on our documentation about using Remote Desktop](../xrdp).
 
 ### Note
-You have completed part C of the Tutorial [An introduction to SURF HPC Cloud 2019-11-19](.).
+You have completed part C of the Tutorial [An introduction to SURF HPC Cloud](.).

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# An introduction to SURF HPC Cloud 2019-11-19 <br/> Part A
+# An introduction to SURF HPC Cloud <br/> Part A
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![KNMI logo](/images/knmi_logo.png)
@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is part A of the tutorial [An introduction to SURF HPC Cloud 2019-11-19](.) and covers the following topics:
+This is part A of the tutorial [An introduction to SURF HPC Cloud](.) and covers the following topics:
 
 1. [Accessing the user interface](#accessing-the-user-interface)
 2. [Setting your public SSH key](#setting-your-public-ssh-key)
@@ -89,7 +89,7 @@ Let's run your first VM on the HPC Cloud!
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
 * Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_.
-* View the extended the `app` **Ubuntu-18.04.2-Desktop** by clicking anywhere on that line except the tick-box to the left of it.
+* View the extended the `app` **Ubuntu-18.04-Desktop** by clicking anywhere on that line except the tick-box to the left of it.
 * Carefully read the _DESCRIPTION_ attribute (located towards the bottom of the page). In particular, pay attention to the **default username** mentioned there, since that is the username you will need to use to log in to your VM.
 * Click on the blue _<i class="fa fa-share"></i> OpenNebula_ button above the list of apps.
 * A dialogue will pop up asking you for a few details. Edit as follows:
@@ -239,4 +239,4 @@ This section is meant to propose extra questions we thought would be nice for yo
 > Your running VMs get exclusive access to their resources whether they are doing something useful or are idle. Because the HPC Cloud is offered on a fair-share basis and other users may actually be needing resources that you may be holding, before you move to the next part of this workshop, please **remember to shut all your VMs down**.
 
 ### Next: part B
-You completed part A of the Tutorial [An introduction to SURF HPC Cloud 2019-11-19](.). Please continue with Tutorial [Part B](partB).
+You completed part A of the Tutorial [An introduction to SURF HPC Cloud](.). Please continue with Tutorial [Part B](partB).

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# An introduction to SURF HPC Cloud 2019-11-19 <br/> Part B
+# An introduction to SURF HPC Cloud <br/> Part B
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![KNMI logo](/images/knmi_logo.png)
@@ -10,7 +10,7 @@ layout: default
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
 
-This is part B of the tutorial [An introduction to SURF HPC Cloud 2019-11-19](.) and covers the following topics:
+This is part B of the tutorial [An introduction to SURF HPC Cloud](.) and covers the following topics:
 
 1. [Persistence](#persistence)
 2. [Scaling up to a multicore VM](#scaling-up-to-a-multicore-vm)
@@ -212,4 +212,4 @@ This section is meant to propose extra questions we thought would be nice for yo
 
 
 ### Next: part C
-You completed part A of the Tutorial [An introduction to SURF HPC Cloud 2019-11-19](.). Please continue with Tutorial [Part C](partC).
+You completed part A of the Tutorial [An introduction to SURF HPC Cloud](.). Please continue with Tutorial [Part C](partC).

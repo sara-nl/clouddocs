@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# An introduction to SURF HPC Cloud 2019-11-19
+# An introduction to SURF HPC Cloud
 
 <div style="float:right;max-width:205px;" markdown="1">
 ![KNMI logo](/images/knmi_logo.png)
