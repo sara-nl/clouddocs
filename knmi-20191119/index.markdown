@@ -28,8 +28,8 @@ This workshop aims to introduce the participants to the HPC Cloud, by providing 
 >19th November 2019, KNMI, Utrechtseweg 297, 3731GA, De Bilt
 >
 > * 13:00 Welcome
-> * 13:10 Presentation: An introduction to SURF HPC Cloud (Nuno Ferreira)
-> * 13:45 Demonstration ()
+> * 13:10 Presentation: An introduction to SURF HPC Cloud
+> * 13:45 Demonstration
 > * 14:00 Hands-on: Part A
 > * 15:00 Break
 > * 15:15 Hands-on: Parts B & C  
@@ -68,7 +68,7 @@ source $HOME/.bashrc
 The hands-on tutorial consists of three parts:
 
   * Parts *A & B* provide exercises for you to grasp the `basic` concepts on how to operate in the HPC Cloud environment.
-  * Partc *C* helps rounding off a few recommendations.
+  * Part *C* helps rounding off a few recommendations.
 
   * [Part A](partA)
   * [Part B](partB)
