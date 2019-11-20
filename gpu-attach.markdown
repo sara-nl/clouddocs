@@ -44,6 +44,7 @@ When you already have an image that you want to use on the GPU nodes, you will h
 ## Adding a GPU device to your VM
 
 GPU devices are attached to VM using 'pci passthrough'. This means that your VM will have direct access to the hardware, instead of through a virtualisation layer. This should give an optimal performance. You have the option of attaching a Nvidia GRID K2 (1536 CUDA cores, 4GB) or Tesla P100 GPU (3584 CUDA cores, 12GB).
+Please be aware that the Nvidia GRID K2 GPUs are older and the existing drivers might not support your application.
 
 > **NOTE:**
 >
