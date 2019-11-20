@@ -112,6 +112,7 @@ The HPC Cloud service is in [maintenance](maintenance).
 
 ## <a name="tutorials"></a> Tutorials
 * [HPC Cloud tutorials](tutorials/)
+* [An introduction to SURF HPC Cloud, 2019-11-19](knmi-20191119)
 * [HPC Cloud workshop at _Good practices for High Performance Computing and Cloud_, 2019-05-23](home-20190523)
 * [UvA HPC course, HPC Cloud session, 2019-01-30](UvA-20190130/index)
 
