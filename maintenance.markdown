@@ -15,7 +15,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   10-12-2019 / 11-12-2019
 |   Scheduled   |   14-01-2020 / 15-01-2020 | Security maintenance and replacement of network components. Impact: service unavailable, all VMs need to go down.
 |   Scheduled   |   11-02-2020 / 12-02-2020
 |   Scheduled   |   10-03-2020 / 11-03-2020
