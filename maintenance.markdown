@@ -13,7 +13,7 @@ Up & Running.
 
 Note that not every maintenance window will actually include that we will do maintenance. Please see the policy below for more information.
 
-|   Status    |   Date (start / end)       | comment
+|   Status    |   Date (start / end)       | Comment
 |:------------|:----------------------------|:----
 |   Scheduled   |   14-01-2020 / 15-01-2020 | Security maintenance and replacement of network components. Impact: service unavailable, all VMs need to go down.
 |   Scheduled   |   11-02-2020 / 12-02-2020
