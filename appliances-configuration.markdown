@@ -3,7 +3,7 @@ layout: default
 ---
 # Apps appliances configuration
 
-SURFsara provides pre-made _appliances_ to their HPC Cloud users. These appliances are available via the _Apps_ option in the _Storage_ section in the HPC Cloud user interface and are meant to help users instantiating VM's quickly. Currently we provide some basic _Apps_ for CentOS and Ubuntu.
+SURFsara provides pre-made _appliances_ to their HPC Cloud users. These appliances are available via the _Apps_ option in the _Storage_ section in the HPC Cloud user interface and are meant to help users instantiating VM's quickly. Currently we provide some basic _Apps_ for CentOS, Ubuntu and Debian.
 
 The _Apps_ are endorsed by the SURFsara HPC Cloud team and are kept up to date. In order to provide our customers with a secure working environment, a set of configurations are applied to the images at boot time via [`one-context`](https://github.com/OpenNebula/addon-context-linux) contextualization. Here you can find some of these configuration details.
 
