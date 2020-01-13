@@ -6,7 +6,9 @@ layout: default
 
 ### <a name="current"></a> Current
 
-Up & Running.
+|   Status    |   Date (start / end)       | Comment
+|:------------|:----------------------------|:----
+|   Scheduled   |   14-01-2020 00:00 / 15-01-2020 17:00 | Security maintenance and replacement of network components. Impact: service unavailable, all VMs need to go down.
 
 
 ### <a name="future"></a> Future maintenance windows
@@ -15,7 +17,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | Comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   14-01-2020 / 15-01-2020 | Security maintenance and replacement of network components. Impact: service unavailable, all VMs need to go down.
 |   Scheduled   |   11-02-2020 / 12-02-2020
 |   Scheduled   |   10-03-2020 / 11-03-2020
 |   Scheduled   |   14-04-2020 / 15-04-2020
