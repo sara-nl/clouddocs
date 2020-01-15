@@ -6,10 +6,7 @@ layout: default
 
 ### <a name="current"></a> Current
 
-|   Status    |   Date (start / end)       | Comment
-|:------------|:----------------------------|:----
-|   Ongoing   |   14-01-2020 00:00 / 15-01-2020 17:00 | Security maintenance and replacement of network components. Impact: service unavailable, all VMs need to go down.
-
+Up & running.
 
 ### <a name="future"></a> Future maintenance windows
 
@@ -60,6 +57,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finished   |   14-01-2020 00:00 / 15-01-2020 17:00 | Security maintenance and replacement of network components. Impact: service unavailable, all VMs need to go down.
 |   Finished   |   12-11-2019 08:00 - 09:00 | Security maintenance. Impact: UI/API downtime; VMs are not affected.
 |   Cancelled  |   10-09-2019 / 11-09-2019 | Upgrade ONe to 5.8 and replace network components. Impact: service unavailable; all VMs need to go down.
 |   Finished   |   31-07-2019 09:00 - 16:20 | Unscheduled maintenance. Impact: UI/API unreachable; major network outage affecting many VMs; Ceph backend unreachable.
