@@ -26,7 +26,7 @@ SURFsara has been operating the HPC Cloud as an Infrastructure as a Service (`Ia
 
 >**Agenda:**
 >
->23th January 2020, UvA, Nieuwe Achtergracht 166 REC A2.09
+>23rd January 2020, UvA, Nieuwe Achtergracht 166 REC A2.09 (Roeters Eiland, as opposed to the usual Science Park!)
 >
 > * 09:00 Welcome
 > * 09:05 Presentation and Demo: HPC Cloud at SURFsara (Markus van Dijk)
