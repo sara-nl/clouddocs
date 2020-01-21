@@ -5,7 +5,7 @@ layout: default
 # UvA HPC course 2020-01-23
 
 <div style="float:right;max-width:205px;" markdown="1">
-![UvA logo](https://www.uva.nl/binaries/_ht_1561017307337/large/content/gallery/subsites/extranet/huisstijl/logo-regular.jpg)
+![UvA logo](/images/UvA-logo.jpg)
 
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
