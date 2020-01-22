@@ -5,10 +5,12 @@ layout: default
 # UvA HPC course 2020-01-23  <br/> Extras - Wave simulation with MPI
 
 <div style="float:right;max-width:205px;" markdown="1">
-![UvA logo](/images/UvA-logo.png)
-
-![SURFsara logo](/images/SURFsara_logo.png)
+<img alt="UvA logo" src="/images/UvA-logo.png" />
 </div>
+<div style="float:right;max-width:205px;" markdown="1">
+<img alt="SURFsara logo" src="/images/SURFsara_logo.png" />
+</div>
+
 
 This is an exercise from the [Extras](extras) part of the Tutorial [UvA HPC course 2020-01-23](.).
 

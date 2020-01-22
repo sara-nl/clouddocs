@@ -5,10 +5,12 @@ layout: default
 # UvA HPC course 2020-01-23 - Assignment
 
 <div style="float:right;max-width:205px;" markdown="1">
-![UvA logo](/images/UvA-logo.png)
-
-![SURFsara logo](/images/SURFsara_logo.png)
+<img alt="UvA logo" src="/images/UvA-logo.png" />
 </div>
+<div style="float:right;max-width:205px;" markdown="1">
+<img alt="SURFsara logo" src="/images/SURFsara_logo.png" />
+</div>
+
 
 The following exercises are the assignment to score points on the HPC Cloud session. After you have attended the presentations and followed the hands-on tutorial (including the Extras), you understand all the concepts that will allow you to propose valid solutions to the exercises. You can contact your facilitators if you have any questions.
 

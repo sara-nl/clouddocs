@@ -5,10 +5,12 @@ layout: default
 # UvA HPC course 2020-01-23 <br/> Extras
 
 <div style="float:right;max-width:205px;" markdown="1">
-![UvA logo](/images/UvA-logo.png)
-
-![SURFsara logo](/images/SURFsara_logo.png)
+<img alt="UvA logo" src="/images/UvA-logo.png" />
 </div>
+<div style="float:right;max-width:205px;" markdown="1">
+<img alt="SURFsara logo" src="/images/SURFsara_logo.png" />
+</div>
+
 
 This is part Extras of the tutorial [UvA HPC course 2020-01-23](.). These exercises can be done in any order and you are to do as many as you want, depending on your enthusiasm and available time.
 
