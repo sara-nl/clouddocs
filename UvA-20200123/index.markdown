@@ -81,6 +81,5 @@ The hands-on tutorial consists of three parts:
   * [Extras](extras)
 
 ## <a name="presentations"></a> Presentations
-
-  * Morning presentation: <span style="display:inline;" markdown="1">[Introduction to the HPC Cloud](20200123_cloud.pdf)</span>
-  * Afternoon presentation: <span style="display:inline;" markdown="1">[Cloudy systems](20200123 - parallelism.pdf)</span>
+  * Morning presentation: <span style="display:inline;" markdown="1"><a src="20200123_cloud.pdf">Introduction to the HPC Cloud</a></span>
+  * Afternoon presentation: <span style="display:inline;" markdown="1"><a src="20200123 - parallelism.pdf">Cloudy systems</a></span>
