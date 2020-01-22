@@ -6,8 +6,11 @@ layout: default
 
 <div style="float:right;max-width:205px;" markdown="1">
 <img alt="UvA logo" src="/images/UvA-logo.png" />
+</div>
+<div style="float:right;max-width:205px;" markdown="1">
 <img alt="SURFsara logo" src="/images/SURFsara_logo.png" />
 </div>
+
 
 * [General Information](#general) <br>
 * [Preparation](#preparation) <br>
