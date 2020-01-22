@@ -5,7 +5,7 @@ layout: default
 # UvA HPC course 2020-01-23
 
 <div style="float:right;max-width:205px;" markdown="1">
-![UvA logo](/images/UvA-logo.jpg)
+![UvA logo](/images/UvA-logo.png)
 
 ![SURFsara logo](/images/SURFsara_logo.png)
 </div>
