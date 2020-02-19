@@ -4,7 +4,7 @@ layout: default
 You need to perform several steps to make NFS work, each step may be slightly different for your OS.
 Below are the steps for CentOS 7, both server and clients.
 
-## NFS server on CentOS 7
+## NFS server on CentOS 7 & 8
 
 ### Firewall
 
