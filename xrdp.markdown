@@ -122,6 +122,53 @@ Now you can connect to your machine. However, Ubuntu's default settings are to c
 * Log in again and use port `5910` (default value) and you will continue the previous session.
 
 
+## CentOS 7 & 8
+
+* **Open your firewall:** On your VM, modify the firewall settings to allow new inbound connections on port 3389, for example:
+
+>**Note:**
+>
+>The following commands open port 3389 for the whole Internet. We strongly recommend that you limit this to a well-known location of yours, such as your Universitie's network and/or your house IP address to have a more secure set-up. 
+
+```bash
+sudo firewall-cmd --permanent --zone=trusted --add-port=3389/tcp
+sudo firewall-cmd --reload
+```
+
+Check with:
+
+```bash
+sudo firewall-cmd --zone=trusted --list-all
+```
+
+>
+```bash
+trusted (active)
+  target: ACCEPT
+  ports: 3389/tcp
+  [...]
+```
+
+* **Install the Xrdp server:** In our distribution, install packages _tigervnc-server_ and _xrdp_:
+
+```bash
+  sudo yum groupinstall xfce
+  sudo yum install tigervnc-server xrdp
+```
+
+* **Configure the Xrdp service:** make the start at boot time, and start it for this session already:
+
+```bash
+  sudo systemctl enable xrdp.service
+  sudo systemctl start xrdp
+```
+
+You can now use your Remote Desktop client from your laptop to connect to your VM's remote desktop. You may have to create a linux user first in your VM, with a password, such as:
+
+```bash
+sudo adduser fred  # first create a user `fred` (use a name that suits you best)
+sudo passwd fred   # and then set the password for user `fred`
+```
 
 ## CENTOS 6
 >**Note:**
