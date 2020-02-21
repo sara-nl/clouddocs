@@ -56,7 +56,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Finished   |   12-02-2020 13:42 - 14:07 | Unscheduled outage due to a network issue. Impact: UI & VMs without connectivity to the Internet
+|   Finished   |   12-02-2020 13:42 - 14:07 | Unscheduled outage due to a network issue. Impact: UI & VMs without connectivity to the Internet; Ceph connectivity to VMs was lost.
 |   Finished   |   14-01-2020 00:00 / 15-01-2020 17:00 | Security maintenance and replacement of network components. Impact: service unavailable, all VMs need to go down.
 |   Finished   |   12-11-2019 08:00 - 09:00 | Security maintenance. Impact: UI/API downtime; VMs are not affected.
 |   Cancelled  |   10-09-2019 / 11-09-2019 | Upgrade ONe to 5.8 and replace network components. Impact: service unavailable; all VMs need to go down.
