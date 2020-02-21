@@ -8,6 +8,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2020-03-01
+
+### Added
+* CentOS 8.x server image
+* Debian 10.x server image
+
 ## 2020-01-15
 
 ### Added
