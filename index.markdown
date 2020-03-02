@@ -147,7 +147,11 @@ The HPC Cloud service is in [maintenance](maintenance).
 
 ## Service implementation
 * [Available resources](resources-available)
+
+<!---
+NOT USED neither IN CONSTRUCTION
 * [Resource usage](https://ui.hpccloud.surfsara.nl/oneinsight) [⚠ **WARNING:** under construction]
+-->
 
 ## Contributing to the documentation
 
