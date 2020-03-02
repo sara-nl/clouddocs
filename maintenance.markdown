@@ -29,7 +29,7 @@ Note that not every maintenance window will actually include that we will do mai
 
 ### <a name="policy"></a> Policy
 
-Maintenance and changes can only be done during on of to the maintenance windows. This means that (part of) the service can be unavailable, for example the web UI.
+Maintenance and changes can only be done during a maintenance window. This means that (part of) the service can be unavailable, for example the web UI.
 
 All HPC Cloud users are notified at least one month in advance if:
 
