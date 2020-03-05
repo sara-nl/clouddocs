@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## UNRELEASED
 
-### Removed
+### Remove
 * Nested Virtualization support across all computing nodes
 
 ## 2020-03-01
