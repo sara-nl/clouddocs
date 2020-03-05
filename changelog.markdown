@@ -49,7 +49,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 2017-01-24
 
+### Added
 * Upgraded to OpenNebula 5.2, this includes a new look and feel for the user interface
+* Nested Virtualization support across all computing nodes
 
 ## 2016-10-26
 
