@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 * Nested Virtualization support across all computing nodes due to security vulnerability
 
 ### Security
-* Mitigate [Vulnerability Over Unfinished Code](https://www.phoronix.com/scan.php?page=news_item&px=Intel-KVM-CVE-2020-2732) (CVE-2020-2732)
+* Mitigate [Intel KVM Virtualization - Vulnerability Over Unfinished Code](https://www.phoronix.com/scan.php?page=news_item&px=Intel-KVM-CVE-2020-2732) (CVE-2020-2732)
 
 ## 2020-03-01
 
