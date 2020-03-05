@@ -11,7 +11,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## UNRELEASED
 
 ### Remove
-* Nested Virtualization support across all computing nodes
+* Nested Virtualization support across all computing nodes due to security vulnerability
+
+### Security
+* [Mitigate Vulnerability Over Unfinished Code](https://www.phoronix.com/scan.php?page=news_item&px=Intel-KVM-CVE-2020-2732)
 
 ## 2020-03-01
 
