@@ -17,7 +17,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 <div class = "alert alert-danger" markdown="1">
 <i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i>
-**Availability of support staff is reduced** due to [SURF preventive measures around coronavirus/COVID-19.](https://www.surf.nl/en/news/preventive-measures-surf-around-coronaviruscovid-19)
+**Availability of support staff is reduced.** Check [SURF preventive measures around coronavirus/COVID-19.](https://www.surf.nl/en/news/preventive-measures-surf-around-coronaviruscovid-19)
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
