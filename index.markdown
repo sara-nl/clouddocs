@@ -15,6 +15,11 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 **New to the HPC Cloud service?** We organize [periodic hands-on introductory trainings](https://www.surf.nl/en/agenda/training-surf-systems-for-research/hpc-cloud) where you will acquire the basic knowledge. 
 </div>
 
+<div class = "alert alert-danger" markdown="1">
+<i class="fas fa-newspaper fas-2x" aria-hidden="true"></i>
+[SURF preventive measures around coronavirus/COVID-19.](https://www.surf.nl/en/news/preventive-measures-surf-around-coronaviruscovid-19)
+</div>
+
 <div style="display:none;" class="alert alert-success" markdown="1">
  <div style="float:right;max-width:80px;margin-top:-10px;" markdown="1">
   <div style="max-width:80px;margin-left:10px;" markdown="1">
