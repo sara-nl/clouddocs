@@ -15,6 +15,11 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 **New to the HPC Cloud service?** We organize [periodic hands-on introductory trainings](https://www.surf.nl/en/agenda/training-surf-systems-for-research/hpc-cloud) where you will acquire the basic knowledge. 
 </div>
 
+<div style="display:none;" class="alert alert-info" markdown="1">
+<i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
+**GPU resources overloded** The HPC Cloud service cannot support new projects requesting GPU resources until further notice.
+</div>
+
 <div class = "alert alert-danger" markdown="1">
 <i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i>
 [SURF is monitoring the situation regarding the coronavirus.](https://www.surf.nl/en/news/preventive-measures-surf-around-coronaviruscovid-19) We follow the National Institute for Public Health and the Environment (RIVM) advice on health and Ministry of Foreign Affairs with regard to travel advice. **Availability of support staff is reduced.**
