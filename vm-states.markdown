@@ -23,7 +23,7 @@ You can see most of these on the UI:
 >
 > If you ever find a VM in a status that these actions cannot trigger any further changes, you may want to contact us at helpdesk@surfsara.nl. 
 > 
-> As long as a VM exists, it draws from your quota. Some states may be deceiving as they delay the moment that this quota is drawn from. The only way to prevent a VM from drawing from a quota is to Terminate it.
+> As long as a VM exists, it draws from your quota. Some states may be deceiving as they delay the moment that this quota is drawn from. **The only way to prevent a VM from drawing from a quota is to Terminate it.**
 
 Overview:
 
