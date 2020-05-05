@@ -34,7 +34,7 @@ Prior experience with [Linux commands](http://cli.learncodethehardway.org/book/)
 
 For this workshop you will need:
 
-* A computer with Internet access (UvA provides WiFi via eduroam)
+* A computer with Internet access
 * A browser (Chrome or Firefox will do nicely)
 * An SSH client
   * _Linux and Mac users:_ don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
@@ -67,7 +67,3 @@ The hands-on tutorial consists of three parts:
   * [Part B](partB)
   * [Part C](partC)
   * [Extras](extras)
-
-## <a name="presentations"></a> Presentations
-
-  * <span style="display:inline;" markdown="1"><a href="intro_cloud.pdf">Introduction to the HPC Cloud</a></span>

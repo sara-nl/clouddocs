@@ -126,7 +126,7 @@ The HPC Cloud service is in [maintenance](maintenance).
 
 
 ## <a name="tutorials"></a> Tutorials
-* [HPC Cloud tutorials](tutorials/)
+* [HPC Cloud tutorial](tutorial/)
 * [UvA HPC course, HPC Cloud session, 2020-01-23](UvA-20200123/index)
 
 
