@@ -21,6 +21,12 @@ Note that not every maintenance window will actually include that we will do mai
 |   Scheduled   |   13-10-2020 / 14-10-2020
 |   Scheduled   |   10-11-2020 / 11-11-2020
 |   Scheduled   |   08-12-2020 / 09-12-2020
+|   Scheduled   |   12-01-2020 / 13-01-2021
+|   Scheduled   |   09-02-2020 / 10-02-2021
+|   Scheduled   |   09-03-2020 / 10-03-2021
+|   Scheduled   |   13-04-2020 / 14-04-2021
+|   Scheduled   |   11-05-2020 / 12-05-2021
+|   Scheduled   |   08-06-2020 / 09-06-2021
 {: class="table"}
 {: class="table"}
 
