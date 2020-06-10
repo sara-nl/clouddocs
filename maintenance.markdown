@@ -14,7 +14,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | Comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   09-06-2020 / 10-06-2020
 |   Scheduled   |   14-07-2020 / 15-07-2020
 |   Scheduled   |   11-08-2020 / 12-08-2020
 |   Scheduled   |   08-09-2020 / 09-09-2020
