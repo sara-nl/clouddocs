@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## 2020-03-12
+## <a name="2020-03-12"></a> 2020-03-12
 
 ### Remove
 * Nested Virtualization support across all computing nodes due to security vulnerability (phased roll out)
