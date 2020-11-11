@@ -8,6 +8,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2020-11-04
+
+### Security
+* Update the OS of the computing nodes & supporting infrastructure (phased roll out expected to be completed by the 2021-01-13)
+
 ## <a name="2020-03-12"></a> 2020-03-12
 
 ### Remove
