@@ -14,7 +14,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | Comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   10-11-2020 / 11-11-2020
 |   Scheduled   |   08-12-2020 / 09-12-2020
 |   Scheduled   |   12-01-2021 / 13-01-2021 | Service maintenance. Impact: service unavailable, all VMs need to go down.
 |   Scheduled   |   09-02-2021 / 10-02-2021
@@ -54,7 +53,9 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Finished   |   12-02-2020 13:42 - 14:07 | Unscheduled outage due to a network issue. Impact: UI & VMs without connectivity to the Internet; Ceph connectivity to VMs was lost.
+|   Finished| 29-10-2020 16:19 - 16:49 | Unscheduled downtime of Sunstone; VMs are not affected.
+|   Finished   |   12-02-2020 13:42 - 14:07 | Unscheduled outage due to a network issue. Impact: UI & VMs without connectivity to the Internet; Ceph connectivity to VMs was lost
+|   Finished   |   12-02-2020 13:42 - 14:07 | Unscheduled outage due to a network issue. Impact: UI & VMs without connectivity to the Internet; Ceph connectivity to VMs was los
 |   Finished   |   14-01-2020 00:00 / 15-01-2020 17:00 | Security maintenance and replacement of network components. Impact: service unavailable, all VMs need to go down.
 |   Finished   |   12-11-2019 08:00 - 09:00 | Security maintenance. Impact: UI/API downtime; VMs are not affected.
 |   Cancelled  |   10-09-2019 / 11-09-2019 | Upgrade ONe to 5.8 and replace network components. Impact: service unavailable; all VMs need to go down.
