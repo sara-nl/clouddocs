@@ -14,7 +14,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | Comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   08-12-2020 / 09-12-2020
 |   Scheduled   |   12-01-2021 / 13-01-2021 | Service maintenance. Impact: service unavailable, all VMs need to go down.
 |   Scheduled   |   09-02-2021 / 10-02-2021
 |   Scheduled   |   09-03-2021 / 10-03-2021
