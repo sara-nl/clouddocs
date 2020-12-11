@@ -8,6 +8,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2020-12-08
+
+### Added
+* Ubuntu 20.04 server / desktop images
+
 ## 2020-11-04
 
 ### Security
