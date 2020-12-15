@@ -25,6 +25,11 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 [SURF is monitoring the situation regarding the coronavirus.](https://www.surf.nl/en/news/preventive-measures-surf-around-coronaviruscovid-19) We follow the National Institute for Public Health and the Environment (RIVM) advice on health and Ministry of Foreign Affairs with regard to travel advice. **Availability of support staff is reduced.**
 </div>
 
+<div class="alert alert-info" markdown="1">
+<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+The HPC Cloud service [will not be available on the 12-13 Jan. 2021](maintenance). All VMs have to be terminated/undeployed by 11th Jan. 23:59 CET.
+</div>
+
 <div style="display:none;" class="alert alert-success" markdown="1">
  <div style="float:right;max-width:80px;margin-top:-10px;" markdown="1">
   <div style="max-width:80px;margin-left:10px;" markdown="1">
@@ -38,11 +43,6 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
  <br/>
  <span style="color:red;">TODAY!</span>  <br/>[An introduction to SURF HPC Cloud](UvA-20200123)
  <br/>
-</div>
-
-<div class="alert alert-info" markdown="1">
-<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-The HPC Cloud service [will not be available on the 12-13 Jan. 2021](maintenance)
 </div>
 
 </div>
