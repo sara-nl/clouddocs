@@ -27,7 +27,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 <div class="alert alert-danger" markdown="1">
 <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-The HPC Cloud service [will not be available on the 12-13 Jan. 2021](maintenance). All VMs have to be terminated/undeployed by 11th Jan. 23:59 CET.
+The HPC Cloud service [will not be available on the 12-13 Jan. 2021](maintenance). **All VMs have to be terminated/undeployed by 11th Jan. 23:59 CET.**
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
