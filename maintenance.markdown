@@ -6,9 +6,10 @@ layout: default
 
 ### <a name="current"></a> Current
 
-Instantiation of new VMs disabled. Entering into maintenance soon ...
-
-|   Scheduled   |   12-01-2021 00:00 / 13-01-2021 17:00 | Service maintenance. Impact: service unavailable, all VMs need to go down.
+|   Status    |   Date (start / end)       | Comment
+|:------------|:----------------------------|:----
+|   Ongoing   |   11-01-2021 17:00 - 23:59 | Instantiation of new VMs disabled. Entering into maintenance soon ...
+|   Scheduled |   12-01-2021 00:00 / 13-01-2021 17:00 | Service maintenance. Impact: service unavailable, all VMs need to go down.
 
 ### <a name="future"></a> Future maintenance windows
 
