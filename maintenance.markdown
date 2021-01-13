@@ -57,7 +57,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
-|   Finished |   12-01-2021 00:00 / 13-01-2021 17:00 | Service maintenance. Impact: service unavailable, all VMs need to go down.
+|   Finished |   12-01-2021 00:00 / 13-01-2021 16:09 | Service maintenance. Impact: service unavailable, all VMs need to go down.
 |   Finished| 29-10-2020 16:19 - 16:49 | Unscheduled downtime of Sunstone; VMs are not affected.
 |   Finished   |   12-02-2020 13:42 - 14:07 | Unscheduled outage due to a network issue. Impact: UI & VMs without connectivity to the Internet; Ceph connectivity to VMs was lost
 |   Finished   |   14-01-2020 00:00 / 15-01-2020 17:00 | Security maintenance and replacement of network components. Impact: service unavailable, all VMs need to go down.
