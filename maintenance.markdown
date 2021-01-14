@@ -14,6 +14,7 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | Comment
 |:------------|:----------------------------|:----
+|   Scheduled   |   15-01-2021 06:00 - 07:00 AM | Urgent change needed for the continuity of the service. Impact: UI/API will not be available. VMs are not affected.
 |   Scheduled   |   09-02-2021 / 10-02-2021
 |   Scheduled   |   09-03-2021 / 10-03-2021
 |   Scheduled   |   13-04-2021 / 14-04-2021
