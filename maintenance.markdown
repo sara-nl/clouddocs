@@ -7,6 +7,7 @@ layout: default
 ### <a name="current"></a> Current
 
 Up and Running.
+An urgent maintenance scheduled 15-01-2021 06:00 - 07:00 AM. Check bellow for impact.
 
 ### <a name="future"></a> Future maintenance windows
 
