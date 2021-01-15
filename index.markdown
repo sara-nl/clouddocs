@@ -27,7 +27,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 <div class="alert alert-danger" markdown="1">
 <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-**The service is experiencing unexpected issues since 15th Jan. 16:27 CET.** Impact: User Interface & API will not be available. VMs are not affected.
+We are monitoring the service. **It experienced User Interface unavailability from 15th Jan. 16:27 to 17:42 CET.**
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
