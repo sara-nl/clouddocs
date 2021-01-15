@@ -6,9 +6,10 @@ layout: default
 
 ### <a name="current"></a> Current
 
-**The service is experiencing unexpected issues since 15th Jan. 16:27 CET.**  
+Up & running.
+**We are closely monitoring the service. It experienced UI unavailability on the 15th Jan. from 16:27 to 17:42 CET.**
 
-Impact: User Interface & API will not be available. VMs are not affected.
+
 
 ### <a name="future"></a> Future maintenance windows
 
@@ -59,6 +60,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+| Finished   |   15-01-2021 16:27 - 17:42 | Unscheduled service unavailability due to a memory issue. Impact: User Interface not available; VMs are not affected. 
 |   Finished   |   15-01-2021 06:00 - 06:35 AM | Urgent change needed for the continuity of the service. Impact: UI/API will not be available. VMs are not affected.
 |   Finished |   12-01-2021 00:00 / 13-01-2021 16:09 | Service maintenance. Impact: service unavailable, all VMs need to go down.
 |   Finished| 29-10-2020 16:19 - 16:49 | Unscheduled downtime of Sunstone; VMs are not affected.
