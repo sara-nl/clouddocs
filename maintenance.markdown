@@ -7,7 +7,6 @@ layout: default
 ### <a name="current"></a> Current
 
 Up and Running.
-An urgent maintenance scheduled 15-01-2021 06:00 - 07:00 AM. Check bellow for impact.
 
 ### <a name="future"></a> Future maintenance windows
 
@@ -15,7 +14,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | Comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   15-01-2021 06:00 - 07:00 AM | Urgent change needed for the continuity of the service. Impact: UI/API will not be available. VMs are not affected.
 |   Scheduled   |   09-02-2021 / 10-02-2021
 |   Scheduled   |   09-03-2021 / 10-03-2021
 |   Scheduled   |   13-04-2021 / 14-04-2021
@@ -59,6 +57,7 @@ In these cases, the changes will be applied as soon as needed, even outside main
 
 |   Status    |   Date (start / end)        |   |
 |:------------|:----------------------------|:--|
+|   Finished   |   15-01-2021 06:00 - 06:35 AM | Urgent change needed for the continuity of the service. Impact: UI/API will not be available. VMs are not affected.
 |   Finished |   12-01-2021 00:00 / 13-01-2021 16:09 | Service maintenance. Impact: service unavailable, all VMs need to go down.
 |   Finished| 29-10-2020 16:19 - 16:49 | Unscheduled downtime of Sunstone; VMs are not affected.
 |   Finished   |   12-02-2020 13:42 - 14:07 | Unscheduled outage due to a network issue. Impact: UI & VMs without connectivity to the Internet; Ceph connectivity to VMs was lost
