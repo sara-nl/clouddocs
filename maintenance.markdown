@@ -6,7 +6,8 @@ layout: default
 
 ### <a name="current"></a> Current
 
-**The service is experiencing unexpected issues since 15th Jan. 16:27 CET.**
+**The service is experiencing unexpected issues since 15th Jan. 16:27 CET.**  
+
 Impact: User Interface & API will not be available. VMs are not affected.
 
 ### <a name="future"></a> Future maintenance windows
