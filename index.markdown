@@ -25,7 +25,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 [SURF is monitoring the situation regarding the coronavirus.](https://www.surf.nl/en/news/preventive-measures-surf-around-coronaviruscovid-19) We follow the National Institute for Public Health and the Environment (RIVM) advice on health and Ministry of Foreign Affairs with regard to travel advice. **Availability of support staff is reduced.**
 </div>
 
-<div class="alert alert-danger" markdown="1">
+<div style="display:none;" class="alert alert-danger" markdown="1">
 <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
 **[Urgent maintenance scheduled for 15th Jan. 06:00 - 07:00 AM](maintenance).** User Interface & API will not be available. VMs are not affected.
 </div>
