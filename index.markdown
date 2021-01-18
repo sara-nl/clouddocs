@@ -5,6 +5,11 @@ layout: default
 
 <div style="float:right;max-width:50%;" markdown="1">
 
+<div class="alert alert-warning" markdown="1">
+<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+We are closely monitoring the service. **It experienced UI unavailability on the 15th Jan. from 16:27 to 17:42 CET.**
+</div>
+
 <div class="alert alert-info" markdown="1">
 <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
 This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**. You are welcome to contribute to **help us improve** the documentation (see bottom of this page).
@@ -23,11 +28,6 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 <div class = "alert alert-warning" markdown="1">
 <i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i>
 [SURF is monitoring the situation regarding the coronavirus.](https://www.surf.nl/en/news/preventive-measures-surf-around-coronaviruscovid-19) We follow the National Institute for Public Health and the Environment (RIVM) advice on health and Ministry of Foreign Affairs with regard to travel advice. **Availability of support staff is reduced.**
-</div>
-
-<div class="alert alert-warning" markdown="1">
-<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-We are monitoring the service. **It experienced UI unavailability on the 15th Jan. from 16:27 to 17:42 CET.**
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
