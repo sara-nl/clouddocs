@@ -8,7 +8,7 @@ layout: default
 <img alt="UvA logo" src="../images/UvA-logo.png" />
 </div>
 <div style="float:right;max-width:205px;" markdown="1">
-<img alt="SURFsara logo" src="../images/SURFsara_logo.png" />
+<img alt="SURFsara logo" src="../images/surf-logo.png" />
 </div>
 
 
