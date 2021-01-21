@@ -24,7 +24,11 @@ layout: default
 
 SURF has been operating the HPC Cloud as an Infrastructure as a Service (`IaaS`) for several years. The HPC Cloud service offers users access to fast computing nodes and high-performant big storage volumes through a powerful graphical user interface. The underlying cluster [Oort](https://en.wikipedia.org/wiki/Oort_cloud) is managed by the [OpenNebula](http://opennebula.org/) cloud management software.
 
-[This workshop](http://hpc.uva.nl/Workshops/article/110/8-HPC-Cloud) aims to introduce the participants to the HPC Cloud, by providing a set of lectures and hands-on examples to be run on the _Oort_ infrastructure. The session is part of the [UvA HPC Course](http://hpc.uva.nl/Workshops/) which covers various topics related to HPC and Big Data.
+In [this webinar](https://www.surf.nl/en/agenda/webinar-introduction-hpc-cloud) you will learn how to start your own virtual machine and coordinate different environments using the web interface. You learn to design your own infrastructure and to run your applications in the cloud. The presentation of the platform is combined with hands-on exercises that help you become familiar with the environment.
+
+The session is co-jointly organized by the University of Amsterdam & SURF, and is part of:
+* UvA course series [High Performance Computing and Big Data](https://hpc.uva.nl/)
+* SURF [training for research course series](https://www.surf.nl/en/agenda/webinar-introduction-hpc-cloud)
 
 >**Agenda:**
 >
@@ -44,7 +48,7 @@ SURF has been operating the HPC Cloud as an Infrastructure as a Service (`IaaS`)
 
 Participants are expected to bring a laptop with Internet connection and a browser installed. Prior experience with [Linux commands](http://cli.learncodethehardway.org/book/) will help but not a prerequisite.
 
-For this workshop you will need:
+For this webinar you will need:
 
 * A computer with Internet access
 * A browser (Chrome or Firefox will do nicely)
