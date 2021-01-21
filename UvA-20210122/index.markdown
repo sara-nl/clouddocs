@@ -30,8 +30,8 @@ SURF has been operating the HPC Cloud as an Infrastructure as a Service (`IaaS`)
 >
 > 22nd January 2021, Webinar
 >
-> * 09:00 Welcome & Introduction: HPC Cloud at SURF (Nuno Ferreira)
-> * 09:20 Demo 
+> * 09:00 Welcome
+> * 09:05 Presentation and Demo: Introduction to SURF HPC Cloud (Nuno Ferreira)
 > * 09:45 Hands-on: Parts A & B (at your discretion, also C)
 > * 12:00 Lunch break  
 > * 13:00 Morning recap  
@@ -60,7 +60,7 @@ For this workshop you will need:
 > For the Extras part, you may need to start a graphical window in your laptop that is connected to your HPC Cloud machine. To make this work, you need to adjust the following:  
 >
 * Open GitBash (or git for windows).
-* In the terminal that appears, copy and paste the following commands: 
+* In the terminal that appears, copy and paste the following commands:
 >
 ```sh
 # press enter to submit each command
@@ -71,8 +71,8 @@ source $HOME/.bashrc
 ## <a name="hands-on"></a> Hands-on
 The hands-on tutorial consists of three parts:
 
-  * Parts *A & B* provide exercises for you to grasp the `basic` concepts on how to operate in the HPC Cloud environment. 
-  * Partc *C* helps rounding off a few recommendations. 
+  * Parts *A & B* provide exercises for you to grasp the `basic` concepts on how to operate in the HPC Cloud environment.
+  * Partc *C* helps rounding off a few recommendations.
   * The *Extras* part will focus on `advanced` topics, namelly parallel programming and automation, where you will exercise yourself on the HPC Cloud.
 
   * [Part A](partA)
