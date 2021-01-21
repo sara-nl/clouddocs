@@ -28,10 +28,10 @@ SURFsara has been operating the HPC Cloud as an Infrastructure as a Service (`Ia
 
 >**Agenda:**
 >
-> 23rd January 2020, UvA, Nieuwe Achtergracht 166 REC A2.09 (Roeters Eiland, as opposed to the usual Science Park!)
+> 22nd January 2021, Webinar
 >
-> * 09:00 Welcome & Introduction: HPC Cloud at SURFsara (Nuno Ferreira)
-> * 09:20 Demo (Carsten Schelp)
+> * 09:00 Welcome & Introduction: HPC Cloud at SURF (Nuno Ferreira)
+> * 09:20 Demo 
 > * 09:45 Hands-on: Parts A & B (at your discretion, also C)
 > * 12:00 Lunch break  
 > * 13:00 Morning recap  
@@ -46,7 +46,7 @@ Participants are expected to bring a laptop with Internet connection and a brows
 
 For this workshop you will need:
 
-* A computer with Internet access (UvA provides WiFi via eduroam)
+* A computer with Internet access
 * A browser (Chrome or Firefox will do nicely)
 * An SSH client
   * _Linux and Mac users:_ don't have to install anything. The SSH client is on board, try "ssh" in a [terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it).
@@ -57,7 +57,7 @@ For this workshop you will need:
 
 > **NOTE for Windows users:**
 >
-> For the Extras you may need to start a graphical window in your laptop that is connected to your HPC Cloud machine. To make this work, you need to adjust the following:  
+> For the Extras part, you may need to start a graphical window in your laptop that is connected to your HPC Cloud machine. To make this work, you need to adjust the following:  
 >
 * Open GitBash (or git for windows).
 * In the terminal that appears, copy and paste the following commands: 
@@ -81,5 +81,5 @@ The hands-on tutorial consists of three parts:
   * [Extras](extras)
 
 ## <a name="presentations"></a> Presentations
-  * Morning presentation: <span style="display:inline;" markdown="1"><a href="20200123_cloud.pdf">Introduction to the HPC Cloud</a></span>
-  * Afternoon presentation: <span style="display:inline;" markdown="1"><a href="20200123 - parallelism.pdf">Cloudy systems</a></span>
+  * Morning presentation: <span style="display:inline;" markdown="1"><a href="20210122_hpcc_basics.pdf">Introduction to the HPC Cloud</a></span>
+  * Afternoon presentation: <span style="display:inline;" markdown="1"><a href="20200122_hpcc_advanced.pdf">Cloudy systems</a></span>
