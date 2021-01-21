@@ -76,7 +76,7 @@ source $HOME/.bashrc
 The hands-on tutorial consists of three parts:
 
   * Parts *A & B* provide exercises for you to grasp the `basic` concepts on how to operate in the HPC Cloud environment.
-  * Partc *C* helps rounding off a few recommendations.
+  * Part *C* helps rounding off a few recommendations.
   * The *Extras* part will focus on `advanced` topics, namelly parallel programming and automation, where you will exercise yourself on the HPC Cloud.
 
   * [Part A](partA)
