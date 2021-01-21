@@ -7,7 +7,6 @@ layout: default
 ### <a name="current"></a> Current
 
 Up & running.
-**We are closely monitoring the service. It experienced UI unavailability on the 15th Jan. from 16:27 to 17:42 CET.**
 
 
 
