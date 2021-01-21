@@ -8,7 +8,7 @@ layout: default
 <img alt="UvA logo" src="../images/UvA-logo.png" />
 </div>
 <div style="float:right;max-width:205px;" markdown="1">
-<img alt="SURFsara logo" src="../images/SURFsara_logo.png" />
+<img alt="SURF logo" src="../images/surf_logo.png" />
 </div>
 
 
@@ -55,7 +55,7 @@ In this section you will work with **persistent** images. You will go through th
 * Log in and check the files you created during the previous run [(Part A)](partA).
 
 > **Food for brain:**
-> 
+>
 >* Is/are the file(s) you created on your VM (part A) there?
 >* During the previous run, the VM's disk was *non-persistent*. From now on, you can store data in your VM that will be written to the `image` even if you restart your VM. Try it.
 
@@ -88,7 +88,7 @@ From now on, whenever you instantiate this `template`, you will get a 4-core VM 
 
 * Instantiate a VM from the updated `template`.
 * Login to the VM. *Is your data there?*
-* You can verify that you are logged in on a four-core VM with either of the following commands: 
+* You can verify that you are logged in on a four-core VM with either of the following commands:
   * `cat /proc/cpuinfo | grep processor`
   * `lscpu`
 
