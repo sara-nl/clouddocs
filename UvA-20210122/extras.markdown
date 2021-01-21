@@ -8,7 +8,7 @@ layout: default
 <img alt="UvA logo" src="../images/UvA-logo.png" />
 </div>
 <div style="float:right;max-width:205px;" markdown="1">
-<img alt="SURFsara logo" src="../images/SURFsara_logo.png" />
+<img alt="SURF logo" src="../images/surf_logo.png" />
 </div>
 
 
@@ -23,13 +23,13 @@ You will find several _Food for brain_ questions in each exercise about situatio
 ## Simple scalability
 
 Link: [Simple Scalability: Principal Component Analysis (PCA)](PCA)
-  
+
   Working with a real dataset on a real problem to look into the possibilities of easily scaling up and/or out.
 
 ## OpenMP
 
 Link: [OpenMP: calculating _&pi;_](OpenMP)
-  
+
   Using a simple algorithm to calculate _&pi;_ as an example, you will see the impact of the **scale-up** model and parallel programming with OpenMP.
 
 ## MPI
@@ -37,9 +37,9 @@ Link: [OpenMP: calculating _&pi;_](OpenMP)
 Link: [MPI: Wave equation](MPI)
 
   Using a numerical method to calculate wave propagation as an example, you will see the impact of both **scale-up** and **scale-out** models and parallel programming with MPI.
-  
+
 ## XML-RPC
 
 Link: [XML-RPC](XMLRPC)
-  
+
   Experience the automation API that OpenNebula provides, which can be used to find out a lot of information about your own environment, and to operate with VMs in a non-interactive way.

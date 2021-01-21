@@ -8,20 +8,20 @@ layout: default
 <img alt="UvA logo" src="../images/UvA-logo.png" />
 </div>
 <div style="float:right;max-width:205px;" markdown="1">
-<img alt="SURFsara logo" src="../images/SURFsara_logo.png" />
+<img alt="SURF logo" src="../images/surf_logo.png" />
 </div>
 
 
 This is an exercise from the [Extras](extras) part of the Tutorial [UvA HPC course 2021-01-22](.).
 
-In this advanced part of our HPC Cloud tutorial we ask you to run an exercise to look at the scale-out and scale-up scenarios. 
+In this advanced part of our HPC Cloud tutorial we ask you to run an exercise to look at the scale-out and scale-up scenarios.
 You will be using Principal Component Analysis to study flight delays where data can be analysed by scaling up one VM or scaling out across multiple VMs.
 
-The original dataset is coming from [here](https://www.transtats.bts.gov/DL_SelectFields.asp?DB_Short_Name=On-Time&Table_ID=236), but we have already prepared some files. Among other preparation steps, we focused on a selection of dates and some variables, along with some cleaning steps to get more useful data. 
+The original dataset is coming from [here](https://www.transtats.bts.gov/DL_SelectFields.asp?DB_Short_Name=On-Time&Table_ID=236), but we have already prepared some files. Among other preparation steps, we focused on a selection of dates and some variables, along with some cleaning steps to get more useful data.
 
 >**NOTE:**
 >
->You are now in the advanced section of the workshop. You have your laptop and an Internet connection. We expect you will be able to find out more on your own about things that we hardly/don't explain but which you think you need. For example, if we were you, at this point we would've already googled for several things: 
+>You are now in the advanced section of the workshop. You have your laptop and an Internet connection. We expect you will be able to find out more on your own about things that we hardly/don't explain but which you think you need. For example, if we were you, at this point we would've already googled for several things:
 >
 >1. Principal Component Analysis
 >1. R language
@@ -50,8 +50,8 @@ R --version
 * Download the [data](code/airplane-delay.tar) to your VM and uncompress the file:
 
 ```sh
-wget http://doc.hpccloud.surfsara.nl/UvA-20210122/code/airplane-delay.tar 
-tar -xvf airplane-delay.tar 
+wget http://doc.hpccloud.surfsara.nl/UvA-20210122/code/airplane-delay.tar
+tar -xvf airplane-delay.tar
 ```
 
 > **_Food for brain:_**
@@ -90,7 +90,7 @@ How do these numbers compare to the previous analysis with the full dataset? A s
 
 ### Bonus food for brain: Scaling up or scaling out?
 
-So far you worked on a single dataset on a single core VM with 1 GB memory. There are two datasets provided to you in the `airplane-delay.tar` file and data files for another few months are available [here](https://github.com/sara-nl/clouddocs/tree/gh-pages/UvA-20210122/code) (delay-2018-*.csv). How would you run the analysis for the year as a whole? 
+So far you worked on a single dataset on a single core VM with 1 GB memory. There are two datasets provided to you in the `airplane-delay.tar` file and data files for another few months are available [here](https://github.com/sara-nl/clouddocs/tree/gh-pages/UvA-20210122/code) (delay-2018-*.csv). How would you run the analysis for the year as a whole?
 
 * You can scale up your VM and run the analysis serially over multiple datasets and combine the results in the end. How big should the VM be to optimize the analysis?
 

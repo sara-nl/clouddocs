@@ -8,7 +8,7 @@ layout: default
 <img alt="UvA logo" src="../images/UvA-logo.png" />
 </div>
 <div style="float:right;max-width:205px;" markdown="1">
-<img alt="SURFsara logo" src="../images/SURFsara_logo.png" />
+<img alt="SURF logo" src="../images/surf_logo.png" />
 </div>
 
 
@@ -22,7 +22,7 @@ Exercise: start a new VM (you are now in the advanced part; you should be able t
 
 ### b) Run a first example
 
-This exercise should make you familiar with our general documentation pages. 
+This exercise should make you familiar with our general documentation pages.
 
 * On our general documentation, find the _Getting started with the XML-RPC_ page.
 
@@ -44,5 +44,5 @@ This exercise should make you familiar with our general documentation pages.
 > * Can you make a program that will shutdown all your VMs but leaving intact the one you are running the program from?
 
 ## <a name="xml_print"></a> Helping code
- 
+
   * [Helper XmlUtil class](./code/xml_util.py)

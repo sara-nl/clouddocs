@@ -8,7 +8,7 @@ layout: default
 <img alt="UvA logo" src="../images/UvA-logo.png" />
 </div>
 <div style="float:right;max-width:205px;" markdown="1">
-<img alt="SURFsara logo" src="../images/SURFsara_logo.png" />
+<img alt="SURF logo" src="../images/surf_logo.png" />
 </div>
 
 
@@ -29,7 +29,7 @@ Keeping himself busy in the cockpit, he has called you for help on the ground to
 >
 > Use data from [here](https://www.transtats.bts.gov/DL_SelectFields.asp?DB_Short_Name=On-Time&Table_ID=236) STOP
 >
-> Run PCA STOP 
+> Run PCA STOP
 >
 > Recommend STOP
 
@@ -41,7 +41,7 @@ Keeping himself busy in the cockpit, he has called you for help on the ground to
 
 Deliver recommendations fast!
 
-Imagine that, browsing the Internet, you get your hands on a compiled program called `pca_on_planes`, which follows exactly Baloo's indications: it takes the dataset _csv_ file and a list of column numbers to analyse as inputs, and it provides each column's contribution to the PCA of the selected columns as outputs. 
+Imagine that, browsing the Internet, you get your hands on a compiled program called `pca_on_planes`, which follows exactly Baloo's indications: it takes the dataset _csv_ file and a list of column numbers to analyse as inputs, and it provides each column's contribution to the PCA of the selected columns as outputs.
 
 Describe a system, using the HPC Cloud, that will allow you to find the best contributing set of columns using a naïve PCA approach distributed among 1-core Virtual Machines, such that:
 
@@ -52,10 +52,10 @@ Describe a system, using the HPC Cloud, that will allow you to find the best con
    * run the `pca_on_planes` program. Which dataset and columns to work with are given to him by the master
    * deliver the results of PCA back to the master
  * The master retrieves all these individual PCA's numbers back from the workers
- * The master decides the best set of columns based on all the results from the workers 
+ * The master decides the best set of columns based on all the results from the workers
  * All workers are completely independent from one another; they can work in parallel, at their own pace, in their own time
 
-We split the assignment in different exercises to guide you through the process. 
+We split the assignment in different exercises to guide you through the process.
 
 ### Marks:
 
@@ -75,7 +75,7 @@ Explain to Baloo what your idea is: tell him which features of the HPC Cloud you
 
 ## Exercise 2
 
-Baloo's telegram is rather sparing with words, and you like pictures. Draw a sketch that Baloo can understand, which illustrates what you came up with in the previous exercise. 
+Baloo's telegram is rather sparing with words, and you like pictures. Draw a sketch that Baloo can understand, which illustrates what you came up with in the previous exercise.
 
 >**Hints:**
 >
@@ -83,20 +83,20 @@ Baloo's telegram is rather sparing with words, and you like pictures. Draw a ske
 
 ## Exercise 3
 
-Sketch in [pseudocode](https://en.wikipedia.org/wiki/Pseudocode) what you think the programs look like: 
+Sketch in [pseudocode](https://en.wikipedia.org/wiki/Pseudocode) what you think the programs look like:
 
-* a) the master 
+* a) the master
 * b) the worker
 
 ## Exercise 4
 
 Imagine that you are given a program that does the master's work, and the `pca_on_planes` program for the worker. Also, imagine that you have access to the same scripts `makeme_master.sh` and `makeme_worker.sh` that you used in one of the Extras exercises.
 
-Write down the relevant steps that you must follow in the HPC Cloud UI to run those programs with 1 master and 3 workers. 
+Write down the relevant steps that you must follow in the HPC Cloud UI to run those programs with 1 master and 3 workers.
 
 >**Note:**
 >
-> We assume all VMs use only 1 core and 1GB of RAM, so you do not need to give details on how you configure the Templates. 
+> We assume all VMs use only 1 core and 1GB of RAM, so you do not need to give details on how you configure the Templates.
 
 ## Exercise 5
 

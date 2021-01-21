@@ -8,16 +8,16 @@ layout: default
 <img alt="UvA logo" src="../images/UvA-logo.png" />
 </div>
 <div style="float:right;max-width:205px;" markdown="1">
-<img alt="SURFsara logo" src="../images/SURFsara_logo.png" />
+<img alt="SURF logo" src="../images/surf_logo.png" />
 </div>
 
 This is an exercise from the [Extras](extras) part of the Tutorial [UvA HPC course 2021-01-22](.).
 
-In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **shared-memory** system. For this puspose, we will be running a Monte Carlo simulation to calculate an approximation of the value of _&pi;_. 
+In this advanced part of our HPC Cloud tutorial we ask you to play around with a **parallel processing** technique on a **shared-memory** system. For this puspose, we will be running a Monte Carlo simulation to calculate an approximation of the value of _&pi;_.
 
 >**NOTE:**
 >
->You are now in the advanced section of the workshop. You have your laptop and an Internet connection. We expect you will be able to find out more on your own about things that we hardly/don't explain but which you think you need. For example, if we were you, at this point we would've already googled for several things: 
+>You are now in the advanced section of the workshop. You have your laptop and an Internet connection. We expect you will be able to find out more on your own about things that we hardly/don't explain but which you think you need. For example, if we were you, at this point we would've already googled for several things:
 >
 >1. Monte Carlo simulation
 >1. Monte Carlo pi
@@ -31,18 +31,18 @@ This exercise will let you use OpenMP, first with a serial implementation within
 
 * On the UI, create a 2-core `template` that will use your existing **Course Image**:
   * On the _<i class="fa fa-file-o"></i> VMs_ tab (under _Templates_), click on the green _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ button to create a new `template`
-  * Edit the _<i class="fa fa-laptop"></i> General_ tab: 
+  * Edit the _<i class="fa fa-laptop"></i> General_ tab:
     * type in a meaningful Name e.g. **OpenMP setup**
     * choose **KVM** as _Hypervisor_
-    * type in **2 CPUs** 
+    * type in **2 CPUs**
     * and **2 VCPUs**
-    * type in **4GB Memory** 
+    * type in **4GB Memory**
   * Edit the _<i class="fa fa-tasks"></i> Storage_ tab: for the _Disk 0_, choose the **Course Image** (from the table on the right of the screen)
   * Edit the _<i class="fa fa-power-off"></i> OS Booting_ tab:
     * choose _Acpi_: yes
     * choose _Localtime_: no
   * Edit the _<i class="fa fa-globe"></i> Network_ tab: for the _NIC 0_, choose the _Internet network_.  
-  * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: 
+  * Check the _<i class="fa fa-exchange"></i> Input/Output_ tab:
     * the _VNC_ radiobutton must be selected
     * in the _Inputs_ section, select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that
   * Finally, click on the green *Create* button at the top of the screen
@@ -52,23 +52,23 @@ This exercise will let you use OpenMP, first with a serial implementation within
 * Install the gcc compiler and gnu make:
 
 ```sh
-sudo apt-get update && sudo apt-get install build-essential 
+sudo apt-get update && sudo apt-get install build-essential
 ```
 
-> Optionally verify gcc and GNU make installation and version with `gcc -v` and  `make -v` respectively. 
+> Optionally verify gcc and GNU make installation and version with `gcc -v` and  `make -v` respectively.
 
 * Download the [code file](code/gridpi-mp.tar) to your VM and uncompress the file:
 
 ```sh
-wget http://doc.hpccloud.surfsara.nl/UvA-20180131/code/gridpi-mp.tar 
-tar -xvf gridpi-mp.tar 
+wget http://doc.hpccloud.surfsara.nl/UvA-20210122/code/gridpi-mp.tar
+tar -xvf gridpi-mp.tar
 ```
 
 * Inspect what files are in the example directory:
 
 ```sh
 cd gridpi-mp/
-ls -l 
+ls -l
 ```
 
 ### b) Serial runs
@@ -99,7 +99,7 @@ gcc -std=c99 -Wall -Werror -pedantic gridpi-serial.c -o gridpi-serial
 * Compile the `gridpi-mp-simple.c` program:
 
 ```sh
-gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-simple.c -lm -o gridpi-mp-simple 
+gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-simple.c -lm -o gridpi-mp-simple
 ```
 
 * Run a few times
@@ -164,9 +164,9 @@ gcc -std=c99 -Wall -Werror -pedantic -fopenmp gridpi-mp-reduction.c -lm -o gridp
 
 > **_Food for brain e2:_**
 >
-> Replace your VM with one that has more cores (hint: make a new `template` or update the current). Then run some batches of each of the exercises b), c), d) and e) again. 
+> Replace your VM with one that has more cores (hint: make a new `template` or update the current). Then run some batches of each of the exercises b), c), d) and e) again.
 >
-> * How do times with more cores compare to those before? 
+> * How do times with more cores compare to those before?
 > * Does the performance scale for all of the implementations? Do you see any number where it ceases to make sense to scale? Can you explain?
 
 
@@ -177,7 +177,7 @@ This section is meant as extra questions that we thought would be nice for you t
 **Bonus1:** Make a batch of several runs (e.g.: 100) per exercise (b), c), d), e)) and calculate the *average runtime* and *standard deviation*. What do you observe? <br/> (hint: make a table where each row is each exercise, one column is the average time and one is the deviation you measured).    
 **Bonus2:** Play around with the parameters in the source files (e.g. POINTS_ON_AXIS) <br/> (hint: add an extra column to the table for each parameter you change). Any insight?    
 **Bonus3:** Can you draw some curves (graphs) with the measurements you have gathered? How do they compare?  
- 
+
 
 > **NOTE:**
 > Do not forget to shutdown your VM when you are done with your performance tests.
