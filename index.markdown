@@ -5,7 +5,7 @@ layout: default
 
 <div style="float:right;max-width:50%;" markdown="1">
 
-<div class="alert alert-warning" markdown="1">
+<div style="display:none;" class="alert alert-warning" markdown="1">
 <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
 We are closely monitoring the service. **It experienced UI unavailability on the 15th Jan. from 16:27 to 17:42 CET.**
 </div>
