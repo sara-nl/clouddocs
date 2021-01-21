@@ -131,6 +131,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 
 <!---
+* [UvA HPC course, HPC Cloud session, 2020-01-23](UvA-20200123/index)
 * [An introduction to SURF HPC Cloud, 2019-11-19](knmi-20191119)
 * [HPC Cloud workshop at Good practices for High Performance Computing and Cloud_, 2019-05-23](home-20190523)
 * [UvA HPC course, HPC Cloud session, 2019-01-30](UvA-20190130/index)
