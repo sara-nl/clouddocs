@@ -36,12 +36,12 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 ![UvA logo]({{relative}}images/UvA-logo.png)
   </div>
   <div style="max-width:80px;margin-left:10px; margin-bottom:10px;" markdown="1">
-![SURFsara logo]({{relative}}images/SURFsara_logo.png)
+![SURF logo]({{relative}}images/surf_logo.png)
   </div>
  </div>
  <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
  <br/>
- <span style="color:red;">TODAY!</span>  <br/>[An introduction to SURF HPC Cloud](UvA-20200123)
+ <span style="color:red;">TODAY!</span>  <br/>[An introduction to SURF HPC Cloud](UvA-20210122)
  <br/>
 </div>
 
