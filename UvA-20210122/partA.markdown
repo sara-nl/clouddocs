@@ -8,7 +8,7 @@ layout: default
 <img alt="UvA logo" src="../images/UvA-logo.png" />
 </div>
 <div style="float:right;max-width:205px;" markdown="1">
-<img alt="SURFsara logo" src="../images/SURFsara_logo.png" />
+<img alt="SURF logo" src="../images/surf_logo.png" />
 </div>
 
 This is part A of the tutorial [UvA HPC course 2021-01-22](.) and covers the following topics:
@@ -75,7 +75,7 @@ The matching private key (`id_rsa`) stays safe in your laptop.
 
 ### 3. Starting your first VM
 
-Using the HPC Cloud revolves around building Virtual Machines (VM). SURFsara provides several **Apps** readily available in  the HPC Cloud UI, to facilitate creating simple VMs.  Apps are ready-made `appliances` for you to copy and use. 
+Using the HPC Cloud revolves around building Virtual Machines (VM). SURF provides several **Apps** readily available in  the HPC Cloud UI, to facilitate creating simple VMs.  Apps are ready-made `appliances` for you to copy and use.
 
 These are the steps to build your first VM from one of the Apps; detailed instructions follow:
 
@@ -90,7 +90,7 @@ Let's run your first VM on the HPC Cloud!
 
 * Log in to the [UI](https://ui.hpccloud.surfsara.nl/).
 * Choose the *Storage* tab on the left menu of the screen and then _<i class="fa fa-cloud-download"></i> Apps_.
-* View the extended the `app` **Ubuntu-18.04.1-Desktop** by clicking anywhere on that line except the tick-box to the left of it.
+* View the extended the `app` **Ubuntu-18.04-Desktop** by clicking anywhere on that line except the tick-box to the left of it.
 * Carefully read the _DESCRIPTION_ attribute (located towards the bottom of the page). In particular, pay attention to the **default username** mentioned there, since that is the username you will need to use to log in to your VM.
 * Click on the blue _<i class="fa fa-share"></i> OpenNebula_ button above the list of apps.
 * A dialogue will pop up asking you for a few details. Edit as follows:
@@ -103,7 +103,7 @@ Let's run your first VM on the HPC Cloud!
 > **Food for brain:**
 >
 > When you import an `app`, an `image` and a `template` will be created, as explained during the introductory presentation. In the UI you have an _<i class="fa fa-download"></i> Images_ tab under _Storage_ and a _<i class="fa fa-file-o"></i> VMs_ tab under _Templates_ on the left menu. You should see your new `image` and `template` there.
-> 
+>
 * Can you see them?
 * What is the STATUS of the `image` just after you import it?
 * Refresh the contents of the _Images_ tab page by clicking button <i class="fa fa-refresh"></i>, next to the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ until it is READY.
@@ -118,11 +118,11 @@ Edit the imported `template` following these steps:
 * Find the `template` you just imported (*Course Template*), and click on it (anywhere **except** the tick-box).
 * Click on the blue _Update_ button to start editing the template.
 * Browse through the different tabs there (i.e. _General_, _Storage_, _Network_, ...) to get acquainted with their contents.
-* Verify that your VM will have internet access: 
-  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM. 
+* Verify that your VM will have internet access:
+  * Select the _<i class="fa fa-globe"></i> Network_ tab which shows the network interfaces (or `nics`) for your VM.
   * The feedback below tells that the internet interface `NIC 0` on the left pane is mapped to `internet`.   
 ![youselectednetwork](/images/youselectednetwork.png)
-* Check the _<i class="fa fa-exchange"></i> Input/Output_ tab: 
+* Check the _<i class="fa fa-exchange"></i> Input/Output_ tab:
     * In the _Graphics_ section, the _VNC_ radio button must be selected.
     * In the _Inputs_ section, make sure an USB tablet is listed. If not: select _Type_ **Tablet** and _Bus_ **USB**; then click the _Add_ button next to that.
 * If you made any changes to the `template`, click the green button _Update_ at the top, to save your changes.
@@ -131,7 +131,7 @@ Edit the imported `template` following these steps:
 
 A `template` is just a description of the virtual machine that we want to build. Let's create the actual virtual machine from it.
 
-* Go to the _VMs_ section below _Instances_ on the left menu. 
+* Go to the _VMs_ section below _Instances_ on the left menu.
   An overview of all existing VMs that you have the right to see, are displayed.
   This list is (probably) empty at the moment, because you have not yet started any VM.
 * Click the button _<i class="fa fa-plus" style="background-color:#43AC6A;border-color:#368a55;color:#fff;padding:1px 1ex 1px 1ex;"></i>_ to bring up a "Create Virtual Machine" screen.
