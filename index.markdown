@@ -127,7 +127,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 ## <a name="tutorials"></a> Tutorials
 * [HPC Cloud tutorial](tutorial/)
-* [UvA HPC course, HPC Cloud session, 2020-01-23](UvA-20200123/index)
+* [UvA HPC course, HPC Cloud session, 2021-01-22](UvA-20210122/index)
 
 
 <!---
