@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+
+<div class="alert alert-info" markdown="1">
+<i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
+The service does not offer anymore OS images with GPU drivers pre-installed.
+</div>
+
 # Attaching a GPU to a VM
 
 Using GPU devices to do (part of) your computation on, enables a form of parallelization that could be much faster than multiple CPU core usage. However, the software you are using must be enabled to use GPU's and programming for GPU's is difficult and often not ideal for novice programmers. If you are not sure whether or not you could profit from using GPU's, please feel free to contact us at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl).
