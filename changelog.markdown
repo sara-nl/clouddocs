@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 2021-03-03
 
-### Remove
+### Removed
 * Ubuntu 16.04 server / GPU images
 
 ## 2020-12-08
@@ -25,7 +25,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## <a name="2020-03-12"></a> 2020-03-12
 
-### Remove
+### Removed
 * Nested Virtualization support across all computing nodes due to security vulnerability (phased roll out on all shared pools completed on the 2020-07-07)
 
 ### Security
