@@ -8,6 +8,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2021-03-03
+
+### Remove
+* Ubuntu 16.04 server / GPU images
+
 ## 2020-12-08
 
 ### Added
