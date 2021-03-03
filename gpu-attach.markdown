@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<div class="alert alert-info" markdown="1">
-<i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
-The service does not offer anymore OS images with GPU drivers pre-installed.
-</div>
+> **NOTE**
+>
+> The HPC Cloud service stopped offering Marketplace images with GPU drivers pre-installed (see changelog)
+> 
 
 # Attaching a GPU to a VM
 
