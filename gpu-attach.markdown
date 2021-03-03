@@ -2,12 +2,11 @@
 layout: default
 ---
 
+# Attaching a GPU to a VM
+
 > **NOTE**
 >
-> The HPC Cloud service stopped offering Marketplace images with GPU drivers pre-installed (see changelog)
-> 
-
-# Attaching a GPU to a VM
+> The HPC Cloud service stopped offering / supporting Marketplace images with GPU drivers pre-installed, see our [changelog](changelog).
 
 Using GPU devices to do (part of) your computation on, enables a form of parallelization that could be much faster than multiple CPU core usage. However, the software you are using must be enabled to use GPU's and programming for GPU's is difficult and often not ideal for novice programmers. If you are not sure whether or not you could profit from using GPU's, please feel free to contact us at [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl).
 
