@@ -16,8 +16,6 @@ Note that not every maintenance window will actually include that we will do mai
 
 |   Status    |   Date (start / end)       | Comment
 |:------------|:----------------------------|:----
-|   Scheduled   |   09-02-2021 / 10-02-2021
-|   Scheduled   |   09-03-2021 / 10-03-2021
 |   Scheduled   |   13-04-2021 / 14-04-2021
 |   Scheduled   |   11-05-2021 / 12-05-2021
 |   Scheduled   |   08-06-2021 / 09-06-2021
