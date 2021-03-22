@@ -7,7 +7,7 @@ layout: default
 > **NOTE**
 >
 > **The HPC Cloud service stopped offering / supporting Marketplace images with GPU drivers pre-installed**, see our [changelog](changelog).
-> Contact the Service Helpdesk [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl)for options.
+> Contact the Service Helpdesk [helpdesk@surfsara.nl](mailto:helpdesk@surfsara.nl) for options.
 
 ----
 
