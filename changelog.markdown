@@ -10,10 +10,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 2021-12-07
 
-## 2021-03-03
-
 ### Changed
 * The service stops updating the Linux images offered via the Marketplace
+
+## 2021-03-03
+
+### Removed
+* Ubuntu 16.04 server / GPU images
 
 ## 2020-12-08
 
