@@ -15,7 +15,7 @@ We are closely monitoring the service. **It experienced UI unavailability on the
 This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**. You are welcome to contribute to **help us improve** the documentation (see bottom of this page).
 </div>
 
-<div class="alert alert-info" markdown="1">
+<div style="display:none;" class="alert alert-info" markdown="1">
 <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
 **New to the HPC Cloud service?** We organize [periodic hands-on introductory trainings](https://www.surf.nl/en/agenda/training-surf-systems-for-research/hpc-cloud) where you will acquire the basic knowledge. 
 </div>
