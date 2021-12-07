@@ -26,8 +26,8 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 </div>
 
 <div class = "alert alert-warning" markdown="1">
-<i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i>
-[SURF is monitoring the situation regarding the coronavirus.](https://www.surf.nl/en/news/preventive-measures-surf-around-coronaviruscovid-19) We follow the National Institute for Public Health and the Environment (RIVM) advice on health and Ministry of Foreign Affairs with regard to travel advice. **Availability of support staff is reduced.**
+<i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
+The HPC Cloud service will be decommisioned by the end of 2021. For questions contact the SURF Helpdesk.
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
