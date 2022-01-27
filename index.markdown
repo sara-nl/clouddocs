@@ -27,7 +27,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 <div class = "alert alert-warning" markdown="1">
 <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
-The HPC Cloud service will be decommisioned by the end of 2021. For questions [contact the SURF Helpdesk](https://doc.hpccloud.surfsara.nl/helpdesk-form.html).
+The HPC Cloud service will be decommisioned by the end of Q1 2022. For questions [contact the SURF Helpdesk](https://doc.hpccloud.surfsara.nl/helpdesk-form.html).
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
