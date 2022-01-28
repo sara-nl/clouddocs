@@ -12,8 +12,6 @@ Up & running.
 
 ### <a name="future"></a> Future maintenance windows
 
-Note that not every maintenance window will actually include that we will do maintenance. Please see the policy below for more information.
-
 No further maintenances are planned. The service is being decommisioned.
 
 ### <a name="policy"></a> Policy
