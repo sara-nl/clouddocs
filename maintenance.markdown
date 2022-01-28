@@ -14,12 +14,7 @@ Up & running.
 
 Note that not every maintenance window will actually include that we will do maintenance. Please see the policy below for more information.
 
-|   Status    |   Date (start / end)       | Comment
-|:------------|:----------------------------|:----
-|   Scheduled   |   09-11-2021 / 10-11-2021
-|   Scheduled   |   07-12-2021 / 08-12-2021
-{: class="table"}
-{: class="table"}
+No further maintenances are planned. The service is being decommisioned.
 
 ### <a name="policy"></a> Policy
 
