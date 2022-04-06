@@ -27,7 +27,7 @@ This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The do
 
 <div class = "alert alert-warning" markdown="1">
 <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
-The HPC Cloud service was phased out on the 31th Mar. 2022.
+**The HPC Cloud service was phased out on the 31th Mar. 2022.**
 </div>
 
 <div style="display:none;" class="alert alert-success" markdown="1">
