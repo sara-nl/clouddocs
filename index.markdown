@@ -10,7 +10,7 @@ layout: default
 We are closely monitoring the service. **It experienced UI unavailability on the 15th Jan. from 16:27 to 17:42 CET.**
 </div>
 
-<div class="alert alert-info" markdown="1">
+<div style="display:none;" class="alert alert-info" markdown="1">
 <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>
 This _wiki_ collects the documentation for the **HPC Cloud** at SURFsara. The documentation pages are in constant review and you can expect **frequent changes**. You are welcome to contribute to **help us improve** the documentation (see bottom of this page).
 </div>
