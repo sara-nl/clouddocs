@@ -6,13 +6,13 @@ layout: default
 
 ### <a name="current"></a> Current
 
-Up & running.
+Service was phased out.
 
 
 
 ### <a name="future"></a> Future maintenance windows
 
-No further maintenances are planned. The service is being decommisioned.
+No further maintenances are planned.
 
 ### <a name="policy"></a> Policy
 
